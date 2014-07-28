@@ -1,0 +1,12 @@
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/autocalib.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/blenders.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/camera.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/exposure_compensate.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/matchers.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/motion_estimators.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/seam_finders.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/stitcher.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/timelapsers.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/util.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/warpers.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/stitching/OpenCV.build/Release-iphoneos/opencv_stitching.build/Objects-normal/arm64/opencl_kernels.o

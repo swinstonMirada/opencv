@@ -1,0 +1,3 @@
+a109512a08046205a9b41948bd273cea 132358c105bb5e36dfc86ae8a5e18f69 ffffffffffffffffffffffffffffffff 12901456 /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/world/UninstalledProducts/libopencv_world.a
+0000000053d6844e0000000000000b54 a109512a08838bc0a9b41948bd270d2b ffffffffffffffffffffffffffffffff 864 /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/world/OpenCV.build/Release-iphoneos/opencv_world.build/Objects-normal/armv7/world_init.o
+00000000000000000000000000000000 f5a2a5616f0c01bc4833c910c05e2025 ffffffffffffffffffffffffffffffff 12901456 /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_world.a

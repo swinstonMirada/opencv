@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              02EDCA64724B4C429ADD107B /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 4637C4331EF443E6A6FDD598 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            DDD4BB73207D49B38509A346 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            BA090F50C69442788506ACFC /* PBXTargetDependency */,
+                            059F068B7DAF4959A69F80E0 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              D3BE4924079B452CB4603AB3 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 9E9D1AE8A2DB46F18643A459 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            2D866B41D80849C2B31F49FC /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              AAD7B1B0CBDE4057B3FF53E8 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 00F91858CBEA4AA4AF27E076 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            DB3F962FF4C74262BB143F37 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            3DB085ED72B643CB8C4E3C15 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              034275699AF84C2B8076A63A /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = FE51846779DD42319A07EA6C /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            E71D04247427410F95095EBD /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            67ED4BC0B32D4E6DAF04637A /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+C35373093CAD43E69EF105B0 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A59DB403D52B435AB6224B3E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+4E651C499A034C6CA1785DD5 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 4AD702EFEDD74210AB0FF614 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9EE1C90067F34F1EBC16D2FD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = DF1B37D5C64B4FF0AB8360A2 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9B0CD2357D8C40BC862843C9 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXBuildFile; fileRef = 9EF1E86D97B2488FA6922C49 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+06C58F740EAA4631811ACF0F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXBuildFile; fileRef = 1ECAA820539A415EB1802C69 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FFC7D8719D884CB08D674796 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXBuildFile; fileRef = 02D14616A40F4D87ADD24465 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+65711B2709274BF9BB2F5EE3 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXBuildFile; fileRef = 440E152C2380411184DDCDAF /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D77C5CC588FD4B9B925EB2A4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXBuildFile; fileRef = 56596697718343E5A1E05110 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4157D3ACC72341FBA4EF076D /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXBuildFile; fileRef = 3FA536B0D68A46A1B72E3B77 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+23696532A7D34463A4CC8179 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXBuildFile; fileRef = D622DB6A18D543749A78F9AB /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+4EFF200101A1413EB4AFC6B2 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 406BCE2C869C420A8458F3B4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+236AA184BE5F401D95A17365 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXBuildFile; fileRef = A212F541F14C4201BF29C16F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+79493C06CE1F4F3485069E23 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXBuildFile; fileRef = 938353E53B7D4FC6B8409B3C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5EE0E65117F34778A26C7879 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXBuildFile; fileRef = E593D8052DCE41D791607EF7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h */; settings = { COMPILER_FLAGS = ""; }; };
+E812E9E30595446D8C9047F9 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXBuildFile; fileRef = DFDE655A567D4C239393FB35 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E1609EA8997F436997A0B3E4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXBuildFile; fileRef = 3160589BBA0547479EB2CF0D /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D3B5537EECF54E0D99F329C3 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXBuildFile; fileRef = 63C5034316E14354B5D64BD8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+602F51D9F712491D85981C90 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXBuildFile; fileRef = 95BBDBD6F9A24F738B0BF81F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl */; settings = { COMPILER_FLAGS = ""; }; };
+25F82ABE53754A93B152ECD4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXBuildFile; fileRef = 22F9923B6AE24AC795D68628 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DF619B1CAD484A03993EEA0C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXBuildFile; fileRef = A97E78FB175A4896B25F45D8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h */; settings = { COMPILER_FLAGS = ""; }; };
+196E48D1583B4B269020D366 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXBuildFile; fileRef = 57A900E2F083459895224F2E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AB5ED4A7E3054E18BA4AC011 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXBuildFile; fileRef = F44D11C3CD4C4103BD6A84CA /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h */; settings = { COMPILER_FLAGS = ""; }; };
+C3471861ADF04151B98F5322 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXBuildFile; fileRef = 4ECA0EBFE29249F491ADF974 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+67B86E9C6B9949E29553E3D9 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 9E470348EE964A0693627354 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+7FE4C936F4D94B5EB9B7070C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = A46D17AB70BE486798A22FB7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+06F67F9ADB2A4B3990D2FBCD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXBuildFile; fileRef = 5947FFC88C5A412F9D8DE3E7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+73FC4DB75FF84816A2617C29 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXBuildFile; fileRef = C0FBACA9B6E84365862FB00B /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+442431E1CE55402A89FBD355 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXBuildFile; fileRef = C6277895372D4655898B7FFD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+674FDA50AD0B410C98BB8C8C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXBuildFile; fileRef = 83D8C77B2BDA4EBE99F96A48 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+8CB254D00F474E228116336A /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXBuildFile; fileRef = 559C886B1FC1439C960C3856 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3654D785935547AD92C11249 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 7B244263617548A5805DE811 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+11159D01462341CEB43C748D /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = FA428F73007F49CAA246FD9D /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+35A093C5A98D4689A2CC4904 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = C1279B1F06644B599D7B35AE /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+FD601D9FC37C47748F470852 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = B200336FAF19442EB1CBDA9A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+3AB2366C207F46E0B0621ACA /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = AE41E3F24A4041F1AA5057E0 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              E746D54E3E7D4C8E9B31B5E6 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              FB7C083A5211401685061606 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              F6C3B947E5454C6F9E9CF14B /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              3984663D65264CB79FA1FC5D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6DEF1CC8DEBC45FA9F062473 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 43128CF3B7994281A5EEFA50;
+                     remoteInfo = opencv_calib3d;
+              };
+              718F57DB5A314D4196999E6D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6DEF1CC8DEBC45FA9F062473 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              FA57447D34A848118C5BE100 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6DEF1CC8DEBC45FA9F062473 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+              54CB73A1E5714207AABF681D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6DEF1CC8DEBC45FA9F062473 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              DD81B74D3B194AE89EA44859 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6DEF1CC8DEBC45FA9F062473 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+A59DB403D52B435AB6224B3E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+4AD702EFEDD74210AB0FF614 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+DF1B37D5C64B4FF0AB8360A2 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+9EF1E86D97B2488FA6922C49 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "calib3d_c.h"; path = "include/opencv2/calib3d/calib3d_c.h"; sourceTree = SOURCE_ROOT; };
+1ECAA820539A415EB1802C69 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calib3d_init.cpp"; path = "src/calib3d_init.cpp"; sourceTree = SOURCE_ROOT; };
+02D14616A40F4D87ADD24465 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibinit.cpp"; path = "src/calibinit.cpp"; sourceTree = SOURCE_ROOT; };
+440E152C2380411184DDCDAF /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibration.cpp"; path = "src/calibration.cpp"; sourceTree = SOURCE_ROOT; };
+56596697718343E5A1E05110 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "checkchessboard.cpp"; path = "src/checkchessboard.cpp"; sourceTree = SOURCE_ROOT; };
+3FA536B0D68A46A1B72E3B77 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "circlesgrid.cpp"; path = "src/circlesgrid.cpp"; sourceTree = SOURCE_ROOT; };
+D622DB6A18D543749A78F9AB /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "circlesgrid.hpp"; path = "src/circlesgrid.hpp"; sourceTree = SOURCE_ROOT; };
+406BCE2C869C420A8458F3B4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_ptsetreg.cpp"; path = "src/compat_ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+A212F541F14C4201BF29C16F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_stereo.cpp"; path = "src/compat_stereo.cpp"; sourceTree = SOURCE_ROOT; };
+938353E53B7D4FC6B8409B3C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "epnp.cpp"; path = "src/epnp.cpp"; sourceTree = SOURCE_ROOT; };
+E593D8052DCE41D791607EF7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "epnp.h"; path = "src/epnp.h"; sourceTree = SOURCE_ROOT; };
+DFDE655A567D4C239393FB35 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "five-point.cpp"; path = "src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
+3160589BBA0547479EB2CF0D /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fundam.cpp"; path = "src/fundam.cpp"; sourceTree = SOURCE_ROOT; };
+63C5034316E14354B5D64BD8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "levmarq.cpp"; path = "src/levmarq.cpp"; sourceTree = SOURCE_ROOT; };
+95BBDBD6F9A24F738B0BF81F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "stereobm.cl"; path = "src/opencl/stereobm.cl"; sourceTree = SOURCE_ROOT; };
+22F9923B6AE24AC795D68628 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "p3p.cpp"; path = "src/p3p.cpp"; sourceTree = SOURCE_ROOT; };
+A97E78FB175A4896B25F45D8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "p3p.h"; path = "src/p3p.h"; sourceTree = SOURCE_ROOT; };
+57A900E2F083459895224F2E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "polynom_solver.cpp"; path = "src/polynom_solver.cpp"; sourceTree = SOURCE_ROOT; };
+F44D11C3CD4C4103BD6A84CA /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "polynom_solver.h"; path = "src/polynom_solver.h"; sourceTree = SOURCE_ROOT; };
+4ECA0EBFE29249F491ADF974 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "posit.cpp"; path = "src/posit.cpp"; sourceTree = SOURCE_ROOT; };
+9E470348EE964A0693627354 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+A46D17AB70BE486798A22FB7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ptsetreg.cpp"; path = "src/ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+5947FFC88C5A412F9D8DE3E7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "quadsubpix.cpp"; path = "src/quadsubpix.cpp"; sourceTree = SOURCE_ROOT; };
+C0FBACA9B6E84365862FB00B /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "solvepnp.cpp"; path = "src/solvepnp.cpp"; sourceTree = SOURCE_ROOT; };
+C6277895372D4655898B7FFD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereobm.cpp"; path = "src/stereobm.cpp"; sourceTree = SOURCE_ROOT; };
+83D8C77B2BDA4EBE99F96A48 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereosgbm.cpp"; path = "src/stereosgbm.cpp"; sourceTree = SOURCE_ROOT; };
+559C886B1FC1439C960C3856 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "triangulate.cpp"; path = "src/triangulate.cpp"; sourceTree = SOURCE_ROOT; };
+7B244263617548A5805DE811 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+FA428F73007F49CAA246FD9D /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+C1279B1F06644B599D7B35AE /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+B200336FAF19442EB1CBDA9A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+AE41E3F24A4041F1AA5057E0 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+31A5DCEE480745B581145DF7 /* opencv_calib3d */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_calib3d.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              C3B2DBF9992C4273A8C79601  = {
+                     isa = PBXGroup;
+                     children = (
+                            B8AB06FB2EA9491FA49D6876 /* Sources */,
+                            8FB17BF011D44D8F888799FE /* Resources */,
+                            A59A5D28DE234DC998233D61 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              B8AB06FB2EA9491FA49D6876 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            85A84BB361234445BB67F4F4 /* ALL_BUILD */,
+                            8A1D3AD8AA2742E4AC866A62 /* ZERO_CHECK */,
+                            AC3EA61C6291495E988D9158 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              8FB17BF011D44D8F888799FE /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              85A84BB361234445BB67F4F4 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E43F1D7715114229B38A4262 /* CMake Rules */,
+                            A59DB403D52B435AB6224B3E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              E43F1D7715114229B38A4262 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              8A1D3AD8AA2742E4AC866A62 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C15B44AF3CBE47EDB7F4C35C /* CMake Rules */,
+                            A59DB403D52B435AB6224B3E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              C15B44AF3CBE47EDB7F4C35C /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              AC3EA61C6291495E988D9158 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AD37EC4A413744E28FA8F2FE /* opencv_calib3d */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              AD37EC4A413744E28FA8F2FE /* opencv_calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            142EEFCAD19746E8A9388512 /* Include */,
+                            168CCE9933854A7EBE2F50D3 /* Src */,
+                            D8AD0C33081045C59DD8AFC8 /* Header Files */,
+                            8271A3DE8C8541AAB5F78862 /* CMake Rules */,
+                            A59DB403D52B435AB6224B3E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = opencv_calib3d;
+                     sourceTree = "<group>";
+              };
+              142EEFCAD19746E8A9388512 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9F7F1A3DC06F403DB1EDFC70 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              9F7F1A3DC06F403DB1EDFC70 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            31A392AB34EB493CB9EC49B0 /* calib3d */,
+                            4AD702EFEDD74210AB0FF614 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              31A392AB34EB493CB9EC49B0 /* calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            DF1B37D5C64B4FF0AB8360A2 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */,
+                            9EF1E86D97B2488FA6922C49 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */,
+                     );
+                     name = calib3d;
+                     sourceTree = "<group>";
+              };
+              168CCE9933854A7EBE2F50D3 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0405474448C44626A4D43178 /* opencl */,
+                            1ECAA820539A415EB1802C69 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            02D14616A40F4D87ADD24465 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp */,
+                            440E152C2380411184DDCDAF /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp */,
+                            56596697718343E5A1E05110 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            3FA536B0D68A46A1B72E3B77 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            D622DB6A18D543749A78F9AB /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp */,
+                            406BCE2C869C420A8458F3B4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            A212F541F14C4201BF29C16F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            938353E53B7D4FC6B8409B3C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp */,
+                            E593D8052DCE41D791607EF7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h */,
+                            DFDE655A567D4C239393FB35 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp */,
+                            3160589BBA0547479EB2CF0D /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp */,
+                            63C5034316E14354B5D64BD8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp */,
+                            22F9923B6AE24AC795D68628 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp */,
+                            A97E78FB175A4896B25F45D8 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h */,
+                            57A900E2F083459895224F2E /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            F44D11C3CD4C4103BD6A84CA /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h */,
+                            4ECA0EBFE29249F491ADF974 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp */,
+                            9E470348EE964A0693627354 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp */,
+                            A46D17AB70BE486798A22FB7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            5947FFC88C5A412F9D8DE3E7 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            C0FBACA9B6E84365862FB00B /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            C6277895372D4655898B7FFD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp */,
+                            83D8C77B2BDA4EBE99F96A48 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            559C886B1FC1439C960C3856 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              0405474448C44626A4D43178 /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BD0B5F5019A94DF7B4E187B9 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              BD0B5F5019A94DF7B4E187B9 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            19397D33BBF34B28B6C785A6 /* autogenerated */,
+                            95BBDBD6F9A24F738B0BF81F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              19397D33BBF34B28B6C785A6 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FA428F73007F49CAA246FD9D /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp */,
+                            B200336FAF19442EB1CBDA9A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              D8AD0C33081045C59DD8AFC8 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7B244263617548A5805DE811 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            AE41E3F24A4041F1AA5057E0 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              8271A3DE8C8541AAB5F78862 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C1279B1F06644B599D7B35AE /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              A59A5D28DE234DC998233D61 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            31A5DCEE480745B581145DF7 /* opencv_calib3d */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              43128CF3B7994281A5EEFA50 /* opencv_calib3d */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 38AE480D28EA49D2BBAF237C /* Build configuration list for PBXNativeTarget "opencv_calib3d" */;
+                     buildPhases = (
+                            DEC52822CA5D44A9BF64B831 /* CMake Rules */,
+                            2FF1E6DF67404C41BD568FB1 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            F86DEF27B4F84A3F82411C8C /* PBXTargetDependency */,
+                     );
+                     name = opencv_calib3d;
+                     productName = opencv_calib3d;
+                     productReference = 31A5DCEE480745B581145DF7 /* opencv_calib3d */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              6DEF1CC8DEBC45FA9F062473 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 07CD8768B9974167B0A30582 /* Build configuration list for PBXProject  "opencv_calib3d" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            FB7C083A5211401685061606 /* Debug */,
+                            F6C3B947E5454C6F9E9CF14B /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = C3B2DBF9992C4273A8C79601;
+                     projectDirPath = "../../../../../../modules/calib3d";
+                     projectRoot = "";
+                     targets = (
+                            02EDCA64724B4C429ADD107B /* ALL_BUILD */,
+                            D3BE4924079B452CB4603AB3 /* ZERO_CHECK */,
+                            AAD7B1B0CBDE4057B3FF53E8 /* install */,
+                            43128CF3B7994281A5EEFA50 /* opencv_calib3d */,
+                            034275699AF84C2B8076A63A /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              FA747323ABCB4BF4AFEB0EF4 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              DDD4BB73207D49B38509A346 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              E7149B81E826425EBFCE943B /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              2D866B41D80849C2B31F49FC /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              C0D3B89B30C645B7ACD04002 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              DB3F962FF4C74262BB143F37 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              DEC52822CA5D44A9BF64B831 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/CMakeScripts/opencv_calib3d_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              38FEB1F4E4C243B9A352BAE7 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              E71D04247427410F95095EBD /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              2FF1E6DF67404C41BD568FB1 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            06C58F740EAA4631811ACF0F /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            FFC7D8719D884CB08D674796 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp */,
+                            65711B2709274BF9BB2F5EE3 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp */,
+                            D77C5CC588FD4B9B925EB2A4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            4157D3ACC72341FBA4EF076D /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            4EFF200101A1413EB4AFC6B2 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            236AA184BE5F401D95A17365 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            79493C06CE1F4F3485069E23 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp */,
+                            E812E9E30595446D8C9047F9 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp */,
+                            E1609EA8997F436997A0B3E4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp */,
+                            D3B5537EECF54E0D99F329C3 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp */,
+                            25F82ABE53754A93B152ECD4 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp */,
+                            196E48D1583B4B269020D366 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            C3471861ADF04151B98F5322 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp */,
+                            7FE4C936F4D94B5EB9B7070C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            06F67F9ADB2A4B3990D2FBCD /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            73FC4DB75FF84816A2617C29 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            442431E1CE55402A89FBD355 /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp */,
+                            674FDA50AD0B410C98BB8C8C /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            8CB254D00F474E228116336A /* /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp */,
+                            11159D01462341CEB43C748D /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/opencl_kernels.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              BA090F50C69442788506ACFC /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 43128CF3B7994281A5EEFA50 /* opencv_calib3d */;
+                     targetProxy = 3984663D65264CB79FA1FC5D /* PBXContainerItemProxy */;
+              };
+              059F068B7DAF4959A69F80E0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = 718F57DB5A314D4196999E6D /* PBXContainerItemProxy */;
+              };
+              3DB085ED72B643CB8C4E3C15 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = FA57447D34A848118C5BE100 /* PBXContainerItemProxy */;
+              };
+              F86DEF27B4F84A3F82411C8C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = 54CB73A1E5714207AABF681D /* PBXContainerItemProxy */;
+              };
+              67ED4BC0B32D4E6DAF04637A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = DD81B74D3B194AE89EA44859 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              417586B9B0D2489BB0E6CEB5 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/build";
+                     };
+                     name = Debug;
+              };
+              551D29FB48CC429A8E3A7C44 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d/build";
+                     };
+                     name = Release;
+              };
+              6B7FD15B6CF44446881AAE18 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              47B05CF344634609ADB540F9 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              33745D6437A34294B0CBAF2B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1E70AD28AA964B1BA21810DB /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              6931E907ACE148C79B9A933B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              CCA0400DB3244C309CA223C5 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3C61935F386046ADBE6AE019 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E44911A9530248D78DB02BBC /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3BB6803E4B9A4BB980DB2816 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E3D33F2D1C9648B994925037 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, /Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d", /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src, /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              07CD8768B9974167B0A30582 /* Build configuration list for PBXProject  "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            417586B9B0D2489BB0E6CEB5 /* Debug */,
+                            551D29FB48CC429A8E3A7C44 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4637C4331EF443E6A6FDD598 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            6B7FD15B6CF44446881AAE18 /* Debug */,
+                            47B05CF344634609ADB540F9 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              9E9D1AE8A2DB46F18643A459 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            33745D6437A34294B0CBAF2B /* Debug */,
+                            1E70AD28AA964B1BA21810DB /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              00F91858CBEA4AA4AF27E076 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            6931E907ACE148C79B9A933B /* Debug */,
+                            CCA0400DB3244C309CA223C5 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              38AE480D28EA49D2BBAF237C /* Build configuration list for PBXNativeTarget "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3C61935F386046ADBE6AE019 /* Debug */,
+                            E44911A9530248D78DB02BBC /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              FE51846779DD42319A07EA6C /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3BB6803E4B9A4BB980DB2816 /* Debug */,
+                            E3D33F2D1C9648B994925037 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 6DEF1CC8DEBC45FA9F062473;
+}

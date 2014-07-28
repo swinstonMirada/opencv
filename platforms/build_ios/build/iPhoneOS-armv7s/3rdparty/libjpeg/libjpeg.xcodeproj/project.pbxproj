@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              02EDCA64724B4C429ADD107B /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = A9607911D9A841AFBFD96F93 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            3EDE0F3154F348208D6741AE /* CMake Rules */,
+                     );
+                     dependencies = (
+                            7163C0C9FE914EEEA8048FC9 /* PBXTargetDependency */,
+                            21E294157B2F4B8AB126EB30 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              D3BE4924079B452CB4603AB3 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E918FE2D026B49ACA659B6B9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            AA63EC8D23D6499086596CF7 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              AAD7B1B0CBDE4057B3FF53E8 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = F2FFFF5F2775490BB041DBA2 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            581C9B6085954EE8A9C2327E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            297935024E89472BA04CADA1 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              034275699AF84C2B8076A63A /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 4E5DF6D18F154C5C86499781 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            FF5C9DB2020C40D9BA1259FD /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            BB020CB1B8EF425199F5D863 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+D2839ADB87394D67AD468802 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 08E9DE4CA7AD4B64AE080B6D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+124CA727C34D485D8FA98AF7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = 302E524A6D3249BAAC519307 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jaricom.c */; settings = { COMPILER_FLAGS = ""; }; };
+B274DEB7AD4A4A59B1AA2276 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = 9B0E1D5BA6F74FC795C0ACB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+42E03BDBCA8C4F1DAA4E3CBE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = 0A7F16ABDBE541409CD35C1E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+5B008DB667F4451E997208C2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = 3A756E65A9054401BFD23805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+57A7937E553C40FA87C7BBB1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = ABD4FE5CAFB04C35A8569D79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+83CC9BD589274E67944C50FB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = 59FAAC64E7F5403A8B58AB3B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+246BD10FE8AD4F4990929A53 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = F2EE06FC9563494CBC5AD9E8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcdctmgr.c */; settings = { COMPILER_FLAGS = "-O1"; }; };
+B89ED2BB62844E32A64DF448 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 7F2B5946E35F4857A7B6BE45 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jchuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+C7D7FB39F3834AD3AEFDE795 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = C61F98964FA6453EAE1E15CB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcinit.c */; settings = { COMPILER_FLAGS = ""; }; };
+29591B9EAF4F4C35ABCF3B25 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = 8800C08926DE4394864211CF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+3CE63B1C698648DAAA1533B8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = 0B93EA17764F464F859FCEF6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+C97D6F2C101B4A8B9C9D85A9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = DDA77B9AAA6346B880E7AEC2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+BD0BD4B107DE455CB007D059 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = A423E864672642CD8179E00A /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcomapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+8150944A892E4229975B616D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXBuildFile; fileRef = 6BAEE369CD0C48F0A42686E7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+79D3013ED3804BC2BF2C94D0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = 1188FE56444249B68F86F1BA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcparam.c */; settings = { COMPILER_FLAGS = ""; }; };
+22BAB3D36AF64A27A672EF61 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = 4DDC48B0021E4BF3B3CAD640 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcprepct.c */; settings = { COMPILER_FLAGS = ""; }; };
+2D08480268C44E41B9860C97 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = 7D7377F6B720424E8CCE4E0D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+565C5DD49D9F47A2AE916498 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXBuildFile; fileRef = 65EE7F9D160E4AA7A2B8B043 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jctrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+BD874E6CAB0646B39125D7F7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 372F54878B4F4B7AB15B5FB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+22713E99560547E9A8E3BEE2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = 645A2C42E3C243409E70B83B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+AD7DE7691F20475989BBD99B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = E44B66E5EAF74CBEB72BDBBF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+E1E017EE47C146BBB6EC7227 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = 518906C456E54075B76F3BAB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatadst.c */; settings = { COMPILER_FLAGS = ""; }; };
+04C642FB3DF845438B5F913E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = 481374B0EFFC47C788EC038B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatasrc.c */; settings = { COMPILER_FLAGS = ""; }; };
+77B4F6F2D0EB47FEB6599D79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = E95641F29D1F4568A4CF6B4E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+3DEFB59B52B64B9DBA7FC80E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = 71AEA8372E654E37AEFD3FB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+6074971938A343F287229F7C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXBuildFile; fileRef = 9AD87168DA6549AAA6AC41A9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdct.h */; settings = { COMPILER_FLAGS = ""; }; };
+3CCA1C9D2C5242498AC09576 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = 00DD6E203D81458FB64B19F5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jddctmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+178A400135D84CDBAF75ADDD /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = A5258D2CBD1D44449CFB3E9D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdhuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+5BBA2C070BCB4B5C8A3F5E7C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = 6BD5564E36AE4062A14E94B4 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdinput.c */; settings = { COMPILER_FLAGS = ""; }; };
+8BD41C57697442C682FC911A /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = C9F871483EE346188C354863 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+12A140FDF2B140188E4F41CE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = 132482CFD064499981409DB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+97355EDF9BD643A2B395E0C8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = B88BF4BE2A374FE198F0CBFA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+DB6D772491214F0C9DE82369 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = D8AAFB1EF3504B04870E6B6C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmerge.c */; settings = { COMPILER_FLAGS = ""; }; };
+85308848889445BAA4D6A497 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = 218264AD06B44BEA960539EB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdpostct.c */; settings = { COMPILER_FLAGS = ""; }; };
+E99FEEACA7D1416ABCCDB417 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = 54B66E9BEAA94FC88EDC2632 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+6887BDB820E74B7E85C63924 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXBuildFile; fileRef = 7378069442F546CB9C57FB29 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+5AB237A5A4CE4069B2DEC3C3 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 540AFA1AA25D480DB2CB8BF8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+52904F241B084878B9D26804 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXBuildFile; fileRef = 404C7A2D29244113B0C566BD /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.h */; settings = { COMPILER_FLAGS = ""; }; };
+624B03A8BB0F4CDE8E6B2E79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = 130A82BFCB3D4462AB325262 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+551BDF85591143ABA18B3268 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = 4B24EA461E1049619F2EC44B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+BB6E3F772CB84AC193E80CBE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 513C753A95E34B03BF8C1D58 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+A663021F1E1943E5B88FE93F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = AD75BB29168C4DE8B88E6362 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+E17B504384534A2388372754 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = 6A265EF4EB2A40A6857B1984 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+D60387FCDBC94012BD21E830 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = 072BED7DEB634EFBAA9D41D5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+733668716E584E278DA2B6FC /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXBuildFile; fileRef = 0298FD4B8C624051BA335542 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jinclude.h */; settings = { COMPILER_FLAGS = ""; }; };
+E8F2B27513B94B3DA32875B7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = C33342108080420FBC96B978 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+140C17D4065442D5843BC398 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = F018D367773240C6B39F18C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemnobs.c */; settings = { COMPILER_FLAGS = ""; }; };
+0049AB71015D443D94859B8C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXBuildFile; fileRef = 6FCAF7F71B1240399102803B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemsys.h */; settings = { COMPILER_FLAGS = ""; }; };
+6F0034A74A1C4473B1A1C12B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXBuildFile; fileRef = 9DB554C485484259BF2CFE13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmorecfg.h */; settings = { COMPILER_FLAGS = ""; }; };
+0A4A12C12A9D4A89855FAA05 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXBuildFile; fileRef = 2639D9B8A3B34034ADAE36DE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpegint.h */; settings = { COMPILER_FLAGS = ""; }; };
+3DC61B3D8C5B429D91AA4FCE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXBuildFile; fileRef = FC0FB83813E744369AB9E6AC /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpeglib.h */; settings = { COMPILER_FLAGS = ""; }; };
+9B28F5C305CB413291526EB1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = 1B8DEFB353754F3EBEB874C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant1.c */; settings = { COMPILER_FLAGS = ""; }; };
+A5E867B91B56487786E3D7B8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = 3FF172169A61484CABF93980 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant2.c */; settings = { COMPILER_FLAGS = ""; }; };
+535A2AF735184910ABECEF8D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = EAAF579CF35349919148E6A0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jutils.c */; settings = { COMPILER_FLAGS = ""; }; };
+0BEECCBD310C447994D9569D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXBuildFile; fileRef = AA7F75BE4BB44FBC8880CA6F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jversion.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              4D0B014002204373A128E712 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              10D6C8600F8241C78B373588 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              099949E22F7544F3A17C8252 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              C055C5FC37384CECA3545259 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D3A4DD73790840698EBB91ED /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              EB56DE5DCDD440C99D23FEB0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D3A4DD73790840698EBB91ED /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6001D8D42FD84FC48D9CC601;
+                     remoteInfo = libjpeg;
+              };
+              34EAD3E04E754172B1610ED1 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D3A4DD73790840698EBB91ED /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+              63752713593148F39FB855BC /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D3A4DD73790840698EBB91ED /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              58662BB99D1D4A64A4E83799 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D3A4DD73790840698EBB91ED /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+08E9DE4CA7AD4B64AE080B6D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+302E524A6D3249BAAC519307 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jaricom.c"; path = "jaricom.c"; sourceTree = SOURCE_ROOT; };
+9B0E1D5BA6F74FC795C0ACB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapimin.c"; path = "jcapimin.c"; sourceTree = SOURCE_ROOT; };
+0A7F16ABDBE541409CD35C1E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapistd.c"; path = "jcapistd.c"; sourceTree = SOURCE_ROOT; };
+3A756E65A9054401BFD23805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcarith.c"; path = "jcarith.c"; sourceTree = SOURCE_ROOT; };
+ABD4FE5CAFB04C35A8569D79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccoefct.c"; path = "jccoefct.c"; sourceTree = SOURCE_ROOT; };
+59FAAC64E7F5403A8B58AB3B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccolor.c"; path = "jccolor.c"; sourceTree = SOURCE_ROOT; };
+F2EE06FC9563494CBC5AD9E8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcdctmgr.c"; path = "jcdctmgr.c"; sourceTree = SOURCE_ROOT; };
+7F2B5946E35F4857A7B6BE45 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jchuff.c"; path = "jchuff.c"; sourceTree = SOURCE_ROOT; };
+C61F98964FA6453EAE1E15CB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcinit.c"; path = "jcinit.c"; sourceTree = SOURCE_ROOT; };
+8800C08926DE4394864211CF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmainct.c"; path = "jcmainct.c"; sourceTree = SOURCE_ROOT; };
+0B93EA17764F464F859FCEF6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmarker.c"; path = "jcmarker.c"; sourceTree = SOURCE_ROOT; };
+DDA77B9AAA6346B880E7AEC2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmaster.c"; path = "jcmaster.c"; sourceTree = SOURCE_ROOT; };
+A423E864672642CD8179E00A /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcomapi.c"; path = "jcomapi.c"; sourceTree = SOURCE_ROOT; };
+6BAEE369CD0C48F0A42686E7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jconfig.h"; path = "jconfig.h"; sourceTree = SOURCE_ROOT; };
+1188FE56444249B68F86F1BA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcparam.c"; path = "jcparam.c"; sourceTree = SOURCE_ROOT; };
+4DDC48B0021E4BF3B3CAD640 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcprepct.c"; path = "jcprepct.c"; sourceTree = SOURCE_ROOT; };
+7D7377F6B720424E8CCE4E0D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcsample.c"; path = "jcsample.c"; sourceTree = SOURCE_ROOT; };
+65EE7F9D160E4AA7A2B8B043 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jctrans.c"; path = "jctrans.c"; sourceTree = SOURCE_ROOT; };
+372F54878B4F4B7AB15B5FB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapimin.c"; path = "jdapimin.c"; sourceTree = SOURCE_ROOT; };
+645A2C42E3C243409E70B83B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapistd.c"; path = "jdapistd.c"; sourceTree = SOURCE_ROOT; };
+E44B66E5EAF74CBEB72BDBBF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdarith.c"; path = "jdarith.c"; sourceTree = SOURCE_ROOT; };
+518906C456E54075B76F3BAB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatadst.c"; path = "jdatadst.c"; sourceTree = SOURCE_ROOT; };
+481374B0EFFC47C788EC038B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatasrc.c"; path = "jdatasrc.c"; sourceTree = SOURCE_ROOT; };
+E95641F29D1F4568A4CF6B4E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcoefct.c"; path = "jdcoefct.c"; sourceTree = SOURCE_ROOT; };
+71AEA8372E654E37AEFD3FB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcolor.c"; path = "jdcolor.c"; sourceTree = SOURCE_ROOT; };
+9AD87168DA6549AAA6AC41A9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jdct.h"; path = "jdct.h"; sourceTree = SOURCE_ROOT; };
+00DD6E203D81458FB64B19F5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jddctmgr.c"; path = "jddctmgr.c"; sourceTree = SOURCE_ROOT; };
+A5258D2CBD1D44449CFB3E9D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdhuff.c"; path = "jdhuff.c"; sourceTree = SOURCE_ROOT; };
+6BD5564E36AE4062A14E94B4 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdinput.c"; path = "jdinput.c"; sourceTree = SOURCE_ROOT; };
+C9F871483EE346188C354863 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmainct.c"; path = "jdmainct.c"; sourceTree = SOURCE_ROOT; };
+132482CFD064499981409DB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmarker.c"; path = "jdmarker.c"; sourceTree = SOURCE_ROOT; };
+B88BF4BE2A374FE198F0CBFA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmaster.c"; path = "jdmaster.c"; sourceTree = SOURCE_ROOT; };
+D8AAFB1EF3504B04870E6B6C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmerge.c"; path = "jdmerge.c"; sourceTree = SOURCE_ROOT; };
+218264AD06B44BEA960539EB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdpostct.c"; path = "jdpostct.c"; sourceTree = SOURCE_ROOT; };
+54B66E9BEAA94FC88EDC2632 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdsample.c"; path = "jdsample.c"; sourceTree = SOURCE_ROOT; };
+7378069442F546CB9C57FB29 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdtrans.c"; path = "jdtrans.c"; sourceTree = SOURCE_ROOT; };
+540AFA1AA25D480DB2CB8BF8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jerror.c"; path = "jerror.c"; sourceTree = SOURCE_ROOT; };
+404C7A2D29244113B0C566BD /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jerror.h"; path = "jerror.h"; sourceTree = SOURCE_ROOT; };
+130A82BFCB3D4462AB325262 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctflt.c"; path = "jfdctflt.c"; sourceTree = SOURCE_ROOT; };
+4B24EA461E1049619F2EC44B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctfst.c"; path = "jfdctfst.c"; sourceTree = SOURCE_ROOT; };
+513C753A95E34B03BF8C1D58 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctint.c"; path = "jfdctint.c"; sourceTree = SOURCE_ROOT; };
+AD75BB29168C4DE8B88E6362 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctflt.c"; path = "jidctflt.c"; sourceTree = SOURCE_ROOT; };
+6A265EF4EB2A40A6857B1984 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctfst.c"; path = "jidctfst.c"; sourceTree = SOURCE_ROOT; };
+072BED7DEB634EFBAA9D41D5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctint.c"; path = "jidctint.c"; sourceTree = SOURCE_ROOT; };
+0298FD4B8C624051BA335542 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jinclude.h"; path = "jinclude.h"; sourceTree = SOURCE_ROOT; };
+C33342108080420FBC96B978 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemmgr.c"; path = "jmemmgr.c"; sourceTree = SOURCE_ROOT; };
+F018D367773240C6B39F18C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemnobs.c"; path = "jmemnobs.c"; sourceTree = SOURCE_ROOT; };
+6FCAF7F71B1240399102803B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmemsys.h"; path = "jmemsys.h"; sourceTree = SOURCE_ROOT; };
+9DB554C485484259BF2CFE13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmorecfg.h"; path = "jmorecfg.h"; sourceTree = SOURCE_ROOT; };
+2639D9B8A3B34034ADAE36DE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpegint.h"; path = "jpegint.h"; sourceTree = SOURCE_ROOT; };
+FC0FB83813E744369AB9E6AC /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpeglib.h"; path = "jpeglib.h"; sourceTree = SOURCE_ROOT; };
+1B8DEFB353754F3EBEB874C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant1.c"; path = "jquant1.c"; sourceTree = SOURCE_ROOT; };
+3FF172169A61484CABF93980 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant2.c"; path = "jquant2.c"; sourceTree = SOURCE_ROOT; };
+EAAF579CF35349919148E6A0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jutils.c"; path = "jutils.c"; sourceTree = SOURCE_ROOT; };
+AA7F75BE4BB44FBC8880CA6F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jversion.h"; path = "jversion.h"; sourceTree = SOURCE_ROOT; };
+77BF9EFCE6CF451086B85A9A /* libjpeg */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibjpeg.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              F3968921A2C64882AE3996AC  = {
+                     isa = PBXGroup;
+                     children = (
+                            FB46EBE0C00A47E0BCC262B6 /* Sources */,
+                            ADECD89ECEC1402AAD54B534 /* Resources */,
+                            66C9487AB0554B7099BDCEC6 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              FB46EBE0C00A47E0BCC262B6 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C5F635BD35A447CB86125839 /* ALL_BUILD */,
+                            BAA31366509E42F0B0431E3C /* ZERO_CHECK */,
+                            E604AB7A70BE4DABAF68EC82 /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              ADECD89ECEC1402AAD54B534 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              C5F635BD35A447CB86125839 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            42778D9CD6DE4A28979456E9 /* CMake Rules */,
+                            08E9DE4CA7AD4B64AE080B6D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              42778D9CD6DE4A28979456E9 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              BAA31366509E42F0B0431E3C /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CA2AB889F3304DAFAD566124 /* CMake Rules */,
+                            08E9DE4CA7AD4B64AE080B6D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              CA2AB889F3304DAFAD566124 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              E604AB7A70BE4DABAF68EC82 /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4D87DD8662AF444D9CCE7284 /* libjpeg */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              4D87DD8662AF444D9CCE7284 /* libjpeg */ = {
+                     isa = PBXGroup;
+                     children = (
+                            686082C923894923A225A61C /* Source Files */,
+                            53B640A0795F453F8C42BBD5 /* Header Files */,
+                            08E9DE4CA7AD4B64AE080B6D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = libjpeg;
+                     sourceTree = "<group>";
+              };
+              686082C923894923A225A61C /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            302E524A6D3249BAAC519307 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jaricom.c */,
+                            9B0E1D5BA6F74FC795C0ACB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            0A7F16ABDBE541409CD35C1E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            3A756E65A9054401BFD23805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcarith.c */,
+                            ABD4FE5CAFB04C35A8569D79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            59FAAC64E7F5403A8B58AB3B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccolor.c */,
+                            F2EE06FC9563494CBC5AD9E8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            7F2B5946E35F4857A7B6BE45 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jchuff.c */,
+                            C61F98964FA6453EAE1E15CB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcinit.c */,
+                            8800C08926DE4394864211CF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            0B93EA17764F464F859FCEF6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            DDA77B9AAA6346B880E7AEC2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            A423E864672642CD8179E00A /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            1188FE56444249B68F86F1BA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcparam.c */,
+                            4DDC48B0021E4BF3B3CAD640 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            7D7377F6B720424E8CCE4E0D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcsample.c */,
+                            65EE7F9D160E4AA7A2B8B043 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jctrans.c */,
+                            372F54878B4F4B7AB15B5FB6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            645A2C42E3C243409E70B83B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            E44B66E5EAF74CBEB72BDBBF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdarith.c */,
+                            518906C456E54075B76F3BAB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            481374B0EFFC47C788EC038B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            E95641F29D1F4568A4CF6B4E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            71AEA8372E654E37AEFD3FB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            00DD6E203D81458FB64B19F5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            A5258D2CBD1D44449CFB3E9D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            6BD5564E36AE4062A14E94B4 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdinput.c */,
+                            C9F871483EE346188C354863 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            132482CFD064499981409DB5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            B88BF4BE2A374FE198F0CBFA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            D8AAFB1EF3504B04870E6B6C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            218264AD06B44BEA960539EB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            54B66E9BEAA94FC88EDC2632 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdsample.c */,
+                            7378069442F546CB9C57FB29 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            540AFA1AA25D480DB2CB8BF8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.c */,
+                            130A82BFCB3D4462AB325262 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            4B24EA461E1049619F2EC44B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            513C753A95E34B03BF8C1D58 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            AD75BB29168C4DE8B88E6362 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            6A265EF4EB2A40A6857B1984 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            072BED7DEB634EFBAA9D41D5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctint.c */,
+                            C33342108080420FBC96B978 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            F018D367773240C6B39F18C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            1B8DEFB353754F3EBEB874C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant1.c */,
+                            3FF172169A61484CABF93980 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant2.c */,
+                            EAAF579CF35349919148E6A0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              53B640A0795F453F8C42BBD5 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6BAEE369CD0C48F0A42686E7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jconfig.h */,
+                            9AD87168DA6549AAA6AC41A9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdct.h */,
+                            404C7A2D29244113B0C566BD /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.h */,
+                            0298FD4B8C624051BA335542 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jinclude.h */,
+                            6FCAF7F71B1240399102803B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemsys.h */,
+                            9DB554C485484259BF2CFE13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmorecfg.h */,
+                            2639D9B8A3B34034ADAE36DE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpegint.h */,
+                            FC0FB83813E744369AB9E6AC /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jpeglib.h */,
+                            AA7F75BE4BB44FBC8880CA6F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jversion.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              66C9487AB0554B7099BDCEC6 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            77BF9EFCE6CF451086B85A9A /* libjpeg */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              6001D8D42FD84FC48D9CC601 /* libjpeg */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = ABD8CC7C80134832A8683D4B /* Build configuration list for PBXNativeTarget "libjpeg" */;
+                     buildPhases = (
+                            B527D963DF094E4D8E5EEB5E /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            933BA74FD67B48479D838CDE /* PBXTargetDependency */,
+                     );
+                     name = libjpeg;
+                     productName = libjpeg;
+                     productReference = 77BF9EFCE6CF451086B85A9A /* libjpeg */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              D3A4DD73790840698EBB91ED /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = BE78369C069C422FAD0CCA16 /* Build configuration list for PBXProject  "libjpeg" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            10D6C8600F8241C78B373588 /* Debug */,
+                            099949E22F7544F3A17C8252 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = F3968921A2C64882AE3996AC;
+                     projectDirPath = "../../../../../../3rdparty/libjpeg";
+                     projectRoot = "";
+                     targets = (
+                            02EDCA64724B4C429ADD107B /* ALL_BUILD */,
+                            D3BE4924079B452CB4603AB3 /* ZERO_CHECK */,
+                            AAD7B1B0CBDE4057B3FF53E8 /* install */,
+                            6001D8D42FD84FC48D9CC601 /* libjpeg */,
+                            034275699AF84C2B8076A63A /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              4F859993C53C4C678EDD36DA /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              3EDE0F3154F348208D6741AE /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              48D669F9539B4D5981C4F335 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AA63EC8D23D6499086596CF7 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              F4D28FDF4F624B10B6BB8BE2 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              581C9B6085954EE8A9C2327E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              8CECC9E3A5A54CF69D0297F3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              FF5C9DB2020C40D9BA1259FD /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              B527D963DF094E4D8E5EEB5E /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            124CA727C34D485D8FA98AF7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jaricom.c */,
+                            B274DEB7AD4A4A59B1AA2276 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            42E03BDBCA8C4F1DAA4E3CBE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            5B008DB667F4451E997208C2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcarith.c */,
+                            57A7937E553C40FA87C7BBB1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            83CC9BD589274E67944C50FB /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jccolor.c */,
+                            246BD10FE8AD4F4990929A53 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            B89ED2BB62844E32A64DF448 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jchuff.c */,
+                            C7D7FB39F3834AD3AEFDE795 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcinit.c */,
+                            29591B9EAF4F4C35ABCF3B25 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            3CE63B1C698648DAAA1533B8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            C97D6F2C101B4A8B9C9D85A9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            BD0BD4B107DE455CB007D059 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            79D3013ED3804BC2BF2C94D0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcparam.c */,
+                            22BAB3D36AF64A27A672EF61 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            2D08480268C44E41B9860C97 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jcsample.c */,
+                            565C5DD49D9F47A2AE916498 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jctrans.c */,
+                            BD874E6CAB0646B39125D7F7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            22713E99560547E9A8E3BEE2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            AD7DE7691F20475989BBD99B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdarith.c */,
+                            E1E017EE47C146BBB6EC7227 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            04C642FB3DF845438B5F913E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            77B4F6F2D0EB47FEB6599D79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            3DEFB59B52B64B9DBA7FC80E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            3CCA1C9D2C5242498AC09576 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            178A400135D84CDBAF75ADDD /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            5BBA2C070BCB4B5C8A3F5E7C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdinput.c */,
+                            8BD41C57697442C682FC911A /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            12A140FDF2B140188E4F41CE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            97355EDF9BD643A2B395E0C8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            DB6D772491214F0C9DE82369 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            85308848889445BAA4D6A497 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            E99FEEACA7D1416ABCCDB417 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdsample.c */,
+                            6887BDB820E74B7E85C63924 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            5AB237A5A4CE4069B2DEC3C3 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jerror.c */,
+                            624B03A8BB0F4CDE8E6B2E79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            551BDF85591143ABA18B3268 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            BB6E3F772CB84AC193E80CBE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            A663021F1E1943E5B88FE93F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            E17B504384534A2388372754 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            D60387FCDBC94012BD21E830 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jidctint.c */,
+                            E8F2B27513B94B3DA32875B7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            140C17D4065442D5843BC398 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            9B28F5C305CB413291526EB1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant1.c */,
+                            A5E867B91B56487786E3D7B8 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jquant2.c */,
+                            535A2AF735184910ABECEF8D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              7163C0C9FE914EEEA8048FC9 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = C055C5FC37384CECA3545259 /* PBXContainerItemProxy */;
+              };
+              21E294157B2F4B8AB126EB30 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6001D8D42FD84FC48D9CC601 /* libjpeg */;
+                     targetProxy = EB56DE5DCDD440C99D23FEB0 /* PBXContainerItemProxy */;
+              };
+              297935024E89472BA04CADA1 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = 34EAD3E04E754172B1610ED1 /* PBXContainerItemProxy */;
+              };
+              933BA74FD67B48479D838CDE /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = 63752713593148F39FB855BC /* PBXContainerItemProxy */;
+              };
+              BB020CB1B8EF425199F5D863 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = 58662BB99D1D4A64A4E83799 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              E5A02963D2314DA681BC51B0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/build";
+                     };
+                     name = Debug;
+              };
+              2BD9FD4A2FBC4156BA5B266D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg/build";
+                     };
+                     name = Release;
+              };
+              452BCC6C874E40CFBB1F80B2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              AFDA878A011449A293BEC913 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              26F3E4C77DF04F4D96531F3F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              45919E17487E44D9926BFC95 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B159490AA3644BD0B6A77D9E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              FCB7E9B4B0F24850AE245060 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              2110DF36BCBB45C19750D22E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -Wno-shadow -Wno-unused -Wno-unused-parameter         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              43B800C3A795488E86632472 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -Wno-shadow -Wno-unused -Wno-unused-parameter     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B2A5D48CCABA41C1B48BE4B3 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              C404C0CFFCF84741A0E5D532 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/3rdparty/libjpeg, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              BE78369C069C422FAD0CCA16 /* Build configuration list for PBXProject  "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E5A02963D2314DA681BC51B0 /* Debug */,
+                            2BD9FD4A2FBC4156BA5B266D /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              A9607911D9A841AFBFD96F93 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            452BCC6C874E40CFBB1F80B2 /* Debug */,
+                            AFDA878A011449A293BEC913 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E918FE2D026B49ACA659B6B9 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            26F3E4C77DF04F4D96531F3F /* Debug */,
+                            45919E17487E44D9926BFC95 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              F2FFFF5F2775490BB041DBA2 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B159490AA3644BD0B6A77D9E /* Debug */,
+                            FCB7E9B4B0F24850AE245060 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              ABD8CC7C80134832A8683D4B /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            2110DF36BCBB45C19750D22E /* Debug */,
+                            43B800C3A795488E86632472 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4E5DF6D18F154C5C86499781 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B2A5D48CCABA41C1B48BE4B3 /* Debug */,
+                            C404C0CFFCF84741A0E5D532 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = D3A4DD73790840698EBB91ED;
+}

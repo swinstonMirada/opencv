@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              02EDCA64724B4C429ADD107B /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 10C3781EE831429F9A1025F3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            D430607C13A947958C467B0F /* CMake Rules */,
+                     );
+                     dependencies = (
+                            DDDF440F6AE5447D9B6E7F11 /* PBXTargetDependency */,
+                            D3B5EA2C9CE64662BA564F92 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              D3BE4924079B452CB4603AB3 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D063B7D43D894BB8867D763D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            B7F40C025DBB4E78AEB8711D /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              AAD7B1B0CBDE4057B3FF53E8 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 256DBF478642490FA17C599B /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            7467B7E3E3D74A0DBAD30F5B /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            61987927AA0E42AD84E17B93 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              034275699AF84C2B8076A63A /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D5AE3D7870BD44629DBF93F6 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            FF82F88DEE56469B852CC2E4 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            29AEDDC2A0AC40B79C64109E /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+6EFA57C018F04B9F94DD905B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = CD7331DB8AF14B7C9FE54163 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+664146F021A8481E8FC85F13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c */ = {isa = PBXBuildFile; fileRef = FD8BE2215E69445097C8E8C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c */; settings = { COMPILER_FLAGS = ""; }; };
+84C3FC9C82F847BE9567924C /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h */ = {isa = PBXBuildFile; fileRef = 5AE8F448636945BA805D3805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h */; settings = { COMPILER_FLAGS = ""; }; };
+C6774C548A9C4122B2155742 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXBuildFile; fileRef = AFE77CB30F49411089BBCFF1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+CEA89B4CA3FC4E99AE636514 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXBuildFile; fileRef = C3C59F91378B46A7B9996A13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h */; settings = { COMPILER_FLAGS = ""; }; };
+7F484FA16B3A464196B583E1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXBuildFile; fileRef = 238D57688CBF4E5D970CAD79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+17E7932EDE94424387BAEF80 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXBuildFile; fileRef = 68F1E1E07B9343778F885711 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c */; settings = { COMPILER_FLAGS = ""; }; };
+D8ECB2F195284EFCB64AFCBF /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXBuildFile; fileRef = DEC87DE4D0924860B1A27508 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h */; settings = { COMPILER_FLAGS = ""; }; };
+EBCC891BE7354F729D7A15A6 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXBuildFile; fileRef = D5A2FA86286C4BC49AD70D82 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+1F2B1696DA954D3FAFC81F78 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXBuildFile; fileRef = 546192FE317E48EDB4F2D886 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c */; settings = { COMPILER_FLAGS = ""; }; };
+8EEC089137B14AFCB70D62B2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXBuildFile; fileRef = 16720C0A43314716A80D9C05 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c */; settings = { COMPILER_FLAGS = ""; }; };
+1EC39C8B33584EE996355427 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXBuildFile; fileRef = 24C1188F207A44BE9A04D4B5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h */; settings = { COMPILER_FLAGS = ""; }; };
+B856A02A4D1C41758C6E9B60 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXBuildFile; fileRef = B5564132A8154793A43D907B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c */; settings = { COMPILER_FLAGS = ""; }; };
+8DBECCD5083841FEAFB94EA9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXBuildFile; fileRef = C3A7DEF326D349059ED47CB9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c */; settings = { COMPILER_FLAGS = ""; }; };
+43B651D349714CDEB64210CA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXBuildFile; fileRef = 0CC90632C26944EF87B1C114 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+E7C10214870D47C9BEFD5A42 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXBuildFile; fileRef = 7E594843298B47839B39730B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+8387E878709A4F7F932CF886 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXBuildFile; fileRef = B7D35B57B4D5401A945F78C0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c */; settings = { COMPILER_FLAGS = ""; }; };
+CB31803C972C4E53A70AD01E /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXBuildFile; fileRef = B9CB222AE3A44286A4AEEE9F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h */; settings = { COMPILER_FLAGS = ""; }; };
+A95DF2180EF849A099331A72 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXBuildFile; fileRef = F7088766BFC346079116F7AE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+5D62F5854B88485D9A1839C1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXBuildFile; fileRef = B3A7C7A6E4D24243A027AB17 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c */; settings = { COMPILER_FLAGS = ""; }; };
+CAC9699CDDFD4CFFAD002591 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXBuildFile; fileRef = E72804F80D8C49C6932CF4E3 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c */; settings = { COMPILER_FLAGS = ""; }; };
+C0AC64993503435D9DADA6CE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXBuildFile; fileRef = 1D2FD36A79D84C5E9E1AAC30 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+5EC9633916704AEC95BC937D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXBuildFile; fileRef = 27C24F1FA5F045A7AF79DA63 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              CAF4FD59A48B4D118813B2C8 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              07E069B28A8343C0A6293452 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              A31677875ADB487EBD988310 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              DC2CD9FC509543D789886EFC /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 219EE7A12C06447DBE3EB152 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 0C36473CF8B045A193702E8E;
+                     remoteInfo = libpng;
+              };
+              FC47EA338FD24CC8A6051CFF /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 219EE7A12C06447DBE3EB152 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              92C054E945204653B082871C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 219EE7A12C06447DBE3EB152 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+              9BBCF34EF0A54E1DB89F908D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 219EE7A12C06447DBE3EB152 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              EE282CF93621409BAF51C44B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 219EE7A12C06447DBE3EB152 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+CD7331DB8AF14B7C9FE54163 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+FD8BE2215E69445097C8E8C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "png.c"; path = "png.c"; sourceTree = SOURCE_ROOT; };
+5AE8F448636945BA805D3805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "png.h"; path = "png.h"; sourceTree = SOURCE_ROOT; };
+AFE77CB30F49411089BBCFF1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngconf.h"; path = "pngconf.h"; sourceTree = SOURCE_ROOT; };
+C3C59F91378B46A7B9996A13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngdebug.h"; path = "pngdebug.h"; sourceTree = SOURCE_ROOT; };
+238D57688CBF4E5D970CAD79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngerror.c"; path = "pngerror.c"; sourceTree = SOURCE_ROOT; };
+68F1E1E07B9343778F885711 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngget.c"; path = "pngget.c"; sourceTree = SOURCE_ROOT; };
+DEC87DE4D0924860B1A27508 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnginfo.h"; path = "pnginfo.h"; sourceTree = SOURCE_ROOT; };
+D5A2FA86286C4BC49AD70D82 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnglibconf.h"; path = "pnglibconf.h"; sourceTree = SOURCE_ROOT; };
+546192FE317E48EDB4F2D886 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngmem.c"; path = "pngmem.c"; sourceTree = SOURCE_ROOT; };
+16720C0A43314716A80D9C05 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngpread.c"; path = "pngpread.c"; sourceTree = SOURCE_ROOT; };
+24C1188F207A44BE9A04D4B5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngpriv.h"; path = "pngpriv.h"; sourceTree = SOURCE_ROOT; };
+B5564132A8154793A43D907B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngread.c"; path = "pngread.c"; sourceTree = SOURCE_ROOT; };
+C3A7DEF326D349059ED47CB9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrio.c"; path = "pngrio.c"; sourceTree = SOURCE_ROOT; };
+0CC90632C26944EF87B1C114 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrtran.c"; path = "pngrtran.c"; sourceTree = SOURCE_ROOT; };
+7E594843298B47839B39730B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrutil.c"; path = "pngrutil.c"; sourceTree = SOURCE_ROOT; };
+B7D35B57B4D5401A945F78C0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngset.c"; path = "pngset.c"; sourceTree = SOURCE_ROOT; };
+B9CB222AE3A44286A4AEEE9F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngstruct.h"; path = "pngstruct.h"; sourceTree = SOURCE_ROOT; };
+F7088766BFC346079116F7AE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngtrans.c"; path = "pngtrans.c"; sourceTree = SOURCE_ROOT; };
+B3A7C7A6E4D24243A027AB17 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwio.c"; path = "pngwio.c"; sourceTree = SOURCE_ROOT; };
+E72804F80D8C49C6932CF4E3 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwrite.c"; path = "pngwrite.c"; sourceTree = SOURCE_ROOT; };
+1D2FD36A79D84C5E9E1AAC30 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwtran.c"; path = "pngwtran.c"; sourceTree = SOURCE_ROOT; };
+27C24F1FA5F045A7AF79DA63 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwutil.c"; path = "pngwutil.c"; sourceTree = SOURCE_ROOT; };
+6DB09D4A401843C1A11C9F46 /* libpng */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibpng.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              0E1C0DC7134D40D88DDCA8FC  = {
+                     isa = PBXGroup;
+                     children = (
+                            7FE4B6861E9A4930B1004FB9 /* Sources */,
+                            CD59B70795274447852FBE05 /* Resources */,
+                            F716227E88DD41DF8A26B086 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              7FE4B6861E9A4930B1004FB9 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            34D5912658844370B7D7F423 /* ALL_BUILD */,
+                            06A7F31A969B40C9A8EAE730 /* ZERO_CHECK */,
+                            7573997E559A4E758218C5B8 /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              CD59B70795274447852FBE05 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              34D5912658844370B7D7F423 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D3810CA02BDE41608F89FA1D /* CMake Rules */,
+                            CD7331DB8AF14B7C9FE54163 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              D3810CA02BDE41608F89FA1D /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              06A7F31A969B40C9A8EAE730 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            03A1A4A1BC6D45DEA0F29332 /* CMake Rules */,
+                            CD7331DB8AF14B7C9FE54163 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              03A1A4A1BC6D45DEA0F29332 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              7573997E559A4E758218C5B8 /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            048872287E86431DB5D80E82 /* libpng */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              048872287E86431DB5D80E82 /* libpng */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BF870E505F9C47778E84F45C /* Source Files */,
+                            5BCBA90FBC9644E8BD87B1C8 /* Header Files */,
+                            CD7331DB8AF14B7C9FE54163 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = libpng;
+                     sourceTree = "<group>";
+              };
+              BF870E505F9C47778E84F45C /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FD8BE2215E69445097C8E8C7 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c */,
+                            238D57688CBF4E5D970CAD79 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c */,
+                            68F1E1E07B9343778F885711 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c */,
+                            546192FE317E48EDB4F2D886 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c */,
+                            16720C0A43314716A80D9C05 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c */,
+                            B5564132A8154793A43D907B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c */,
+                            C3A7DEF326D349059ED47CB9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c */,
+                            0CC90632C26944EF87B1C114 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c */,
+                            7E594843298B47839B39730B /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c */,
+                            B7D35B57B4D5401A945F78C0 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c */,
+                            F7088766BFC346079116F7AE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c */,
+                            B3A7C7A6E4D24243A027AB17 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c */,
+                            E72804F80D8C49C6932CF4E3 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c */,
+                            1D2FD36A79D84C5E9E1AAC30 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c */,
+                            27C24F1FA5F045A7AF79DA63 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              5BCBA90FBC9644E8BD87B1C8 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5AE8F448636945BA805D3805 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h */,
+                            AFE77CB30F49411089BBCFF1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h */,
+                            C3C59F91378B46A7B9996A13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h */,
+                            DEC87DE4D0924860B1A27508 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h */,
+                            D5A2FA86286C4BC49AD70D82 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h */,
+                            24C1188F207A44BE9A04D4B5 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h */,
+                            B9CB222AE3A44286A4AEEE9F /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              F716227E88DD41DF8A26B086 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6DB09D4A401843C1A11C9F46 /* libpng */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              0C36473CF8B045A193702E8E /* libpng */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = B53886276CB547F2B43E06AC /* Build configuration list for PBXNativeTarget "libpng" */;
+                     buildPhases = (
+                            1117B2940B674E6EAA8A584E /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            A371D3A75BB84B35BA5078A7 /* PBXTargetDependency */,
+                     );
+                     name = libpng;
+                     productName = libpng;
+                     productReference = 6DB09D4A401843C1A11C9F46 /* libpng */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              219EE7A12C06447DBE3EB152 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 7CE876C754364766B2F16482 /* Build configuration list for PBXProject  "libpng" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            07E069B28A8343C0A6293452 /* Debug */,
+                            A31677875ADB487EBD988310 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 0E1C0DC7134D40D88DDCA8FC;
+                     projectDirPath = "../../../../../../3rdparty/libpng";
+                     projectRoot = "";
+                     targets = (
+                            02EDCA64724B4C429ADD107B /* ALL_BUILD */,
+                            D3BE4924079B452CB4603AB3 /* ZERO_CHECK */,
+                            AAD7B1B0CBDE4057B3FF53E8 /* install */,
+                            0C36473CF8B045A193702E8E /* libpng */,
+                            034275699AF84C2B8076A63A /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              4191D21BC66941DF8CBC94ED /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D430607C13A947958C467B0F /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              9BD6B2D6001D449B82AEA7F3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B7F40C025DBB4E78AEB8711D /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              3EA389756BAB488694DA3BA3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              7467B7E3E3D74A0DBAD30F5B /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              DD25EC8367114A2488DAAC53 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              FF82F88DEE56469B852CC2E4 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              1117B2940B674E6EAA8A584E /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            664146F021A8481E8FC85F13 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c */,
+                            7F484FA16B3A464196B583E1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c */,
+                            17E7932EDE94424387BAEF80 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c */,
+                            1F2B1696DA954D3FAFC81F78 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c */,
+                            8EEC089137B14AFCB70D62B2 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c */,
+                            B856A02A4D1C41758C6E9B60 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c */,
+                            8DBECCD5083841FEAFB94EA9 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c */,
+                            43B651D349714CDEB64210CA /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c */,
+                            E7C10214870D47C9BEFD5A42 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c */,
+                            8387E878709A4F7F932CF886 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c */,
+                            A95DF2180EF849A099331A72 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c */,
+                            5D62F5854B88485D9A1839C1 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c */,
+                            CAC9699CDDFD4CFFAD002591 /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c */,
+                            C0AC64993503435D9DADA6CE /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c */,
+                            5EC9633916704AEC95BC937D /* /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              DDDF440F6AE5447D9B6E7F11 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 0C36473CF8B045A193702E8E /* libpng */;
+                     targetProxy = DC2CD9FC509543D789886EFC /* PBXContainerItemProxy */;
+              };
+              D3B5EA2C9CE64662BA564F92 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = FC47EA338FD24CC8A6051CFF /* PBXContainerItemProxy */;
+              };
+              61987927AA0E42AD84E17B93 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = 92C054E945204653B082871C /* PBXContainerItemProxy */;
+              };
+              A371D3A75BB84B35BA5078A7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = 9BBCF34EF0A54E1DB89F908D /* PBXContainerItemProxy */;
+              };
+              29AEDDC2A0AC40B79C64109E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = EE282CF93621409BAF51C44B /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              589C18CCFE624284A6607758 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/build";
+                     };
+                     name = Debug;
+              };
+              9AA7F33A5F4C4AD084BADDA8 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/build";
+                     };
+                     name = Release;
+              };
+              71953203E89048D8BAC5FC32 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              487E199DD34246419B5B1F87 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              2E48EA5E36F24580A23DB569 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              0106995F384F4B36A19CE368 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              3274454203B34849840B4045 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5F316B8C39C64339A7ABBABA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              AF065E9643584157A32F01BF /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E09001C67D764330866C7FE7 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              591A906CB8A241519564E6A2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              ECA2DA396CDC401788DCF8DA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib", /Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib, /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              7CE876C754364766B2F16482 /* Build configuration list for PBXProject  "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            589C18CCFE624284A6607758 /* Debug */,
+                            9AA7F33A5F4C4AD084BADDA8 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              10C3781EE831429F9A1025F3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            71953203E89048D8BAC5FC32 /* Debug */,
+                            487E199DD34246419B5B1F87 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D063B7D43D894BB8867D763D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            2E48EA5E36F24580A23DB569 /* Debug */,
+                            0106995F384F4B36A19CE368 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              256DBF478642490FA17C599B /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3274454203B34849840B4045 /* Debug */,
+                            5F316B8C39C64339A7ABBABA /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B53886276CB547F2B43E06AC /* Build configuration list for PBXNativeTarget "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AF065E9643584157A32F01BF /* Debug */,
+                            E09001C67D764330866C7FE7 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D5AE3D7870BD44629DBF93F6 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            591A906CB8A241519564E6A2 /* Debug */,
+                            ECA2DA396CDC401788DCF8DA /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 219EE7A12C06447DBE3EB152;
+}

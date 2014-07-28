@@ -1,0 +1,29 @@
+TZERO_CHECK
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh
+c0000000053D6D22000000000000000F3
+t1406587424
+s243
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies810a1ba00987b941^cff71fa00987b941^---0#1#1#--18"Check dependencies36"EE69B34D-3045-40DD-923E-1F5AE39690BB-
+
+CPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh
+s428280224.114377
+e428280224.240069
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh
+oecho ""
+o
+omake -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeScripts/ReRunCMake.make
+omake[1]: `/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeFiles/cmake.check_cache' is up to date.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'164"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh87a81ea00987b941^29753da00987b941^-255"echo ""make -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeScripts/ReRunCMake.makemake[1]: `/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeFiles/cmake.check_cache' is up to date.3(21%IDEActivityLogMessage2@8"echo ""-428280224#0#8#-0#-----2@114"make -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeScripts/ReRunCMake.make-428280224#9#114#-0#-----2@132"make[1]: `/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/CMakeFiles/cmake.check_cache' is up to date.-428280224#123#132#-0#-----0#0#1#--382"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh    cd /Users/swinston/Mirada/lib/c/opencv    /bin/sh -c /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/OpenCV.build/Release-iphoneos/ZERO_CHECK.build/Script-7534302CDBAE41B89F49F880.sh36"AF0929BC-D5DF-4B09-8A66-BEEBC8CC96BA-
+b375A97F8-EB8D-4F9C-B0AF-C330472712E6
+

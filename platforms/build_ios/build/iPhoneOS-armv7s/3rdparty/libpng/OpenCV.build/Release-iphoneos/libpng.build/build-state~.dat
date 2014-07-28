@@ -1,0 +1,555 @@
+Tlibpng
+v6
+r1
+cCheck dependencies
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a normal armv7s
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053516DD00000000000000132
+t1397845456
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000532A2A9D000000000000036B
+t1395272349
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532A2A9E000000000000019E
+t1395272350
+s414
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c
+c0000000053D6844A0000000000016A66
+t1406567498
+s92774
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c
+c0000000053D6844A0000000000005007
+t1406567498
+s20487
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c
+c0000000053D6844A00000000000077C2
+t1406567498
+s30658
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c
+c0000000053D6844A000000000000450A
+t1406567498
+s17674
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c
+c0000000053D6844A0000000000008F28
+t1406567498
+s36648
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c
+c0000000053D6844A000000000000980A
+t1406567498
+s38922
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c
+c0000000053D6844A0000000000001466
+t1406567498
+s5222
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c
+c0000000053D6844A00000000000290C7
+t1406567498
+s168135
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c
+c0000000053D6844A000000000001DF77
+t1406567498
+s122743
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c
+c0000000053D6844A0000000000009036
+t1406567498
+s36918
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c
+c0000000053D6844A0000000000005916
+t1406567498
+s22806
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c
+c0000000053D6844A0000000000001DD3
+t1406567498
+s7635
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c
+c0000000053D6844A000000000000C780
+t1406567498
+s51072
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c
+c0000000053D6844A00000000000043C5
+t1406567498
+s17349
+
+N/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c
+c0000000053D6844A0000000000016687
+t1406567498
+s91783
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a
+t2
+s0
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/libpng.LinkFileList
+c0000000053D6D19400000000000009E6
+t1406587284
+s2534
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o
+t1406587285
+s20084
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o
+t1406587284
+s5592
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o
+t1406587285
+s6832
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o
+t1406587284
+s2064
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o
+t1406587285
+s10116
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o
+t1406587285
+s10348
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o
+t1406587285
+s1172
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o
+t1406587285
+s22088
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o
+t1406587285
+s32352
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o
+t1406587285
+s10940
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o
+t1406587285
+s3832
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o
+t1406587285
+s1336
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o
+t1406587286
+s11848
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o
+t1406587286
+s2720
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o
+t1406587287
+s29552
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies5c54bb140987b941^cdcdbb140987b941^---0#1#1#--18"Check dependencies36"4208A5DA-A35B-4ECA-8CA2-08FBE6C73B77-
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.761691
+e428280085.103821
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c235"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o [1m3rdparty/libpng/png.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler5324c3140987b941^a69d1a150987b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c0000000000000000^3767"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o [1m3rdparty/libpng/png.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/png.o36"5E44785C-759A-4715-913A-2B36BCBA5494-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.802992
+e428280084.956749
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o [1m3rdparty/libpng/pngerror.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilera1becd140987b941^8deef4140987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o [1m3rdparty/libpng/pngerror.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngerror.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngerror.o36"47AFA844-CE01-4973-93E9-471BCDD02801-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.827127
+e428280085.019340
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c241"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o [1m3rdparty/libpng/pngget.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler33e1d3140987b941^cbf304150987b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c0000000000000000^3785"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o [1m3rdparty/libpng/pngget.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngget.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngget.o36"480849AD-C8AB-4B03-8334-B71F94E37F60-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.880760
+e428280084.989615
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c241"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o [1m3rdparty/libpng/pngmem.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler60aee1140987b941^925dfd140987b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c0000000000000000^3785"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o [1m3rdparty/libpng/pngmem.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngmem.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngmem.o36"D6C5F094-B1E5-44C4-A7E8-760F736D0709-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.909657
+e428280085.110393
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o [1m3rdparty/libpng/pngpread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerd40ce9140987b941^0f421c150987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o [1m3rdparty/libpng/pngpread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpread.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngpread.o36"583C3DD6-9C0F-4D36-9662-F6231722F687-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.951649
+e428280085.156189
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c243"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o [1m3rdparty/libpng/pngread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerc6c3f3140987b941^33fc27150987b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c0000000000000000^3791"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o [1m3rdparty/libpng/pngread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngread.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngread.o36"672DBF67-A410-43D1-84F9-E72E6A625CE2-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280084.989945
+e428280085.058148
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c241"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o [1m3rdparty/libpng/pngrio.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerc58ffd140987b941^1de30e150987b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c0000000000000000^3785"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o [1m3rdparty/libpng/pngrio.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrio.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrio.o36"9FF804BA-4F03-4E3E-AA7C-0C22B4E0E0CE-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.058459
+e428280085.681333
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o [1m3rdparty/libpng/pngrtran.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerb11a0f150987b941^3c6cae150987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o [1m3rdparty/libpng/pngrtran.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrtran.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrtran.o36"7029F57C-325A-4DFA-9057-56C4E3D893DA-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.110739
+e428280085.637845
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o [1m3rdparty/libpng/pngrutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler397e1c150987b941^bd51a3150987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o [1m3rdparty/libpng/pngrutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngrutil.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngrutil.o36"85269A64-DE22-4CD0-9CA3-FD4AD8F01353-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.308119
+e428280085.486847
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c241"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o [1m3rdparty/libpng/pngset.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler3a074f150987b941^44a27c150987b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c0000000000000000^3785"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o [1m3rdparty/libpng/pngset.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngset.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngset.o36"F99DBB21-D1A5-44F8-BE36-D5A4066DE445-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.550782
+e428280085.676036
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o [1m3rdparty/libpng/pngtrans.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler29248d150987b941^4815ad150987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o [1m3rdparty/libpng/pngtrans.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngtrans.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngtrans.o36"7D7B67C4-C522-49CB-9662-9A6F9CFD3A3A-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.681598
+e428280085.771202
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c241"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o [1m3rdparty/libpng/pngwio.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerc79dae150987b941^696ec5150987b941^---0#0#1#-19%DVTDocumentLocation2@67"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c0000000000000000^3785"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o [1m3rdparty/libpng/pngwio.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwio.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwio.o36"4B8E7EEF-3D2E-49A6-9351-08AA8CA584BF-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280085.816382
+e428280086.020520
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o [1m3rdparty/libpng/pngwrite.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compileree25d1150987b941^fa4505160987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o [1m3rdparty/libpng/pngwrite.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwrite.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwrite.o36"49526A43-9113-44AE-9CAF-76CB419CCC87-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280086.088564
+e428280086.202409
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o [1m3rdparty/libpng/pngwtran.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler74cf16160987b941^99d533160987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o [1m3rdparty/libpng/pngwtran.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwtran.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwtran.o36"4F322866-1E2B-4E11-B452-283DC2146838-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s428280086.634789
+e428280087.120965
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o
+x/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngpriv.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/png.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnglibconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pnginfo.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngstruct.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib/zlib.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngdebug.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c245"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o [1m3rdparty/libpng/pngwutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilera4c4a2160987b941^01f91e170987b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c0000000000000000^3797"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o [1m3rdparty/libpng/pngwutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/zlib -I/Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources/armv7s -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -Wno-cast-align -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.dia -c /Users/swinston/Mirada/lib/c/opencv/3rdparty/libpng/pngwutil.c -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/pngwutil.o36"ACFCC829-E20B-41E2-BEA7-825826F6DAC1-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+
+CLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a normal armv7s
+s428280087.763896
+e428280087.774284
+r1
+xLibtool
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a
+xnormal
+xarmv7s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a normal armv7s104"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a normal armv7s58aac3170987b941^3d9ec6170987b941^---0#0#1#--1328"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a normal armv7s    cd /Users/swinston/Mirada/lib/c/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -filelist /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/libpng/OpenCV.build/Release-iphoneos/libpng.build/Objects-normal/armv7s/libpng.LinkFileList -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/liblibpng.a36"2A6C6131-43BE-4143-8CA5-986A1FA453B7-
+bAA80BE80-B92F-47C4-AA13-2636A6F98B82
+

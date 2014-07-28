@@ -1,0 +1,29 @@
+TALL_BUILD
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh
+c0000000053D6D2FB00000000000000FE
+t1406587643
+s254
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdca0c67b0a87b941^1c09c87b0a87b941^---0#1#1#--18"Check dependencies36"A97E6087-9B95-448B-AE3E-0B4CAED3CD47-
+
+CPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh
+s428280443.782341
+e428280443.828834
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'176"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.shb5a3c87b0a87b941^942fd47b0a87b941^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-428280443#0#8#-0#-----2@26"echo Build\ all\ projects-428280443#9#26#-0#-----2@19"Build all projects-428280443#35#19#-0#-----0#0#1#--406"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh    cd /Users/swinston/Mirada/lib/c/opencv    /bin/sh -c /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-i386/OpenCV.build/Release-iphonesimulator/ALL_BUILD.build/Script-392442539F3541868753753C.sh36"86F8B9E6-72B3-42BF-97A9-4AB4C76ECE79-
+b7BFBD32A-4915-4025-BCA2-7D3EFF8375A8
+

@@ -1,0 +1,2 @@
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/x86-4.8/prebuilt/darwin-x86_64/bin/i686-linux-android-ar cr ../../lib/x86/libopencv_test_video_pch_dephelp.a  CMakeFiles/opencv_test_video_pch_dephelp.dir/opencv_test_video_pch_dephelp.cxx.o
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/x86-4.8/prebuilt/darwin-x86_64/bin/i686-linux-android-ranlib ../../lib/x86/libopencv_test_video_pch_dephelp.a

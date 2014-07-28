@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp

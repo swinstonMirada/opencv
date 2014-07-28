@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              6698ECBBB2EC42B3A47D58E9 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 6E7AE547A0D94EBA979B50E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            591FA3DDE2744A8CA0261B3D /* CMake Rules */,
+                     );
+                     dependencies = (
+                            AEB1C0E501EB412886ECA951 /* PBXTargetDependency */,
+                            FA0E92EAE7E440839896A33A /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              6A30D578DE0540DDB452EBB7 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 9D2005394BC34BFEBA415DC4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            94380E79FD084F35A26B7F9A /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              3C7874E99CF341D3AB29863C /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 51005E7F243E4210B83D41FB /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            B8753380CF044131832C4D4C /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            A3C206D8AE784BCD89086EFE /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              2C56F16ADC7B47DA9F0AB3B4 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 08410D94528C42D29114F9E0 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            DBEEE50EB5CD48D692AEEE65 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            2B78DEE06DD74642A4D00B95 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+E1A677D30ED843A1A6637445 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 67258F070B764B24B7547123 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+EDE0C5046D8C4724AB9BB3DE /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXBuildFile; fileRef = DA60B144C3934A4B9BB0D756 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+4A4E5169F2CB4B8491008FA6 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXBuildFile; fileRef = EDEE0493E6434D83A59C9AA4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/background_segm.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+E762473E05634988A4B5F367 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXBuildFile; fileRef = 0C0C585C6B4F48709887E85C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+EE9111BB83C04D46882AAA6D /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXBuildFile; fileRef = 6593D4575D4740609F9B726C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+6C22B249E54E45B7B4740458 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXBuildFile; fileRef = C9FA0FFB8A294796B884CD31 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+122B4761FAFD4959BEB16471 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXBuildFile; fileRef = 2FE68A8F37F04EB8A8B77642 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2666A1B46BA944578395F41F /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXBuildFile; fileRef = FC3D7FBB5ECC47098CF15495 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+47765568EC264814A4BB724B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXBuildFile; fileRef = F610BD72AF3646BFB98232F5 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D38632684EFD4C9EA0356CB2 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXBuildFile; fileRef = A4F861010DA545CBA706BE78 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D3696C89DE00461EAD1B965A /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXBuildFile; fileRef = 3AA91ECF76AD47538E6AF09A /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BEE9E7C081574A15A2F53F86 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp */ = {isa = PBXBuildFile; fileRef = 99B42126B9EF4413A40772A3 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+550EA9B4A79746BE94E9B6E0 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXBuildFile; fileRef = B36F0D9CAF7947F0BE9B0411 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B0A823B45FC74F8C84C2BB60 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp */ = {isa = PBXBuildFile; fileRef = 811B61C8EAA043F8AA0E64FF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+0FB56AD9E46E48B3AC08069B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp */ = {isa = PBXBuildFile; fileRef = D0B88920AC5B44D0BED7A25B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D016D83144924DAEBEEC5AF0 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXBuildFile; fileRef = EA545A83757844D88BCEEF98 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+CF2695FA83E74F85B99FABC5 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXBuildFile; fileRef = 717394D9E97D4C079601EFCF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+319D2D3F286D4AD896854D56 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp */ = {isa = PBXBuildFile; fileRef = C7BA22553A124EC6968979F4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BF8E6C59894842ECB719DD88 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXBuildFile; fileRef = 45E235628D874A068669D656 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl */; settings = { COMPILER_FLAGS = ""; }; };
+13594301D98B48D491DC63B6 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXBuildFile; fileRef = 140D0D93490742B3B57D4C93 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl */; settings = { COMPILER_FLAGS = ""; }; };
+FE660C0B652B4294836AC25E /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXBuildFile; fileRef = BC936667DE284BA88E3E47D6 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */; settings = { COMPILER_FLAGS = ""; }; };
+29075B7EA08B4BD3B29A0FA2 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXBuildFile; fileRef = B3F47EC04B8D4A8EB61A6A73 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl */; settings = { COMPILER_FLAGS = ""; }; };
+5460D0AB9AE0450BAD724B61 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXBuildFile; fileRef = 38D611AA0D914DCEA68A81A8 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/updatemotionhistory.cl */; settings = { COMPILER_FLAGS = ""; }; };
+77A309B8BC354B6693ABC937 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXBuildFile; fileRef = 65F12C577B3D40E790BD86DE /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DE500F6652AB475CA8E83C03 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = ED194673B40648DD85219841 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+76DA5720AF24477EA4B556C2 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXBuildFile; fileRef = AE760B933D14454BB764B200 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4B6D9A3D33CB43B9A450FD90 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXBuildFile; fileRef = 6F4DBDB91E3B4A7F9DF50F08 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+89AA2A1B99014B659F082771 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp */ = {isa = PBXBuildFile; fileRef = 15F05C089387433795D66854 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BF318FB0B4984B15BA290EA4 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 31E1E60475784BC582682B0F /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+2C3448245FF944B6A9B3C859 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = 1FE496114F9C4ED6ADC46E37 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1EA4760DA21A4E0E9BFFD40B /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 7F8A1B7E021046A7AADB1776 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+284BE1540D23403892227B48 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = 792FCF9EE3D946B8B251EB39 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+668BE9B16DAA4901B11A88F2 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 3AB998C0847E4702A3812CFC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              45399F6A9541406194943EE6 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              27205917FEC74B7699C60DA3 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              12F12416C95546DE88A1AED6 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              9F14B79BBF0746EF8583955C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0D824526C8046D9B60D2B0B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6A30D578DE0540DDB452EBB7;
+                     remoteInfo = ZERO_CHECK;
+              };
+              B65C119106324D1AAA8698A0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0D824526C8046D9B60D2B0B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D124A7A624994228AE24C3AA;
+                     remoteInfo = opencv_video;
+              };
+              FCF749AA64A744259BD8B277 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0D824526C8046D9B60D2B0B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6698ECBBB2EC42B3A47D58E9;
+                     remoteInfo = ALL_BUILD;
+              };
+              D788EF72A2FD43AEB920B8C4 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0D824526C8046D9B60D2B0B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6A30D578DE0540DDB452EBB7;
+                     remoteInfo = ZERO_CHECK;
+              };
+              EE870BB4EE87488B841572E8 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F0D824526C8046D9B60D2B0B /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6698ECBBB2EC42B3A47D58E9;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+67258F070B764B24B7547123 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+DA60B144C3934A4B9BB0D756 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video.hpp"; sourceTree = SOURCE_ROOT; };
+EDEE0493E6434D83A59C9AA4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "background_segm.hpp"; path = "include/opencv2/video/background_segm.hpp"; sourceTree = SOURCE_ROOT; };
+0C0C585C6B4F48709887E85C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "tracking.hpp"; path = "include/opencv2/video/tracking.hpp"; sourceTree = SOURCE_ROOT; };
+6593D4575D4740609F9B726C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "tracking_c.h"; path = "include/opencv2/video/tracking_c.h"; sourceTree = SOURCE_ROOT; };
+C9FA0FFB8A294796B884CD31 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video/video.hpp"; sourceTree = SOURCE_ROOT; };
+2FE68A8F37F04EB8A8B77642 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "affineflow.cpp"; path = "src/affineflow.cpp"; sourceTree = SOURCE_ROOT; };
+FC3D7FBB5ECC47098CF15495 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_KNN.cpp"; path = "src/bgfg_KNN.cpp"; sourceTree = SOURCE_ROOT; };
+F610BD72AF3646BFB98232F5 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix.cpp"; path = "src/bgfg_gaussmix.cpp"; sourceTree = SOURCE_ROOT; };
+A4F861010DA545CBA706BE78 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix2.cpp"; path = "src/bgfg_gaussmix2.cpp"; sourceTree = SOURCE_ROOT; };
+3AA91ECF76AD47538E6AF09A /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gmg.cpp"; path = "src/bgfg_gmg.cpp"; sourceTree = SOURCE_ROOT; };
+99B42126B9EF4413A40772A3 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camshift.cpp"; path = "src/camshift.cpp"; sourceTree = SOURCE_ROOT; };
+B36F0D9CAF7947F0BE9B0411 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_video.cpp"; path = "src/compat_video.cpp"; sourceTree = SOURCE_ROOT; };
+811B61C8EAA043F8AA0E64FF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ecc.cpp"; path = "src/ecc.cpp"; sourceTree = SOURCE_ROOT; };
+D0B88920AC5B44D0BED7A25B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "kalman.cpp"; path = "src/kalman.cpp"; sourceTree = SOURCE_ROOT; };
+EA545A83757844D88BCEEF98 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lkpyramid.cpp"; path = "src/lkpyramid.cpp"; sourceTree = SOURCE_ROOT; };
+717394D9E97D4C079601EFCF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "lkpyramid.hpp"; path = "src/lkpyramid.hpp"; sourceTree = SOURCE_ROOT; };
+C7BA22553A124EC6968979F4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "motempl.cpp"; path = "src/motempl.cpp"; sourceTree = SOURCE_ROOT; };
+45E235628D874A068669D656 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "bgfg_mog2.cl"; path = "src/opencl/bgfg_mog2.cl"; sourceTree = SOURCE_ROOT; };
+140D0D93490742B3B57D4C93 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_farneback.cl"; path = "src/opencl/optical_flow_farneback.cl"; sourceTree = SOURCE_ROOT; };
+BC936667DE284BA88E3E47D6 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_tvl1.cl"; path = "src/opencl/optical_flow_tvl1.cl"; sourceTree = SOURCE_ROOT; };
+B3F47EC04B8D4A8EB61A6A73 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "pyrlk.cl"; path = "src/opencl/pyrlk.cl"; sourceTree = SOURCE_ROOT; };
+38D611AA0D914DCEA68A81A8 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "updatemotionhistory.cl"; path = "src/opencl/updatemotionhistory.cl"; sourceTree = SOURCE_ROOT; };
+65F12C577B3D40E790BD86DE /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "optflowgf.cpp"; path = "src/optflowgf.cpp"; sourceTree = SOURCE_ROOT; };
+ED194673B40648DD85219841 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+AE760B933D14454BB764B200 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "simpleflow.cpp"; path = "src/simpleflow.cpp"; sourceTree = SOURCE_ROOT; };
+6F4DBDB91E3B4A7F9DF50F08 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tvl1flow.cpp"; path = "src/tvl1flow.cpp"; sourceTree = SOURCE_ROOT; };
+15F05C089387433795D66854 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "video_init.cpp"; path = "src/video_init.cpp"; sourceTree = SOURCE_ROOT; };
+31E1E60475784BC582682B0F /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+1FE496114F9C4ED6ADC46E37 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+7F8A1B7E021046A7AADB1776 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+792FCF9EE3D946B8B251EB39 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+3AB998C0847E4702A3812CFC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+B9A1FAC820D54BECA426AE4C /* opencv_video */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_video.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              8B314D16B6574F969833F77A  = {
+                     isa = PBXGroup;
+                     children = (
+                            28CC24D1C65C4ECC9AADD8C5 /* Sources */,
+                            4C34F16947974651B9D6A18F /* Resources */,
+                            3180A5F4A3B14E0F9DD1FA77 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              28CC24D1C65C4ECC9AADD8C5 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3FBA09B8408C4E529A78DF48 /* ALL_BUILD */,
+                            C0C38036ED8D43BFA84EE8DC /* ZERO_CHECK */,
+                            70580F77105D419088CD108E /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              4C34F16947974651B9D6A18F /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              3FBA09B8408C4E529A78DF48 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E1AD71BA28244FE381CE60E2 /* CMake Rules */,
+                            67258F070B764B24B7547123 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              E1AD71BA28244FE381CE60E2 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C0C38036ED8D43BFA84EE8DC /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            734F56A130484EF9A8AE720C /* CMake Rules */,
+                            67258F070B764B24B7547123 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              734F56A130484EF9A8AE720C /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              70580F77105D419088CD108E /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            12BFD3CBC10441F9B228D1BD /* opencv_video */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              12BFD3CBC10441F9B228D1BD /* opencv_video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            ACCE681FCAB540FAB1EB20D5 /* Include */,
+                            3AEC005BF58D4FE7ACE2A378 /* Src */,
+                            9F043BAEBFA940E9B70D698E /* Header Files */,
+                            B467B80F0DF64877BC8EF8B9 /* CMake Rules */,
+                            67258F070B764B24B7547123 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = opencv_video;
+                     sourceTree = "<group>";
+              };
+              ACCE681FCAB540FAB1EB20D5 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2205F81A19694240B39F9146 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              2205F81A19694240B39F9146 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            17BDC2CFE2144862A13AF0C4 /* video */,
+                            DA60B144C3934A4B9BB0D756 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              17BDC2CFE2144862A13AF0C4 /* video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EDEE0493E6434D83A59C9AA4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/background_segm.hpp */,
+                            0C0C585C6B4F48709887E85C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking.hpp */,
+                            6593D4575D4740609F9B726C /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking_c.h */,
+                            C9FA0FFB8A294796B884CD31 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/video.hpp */,
+                     );
+                     name = video;
+                     sourceTree = "<group>";
+              };
+              3AEC005BF58D4FE7ACE2A378 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AFDD563EA7D24DDB84E68785 /* opencl */,
+                            2FE68A8F37F04EB8A8B77642 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp */,
+                            FC3D7FBB5ECC47098CF15495 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            F610BD72AF3646BFB98232F5 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            A4F861010DA545CBA706BE78 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            3AA91ECF76AD47538E6AF09A /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            99B42126B9EF4413A40772A3 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp */,
+                            B36F0D9CAF7947F0BE9B0411 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp */,
+                            811B61C8EAA043F8AA0E64FF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp */,
+                            D0B88920AC5B44D0BED7A25B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp */,
+                            EA545A83757844D88BCEEF98 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp */,
+                            717394D9E97D4C079601EFCF /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp */,
+                            C7BA22553A124EC6968979F4 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp */,
+                            65F12C577B3D40E790BD86DE /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp */,
+                            ED194673B40648DD85219841 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp */,
+                            AE760B933D14454BB764B200 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp */,
+                            6F4DBDB91E3B4A7F9DF50F08 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp */,
+                            15F05C089387433795D66854 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              AFDD563EA7D24DDB84E68785 /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CBC19183C61247539F584CC6 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              CBC19183C61247539F584CC6 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7FB7A1F4735A4F3D890F766B /* autogenerated */,
+                            45E235628D874A068669D656 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl */,
+                            140D0D93490742B3B57D4C93 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl */,
+                            BC936667DE284BA88E3E47D6 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */,
+                            B3F47EC04B8D4A8EB61A6A73 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl */,
+                            38D611AA0D914DCEA68A81A8 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/updatemotionhistory.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              7FB7A1F4735A4F3D890F766B /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1FE496114F9C4ED6ADC46E37 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp */,
+                            792FCF9EE3D946B8B251EB39 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              9F043BAEBFA940E9B70D698E /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            31E1E60475784BC582682B0F /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h */,
+                            3AB998C0847E4702A3812CFC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              B467B80F0DF64877BC8EF8B9 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7F8A1B7E021046A7AADB1776 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              3180A5F4A3B14E0F9DD1FA77 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B9A1FAC820D54BECA426AE4C /* opencv_video */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              D124A7A624994228AE24C3AA /* opencv_video */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 4EBE4FE7E7744C49AB584F52 /* Build configuration list for PBXNativeTarget "opencv_video" */;
+                     buildPhases = (
+                            D1894164A846436FA513DDC3 /* CMake Rules */,
+                            2D9A98D69C824C3AA90A7296 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            38B23CA7F207470490635C3E /* PBXTargetDependency */,
+                     );
+                     name = opencv_video;
+                     productName = opencv_video;
+                     productReference = B9A1FAC820D54BECA426AE4C /* opencv_video */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              F0D824526C8046D9B60D2B0B /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = EA2FE8AEB4EC43FEB2295428 /* Build configuration list for PBXProject  "opencv_video" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            27205917FEC74B7699C60DA3 /* Debug */,
+                            12F12416C95546DE88A1AED6 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 8B314D16B6574F969833F77A;
+                     projectDirPath = "../../../../../../modules/video";
+                     projectRoot = "";
+                     targets = (
+                            6698ECBBB2EC42B3A47D58E9 /* ALL_BUILD */,
+                            6A30D578DE0540DDB452EBB7 /* ZERO_CHECK */,
+                            3C7874E99CF341D3AB29863C /* install */,
+                            D124A7A624994228AE24C3AA /* opencv_video */,
+                            2C56F16ADC7B47DA9F0AB3B4 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              C165C9DFE3B04BCD88257FC3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              591FA3DDE2744A8CA0261B3D /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              3C07EFF5966748FBB58E0151 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              94380E79FD084F35A26B7F9A /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              982BC025D8674E8CBA0EAC90 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B8753380CF044131832C4D4C /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              D1894164A846436FA513DDC3 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/CMakeScripts/opencv_video_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              94120039CD984739AE0DC8CF /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              DBEEE50EB5CD48D692AEEE65 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              2D9A98D69C824C3AA90A7296 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            122B4761FAFD4959BEB16471 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp */,
+                            2666A1B46BA944578395F41F /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            47765568EC264814A4BB724B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            D38632684EFD4C9EA0356CB2 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            D3696C89DE00461EAD1B965A /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            BEE9E7C081574A15A2F53F86 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp */,
+                            550EA9B4A79746BE94E9B6E0 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp */,
+                            B0A823B45FC74F8C84C2BB60 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp */,
+                            0FB56AD9E46E48B3AC08069B /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp */,
+                            D016D83144924DAEBEEC5AF0 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp */,
+                            319D2D3F286D4AD896854D56 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp */,
+                            77A309B8BC354B6693ABC937 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp */,
+                            76DA5720AF24477EA4B556C2 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp */,
+                            4B6D9A3D33CB43B9A450FD90 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp */,
+                            89AA2A1B99014B659F082771 /* /Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp */,
+                            2C3448245FF944B6A9B3C859 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              AEB1C0E501EB412886ECA951 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6A30D578DE0540DDB452EBB7 /* ZERO_CHECK */;
+                     targetProxy = 9F14B79BBF0746EF8583955C /* PBXContainerItemProxy */;
+              };
+              FA0E92EAE7E440839896A33A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D124A7A624994228AE24C3AA /* opencv_video */;
+                     targetProxy = B65C119106324D1AAA8698A0 /* PBXContainerItemProxy */;
+              };
+              A3C206D8AE784BCD89086EFE /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6698ECBBB2EC42B3A47D58E9 /* ALL_BUILD */;
+                     targetProxy = FCF749AA64A744259BD8B277 /* PBXContainerItemProxy */;
+              };
+              38B23CA7F207470490635C3E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6A30D578DE0540DDB452EBB7 /* ZERO_CHECK */;
+                     targetProxy = D788EF72A2FD43AEB920B8C4 /* PBXContainerItemProxy */;
+              };
+              2B78DEE06DD74642A4D00B95 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6698ECBBB2EC42B3A47D58E9 /* ALL_BUILD */;
+                     targetProxy = EE870BB4EE87488B841572E8 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              AF4B83E1C3B34BFFAA7CEE53 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/build";
+                     };
+                     name = Debug;
+              };
+              0AC74FA826DE4F0492D25F26 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video/build";
+                     };
+                     name = Release;
+              };
+              DB1244BE3757436B861B2590 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              505903014FB74ECA85828228 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B163B3F54AC34F5F8ED96361 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              40E571A9D353428295BC4AC0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              FD95F1736ED549619A0FA29D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3439037D086F45AE915F7EB7 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              45086ACA5B1C41B9BE272892 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2D44F7C074E049518A512891 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              ED42EAF3EEB44DF0B6F6826B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2B3AD628603C4B31BDDE6EDC /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video", /Users/swinston/Mirada/lib/c/opencv/modules/video/src, /Users/swinston/Mirada/lib/c/opencv/modules/video/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              EA2FE8AEB4EC43FEB2295428 /* Build configuration list for PBXProject  "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AF4B83E1C3B34BFFAA7CEE53 /* Debug */,
+                            0AC74FA826DE4F0492D25F26 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              6E7AE547A0D94EBA979B50E6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DB1244BE3757436B861B2590 /* Debug */,
+                            505903014FB74ECA85828228 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              9D2005394BC34BFEBA415DC4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B163B3F54AC34F5F8ED96361 /* Debug */,
+                            40E571A9D353428295BC4AC0 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              51005E7F243E4210B83D41FB /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FD95F1736ED549619A0FA29D /* Debug */,
+                            3439037D086F45AE915F7EB7 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4EBE4FE7E7744C49AB584F52 /* Build configuration list for PBXNativeTarget "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            45086ACA5B1C41B9BE272892 /* Debug */,
+                            2D44F7C074E049518A512891 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              08410D94528C42D29114F9E0 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            ED42EAF3EEB44DF0B6F6826B /* Debug */,
+                            2B3AD628603C4B31BDDE6EDC /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = F0D824526C8046D9B60D2B0B;
+}

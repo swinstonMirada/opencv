@@ -1,0 +1,29 @@
+TALL_BUILD
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh
+c0000000053D6D1E600000000000000F4
+t1406587366
+s244
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies87de5e6f0987b941^b5fa5e6f0987b941^---0#1#1#--18"Check dependencies36"25D46C2B-0399-4A30-95A1-B7EC8A26427B-
+
+CPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh
+s428280175.372026
+e428280175.395601
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh
+oecho ""
+o
+oecho Build\ all\ projects
+oBuild all projects
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'164"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.she0a25f6f0987b941^e546656f0987b941^-54"echo ""echo Build\ all\ projectsBuild all projects3(21%IDEActivityLogMessage2@8"echo ""-428280175#0#8#-0#-----2@26"echo Build\ all\ projects-428280175#9#26#-0#-----2@19"Build all projects-428280175#35#19#-0#-----0#0#1#--382"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh    cd /Users/swinston/Mirada/lib/c/opencv    /bin/sh -c /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/OpenCV.build/Release-iphoneos/ALL_BUILD.build/Script-778EBEB75FFB44BA8623DEDA.sh36"3C4EE5B7-DCB3-4419-AA18-5F91FF6FAA0A-
+bDA0384EA-ED76-42FC-B9CB-6ABB1420C69B
+

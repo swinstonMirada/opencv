@@ -1,0 +1,224 @@
+Topencv_optim
+v6
+r1
+cCheck dependencies
+cCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053516DD00000000000000132
+t1397845456
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000532A2A9D000000000000036B
+t1395272349
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532A2A9E000000000000019E
+t1395272350
+s414
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp
+c0000000053D6844D0000000000001C3D
+t1406567501
+s7229
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp
+c0000000053D6844D0000000000001AD8
+t1406567501
+s6872
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp
+c0000000053D6844D0000000000002EB1
+t1406567501
+s11953
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp
+c0000000053D6844D00000000000036C7
+t1406567501
+s14023
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a
+t2
+s0
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o
+t1406587161
+s17876
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o
+t1406587161
+s9348
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o
+t1406587161
+s17532
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/opencv_optim.LinkFileList
+c0000000053D6D11800000000000002BD
+t1406587160
+s701
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o
+t1406587162
+s24804
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescd3cc5980887b941^b3f0c5980887b941^---0#1#1#--18"Check dependencies36"BE9F1998-7CA8-4E57-A576-F5F43E5D45E3-
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428279960.773866
+e428279961.746426
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp272"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o [1mmodules/optim/src/conjugate_gradient.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler5054c6980887b941^ba14bf990887b941^-137"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m-0#0#1#-19%DVTDocumentLocation2@83"file:///Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp0000000000000000^4133"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o [1mmodules/optim/src/conjugate_gradient.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/src -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/armv7 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/conjugate_gradient.o36"FB7F4647-3C4A-4084-905C-97B20E35B929-
+b02402FD2-4C00-41A9-90AE-29D353E75531
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428279960.774401
+e428279961.792646
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp260"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o [1mmodules/optim/src/denoise_tvl1.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler6572c6980887b941^74eaca990887b941^-137"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m-0#0#1#-19%DVTDocumentLocation2@77"file:///Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp0000000000000000^4097"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o [1mmodules/optim/src/denoise_tvl1.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/src -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/armv7 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/denoise_tvl1.o36"F8EE830D-30E1-4969-B9F0-027D91074121-
+b02402FD2-4C00-41A9-90AE-29D353E75531
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428279960.774882
+e428279962.003081
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp252"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o [1mmodules/optim/src/lpsolver.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilerbaa0c6980887b941^eecc009a0887b941^-137"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m-0#0#1#-19%DVTDocumentLocation2@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp0000000000000000^4073"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o [1mmodules/optim/src/lpsolver.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/src -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/armv7 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/lpsolver.o36"785AEB41-DDAA-4F73-A28F-3BD89D8780A8-
+b02402FD2-4C00-41A9-90AE-29D353E75531
+
+CCompileC platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428279961.793025
+e428279962.908218
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp250"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o [1mmodules/optim/src/simplex.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler7428cb990887b941^a680e89a0887b941^-137"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m-0#0#1#-19%DVTDocumentLocation2@72"file:///Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp0000000000000000^4067"[1mCompileC[0m platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o [1mmodules/optim/src/simplex.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/src -I/Users/swinston/Mirada/lib/c/opencv/modules/optim/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/armv7 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/simplex.o36"F6EE88D7-23E3-44D1-A41E-41A5533FE096-
+b02402FD2-4C00-41A9-90AE-29D353E75531
+
+CLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a normal armv7
+s428279964.746979
+e428279964.756936
+r1
+xLibtool
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a
+xnormal
+xarmv7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a normal armv799"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a normal armv7d653bf9c0887b941^c1c6c19c0887b941^---0#0#1#--1316"[1mLibtool[0m platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a normal armv7    cd /Users/swinston/Mirada/lib/c/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release -filelist /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/armv7/opencv_optim.LinkFileList -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7/lib/Release/libopencv_optim.a36"BEC3B667-EED6-4C4D-9767-0BEAD4D85256-
+b02402FD2-4C00-41A9-90AE-29D353E75531
+

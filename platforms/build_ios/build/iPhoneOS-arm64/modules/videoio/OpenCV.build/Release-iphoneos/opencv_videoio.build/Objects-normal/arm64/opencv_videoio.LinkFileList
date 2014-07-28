@@ -1,0 +1,7 @@
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_avfoundation.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_ffmpeg.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_images.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_ios_abstract_camera.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_ios_photo_camera.o
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-arm64/modules/videoio/OpenCV.build/Release-iphoneos/opencv_videoio.build/Objects-normal/arm64/cap_ios_video_camera.o

@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              02EDCA64724B4C429ADD107B /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 0FE8CA76CCD04A9FB7F60EA8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            C39A2B01A7F746BA9EE625E0 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            0EC38ACD1D0244EF94711A4B /* PBXTargetDependency */,
+                            072ACF45FDF04CFAB3C11D84 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              D3BE4924079B452CB4603AB3 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D6CB0AD6422E4AD2BF9E9946 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            BD5E10DF28C1436FAEB2D98E /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              AAD7B1B0CBDE4057B3FF53E8 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 0C9DDC3C54404B919B347805 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            940E12C4672C4A4DB6876F01 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            B78AC75A6BB74B10BB1FE161 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              034275699AF84C2B8076A63A /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = C1B81E65D1EC40CAAAE59348 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            11A6D3C8BF6941B5AC4812A4 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            15A1BB3EE5E546DE8EB576FB /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+995621034DA54B90BD445E48 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 884C84B4C3504F4FA052C242 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+C78BEF5CDA74471E8CC089FF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d.hpp */ = {isa = PBXBuildFile; fileRef = 85E9A02AE758423F87A6348A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+5AF21F3B31474C6C844394DF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp */ = {isa = PBXBuildFile; fileRef = DF77FBE07BB94F8BB144E434 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+B8F68BC55F9A4606B6B958BD /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp */ = {isa = PBXBuildFile; fileRef = 8EDEDDCEA81E4ABDB11A5B23 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A610370CECFD4C13818D2245 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h */ = {isa = PBXBuildFile; fileRef = 51EDBC69D99746E2B1FFB0A9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+E68A98FD9B0844B686FE8EB6 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp */ = {isa = PBXBuildFile; fileRef = 6D60A11349E74E6896647233 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+19B49982864D480C96CE6F11 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h */ = {isa = PBXBuildFile; fileRef = F2C3B92E23554258938B5088 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h */; settings = { COMPILER_FLAGS = ""; }; };
+CD753F63326743B78C5F68B0 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp */ = {isa = PBXBuildFile; fileRef = 72CC0360EE434C70B9E575DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+61CE74DFF901439F87CAAFCB /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp */ = {isa = PBXBuildFile; fileRef = 6B9383B8128D4A53A1CB27AA /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+180E45D7969B435D9E89F400 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp */ = {isa = PBXBuildFile; fileRef = 28BAD2C34C6246B89750E2C4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3B3A9621D252490FAFB333E8 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp */ = {isa = PBXBuildFile; fileRef = 2385CFE7476D47F394366046 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AFED2B1940D64007B9905C63 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp */ = {isa = PBXBuildFile; fileRef = 42CBE841AEBC489D987C50BF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+8B45BE85EDEF4FE588F3625C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp */ = {isa = PBXBuildFile; fileRef = 03B41A1C3EE44462825594DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C7E9612D78D24F069FD6671F /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp */ = {isa = PBXBuildFile; fileRef = 35A5945992A34BF0AC15724B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3D1F8574A72748EE9860D116 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp */ = {isa = PBXBuildFile; fileRef = 639EB6F1455B44F7A76325B3 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+57DB859FBA3C4116B8B5633F /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp */ = {isa = PBXBuildFile; fileRef = 83CE4E0C31F1404EA0DBC833 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1D2131CAB7034FF896101E68 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp */ = {isa = PBXBuildFile; fileRef = D9FD9AE9A59A4C02AE97A46E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D40766EDFF484B479179CF05 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp */ = {isa = PBXBuildFile; fileRef = E92048BB496B471CA26DE028 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+11C821C517E54702B65211DE /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp */ = {isa = PBXBuildFile; fileRef = 4131308B70B147E082815765 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+ADDC77651C8849BC8385D533 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp */ = {isa = PBXBuildFile; fileRef = B56F638270724F2E84781DD7 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C0B6400C02884264B5D977F4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp */ = {isa = PBXBuildFile; fileRef = 1FEBB9EE1698499CADA214B1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6FDC032122A541998CB9544B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp */ = {isa = PBXBuildFile; fileRef = A148AAD9948649EF8D52F87B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9E1E04E12A274372829DC4D8 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h */ = {isa = PBXBuildFile; fileRef = 8FD7DDEE7EEF44E593E42D01 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+42602508ED344AAFB274E221 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp */ = {isa = PBXBuildFile; fileRef = 05A18A44684D441F91F98E31 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+87EFCAD8235C4EED8E11F565 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h */ = {isa = PBXBuildFile; fileRef = 1F06AE485F294A738FBC2657 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h */; settings = { COMPILER_FLAGS = ""; }; };
+51A2FFEB63544CD68E94E091 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp */ = {isa = PBXBuildFile; fileRef = 02D4D83CA81140D5B712DFC1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+39AEBA4A40C74978BA30BE26 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h */ = {isa = PBXBuildFile; fileRef = CE638A88E3364EE69802EA2E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h */; settings = { COMPILER_FLAGS = ""; }; };
+ABE4981BA99F446D8363F17C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp */ = {isa = PBXBuildFile; fileRef = CB9D8A3C8BC34F3793CA13B9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9589A2BBE15E425991FF10B4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h */ = {isa = PBXBuildFile; fileRef = A79B648D98A149ACBDBC6E0B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h */; settings = { COMPILER_FLAGS = ""; }; };
+8C94FDC44E3647D19914FCF4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp */ = {isa = PBXBuildFile; fileRef = 51FEDB525C7D48B1B06BA06C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7F8A2F92016247ACA3A95BC6 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp */ = {isa = PBXBuildFile; fileRef = CB92B21EFE714774B212CED2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F5E32C2257E64686B97E42DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp */ = {isa = PBXBuildFile; fileRef = 236775C4D3D94D0394B48823 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B35F28DBF40E4A92A8EEAB82 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl */ = {isa = PBXBuildFile; fileRef = 19FC50B0F2234E6DB39D0B5B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl */; settings = { COMPILER_FLAGS = ""; }; };
+A794FBA3CAD649D78DAA7F92 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl */ = {isa = PBXBuildFile; fileRef = A2017B043A3041359828DF5E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl */; settings = { COMPILER_FLAGS = ""; }; };
+D0EAED84AC434B9DB08A7DEF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl */ = {isa = PBXBuildFile; fileRef = E5081E35DB9C4980A371106A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl */; settings = { COMPILER_FLAGS = ""; }; };
+E23AF9A3A73849E1A0FAB245 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp */ = {isa = PBXBuildFile; fileRef = 2600548B75314650B7924270 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+149E6BA52F484671BD1AB88E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = A54925BF8CEE4D37AA050C91 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+ADE8FBCB13EE4B89A29760D5 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp */ = {isa = PBXBuildFile; fileRef = 9BF4C1597F5D406E97832BB2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+649EF449B0BF488686FBA133 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 88F351F446E14616AF6DD3C8 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+1D9A99887FAD4BBE9EF4A655 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = BB8FC05FA3A04A9E9533E6EC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+64C3C5AEA5D542B59B3E6C12 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 5B2C41FD8A5D4820868F212A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+4618FE240E754F96A6056F9F /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = D68E54ACC954422EB70E6304 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+81508EB57C24475CB261BC65 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 7B8C761EE5784B3AB0BA8E87 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              B32D17BE7F704DF4857E95A0 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              1EB3CF413B1341818B4EA929 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              0A10C7F602A04F06B897DE00 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              E1D7313DA3AC43EB9D8C6302 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6D6DC332489F48E0A2B90860 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 209D2502B5A54F6D8EEC19F1;
+                     remoteInfo = opencv_features2d;
+              };
+              C2FBFE6C3BD046D0B7D1A141 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6D6DC332489F48E0A2B90860 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              8C9498D2BD4544288336F34E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6D6DC332489F48E0A2B90860 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+              E989ED9745B7454E81B0ED98 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6D6DC332489F48E0A2B90860 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D3BE4924079B452CB4603AB3;
+                     remoteInfo = ZERO_CHECK;
+              };
+              EF5C458C791D4FFCA6A6EBC4 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6D6DC332489F48E0A2B90860 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 02EDCA64724B4C429ADD107B;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+884C84B4C3504F4FA052C242 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+85E9A02AE758423F87A6348A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "features2d.hpp"; path = "include/opencv2/features2d.hpp"; sourceTree = SOURCE_ROOT; };
+DF77FBE07BB94F8BB144E434 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "features2d.hpp"; path = "include/opencv2/features2d/features2d.hpp"; sourceTree = SOURCE_ROOT; };
+8EDEDDCEA81E4ABDB11A5B23 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "akaze.cpp"; path = "src/akaze.cpp"; sourceTree = SOURCE_ROOT; };
+51EDBC69D99746E2B1FFB0A9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "AKAZEConfig.h"; path = "src/akaze/AKAZEConfig.h"; sourceTree = SOURCE_ROOT; };
+6D60A11349E74E6896647233 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "AKAZEFeatures.cpp"; path = "src/akaze/AKAZEFeatures.cpp"; sourceTree = SOURCE_ROOT; };
+F2C3B92E23554258938B5088 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "AKAZEFeatures.h"; path = "src/akaze/AKAZEFeatures.h"; sourceTree = SOURCE_ROOT; };
+72CC0360EE434C70B9E575DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bagofwords.cpp"; path = "src/bagofwords.cpp"; sourceTree = SOURCE_ROOT; };
+6B9383B8128D4A53A1CB27AA /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "blobdetector.cpp"; path = "src/blobdetector.cpp"; sourceTree = SOURCE_ROOT; };
+28BAD2C34C6246B89750E2C4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "brief.cpp"; path = "src/brief.cpp"; sourceTree = SOURCE_ROOT; };
+2385CFE7476D47F394366046 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "brisk.cpp"; path = "src/brisk.cpp"; sourceTree = SOURCE_ROOT; };
+42CBE841AEBC489D987C50BF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "descriptors.cpp"; path = "src/descriptors.cpp"; sourceTree = SOURCE_ROOT; };
+03B41A1C3EE44462825594DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detectors.cpp"; path = "src/detectors.cpp"; sourceTree = SOURCE_ROOT; };
+35A5945992A34BF0AC15724B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "draw.cpp"; path = "src/draw.cpp"; sourceTree = SOURCE_ROOT; };
+639EB6F1455B44F7A76325B3 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "dynamic.cpp"; path = "src/dynamic.cpp"; sourceTree = SOURCE_ROOT; };
+83CE4E0C31F1404EA0DBC833 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "evaluation.cpp"; path = "src/evaluation.cpp"; sourceTree = SOURCE_ROOT; };
+D9FD9AE9A59A4C02AE97A46E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fast.cpp"; path = "src/fast.cpp"; sourceTree = SOURCE_ROOT; };
+E92048BB496B471CA26DE028 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fast_score.cpp"; path = "src/fast_score.cpp"; sourceTree = SOURCE_ROOT; };
+4131308B70B147E082815765 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "fast_score.hpp"; path = "src/fast_score.hpp"; sourceTree = SOURCE_ROOT; };
+B56F638270724F2E84781DD7 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "features2d_init.cpp"; path = "src/features2d_init.cpp"; sourceTree = SOURCE_ROOT; };
+1FEBB9EE1698499CADA214B1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "freak.cpp"; path = "src/freak.cpp"; sourceTree = SOURCE_ROOT; };
+A148AAD9948649EF8D52F87B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "kaze.cpp"; path = "src/kaze.cpp"; sourceTree = SOURCE_ROOT; };
+8FD7DDEE7EEF44E593E42D01 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "KAZEConfig.h"; path = "src/kaze/KAZEConfig.h"; sourceTree = SOURCE_ROOT; };
+05A18A44684D441F91F98E31 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "KAZEFeatures.cpp"; path = "src/kaze/KAZEFeatures.cpp"; sourceTree = SOURCE_ROOT; };
+1F06AE485F294A738FBC2657 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "KAZEFeatures.h"; path = "src/kaze/KAZEFeatures.h"; sourceTree = SOURCE_ROOT; };
+02D4D83CA81140D5B712DFC1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fed.cpp"; path = "src/kaze/fed.cpp"; sourceTree = SOURCE_ROOT; };
+CE638A88E3364EE69802EA2E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "fed.h"; path = "src/kaze/fed.h"; sourceTree = SOURCE_ROOT; };
+CB9D8A3C8BC34F3793CA13B9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "nldiffusion_functions.cpp"; path = "src/kaze/nldiffusion_functions.cpp"; sourceTree = SOURCE_ROOT; };
+A79B648D98A149ACBDBC6E0B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "nldiffusion_functions.h"; path = "src/kaze/nldiffusion_functions.h"; sourceTree = SOURCE_ROOT; };
+51FEDB525C7D48B1B06BA06C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "keypoint.cpp"; path = "src/keypoint.cpp"; sourceTree = SOURCE_ROOT; };
+CB92B21EFE714774B212CED2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "matchers.cpp"; path = "src/matchers.cpp"; sourceTree = SOURCE_ROOT; };
+236775C4D3D94D0394B48823 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "mser.cpp"; path = "src/mser.cpp"; sourceTree = SOURCE_ROOT; };
+19FC50B0F2234E6DB39D0B5B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "brute_force_match.cl"; path = "src/opencl/brute_force_match.cl"; sourceTree = SOURCE_ROOT; };
+A2017B043A3041359828DF5E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "fast.cl"; path = "src/opencl/fast.cl"; sourceTree = SOURCE_ROOT; };
+E5081E35DB9C4980A371106A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "orb.cl"; path = "src/opencl/orb.cl"; sourceTree = SOURCE_ROOT; };
+2600548B75314650B7924270 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "orb.cpp"; path = "src/orb.cpp"; sourceTree = SOURCE_ROOT; };
+A54925BF8CEE4D37AA050C91 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+9BF4C1597F5D406E97832BB2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stardetector.cpp"; path = "src/stardetector.cpp"; sourceTree = SOURCE_ROOT; };
+88F351F446E14616AF6DD3C8 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+BB8FC05FA3A04A9E9533E6EC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+5B2C41FD8A5D4820868F212A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+D68E54ACC954422EB70E6304 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+7B8C761EE5784B3AB0BA8E87 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+F14F6791F7D14D8E88A3CEF0 /* opencv_features2d */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_features2d.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              D79759DDF552485ABAE5C435  = {
+                     isa = PBXGroup;
+                     children = (
+                            98C6A6765CA34F9386CB74BF /* Sources */,
+                            5AEEDD6ED48741CBBF512B86 /* Resources */,
+                            172011ABB50242E69F248777 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              98C6A6765CA34F9386CB74BF /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            795100C4B1564E4F846ACA05 /* ALL_BUILD */,
+                            26651EFB11C54E1CA72E70F8 /* ZERO_CHECK */,
+                            A7EDEB135B404F51B2EFF49B /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              5AEEDD6ED48741CBBF512B86 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              795100C4B1564E4F846ACA05 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D688A241C3814B95A1C79018 /* CMake Rules */,
+                            884C84B4C3504F4FA052C242 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              D688A241C3814B95A1C79018 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              26651EFB11C54E1CA72E70F8 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            50B8026B6F124E2496A85DC5 /* CMake Rules */,
+                            884C84B4C3504F4FA052C242 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              50B8026B6F124E2496A85DC5 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              A7EDEB135B404F51B2EFF49B /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A76DC176300A4787A0948876 /* opencv_features2d */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              A76DC176300A4787A0948876 /* opencv_features2d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8452A14D20A045429741B7D4 /* Include */,
+                            192C1A443CCB40998BF49B7D /* Src */,
+                            F394808B688D44CBB12EE080 /* Header Files */,
+                            9CCC3AD87C6A43028A8D1315 /* CMake Rules */,
+                            884C84B4C3504F4FA052C242 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/CMakeLists.txt */,
+                     );
+                     name = opencv_features2d;
+                     sourceTree = "<group>";
+              };
+              8452A14D20A045429741B7D4 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5BECE324335F49E0B277F799 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              5BECE324335F49E0B277F799 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D27E1473CA9645629A4EAA24 /* features2d */,
+                            85E9A02AE758423F87A6348A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              D27E1473CA9645629A4EAA24 /* features2d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            DF77FBE07BB94F8BB144E434 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp */,
+                     );
+                     name = features2d;
+                     sourceTree = "<group>";
+              };
+              192C1A443CCB40998BF49B7D /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F25962D8103343C4B20F8B83 /* akaze */,
+                            EEFE692EF62448258E94E7F2 /* kaze */,
+                            380DB3B2D31B40D3AF385DB0 /* opencl */,
+                            8EDEDDCEA81E4ABDB11A5B23 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp */,
+                            72CC0360EE434C70B9E575DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp */,
+                            6B9383B8128D4A53A1CB27AA /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp */,
+                            28BAD2C34C6246B89750E2C4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp */,
+                            2385CFE7476D47F394366046 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp */,
+                            42CBE841AEBC489D987C50BF /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp */,
+                            03B41A1C3EE44462825594DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp */,
+                            35A5945992A34BF0AC15724B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp */,
+                            639EB6F1455B44F7A76325B3 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp */,
+                            83CE4E0C31F1404EA0DBC833 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp */,
+                            D9FD9AE9A59A4C02AE97A46E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp */,
+                            E92048BB496B471CA26DE028 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp */,
+                            4131308B70B147E082815765 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp */,
+                            B56F638270724F2E84781DD7 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp */,
+                            1FEBB9EE1698499CADA214B1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp */,
+                            A148AAD9948649EF8D52F87B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp */,
+                            51FEDB525C7D48B1B06BA06C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp */,
+                            CB92B21EFE714774B212CED2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp */,
+                            236775C4D3D94D0394B48823 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp */,
+                            2600548B75314650B7924270 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp */,
+                            A54925BF8CEE4D37AA050C91 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp */,
+                            9BF4C1597F5D406E97832BB2 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              F25962D8103343C4B20F8B83 /* akaze */ = {
+                     isa = PBXGroup;
+                     children = (
+                            51EDBC69D99746E2B1FFB0A9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h */,
+                            6D60A11349E74E6896647233 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp */,
+                            F2C3B92E23554258938B5088 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h */,
+                     );
+                     name = akaze;
+                     sourceTree = "<group>";
+              };
+              EEFE692EF62448258E94E7F2 /* kaze */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8FD7DDEE7EEF44E593E42D01 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h */,
+                            05A18A44684D441F91F98E31 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp */,
+                            1F06AE485F294A738FBC2657 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h */,
+                            02D4D83CA81140D5B712DFC1 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp */,
+                            CE638A88E3364EE69802EA2E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h */,
+                            CB9D8A3C8BC34F3793CA13B9 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp */,
+                            A79B648D98A149ACBDBC6E0B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h */,
+                     );
+                     name = kaze;
+                     sourceTree = "<group>";
+              };
+              380DB3B2D31B40D3AF385DB0 /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            823ED9044F7448419F3F52DF /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              823ED9044F7448419F3F52DF /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            689611FED6DB4CF8853F1D47 /* autogenerated */,
+                            19FC50B0F2234E6DB39D0B5B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl */,
+                            A2017B043A3041359828DF5E /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl */,
+                            E5081E35DB9C4980A371106A /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              689611FED6DB4CF8853F1D47 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BB8FC05FA3A04A9E9533E6EC /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp */,
+                            D68E54ACC954422EB70E6304 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              F394808B688D44CBB12EE080 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            88F351F446E14616AF6DD3C8 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            7B8C761EE5784B3AB0BA8E87 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              9CCC3AD87C6A43028A8D1315 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5B2C41FD8A5D4820868F212A /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              172011ABB50242E69F248777 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F14F6791F7D14D8E88A3CEF0 /* opencv_features2d */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              209D2502B5A54F6D8EEC19F1 /* opencv_features2d */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = FC080CB403A148DA91020B03 /* Build configuration list for PBXNativeTarget "opencv_features2d" */;
+                     buildPhases = (
+                            66894DD3E4864BE79BBD3258 /* CMake Rules */,
+                            A648AA73E2AC442A9B2B59A2 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            96CD51C66A8E423A9F13AE4C /* PBXTargetDependency */,
+                     );
+                     name = opencv_features2d;
+                     productName = opencv_features2d;
+                     productReference = F14F6791F7D14D8E88A3CEF0 /* opencv_features2d */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              6D6DC332489F48E0A2B90860 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 2B9197EC535744988876A04E /* Build configuration list for PBXProject  "opencv_features2d" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            1EB3CF413B1341818B4EA929 /* Debug */,
+                            0A10C7F602A04F06B897DE00 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = D79759DDF552485ABAE5C435;
+                     projectDirPath = "../../../../../../modules/features2d";
+                     projectRoot = "";
+                     targets = (
+                            02EDCA64724B4C429ADD107B /* ALL_BUILD */,
+                            D3BE4924079B452CB4603AB3 /* ZERO_CHECK */,
+                            AAD7B1B0CBDE4057B3FF53E8 /* install */,
+                            209D2502B5A54F6D8EEC19F1 /* opencv_features2d */,
+                            034275699AF84C2B8076A63A /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              2FFDEBE45A304B69A365AF51 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C39A2B01A7F746BA9EE625E0 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              59410934D809443888D910DB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              BD5E10DF28C1436FAEB2D98E /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              0EE07B1C8D524521AF9248FB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              940E12C4672C4A4DB6876F01 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              66894DD3E4864BE79BBD3258 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/CMakeScripts/opencv_features2d_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              8C4AA40D5DAF4C4ABB7C1A61 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              11A6D3C8BF6941B5AC4812A4 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d -f /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              A648AA73E2AC442A9B2B59A2 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            B8F68BC55F9A4606B6B958BD /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp */,
+                            E68A98FD9B0844B686FE8EB6 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp */,
+                            CD753F63326743B78C5F68B0 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp */,
+                            61CE74DFF901439F87CAAFCB /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp */,
+                            180E45D7969B435D9E89F400 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp */,
+                            3B3A9621D252490FAFB333E8 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp */,
+                            AFED2B1940D64007B9905C63 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp */,
+                            8B45BE85EDEF4FE588F3625C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp */,
+                            C7E9612D78D24F069FD6671F /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp */,
+                            3D1F8574A72748EE9860D116 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp */,
+                            57DB859FBA3C4116B8B5633F /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp */,
+                            1D2131CAB7034FF896101E68 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp */,
+                            D40766EDFF484B479179CF05 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp */,
+                            ADDC77651C8849BC8385D533 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp */,
+                            C0B6400C02884264B5D977F4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp */,
+                            6FDC032122A541998CB9544B /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp */,
+                            42602508ED344AAFB274E221 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp */,
+                            51A2FFEB63544CD68E94E091 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp */,
+                            ABE4981BA99F446D8363F17C /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp */,
+                            8C94FDC44E3647D19914FCF4 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp */,
+                            7F8A2F92016247ACA3A95BC6 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp */,
+                            F5E32C2257E64686B97E42DC /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp */,
+                            E23AF9A3A73849E1A0FAB245 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp */,
+                            ADE8FBCB13EE4B89A29760D5 /* /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp */,
+                            1D9A99887FAD4BBE9EF4A655 /* /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/opencl_kernels.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              0EC38ACD1D0244EF94711A4B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 209D2502B5A54F6D8EEC19F1 /* opencv_features2d */;
+                     targetProxy = E1D7313DA3AC43EB9D8C6302 /* PBXContainerItemProxy */;
+              };
+              072ACF45FDF04CFAB3C11D84 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = C2FBFE6C3BD046D0B7D1A141 /* PBXContainerItemProxy */;
+              };
+              B78AC75A6BB74B10BB1FE161 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = 8C9498D2BD4544288336F34E /* PBXContainerItemProxy */;
+              };
+              96CD51C66A8E423A9F13AE4C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D3BE4924079B452CB4603AB3 /* ZERO_CHECK */;
+                     targetProxy = E989ED9745B7454E81B0ED98 /* PBXContainerItemProxy */;
+              };
+              15A1BB3EE5E546DE8EB576FB /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 02EDCA64724B4C429ADD107B /* ALL_BUILD */;
+                     targetProxy = EF5C458C791D4FFCA6A6EBC4 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              3CE24D919B33419397939DDE /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/build";
+                     };
+                     name = Debug;
+              };
+              5D9F13EE12394E0691FB1DCE /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ONLY_ACTIVE_ARCH = YES;
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d/build";
+                     };
+                     name = Release;
+              };
+              89882B694718453DBA8424EB /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5939F910412E4EEA8715CE91 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E88D0B4B051344109BAD31EB /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9114D2BA4EC2458DB4B2D4F5 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E2222820B70E419BA0717E98 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D4F4A6D7E73C4C529BB52B4B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              2E7BDE3B39CB4272BBA373C9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_features2d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              DE82B395D03C404C99CEEE47 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_features2d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              37FBDB39D28144878047C097 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3CB79C2DEA6F45EF9CE9AAB1 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include, /Users/swinston/Mirada/lib/c/opencv/modules/videoio/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include, /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include, /Users/swinston/Mirada/lib/c/opencv/modules/flann/include, /Users/swinston/Mirada/lib/c/opencv/modules/core/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d", /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src, /Users/swinston/Mirada/lib/c/opencv/modules/features2d/include, "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneOS-armv7s/modules/features2d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              2B9197EC535744988876A04E /* Build configuration list for PBXProject  "opencv_features2d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3CE24D919B33419397939DDE /* Debug */,
+                            5D9F13EE12394E0691FB1DCE /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              0FE8CA76CCD04A9FB7F60EA8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            89882B694718453DBA8424EB /* Debug */,
+                            5939F910412E4EEA8715CE91 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D6CB0AD6422E4AD2BF9E9946 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E88D0B4B051344109BAD31EB /* Debug */,
+                            9114D2BA4EC2458DB4B2D4F5 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              0C9DDC3C54404B919B347805 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E2222820B70E419BA0717E98 /* Debug */,
+                            D4F4A6D7E73C4C529BB52B4B /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              FC080CB403A148DA91020B03 /* Build configuration list for PBXNativeTarget "opencv_features2d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            2E7BDE3B39CB4272BBA373C9 /* Debug */,
+                            DE82B395D03C404C99CEEE47 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C1B81E65D1EC40CAAAE59348 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            37FBDB39D28144878047C097 /* Debug */,
+                            3CB79C2DEA6F45EF9CE9AAB1 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 6D6DC332489F48E0A2B90860;
+}

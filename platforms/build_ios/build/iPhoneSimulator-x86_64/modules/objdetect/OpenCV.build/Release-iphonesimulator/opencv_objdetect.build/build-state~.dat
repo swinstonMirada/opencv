@@ -1,0 +1,1491 @@
+Topencv_objdetect
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053516DE60000000000000198
+t1397845478
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000532A2AAA00000000000003B4
+t1395272362
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532A2AB0000000000000019E
+t1395272368
+s414
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp
+c0000000053D6844D000000000000D1B5
+t1406567501
+s53685
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp
+c0000000053D6844D0000000000002354
+t1406567501
+s9044
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp
+c0000000053D6844D00000000000094D1
+t1406567501
+s38097
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp
+c0000000053D6844D000000000001BBE9
+t1406567501
+s113641
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp
+c0000000053D6844D000000000001AC0F
+t1406567501
+s109583
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp
+c0000000053D6844D00000000000295ED
+t1406567501
+s169453
+
+N/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp
+c0000000053D6844D000000000000ED5E
+t1406567501
+s60766
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a
+t2
+s0
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o
+t1406587749
+s167584
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o
+t1406587747
+s24748
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o
+t1406587747
+s40676
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o
+t1406587751
+s228632
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o
+t1406587747
+s66864
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o
+t1406587748
+s120080
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o
+t1406587749
+s169616
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o
+t1406587747
+s38092
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencv_objdetect.LinkFileList
+c0000000053D6D361000000000000063D
+t1406587745
+s1597
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh
+c0000000053D6D361000000000000014A
+t1406587745
+s330
+
+N/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp
+c0000000053D6D361000000000000A0C9
+t1406587745
+s41161
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies956055e10a87b941^96e755e10a87b941^---0#1#1#--18"Check dependencies36"257085E8-79BB-4F3D-AC41-CD3ACA9892B2-
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.395049
+e428280549.241972
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp:42:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp291"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o [1mmodules/objdetect/src/cascadedetect.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler3d4665e10a87b941^39f13de50a87b941^-2284"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp:42:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280549#18446744073709551615#0#4(2@101"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp:42:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@82"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp0000000000000000^41#9#41#9#2086#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280549#18446744073709551615#0#4(2@101"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp:42:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp0000000000000000^41#9#41#9#2086#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@82"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp0000000000000000^4663"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o [1mmodules/objdetect/src/cascadedetect.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect.o36"02A38235-AA93-4A99-9088-C677335A1612-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.395394
+e428280547.603260
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp:44:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp307"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o [1mmodules/objdetect/src/cascadedetect_convert.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler426065e10a87b941^2f6f9ae30a87b941^-2292"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp:44:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@109"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@90"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp0000000000000000^43#9#43#9#2119#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@109"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@90"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp0000000000000000^43#9#43#9#2119#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@90"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp0000000000000000^4711"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o [1mmodules/objdetect/src/cascadedetect_convert.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/cascadedetect_convert.o36"7640920C-CE6F-4ECE-872D-0028F014DD9F-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.395671
+e428280547.650400
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp:44:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp311"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o [1mmodules/objdetect/src/detection_based_tracker.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler2a7165e10a87b941^1780a6e30a87b941^-2294"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp:44:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@111"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@92"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp0000000000000000^43#9#43#9#2228#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@111"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp0000000000000000^43#9#43#9#2228#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@92"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp0000000000000000^4723"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o [1mmodules/objdetect/src/detection_based_tracker.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/detection_based_tracker.o36"2FD55E6B-5A8F-4341-A046-3D2A26E20021-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.396113
+e428280551.896671
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:43:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:1967:20: [0m[0;1;35mwarning: [0m[1mprivate field 'members' is not used [-Wunused-private-field][0m
+o    int_fast32_t * members;
+o[0;1;32m                   ^
+o[0m3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp281"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o [1mmodules/objdetect/src/erfilter.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler7e8c65e10a87b941^098ce5e70a87b941^-2520"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:43:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:1967:20: [0m[0;1;35mwarning: [0m[1mprivate field 'members' is not used [-Wunused-private-field][0m    int_fast32_t * members;[0;1;32m                   ^[0m3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280551#18446744073709551615#0#4(2@96"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:43:-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@77"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280551#18446744073709551615#0#4(2@96"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp:43:-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@77"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280551#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--2@35"Private field 'members' is not used-428280551#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@77"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp0000000000000000^1966#19#1966#19#63343#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@77"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp0000000000000000^4633"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o [1mmodules/objdetect/src/erfilter.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/erfilter.o36"4B3721AB-B9C2-4552-9A5F-073721881F9E-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.396447
+e428280547.967512
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:44:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:1981:16: [0m[0;1;35mwarning: [0m[1mimplicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32][0m
+o        size = ftell( f );
+o[0;1;32m             ~ ^~~~~~~~~~
+o[0m3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp273"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o [1mmodules/objdetect/src/haar.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilera4aa65e10a87b941^47aef7e30a87b941^-2537"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:44:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:1981:16: [0m[0;1;35mwarning: [0m[1mimplicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32][0m        size = ftell( f );[0;1;32m             ~ ^~~~~~~~~~[0m3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@92"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^43#9#43#9#2129#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@92"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp:44:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^43#9#43#9#2129#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--2@60"Implicit conversion loses integer precision: 'long' to 'int'-428280547#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^1980#15#1980#15#84607#0#22"Value Conversion Issue2(3@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^1980#15#1980#25#84607#9#3@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^1980#13#1980#14#84605#0#-0#0#1#-19%DVTDocumentLocation4@73"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp0000000000000000^4609"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o [1mmodules/objdetect/src/haar.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/haar.o36"FBA78311-129C-4269-9A90-2C2D7236E70B-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.396877
+e428280548.462754
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp:43:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp271"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o [1mmodules/objdetect/src/hog.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler0aba65e10a87b941^a77676e40a87b941^-2274"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp:43:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280548#18446744073709551615#0#4(2@91"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp:43:-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@72"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280548#18446744073709551615#0#4(2@91"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp:43:-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@72"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280548#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@72"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp0000000000000000^4603"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o [1mmodules/objdetect/src/hog.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/hog.o36"F9958284-28D8-4F2C-B605-5D63F1F477FB-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.428086
+e428280549.622661
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o
+x/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/normal_lut.i
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp:43:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp279"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o [1mmodules/objdetect/src/linemod.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerecc06de10a87b941^b2679fe50a87b941^-2278"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp:43:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280549#18446744073709551615#0#4(2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp:43:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280549#18446744073709551615#0#4(2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp:43:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp0000000000000000^42#9#42#9#2166#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280549#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp0000000000000000^4627"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o [1mmodules/objdetect/src/linemod.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.dia -c /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/linemod.o36"5D6A4122-FDA6-4340-B605-BE0D1D71D533-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CCompileC platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s428280545.632569
+e428280547.288556
+r1
+xCompileC
+xplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/usr/local/include/eigen3/Eigen/Core
+d/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
+d/usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
+d/usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+d/usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+d/usr/local/include/eigen3/Eigen/src/Core/Functors.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
+d/usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Assign.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+d/usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
+d/usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+d/usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
+d/usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
+d/usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Matrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Array.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Dot.h
+d/usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
+d/usr/local/include/eigen3/Eigen/src/Core/MapBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/Stride.h
+d/usr/local/include/eigen3/Eigen/src/Core/Map.h
+d/usr/local/include/eigen3/Eigen/src/Core/Block.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
+d/usr/local/include/eigen3/Eigen/src/Core/Ref.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpose.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
+d/usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
+d/usr/local/include/eigen3/Eigen/src/Core/Redux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Visitor.h
+d/usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
+d/usr/local/include/eigen3/Eigen/src/Core/IO.h
+d/usr/local/include/eigen3/Eigen/src/Core/Swap.h
+d/usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
+d/usr/local/include/eigen3/Eigen/src/Core/Flagged.h
+d/usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
+d/usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+d/usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
+d/usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
+d/usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
+d/usr/local/include/eigen3/Eigen/src/Core/Select.h
+d/usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+d/usr/local/include/eigen3/Eigen/src/Core/Random.h
+d/usr/local/include/eigen3/Eigen/src/Core/Replicate.h
+d/usr/local/include/eigen3/Eigen/src/Core/Reverse.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+d/usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+d/usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+d/usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+d/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp
+d/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0m
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp:3:
+oIn file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:
+o[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compile /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp338"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o [1mplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler3a23a2e10a87b941^76df49e30a87b941^-2329"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names' [-Wunused-command-line-argument][0mIn file included from /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp:3:In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@56"'CvForestTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@146"In file included from /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp:3:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@128"file:///Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp0000000000000000^2#9#2#9#55#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-428280547#18446744073709551615#0#4(2@146"In file included from /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp:3:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@128"file:///Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp0000000000000000^2#9#2#9#55#0#21"Apple LLVM 5.1 Notice--2@95"In file included from /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp:49:-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp0000000000000000^48#9#48#9#2289#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-428280547#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@76"file:///Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@128"file:///Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp0000000000000000^4759"[1mCompileC[0m platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o [1mplatforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/swinston/Mirada/lib/c/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=202 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/swinston/Mirada/lib/c/opencv/modules/ml/include -I/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include -I/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include -I/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include -I/Users/swinston/Mirada/lib/c/opencv/modules/core/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src -I/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64 -I/usr/local/include/eigen3 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources/x86_64 -I/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -fvisibility=hidden -fvisibility-inlines-hidden -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.d --serialize-diagnostics /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.dia -c /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencl_kernels.o36"A80D8CCF-842B-47D9-8B7E-70066D81E518-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CLibtool /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a normal x86_64
+s428280552.917452
+e428280552.931829
+r1
+xLibtool
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"[1mLibtool[0m platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a normal x86_64112"[1mLibtool[0m platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a normal x86_6409ffeae80a87b941^8b8ceee80a87b941^---0#0#1#--1399"[1mLibtool[0m platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a normal x86_64    cd /Users/swinston/Mirada/lib/c/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/swinston/.apportable/SDK/bin:/Users/swinston/.rvm/gems/ruby-2.1.2/bin:/Users/swinston/.rvm/gems/ruby-2.1.2@global/bin:/Users/swinston/.rvm/rubies/ruby-2.1.2/bin:/Users/swinston/Mirada/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/ec2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/swinston/.rvm/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release -filelist /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Objects-normal/x86_64/opencv_objdetect.LinkFileList -o /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_objdetect.a36"5A0BFFC9-65B6-4264-A46F-1EFD96BAAAED-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+
+CPhaseScriptExecution CMake\ Rules /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh
+s428280545.336843
+e428280545.394284
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh
+o/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DMODULE_NAME="objdetect" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'203"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.shb5a956e10a87b941^62f464e10a87b941^-344"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DMODULE_NAME="objdetect" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake1(21%IDEActivityLogMessage2@344"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DMODULE_NAME="objdetect" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake-428280545#0#344#-0#-----0#0#1#--460"[1mPhaseScriptExecution[0m CMake\ Rules platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh    cd /Users/swinston/Mirada/lib/c/opencv    /bin/sh -c /Users/swinston/Mirada/lib/c/opencv/platforms/build_ios/build/iPhoneSimulator-x86_64/modules/objdetect/OpenCV.build/Release-iphonesimulator/opencv_objdetect.build/Script-10118C19402045189EE2AFC0.sh36"EC48C67C-BADA-4C42-B091-26AB9BF0461C-
+bD968E53E-A701-436E-B77A-7F208C807C3F
+

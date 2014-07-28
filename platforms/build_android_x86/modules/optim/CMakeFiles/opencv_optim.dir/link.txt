@@ -1,0 +1,2 @@
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/x86-4.8/prebuilt/darwin-x86_64/bin/i686-linux-android-ar cr ../../lib/x86/libopencv_optim.a  CMakeFiles/opencv_optim.dir/src/conjugate_gradient.cpp.o CMakeFiles/opencv_optim.dir/src/denoise_tvl1.cpp.o CMakeFiles/opencv_optim.dir/src/lpsolver.cpp.o CMakeFiles/opencv_optim.dir/src/simplex.cpp.o
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/x86-4.8/prebuilt/darwin-x86_64/bin/i686-linux-android-ranlib ../../lib/x86/libopencv_optim.a
