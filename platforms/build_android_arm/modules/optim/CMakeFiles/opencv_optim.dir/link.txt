@@ -1,0 +1,2 @@
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar cr ../../lib/armeabi-v7a/libopencv_optim.a  CMakeFiles/opencv_optim.dir/src/conjugate_gradient.cpp.o CMakeFiles/opencv_optim.dir/src/denoise_tvl1.cpp.o CMakeFiles/opencv_optim.dir/src/lpsolver.cpp.o CMakeFiles/opencv_optim.dir/src/simplex.cpp.o
+/Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib ../../lib/armeabi-v7a/libopencv_optim.a

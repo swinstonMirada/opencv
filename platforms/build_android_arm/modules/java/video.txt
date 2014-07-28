@@ -1,0 +1,85 @@
+PORTED FUNCs LIST (52 of 57):
+
+ void BackgroundSubtractorGMG::setBackgroundPrior(double bgprior)
+ void BackgroundSubtractorGMG::setDecisionThreshold(double thresh)
+ void BackgroundSubtractorGMG::setDefaultLearningRate(double lr)
+ void BackgroundSubtractorGMG::setMaxFeatures(int maxFeatures)
+ void BackgroundSubtractorGMG::setMaxVal(double val)
+ void BackgroundSubtractorGMG::setMinVal(double val)
+ void BackgroundSubtractorGMG::setNumFrames(int nframes)
+ void BackgroundSubtractorGMG::setQuantizationLevels(int nlevels)
+ void BackgroundSubtractorGMG::setSmoothingRadius(int radius)
+ void BackgroundSubtractorGMG::setUpdateBackgroundModel(bool update)
+ void BackgroundSubtractorMOG::setBackgroundRatio(double backgroundRatio)
+ void BackgroundSubtractorMOG::setHistory(int nframes)
+ void BackgroundSubtractorMOG::setNMixtures(int nmix)
+ void BackgroundSubtractorMOG::setNoiseSigma(double noiseSigma)
+ void DenseOpticalFlow::calc(Mat I0, Mat I1, Mat& flow)
+ void BackgroundSubtractor::apply(Mat image, Mat& fgmask, double learningRate = -1)
+ RotatedRect CamShift(Mat probImage, Rect& window, TermCriteria criteria)
+ int buildOpticalFlowPyramid(Mat img, vector_Mat& pyramid, Size winSize, int maxLevel, bool withDerivatives = true, int pyrBorder = BORDER_REFLECT_101, int derivBorder = BORDER_CONSTANT, bool tryReuseInputImage = true)
+ double calcGlobalOrientation(Mat orientation, Mat mask, Mat mhi, double timestamp, double duration)
+ void calcMotionGradient(Mat mhi, Mat& mask, Mat& orientation, double delta1, double delta2, int apertureSize = 3)
+ void calcOpticalFlowFarneback(Mat prev, Mat next, Mat& flow, double pyr_scale, int levels, int winsize, int iterations, int poly_n, double poly_sigma, int flags)
+ void calcOpticalFlowPyrLK(Mat prevImg, Mat nextImg, vector_Point2f prevPts, vector_Point2f& nextPts, vector_uchar& status, vector_float& err, Size winSize = Size(21,21), int maxLevel = 3, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 0.01), int flags = 0, double minEigThreshold = 1e-4)
+ void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow)
+ void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr)
+ Mat estimateRigidTransform(Mat src, Mat dst, bool fullAffine)
+ double findTransformECC(Mat templateImage, Mat inputImage, Mat& warpMatrix, int motionType = MOTION_AFFINE, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 50, 0.001))
+ int meanShift(Mat probImage, Rect& window, TermCriteria criteria)
+ void segmentMotion(Mat mhi, Mat& segmask, vector_Rect& boundingRects, double timestamp, double segThresh)
+ void updateMotionHistory(Mat silhouette, Mat& mhi, double timestamp, double duration)
+  KalmanFilter::KalmanFilter()
+  KalmanFilter::KalmanFilter(int dynamParams, int measureParams, int controlParams = 0, int type = CV_32F)
+ Mat KalmanFilter::correct(Mat measurement)
+ Mat KalmanFilter::predict(Mat control = Mat())
+ void BackgroundSubtractorMOG2::setBackgroundRatio(double ratio)
+ void BackgroundSubtractorMOG2::setComplexityReductionThreshold(double ct)
+ void BackgroundSubtractorMOG2::setDetectShadows(bool detectShadows)
+ void BackgroundSubtractorMOG2::setHistory(int history)
+ void BackgroundSubtractorMOG2::setNMixtures(int nmixtures)
+ void BackgroundSubtractorMOG2::setShadowThreshold(double threshold)
+ void BackgroundSubtractorMOG2::setShadowValue(int value)
+ void BackgroundSubtractorMOG2::setVarInit(double varInit)
+ void BackgroundSubtractorMOG2::setVarMax(double varMax)
+ void BackgroundSubtractorMOG2::setVarMin(double varMin)
+ void BackgroundSubtractorMOG2::setVarThreshold(double varThreshold)
+ void BackgroundSubtractorMOG2::setVarThresholdGen(double varThresholdGen)
+ void BackgroundSubtractorKNN::setDetectShadows(bool detectShadows)
+ void BackgroundSubtractorKNN::setDist2Threshold(double _dist2Threshold)
+ void BackgroundSubtractorKNN::setHistory(int history)
+ void BackgroundSubtractorKNN::setNSamples(int _nN)
+ void BackgroundSubtractorKNN::setShadowThreshold(double threshold)
+ void BackgroundSubtractorKNN::setShadowValue(int value)
+ void BackgroundSubtractorKNN::setkNNSamples(int _nkNN)
+
+SKIPPED FUNCs LIST (5 of 57):
+
+ Ptr_BackgroundSubtractorGMG createBackgroundSubtractorGMG(int initializationFrames = 120, double decisionThreshold = 0.8)
+// Return type 'Ptr_BackgroundSubtractorGMG' is not supported, skipping the function
+
+ Ptr_BackgroundSubtractorKNN createBackgroundSubtractorKNN(int history = 500, double dist2Threshold = 400.0, bool detectShadows = true)
+// Return type 'Ptr_BackgroundSubtractorKNN' is not supported, skipping the function
+
+ Ptr_BackgroundSubtractorMOG createBackgroundSubtractorMOG(int history = 200, int nmixtures = 5, double backgroundRatio = 0.7, double noiseSigma = 0)
+// Return type 'Ptr_BackgroundSubtractorMOG' is not supported, skipping the function
+
+ Ptr_BackgroundSubtractorMOG2 createBackgroundSubtractorMOG2(int history = 500, double varThreshold = 16, bool detectShadows = true)
+// Return type 'Ptr_BackgroundSubtractorMOG2' is not supported, skipping the function
+
+ Ptr_DenseOpticalFlow createOptFlow_DualTVL1()
+// Return type 'Ptr_DenseOpticalFlow' is not supported, skipping the function
+
+
+0 def args - 46 funcs
+1 def args - 3 funcs
+2 def args - 3 funcs
+3 def args - 2 funcs
+4 def args - 2 funcs
+5 def args - 1 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	
