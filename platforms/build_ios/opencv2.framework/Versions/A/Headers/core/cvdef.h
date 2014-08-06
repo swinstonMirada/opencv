@@ -341,7 +341,9 @@ typedef signed char schar;
 #if defined __BORLANDC__
 #  include <fastmath.h>
 #elif defined __cplusplus
-#  include <cmath>
+#ifndef __clang_analyzer__
+#include <cmath>
+#endif
 #else
 #  include <math.h>
 #endif
