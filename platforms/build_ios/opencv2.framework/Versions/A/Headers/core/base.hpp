@@ -48,7 +48,9 @@
 #  error base.hpp header must be compiled as C++
 #endif
 
+#ifndef __clang_analyzer__
 #include <climits>
+#endif
 
 #include "opencv2/core/cvdef.h"
 #include "opencv2/core/cvstd.hpp"
