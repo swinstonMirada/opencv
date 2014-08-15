@@ -12,3 +12,4 @@ platforms/build_android_service/*
 platforms/build_ios/build/*
 *.final
 *.generated
+*.gradle/
