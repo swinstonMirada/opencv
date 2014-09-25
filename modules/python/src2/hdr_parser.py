@@ -38,6 +38,8 @@ class CppHeaderParser(object):
         self.PUBLIC_SECTION = 3
         self.CLASS_DECL = 4
 
+        self.namespaces = set()
+
     def batch_replace(self, s, pairs):
         for before, after in pairs:
             s = s.replace(before, after)
@@ -555,11 +557,6 @@ class CppHeaderParser(object):
                     args.append([arg_type, arg_name, defval, modlist])
                 npos = arg_start-1
 
-        npos = decl_str.replace(" ", "").find("=0", npos)
-        if npos >= 0:
-            # skip pure virtual functions
-            return []
-
         if static_method:
             func_modlist.append("/S")
 
@@ -582,6 +579,7 @@ class CppHeaderParser(object):
             return name
         if name.startswith("cv."):
             return name
+        qualified_name = (("." in name) or ("::" in name))
         n = ""
         for b in self.block_stack:
             block_type, block_name = b[self.BLOCK_TYPE], b[self.BLOCK_NAME]
@@ -590,9 +588,12 @@ class CppHeaderParser(object):
             if block_type not in ["struct", "class", "namespace"]:
                 print("Error at %d: there are non-valid entries in the current block stack " % (self.lineno, self.block_stack))
                 sys.exit(-1)
-            if block_name:
+            if block_name and (block_type == "namespace" or not qualified_name):
                 n += block_name + "."
-        return n + name.replace("::", ".")
+        n += name.replace("::", ".")
+        if n.endswith(".Algorithm"):
+            n = "cv.Algorithm"
+        return n
 
     def parse_stmt(self, stmt, end_token):
         """
@@ -643,7 +644,7 @@ class CppHeaderParser(object):
                     classname = classname[1:]
                 decl = [stmt_type + " " + self.get_dotted_name(classname), "", modlist, []]
                 if bases:
-                    decl[1] = ": " + ", ".join([b if "::" in b else self.get_dotted_name(b).replace(".","::") for b in bases])
+                    decl[1] = ": " + ", ".join([self.get_dotted_name(b).replace(".","::") for b in bases])
                 return stmt_type, classname, True, decl
 
             if stmt.startswith("class") or stmt.startswith("struct"):
@@ -658,7 +659,7 @@ class CppHeaderParser(object):
                     if ("CV_EXPORTS_W" in stmt) or ("CV_EXPORTS_AS" in stmt) or (not self.wrap_mode):# and ("CV_EXPORTS" in stmt)):
                         decl = [stmt_type + " " + self.get_dotted_name(classname), "", modlist, []]
                         if bases:
-                            decl[1] = ": " + ", ".join([b if "::" in b else self.get_dotted_name(b).replace(".","::") for b in bases])
+                            decl[1] = ": " + ", ".join([self.get_dotted_name(b).replace(".","::") for b in bases])
                     return stmt_type, classname, True, decl
 
             if stmt.startswith("enum"):
@@ -829,6 +830,9 @@ class CppHeaderParser(object):
                                 decls.append(d)
                         else:
                             decls.append(decl)
+                    if stmt_type == "namespace":
+                        chunks = [block[1] for block in self.block_stack if block[0] == 'namespace'] + [name]
+                        self.namespaces.add('.'.join(chunks))
                 else:
                     stmt_type, name, parse_flag = "block", "", False
 
@@ -873,3 +877,4 @@ if __name__ == '__main__':
         #decls += parser.parse(hname, wmode=False)
     parser.print_decls(decls)
     print(len(decls))
+    print("namespaces:", " ".join(sorted(parser.namespaces)))
