@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -39,10 +43,6 @@ opencv2/core/cvstd.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/cvstd.hpp
 
 ../../modules/core/include/opencv2/core/bufferpool.hpp
-
-../../modules/core/include/opencv2/core/core.hpp
-opencv2/core.hpp
-../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/cvdef.h
 emmintrin.h
@@ -130,6 +130,10 @@ opencv2/core/traits.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -158,6 +162,10 @@ opencv2/core/cvstd.hpp
 opencv2/core/matx.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/matx.hpp
 
+../../modules/core/include/opencv2/core/utility.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/version.hpp
 
 ../../modules/highgui/include/opencv2/highgui.hpp
@@ -168,17 +176,13 @@ opencv2/imgcodecs.hpp
 opencv2/videoio.hpp
 ../../modules/highgui/include/opencv2/opencv2/videoio.hpp
 
-../../modules/highgui/include/opencv2/highgui/highgui.hpp
-opencv2/highgui.hpp
-../../modules/highgui/include/opencv2/highgui/opencv2/highgui.hpp
-
 ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 opencv2/core.hpp
 ../../modules/imgcodecs/include/opencv2/opencv2/core.hpp
 
-../../modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp
-opencv2/imgcodecs.hpp
-../../modules/imgcodecs/include/opencv2/imgcodecs/opencv2/imgcodecs.hpp
+../../modules/imgproc/include/opencv2/imgproc.hpp
+opencv2/core.hpp
+../../modules/imgproc/include/opencv2/opencv2/core.hpp
 
 ../../modules/videoio/include/opencv2/videoio.hpp
 opencv2/core.hpp
@@ -2335,10 +2339,12 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 
 /Users/swinston/Mirada/lib/c/opencv/samples/android/hello-android/main.cpp
-opencv2/core/core.hpp
+opencv2/core.hpp
 -
-opencv2/imgcodecs/imgcodecs.hpp
+opencv2/imgproc.hpp
 -
-opencv2/highgui/highgui.hpp
+opencv2/imgcodecs.hpp
+-
+opencv2/highgui.hpp
 -
 

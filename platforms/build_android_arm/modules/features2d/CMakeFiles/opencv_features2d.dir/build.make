@@ -52,42 +52,19 @@ include modules/features2d/CMakeFiles/opencv_features2d.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 
-modules/features2d/opencl_kernels.cpp: ../../modules/features2d/src/opencl/brute_force_match.cl
-modules/features2d/opencl_kernels.cpp: ../../modules/features2d/src/opencl/fast.cl
-modules/features2d/opencl_kernels.cpp: ../../modules/features2d/src/opencl/orb.cl
-modules/features2d/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/features2d/opencl_kernels_features2d.cpp: ../../modules/features2d/src/opencl/brute_force_match.cl
+modules/features2d/opencl_kernels_features2d.cpp: ../../modules/features2d/src/opencl/fast.cl
+modules/features2d/opencl_kernels_features2d.cpp: ../../modules/features2d/src/opencl/orb.cl
+modules/features2d/opencl_kernels_features2d.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/features2d && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="features2d" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_features2d.cpp, opencl_kernels_features2d.hpp"
+	cd modules/features2d && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="features2d" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/features2d/opencl_kernels.hpp: modules/features2d/opencl_kernels.cpp
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o: ../../modules/features2d/src/akaze/AKAZEFeatures.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o -c ../../../../modules/features2d/src/akaze/AKAZEFeatures.cpp
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.i"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/features2d/src/akaze/AKAZEFeatures.cpp > CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.i
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.s"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/features2d/src/akaze/AKAZEFeatures.cpp -o CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.s
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.requires:
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.requires
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.requires
-	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.provides.build
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.provides
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o
+modules/features2d/opencl_kernels_features2d.hpp: modules/features2d/opencl_kernels_features2d.cpp
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o: ../../modules/features2d/src/akaze.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o -c ../../../../modules/features2d/src/akaze.cpp
 
@@ -110,7 +87,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o.provides.bui
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o: ../../modules/features2d/src/bagofwords.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o -c ../../../../modules/features2d/src/bagofwords.cpp
 
@@ -133,7 +110,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o.provide
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o: ../../modules/features2d/src/blobdetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o -c ../../../../modules/features2d/src/blobdetector.cpp
 
@@ -154,32 +131,9 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o.provi
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o: ../../modules/features2d/src/brief.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/brief.cpp.o -c ../../../../modules/features2d/src/brief.cpp
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/src/brief.cpp.i"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/features2d/src/brief.cpp > CMakeFiles/opencv_features2d.dir/src/brief.cpp.i
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/src/brief.cpp.s"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/features2d/src/brief.cpp -o CMakeFiles/opencv_features2d.dir/src/brief.cpp.s
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.requires:
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.requires
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.requires
-	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.provides.build
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.provides
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o
-
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o: ../../modules/features2d/src/brisk.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o -c ../../../../modules/features2d/src/brisk.cpp
 
@@ -202,7 +156,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o.provides.bui
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o: ../../modules/features2d/src/descriptors.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o -c ../../../../modules/features2d/src/descriptors.cpp
 
@@ -225,7 +179,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o.provid
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o: ../../modules/features2d/src/detectors.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o -c ../../../../modules/features2d/src/detectors.cpp
 
@@ -248,7 +202,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o.provides
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/draw.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/draw.cpp.o: ../../modules/features2d/src/draw.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/draw.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/draw.cpp.o -c ../../../../modules/features2d/src/draw.cpp
 
@@ -271,7 +225,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/draw.cpp.o.provides.buil
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o: ../../modules/features2d/src/dynamic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o -c ../../../../modules/features2d/src/dynamic.cpp
 
@@ -294,7 +248,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/dynamic.cpp.o.provides.b
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o: ../../modules/features2d/src/evaluation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o -c ../../../../modules/features2d/src/evaluation.cpp
 
@@ -317,7 +271,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/evaluation.cpp.o.provide
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o: ../../modules/features2d/src/fast.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/fast.cpp.o -c ../../../../modules/features2d/src/fast.cpp
 
@@ -340,7 +294,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o.provides.buil
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o: ../../modules/features2d/src/fast_score.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o -c ../../../../modules/features2d/src/fast_score.cpp
 
@@ -363,7 +317,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o.provide
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o: ../../modules/features2d/src/features2d_init.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o -c ../../../../modules/features2d/src/features2d_init.cpp
 
@@ -384,32 +338,32 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o.pr
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o: ../../modules/features2d/src/freak.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/freak.cpp.o -c ../../../../modules/features2d/src/freak.cpp
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o: ../../modules/features2d/src/kaze/AKAZEFeatures.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o -c ../../../../modules/features2d/src/kaze/AKAZEFeatures.cpp
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/src/freak.cpp.i"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/features2d/src/freak.cpp > CMakeFiles/opencv_features2d.dir/src/freak.cpp.i
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.i"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/features2d/src/kaze/AKAZEFeatures.cpp > CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.i
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/src/freak.cpp.s"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/features2d/src/freak.cpp -o CMakeFiles/opencv_features2d.dir/src/freak.cpp.s
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.s"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/features2d/src/kaze/AKAZEFeatures.cpp -o CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.s
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.requires:
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.requires
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.requires:
+.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.requires
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.requires
-	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.provides.build
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.provides
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.requires
+	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.provides.build
+.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.provides
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o
+modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o: ../../modules/features2d/src/kaze/fed.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o -c ../../../../modules/features2d/src/kaze/fed.cpp
 
@@ -432,7 +386,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o.provides.
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o: ../../modules/features2d/src/kaze/KAZEFeatures.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o -c ../../../../modules/features2d/src/kaze/KAZEFeatures.cpp
 
@@ -455,7 +409,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o.
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o: ../../modules/features2d/src/kaze/nldiffusion_functions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o -c ../../../../modules/features2d/src/kaze/nldiffusion_functions.cpp
 
@@ -478,7 +432,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functio
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o: ../../modules/features2d/src/kaze.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o -c ../../../../modules/features2d/src/kaze.cpp
 
@@ -501,7 +455,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o.provides.buil
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o: ../../modules/features2d/src/keypoint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o -c ../../../../modules/features2d/src/keypoint.cpp
 
@@ -524,7 +478,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/keypoint.cpp.o.provides.
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o: ../../modules/features2d/src/matchers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o -c ../../../../modules/features2d/src/matchers.cpp
 
@@ -547,7 +501,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o.provides.
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o: ../../modules/features2d/src/mser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/mser.cpp.o -c ../../../../modules/features2d/src/mser.cpp
 
@@ -570,7 +524,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o.provides.buil
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o: ../../modules/features2d/src/orb.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o"
 	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/orb.cpp.o -c ../../../../modules/features2d/src/orb.cpp
 
@@ -591,59 +545,34 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o.provides: modu
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o: ../../modules/features2d/src/stardetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o -c ../../../../modules/features2d/src/stardetector.cpp
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o: modules/features2d/opencl_kernels_features2d.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o -c opencl_kernels_features2d.cpp
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.i"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/features2d/src/stardetector.cpp > CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.i
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.i"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E opencl_kernels_features2d.cpp > CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.i
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.s"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/features2d/src/stardetector.cpp -o CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.s
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.s"
+	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S opencl_kernels_features2d.cpp -o CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.s
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.requires:
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.requires
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.requires:
+.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.requires
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.requires
-	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.provides.build
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.provides
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.requires
+	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.provides.build
+.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.provides
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o: modules/features2d/CMakeFiles/opencv_features2d.dir/flags.make
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o: modules/features2d/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.i"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.i
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.s"
-	cd modules/features2d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.s
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.requires
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.provides: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.provides
-
-modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o
+modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.provides.build: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o
 
 # Object files for target opencv_features2d
 opencv_features2d_OBJECTS = \
-"CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o" \
-"CMakeFiles/opencv_features2d.dir/src/brief.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o" \
@@ -653,7 +582,7 @@ opencv_features2d_OBJECTS = \
 "CMakeFiles/opencv_features2d.dir/src/fast.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o" \
-"CMakeFiles/opencv_features2d.dir/src/freak.cpp.o" \
+"CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o" \
@@ -662,17 +591,14 @@ opencv_features2d_OBJECTS = \
 "CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/mser.cpp.o" \
 "CMakeFiles/opencv_features2d.dir/src/orb.cpp.o" \
-"CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o" \
-"CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o"
 
 # External object files for target opencv_features2d
 opencv_features2d_EXTERNAL_OBJECTS =
 
-lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o
-lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o
@@ -682,7 +608,7 @@ lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_fea
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o
-lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o
+lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o
@@ -691,8 +617,7 @@ lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_fea
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o
-lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o
-lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/build.make
 lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_features2d.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_features2d.a"
@@ -703,11 +628,9 @@ lib/armeabi-v7a/libopencv_features2d.a: modules/features2d/CMakeFiles/opencv_fea
 modules/features2d/CMakeFiles/opencv_features2d.dir/build: lib/armeabi-v7a/libopencv_features2d.a
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/build
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o.requires
-modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o.requires
@@ -717,7 +640,7 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o.requires
-modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o.requires
+modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o.requires
@@ -726,16 +649,15 @@ modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o.requires
 modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o.requires
-modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o.requires
-modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o.requires
+modules/features2d/CMakeFiles/opencv_features2d.dir/requires: modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o.requires
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/requires
 
 modules/features2d/CMakeFiles/opencv_features2d.dir/clean:
 	cd modules/features2d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_features2d.dir/cmake_clean.cmake
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/clean
 
-modules/features2d/CMakeFiles/opencv_features2d.dir/depend: modules/features2d/opencl_kernels.cpp
-modules/features2d/CMakeFiles/opencv_features2d.dir/depend: modules/features2d/opencl_kernels.hpp
+modules/features2d/CMakeFiles/opencv_features2d.dir/depend: modules/features2d/opencl_kernels_features2d.cpp
+modules/features2d/CMakeFiles/opencv_features2d.dir/depend: modules/features2d/opencl_kernels_features2d.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/features2d /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/features2d/CMakeFiles/opencv_features2d.dir/depend
 

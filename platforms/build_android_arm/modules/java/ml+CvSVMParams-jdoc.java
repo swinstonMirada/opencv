@@ -7,14 +7,6 @@ package org.opencv.ml;
 import org.opencv.core.TermCriteria;
 
 // C++: class CvSVMParams
-/**
- * <p>SVM training parameters.</p>
- *
- * <p>The structure must be initialized and passed to the training method of
- * "CvSVM".</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvmparams">org.opencv.ml.CvSVMParams</a>
- */
 public class CvSVMParams {
 
     protected final long nativeObj;
@@ -25,35 +17,6 @@ public class CvSVMParams {
     // C++:   CvSVMParams::CvSVMParams()
     //
 
-/**
- * <p>The constructors.</p>
- *
- * <p>The default constructor initialize the structure with following values:</p>
- *
- * <p><code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>CvSVMParams.CvSVMParams() :</p>
- *
- * <p>svm_type(CvSVM.C_SVC), kernel_type(CvSVM.RBF), degree(0),</p>
- *
- * <p>gamma(1), coef0(0), C(1), nu(0), p(0), class_weights(0)</p>
- *
- *
- * <p>term_crit = cvTermCriteria(CV_TERMCRIT_ITER+CV_TERMCRIT_EPS, 1000,
- * FLT_EPSILON);</p>
- *
- *
- * <p>A comparison of different kernels on the following 2D test case with four
- * classes. Four C_SVC SVMs have been trained (one against rest) with
- * auto_train. Evaluation on three different kernels (CHI2, INTER, RBF). The
- * color depicts the class with max score. Bright means max-score > 0, dark
- * means max-score < 0.
- * </code></p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/support_vector_machines.html#cvsvmparams-cvsvmparams">org.opencv.ml.CvSVMParams.CvSVMParams</a>
- */
     public   CvSVMParams()
     {
 

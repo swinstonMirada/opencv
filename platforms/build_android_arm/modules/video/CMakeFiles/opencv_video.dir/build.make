@@ -52,67 +52,20 @@ include modules/video/CMakeFiles/opencv_video.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/video/CMakeFiles/opencv_video.dir/flags.make
 
-modules/video/opencl_kernels.cpp: ../../modules/video/src/opencl/bgfg_mog2.cl
-modules/video/opencl_kernels.cpp: ../../modules/video/src/opencl/optical_flow_farneback.cl
-modules/video/opencl_kernels.cpp: ../../modules/video/src/opencl/optical_flow_tvl1.cl
-modules/video/opencl_kernels.cpp: ../../modules/video/src/opencl/pyrlk.cl
-modules/video/opencl_kernels.cpp: ../../modules/video/src/opencl/updatemotionhistory.cl
-modules/video/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/video/opencl_kernels_video.cpp: ../../modules/video/src/opencl/bgfg_mog2.cl
+modules/video/opencl_kernels_video.cpp: ../../modules/video/src/opencl/optical_flow_farneback.cl
+modules/video/opencl_kernels_video.cpp: ../../modules/video/src/opencl/optical_flow_tvl1.cl
+modules/video/opencl_kernels_video.cpp: ../../modules/video/src/opencl/pyrlk.cl
+modules/video/opencl_kernels_video.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/video && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="video" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_video.cpp, opencl_kernels_video.hpp"
+	cd modules/video && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="video" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/video/opencl_kernels.hpp: modules/video/opencl_kernels.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o: ../../modules/video/src/affineflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/affineflow.cpp.o -c ../../../../modules/video/src/affineflow.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/src/affineflow.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E ../../../../modules/video/src/affineflow.cpp > CMakeFiles/opencv_video.dir/src/affineflow.cpp.i
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/src/affineflow.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S ../../../../modules/video/src/affineflow.cpp -o CMakeFiles/opencv_video.dir/src/affineflow.cpp.s
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.requires
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.provides
-
-modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o: ../../modules/video/src/bgfg_gaussmix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o -c ../../../../modules/video/src/bgfg_gaussmix.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E ../../../../modules/video/src/bgfg_gaussmix.cpp > CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S ../../../../modules/video/src/bgfg_gaussmix.cpp -o CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.requires
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.provides
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o
+modules/video/opencl_kernels_video.hpp: modules/video/opencl_kernels_video.cpp
 
 modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o: ../../modules/video/src/bgfg_gaussmix2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o -c ../../../../modules/video/src/bgfg_gaussmix2.cpp
 
@@ -133,32 +86,9 @@ modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o.provides: mod
 
 modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o
 
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o: ../../modules/video/src/bgfg_gmg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o -c ../../../../modules/video/src/bgfg_gmg.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E ../../../../modules/video/src/bgfg_gmg.cpp > CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S ../../../../modules/video/src/bgfg_gmg.cpp -o CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.requires
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.provides
-
-modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o
-
 modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o: ../../modules/video/src/bgfg_KNN.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o -c ../../../../modules/video/src/bgfg_KNN.cpp
 
@@ -181,7 +111,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o.provides.build: mod
 
 modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o: ../../modules/video/src/camshift.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/camshift.cpp.o -c ../../../../modules/video/src/camshift.cpp
 
@@ -204,7 +134,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o.provides.build: mod
 
 modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o: ../../modules/video/src/compat_video.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/compat_video.cpp.o -c ../../../../modules/video/src/compat_video.cpp
 
@@ -227,7 +157,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o.provides.build:
 
 modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o: ../../modules/video/src/ecc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/ecc.cpp.o -c ../../../../modules/video/src/ecc.cpp
 
@@ -250,7 +180,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o.provides.build: modules/
 
 modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o: ../../modules/video/src/kalman.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/kalman.cpp.o -c ../../../../modules/video/src/kalman.cpp
 
@@ -273,7 +203,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o.provides.build: modul
 
 modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o: ../../modules/video/src/lkpyramid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o -c ../../../../modules/video/src/lkpyramid.cpp
 
@@ -294,32 +224,9 @@ modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o.provides: modules/
 
 modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o
 
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o: ../../modules/video/src/motempl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/motempl.cpp.o -c ../../../../modules/video/src/motempl.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/src/motempl.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E ../../../../modules/video/src/motempl.cpp > CMakeFiles/opencv_video.dir/src/motempl.cpp.i
-
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/src/motempl.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S ../../../../modules/video/src/motempl.cpp -o CMakeFiles/opencv_video.dir/src/motempl.cpp.s
-
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.requires
-
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.provides
-
-modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o
-
 modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o: ../../modules/video/src/optflowgf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o -c ../../../../modules/video/src/optflowgf.cpp
 
@@ -340,32 +247,9 @@ modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o.provides: modules/
 
 modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o
 
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o: ../../modules/video/src/simpleflow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o -c ../../../../modules/video/src/simpleflow.cpp
-
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E ../../../../modules/video/src/simpleflow.cpp > CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i
-
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S ../../../../modules/video/src/simpleflow.cpp -o CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s
-
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.requires
-
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.provides
-
-modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o
-
 modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o: ../../modules/video/src/tvl1flow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o -c ../../../../modules/video/src/tvl1flow.cpp
 
@@ -388,7 +272,7 @@ modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o.provides.build: mod
 
 modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
 modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o: ../../modules/video/src/video_init.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o"
 	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/src/video_init.cpp.o -c ../../../../modules/video/src/video_init.cpp
 
@@ -409,67 +293,57 @@ modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o.provides: modules
 
 modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o: modules/video/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o: modules/video/CMakeFiles/opencv_video.dir/flags.make
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o: modules/video/opencl_kernels_video.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o"
+	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o -c opencl_kernels_video.cpp
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/opencl_kernels.cpp.i"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_video.dir/opencl_kernels.cpp.i
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.i"
+	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -E opencl_kernels_video.cpp > CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.i
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/opencl_kernels.cpp.s"
-	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_video.dir/opencl_kernels.cpp.s
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.s"
+	cd modules/video && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp" -Winvalid-pch  -S opencl_kernels_video.cpp -o CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.s
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.requires
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.requires:
+.PHONY : modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.requires
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.provides
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.provides: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.requires
+	$(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.provides.build
+.PHONY : modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.provides
 
-modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o
+modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.provides.build: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o
 
 # Object files for target opencv_video
 opencv_video_OBJECTS = \
-"CMakeFiles/opencv_video.dir/src/affineflow.cpp.o" \
-"CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o" \
-"CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/camshift.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/compat_video.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/ecc.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/kalman.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o" \
-"CMakeFiles/opencv_video.dir/src/motempl.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o" \
-"CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o" \
 "CMakeFiles/opencv_video.dir/src/video_init.cpp.o" \
-"CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o"
 
 # External object files for target opencv_video
 opencv_video_EXTERNAL_OBJECTS =
 
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o
-lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/build.make
 lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_video.a"
@@ -480,30 +354,25 @@ lib/armeabi-v7a/libopencv_video.a: modules/video/CMakeFiles/opencv_video.dir/lin
 modules/video/CMakeFiles/opencv_video.dir/build: lib/armeabi-v7a/libopencv_video.a
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/build
 
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o.requires
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.o.requires
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/camshift.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/compat_video.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/ecc.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/kalman.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.o.requires
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.o.requires
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/tvl1flow.cpp.o.requires
 modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/src/video_init.cpp.o.requires
-modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o.requires
+modules/video/CMakeFiles/opencv_video.dir/requires: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o.requires
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/requires
 
 modules/video/CMakeFiles/opencv_video.dir/clean:
 	cd modules/video && $(CMAKE_COMMAND) -P CMakeFiles/opencv_video.dir/cmake_clean.cmake
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/clean
 
-modules/video/CMakeFiles/opencv_video.dir/depend: modules/video/opencl_kernels.cpp
-modules/video/CMakeFiles/opencv_video.dir/depend: modules/video/opencl_kernels.hpp
+modules/video/CMakeFiles/opencv_video.dir/depend: modules/video/opencl_kernels_video.cpp
+modules/video/CMakeFiles/opencv_video.dir/depend: modules/video/opencl_kernels_video.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/video /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/CMakeFiles/opencv_video.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/video/CMakeFiles/opencv_video.dir/depend
 

@@ -14,6 +14,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_arithm.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -21,7 +22,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_arithm.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -358,6 +358,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_arithm.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_arithm.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_bufferpool.cpp.o
@@ -373,6 +374,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_bufferpool.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -380,7 +382,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_bufferpool.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -717,6 +718,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_bufferpool.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_bufferpool.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_channels.cpp.o
@@ -732,6 +734,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_channels.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -739,7 +742,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_channels.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -1076,6 +1078,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_channels.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_channels.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_dxt.cpp.o
@@ -1091,6 +1094,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_dxt.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1098,7 +1102,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_dxt.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -1435,6 +1438,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_dxt.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_dxt.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_gemm.cpp.o
@@ -1450,6 +1454,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_gemm.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1457,7 +1462,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_gemm.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -1794,6 +1798,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_gemm.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_gemm.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_matop.cpp.o
@@ -1809,6 +1814,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_matop.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1816,7 +1822,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_matop.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -2153,6 +2158,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_matop.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_matop.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_usage_flags.cpp.o
@@ -2168,6 +2174,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_usage_flags.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -2175,7 +2182,6 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_usage_flags.cpp.o
  ../../modules/core/include/opencv2/core/types_c.h
  ../../modules/core/include/opencv2/core/utility.hpp
  ../../modules/core/include/opencv2/core/version.hpp
- ../../modules/core/perf/perf_precomp.hpp
  ../../modules/highgui/include/opencv2/highgui.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
@@ -2512,6 +2518,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/opencl/perf_usage_flags.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/opencl/perf_usage_flags.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/core/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_abs.cpp.o
@@ -2525,6 +2532,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_abs.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -2873,6 +2881,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_addWeighted.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -3221,6 +3230,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_arithm.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -3569,6 +3579,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_bitwise.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -3917,6 +3928,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_compare.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -4265,6 +4277,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_convertTo.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -4613,6 +4626,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_dft.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -4961,6 +4975,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_dot.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -5309,6 +5324,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_inRange.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -5657,6 +5673,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_main.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -6005,6 +6022,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_mat.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -6353,6 +6371,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_math.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -6701,6 +6720,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_merge.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -7049,6 +7069,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_minmaxloc.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -7397,6 +7418,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_norm.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -7746,6 +7768,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_reduce.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -8095,6 +8118,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_sort.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -8443,6 +8467,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_split.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -8791,6 +8816,7 @@ modules/core/CMakeFiles/opencv_perf_core.dir/perf/perf_stat.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp

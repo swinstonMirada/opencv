@@ -13,6 +13,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o:
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -25,7 +26,6 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o:
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/photo/include/opencv2/photo.hpp
-modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/photo/perf/perf_precomp.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -358,6 +358,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o:
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/photo/perf/opencl/perf_denoising.cpp
+modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: ../../modules/photo/perf/perf_precomp.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: cvconfig.h
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/opencl/perf_denoising.cpp.o: opencv2/opencv_modules.hpp
 
@@ -374,6 +375,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modul
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_cuda.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -729,6 +731,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../mo
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_inpaint.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1080,6 +1083,7 @@ modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modul
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/photo/CMakeFiles/opencv_perf_photo.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

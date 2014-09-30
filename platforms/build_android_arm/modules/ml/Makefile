@@ -342,30 +342,6 @@ src/boost.cpp.s:
 	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.s
 .PHONY : src/boost.cpp.s
 
-src/cnn.o: src/cnn.cpp.o
-.PHONY : src/cnn.o
-
-# target to build an object file
-src/cnn.cpp.o:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o
-.PHONY : src/cnn.cpp.o
-
-src/cnn.i: src/cnn.cpp.i
-.PHONY : src/cnn.i
-
-# target to preprocess a source file
-src/cnn.cpp.i:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.i
-.PHONY : src/cnn.cpp.i
-
-src/cnn.s: src/cnn.cpp.s
-.PHONY : src/cnn.s
-
-# target to generate assembly for a file
-src/cnn.cpp.s:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.s
-.PHONY : src/cnn.cpp.s
-
 src/data.o: src/data.cpp.o
 .PHONY : src/data.o
 
@@ -413,54 +389,6 @@ src/em.s: src/em.cpp.s
 src/em.cpp.s:
 	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.s
 .PHONY : src/em.cpp.s
-
-src/ertrees.o: src/ertrees.cpp.o
-.PHONY : src/ertrees.o
-
-# target to build an object file
-src/ertrees.cpp.o:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o
-.PHONY : src/ertrees.cpp.o
-
-src/ertrees.i: src/ertrees.cpp.i
-.PHONY : src/ertrees.i
-
-# target to preprocess a source file
-src/ertrees.cpp.i:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.i
-.PHONY : src/ertrees.cpp.i
-
-src/ertrees.s: src/ertrees.cpp.s
-.PHONY : src/ertrees.s
-
-# target to generate assembly for a file
-src/ertrees.cpp.s:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.s
-.PHONY : src/ertrees.cpp.s
-
-src/estimate.o: src/estimate.cpp.o
-.PHONY : src/estimate.o
-
-# target to build an object file
-src/estimate.cpp.o:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o
-.PHONY : src/estimate.cpp.o
-
-src/estimate.i: src/estimate.cpp.i
-.PHONY : src/estimate.i
-
-# target to preprocess a source file
-src/estimate.cpp.i:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.i
-.PHONY : src/estimate.cpp.i
-
-src/estimate.s: src/estimate.cpp.s
-.PHONY : src/estimate.s
-
-# target to generate assembly for a file
-src/estimate.cpp.s:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.s
-.PHONY : src/estimate.cpp.s
 
 src/gbt.o: src/gbt.cpp.o
 .PHONY : src/gbt.o
@@ -510,6 +438,30 @@ src/inner_functions.cpp.s:
 	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.s
 .PHONY : src/inner_functions.cpp.s
 
+src/kdtree.o: src/kdtree.cpp.o
+.PHONY : src/kdtree.o
+
+# target to build an object file
+src/kdtree.cpp.o:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o
+.PHONY : src/kdtree.cpp.o
+
+src/kdtree.i: src/kdtree.cpp.i
+.PHONY : src/kdtree.i
+
+# target to preprocess a source file
+src/kdtree.cpp.i:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.i
+.PHONY : src/kdtree.cpp.i
+
+src/kdtree.s: src/kdtree.cpp.s
+.PHONY : src/kdtree.s
+
+# target to generate assembly for a file
+src/kdtree.cpp.s:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.s
+.PHONY : src/kdtree.cpp.s
+
 src/knearest.o: src/knearest.cpp.o
 .PHONY : src/knearest.o
 
@@ -534,29 +486,29 @@ src/knearest.cpp.s:
 	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.s
 .PHONY : src/knearest.cpp.s
 
-src/ml_init.o: src/ml_init.cpp.o
-.PHONY : src/ml_init.o
+src/lr.o: src/lr.cpp.o
+.PHONY : src/lr.o
 
 # target to build an object file
-src/ml_init.cpp.o:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o
-.PHONY : src/ml_init.cpp.o
+src/lr.cpp.o:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o
+.PHONY : src/lr.cpp.o
 
-src/ml_init.i: src/ml_init.cpp.i
-.PHONY : src/ml_init.i
+src/lr.i: src/lr.cpp.i
+.PHONY : src/lr.i
 
 # target to preprocess a source file
-src/ml_init.cpp.i:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.i
-.PHONY : src/ml_init.cpp.i
+src/lr.cpp.i:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.i
+.PHONY : src/lr.cpp.i
 
-src/ml_init.s: src/ml_init.cpp.s
-.PHONY : src/ml_init.s
+src/lr.s: src/lr.cpp.s
+.PHONY : src/lr.s
 
 # target to generate assembly for a file
-src/ml_init.cpp.s:
-	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.s
-.PHONY : src/ml_init.cpp.s
+src/lr.cpp.s:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.s
+.PHONY : src/lr.cpp.s
 
 src/nbayes.o: src/nbayes.cpp.o
 .PHONY : src/nbayes.o
@@ -726,6 +678,30 @@ test/test_gbttest.cpp.s:
 	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.s
 .PHONY : test/test_gbttest.cpp.s
 
+test/test_lr.o: test/test_lr.cpp.o
+.PHONY : test/test_lr.o
+
+# target to build an object file
+test/test_lr.cpp.o:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o
+.PHONY : test/test_lr.cpp.o
+
+test/test_lr.i: test/test_lr.cpp.i
+.PHONY : test/test_lr.i
+
+# target to preprocess a source file
+test/test_lr.cpp.i:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.i
+.PHONY : test/test_lr.cpp.i
+
+test/test_lr.s: test/test_lr.cpp.s
+.PHONY : test/test_lr.s
+
+# target to generate assembly for a file
+test/test_lr.cpp.s:
+	cd ../.. && $(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.s
+.PHONY : test/test_lr.cpp.s
+
 test/test_main.o: test/test_main.cpp.o
 .PHONY : test/test_main.o
 
@@ -854,33 +830,27 @@ help:
 	@echo "... src/boost.o"
 	@echo "... src/boost.i"
 	@echo "... src/boost.s"
-	@echo "... src/cnn.o"
-	@echo "... src/cnn.i"
-	@echo "... src/cnn.s"
 	@echo "... src/data.o"
 	@echo "... src/data.i"
 	@echo "... src/data.s"
 	@echo "... src/em.o"
 	@echo "... src/em.i"
 	@echo "... src/em.s"
-	@echo "... src/ertrees.o"
-	@echo "... src/ertrees.i"
-	@echo "... src/ertrees.s"
-	@echo "... src/estimate.o"
-	@echo "... src/estimate.i"
-	@echo "... src/estimate.s"
 	@echo "... src/gbt.o"
 	@echo "... src/gbt.i"
 	@echo "... src/gbt.s"
 	@echo "... src/inner_functions.o"
 	@echo "... src/inner_functions.i"
 	@echo "... src/inner_functions.s"
+	@echo "... src/kdtree.o"
+	@echo "... src/kdtree.i"
+	@echo "... src/kdtree.s"
 	@echo "... src/knearest.o"
 	@echo "... src/knearest.i"
 	@echo "... src/knearest.s"
-	@echo "... src/ml_init.o"
-	@echo "... src/ml_init.i"
-	@echo "... src/ml_init.s"
+	@echo "... src/lr.o"
+	@echo "... src/lr.i"
+	@echo "... src/lr.s"
 	@echo "... src/nbayes.o"
 	@echo "... src/nbayes.i"
 	@echo "... src/nbayes.s"
@@ -902,6 +872,9 @@ help:
 	@echo "... test/test_gbttest.o"
 	@echo "... test/test_gbttest.i"
 	@echo "... test/test_gbttest.s"
+	@echo "... test/test_lr.o"
+	@echo "... test/test_lr.i"
+	@echo "... test/test_lr.s"
 	@echo "... test/test_main.o"
 	@echo "... test/test_main.i"
 	@echo "... test/test_main.s"

@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -136,6 +140,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -211,40 +219,12 @@ opencv2/core/core_c.h
 ../../modules/objdetect/include/opencv2/objdetect.hpp
 opencv2/core.hpp
 ../../modules/objdetect/include/opencv2/opencv2/core.hpp
-opencv2/objdetect/linemod.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/linemod.hpp
-opencv2/objdetect/erfilter.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/erfilter.hpp
 opencv2/objdetect/detection_based_tracker.hpp
 ../../modules/objdetect/include/opencv2/opencv2/objdetect/detection_based_tracker.hpp
 
 ../../modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
 vector
 -
-
-../../modules/objdetect/include/opencv2/objdetect/erfilter.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-vector
--
-deque
--
-string
--
-
-../../modules/objdetect/include/opencv2/objdetect/linemod.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-map
--
-
-../../modules/objdetect/perf/perf_precomp.hpp
-opencv2/ts.hpp
-../../modules/objdetect/perf/opencv2/ts.hpp
-opencv2/objdetect.hpp
-../../modules/objdetect/perf/opencv2/objdetect.hpp
-opencv2/highgui.hpp
-../../modules/objdetect/perf/opencv2/highgui.hpp
 
 ../../modules/ts/include/opencv2/ts.hpp
 opencv2/core/cvdef.h
@@ -1236,22 +1216,6 @@ bits/c++config.h
 type_traits
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
-bits/functexcept.h
--
-bits/concept_check.h
--
-initializer_list
--
-tuple
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
-bits/concept_check.h
--
-initializer_list
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 bits/concept_check.h
 -
@@ -1491,30 +1455,6 @@ debug/formatter.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
-map
--
-debug/map.h
--
-debug/multimap.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
-debug/safe_sequence.h
--
-debug/safe_iterator.h
--
-utility
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
-debug/safe_sequence.h
--
-debug/safe_iterator.h
--
-utility
--
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 debug/safe_sequence.h
@@ -1854,20 +1794,6 @@ bits/locale_classes.h
 bits/locale_facets.h
 -
 bits/locale_facets_nonio.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
-bits/stl_tree.h
--
-bits/stl_map.h
--
-bits/stl_multimap.h
--
-bits/range_access.h
--
-debug/map
--
-profile/map
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
@@ -2454,24 +2380,6 @@ profile/impl/profiler_trace.h
 ext/type_traits.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
-map
--
-profile/map.h
--
-profile/multimap.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
-utility
--
-profile/base.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
-utility
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 utility
 -
@@ -2921,16 +2829,16 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/perf_cascades.cpp
-perf_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/perf_precomp.hpp
+../perf_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/perf_precomp.hpp
 opencv2/imgproc.hpp
 -
 opencv2/ts/ocl_perf.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/opencv2/ts/ocl_perf.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp
-perf_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/perf_precomp.hpp
+../perf_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/perf_precomp.hpp
 opencv2/ts/ocl_perf.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/perf/opencl/opencv2/ts/ocl_perf.hpp
 

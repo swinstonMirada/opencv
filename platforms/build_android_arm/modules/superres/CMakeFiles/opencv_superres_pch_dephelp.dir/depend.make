@@ -19,6 +19,7 @@ modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/opengl.hpp
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.cuda.hpp
 modules/superres/CMakeFiles/opencv_superres_pch_dephelp.dir/opencv_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp

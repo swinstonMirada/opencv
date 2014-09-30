@@ -11,6 +11,7 @@ modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modu
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_emdl1.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -367,6 +368,7 @@ modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_hausdorff.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -723,6 +725,7 @@ modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modul
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1079,6 +1082,7 @@ modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../mo
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_precomp.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1435,6 +1439,7 @@ modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modu
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/shape/CMakeFiles/opencv_test_shape.dir/test/test_shape.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

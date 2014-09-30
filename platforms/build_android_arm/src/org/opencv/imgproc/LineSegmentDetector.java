@@ -20,7 +20,7 @@ public class LineSegmentDetector extends Algorithm {
 
 
     //
-    // C++:  int LineSegmentDetector::compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
+    // C++:  int compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
     //
 
 /**
@@ -64,7 +64,7 @@ public class LineSegmentDetector extends Algorithm {
 
 
     //
-    // C++:  void LineSegmentDetector::detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
+    // C++:  void detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
     //
 
     public  void detect(Mat _image, Mat _lines, Mat width, Mat prec, Mat nfa)
@@ -85,7 +85,7 @@ public class LineSegmentDetector extends Algorithm {
 
 
     //
-    // C++:  void LineSegmentDetector::drawSegments(Mat& _image, Mat lines)
+    // C++:  void drawSegments(Mat& _image, Mat lines)
     //
 
 /**
@@ -112,15 +112,15 @@ public class LineSegmentDetector extends Algorithm {
 
 
 
-    // C++:  int LineSegmentDetector::compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
+    // C++:  int compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
     private static native int compareSegments_0(long nativeObj, double size_width, double size_height, long lines1_nativeObj, long lines2_nativeObj, long _image_nativeObj);
     private static native int compareSegments_1(long nativeObj, double size_width, double size_height, long lines1_nativeObj, long lines2_nativeObj);
 
-    // C++:  void LineSegmentDetector::detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
+    // C++:  void detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
     private static native void detect_0(long nativeObj, long _image_nativeObj, long _lines_nativeObj, long width_nativeObj, long prec_nativeObj, long nfa_nativeObj);
     private static native void detect_1(long nativeObj, long _image_nativeObj, long _lines_nativeObj);
 
-    // C++:  void LineSegmentDetector::drawSegments(Mat& _image, Mat lines)
+    // C++:  void drawSegments(Mat& _image, Mat lines)
     private static native void drawSegments_0(long nativeObj, long _image_nativeObj, long lines_nativeObj);
 
     // native support for java finalize()

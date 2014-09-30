@@ -15,6 +15,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/incl
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_perf.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -493,6 +494,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/incl
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/cuda_test.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -848,6 +850,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/inclu
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_perf.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1331,6 +1334,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/inclu
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ocl_test.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1812,6 +1816,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/ope
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2292,6 +2297,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/inc
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_arrtest.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2765,6 +2771,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/includ
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_func.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -3237,6 +3244,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/inclu
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_gtest.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -3739,6 +3747,7 @@ modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/includ
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts.dir/src/ts_perf.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

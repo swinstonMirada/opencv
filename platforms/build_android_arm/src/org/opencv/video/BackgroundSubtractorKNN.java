@@ -21,7 +21,152 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setDetectShadows(bool detectShadows)
+    // C++:  bool getDetectShadows()
+    //
+
+/**
+ * <p>Returns the shadow detection flag</p>
+ *
+ * <p>If true, the algorithm detects shadows and marks them. See createBackgroundSubtractorKNN
+ * for details.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getdetectshadows">org.opencv.video.BackgroundSubtractorKNN.getDetectShadows</a>
+ */
+    public  boolean getDetectShadows()
+    {
+
+        boolean retVal = getDetectShadows_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getDist2Threshold()
+    //
+
+/**
+ * <p>Returns the threshold on the squared distance between the pixel and the
+ * sample</p>
+ *
+ * <p>The threshold on the squared distance between the pixel and the sample to
+ * decide whether a pixel is close to a data sample.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getdist2threshold">org.opencv.video.BackgroundSubtractorKNN.getDist2Threshold</a>
+ */
+    public  double getDist2Threshold()
+    {
+
+        double retVal = getDist2Threshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getHistory()
+    //
+
+/**
+ * <p>Returns the number of last frames that affect the background model</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-gethistory">org.opencv.video.BackgroundSubtractorKNN.getHistory</a>
+ */
+    public  int getHistory()
+    {
+
+        int retVal = getHistory_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getNSamples()
+    //
+
+/**
+ * <p>Returns the number of data samples in the background model</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getnsamples">org.opencv.video.BackgroundSubtractorKNN.getNSamples</a>
+ */
+    public  int getNSamples()
+    {
+
+        int retVal = getNSamples_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getShadowThreshold()
+    //
+
+/**
+ * <p>Returns the shadow threshold</p>
+ *
+ * <p>A shadow is detected if pixel is a darker version of the background. The
+ * shadow threshold (<code>Tau</code> in the paper) is a threshold defining how
+ * much darker the shadow can be. <code>Tau= 0.5</code> means that if a pixel is
+ * more than twice darker then it is not shadow. See Prati, Mikic, Trivedi and
+ * Cucchiarra, *Detecting Moving Shadows...*, IEEE PAMI,2003.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getshadowthreshold">org.opencv.video.BackgroundSubtractorKNN.getShadowThreshold</a>
+ */
+    public  double getShadowThreshold()
+    {
+
+        double retVal = getShadowThreshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getShadowValue()
+    //
+
+/**
+ * <p>Returns the shadow value</p>
+ *
+ * <p>Shadow value is the value used to mark shadows in the foreground mask.
+ * Default value is 127. Value 0 in the mask always means background, 255 means
+ * foreground.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getshadowvalue">org.opencv.video.BackgroundSubtractorKNN.getShadowValue</a>
+ */
+    public  int getShadowValue()
+    {
+
+        int retVal = getShadowValue_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getkNNSamples()
+    //
+
+/**
+ * <p>Returns the number of neighbours, the k in the kNN. K is the number of
+ * samples that need to be within dist2Threshold in order to decide that that
+ * pixel is matching the kNN background model.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractorknn-getknnsamples">org.opencv.video.BackgroundSubtractorKNN.getkNNSamples</a>
+ */
+    public  int getkNNSamples()
+    {
+
+        int retVal = getkNNSamples_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void setDetectShadows(bool detectShadows)
     //
 
 /**
@@ -41,7 +186,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setDist2Threshold(double _dist2Threshold)
+    // C++:  void setDist2Threshold(double _dist2Threshold)
     //
 
 /**
@@ -61,7 +206,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setHistory(int history)
+    // C++:  void setHistory(int history)
     //
 
 /**
@@ -81,7 +226,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setNSamples(int _nN)
+    // C++:  void setNSamples(int _nN)
     //
 
 /**
@@ -102,7 +247,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setShadowThreshold(double threshold)
+    // C++:  void setShadowThreshold(double threshold)
     //
 
 /**
@@ -122,7 +267,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setShadowValue(int value)
+    // C++:  void setShadowValue(int value)
     //
 
 /**
@@ -142,7 +287,7 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorKNN::setkNNSamples(int _nkNN)
+    // C++:  void setkNNSamples(int _nkNN)
     //
 
 /**
@@ -168,25 +313,46 @@ public class BackgroundSubtractorKNN extends BackgroundSubtractor {
 
 
 
-    // C++:  void BackgroundSubtractorKNN::setDetectShadows(bool detectShadows)
+    // C++:  bool getDetectShadows()
+    private static native boolean getDetectShadows_0(long nativeObj);
+
+    // C++:  double getDist2Threshold()
+    private static native double getDist2Threshold_0(long nativeObj);
+
+    // C++:  int getHistory()
+    private static native int getHistory_0(long nativeObj);
+
+    // C++:  int getNSamples()
+    private static native int getNSamples_0(long nativeObj);
+
+    // C++:  double getShadowThreshold()
+    private static native double getShadowThreshold_0(long nativeObj);
+
+    // C++:  int getShadowValue()
+    private static native int getShadowValue_0(long nativeObj);
+
+    // C++:  int getkNNSamples()
+    private static native int getkNNSamples_0(long nativeObj);
+
+    // C++:  void setDetectShadows(bool detectShadows)
     private static native void setDetectShadows_0(long nativeObj, boolean detectShadows);
 
-    // C++:  void BackgroundSubtractorKNN::setDist2Threshold(double _dist2Threshold)
+    // C++:  void setDist2Threshold(double _dist2Threshold)
     private static native void setDist2Threshold_0(long nativeObj, double _dist2Threshold);
 
-    // C++:  void BackgroundSubtractorKNN::setHistory(int history)
+    // C++:  void setHistory(int history)
     private static native void setHistory_0(long nativeObj, int history);
 
-    // C++:  void BackgroundSubtractorKNN::setNSamples(int _nN)
+    // C++:  void setNSamples(int _nN)
     private static native void setNSamples_0(long nativeObj, int _nN);
 
-    // C++:  void BackgroundSubtractorKNN::setShadowThreshold(double threshold)
+    // C++:  void setShadowThreshold(double threshold)
     private static native void setShadowThreshold_0(long nativeObj, double threshold);
 
-    // C++:  void BackgroundSubtractorKNN::setShadowValue(int value)
+    // C++:  void setShadowValue(int value)
     private static native void setShadowValue_0(long nativeObj, int value);
 
-    // C++:  void BackgroundSubtractorKNN::setkNNSamples(int _nkNN)
+    // C++:  void setkNNSamples(int _nkNN)
     private static native void setkNNSamples_0(long nativeObj, int _nkNN);
 
     // native support for java finalize()

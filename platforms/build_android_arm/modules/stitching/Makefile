@@ -288,29 +288,29 @@ pch_Generate_opencv_test_stitching/fast:
 	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/pch_Generate_opencv_test_stitching.dir/build.make modules/stitching/CMakeFiles/pch_Generate_opencv_test_stitching.dir/build
 .PHONY : pch_Generate_opencv_test_stitching/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_stitching.o: opencl_kernels_stitching.cpp.o
+.PHONY : opencl_kernels_stitching.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_stitching.cpp.o:
+	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o
+.PHONY : opencl_kernels_stitching.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_stitching.i: opencl_kernels_stitching.cpp.i
+.PHONY : opencl_kernels_stitching.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_stitching.cpp.i:
+	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.i
+.PHONY : opencl_kernels_stitching.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_stitching.s: opencl_kernels_stitching.cpp.s
+.PHONY : opencl_kernels_stitching.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_stitching.cpp.s:
+	cd ../.. && $(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.s
+.PHONY : opencl_kernels_stitching.cpp.s
 
 opencv_perf_stitching_pch_dephelp.o: opencv_perf_stitching_pch_dephelp.cxx.o
 .PHONY : opencv_perf_stitching_pch_dephelp.o
@@ -863,9 +863,9 @@ help:
 	@echo "... pch_Generate_opencv_stitching"
 	@echo "... pch_Generate_opencv_test_stitching"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_stitching.o"
+	@echo "... opencl_kernels_stitching.i"
+	@echo "... opencl_kernels_stitching.s"
 	@echo "... opencv_perf_stitching_pch_dephelp.o"
 	@echo "... opencv_perf_stitching_pch_dephelp.i"
 	@echo "... opencv_perf_stitching_pch_dephelp.s"

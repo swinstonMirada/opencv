@@ -6,6 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_emknearestkmeans.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_emknearestkmeans.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_gbttest.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_lr.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_main.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_mltests.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/ml/test/test_mltests2.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o"
@@ -39,22 +40,20 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/ml/test"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "../../modules/ml/include"
-  "modules/ml"
-  "../../modules/ml/src"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include"
   "/usr/local/include/eigen3"
+  "../../modules/ml/include"
+  "../../modules/ts/include"
+  "../../modules/imgcodecs/include"
+  "../../modules/videoio/include"
+  "../../modules/core/include"
+  "../../modules/androidcamera/include"
+  "../../modules/imgproc/include"
+  "../../modules/highgui/include"
+  "../../modules/ml/test"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

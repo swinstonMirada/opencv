@@ -15,6 +15,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc_pch_dephelp.dir/opencv_imgproc_pch_dep
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/private.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -315,6 +316,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc_pch_dephelp.dir/opencv_imgproc_pch_dep
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/gthr.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/_geom.h
+ /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filterengine.hpp
  /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/precomp.hpp
  /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencv_imgproc_pch_dephelp.cxx
  /usr/local/include/eigen3/Eigen/Core

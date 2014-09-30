@@ -167,9 +167,32 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o.provides: 
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o.provides.build: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o
 
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o: ../../modules/imgcodecs/src/grfmt_gdal.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o"
+	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_gdal.cpp
+
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.i"
+	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -E ../../../../modules/imgcodecs/src/grfmt_gdal.cpp > CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.i
+
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.s"
+	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -S ../../../../modules/imgcodecs/src/grfmt_gdal.cpp -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.s
+
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.requires:
+.PHONY : modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.requires
+
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.provides: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.requires
+	$(MAKE) -f modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.provides.build
+.PHONY : modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.provides
+
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.provides.build: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o
+
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o: ../../modules/imgcodecs/src/grfmt_hdr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_hdr.cpp
 
@@ -192,7 +215,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o.provides.b
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o: ../../modules/imgcodecs/src/grfmt_jpeg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_jpeg.cpp
 
@@ -215,7 +238,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o.provides.
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o: ../../modules/imgcodecs/src/grfmt_jpeg2000.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_jpeg2000.cpp
 
@@ -238,7 +261,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o.provi
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o: ../../modules/imgcodecs/src/grfmt_png.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_png.cpp
 
@@ -261,7 +284,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_png.cpp.o.provides.b
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o: ../../modules/imgcodecs/src/grfmt_pxm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_pxm.cpp
 
@@ -284,7 +307,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_pxm.cpp.o.provides.b
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o: ../../modules/imgcodecs/src/grfmt_sunras.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_sunras.cpp
 
@@ -307,7 +330,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_sunras.cpp.o.provide
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o: ../../modules/imgcodecs/src/grfmt_tiff.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_tiff.cpp
 
@@ -330,7 +353,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_tiff.cpp.o.provides.
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o: ../../modules/imgcodecs/src/grfmt_webp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o -c ../../../../modules/imgcodecs/src/grfmt_webp.cpp
 
@@ -353,7 +376,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_webp.cpp.o.provides.
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o: ../../modules/imgcodecs/src/bitstrm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o -c ../../../../modules/imgcodecs/src/bitstrm.cpp
 
@@ -376,7 +399,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/bitstrm.cpp.o.provides.bui
 
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/flags.make
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o: ../../modules/imgcodecs/src/rgbe.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o"
 	cd modules/imgcodecs && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgcodecs.dir/src/rgbe.cpp.o -c ../../../../modules/imgcodecs/src/rgbe.cpp
 
@@ -404,6 +427,7 @@ opencv_imgcodecs_OBJECTS = \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o" \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o" \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o" \
+"CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o" \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o" \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o" \
 "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o" \
@@ -423,6 +447,7 @@ lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgco
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o
+lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o
 lib/armeabi-v7a/libopencv_imgcodecs.a: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o
@@ -448,6 +473,7 @@ modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CM
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o.requires
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o.requires
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o.requires
+modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o.requires
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o.requires
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o.requires
 modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/requires: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o.requires

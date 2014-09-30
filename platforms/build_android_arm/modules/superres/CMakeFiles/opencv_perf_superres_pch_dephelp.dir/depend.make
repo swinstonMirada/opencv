@@ -14,6 +14,7 @@ modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_sup
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres_pch_dephelp.dir/opencv_perf_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp

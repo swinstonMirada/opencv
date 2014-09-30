@@ -13,6 +13,7 @@ modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dep
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/highgui/CMakeFiles/opencv_highgui_pch_dephelp.dir/opencv_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

@@ -11,6 +11,7 @@ modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/photo/CMakeFiles/opencv_test_photo_pch_dephelp.dir/opencv_test_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp

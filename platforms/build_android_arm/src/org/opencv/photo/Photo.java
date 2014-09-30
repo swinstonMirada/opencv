@@ -79,77 +79,371 @@ public class Photo {
     // C++:  Ptr_AlignMTB createAlignMTB(int max_bits = 6, int exclude_range = 4, bool cut = true)
     //
 
-    // Return type 'Ptr_AlignMTB' is not supported, skipping the function
+/**
+ * <p>Creates AlignMTB object</p>
+ *
+ * @param max_bits logarithm to the base 2 of maximal shift in each dimension.
+ * Values of 5 and 6 are usually good enough (31 and 63 pixels shift
+ * respectively).
+ * @param exclude_range range for exclusion bitmap that is constructed to
+ * suppress noise around the median value.
+ * @param cut if true cuts images, otherwise fills the new regions with zeros.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createalignmtb">org.opencv.photo.Photo.createAlignMTB</a>
+ */
+    public static AlignMTB createAlignMTB(int max_bits, int exclude_range, boolean cut)
+    {
+
+        AlignMTB retVal = new AlignMTB(createAlignMTB_0(max_bits, exclude_range, cut));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates AlignMTB object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createalignmtb">org.opencv.photo.Photo.createAlignMTB</a>
+ */
+    public static AlignMTB createAlignMTB()
+    {
+
+        AlignMTB retVal = new AlignMTB(createAlignMTB_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_CalibrateDebevec createCalibrateDebevec(int samples = 70, float lambda = 10.0f, bool random = false)
     //
 
-    // Return type 'Ptr_CalibrateDebevec' is not supported, skipping the function
+/**
+ * <p>Creates CalibrateDebevec object</p>
+ *
+ * @param samples number of pixel locations to use
+ * @param lambda smoothness term weight. Greater values produce smoother
+ * results, but can alter the response.
+ * @param random if true sample pixel locations are chosen at random, otherwise
+ * the form a rectangular grid.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createcalibratedebevec">org.opencv.photo.Photo.createCalibrateDebevec</a>
+ */
+    public static CalibrateDebevec createCalibrateDebevec(int samples, float lambda, boolean random)
+    {
+
+        CalibrateDebevec retVal = new CalibrateDebevec(createCalibrateDebevec_0(samples, lambda, random));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates CalibrateDebevec object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createcalibratedebevec">org.opencv.photo.Photo.createCalibrateDebevec</a>
+ */
+    public static CalibrateDebevec createCalibrateDebevec()
+    {
+
+        CalibrateDebevec retVal = new CalibrateDebevec(createCalibrateDebevec_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_CalibrateRobertson createCalibrateRobertson(int max_iter = 30, float threshold = 0.01f)
     //
 
-    // Return type 'Ptr_CalibrateRobertson' is not supported, skipping the function
+/**
+ * <p>Creates CalibrateRobertson object</p>
+ *
+ * @param max_iter maximal number of Gauss-Seidel solver iterations.
+ * @param threshold target difference between results of two successive steps of
+ * the minimization.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createcalibraterobertson">org.opencv.photo.Photo.createCalibrateRobertson</a>
+ */
+    public static CalibrateRobertson createCalibrateRobertson(int max_iter, float threshold)
+    {
+
+        CalibrateRobertson retVal = new CalibrateRobertson(createCalibrateRobertson_0(max_iter, threshold));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates CalibrateRobertson object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createcalibraterobertson">org.opencv.photo.Photo.createCalibrateRobertson</a>
+ */
+    public static CalibrateRobertson createCalibrateRobertson()
+    {
+
+        CalibrateRobertson retVal = new CalibrateRobertson(createCalibrateRobertson_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_MergeDebevec createMergeDebevec()
     //
 
-    // Return type 'Ptr_MergeDebevec' is not supported, skipping the function
+/**
+ * <p>Creates MergeDebevec object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createmergedebevec">org.opencv.photo.Photo.createMergeDebevec</a>
+ */
+    public static MergeDebevec createMergeDebevec()
+    {
+
+        MergeDebevec retVal = new MergeDebevec(createMergeDebevec_0());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_MergeMertens createMergeMertens(float contrast_weight = 1.0f, float saturation_weight = 1.0f, float exposure_weight = 0.0f)
     //
 
-    // Return type 'Ptr_MergeMertens' is not supported, skipping the function
+/**
+ * <p>Creates MergeMertens object</p>
+ *
+ * @param contrast_weight contrast measure weight. See "MergeMertens".
+ * @param saturation_weight saturation measure weight
+ * @param exposure_weight well-exposedness measure weight
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createmergemertens">org.opencv.photo.Photo.createMergeMertens</a>
+ */
+    public static MergeMertens createMergeMertens(float contrast_weight, float saturation_weight, float exposure_weight)
+    {
+
+        MergeMertens retVal = new MergeMertens(createMergeMertens_0(contrast_weight, saturation_weight, exposure_weight));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates MergeMertens object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createmergemertens">org.opencv.photo.Photo.createMergeMertens</a>
+ */
+    public static MergeMertens createMergeMertens()
+    {
+
+        MergeMertens retVal = new MergeMertens(createMergeMertens_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_MergeRobertson createMergeRobertson()
     //
 
-    // Return type 'Ptr_MergeRobertson' is not supported, skipping the function
+/**
+ * <p>Creates MergeRobertson object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createmergerobertson">org.opencv.photo.Photo.createMergeRobertson</a>
+ */
+    public static MergeRobertson createMergeRobertson()
+    {
+
+        MergeRobertson retVal = new MergeRobertson(createMergeRobertson_0());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_Tonemap createTonemap(float gamma = 1.0f)
     //
 
-    // Return type 'Ptr_Tonemap' is not supported, skipping the function
+/**
+ * <p>Creates simple linear mapper with gamma correction</p>
+ *
+ * @param gamma positive value for gamma correction. Gamma value of 1.0 implies
+ * no correction, gamma equal to 2.2f is suitable for most displays.
+ *
+ * <p>Generally gamma > 1 brightens the image and gamma < 1 darkens it.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemap">org.opencv.photo.Photo.createTonemap</a>
+ */
+    public static Tonemap createTonemap(float gamma)
+    {
+
+        Tonemap retVal = new Tonemap(createTonemap_0(gamma));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates simple linear mapper with gamma correction</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemap">org.opencv.photo.Photo.createTonemap</a>
+ */
+    public static Tonemap createTonemap()
+    {
+
+        Tonemap retVal = new Tonemap(createTonemap_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_TonemapDrago createTonemapDrago(float gamma = 1.0f, float saturation = 1.0f, float bias = 0.85f)
     //
 
-    // Return type 'Ptr_TonemapDrago' is not supported, skipping the function
+/**
+ * <p>Creates TonemapDrago object</p>
+ *
+ * @param gamma gamma value for gamma correction. See "createTonemap"
+ * @param saturation positive saturation enhancement value. 1.0 preserves
+ * saturation, values greater than 1 increase saturation and values less than 1
+ * decrease it.
+ * @param bias value for bias function in [0, 1] range. Values from 0.7 to 0.9
+ * usually give best results, default value is 0.85.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapdrago">org.opencv.photo.Photo.createTonemapDrago</a>
+ */
+    public static TonemapDrago createTonemapDrago(float gamma, float saturation, float bias)
+    {
+
+        TonemapDrago retVal = new TonemapDrago(createTonemapDrago_0(gamma, saturation, bias));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates TonemapDrago object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapdrago">org.opencv.photo.Photo.createTonemapDrago</a>
+ */
+    public static TonemapDrago createTonemapDrago()
+    {
+
+        TonemapDrago retVal = new TonemapDrago(createTonemapDrago_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_TonemapDurand createTonemapDurand(float gamma = 1.0f, float contrast = 4.0f, float saturation = 1.0f, float sigma_space = 2.0f, float sigma_color = 2.0f)
     //
 
-    // Return type 'Ptr_TonemapDurand' is not supported, skipping the function
+/**
+ * <p>Creates TonemapDurand object</p>
+ *
+ * @param gamma gamma value for gamma correction. See "createTonemap"
+ * @param contrast resulting contrast on logarithmic scale, i. e. log(max /
+ * min), where max and min are maximum and minimum luminance values of the
+ * resulting image.
+ * @param saturation saturation enhancement value. See "createTonemapDrago"
+ * @param sigma_space bilateral filter sigma in color space
+ * @param sigma_color bilateral filter sigma in coordinate space
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapdurand">org.opencv.photo.Photo.createTonemapDurand</a>
+ */
+    public static TonemapDurand createTonemapDurand(float gamma, float contrast, float saturation, float sigma_space, float sigma_color)
+    {
+
+        TonemapDurand retVal = new TonemapDurand(createTonemapDurand_0(gamma, contrast, saturation, sigma_space, sigma_color));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates TonemapDurand object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapdurand">org.opencv.photo.Photo.createTonemapDurand</a>
+ */
+    public static TonemapDurand createTonemapDurand()
+    {
+
+        TonemapDurand retVal = new TonemapDurand(createTonemapDurand_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_TonemapMantiuk createTonemapMantiuk(float gamma = 1.0f, float scale = 0.7f, float saturation = 1.0f)
     //
 
-    // Return type 'Ptr_TonemapMantiuk' is not supported, skipping the function
+/**
+ * <p>Creates TonemapMantiuk object</p>
+ *
+ * @param gamma gamma value for gamma correction. See "createTonemap"
+ * @param scale contrast scale factor. HVS response is multiplied by this
+ * parameter, thus compressing dynamic range. Values from 0.6 to 0.9 produce
+ * best results.
+ * @param saturation saturation enhancement value. See "createTonemapDrago"
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapmantiuk">org.opencv.photo.Photo.createTonemapMantiuk</a>
+ */
+    public static TonemapMantiuk createTonemapMantiuk(float gamma, float scale, float saturation)
+    {
+
+        TonemapMantiuk retVal = new TonemapMantiuk(createTonemapMantiuk_0(gamma, scale, saturation));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates TonemapMantiuk object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapmantiuk">org.opencv.photo.Photo.createTonemapMantiuk</a>
+ */
+    public static TonemapMantiuk createTonemapMantiuk()
+    {
+
+        TonemapMantiuk retVal = new TonemapMantiuk(createTonemapMantiuk_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_TonemapReinhard createTonemapReinhard(float gamma = 1.0f, float intensity = 0.0f, float light_adapt = 1.0f, float color_adapt = 0.0f)
     //
 
-    // Return type 'Ptr_TonemapReinhard' is not supported, skipping the function
+/**
+ * <p>Creates TonemapReinhard object</p>
+ *
+ * @param gamma gamma value for gamma correction. See "createTonemap"
+ * @param intensity result intensity in [-8, 8] range. Greater intensity
+ * produces brighter results.
+ * @param light_adapt light adaptation in [0, 1] range. If 1 adaptation is based
+ * only on pixel value, if 0 it's global, otherwise it's a weighted mean of this
+ * two cases.
+ * @param color_adapt chromatic adaptation in [0, 1] range. If 1 channels are
+ * treated independently, if 0 adaptation level is the same for each channel.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapreinhard">org.opencv.photo.Photo.createTonemapReinhard</a>
+ */
+    public static TonemapReinhard createTonemapReinhard(float gamma, float intensity, float light_adapt, float color_adapt)
+    {
+
+        TonemapReinhard retVal = new TonemapReinhard(createTonemapReinhard_0(gamma, intensity, light_adapt, color_adapt));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates TonemapReinhard object</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/hdr_imaging.html#createtonemapreinhard">org.opencv.photo.Photo.createTonemapReinhard</a>
+ */
+    public static TonemapReinhard createTonemapReinhard()
+    {
+
+        TonemapReinhard retVal = new TonemapReinhard(createTonemapReinhard_1());
+
+        return retVal;
+    }
 
 
     //
@@ -159,7 +453,7 @@ public class Photo {
 /**
  * <p>Transforms a color image to a grayscale image. It is a basic tool in digital
  * printing, stylized black-and-white photograph rendering, and in many single
- * channel image processing applications.</p>
+ * channel image processing applications [CL12].</p>
  *
  * <p>This function is to be applied on color images.</p>
  *
@@ -173,6 +467,119 @@ public class Photo {
     {
 
         decolor_0(src.nativeObj, grayscale.nativeObj, color_boost.nativeObj);
+
+        return;
+    }
+
+
+    //
+    // C++:  void denoise_TVL1(vector_Mat observations, Mat result, double lambda = 1.0, int niters = 30)
+    //
+
+/**
+ * <p>Primal-dual algorithm is an algorithm for solving special types of
+ * variational problems (that is, finding a function to minimize some
+ * functional).
+ * As the image denoising, in particular, may be seen as the variational
+ * problem, primal-dual algorithm then can be used to perform denoising and this
+ * is exactly what is implemented.</p>
+ *
+ * <p>It should be noted, that this implementation was taken from the July 2013
+ * blog entry [Mordvintsev], which also contained (slightly more general)
+ * ready-to-use source code on Python. Subsequently, that code was rewritten on
+ * C++ with the usage of openCV by Vadim Pisarevsky at the end of July 2013 and
+ * finally it was slightly adapted by later authors.</p>
+ *
+ * <p>Although the thorough discussion and justification of the algorithm involved
+ * may be found in [ChambolleEtAl], it might make sense to skim over it here,
+ * following [Mordvintsev]. To begin with, we consider the 1-byte gray-level
+ * images as the functions from the rectangular domain of pixels (it may be seen
+ * as set <em> <= ft((x,y)inmathbb(N)xmathbb(N)mid 1 <= x <= n, 1 <= y <=
+ * mright)</em> for some <em>m, ninmathbb(N)</em>) into <em>(0,1,dots,255)</em>.
+ * We shall denote the noised images as <em>f_i</em> and with this view, given
+ * some image <em>x</em> of the same size, we may measure how bad it is by the
+ * formula</p>
+ *
+ * <p><em> <= ft| <= ft|nabla xright|right| + lambdasum_i <= ft| <=
+ * ft|x-f_iright|right|</em></p>
+ *
+ * <p><em>||*||</em> here denotes <em>L_2</em>-norm and as you see, the first
+ * addend states that we want our image to be smooth (ideally, having zero
+ * gradient, thus being constant) and the second states that we want our result
+ * to be close to the observations we've got.
+ * If we treat <em>x</em> as a function, this is exactly the functional what we
+ * seek to minimize and here the Primal-Dual algorithm comes into play.</p>
+ *
+ * @param observations This array should contain one or more noised versions of
+ * the image that is to be restored.
+ * @param result Here the denoised image will be stored. There is no need to do
+ * pre-allocation of storage space, as it will be automatically allocated, if
+ * necessary.
+ * @param lambda Corresponds to <em>lambda</em> in the formulas above. As it is
+ * enlarged, the smooth (blurred) images are treated more favorably than
+ * detailed (but maybe more noised) ones. Roughly speaking, as it becomes
+ * smaller, the result will be more blur but more sever outliers will be
+ * removed.
+ * @param niters Number of iterations that the algorithm will run. Of course, as
+ * more iterations as better, but it is hard to quantitatively refine this
+ * statement, so just use the default and increase it if the results are poor.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/denoising.html#denoise-tvl1">org.opencv.photo.Photo.denoise_TVL1</a>
+ */
+    public static void denoise_TVL1(List<Mat> observations, Mat result, double lambda, int niters)
+    {
+        Mat observations_mat = Converters.vector_Mat_to_Mat(observations);
+        denoise_TVL1_0(observations_mat.nativeObj, result.nativeObj, lambda, niters);
+
+        return;
+    }
+
+/**
+ * <p>Primal-dual algorithm is an algorithm for solving special types of
+ * variational problems (that is, finding a function to minimize some
+ * functional).
+ * As the image denoising, in particular, may be seen as the variational
+ * problem, primal-dual algorithm then can be used to perform denoising and this
+ * is exactly what is implemented.</p>
+ *
+ * <p>It should be noted, that this implementation was taken from the July 2013
+ * blog entry [Mordvintsev], which also contained (slightly more general)
+ * ready-to-use source code on Python. Subsequently, that code was rewritten on
+ * C++ with the usage of openCV by Vadim Pisarevsky at the end of July 2013 and
+ * finally it was slightly adapted by later authors.</p>
+ *
+ * <p>Although the thorough discussion and justification of the algorithm involved
+ * may be found in [ChambolleEtAl], it might make sense to skim over it here,
+ * following [Mordvintsev]. To begin with, we consider the 1-byte gray-level
+ * images as the functions from the rectangular domain of pixels (it may be seen
+ * as set <em> <= ft((x,y)inmathbb(N)xmathbb(N)mid 1 <= x <= n, 1 <= y <=
+ * mright)</em> for some <em>m, ninmathbb(N)</em>) into <em>(0,1,dots,255)</em>.
+ * We shall denote the noised images as <em>f_i</em> and with this view, given
+ * some image <em>x</em> of the same size, we may measure how bad it is by the
+ * formula</p>
+ *
+ * <p><em> <= ft| <= ft|nabla xright|right| + lambdasum_i <= ft| <=
+ * ft|x-f_iright|right|</em></p>
+ *
+ * <p><em>||*||</em> here denotes <em>L_2</em>-norm and as you see, the first
+ * addend states that we want our image to be smooth (ideally, having zero
+ * gradient, thus being constant) and the second states that we want our result
+ * to be close to the observations we've got.
+ * If we treat <em>x</em> as a function, this is exactly the functional what we
+ * seek to minimize and here the Primal-Dual algorithm comes into play.</p>
+ *
+ * @param observations This array should contain one or more noised versions of
+ * the image that is to be restored.
+ * @param result Here the denoised image will be stored. There is no need to do
+ * pre-allocation of storage space, as it will be automatically allocated, if
+ * necessary.
+ *
+ * @see <a href="http://docs.opencv.org/modules/photo/doc/denoising.html#denoise-tvl1">org.opencv.photo.Photo.denoise_TVL1</a>
+ */
+    public static void denoise_TVL1(List<Mat> observations, Mat result)
+    {
+        Mat observations_mat = Converters.vector_Mat_to_Mat(observations);
+        denoise_TVL1_1(observations_mat.nativeObj, result.nativeObj);
 
         return;
     }
@@ -223,14 +630,15 @@ public class Photo {
 
 /**
  * <p>Filtering is the fundamental operation in image and video processing.
- * Edge-preserving smoothing filters are used in many different applications.</p>
+ * Edge-preserving smoothing filters are used in many different applications
+ * [EM11].</p>
  *
  * @param src Input 8-bit 3-channel image.
  * @param dst Output 8-bit 3-channel image.
  * @param flags Edge preserving filters:
  * <ul>
- *   <li> RECURS_FILTER
- *   <li> NORMCONV_FILTER
+ *   <li> RECURS_FILTER = 1
+ *   <li> NORMCONV_FILTER = 2
  * </ul>
  * @param sigma_s Range between 0 to 200.
  * @param sigma_r Range between 0 to 1.
@@ -247,7 +655,8 @@ public class Photo {
 
 /**
  * <p>Filtering is the fundamental operation in image and video processing.
- * Edge-preserving smoothing filters are used in many different applications.</p>
+ * Edge-preserving smoothing filters are used in many different applications
+ * [EM11].</p>
  *
  * @param src Input 8-bit 3-channel image.
  * @param dst Output 8-bit 3-channel image.
@@ -678,7 +1087,7 @@ public class Photo {
  * Here we are interested in achieving local changes, ones that are restricted
  * to a region manually selected (ROI), in a seamless and effortless manner.
  * The extent of the changes ranges from slight distortions to complete
- * replacement by novel content.</p>
+ * replacement by novel content [PM03].</p>
  *
  * @param src Input 8-bit 3-channel image.
  * @param dst Input 8-bit 3-channel image.
@@ -693,7 +1102,7 @@ public class Photo {
  * masking might be time consuming and often leaves an undesirable halo.
  * Seamless cloning, even averaged with the original image, is not effective.
  * Mixed seamless cloning based on a loose selection proves effective.
- *   <li> FEATURE_EXCHANGE Feature exchange allows the user to replace easily
+ *   <li> FEATURE_EXCHANGE Feature exchange allows the user to easily replace
  * certain features of one object by alternative features.
  * </ul>
  *
@@ -817,8 +1226,54 @@ public class Photo {
     private static native void colorChange_0(long src_nativeObj, long mask_nativeObj, long dst_nativeObj, float red_mul, float green_mul, float blue_mul);
     private static native void colorChange_1(long src_nativeObj, long mask_nativeObj, long dst_nativeObj);
 
+    // C++:  Ptr_AlignMTB createAlignMTB(int max_bits = 6, int exclude_range = 4, bool cut = true)
+    private static native long createAlignMTB_0(int max_bits, int exclude_range, boolean cut);
+    private static native long createAlignMTB_1();
+
+    // C++:  Ptr_CalibrateDebevec createCalibrateDebevec(int samples = 70, float lambda = 10.0f, bool random = false)
+    private static native long createCalibrateDebevec_0(int samples, float lambda, boolean random);
+    private static native long createCalibrateDebevec_1();
+
+    // C++:  Ptr_CalibrateRobertson createCalibrateRobertson(int max_iter = 30, float threshold = 0.01f)
+    private static native long createCalibrateRobertson_0(int max_iter, float threshold);
+    private static native long createCalibrateRobertson_1();
+
+    // C++:  Ptr_MergeDebevec createMergeDebevec()
+    private static native long createMergeDebevec_0();
+
+    // C++:  Ptr_MergeMertens createMergeMertens(float contrast_weight = 1.0f, float saturation_weight = 1.0f, float exposure_weight = 0.0f)
+    private static native long createMergeMertens_0(float contrast_weight, float saturation_weight, float exposure_weight);
+    private static native long createMergeMertens_1();
+
+    // C++:  Ptr_MergeRobertson createMergeRobertson()
+    private static native long createMergeRobertson_0();
+
+    // C++:  Ptr_Tonemap createTonemap(float gamma = 1.0f)
+    private static native long createTonemap_0(float gamma);
+    private static native long createTonemap_1();
+
+    // C++:  Ptr_TonemapDrago createTonemapDrago(float gamma = 1.0f, float saturation = 1.0f, float bias = 0.85f)
+    private static native long createTonemapDrago_0(float gamma, float saturation, float bias);
+    private static native long createTonemapDrago_1();
+
+    // C++:  Ptr_TonemapDurand createTonemapDurand(float gamma = 1.0f, float contrast = 4.0f, float saturation = 1.0f, float sigma_space = 2.0f, float sigma_color = 2.0f)
+    private static native long createTonemapDurand_0(float gamma, float contrast, float saturation, float sigma_space, float sigma_color);
+    private static native long createTonemapDurand_1();
+
+    // C++:  Ptr_TonemapMantiuk createTonemapMantiuk(float gamma = 1.0f, float scale = 0.7f, float saturation = 1.0f)
+    private static native long createTonemapMantiuk_0(float gamma, float scale, float saturation);
+    private static native long createTonemapMantiuk_1();
+
+    // C++:  Ptr_TonemapReinhard createTonemapReinhard(float gamma = 1.0f, float intensity = 0.0f, float light_adapt = 1.0f, float color_adapt = 0.0f)
+    private static native long createTonemapReinhard_0(float gamma, float intensity, float light_adapt, float color_adapt);
+    private static native long createTonemapReinhard_1();
+
     // C++:  void decolor(Mat src, Mat& grayscale, Mat& color_boost)
     private static native void decolor_0(long src_nativeObj, long grayscale_nativeObj, long color_boost_nativeObj);
+
+    // C++:  void denoise_TVL1(vector_Mat observations, Mat result, double lambda = 1.0, int niters = 30)
+    private static native void denoise_TVL1_0(long observations_mat_nativeObj, long result_nativeObj, double lambda, int niters);
+    private static native void denoise_TVL1_1(long observations_mat_nativeObj, long result_nativeObj);
 
     // C++:  void detailEnhance(Mat src, Mat& dst, float sigma_s = 10, float sigma_r = 0.15f)
     private static native void detailEnhance_0(long src_nativeObj, long dst_nativeObj, float sigma_s, float sigma_r);

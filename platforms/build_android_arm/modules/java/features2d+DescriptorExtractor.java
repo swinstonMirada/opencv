@@ -41,7 +41,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  void javaDescriptorExtractor::compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
+    // C++:  void compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
     //
 
     //javadoc: javaDescriptorExtractor::compute(image, keypoints, descriptors)
@@ -55,7 +55,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  void javaDescriptorExtractor::compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
+    // C++:  void compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
     //
 
     //javadoc: javaDescriptorExtractor::compute(images, keypoints, descriptors)
@@ -73,7 +73,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++: static javaDescriptorExtractor* javaDescriptorExtractor::create(int extractorType)
+    // C++: static javaDescriptorExtractor* create(int extractorType)
     //
 
     //javadoc: javaDescriptorExtractor::create(extractorType)
@@ -87,7 +87,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  int javaDescriptorExtractor::descriptorSize()
+    // C++:  int descriptorSize()
     //
 
     //javadoc: javaDescriptorExtractor::descriptorSize()
@@ -101,7 +101,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  int javaDescriptorExtractor::descriptorType()
+    // C++:  int descriptorType()
     //
 
     //javadoc: javaDescriptorExtractor::descriptorType()
@@ -115,7 +115,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  bool javaDescriptorExtractor::empty()
+    // C++:  bool empty()
     //
 
     //javadoc: javaDescriptorExtractor::empty()
@@ -129,7 +129,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  void javaDescriptorExtractor::read(String fileName)
+    // C++:  void read(String fileName)
     //
 
     //javadoc: javaDescriptorExtractor::read(fileName)
@@ -143,7 +143,7 @@ public class DescriptorExtractor {
 
 
     //
-    // C++:  void javaDescriptorExtractor::write(String fileName)
+    // C++:  void write(String fileName)
     //
 
     //javadoc: javaDescriptorExtractor::write(fileName)
@@ -163,28 +163,28 @@ public class DescriptorExtractor {
 
 
 
-    // C++:  void javaDescriptorExtractor::compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
+    // C++:  void compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
     private static native void compute_0(long nativeObj, long image_nativeObj, long keypoints_mat_nativeObj, long descriptors_nativeObj);
 
-    // C++:  void javaDescriptorExtractor::compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
+    // C++:  void compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
     private static native void compute_1(long nativeObj, long images_mat_nativeObj, long keypoints_mat_nativeObj, long descriptors_mat_nativeObj);
 
-    // C++: static javaDescriptorExtractor* javaDescriptorExtractor::create(int extractorType)
+    // C++: static javaDescriptorExtractor* create(int extractorType)
     private static native long create_0(int extractorType);
 
-    // C++:  int javaDescriptorExtractor::descriptorSize()
+    // C++:  int descriptorSize()
     private static native int descriptorSize_0(long nativeObj);
 
-    // C++:  int javaDescriptorExtractor::descriptorType()
+    // C++:  int descriptorType()
     private static native int descriptorType_0(long nativeObj);
 
-    // C++:  bool javaDescriptorExtractor::empty()
+    // C++:  bool empty()
     private static native boolean empty_0(long nativeObj);
 
-    // C++:  void javaDescriptorExtractor::read(String fileName)
+    // C++:  void read(String fileName)
     private static native void read_0(long nativeObj, String fileName);
 
-    // C++:  void javaDescriptorExtractor::write(String fileName)
+    // C++:  void write(String fileName)
     private static native void write_0(long nativeObj, String fileName);
 
     // native support for java finalize()

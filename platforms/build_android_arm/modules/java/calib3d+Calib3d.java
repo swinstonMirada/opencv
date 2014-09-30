@@ -18,41 +18,26 @@ import org.opencv.utils.Converters;
 
 public class Calib3d {
 
-    private static final int
-            CV_LMEDS = 4,
-            CV_RANSAC = 8,
-            CV_FM_LMEDS = CV_LMEDS,
-            CV_FM_RANSAC = CV_RANSAC,
-            CV_FM_7POINT = 1,
-            CV_FM_8POINT = 2,
-            CV_CALIB_USE_INTRINSIC_GUESS = 1,
-            CV_CALIB_FIX_ASPECT_RATIO = 2,
-            CV_CALIB_FIX_PRINCIPAL_POINT = 4,
-            CV_CALIB_ZERO_TANGENT_DIST = 8,
-            CV_CALIB_FIX_FOCAL_LENGTH = 16,
-            CV_CALIB_FIX_K1 = 32,
-            CV_CALIB_FIX_K2 = 64,
-            CV_CALIB_FIX_K3 = 128,
-            CV_CALIB_FIX_K4 = 2048,
-            CV_CALIB_FIX_K5 = 4096,
-            CV_CALIB_FIX_K6 = 8192,
-            CV_CALIB_RATIONAL_MODEL = 16384,
-            CV_CALIB_THIN_PRISM_MODEL = 32768,
-            CV_CALIB_FIX_S1_S2_S3_S4 = 65536,
-            CV_CALIB_FIX_INTRINSIC = 256,
-            CV_CALIB_SAME_FOCAL_LENGTH = 512,
-            CV_CALIB_ZERO_DISPARITY = 1024;
-
-
     public static final int
+            CALIB_USE_INTRINSIC_GUESS = 1,
+            CALIB_RECOMPUTE_EXTRINSIC = 2,
+            CALIB_CHECK_COND = 4,
+            CALIB_FIX_SKEW = 8,
+            CALIB_FIX_K1 = 16,
+            CALIB_FIX_K2 = 32,
+            CALIB_FIX_K3 = 64,
+            CALIB_FIX_K4 = 128,
+            CALIB_FIX_INTRINSIC = 256,
             CV_ITERATIVE = 0,
             CV_EPNP = 1,
             CV_P3P = 2,
+            CV_DLS = 3,
             LMEDS = 4,
             RANSAC = 8,
-            ITERATIVE = 0,
-            EPNP = 1,
-            P3P = 2,
+            SOLVEPNP_ITERATIVE = 0,
+            SOLVEPNP_EPNP = 1,
+            SOLVEPNP_P3P = 2,
+            SOLVEPNP_DLS = 3,
             CALIB_CB_ADAPTIVE_THRESH = 1,
             CALIB_CB_NORMALIZE_IMAGE = 2,
             CALIB_CB_FILTER_QUADS = 4,
@@ -60,21 +45,15 @@ public class Calib3d {
             CALIB_CB_SYMMETRIC_GRID = 1,
             CALIB_CB_ASYMMETRIC_GRID = 2,
             CALIB_CB_CLUSTERING = 4,
-            CALIB_USE_INTRINSIC_GUESS = 0x00001,
             CALIB_FIX_ASPECT_RATIO = 0x00002,
             CALIB_FIX_PRINCIPAL_POINT = 0x00004,
             CALIB_ZERO_TANGENT_DIST = 0x00008,
             CALIB_FIX_FOCAL_LENGTH = 0x00010,
-            CALIB_FIX_K1 = 0x00020,
-            CALIB_FIX_K2 = 0x00040,
-            CALIB_FIX_K3 = 0x00080,
-            CALIB_FIX_K4 = 0x00800,
             CALIB_FIX_K5 = 0x01000,
             CALIB_FIX_K6 = 0x02000,
             CALIB_RATIONAL_MODEL = 0x04000,
             CALIB_THIN_PRISM_MODEL = 0x08000,
             CALIB_FIX_S1_S2_S3_S4 = 0x10000,
-            CALIB_FIX_INTRINSIC = 0x00100,
             CALIB_SAME_FOCAL_LENGTH = 0x00200,
             CALIB_ZERO_DISPARITY = 0x00400,
             FM_7POINT = 1,
@@ -278,14 +257,46 @@ public class Calib3d {
     // C++:  Ptr_StereoBM createStereoBM(int numDisparities = 0, int blockSize = 21)
     //
 
-    // Return type 'Ptr_StereoBM' is not supported, skipping the function
+    //javadoc: createStereoBM(numDisparities, blockSize)
+    public static StereoBM createStereoBM(int numDisparities, int blockSize)
+    {
+        
+        StereoBM retVal = new StereoBM(createStereoBM_0(numDisparities, blockSize));
+        
+        return retVal;
+    }
+
+    //javadoc: createStereoBM()
+    public static StereoBM createStereoBM()
+    {
+        
+        StereoBM retVal = new StereoBM(createStereoBM_1());
+        
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, int mode = StereoSGBM::MODE_SGBM)
     //
 
-    // Return type 'Ptr_StereoSGBM' is not supported, skipping the function
+    //javadoc: createStereoSGBM(minDisparity, numDisparities, blockSize, P1, P2, disp12MaxDiff, preFilterCap, uniquenessRatio, speckleWindowSize, speckleRange, mode)
+    public static StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1, int P2, int disp12MaxDiff, int preFilterCap, int uniquenessRatio, int speckleWindowSize, int speckleRange, int mode)
+    {
+        
+        StereoSGBM retVal = new StereoSGBM(createStereoSGBM_0(minDisparity, numDisparities, blockSize, P1, P2, disp12MaxDiff, preFilterCap, uniquenessRatio, speckleWindowSize, speckleRange, mode));
+        
+        return retVal;
+    }
+
+    //javadoc: createStereoSGBM(minDisparity, numDisparities, blockSize)
+    public static StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize)
+    {
+        
+        StereoSGBM retVal = new StereoSGBM(createStereoSGBM_1(minDisparity, numDisparities, blockSize));
+        
+        return retVal;
+    }
 
 
     //
@@ -299,6 +310,24 @@ public class Calib3d {
         decomposeEssentialMat_0(E.nativeObj, R1.nativeObj, R2.nativeObj, t.nativeObj);
         
         return;
+    }
+
+
+    //
+    // C++:  int decomposeHomographyMat(Mat H, Mat K, vector_Mat& rotations, vector_Mat& translations, vector_Mat& normals)
+    //
+
+    //javadoc: decomposeHomographyMat(H, K, rotations, translations, normals)
+    public static int decomposeHomographyMat(Mat H, Mat K, List<Mat> rotations, List<Mat> translations, List<Mat> normals)
+    {
+        Mat rotations_mat = new Mat();
+        Mat translations_mat = new Mat();
+        Mat normals_mat = new Mat();
+        int retVal = decomposeHomographyMat_0(H.nativeObj, K.nativeObj, rotations_mat.nativeObj, translations_mat.nativeObj, normals_mat.nativeObj);
+        Converters.Mat_to_vector_Mat(rotations_mat, rotations);
+        Converters.Mat_to_vector_Mat(translations_mat, translations);
+        Converters.Mat_to_vector_Mat(normals_mat, normals);
+        return retVal;
     }
 
 
@@ -499,15 +528,15 @@ public class Calib3d {
 
 
     //
-    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
+    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat(), int maxIters = 2000, double confidence = 0.995)
     //
 
-    //javadoc: findHomography(srcPoints, dstPoints, method, ransacReprojThreshold, mask)
-    public static Mat findHomography(MatOfPoint2f srcPoints, MatOfPoint2f dstPoints, int method, double ransacReprojThreshold, Mat mask)
+    //javadoc: findHomography(srcPoints, dstPoints, method, ransacReprojThreshold, mask, maxIters, confidence)
+    public static Mat findHomography(MatOfPoint2f srcPoints, MatOfPoint2f dstPoints, int method, double ransacReprojThreshold, Mat mask, int maxIters, double confidence)
     {
         Mat srcPoints_mat = srcPoints;
         Mat dstPoints_mat = dstPoints;
-        Mat retVal = new Mat(findHomography_0(srcPoints_mat.nativeObj, dstPoints_mat.nativeObj, method, ransacReprojThreshold, mask.nativeObj));
+        Mat retVal = new Mat(findHomography_0(srcPoints_mat.nativeObj, dstPoints_mat.nativeObj, method, ransacReprojThreshold, mask.nativeObj, maxIters, confidence));
         
         return retVal;
     }
@@ -723,7 +752,7 @@ public class Calib3d {
 
 
     //
-    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE)
     //
 
     //javadoc: solvePnP(objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec, useExtrinsicGuess, flags)
@@ -750,29 +779,29 @@ public class Calib3d {
 
 
     //
-    // C++:  void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
+    // C++:  bool solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, double confidence = 0.99, Mat& inliers = Mat(), int flags = SOLVEPNP_ITERATIVE)
     //
 
-    //javadoc: solvePnPRansac(objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec, useExtrinsicGuess, iterationsCount, reprojectionError, minInliersCount, inliers, flags)
-    public static void solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, int minInliersCount, Mat inliers, int flags)
+    //javadoc: solvePnPRansac(objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec, useExtrinsicGuess, iterationsCount, reprojectionError, confidence, inliers, flags)
+    public static boolean solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, double confidence, Mat inliers, int flags)
     {
         Mat objectPoints_mat = objectPoints;
         Mat imagePoints_mat = imagePoints;
         Mat distCoeffs_mat = distCoeffs;
-        solvePnPRansac_0(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj, useExtrinsicGuess, iterationsCount, reprojectionError, minInliersCount, inliers.nativeObj, flags);
+        boolean retVal = solvePnPRansac_0(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj, useExtrinsicGuess, iterationsCount, reprojectionError, confidence, inliers.nativeObj, flags);
         
-        return;
+        return retVal;
     }
 
     //javadoc: solvePnPRansac(objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec)
-    public static void solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec)
+    public static boolean solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec)
     {
         Mat objectPoints_mat = objectPoints;
         Mat imagePoints_mat = imagePoints;
         Mat distCoeffs_mat = distCoeffs;
-        solvePnPRansac_1(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj);
+        boolean retVal = solvePnPRansac_1(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj);
         
-        return;
+        return retVal;
     }
 
 
@@ -933,8 +962,19 @@ public class Calib3d {
     // C++:  void correctMatches(Mat F, Mat points1, Mat points2, Mat& newPoints1, Mat& newPoints2)
     private static native void correctMatches_0(long F_nativeObj, long points1_nativeObj, long points2_nativeObj, long newPoints1_nativeObj, long newPoints2_nativeObj);
 
+    // C++:  Ptr_StereoBM createStereoBM(int numDisparities = 0, int blockSize = 21)
+    private static native long createStereoBM_0(int numDisparities, int blockSize);
+    private static native long createStereoBM_1();
+
+    // C++:  Ptr_StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, int mode = StereoSGBM::MODE_SGBM)
+    private static native long createStereoSGBM_0(int minDisparity, int numDisparities, int blockSize, int P1, int P2, int disp12MaxDiff, int preFilterCap, int uniquenessRatio, int speckleWindowSize, int speckleRange, int mode);
+    private static native long createStereoSGBM_1(int minDisparity, int numDisparities, int blockSize);
+
     // C++:  void decomposeEssentialMat(Mat E, Mat& R1, Mat& R2, Mat& t)
     private static native void decomposeEssentialMat_0(long E_nativeObj, long R1_nativeObj, long R2_nativeObj, long t_nativeObj);
+
+    // C++:  int decomposeHomographyMat(Mat H, Mat K, vector_Mat& rotations, vector_Mat& translations, vector_Mat& normals)
+    private static native int decomposeHomographyMat_0(long H_nativeObj, long K_nativeObj, long rotations_mat_nativeObj, long translations_mat_nativeObj, long normals_mat_nativeObj);
 
     // C++:  void decomposeProjectionMatrix(Mat projMatrix, Mat& cameraMatrix, Mat& rotMatrix, Mat& transVect, Mat& rotMatrixX = Mat(), Mat& rotMatrixY = Mat(), Mat& rotMatrixZ = Mat(), Mat& eulerAngles = Mat())
     private static native void decomposeProjectionMatrix_0(long projMatrix_nativeObj, long cameraMatrix_nativeObj, long rotMatrix_nativeObj, long transVect_nativeObj, long rotMatrixX_nativeObj, long rotMatrixY_nativeObj, long rotMatrixZ_nativeObj, long eulerAngles_nativeObj);
@@ -969,8 +1009,8 @@ public class Calib3d {
     private static native long findFundamentalMat_1(long points1_mat_nativeObj, long points2_mat_nativeObj, int method, double param1, double param2);
     private static native long findFundamentalMat_2(long points1_mat_nativeObj, long points2_mat_nativeObj);
 
-    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
-    private static native long findHomography_0(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold, long mask_nativeObj);
+    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat(), int maxIters = 2000, double confidence = 0.995)
+    private static native long findHomography_0(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold, long mask_nativeObj, int maxIters, double confidence);
     private static native long findHomography_1(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold);
     private static native long findHomography_2(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj);
 
@@ -1005,13 +1045,13 @@ public class Calib3d {
     private static native void reprojectImageTo3D_1(long disparity_nativeObj, long _3dImage_nativeObj, long Q_nativeObj, boolean handleMissingValues);
     private static native void reprojectImageTo3D_2(long disparity_nativeObj, long _3dImage_nativeObj, long Q_nativeObj);
 
-    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE)
     private static native boolean solvePnP_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int flags);
     private static native boolean solvePnP_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
 
-    // C++:  void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
-    private static native void solvePnPRansac_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, int minInliersCount, long inliers_nativeObj, int flags);
-    private static native void solvePnPRansac_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
+    // C++:  bool solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, double confidence = 0.99, Mat& inliers = Mat(), int flags = SOLVEPNP_ITERATIVE)
+    private static native boolean solvePnPRansac_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, double confidence, long inliers_nativeObj, int flags);
+    private static native boolean solvePnPRansac_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
 
     // C++:  double stereoCalibrate(vector_Mat objectPoints, vector_Mat imagePoints1, vector_Mat imagePoints2, Mat& cameraMatrix1, Mat& distCoeffs1, Mat& cameraMatrix2, Mat& distCoeffs2, Size imageSize, Mat& R, Mat& T, Mat& E, Mat& F, int flags = CALIB_FIX_INTRINSIC, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 1e-6))
     private static native double stereoCalibrate_0(long objectPoints_mat_nativeObj, long imagePoints1_mat_nativeObj, long imagePoints2_mat_nativeObj, long cameraMatrix1_nativeObj, long distCoeffs1_nativeObj, long cameraMatrix2_nativeObj, long distCoeffs2_nativeObj, double imageSize_width, double imageSize_height, long R_nativeObj, long T_nativeObj, long E_nativeObj, long F_nativeObj, int flags, int criteria_type, int criteria_maxCount, double criteria_epsilon);

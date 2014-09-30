@@ -14,6 +14,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -359,6 +360,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/imgproc/test/ocl/test_accumulate.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -481,7 +483,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_accumulate.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -497,6 +498,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -842,6 +844,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /U
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/imgproc/test/ocl/test_blend.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -964,7 +967,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /u
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_blend.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -980,6 +982,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1325,6 +1328,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/imgproc/test/ocl/test_boxfilter.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -1447,7 +1451,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_boxfilter.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -1463,6 +1466,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1808,6 +1812,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /U
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/imgproc/test/ocl/test_canny.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -1930,7 +1935,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /u
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_canny.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -1946,6 +1950,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2291,6 +2296,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /U
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/imgproc/test/ocl/test_color.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -2413,7 +2419,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /u
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_color.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -2429,6 +2434,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2774,6 +2780,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/imgproc/test/ocl/test_filter2d.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -2896,7 +2903,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filter2d.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -2912,6 +2918,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -3257,6 +3264,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/imgproc/test/ocl/test_filters.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -3379,7 +3387,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_filters.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -3395,6 +3402,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -3740,6 +3748,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /Us
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/imgproc/test/ocl/test_gftt.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -3862,7 +3871,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /us
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_gftt.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -3878,6 +3886,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -4223,6 +4232,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/imgproc/test/ocl/test_histogram.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -4345,7 +4355,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_histogram.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -4361,6 +4370,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -4706,6 +4716,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/imgproc/test/ocl/test_imgproc.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -4828,7 +4839,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_imgproc.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -4844,6 +4854,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -5189,6 +5200,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/imgproc/test/ocl/test_match_template.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -5311,7 +5323,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_match_template.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -5327,6 +5338,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -5672,6 +5684,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/imgproc/test/ocl/test_medianfilter.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -5794,7 +5807,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_medianfilter.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -5810,6 +5822,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -6155,6 +6168,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/imgproc/test/ocl/test_pyramids.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -6277,7 +6291,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_pyramids.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -6293,6 +6306,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -6638,6 +6652,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/imgproc/test/ocl/test_sepfilter2D.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -6760,7 +6775,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_sepfilter2D.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -6776,6 +6790,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -7121,6 +7136,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /Us
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/imgproc/test/ocl/test_warp.cpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: ../../modules/imgproc/test/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /usr/local/include/eigen3/Eigen/Core
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
@@ -7243,7 +7259,6 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /us
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: cvconfig.h
-modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: modules/imgproc/test_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/ocl/test_warp.cpp.o: opencv2/opencv_modules.hpp
 
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -7258,6 +7273,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_approxpoly.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -7736,6 +7752,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_bilateral_filter.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -8214,6 +8231,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_boundingrect.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -8692,6 +8710,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_canny.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -9170,6 +9189,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_color.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -9648,6 +9668,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_connectedcomponents.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -10126,6 +10147,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_contours.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -10604,6 +10626,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_convhull.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -11082,6 +11105,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_cvtyuv.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -11560,6 +11584,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.c
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_distancetransform.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -12038,6 +12063,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../mo
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_emd.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -12516,6 +12542,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_filter.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -12994,6 +13021,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_floodfill.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -13472,6 +13500,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_grabcut.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -13950,6 +13979,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_histograms.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -14428,6 +14458,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_houghLines.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -14906,6 +14937,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgproc_umat.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -15384,6 +15416,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -15862,6 +15895,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_imgwarp_strict.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -16340,6 +16374,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o:
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_intersection.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -16818,6 +16853,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../mo
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_lsd.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -17296,6 +17332,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../m
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -17774,6 +17811,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../.
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_moments.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -18252,6 +18290,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../mod
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_pc.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -18730,6 +18769,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_templmatch.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -19208,6 +19248,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_thresh.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -19686,6 +19727,7 @@ modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_test_imgproc.dir/test/test_watershed.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

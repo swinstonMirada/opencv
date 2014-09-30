@@ -7,14 +7,6 @@ package org.opencv.ml;
 
 
 // C++: class CvDTreeParams
-/**
- * <p>The structure contains all the decision tree training parameters. You can
- * initialize it by default constructor and then override any parameters
- * directly before training, or the structure may be fully initialized using the
- * advanced variant of the constructor.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/decision_trees.html#cvdtreeparams">org.opencv.ml.CvDTreeParams</a>
- */
 public class CvDTreeParams {
 
     protected final long nativeObj;
@@ -25,26 +17,6 @@ public class CvDTreeParams {
     // C++:   CvDTreeParams::CvDTreeParams()
     //
 
-/**
- * <p>The constructors.</p>
- *
- * <p>The default constructor initializes all the parameters with the default
- * values tuned for the standalone classification tree:</p>
- *
- * <p><code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>CvDTreeParams() : max_categories(10), max_depth(INT_MAX), min_sample_count(10),</p>
- *
- * <p>cv_folds(10), use_surrogates(true), use_1se_rule(true),</p>
- *
- * <p>truncate_pruned_tree(true), regression_accuracy(0.01f), priors(0)</p>
- *
- * <p>{}</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/decision_trees.html#cvdtreeparams-cvdtreeparams">org.opencv.ml.CvDTreeParams.CvDTreeParams</a>
- */
     public   CvDTreeParams()
     {
 

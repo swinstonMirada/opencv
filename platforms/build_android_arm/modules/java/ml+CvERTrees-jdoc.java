@@ -7,15 +7,6 @@ package org.opencv.ml;
 import org.opencv.core.Mat;
 
 // C++: class CvERTrees
-/**
- * <p>The class implements the Extremely randomized trees algorithm.
- * <code>CvERTrees</code> is inherited from "CvRTrees" and has the same
- * interface, so see description of "CvRTrees" class to get details. To set the
- * training parameters of Extremely randomized trees the same class "CvRTParams"
- * is used.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/ertrees.html#cvertrees">org.opencv.ml.CvERTrees : public CvRTrees</a>
- */
 public class CvERTrees extends CvRTrees {
 
     protected CvERTrees(long addr) { super(addr); }

@@ -14,6 +14,7 @@ modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/co
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/opengl.hpp
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/highgui/CMakeFiles/opencv_highgui.dir/src/window.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

@@ -140,12 +140,13 @@ SET(OpenCV_VERSION_STATUS "-dev")
 # Link libraries: e.g. opencv_core;opencv_imgproc; etc...
 # ====================================================================
 
-SET(OpenCV_LIB_COMPONENTS opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video;opencv_videostab;opencv_ts;opencv_superres;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_stitching;opencv_shape;opencv_optim;opencv_java)
+SET(OpenCV_LIB_COMPONENTS opencv_videostab;opencv_videoio;opencv_video;opencv_ts;opencv_superres;opencv_stitching;opencv_shape;opencv_photo;opencv_objdetect;opencv_ml;opencv_imgproc;opencv_imgcodecs;opencv_highgui;opencv_flann;opencv_features2d;opencv_core;opencv_calib3d;opencv_java)
+SET(OpenCV_WORLD_COMPONENTS )
 
 # ==============================================================
 #  Extra include directories, needed by OpenCV 2 new structure
 # ==============================================================
-SET(OpenCV2_INCLUDE_DIRS /Users/swinston/Mirada/lib/c/opencv/modules/core/include;/Users/swinston/Mirada/lib/c/opencv/modules/androidcamera/include;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include;/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include;/Users/swinston/Mirada/lib/c/opencv/modules/ml/include;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/include;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include;/Users/swinston/Mirada/lib/c/opencv/modules/photo/include;/Users/swinston/Mirada/lib/c/opencv/modules/video/include;/Users/swinston/Mirada/lib/c/opencv/modules/optim/include;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include;/Users/swinston/Mirada/lib/c/opencv/modules/superres/include;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include)
+SET(OpenCV2_INCLUDE_DIRS /Users/swinston/Mirada/lib/c/opencv/modules/core/include;/Users/swinston/Mirada/lib/c/opencv/modules/androidcamera/include;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include;/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include;/Users/swinston/Mirada/lib/c/opencv/modules/ml/include;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include;/Users/swinston/Mirada/lib/c/opencv/modules/photo/include;/Users/swinston/Mirada/lib/c/opencv/modules/video/include;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include;/Users/swinston/Mirada/lib/c/opencv/modules/superres/include;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include)
 if(OpenCV2_INCLUDE_DIRS)
   list(APPEND OpenCV_INCLUDE_DIRS ${OpenCV2_INCLUDE_DIRS})
 
@@ -200,8 +201,8 @@ foreach(__cvcomponent ${OpenCV_FIND_COMPONENTS})
       message(WARNING "${__cvcomponent} is required but was not found")
     endif()
     #indicate that module is NOT found
-    string(TOUPPER "${__cvcomponent}" __cvcomponent)
-    set(${__cvcomponent}_FOUND "${__cvcomponent}_FOUND-NOTFOUND")
+    string(TOUPPER "${__cvcomponent}" __cvcomponentUP)
+    set(${__cvcomponentUP}_FOUND "${__cvcomponentUP}_FOUND-NOTFOUND")
   else()
     list(APPEND OpenCV_FIND_COMPONENTS_ ${__cvcomponent})
     # Not using list(APPEND) here, because OpenCV_LIBS may not exist yet.
@@ -209,8 +210,31 @@ foreach(__cvcomponent ${OpenCV_FIND_COMPONENTS})
     # to find_package(OpenCV) with different component lists add up.
     set(OpenCV_LIBS ${OpenCV_LIBS} "${__cvcomponent}")
     #indicate that module is found
-    string(TOUPPER "${__cvcomponent}" __cvcomponent)
-    set(${__cvcomponent}_FOUND 1)
+    string(TOUPPER "${__cvcomponent}" __cvcomponentUP)
+    set(${__cvcomponentUP}_FOUND 1)
+  endif()
+  if(OpenCV_SHARED AND ";${OpenCV_WORLD_COMPONENTS};" MATCHES ";${__cvcomponent};" AND NOT TARGET ${__cvcomponent})
+    get_target_property(__implib_dbg opencv_world IMPORTED_IMPLIB_DEBUG)
+    get_target_property(__implib_release opencv_world  IMPORTED_IMPLIB_RELEASE)
+    get_target_property(__location_dbg opencv_world IMPORTED_LOCATION_DEBUG)
+    get_target_property(__location_release opencv_world  IMPORTED_LOCATION_RELEASE)
+    add_library(${__cvcomponent} SHARED IMPORTED)
+    if(__location_dbg)
+      set_property(TARGET ${__cvcomponent} APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+      set_target_properties(${__cvcomponent} PROPERTIES
+        IMPORTED_IMPLIB_DEBUG "${__implib_dbg}"
+        IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG ""
+        IMPORTED_LOCATION_DEBUG "${__location_dbg}"
+      )
+    endif()
+    if(__location_release)
+      set_property(TARGET ${__cvcomponent} APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+      set_target_properties(${__cvcomponent} PROPERTIES
+        IMPORTED_IMPLIB_RELEASE "${__implib_release}"
+        IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE ""
+        IMPORTED_LOCATION_RELEASE "${__location_release}"
+      )
+    endif()
   endif()
 endforeach()
 set(OpenCV_FIND_COMPONENTS ${OpenCV_FIND_COMPONENTS_})
@@ -321,6 +345,7 @@ macro(ocv_check_dependencies)
   set(OCV_DEPENDENCIES_FOUND TRUE)
   foreach(d ${ARGN})
     if(NOT TARGET ${d})
+      message(WARNING "OpenCV: Can't resolve dependency: ${d}")
       set(OCV_DEPENDENCIES_FOUND FALSE)
       break()
     endif()
@@ -344,6 +369,10 @@ endfunction()
 
 macro(ocv_include_modules)
   include_directories(BEFORE "${OpenCV_INCLUDE_DIRS}")
+endmacro()
+
+macro(ocv_target_link_libraries)
+  target_link_libraries(${ARGN})
 endmacro()
 
 # remove all matching elements from the list

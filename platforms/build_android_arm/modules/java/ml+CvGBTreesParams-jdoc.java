@@ -7,16 +7,6 @@ package org.opencv.ml;
 
 
 // C++: class CvGBTreesParams
-/**
- * <p>GBT training parameters.</p>
- *
- * <p>The structure contains parameters for each single decision tree in the
- * ensemble, as well as the whole model characteristics. The structure is
- * derived from "CvDTreeParams" but not all of the decision tree parameters are
- * supported: cross-validation, pruning, and class priorities are not used.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtreesparams">org.opencv.ml.CvGBTreesParams : public CvDTreeParams</a>
- */
 public class CvGBTreesParams extends CvDTreeParams {
 
     protected CvGBTreesParams(long addr) { super(addr); }
@@ -26,16 +16,6 @@ public class CvGBTreesParams extends CvDTreeParams {
     // C++:   CvGBTreesParams::CvGBTreesParams()
     //
 
-/**
- * <p>By default the following constructor is used: CvGBTreesParams(CvGBTrees.SQUARED_LOSS,
- * 200, 0.01f, 0.8f, 3, false) <code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>: CvDTreeParams(3, 10, 0, false, 10, 0, false, false, 0)</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/gradient_boosted_trees.html#cvgbtreesparams-cvgbtreesparams">org.opencv.ml.CvGBTreesParams.CvGBTreesParams</a>
- */
     public   CvGBTreesParams()
     {
 

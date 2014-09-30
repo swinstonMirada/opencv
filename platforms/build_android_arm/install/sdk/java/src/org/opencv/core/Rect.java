@@ -80,9 +80,9 @@ package org.opencv.core;
  *
  * <p>// C++ code:</p>
  *
- * <p>for(int y = roi.y; y < roi.y + rect.height; y++)</p>
+ * <p>for(int y = roi.y; y < roi.y + roi.height; y++)</p>
  *
- * <p>for(int x = roi.x; x < roi.x + rect.width; x++)</p>
+ * <p>for(int x = roi.x; x < roi.x + roi.width; x++)</p>
  *
  *
  * <p>//...</p>

@@ -703,6 +703,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -809,6 +813,10 @@ opencv2/core/traits.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -3374,6 +3382,30 @@ ImathBox.h
 grfmt_base.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.hpp
 
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.cpp
+grfmt_gdal.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.hpp
+iostream
+-
+stdexcept
+-
+string
+-
+
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.hpp
+iostream
+-
+grfmt_base.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.hpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/precomp.hpp
+gdal/cpl_conv.h
+-
+gdal/gdal_priv.h
+-
+gdal/gdal.h
+-
+
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/precomp.hpp
@@ -3517,6 +3549,8 @@ grfmt_webp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_webp.hpp
 grfmt_hdr.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.hpp
+grfmt_gdal.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/loadsave.cpp
 precomp.hpp
@@ -3551,8 +3585,6 @@ assert.h
 -
 windows.h
 -
-opencv2/imgcodecs/imgcodecs_tegra.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/opencv2/imgcodecs/imgcodecs_tegra.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/rgbe.cpp
 precomp.hpp

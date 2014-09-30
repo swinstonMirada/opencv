@@ -145,28 +145,6 @@ set_target_properties(opencv_highgui PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_highgui )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_highgui "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_highgui.a" )
 
-# Import target "opencv_features2d" for configuration "Release"
-set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_features2d PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_features2d.a"
-  )
-
-list(APPEND _IMPORT_CHECK_TARGETS opencv_features2d )
-list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_features2d "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_features2d.a" )
-
-# Import target "opencv_calib3d" for configuration "Release"
-set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_calib3d PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_calib3d.a"
-  )
-
-list(APPEND _IMPORT_CHECK_TARGETS opencv_calib3d )
-list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_calib3d "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_calib3d.a" )
-
 # Import target "opencv_ml" for configuration "Release"
 set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_ml PROPERTIES
@@ -178,16 +156,27 @@ set_target_properties(opencv_ml PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_ml )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_ml "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_ml.a" )
 
-# Import target "opencv_nonfree" for configuration "Release"
-set_property(TARGET opencv_nonfree APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_nonfree PROPERTIES
+# Import target "opencv_features2d" for configuration "Release"
+set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_features2d PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_nonfree.a"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;dl;log;dl;m;log"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_features2d.a"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS opencv_nonfree )
-list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_nonfree "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_nonfree.a" )
+list(APPEND _IMPORT_CHECK_TARGETS opencv_features2d )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_features2d "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_features2d.a" )
+
+# Import target "opencv_calib3d" for configuration "Release"
+set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_calib3d PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;dl;log;dl;m;log"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_calib3d.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_calib3d )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_calib3d "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_calib3d.a" )
 
 # Import target "opencv_objdetect" for configuration "Release"
 set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
@@ -233,17 +222,6 @@ set_target_properties(opencv_java PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_java )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_java "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_java.so" )
 
-# Import target "opencv_optim" for configuration "Release"
-set_property(TARGET opencv_optim APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_optim PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_optim.a"
-  )
-
-list(APPEND _IMPORT_CHECK_TARGETS opencv_optim )
-list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_optim "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_optim.a" )
-
 # Import target "opencv_shape" for configuration "Release"
 set_property(TARGET opencv_shape APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_shape PROPERTIES
@@ -259,7 +237,7 @@ list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_shape "${_IMPORT_PREFIX}/sdk/native/l
 set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_stitching PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect;dl;log;dl;m;log"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;dl;log;dl;m;log"
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_stitching.a"
   )
 
@@ -292,7 +270,7 @@ list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_ts "${_IMPORT_PREFIX}/sdk/native/libs
 set_property(TARGET opencv_videostab APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_videostab PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video;dl;log;dl;m;log"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video;dl;log;dl;m;log"
   IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_videostab.a"
   )
 

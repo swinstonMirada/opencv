@@ -2,6 +2,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/opencv_test_photo.dir/test/ocl/test_denoising.cpp.o"
   "CMakeFiles/opencv_test_photo.dir/test/test_cloning.cpp.o"
   "CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o"
+  "CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o"
   "CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o"
   "CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o"
   "CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o"

@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -144,6 +148,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -241,9 +249,7 @@ opencv2/core/core_c.h
 ../../modules/ml/include/opencv2/ml.hpp
 opencv2/core.hpp
 ../../modules/ml/include/opencv2/opencv2/core.hpp
-opencv2/core/core_c.h
-../../modules/ml/include/opencv2/opencv2/core/core_c.h
-limits.h
+float.h
 -
 map
 -
@@ -253,31 +259,11 @@ iostream
 ../../modules/objdetect/include/opencv2/objdetect.hpp
 opencv2/core.hpp
 ../../modules/objdetect/include/opencv2/opencv2/core.hpp
-opencv2/objdetect/linemod.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/linemod.hpp
-opencv2/objdetect/erfilter.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/erfilter.hpp
 opencv2/objdetect/detection_based_tracker.hpp
 ../../modules/objdetect/include/opencv2/opencv2/objdetect/detection_based_tracker.hpp
 
 ../../modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
 vector
--
-
-../../modules/objdetect/include/opencv2/objdetect/erfilter.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-vector
--
-deque
--
-string
--
-
-../../modules/objdetect/include/opencv2/objdetect/linemod.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-map
 -
 
 ../../modules/objdetect/include/opencv2/objdetect/objdetect_c.h
@@ -2741,8 +2727,8 @@ cascadedetect.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.hpp
 opencv2/objdetect/objdetect_c.h
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencv2/objdetect/objdetect_c.h
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl_kernels.hpp
+opencl_kernels_objdetect.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl_kernels_objdetect.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.hpp
 
@@ -2770,16 +2756,6 @@ android/log.h
 stdio.h
 -
 
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
-fstream
--
-queue
--
-stdint.h
--
-
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
@@ -2795,22 +2771,12 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
 opencv2/core/core_c.h
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencv2/core/core_c.h
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl_kernels.hpp
+opencl_kernels_objdetect.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl_kernels_objdetect.hpp
 cstdio
 -
 iterator
 -
-
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
-limits
--
-normal_lut.i
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/normal_lut.i
-
-/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/normal_lut.i
 
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
 opencv2/objdetect.hpp
@@ -2832,13 +2798,13 @@ opencv2/core/private.hpp
 opencv2/objdetect/objdetect_tegra.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencv2/objdetect/objdetect_tegra.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.hpp
+opencl_kernels_objdetect.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -3426,7 +3392,7 @@ unistd.h
 
 cvconfig.h
 
-modules/objdetect/opencl_kernels.hpp
+modules/objdetect/opencl_kernels_objdetect.hpp
 opencv2/core/ocl_genbase.hpp
 modules/objdetect/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp

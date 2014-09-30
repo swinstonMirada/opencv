@@ -11,6 +11,7 @@ modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_input.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -361,6 +362,7 @@ modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../m
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -711,6 +713,7 @@ modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../..
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf/perf_output.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

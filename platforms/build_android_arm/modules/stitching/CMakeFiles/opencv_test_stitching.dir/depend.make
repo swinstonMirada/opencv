@@ -16,6 +16,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -31,7 +32,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -380,8 +380,8 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/stitching/test/ocl/test_warpers.cpp
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: ../../modules/stitching/test/test_precomp.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: cvconfig.h
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: modules/stitching/test_precomp.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp.o: opencv2/opencv_modules.hpp
 
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -397,6 +397,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o:
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -409,7 +410,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o:
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -773,6 +773,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -785,7 +786,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -1149,6 +1149,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o:
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1161,7 +1162,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o:
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o: ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp

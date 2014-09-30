@@ -4,13 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/accum.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/approx.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/approx.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/blend.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/blend.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/canny.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/clahe.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/color.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/colormap.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/connectedcomponents.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/contours.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/convhull.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o"
@@ -19,6 +20,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/demosaicing.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/deriv.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/distransform.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/drawing.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/emd.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/featureselect.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filter.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o"
@@ -27,6 +29,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/generalized_hough.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/geometry.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/grabcut.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/hershey_fonts.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/histogram.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/hough.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/imgwarp.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o"
@@ -63,7 +66,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.cpp"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.cpp"
   )
 
 
@@ -74,23 +77,16 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/imgproc/perf"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "modules/imgproc"
-  "../../modules/imgproc/src"
-  "../../modules/imgproc/test"
   "../../3rdparty/include/opencl/1.2"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include"
   "/usr/local/include/eigen3"
+  "../../modules/imgproc/include"
+  "../../modules/imgproc/src"
+  "modules/imgproc"
+  "../../modules/core/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

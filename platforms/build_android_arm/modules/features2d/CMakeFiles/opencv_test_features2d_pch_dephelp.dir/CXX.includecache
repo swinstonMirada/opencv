@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -126,6 +130,10 @@ opencv2/core/traits.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -185,6 +193,16 @@ opencv2/core.hpp
 ../../modules/imgproc/include/opencv2/imgproc.hpp
 opencv2/core.hpp
 ../../modules/imgproc/include/opencv2/opencv2/core.hpp
+
+../../modules/ml/include/opencv2/ml.hpp
+opencv2/core.hpp
+../../modules/ml/include/opencv2/opencv2/core.hpp
+float.h
+-
+map
+-
+iostream
+-
 
 ../../modules/ts/include/opencv2/ts.hpp
 opencv2/core/cvdef.h
@@ -1148,6 +1166,22 @@ bits/c++config.h
 type_traits
 -
 
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+bits/functexcept.h
+-
+bits/concept_check.h
+-
+initializer_list
+-
+tuple
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
+bits/concept_check.h
+-
+initializer_list
+-
+
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 bits/concept_check.h
 -
@@ -1387,6 +1421,30 @@ debug/formatter.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+map
+-
+debug/map.h
+-
+debug/multimap.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+debug/safe_sequence.h
+-
+debug/safe_iterator.h
+-
+utility
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
+debug/safe_sequence.h
+-
+debug/safe_iterator.h
+-
+utility
+-
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 debug/safe_sequence.h
@@ -1726,6 +1784,20 @@ bits/locale_classes.h
 bits/locale_facets.h
 -
 bits/locale_facets_nonio.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
+bits/stl_tree.h
+-
+bits/stl_map.h
+-
+bits/stl_multimap.h
+-
+bits/range_access.h
+-
+debug/map
+-
+profile/map
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
@@ -2312,6 +2384,24 @@ profile/impl/profiler_trace.h
 ext/type_traits.h
 -
 
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+map
+-
+profile/map.h
+-
+profile/multimap.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+utility
+-
+profile/base.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
+utility
+-
+
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 utility
 -
@@ -2769,6 +2859,8 @@ opencv2/features2d.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/test/opencv2/features2d.hpp
 opencv2/imgcodecs.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/test/opencv2/imgcodecs.hpp
+opencv2/ml.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/test/opencv2/ml.hpp
 iostream
 -
 

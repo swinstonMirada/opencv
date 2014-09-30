@@ -12,6 +12,7 @@ modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/ts/CMakeFiles/opencv_ts_pch_dephelp.dir/opencv_ts_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

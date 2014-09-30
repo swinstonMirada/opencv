@@ -14,10 +14,12 @@ modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: ../android/service/engine/jni/include/EngineCommon.h
 modules/androidcamera/CMakeFiles/opencv_androidcamera.dir/src/camera_activity.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h

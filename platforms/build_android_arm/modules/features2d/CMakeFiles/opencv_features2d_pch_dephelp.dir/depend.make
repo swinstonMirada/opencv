@@ -13,6 +13,7 @@ modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/features2d/CMakeFiles/opencv_features2d_pch_dephelp.dir/opencv_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

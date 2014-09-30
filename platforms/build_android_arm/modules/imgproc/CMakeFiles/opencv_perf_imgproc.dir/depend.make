@@ -13,6 +13,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -24,7 +25,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -357,6 +357,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgproc/perf/opencl/perf_3vs4.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_3vs4.cpp.o: opencv2/opencv_modules.hpp
 
@@ -372,6 +373,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.c
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -383,7 +385,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.c
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -716,6 +717,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.c
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgproc/perf/opencl/perf_accumulate.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_accumulate.cpp.o: opencv2/opencv_modules.hpp
 
@@ -731,6 +733,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -742,7 +745,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -1075,6 +1077,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgproc/perf/opencl/perf_blend.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_blend.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1090,6 +1093,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1101,7 +1105,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -1434,6 +1437,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o:
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgproc/perf/opencl/perf_color.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_color.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1449,6 +1453,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1460,7 +1465,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -1793,6 +1797,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgproc/perf/opencl/perf_filters.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_filters.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1808,6 +1813,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1819,7 +1825,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -2152,6 +2157,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgproc/perf/opencl/perf_gftt.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_gftt.cpp.o: opencv2/opencv_modules.hpp
 
@@ -2167,6 +2173,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2178,7 +2185,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -2511,6 +2517,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgproc/perf/opencl/perf_imgproc.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgproc.cpp.o: opencv2/opencv_modules.hpp
 
@@ -2526,6 +2533,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2537,7 +2545,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -2870,6 +2877,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgproc/perf/opencl/perf_imgwarp.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_imgwarp.cpp.o: opencv2/opencv_modules.hpp
 
@@ -2885,6 +2893,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplat
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2896,7 +2905,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplat
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -3229,6 +3237,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplat
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgproc/perf/opencl/perf_matchTemplate.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_matchTemplate.cpp.o: opencv2/opencv_modules.hpp
 
@@ -3244,6 +3253,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -3255,7 +3265,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -3588,6 +3597,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgproc/perf/opencl/perf_moments.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_moments.cpp.o: opencv2/opencv_modules.hpp
 
@@ -3603,6 +3613,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -3614,7 +3625,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -3947,6 +3957,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgproc/perf/opencl/perf_pyramid.cpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: cvconfig.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/opencl/perf_pyramid.cpp.o: opencv2/opencv_modules.hpp
 
@@ -3960,6 +3971,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_bilateral.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -4310,6 +4322,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../m
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_blur.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -4660,6 +4673,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_canny.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -5010,6 +5024,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_corners.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -5360,6 +5375,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -5703,31 +5719,22 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_cvt_color.cpp.o: cv
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/core_c.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/cvstd.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/cvstd.inl.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/eigen.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/mat.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/types_c.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/imgproc_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/src/_geom.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/src/distransform.cpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/src/precomp.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -5879,7 +5886,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.c
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/unordered_map.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/uses_allocator.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/vector.tcc
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cctype
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cerrno
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cfloat
@@ -6059,127 +6065,6 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.c
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/perf/perf_distanceTransform.cpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: ../../modules/imgproc/perf/perf_precomp.hpp
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/Core
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/Eigen2Support
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Array.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Assign.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Assign_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Block.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/DenseBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Diagonal.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Dot.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/EigenBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Flagged.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Functors.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/IO.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Map.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/MapBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Matrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/NestByValue.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/NoAlias.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/NumTraits.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/ProductBase.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Random.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Redux.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Ref.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Replicate.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Reverse.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Select.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Stride.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Swap.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Transpose.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Transpositions.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/Visitor.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/Constants.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/Memory.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/Meta.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Block.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Macros.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Memory.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Meta.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/Minor.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/BlockMethods.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
-modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_distanceTransform.cpp.o: cvconfig.h
 
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -6192,6 +6077,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_filter2d.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -6542,6 +6428,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_floodfill.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -6892,6 +6779,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_goodFeaturesToTrack.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -7242,6 +7130,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_histogram.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -7592,6 +7481,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_houghLines.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -7942,6 +7832,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_integral.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -8292,6 +8183,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../m
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -8642,6 +8534,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_matchTemplate.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -8992,6 +8885,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../.
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_moments.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -9342,6 +9236,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_morph.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -9692,6 +9587,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_phasecorr.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -10042,6 +9938,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_pyramids.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -10392,6 +10289,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_remap.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -10742,6 +10640,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_resize.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -11092,6 +10991,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: .
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_sepfilters.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -11442,6 +11342,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ..
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_threshold.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -11792,6 +11693,7 @@ modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../m
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgproc/CMakeFiles/opencv_perf_imgproc.dir/perf/perf_warp.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

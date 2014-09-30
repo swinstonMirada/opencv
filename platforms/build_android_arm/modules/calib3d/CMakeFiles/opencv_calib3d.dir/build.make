@@ -52,13 +52,13 @@ include modules/calib3d/CMakeFiles/opencv_calib3d.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 
-modules/calib3d/opencl_kernels.cpp: ../../modules/calib3d/src/opencl/stereobm.cl
-modules/calib3d/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/calib3d/opencl_kernels_calib3d.cpp: ../../modules/calib3d/src/opencl/stereobm.cl
+modules/calib3d/opencl_kernels_calib3d.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/calib3d && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="calib3d" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_calib3d.cpp, opencl_kernels_calib3d.hpp"
+	cd modules/calib3d && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="calib3d" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels_calib3d.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/calib3d/opencl_kernels.hpp: modules/calib3d/opencl_kernels.cpp
+modules/calib3d/opencl_kernels_calib3d.hpp: modules/calib3d/opencl_kernels_calib3d.cpp
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calib3d_init.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/calib3d_init.cpp.o: ../../modules/calib3d/src/calib3d_init.cpp
@@ -221,9 +221,32 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o.provides: 
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o
 
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o: ../../modules/calib3d/src/dls.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o -c ../../../../modules/calib3d/src/dls.cpp
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/dls.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/calib3d/src/dls.cpp > CMakeFiles/opencv_calib3d.dir/src/dls.cpp.i
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/dls.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/calib3d/src/dls.cpp -o CMakeFiles/opencv_calib3d.dir/src/dls.cpp.s
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.requires
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.provides
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o
+
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o: ../../modules/calib3d/src/epnp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o -c ../../../../modules/calib3d/src/epnp.cpp
 
@@ -244,9 +267,32 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.provides: modules/c
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o
 
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o: ../../modules/calib3d/src/fisheye.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o -c ../../../../modules/calib3d/src/fisheye.cpp
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/calib3d/src/fisheye.cpp > CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.i
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/calib3d/src/fisheye.cpp -o CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.s
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.requires
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.provides
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o
+
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o: ../../modules/calib3d/src/five-point.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o -c ../../../../modules/calib3d/src/five-point.cpp
 
@@ -269,7 +315,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o.provides.buil
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o: ../../modules/calib3d/src/fundam.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o -c ../../../../modules/calib3d/src/fundam.cpp
 
@@ -290,9 +336,32 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.provides: modules
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o
 
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o: ../../modules/calib3d/src/homography_decomp.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o -c ../../../../modules/calib3d/src/homography_decomp.cpp
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -E ../../../../modules/calib3d/src/homography_decomp.cpp > CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.i
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -S ../../../../modules/calib3d/src/homography_decomp.cpp -o CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.s
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.requires
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.provides
+
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o
+
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o: ../../modules/calib3d/src/levmarq.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o -c ../../../../modules/calib3d/src/levmarq.cpp
 
@@ -315,7 +384,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o.provides.build: 
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o: ../../modules/calib3d/src/p3p.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o -c ../../../../modules/calib3d/src/p3p.cpp
 
@@ -338,7 +407,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o.provides.build: modu
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o: ../../modules/calib3d/src/polynom_solver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o -c ../../../../modules/calib3d/src/polynom_solver.cpp
 
@@ -361,7 +430,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o.provides.
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o: ../../modules/calib3d/src/posit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o -c ../../../../modules/calib3d/src/posit.cpp
 
@@ -384,7 +453,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/posit.cpp.o.provides.build: mo
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o: ../../modules/calib3d/src/ptsetreg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o -c ../../../../modules/calib3d/src/ptsetreg.cpp
 
@@ -407,7 +476,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/ptsetreg.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o: ../../modules/calib3d/src/quadsubpix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o -c ../../../../modules/calib3d/src/quadsubpix.cpp
 
@@ -430,7 +499,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/quadsubpix.cpp.o.provides.buil
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o: ../../modules/calib3d/src/solvepnp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o -c ../../../../modules/calib3d/src/solvepnp.cpp
 
@@ -453,7 +522,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/solvepnp.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o: ../../modules/calib3d/src/stereobm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o -c ../../../../modules/calib3d/src/stereobm.cpp
 
@@ -476,7 +545,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o.provides.build:
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o: ../../modules/calib3d/src/stereosgbm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o -c ../../../../modules/calib3d/src/stereosgbm.cpp
 
@@ -499,7 +568,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o.provides.buil
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o: ../../modules/calib3d/src/triangulate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o -c ../../../../modules/calib3d/src/triangulate.cpp
 
@@ -520,28 +589,28 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o.provides: mo
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o: modules/calib3d/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o"
-	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o: modules/calib3d/CMakeFiles/opencv_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o: modules/calib3d/opencl_kernels_calib3d.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o -c opencl_kernels_calib3d.cpp
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.i"
-	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.i
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -E opencl_kernels_calib3d.cpp > CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.i
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.s"
-	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.s
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/precomp.hpp" -Winvalid-pch  -S opencl_kernels_calib3d.cpp -o CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.s
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.requires
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.provides
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.provides
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o
 
 # Object files for target opencv_calib3d
 opencv_calib3d_OBJECTS = \
@@ -552,9 +621,12 @@ opencv_calib3d_OBJECTS = \
 "CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/compat_ptsetreg.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o" \
+"CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o" \
+"CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o" \
+"CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o" \
@@ -565,7 +637,7 @@ opencv_calib3d_OBJECTS = \
 "CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o" \
 "CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o" \
-"CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o"
 
 # External object files for target opencv_calib3d
 opencv_calib3d_EXTERNAL_OBJECTS =
@@ -577,9 +649,12 @@ lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.d
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_ptsetreg.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o
+lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o
+lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o
+lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o
@@ -590,7 +665,7 @@ lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.d
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o
-lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make
 lib/armeabi-v7a/libopencv_calib3d.a: modules/calib3d/CMakeFiles/opencv_calib3d.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_calib3d.a"
@@ -608,9 +683,12 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFil
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/circlesgrid.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_ptsetreg.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/five-point.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/levmarq.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/p3p.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/polynom_solver.cpp.o.requires
@@ -621,15 +699,15 @@ modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFil
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereobm.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/stereosgbm.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/triangulate.cpp.o.requires
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o.requires
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/requires
 
 modules/calib3d/CMakeFiles/opencv_calib3d.dir/clean:
 	cd modules/calib3d && $(CMAKE_COMMAND) -P CMakeFiles/opencv_calib3d.dir/cmake_clean.cmake
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/clean
 
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend: modules/calib3d/opencl_kernels.cpp
-modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend: modules/calib3d/opencl_kernels.hpp
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend: modules/calib3d/opencl_kernels_calib3d.cpp
+modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend: modules/calib3d/opencl_kernels_calib3d.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/calib3d /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/CMakeFiles/opencv_calib3d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/calib3d/CMakeFiles/opencv_calib3d.dir/depend
 

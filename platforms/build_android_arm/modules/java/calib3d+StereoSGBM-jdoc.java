@@ -45,7 +45,72 @@ public class StereoSGBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoSGBM::setMode(int mode)
+    // C++:  int getMode()
+    //
+
+    public  int getMode()
+    {
+
+        int retVal = getMode_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getP1()
+    //
+
+    public  int getP1()
+    {
+
+        int retVal = getP1_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getP2()
+    //
+
+    public  int getP2()
+    {
+
+        int retVal = getP2_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getPreFilterCap()
+    //
+
+    public  int getPreFilterCap()
+    {
+
+        int retVal = getPreFilterCap_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getUniquenessRatio()
+    //
+
+    public  int getUniquenessRatio()
+    {
+
+        int retVal = getUniquenessRatio_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void setMode(int mode)
     //
 
     public  void setMode(int mode)
@@ -58,7 +123,7 @@ public class StereoSGBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoSGBM::setP1(int P1)
+    // C++:  void setP1(int P1)
     //
 
     public  void setP1(int P1)
@@ -71,7 +136,7 @@ public class StereoSGBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoSGBM::setP2(int P2)
+    // C++:  void setP2(int P2)
     //
 
     public  void setP2(int P2)
@@ -84,7 +149,7 @@ public class StereoSGBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoSGBM::setPreFilterCap(int preFilterCap)
+    // C++:  void setPreFilterCap(int preFilterCap)
     //
 
     public  void setPreFilterCap(int preFilterCap)
@@ -97,7 +162,7 @@ public class StereoSGBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoSGBM::setUniquenessRatio(int uniquenessRatio)
+    // C++:  void setUniquenessRatio(int uniquenessRatio)
     //
 
     public  void setUniquenessRatio(int uniquenessRatio)
@@ -116,19 +181,34 @@ public class StereoSGBM extends StereoMatcher {
 
 
 
-    // C++:  void StereoSGBM::setMode(int mode)
+    // C++:  int getMode()
+    private static native int getMode_0(long nativeObj);
+
+    // C++:  int getP1()
+    private static native int getP1_0(long nativeObj);
+
+    // C++:  int getP2()
+    private static native int getP2_0(long nativeObj);
+
+    // C++:  int getPreFilterCap()
+    private static native int getPreFilterCap_0(long nativeObj);
+
+    // C++:  int getUniquenessRatio()
+    private static native int getUniquenessRatio_0(long nativeObj);
+
+    // C++:  void setMode(int mode)
     private static native void setMode_0(long nativeObj, int mode);
 
-    // C++:  void StereoSGBM::setP1(int P1)
+    // C++:  void setP1(int P1)
     private static native void setP1_0(long nativeObj, int P1);
 
-    // C++:  void StereoSGBM::setP2(int P2)
+    // C++:  void setP2(int P2)
     private static native void setP2_0(long nativeObj, int P2);
 
-    // C++:  void StereoSGBM::setPreFilterCap(int preFilterCap)
+    // C++:  void setPreFilterCap(int preFilterCap)
     private static native void setPreFilterCap_0(long nativeObj, int preFilterCap);
 
-    // C++:  void StereoSGBM::setUniquenessRatio(int uniquenessRatio)
+    // C++:  void setUniquenessRatio(int uniquenessRatio)
     private static native void setUniquenessRatio_0(long nativeObj, int uniquenessRatio);
 
     // native support for java finalize()

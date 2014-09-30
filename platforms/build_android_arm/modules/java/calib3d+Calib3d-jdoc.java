@@ -18,41 +18,26 @@ import org.opencv.utils.Converters;
 
 public class Calib3d {
 
-    private static final int
-            CV_LMEDS = 4,
-            CV_RANSAC = 8,
-            CV_FM_LMEDS = CV_LMEDS,
-            CV_FM_RANSAC = CV_RANSAC,
-            CV_FM_7POINT = 1,
-            CV_FM_8POINT = 2,
-            CV_CALIB_USE_INTRINSIC_GUESS = 1,
-            CV_CALIB_FIX_ASPECT_RATIO = 2,
-            CV_CALIB_FIX_PRINCIPAL_POINT = 4,
-            CV_CALIB_ZERO_TANGENT_DIST = 8,
-            CV_CALIB_FIX_FOCAL_LENGTH = 16,
-            CV_CALIB_FIX_K1 = 32,
-            CV_CALIB_FIX_K2 = 64,
-            CV_CALIB_FIX_K3 = 128,
-            CV_CALIB_FIX_K4 = 2048,
-            CV_CALIB_FIX_K5 = 4096,
-            CV_CALIB_FIX_K6 = 8192,
-            CV_CALIB_RATIONAL_MODEL = 16384,
-            CV_CALIB_THIN_PRISM_MODEL = 32768,
-            CV_CALIB_FIX_S1_S2_S3_S4 = 65536,
-            CV_CALIB_FIX_INTRINSIC = 256,
-            CV_CALIB_SAME_FOCAL_LENGTH = 512,
-            CV_CALIB_ZERO_DISPARITY = 1024;
-
-
     public static final int
+            CALIB_USE_INTRINSIC_GUESS = 1,
+            CALIB_RECOMPUTE_EXTRINSIC = 2,
+            CALIB_CHECK_COND = 4,
+            CALIB_FIX_SKEW = 8,
+            CALIB_FIX_K1 = 16,
+            CALIB_FIX_K2 = 32,
+            CALIB_FIX_K3 = 64,
+            CALIB_FIX_K4 = 128,
+            CALIB_FIX_INTRINSIC = 256,
             CV_ITERATIVE = 0,
             CV_EPNP = 1,
             CV_P3P = 2,
+            CV_DLS = 3,
             LMEDS = 4,
             RANSAC = 8,
-            ITERATIVE = 0,
-            EPNP = 1,
-            P3P = 2,
+            SOLVEPNP_ITERATIVE = 0,
+            SOLVEPNP_EPNP = 1,
+            SOLVEPNP_P3P = 2,
+            SOLVEPNP_DLS = 3,
             CALIB_CB_ADAPTIVE_THRESH = 1,
             CALIB_CB_NORMALIZE_IMAGE = 2,
             CALIB_CB_FILTER_QUADS = 4,
@@ -60,21 +45,15 @@ public class Calib3d {
             CALIB_CB_SYMMETRIC_GRID = 1,
             CALIB_CB_ASYMMETRIC_GRID = 2,
             CALIB_CB_CLUSTERING = 4,
-            CALIB_USE_INTRINSIC_GUESS = 0x00001,
             CALIB_FIX_ASPECT_RATIO = 0x00002,
             CALIB_FIX_PRINCIPAL_POINT = 0x00004,
             CALIB_ZERO_TANGENT_DIST = 0x00008,
             CALIB_FIX_FOCAL_LENGTH = 0x00010,
-            CALIB_FIX_K1 = 0x00020,
-            CALIB_FIX_K2 = 0x00040,
-            CALIB_FIX_K3 = 0x00080,
-            CALIB_FIX_K4 = 0x00800,
             CALIB_FIX_K5 = 0x01000,
             CALIB_FIX_K6 = 0x02000,
             CALIB_RATIONAL_MODEL = 0x04000,
             CALIB_THIN_PRISM_MODEL = 0x08000,
             CALIB_FIX_S1_S2_S3_S4 = 0x10000,
-            CALIB_FIX_INTRINSIC = 0x00100,
             CALIB_SAME_FOCAL_LENGTH = 0x00200,
             CALIB_ZERO_DISPARITY = 0x00400,
             FM_7POINT = 1,
@@ -909,14 +888,143 @@ public class Calib3d {
     // C++:  Ptr_StereoBM createStereoBM(int numDisparities = 0, int blockSize = 21)
     //
 
-    // Return type 'Ptr_StereoBM' is not supported, skipping the function
+/**
+ * <p>Creates StereoBM object</p>
+ *
+ * <p>The function create <code>StereoBM</code> object. You can then call
+ * <code>StereoBM.compute()</code> to compute disparity for a specific stereo
+ * pair.</p>
+ *
+ * @param numDisparities the disparity search range. For each pixel algorithm
+ * will find the best disparity from 0 (default minimum disparity) to
+ * <code>numDisparities</code>. The search range can then be shifted by changing
+ * the minimum disparity.
+ * @param blockSize the linear size of the blocks compared by the algorithm. The
+ * size should be odd (as the block is centered at the current pixel). Larger
+ * block size implies smoother, though less accurate disparity map. Smaller
+ * block size gives more detailed disparity map, but there is higher chance for
+ * algorithm to find a wrong correspondence.
+ *
+ * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#createstereobm">org.opencv.calib3d.Calib3d.createStereoBM</a>
+ */
+    public static StereoBM createStereoBM(int numDisparities, int blockSize)
+    {
+
+        StereoBM retVal = new StereoBM(createStereoBM_0(numDisparities, blockSize));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates StereoBM object</p>
+ *
+ * <p>The function create <code>StereoBM</code> object. You can then call
+ * <code>StereoBM.compute()</code> to compute disparity for a specific stereo
+ * pair.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#createstereobm">org.opencv.calib3d.Calib3d.createStereoBM</a>
+ */
+    public static StereoBM createStereoBM()
+    {
+
+        StereoBM retVal = new StereoBM(createStereoBM_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, int mode = StereoSGBM::MODE_SGBM)
     //
 
-    // Return type 'Ptr_StereoSGBM' is not supported, skipping the function
+/**
+ * <p>Creates StereoSGBM object</p>
+ *
+ * <p>The first constructor initializes <code>StereoSGBM</code> with all the
+ * default parameters. So, you only have to set <code>StereoSGBM.numDisparities</code>
+ * at minimum. The second constructor enables you to set each parameter to a
+ * custom value.</p>
+ *
+ * @param minDisparity Minimum possible disparity value. Normally, it is zero
+ * but sometimes rectification algorithms can shift images, so this parameter
+ * needs to be adjusted accordingly.
+ * @param numDisparities Maximum disparity minus minimum disparity. The value is
+ * always greater than zero. In the current implementation, this parameter must
+ * be divisible by 16.
+ * @param blockSize Matched block size. It must be an odd number
+ * <code>>=1</code>. Normally, it should be somewhere in the <code>3..11</code>
+ * range.
+ * @param P1 The first parameter controlling the disparity smoothness. See
+ * below.
+ * @param P2 The second parameter controlling the disparity smoothness. The
+ * larger the values are, the smoother the disparity is. <code>P1</code> is the
+ * penalty on the disparity change by plus or minus 1 between neighbor pixels.
+ * <code>P2</code> is the penalty on the disparity change by more than 1 between
+ * neighbor pixels. The algorithm requires <code>P2 > P1</code>. See
+ * <code>stereo_match.cpp</code> sample where some reasonably good
+ * <code>P1</code> and <code>P2</code> values are shown (like <code>8*number_of_image_channels*SADWindowSize*SADWindowSize</code>
+ * and <code>32*number_of_image_channels*SADWindowSize*SADWindowSize</code>,
+ * respectively).
+ * @param disp12MaxDiff Maximum allowed difference (in integer pixel units) in
+ * the left-right disparity check. Set it to a non-positive value to disable the
+ * check.
+ * @param preFilterCap Truncation value for the prefiltered image pixels. The
+ * algorithm first computes x-derivative at each pixel and clips its value by
+ * <code>[-preFilterCap, preFilterCap]</code> interval. The result values are
+ * passed to the Birchfield-Tomasi pixel cost function.
+ * @param uniquenessRatio Margin in percentage by which the best (minimum)
+ * computed cost function value should "win" the second best value to consider
+ * the found match correct. Normally, a value within the 5-15 range is good
+ * enough.
+ * @param speckleWindowSize Maximum size of smooth disparity regions to consider
+ * their noise speckles and invalidate. Set it to 0 to disable speckle
+ * filtering. Otherwise, set it somewhere in the 50-200 range.
+ * @param speckleRange Maximum disparity variation within each connected
+ * component. If you do speckle filtering, set the parameter to a positive
+ * value, it will be implicitly multiplied by 16. Normally, 1 or 2 is good
+ * enough.
+ * @param mode Set it to <code>StereoSGBM.MODE_HH</code> to run the full-scale
+ * two-pass dynamic programming algorithm. It will consume O(W*H*numDisparities)
+ * bytes, which is large for 640x480 stereo and huge for HD-size pictures. By
+ * default, it is set to <code>false</code>.
+ *
+ * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#createstereosgbm">org.opencv.calib3d.Calib3d.createStereoSGBM</a>
+ */
+    public static StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1, int P2, int disp12MaxDiff, int preFilterCap, int uniquenessRatio, int speckleWindowSize, int speckleRange, int mode)
+    {
+
+        StereoSGBM retVal = new StereoSGBM(createStereoSGBM_0(minDisparity, numDisparities, blockSize, P1, P2, disp12MaxDiff, preFilterCap, uniquenessRatio, speckleWindowSize, speckleRange, mode));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates StereoSGBM object</p>
+ *
+ * <p>The first constructor initializes <code>StereoSGBM</code> with all the
+ * default parameters. So, you only have to set <code>StereoSGBM.numDisparities</code>
+ * at minimum. The second constructor enables you to set each parameter to a
+ * custom value.</p>
+ *
+ * @param minDisparity Minimum possible disparity value. Normally, it is zero
+ * but sometimes rectification algorithms can shift images, so this parameter
+ * needs to be adjusted accordingly.
+ * @param numDisparities Maximum disparity minus minimum disparity. The value is
+ * always greater than zero. In the current implementation, this parameter must
+ * be divisible by 16.
+ * @param blockSize Matched block size. It must be an odd number
+ * <code>>=1</code>. Normally, it should be somewhere in the <code>3..11</code>
+ * range.
+ *
+ * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#createstereosgbm">org.opencv.calib3d.Calib3d.createStereoSGBM</a>
+ */
+    public static StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize)
+    {
+
+        StereoSGBM retVal = new StereoSGBM(createStereoSGBM_1(minDisparity, numDisparities, blockSize));
+
+        return retVal;
+    }
 
 
     //
@@ -947,6 +1055,44 @@ public class Calib3d {
         decomposeEssentialMat_0(E.nativeObj, R1.nativeObj, R2.nativeObj, t.nativeObj);
 
         return;
+    }
+
+
+    //
+    // C++:  int decomposeHomographyMat(Mat H, Mat K, vector_Mat& rotations, vector_Mat& translations, vector_Mat& normals)
+    //
+
+/**
+ * <p>Decompose a homography matrix to rotation(s), translation(s) and plane
+ * normal(s).</p>
+ *
+ * <p>This function extracts relative camera motion between two views observing a
+ * planar object from the homography <code>H</code> induced by the plane.
+ * The intrinsic camera matrix <code>K</code> must also be provided. The
+ * function may return up to four mathematical solution sets. At least two of
+ * the solutions may further be invalidated if point correspondences are
+ * available by applying positive depth constraint (all points must be in front
+ * of the camera).
+ * The decomposition method is described in detail in [Malis].</p>
+ *
+ * @param H The input homography matrix between two images.
+ * @param K The input intrinsic camera calibration matrix.
+ * @param rotations Array of rotation matrices.
+ * @param translations Array of translation matrices.
+ * @param normals Array of plane normal matrices.
+ *
+ * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#decomposehomographymat">org.opencv.calib3d.Calib3d.decomposeHomographyMat</a>
+ */
+    public static int decomposeHomographyMat(Mat H, Mat K, List<Mat> rotations, List<Mat> translations, List<Mat> normals)
+    {
+        Mat rotations_mat = new Mat();
+        Mat translations_mat = new Mat();
+        Mat normals_mat = new Mat();
+        int retVal = decomposeHomographyMat_0(H.nativeObj, K.nativeObj, rotations_mat.nativeObj, translations_mat.nativeObj, normals_mat.nativeObj);
+        Converters.Mat_to_vector_Mat(rotations_mat, rotations);
+        Converters.Mat_to_vector_Mat(translations_mat, translations);
+        Converters.Mat_to_vector_Mat(normals_mat, normals);
+        return retVal;
     }
 
 
@@ -1431,8 +1577,8 @@ public class Calib3d {
  *
  * <p>where <em>E</em> is an essential matrix, <em>p_1</em> and <em>p_2</em> are
  * corresponding points in the first and the second images, respectively.
- * The result of this function may be passed further to <code>decomposeEssentialMat()</code>
- * or <code>recoverPose()</code> to recover the relative pose between cameras.</p>
+ * The result of this function may be passed further to "decomposeEssentialMat"
+ * or "recoverPose" to recover the relative pose between cameras.</p>
  *
  * @param points1 Array of <code>N</code> <code>(N >= 5)</code> 2D points from
  * the first image. The point coordinates should be floating-point (single or
@@ -1487,8 +1633,8 @@ public class Calib3d {
  *
  * <p>where <em>E</em> is an essential matrix, <em>p_1</em> and <em>p_2</em> are
  * corresponding points in the first and the second images, respectively.
- * The result of this function may be passed further to <code>decomposeEssentialMat()</code>
- * or <code>recoverPose()</code> to recover the relative pose between cameras.</p>
+ * The result of this function may be passed further to "decomposeEssentialMat"
+ * or "recoverPose" to recover the relative pose between cameras.</p>
  *
  * @param points1 Array of <code>N</code> <code>(N >= 5)</code> 2D points from
  * the first image. The point coordinates should be floating-point (single or
@@ -1540,8 +1686,8 @@ public class Calib3d {
  *
  * <p>where <em>E</em> is an essential matrix, <em>p_1</em> and <em>p_2</em> are
  * corresponding points in the first and the second images, respectively.
- * The result of this function may be passed further to <code>decomposeEssentialMat()</code>
- * or <code>recoverPose()</code> to recover the relative pose between cameras.</p>
+ * The result of this function may be passed further to "decomposeEssentialMat"
+ * or "recoverPose" to recover the relative pose between cameras.</p>
  *
  * @param points1 Array of <code>N</code> <code>(N >= 5)</code> 2D points from
  * the first image. The point coordinates should be floating-point (single or
@@ -1783,7 +1929,7 @@ public class Calib3d {
 
 
     //
-    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
+    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat(), int maxIters = 2000, double confidence = 0.995)
     //
 
 /**
@@ -1804,9 +1950,9 @@ public class Calib3d {
  * value 0, the function uses all the point pairs to compute an initial
  * homography estimate with a simple least-squares scheme.</p>
  *
- * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,<em>dstPoints_i</em>)
- * fit the rigid perspective transformation (that is, there are some outliers),
- * this initial estimate will be poor.
+ * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,
+ * <em>dstPoints_i</em>) fit the rigid perspective transformation (that is,
+ * there are some outliers), this initial estimate will be poor.
  * In this case, you can use one of the two robust methods. Both methods,
  * <code>RANSAC</code> and <code>LMeDS</code>, try many different random subsets
  * of the corresponding point pairs (of four pairs each), estimate the
@@ -1829,7 +1975,8 @@ public class Calib3d {
  *
  * <p>The function is used to find initial intrinsic and extrinsic matrices.
  * Homography matrix is determined up to a scale. Thus, it is normalized so that
- * <em>h_33=1</em>.</p>
+ * <em>h_33=1</em>. Note that whenever an H matrix cannot be estimated, an empty
+ * one will be returned.</p>
  *
  * <p>Note:</p>
  * <ul>
@@ -1859,6 +2006,9 @@ public class Calib3d {
  * set this parameter somewhere in the range of 1 to 10.</p>
  * @param mask Optional output mask set by a robust method (<code>RANSAC</code>
  * or <code>LMEDS</code>). Note that the input mask values are ignored.
+ * @param maxIters The maximum number of RANSAC iterations, 2000 is the maximum
+ * it can be.
+ * @param confidence Confidence level, between 0 and 1.
  *
  * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#findhomography">org.opencv.calib3d.Calib3d.findHomography</a>
  * @see org.opencv.imgproc.Imgproc#warpPerspective
@@ -1867,11 +2017,11 @@ public class Calib3d {
  * @see org.opencv.imgproc.Imgproc#getAffineTransform
  * @see org.opencv.imgproc.Imgproc#getPerspectiveTransform
  */
-    public static Mat findHomography(MatOfPoint2f srcPoints, MatOfPoint2f dstPoints, int method, double ransacReprojThreshold, Mat mask)
+    public static Mat findHomography(MatOfPoint2f srcPoints, MatOfPoint2f dstPoints, int method, double ransacReprojThreshold, Mat mask, int maxIters, double confidence)
     {
         Mat srcPoints_mat = srcPoints;
         Mat dstPoints_mat = dstPoints;
-        Mat retVal = new Mat(findHomography_0(srcPoints_mat.nativeObj, dstPoints_mat.nativeObj, method, ransacReprojThreshold, mask.nativeObj));
+        Mat retVal = new Mat(findHomography_0(srcPoints_mat.nativeObj, dstPoints_mat.nativeObj, method, ransacReprojThreshold, mask.nativeObj, maxIters, confidence));
 
         return retVal;
     }
@@ -1894,9 +2044,9 @@ public class Calib3d {
  * value 0, the function uses all the point pairs to compute an initial
  * homography estimate with a simple least-squares scheme.</p>
  *
- * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,<em>dstPoints_i</em>)
- * fit the rigid perspective transformation (that is, there are some outliers),
- * this initial estimate will be poor.
+ * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,
+ * <em>dstPoints_i</em>) fit the rigid perspective transformation (that is,
+ * there are some outliers), this initial estimate will be poor.
  * In this case, you can use one of the two robust methods. Both methods,
  * <code>RANSAC</code> and <code>LMeDS</code>, try many different random subsets
  * of the corresponding point pairs (of four pairs each), estimate the
@@ -1919,7 +2069,8 @@ public class Calib3d {
  *
  * <p>The function is used to find initial intrinsic and extrinsic matrices.
  * Homography matrix is determined up to a scale. Thus, it is normalized so that
- * <em>h_33=1</em>.</p>
+ * <em>h_33=1</em>. Note that whenever an H matrix cannot be estimated, an empty
+ * one will be returned.</p>
  *
  * <p>Note:</p>
  * <ul>
@@ -1982,9 +2133,9 @@ public class Calib3d {
  * value 0, the function uses all the point pairs to compute an initial
  * homography estimate with a simple least-squares scheme.</p>
  *
- * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,<em>dstPoints_i</em>)
- * fit the rigid perspective transformation (that is, there are some outliers),
- * this initial estimate will be poor.
+ * <p>However, if not all of the point pairs (<em>srcPoints_i</em>,
+ * <em>dstPoints_i</em>) fit the rigid perspective transformation (that is,
+ * there are some outliers), this initial estimate will be poor.
  * In this case, you can use one of the two robust methods. Both methods,
  * <code>RANSAC</code> and <code>LMeDS</code>, try many different random subsets
  * of the corresponding point pairs (of four pairs each), estimate the
@@ -2007,7 +2158,8 @@ public class Calib3d {
  *
  * <p>The function is used to find initial intrinsic and extrinsic matrices.
  * Homography matrix is determined up to a scale. Thus, it is normalized so that
- * <em>h_33=1</em>.</p>
+ * <em>h_33=1</em>. Note that whenever an H matrix cannot be estimated, an empty
+ * one will be returned.</p>
  *
  * <p>Note:</p>
  * <ul>
@@ -2347,15 +2499,14 @@ public class Calib3d {
  * matrix and the corresponding points in two images, using cheirality check.
  * Returns the number of inliers which pass the check.</p>
  *
- * <p>This function decomposes an essential matrix using <code>decomposeEssentialMat()</code>
+ * <p>This function decomposes an essential matrix using "decomposeEssentialMat"
  * and then verifies possible pose hypotheses by doing cheirality check.
  * The cheirality check basically means that the triangulated 3D points should
- * have positive depth. Some details can be found from [Nister03].</p>
+ * have positive depth. Some details can be found in [Nister03].</p>
  *
  * <p>This function can be used to process output <code>E</code> and
- * <code>mask</code> from <code>findEssentialMat()</code>.In this scenario,
- * <code>points1</code> and <code>points2</code> are the same input for
- * <code>findEssentialMat()</code>.
+ * <code>mask</code> from "findEssentialMat".In this scenario, <code>points1</code>
+ * and <code>points2</code> are the same input for "findEssentialMat".
  * <code></p>
  *
  * <p>// C++ code:</p>
@@ -2421,15 +2572,14 @@ public class Calib3d {
  * matrix and the corresponding points in two images, using cheirality check.
  * Returns the number of inliers which pass the check.</p>
  *
- * <p>This function decomposes an essential matrix using <code>decomposeEssentialMat()</code>
+ * <p>This function decomposes an essential matrix using "decomposeEssentialMat"
  * and then verifies possible pose hypotheses by doing cheirality check.
  * The cheirality check basically means that the triangulated 3D points should
- * have positive depth. Some details can be found from [Nister03].</p>
+ * have positive depth. Some details can be found in [Nister03].</p>
  *
  * <p>This function can be used to process output <code>E</code> and
- * <code>mask</code> from <code>findEssentialMat()</code>.In this scenario,
- * <code>points1</code> and <code>points2</code> are the same input for
- * <code>findEssentialMat()</code>.
+ * <code>mask</code> from "findEssentialMat".In this scenario, <code>points1</code>
+ * and <code>points2</code> are the same input for "findEssentialMat".
  * <code></p>
  *
  * <p>// C++ code:</p>
@@ -2489,15 +2639,14 @@ public class Calib3d {
  * matrix and the corresponding points in two images, using cheirality check.
  * Returns the number of inliers which pass the check.</p>
  *
- * <p>This function decomposes an essential matrix using <code>decomposeEssentialMat()</code>
+ * <p>This function decomposes an essential matrix using "decomposeEssentialMat"
  * and then verifies possible pose hypotheses by doing cheirality check.
  * The cheirality check basically means that the triangulated 3D points should
- * have positive depth. Some details can be found from [Nister03].</p>
+ * have positive depth. Some details can be found in [Nister03].</p>
  *
  * <p>This function can be used to process output <code>E</code> and
- * <code>mask</code> from <code>findEssentialMat()</code>.In this scenario,
- * <code>points1</code> and <code>points2</code> are the same input for
- * <code>findEssentialMat()</code>.
+ * <code>mask</code> from "findEssentialMat".In this scenario, <code>points1</code>
+ * and <code>points2</code> are the same input for "findEssentialMat".
  * <code></p>
  *
  * <p>// C++ code:</p>
@@ -2686,7 +2835,7 @@ public class Calib3d {
 
 
     //
-    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE)
     //
 
 /**
@@ -2721,24 +2870,26 @@ public class Calib3d {
  * <code>tvec</code>, brings points from the model coordinate system to the
  * camera coordinate system.
  * @param tvec Output translation vector.
- * @param useExtrinsicGuess If true (1), the function uses the provided
- * <code>rvec</code> and <code>tvec</code> values as initial approximations of
- * the rotation and translation vectors, respectively, and further optimizes
- * them.
+ * @param useExtrinsicGuess Parameter used for SOLVEPNP_ITERATIVE. If true (1),
+ * the function uses the provided <code>rvec</code> and <code>tvec</code> values
+ * as initial approximations of the rotation and translation vectors,
+ * respectively, and further optimizes them.
  * @param flags Method for solving a PnP problem:
  * <ul>
- *   <li> ITERATIVE Iterative method is based on Levenberg-Marquardt
+ *   <li> SOLVEPNP_ITERATIVE Iterative method is based on Levenberg-Marquardt
  * optimization. In this case the function finds such a pose that minimizes
  * reprojection error, that is the sum of squared distances between the observed
  * projections <code>imagePoints</code> and the projected (using
  * "projectPoints") <code>objectPoints</code>.
- *   <li> P3P Method is based on the paper of X.S. Gao, X.-R. Hou, J. Tang,
- * H.-F. Chang "Complete Solution Classification for the Perspective-Three-Point
+ *   <li> SOLVEPNP_P3P Method is based on the paper of X.S. Gao, X.-R. Hou, J.
+ * Tang, H.-F. Chang "Complete Solution Classification for the Perspective-Three-Point
  * Problem". In this case the function requires exactly four object and image
  * points.
- *   <li> EPNP Method has been introduced by F.Moreno-Noguer, V.Lepetit and
- * P.Fua in the paper "EPnP: Efficient Perspective-n-Point Camera Pose
+ *   <li> SOLVEPNP_EPNP Method has been introduced by F.Moreno-Noguer, V.Lepetit
+ * and P.Fua in the paper "EPnP: Efficient Perspective-n-Point Camera Pose
  * Estimation".
+ *   <li> SOLVEPNP_DLS Method is based on the paper of Joel A. Hesch and
+ * Stergios I. Roumeliotis. "A Direct Least-Squares (DLS) Method for PnP".
  * </ul>
  *
  * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#solvepnp">org.opencv.calib3d.Calib3d.solvePnP</a>
@@ -2800,7 +2951,7 @@ public class Calib3d {
 
 
     //
-    // C++:  void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
+    // C++:  bool solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, double confidence = 0.99, Mat& inliers = Mat(), int flags = SOLVEPNP_ITERATIVE)
     //
 
 /**
@@ -2813,8 +2964,13 @@ public class Calib3d {
  * reprojection error, that is, the sum of squared distances between the
  * observed projections <code>imagePoints</code> and the projected (using
  * "projectPoints") <code>objectPoints</code>. The use of RANSAC makes the
- * function resistant to outliers. The function is parallelized with the TBB
- * library.</p>
+ * function resistant to outliers.</p>
+ *
+ * <p>Note:</p>
+ * <ul>
+ *   <li> An example of how to use solvePNPRansac for object detection can be
+ * found at opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
+ * </ul>
  *
  * @param objectPoints Array of object points in the object coordinate space,
  * 3xN/Nx3 1-channel or 1xN/Nx1 3-channel, where N is the number of points.
@@ -2835,30 +2991,30 @@ public class Calib3d {
  * <code>tvec</code>, brings points from the model coordinate system to the
  * camera coordinate system.
  * @param tvec Output translation vector.
- * @param useExtrinsicGuess If true (1), the function uses the provided
- * <code>rvec</code> and <code>tvec</code> values as initial approximations of
- * the rotation and translation vectors, respectively, and further optimizes
- * them.
+ * @param useExtrinsicGuess Parameter used for SOLVEPNP_ITERATIVE. If true (1),
+ * the function uses the provided <code>rvec</code> and <code>tvec</code> values
+ * as initial approximations of the rotation and translation vectors,
+ * respectively, and further optimizes them.
  * @param iterationsCount Number of iterations.
  * @param reprojectionError Inlier threshold value used by the RANSAC procedure.
  * The parameter value is the maximum allowed distance between the observed and
  * computed point projections to consider it an inlier.
- * @param minInliersCount Number of inliers. If the algorithm at some stage
- * finds more inliers than <code>minInliersCount</code>, it finishes.
+ * @param confidence The probability that the algorithm produces a useful
+ * result.
  * @param inliers Output vector that contains indices of inliers in
  * <code>objectPoints</code> and <code>imagePoints</code>.
  * @param flags Method for solving a PnP problem (see "solvePnP").
  *
  * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#solvepnpransac">org.opencv.calib3d.Calib3d.solvePnPRansac</a>
  */
-    public static void solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, int minInliersCount, Mat inliers, int flags)
+    public static boolean solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, double confidence, Mat inliers, int flags)
     {
         Mat objectPoints_mat = objectPoints;
         Mat imagePoints_mat = imagePoints;
         Mat distCoeffs_mat = distCoeffs;
-        solvePnPRansac_0(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj, useExtrinsicGuess, iterationsCount, reprojectionError, minInliersCount, inliers.nativeObj, flags);
+        boolean retVal = solvePnPRansac_0(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj, useExtrinsicGuess, iterationsCount, reprojectionError, confidence, inliers.nativeObj, flags);
 
-        return;
+        return retVal;
     }
 
 /**
@@ -2871,8 +3027,13 @@ public class Calib3d {
  * reprojection error, that is, the sum of squared distances between the
  * observed projections <code>imagePoints</code> and the projected (using
  * "projectPoints") <code>objectPoints</code>. The use of RANSAC makes the
- * function resistant to outliers. The function is parallelized with the TBB
- * library.</p>
+ * function resistant to outliers.</p>
+ *
+ * <p>Note:</p>
+ * <ul>
+ *   <li> An example of how to use solvePNPRansac for object detection can be
+ * found at opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/
+ * </ul>
  *
  * @param objectPoints Array of object points in the object coordinate space,
  * 3xN/Nx3 1-channel or 1xN/Nx1 3-channel, where N is the number of points.
@@ -2896,14 +3057,14 @@ public class Calib3d {
  *
  * @see <a href="http://docs.opencv.org/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#solvepnpransac">org.opencv.calib3d.Calib3d.solvePnPRansac</a>
  */
-    public static void solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec)
+    public static boolean solvePnPRansac(MatOfPoint3f objectPoints, MatOfPoint2f imagePoints, Mat cameraMatrix, MatOfDouble distCoeffs, Mat rvec, Mat tvec)
     {
         Mat objectPoints_mat = objectPoints;
         Mat imagePoints_mat = imagePoints;
         Mat distCoeffs_mat = distCoeffs;
-        solvePnPRansac_1(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj);
+        boolean retVal = solvePnPRansac_1(objectPoints_mat.nativeObj, imagePoints_mat.nativeObj, cameraMatrix.nativeObj, distCoeffs_mat.nativeObj, rvec.nativeObj, tvec.nativeObj);
 
-        return;
+        return retVal;
     }
 
 
@@ -3659,8 +3820,19 @@ public class Calib3d {
     // C++:  void correctMatches(Mat F, Mat points1, Mat points2, Mat& newPoints1, Mat& newPoints2)
     private static native void correctMatches_0(long F_nativeObj, long points1_nativeObj, long points2_nativeObj, long newPoints1_nativeObj, long newPoints2_nativeObj);
 
+    // C++:  Ptr_StereoBM createStereoBM(int numDisparities = 0, int blockSize = 21)
+    private static native long createStereoBM_0(int numDisparities, int blockSize);
+    private static native long createStereoBM_1();
+
+    // C++:  Ptr_StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, int mode = StereoSGBM::MODE_SGBM)
+    private static native long createStereoSGBM_0(int minDisparity, int numDisparities, int blockSize, int P1, int P2, int disp12MaxDiff, int preFilterCap, int uniquenessRatio, int speckleWindowSize, int speckleRange, int mode);
+    private static native long createStereoSGBM_1(int minDisparity, int numDisparities, int blockSize);
+
     // C++:  void decomposeEssentialMat(Mat E, Mat& R1, Mat& R2, Mat& t)
     private static native void decomposeEssentialMat_0(long E_nativeObj, long R1_nativeObj, long R2_nativeObj, long t_nativeObj);
+
+    // C++:  int decomposeHomographyMat(Mat H, Mat K, vector_Mat& rotations, vector_Mat& translations, vector_Mat& normals)
+    private static native int decomposeHomographyMat_0(long H_nativeObj, long K_nativeObj, long rotations_mat_nativeObj, long translations_mat_nativeObj, long normals_mat_nativeObj);
 
     // C++:  void decomposeProjectionMatrix(Mat projMatrix, Mat& cameraMatrix, Mat& rotMatrix, Mat& transVect, Mat& rotMatrixX = Mat(), Mat& rotMatrixY = Mat(), Mat& rotMatrixZ = Mat(), Mat& eulerAngles = Mat())
     private static native void decomposeProjectionMatrix_0(long projMatrix_nativeObj, long cameraMatrix_nativeObj, long rotMatrix_nativeObj, long transVect_nativeObj, long rotMatrixX_nativeObj, long rotMatrixY_nativeObj, long rotMatrixZ_nativeObj, long eulerAngles_nativeObj);
@@ -3695,8 +3867,8 @@ public class Calib3d {
     private static native long findFundamentalMat_1(long points1_mat_nativeObj, long points2_mat_nativeObj, int method, double param1, double param2);
     private static native long findFundamentalMat_2(long points1_mat_nativeObj, long points2_mat_nativeObj);
 
-    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
-    private static native long findHomography_0(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold, long mask_nativeObj);
+    // C++:  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat(), int maxIters = 2000, double confidence = 0.995)
+    private static native long findHomography_0(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold, long mask_nativeObj, int maxIters, double confidence);
     private static native long findHomography_1(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj, int method, double ransacReprojThreshold);
     private static native long findHomography_2(long srcPoints_mat_nativeObj, long dstPoints_mat_nativeObj);
 
@@ -3731,13 +3903,13 @@ public class Calib3d {
     private static native void reprojectImageTo3D_1(long disparity_nativeObj, long _3dImage_nativeObj, long Q_nativeObj, boolean handleMissingValues);
     private static native void reprojectImageTo3D_2(long disparity_nativeObj, long _3dImage_nativeObj, long Q_nativeObj);
 
-    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+    // C++:  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE)
     private static native boolean solvePnP_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int flags);
     private static native boolean solvePnP_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
 
-    // C++:  void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
-    private static native void solvePnPRansac_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, int minInliersCount, long inliers_nativeObj, int flags);
-    private static native void solvePnPRansac_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
+    // C++:  bool solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, double confidence = 0.99, Mat& inliers = Mat(), int flags = SOLVEPNP_ITERATIVE)
+    private static native boolean solvePnPRansac_0(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj, boolean useExtrinsicGuess, int iterationsCount, float reprojectionError, double confidence, long inliers_nativeObj, int flags);
+    private static native boolean solvePnPRansac_1(long objectPoints_mat_nativeObj, long imagePoints_mat_nativeObj, long cameraMatrix_nativeObj, long distCoeffs_mat_nativeObj, long rvec_nativeObj, long tvec_nativeObj);
 
     // C++:  double stereoCalibrate(vector_Mat objectPoints, vector_Mat imagePoints1, vector_Mat imagePoints2, Mat& cameraMatrix1, Mat& distCoeffs1, Mat& cameraMatrix2, Mat& distCoeffs2, Size imageSize, Mat& R, Mat& T, Mat& E, Mat& F, int flags = CALIB_FIX_INTRINSIC, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 1e-6))
     private static native double stereoCalibrate_0(long objectPoints_mat_nativeObj, long imagePoints1_mat_nativeObj, long imagePoints2_mat_nativeObj, long cameraMatrix1_nativeObj, long distCoeffs1_nativeObj, long cameraMatrix2_nativeObj, long distCoeffs2_nativeObj, double imageSize_width, double imageSize_height, long R_nativeObj, long T_nativeObj, long E_nativeObj, long F_nativeObj, int flags, int criteria_type, int criteria_maxCount, double criteria_epsilon);

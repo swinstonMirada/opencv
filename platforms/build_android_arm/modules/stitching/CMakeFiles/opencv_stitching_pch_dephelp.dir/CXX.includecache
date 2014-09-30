@@ -11,6 +11,8 @@ opencv2/core.hpp
 ../../modules/calib3d/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
 ../../modules/calib3d/include/opencv2/opencv2/features2d.hpp
+opencv2/core/affine.hpp
+../../modules/calib3d/include/opencv2/opencv2/core/affine.hpp
 
 ../../modules/core/include/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -35,6 +37,14 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
+
+../../modules/core/include/opencv2/core/affine.hpp
+opencv2/core.hpp
+-
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -154,6 +164,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -228,10 +242,6 @@ opencv2/flann/defines.h
 opencv2/core.hpp
 ../../modules/imgproc/include/opencv2/opencv2/core.hpp
 
-../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
-opencv2/core/cuda.hpp
-../../modules/nonfree/include/opencv2/nonfree/opencv2/core/cuda.hpp
-
 ../../modules/stitching/include/opencv2/stitching.hpp
 opencv2/core.hpp
 ../../modules/stitching/include/opencv2/opencv2/core.hpp
@@ -277,8 +287,8 @@ opencv2/features2d.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
-opencv2/nonfree/cuda.hpp
-../../modules/stitching/include/opencv2/stitching/detail/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+../../modules/stitching/include/opencv2/stitching/detail/opencv2/xfeatures2d/cuda.hpp
 
 ../../modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp
 opencv2/core.hpp
@@ -2701,8 +2711,8 @@ opencv2/cudafeatures2d.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/cudafeatures2d.hpp
 opencv2/cuda.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/cuda.hpp
-opencv2/nonfree/cuda.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/xfeatures2d/cuda.hpp
 ../../imgproc/src/gcgraph.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gcgraph.hpp
 opencv2/core/private.hpp

@@ -4,7 +4,6 @@
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
-modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/core_c.h
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cvdef.h
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cvstd.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cvstd.inl.hpp
@@ -14,12 +13,12 @@ modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_p
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/types.hpp
-modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/types_c.h
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/highgui/include/opencv2/highgui.hpp
@@ -28,8 +27,6 @@ modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_p
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/objdetect/include/opencv2/objdetect.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
-modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/objdetect/include/opencv2/objdetect/erfilter.hpp
-modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/objdetect/include/opencv2/objdetect/linemod.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/objdetect/CMakeFiles/opencv_objdetect_pch_dephelp.dir/opencv_objdetect_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h

@@ -39,23 +39,21 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/shape/test"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "../../modules/shape/include"
-  "../../modules/video/include"
-  "modules/shape"
-  "../../modules/shape/src"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include"
   "/usr/local/include/eigen3"
+  "../../modules/shape/include"
+  "../../modules/ts/include"
+  "../../modules/imgcodecs/include"
+  "../../modules/videoio/include"
+  "../../modules/core/include"
+  "../../modules/imgproc/include"
+  "../../modules/video/include"
+  "../../modules/androidcamera/include"
+  "../../modules/highgui/include"
+  "../../modules/shape/test"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

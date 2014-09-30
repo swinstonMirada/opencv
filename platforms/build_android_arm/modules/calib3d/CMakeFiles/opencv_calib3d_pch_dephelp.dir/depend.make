@@ -3,6 +3,7 @@
 
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core.hpp
+modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -14,6 +15,7 @@ modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dep
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/calib3d/CMakeFiles/opencv_calib3d_pch_dephelp.dir/opencv_calib3d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

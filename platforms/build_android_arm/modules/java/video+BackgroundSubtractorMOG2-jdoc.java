@@ -21,7 +21,248 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setBackgroundRatio(double ratio)
+    // C++:  double getBackgroundRatio()
+    //
+
+/**
+ * <p>Returns the "background ratio" parameter of the algorithm</p>
+ *
+ * <p>If a foreground pixel keeps semi-constant value for about <code>backgroundRatio*history</code>
+ * frames, it's considered background and added to the model as a center of a
+ * new component. It corresponds to <code>TB</code> parameter in the paper.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getbackgroundratio">org.opencv.video.BackgroundSubtractorMOG2.getBackgroundRatio</a>
+ */
+    public  double getBackgroundRatio()
+    {
+
+        double retVal = getBackgroundRatio_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getComplexityReductionThreshold()
+    //
+
+/**
+ * <p>Returns the complexity reduction threshold</p>
+ *
+ * <p>This parameter defines the number of samples needed to accept to prove the
+ * component exists. <code>CT=0.05</code> is a default value for all the
+ * samples. By setting <code>CT=0</code> you get an algorithm very similar to
+ * the standard Stauffer&Grimson algorithm.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getcomplexityreductionthreshold">org.opencv.video.BackgroundSubtractorMOG2.getComplexityReductionThreshold</a>
+ */
+    public  double getComplexityReductionThreshold()
+    {
+
+        double retVal = getComplexityReductionThreshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  bool getDetectShadows()
+    //
+
+/**
+ * <p>Returns the shadow detection flag</p>
+ *
+ * <p>If true, the algorithm detects shadows and marks them. See createBackgroundSubtractorMOG2
+ * for details.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getdetectshadows">org.opencv.video.BackgroundSubtractorMOG2.getDetectShadows</a>
+ */
+    public  boolean getDetectShadows()
+    {
+
+        boolean retVal = getDetectShadows_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getHistory()
+    //
+
+/**
+ * <p>Returns the number of last frames that affect the background model</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-gethistory">org.opencv.video.BackgroundSubtractorMOG2.getHistory</a>
+ */
+    public  int getHistory()
+    {
+
+        int retVal = getHistory_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getNMixtures()
+    //
+
+/**
+ * <p>Returns the number of gaussian components in the background model</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getnmixtures">org.opencv.video.BackgroundSubtractorMOG2.getNMixtures</a>
+ */
+    public  int getNMixtures()
+    {
+
+        int retVal = getNMixtures_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getShadowThreshold()
+    //
+
+/**
+ * <p>Returns the shadow threshold</p>
+ *
+ * <p>A shadow is detected if pixel is a darker version of the background. The
+ * shadow threshold (<code>Tau</code> in the paper) is a threshold defining how
+ * much darker the shadow can be. <code>Tau= 0.5</code> means that if a pixel is
+ * more than twice darker then it is not shadow. See Prati, Mikic, Trivedi and
+ * Cucchiarra, *Detecting Moving Shadows...*, IEEE PAMI,2003.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getshadowthreshold">org.opencv.video.BackgroundSubtractorMOG2.getShadowThreshold</a>
+ */
+    public  double getShadowThreshold()
+    {
+
+        double retVal = getShadowThreshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getShadowValue()
+    //
+
+/**
+ * <p>Returns the shadow value</p>
+ *
+ * <p>Shadow value is the value used to mark shadows in the foreground mask.
+ * Default value is 127. Value 0 in the mask always means background, 255 means
+ * foreground.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getshadowvalue">org.opencv.video.BackgroundSubtractorMOG2.getShadowValue</a>
+ */
+    public  int getShadowValue()
+    {
+
+        int retVal = getShadowValue_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getVarInit()
+    //
+
+/**
+ * <p>Returns the initial variance of each gaussian component</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getvarinit">org.opencv.video.BackgroundSubtractorMOG2.getVarInit</a>
+ */
+    public  double getVarInit()
+    {
+
+        double retVal = getVarInit_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getVarMax()
+    //
+
+    public  double getVarMax()
+    {
+
+        double retVal = getVarMax_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getVarMin()
+    //
+
+    public  double getVarMin()
+    {
+
+        double retVal = getVarMin_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getVarThreshold()
+    //
+
+/**
+ * <p>Returns the variance threshold for the pixel-model match</p>
+ *
+ * <p>The main threshold on the squared Mahalanobis distance to decide if the
+ * sample is well described by the background model or not. Related to Cthr from
+ * the paper.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getvarthreshold">org.opencv.video.BackgroundSubtractorMOG2.getVarThreshold</a>
+ */
+    public  double getVarThreshold()
+    {
+
+        double retVal = getVarThreshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  double getVarThresholdGen()
+    //
+
+/**
+ * <p>Returns the variance threshold for the pixel-model match used for new mixture
+ * component generation</p>
+ *
+ * <p>Threshold for the squared Mahalanobis distance that helps decide when a
+ * sample is close to the existing components (corresponds to <code>Tg</code> in
+ * the paper). If a pixel is not close to any component, it is considered
+ * foreground or added as a new component. <code>3 sigma => Tg=3*3=9</code> is
+ * default. A smaller <code>Tg</code> value generates more components. A higher
+ * <code>Tg</code> value may result in a small number of components but they can
+ * grow too large.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractormog2-getvarthresholdgen">org.opencv.video.BackgroundSubtractorMOG2.getVarThresholdGen</a>
+ */
+    public  double getVarThresholdGen()
+    {
+
+        double retVal = getVarThresholdGen_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void setBackgroundRatio(double ratio)
     //
 
 /**
@@ -41,7 +282,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setComplexityReductionThreshold(double ct)
+    // C++:  void setComplexityReductionThreshold(double ct)
     //
 
 /**
@@ -61,7 +302,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setDetectShadows(bool detectShadows)
+    // C++:  void setDetectShadows(bool detectShadows)
     //
 
 /**
@@ -81,7 +322,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setHistory(int history)
+    // C++:  void setHistory(int history)
     //
 
 /**
@@ -101,7 +342,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setNMixtures(int nmixtures)
+    // C++:  void setNMixtures(int nmixtures)
     //
 
 /**
@@ -122,7 +363,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setShadowThreshold(double threshold)
+    // C++:  void setShadowThreshold(double threshold)
     //
 
 /**
@@ -142,7 +383,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setShadowValue(int value)
+    // C++:  void setShadowValue(int value)
     //
 
 /**
@@ -162,7 +403,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setVarInit(double varInit)
+    // C++:  void setVarInit(double varInit)
     //
 
 /**
@@ -182,7 +423,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setVarMax(double varMax)
+    // C++:  void setVarMax(double varMax)
     //
 
     public  void setVarMax(double varMax)
@@ -195,7 +436,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setVarMin(double varMin)
+    // C++:  void setVarMin(double varMin)
     //
 
     public  void setVarMin(double varMin)
@@ -208,7 +449,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setVarThreshold(double varThreshold)
+    // C++:  void setVarThreshold(double varThreshold)
     //
 
 /**
@@ -228,7 +469,7 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
     //
-    // C++:  void BackgroundSubtractorMOG2::setVarThresholdGen(double varThresholdGen)
+    // C++:  void setVarThresholdGen(double varThresholdGen)
     //
 
 /**
@@ -255,40 +496,76 @@ public class BackgroundSubtractorMOG2 extends BackgroundSubtractor {
 
 
 
-    // C++:  void BackgroundSubtractorMOG2::setBackgroundRatio(double ratio)
+    // C++:  double getBackgroundRatio()
+    private static native double getBackgroundRatio_0(long nativeObj);
+
+    // C++:  double getComplexityReductionThreshold()
+    private static native double getComplexityReductionThreshold_0(long nativeObj);
+
+    // C++:  bool getDetectShadows()
+    private static native boolean getDetectShadows_0(long nativeObj);
+
+    // C++:  int getHistory()
+    private static native int getHistory_0(long nativeObj);
+
+    // C++:  int getNMixtures()
+    private static native int getNMixtures_0(long nativeObj);
+
+    // C++:  double getShadowThreshold()
+    private static native double getShadowThreshold_0(long nativeObj);
+
+    // C++:  int getShadowValue()
+    private static native int getShadowValue_0(long nativeObj);
+
+    // C++:  double getVarInit()
+    private static native double getVarInit_0(long nativeObj);
+
+    // C++:  double getVarMax()
+    private static native double getVarMax_0(long nativeObj);
+
+    // C++:  double getVarMin()
+    private static native double getVarMin_0(long nativeObj);
+
+    // C++:  double getVarThreshold()
+    private static native double getVarThreshold_0(long nativeObj);
+
+    // C++:  double getVarThresholdGen()
+    private static native double getVarThresholdGen_0(long nativeObj);
+
+    // C++:  void setBackgroundRatio(double ratio)
     private static native void setBackgroundRatio_0(long nativeObj, double ratio);
 
-    // C++:  void BackgroundSubtractorMOG2::setComplexityReductionThreshold(double ct)
+    // C++:  void setComplexityReductionThreshold(double ct)
     private static native void setComplexityReductionThreshold_0(long nativeObj, double ct);
 
-    // C++:  void BackgroundSubtractorMOG2::setDetectShadows(bool detectShadows)
+    // C++:  void setDetectShadows(bool detectShadows)
     private static native void setDetectShadows_0(long nativeObj, boolean detectShadows);
 
-    // C++:  void BackgroundSubtractorMOG2::setHistory(int history)
+    // C++:  void setHistory(int history)
     private static native void setHistory_0(long nativeObj, int history);
 
-    // C++:  void BackgroundSubtractorMOG2::setNMixtures(int nmixtures)
+    // C++:  void setNMixtures(int nmixtures)
     private static native void setNMixtures_0(long nativeObj, int nmixtures);
 
-    // C++:  void BackgroundSubtractorMOG2::setShadowThreshold(double threshold)
+    // C++:  void setShadowThreshold(double threshold)
     private static native void setShadowThreshold_0(long nativeObj, double threshold);
 
-    // C++:  void BackgroundSubtractorMOG2::setShadowValue(int value)
+    // C++:  void setShadowValue(int value)
     private static native void setShadowValue_0(long nativeObj, int value);
 
-    // C++:  void BackgroundSubtractorMOG2::setVarInit(double varInit)
+    // C++:  void setVarInit(double varInit)
     private static native void setVarInit_0(long nativeObj, double varInit);
 
-    // C++:  void BackgroundSubtractorMOG2::setVarMax(double varMax)
+    // C++:  void setVarMax(double varMax)
     private static native void setVarMax_0(long nativeObj, double varMax);
 
-    // C++:  void BackgroundSubtractorMOG2::setVarMin(double varMin)
+    // C++:  void setVarMin(double varMin)
     private static native void setVarMin_0(long nativeObj, double varMin);
 
-    // C++:  void BackgroundSubtractorMOG2::setVarThreshold(double varThreshold)
+    // C++:  void setVarThreshold(double varThreshold)
     private static native void setVarThreshold_0(long nativeObj, double varThreshold);
 
-    // C++:  void BackgroundSubtractorMOG2::setVarThresholdGen(double varThresholdGen)
+    // C++:  void setVarThresholdGen(double varThresholdGen)
     private static native void setVarThresholdGen_0(long nativeObj, double varThresholdGen);
 
     // native support for java finalize()

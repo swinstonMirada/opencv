@@ -18,7 +18,7 @@ OPENCV_LIBS_DIR:=$(OPENCV_THIS_DIR)/../libs/$(OPENCV_TARGET_ARCH_ABI)
 OPENCV_3RDPARTY_LIBS_DIR:=$(OPENCV_THIS_DIR)/../3rdparty/libs/$(OPENCV_TARGET_ARCH_ABI)
 OPENCV_BASEDIR:=
 OPENCV_LOCAL_C_INCLUDES:="$(LOCAL_PATH)/$(OPENCV_THIS_DIR)/include/opencv" "$(LOCAL_PATH)/$(OPENCV_THIS_DIR)/include"
-OPENCV_MODULES:=optim shape stitching objdetect nonfree ml superres ts videostab video photo calib3d features2d highgui videoio imgcodecs imgproc flann androidcamera core
+OPENCV_MODULES:=calib3d core features2d flann highgui imgcodecs imgproc ml objdetect photo shape stitching superres ts video videoio videostab
 
 ifeq ($(OPENCV_LIB_TYPE),)
     OPENCV_LIB_TYPE:=SHARED
@@ -37,20 +37,20 @@ ifeq ($(OPENCV_LIB_TYPE),SHARED)
     OPENCV_EXTRA_COMPONENTS:=
 else
     ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
-        OPENCV_3RDPARTY_COMPONENTS:=libjpeg libwebp libpng libtiff libjasper IlmImf
-        OPENCV_EXTRA_COMPONENTS:=log m dl z
+        OPENCV_3RDPARTY_COMPONENTS:=
+        OPENCV_EXTRA_COMPONENTS:=
     endif
     ifeq ($(TARGET_ARCH_ABI),x86)
-        OPENCV_3RDPARTY_COMPONENTS:=libjpeg libwebp libpng libtiff libjasper IlmImf
-        OPENCV_EXTRA_COMPONENTS:=log m dl z
+        OPENCV_3RDPARTY_COMPONENTS:=
+        OPENCV_EXTRA_COMPONENTS:=
     endif
     ifeq ($(TARGET_ARCH_ABI),armeabi)
-        OPENCV_3RDPARTY_COMPONENTS:=libjpeg libwebp libpng libtiff libjasper IlmImf
-        OPENCV_EXTRA_COMPONENTS:=log m dl z
+        OPENCV_3RDPARTY_COMPONENTS:=
+        OPENCV_EXTRA_COMPONENTS:=
     endif
     ifeq ($(TARGET_ARCH_ABI),mips)
-        OPENCV_3RDPARTY_COMPONENTS:=libjpeg libwebp libpng libtiff libjasper IlmImf
-        OPENCV_EXTRA_COMPONENTS:=log m dl z
+        OPENCV_3RDPARTY_COMPONENTS:=
+        OPENCV_EXTRA_COMPONENTS:=
     endif
 endif
 

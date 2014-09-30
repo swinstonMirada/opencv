@@ -13,6 +13,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -21,7 +22,6 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
-modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/flann/include/opencv2/flann/defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
@@ -361,6 +361,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/features2d/perf/opencl/perf_brute_force_matcher.cpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: cvconfig.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_brute_force_matcher.cpp.o: opencv2/opencv_modules.hpp
 
@@ -376,6 +377,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.c
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -384,7 +386,6 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.c
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
-modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/flann/include/opencv2/flann/defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
@@ -724,6 +725,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.c
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/features2d/perf/opencl/perf_fast.cpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: cvconfig.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_fast.cpp.o: opencv2/opencv_modules.hpp
 
@@ -739,6 +741,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -747,7 +750,6 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
-modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/flann/include/opencv2/flann/defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
@@ -1087,6 +1089,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/features2d/perf/opencl/perf_orb.cpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: ../../modules/features2d/perf/perf_precomp.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: cvconfig.h
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/opencl/perf_orb.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1100,6 +1103,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_batchDistance.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1453,6 +1457,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: .
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_fast.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1806,6 +1811,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: .
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2159,6 +2165,7 @@ modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ..
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_perf_features2d.dir/perf/perf_orb.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

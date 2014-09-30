@@ -44,7 +44,132 @@ extern "C" {
 
 
 //
-//  void StereoSGBM::setMode(int mode)
+//  int getMode()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getMode_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getMode_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getMode_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getMode(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getP1()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getP1_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getP1_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getP1_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getP1(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getP2()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getP2_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getP2_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getP2_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getP2(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getPreFilterCap()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getPreFilterCap_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getPreFilterCap_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getPreFilterCap_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getPreFilterCap(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getUniquenessRatio()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getUniquenessRatio_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoSGBM_getUniquenessRatio_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getUniquenessRatio_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getUniquenessRatio(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void setMode(int mode)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setMode_10 (JNIEnv*, jclass, jlong, jint);
@@ -55,8 +180,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setMode_10
     static const char method_name[] = "calib3d::setMode_10()";
     try {
         LOGD("%s", method_name);
-        StereoSGBM* me = (StereoSGBM*) self; //TODO: check for NULL
-        me->setMode( (int)mode );
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        (*me)->setMode( (int)mode );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -69,7 +194,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setMode_10
 
 
 //
-//  void StereoSGBM::setP1(int P1)
+//  void setP1(int P1)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP1_10 (JNIEnv*, jclass, jlong, jint);
@@ -80,8 +205,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP1_10
     static const char method_name[] = "calib3d::setP1_10()";
     try {
         LOGD("%s", method_name);
-        StereoSGBM* me = (StereoSGBM*) self; //TODO: check for NULL
-        me->setP1( (int)P1 );
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        (*me)->setP1( (int)P1 );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -94,7 +219,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP1_10
 
 
 //
-//  void StereoSGBM::setP2(int P2)
+//  void setP2(int P2)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP2_10 (JNIEnv*, jclass, jlong, jint);
@@ -105,8 +230,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP2_10
     static const char method_name[] = "calib3d::setP2_10()";
     try {
         LOGD("%s", method_name);
-        StereoSGBM* me = (StereoSGBM*) self; //TODO: check for NULL
-        me->setP2( (int)P2 );
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        (*me)->setP2( (int)P2 );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -119,7 +244,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setP2_10
 
 
 //
-//  void StereoSGBM::setPreFilterCap(int preFilterCap)
+//  void setPreFilterCap(int preFilterCap)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setPreFilterCap_10 (JNIEnv*, jclass, jlong, jint);
@@ -130,8 +255,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setPreFilterCap_10
     static const char method_name[] = "calib3d::setPreFilterCap_10()";
     try {
         LOGD("%s", method_name);
-        StereoSGBM* me = (StereoSGBM*) self; //TODO: check for NULL
-        me->setPreFilterCap( (int)preFilterCap );
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        (*me)->setPreFilterCap( (int)preFilterCap );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -144,7 +269,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setPreFilterCap_10
 
 
 //
-//  void StereoSGBM::setUniquenessRatio(int uniquenessRatio)
+//  void setUniquenessRatio(int uniquenessRatio)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setUniquenessRatio_10 (JNIEnv*, jclass, jlong, jint);
@@ -155,8 +280,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setUniquenessRatio_10
     static const char method_name[] = "calib3d::setUniquenessRatio_10()";
     try {
         LOGD("%s", method_name);
-        StereoSGBM* me = (StereoSGBM*) self; //TODO: check for NULL
-        me->setUniquenessRatio( (int)uniquenessRatio );
+        Ptr<cv::StereoSGBM>* me = (Ptr<cv::StereoSGBM>*) self; //TODO: check for NULL
+        (*me)->setUniquenessRatio( (int)uniquenessRatio );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -170,19 +295,221 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_setUniquenessRatio_10
 
 //
 //  native support for java finalize()
-//  static void StereoSGBM::delete( __int64 self )
+//  static void Ptr<cv::StereoSGBM>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoSGBM_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (StereoSGBM*) self;
+    delete (Ptr<cv::StereoSGBM>*) self;
 }
 
 
 //
-//  void StereoBM::setPreFilterCap(int preFilterCap)
+//  int getPreFilterCap()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterCap_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterCap_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getPreFilterCap_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getPreFilterCap(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getPreFilterSize()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterSize_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getPreFilterSize_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getPreFilterSize(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getPreFilterType()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterType_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getPreFilterType_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getPreFilterType_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getPreFilterType(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  Rect getROI1()
+//
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_calib3d_StereoBM_getROI1_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_calib3d_StereoBM_getROI1_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getROI1_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        Rect _retval_ = (*me)->getROI1(  );
+        jdoubleArray _da_retval_ = env->NewDoubleArray(4);  jdouble _tmp_retval_[4] = {_retval_.x, _retval_.y, _retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 4, _tmp_retval_);
+        return _da_retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  Rect getROI2()
+//
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_calib3d_StereoBM_getROI2_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_calib3d_StereoBM_getROI2_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getROI2_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        Rect _retval_ = (*me)->getROI2(  );
+        jdoubleArray _da_retval_ = env->NewDoubleArray(4);  jdouble _tmp_retval_[4] = {_retval_.x, _retval_.y, _retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 4, _tmp_retval_);
+        return _da_retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getSmallerBlockSize()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getSmallerBlockSize_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getSmallerBlockSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getSmallerBlockSize_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getSmallerBlockSize(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getTextureThreshold()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getTextureThreshold_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getTextureThreshold_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getTextureThreshold_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getTextureThreshold(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getUniquenessRatio()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getUniquenessRatio_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoBM_getUniquenessRatio_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getUniquenessRatio_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getUniquenessRatio(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void setPreFilterCap(int preFilterCap)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterCap_10 (JNIEnv*, jclass, jlong, jint);
@@ -193,8 +520,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterCap_10
     static const char method_name[] = "calib3d::setPreFilterCap_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setPreFilterCap( (int)preFilterCap );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setPreFilterCap( (int)preFilterCap );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -207,7 +534,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterCap_10
 
 
 //
-//  void StereoBM::setPreFilterSize(int preFilterSize)
+//  void setPreFilterSize(int preFilterSize)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterSize_10 (JNIEnv*, jclass, jlong, jint);
@@ -218,8 +545,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterSize_10
     static const char method_name[] = "calib3d::setPreFilterSize_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setPreFilterSize( (int)preFilterSize );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setPreFilterSize( (int)preFilterSize );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -232,7 +559,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterSize_10
 
 
 //
-//  void StereoBM::setPreFilterType(int preFilterType)
+//  void setPreFilterType(int preFilterType)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterType_10 (JNIEnv*, jclass, jlong, jint);
@@ -243,8 +570,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterType_10
     static const char method_name[] = "calib3d::setPreFilterType_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setPreFilterType( (int)preFilterType );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setPreFilterType( (int)preFilterType );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -257,7 +584,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setPreFilterType_10
 
 
 //
-//  void StereoBM::setROI1(Rect roi1)
+//  void setROI1(Rect roi1)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI1_10 (JNIEnv*, jclass, jlong, jint, jint, jint, jint);
@@ -268,9 +595,9 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI1_10
     static const char method_name[] = "calib3d::setROI1_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
         Rect roi1(roi1_x, roi1_y, roi1_width, roi1_height);
-        me->setROI1( roi1 );
+        (*me)->setROI1( roi1 );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -283,7 +610,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI1_10
 
 
 //
-//  void StereoBM::setROI2(Rect roi2)
+//  void setROI2(Rect roi2)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI2_10 (JNIEnv*, jclass, jlong, jint, jint, jint, jint);
@@ -294,9 +621,9 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI2_10
     static const char method_name[] = "calib3d::setROI2_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
         Rect roi2(roi2_x, roi2_y, roi2_width, roi2_height);
-        me->setROI2( roi2 );
+        (*me)->setROI2( roi2 );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -309,7 +636,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setROI2_10
 
 
 //
-//  void StereoBM::setSmallerBlockSize(int blockSize)
+//  void setSmallerBlockSize(int blockSize)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setSmallerBlockSize_10 (JNIEnv*, jclass, jlong, jint);
@@ -320,8 +647,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setSmallerBlockSize_10
     static const char method_name[] = "calib3d::setSmallerBlockSize_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setSmallerBlockSize( (int)blockSize );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setSmallerBlockSize( (int)blockSize );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -334,7 +661,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setSmallerBlockSize_10
 
 
 //
-//  void StereoBM::setTextureThreshold(int textureThreshold)
+//  void setTextureThreshold(int textureThreshold)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setTextureThreshold_10 (JNIEnv*, jclass, jlong, jint);
@@ -345,8 +672,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setTextureThreshold_10
     static const char method_name[] = "calib3d::setTextureThreshold_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setTextureThreshold( (int)textureThreshold );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setTextureThreshold( (int)textureThreshold );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -359,7 +686,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setTextureThreshold_10
 
 
 //
-//  void StereoBM::setUniquenessRatio(int uniquenessRatio)
+//  void setUniquenessRatio(int uniquenessRatio)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setUniquenessRatio_10 (JNIEnv*, jclass, jlong, jint);
@@ -370,8 +697,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setUniquenessRatio_10
     static const char method_name[] = "calib3d::setUniquenessRatio_10()";
     try {
         LOGD("%s", method_name);
-        StereoBM* me = (StereoBM*) self; //TODO: check for NULL
-        me->setUniquenessRatio( (int)uniquenessRatio );
+        Ptr<cv::StereoBM>* me = (Ptr<cv::StereoBM>*) self; //TODO: check for NULL
+        (*me)->setUniquenessRatio( (int)uniquenessRatio );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -385,19 +712,19 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_setUniquenessRatio_10
 
 //
 //  native support for java finalize()
-//  static void StereoBM::delete( __int64 self )
+//  static void Ptr<cv::StereoBM>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoBM_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (StereoBM*) self;
+    delete (Ptr<cv::StereoBM>*) self;
 }
 
 
 //
-//  void StereoMatcher::compute(Mat left, Mat right, Mat& disparity)
+//  void compute(Mat left, Mat right, Mat& disparity)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_compute_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
@@ -408,11 +735,11 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_compute_10
     static const char method_name[] = "calib3d::compute_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
         Mat& left = *((Mat*)left_nativeObj);
         Mat& right = *((Mat*)right_nativeObj);
         Mat& disparity = *((Mat*)disparity_nativeObj);
-        me->compute( left, right, disparity );
+        (*me)->compute( left, right, disparity );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -425,7 +752,157 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_compute_10
 
 
 //
-//  void StereoMatcher::setBlockSize(int blockSize)
+//  int getBlockSize()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getBlockSize_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getBlockSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getBlockSize_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getBlockSize(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getDisp12MaxDiff()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getDisp12MaxDiff_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getDisp12MaxDiff_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getDisp12MaxDiff_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getDisp12MaxDiff(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getMinDisparity()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getMinDisparity_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getMinDisparity_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getMinDisparity_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getMinDisparity(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getNumDisparities()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getNumDisparities_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getNumDisparities_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getNumDisparities_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getNumDisparities(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getSpeckleRange()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getSpeckleRange_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getSpeckleRange_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getSpeckleRange_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getSpeckleRange(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int getSpeckleWindowSize()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getSpeckleWindowSize_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_StereoMatcher_getSpeckleWindowSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "calib3d::getSpeckleWindowSize_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        int _retval_ = (*me)->getSpeckleWindowSize(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void setBlockSize(int blockSize)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setBlockSize_10 (JNIEnv*, jclass, jlong, jint);
@@ -436,8 +913,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setBlockSize_10
     static const char method_name[] = "calib3d::setBlockSize_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setBlockSize( (int)blockSize );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setBlockSize( (int)blockSize );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -450,7 +927,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setBlockSize_10
 
 
 //
-//  void StereoMatcher::setDisp12MaxDiff(int disp12MaxDiff)
+//  void setDisp12MaxDiff(int disp12MaxDiff)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setDisp12MaxDiff_10 (JNIEnv*, jclass, jlong, jint);
@@ -461,8 +938,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setDisp12MaxDiff_10
     static const char method_name[] = "calib3d::setDisp12MaxDiff_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setDisp12MaxDiff( (int)disp12MaxDiff );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setDisp12MaxDiff( (int)disp12MaxDiff );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -475,7 +952,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setDisp12MaxDiff_10
 
 
 //
-//  void StereoMatcher::setMinDisparity(int minDisparity)
+//  void setMinDisparity(int minDisparity)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setMinDisparity_10 (JNIEnv*, jclass, jlong, jint);
@@ -486,8 +963,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setMinDisparity_10
     static const char method_name[] = "calib3d::setMinDisparity_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setMinDisparity( (int)minDisparity );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setMinDisparity( (int)minDisparity );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -500,7 +977,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setMinDisparity_10
 
 
 //
-//  void StereoMatcher::setNumDisparities(int numDisparities)
+//  void setNumDisparities(int numDisparities)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setNumDisparities_10 (JNIEnv*, jclass, jlong, jint);
@@ -511,8 +988,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setNumDisparities_1
     static const char method_name[] = "calib3d::setNumDisparities_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setNumDisparities( (int)numDisparities );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setNumDisparities( (int)numDisparities );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -525,7 +1002,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setNumDisparities_1
 
 
 //
-//  void StereoMatcher::setSpeckleRange(int speckleRange)
+//  void setSpeckleRange(int speckleRange)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleRange_10 (JNIEnv*, jclass, jlong, jint);
@@ -536,8 +1013,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleRange_10
     static const char method_name[] = "calib3d::setSpeckleRange_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setSpeckleRange( (int)speckleRange );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setSpeckleRange( (int)speckleRange );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -550,7 +1027,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleRange_10
 
 
 //
-//  void StereoMatcher::setSpeckleWindowSize(int speckleWindowSize)
+//  void setSpeckleWindowSize(int speckleWindowSize)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleWindowSize_10 (JNIEnv*, jclass, jlong, jint);
@@ -561,8 +1038,8 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleWindowSiz
     static const char method_name[] = "calib3d::setSpeckleWindowSize_10()";
     try {
         LOGD("%s", method_name);
-        StereoMatcher* me = (StereoMatcher*) self; //TODO: check for NULL
-        me->setSpeckleWindowSize( (int)speckleWindowSize );
+        Ptr<cv::StereoMatcher>* me = (Ptr<cv::StereoMatcher>*) self; //TODO: check for NULL
+        (*me)->setSpeckleWindowSize( (int)speckleWindowSize );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -576,14 +1053,14 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_setSpeckleWindowSiz
 
 //
 //  native support for java finalize()
-//  static void StereoMatcher::delete( __int64 self )
+//  static void Ptr<cv::StereoMatcher>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_calib3d_StereoMatcher_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (StereoMatcher*) self;
+    delete (Ptr<cv::StereoMatcher>*) self;
 }
 
 
@@ -1003,6 +1480,98 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_correctMatches_10
 
 
 //
+//  Ptr_StereoBM createStereoBM(int numDisparities = 0, int blockSize = 21)
+//
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoBM_10 (JNIEnv*, jclass, jint, jint);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoBM_10
+  (JNIEnv* env, jclass , jint numDisparities, jint blockSize)
+{
+    static const char method_name[] = "calib3d::createStereoBM_10()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::StereoBM> Ptr_StereoBM;
+        Ptr_StereoBM _retval_ = cv::createStereoBM( (int)numDisparities, (int)blockSize );
+        return (jlong)(new Ptr_StereoBM(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoBM_11 (JNIEnv*, jclass);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoBM_11
+  (JNIEnv* env, jclass )
+{
+    static const char method_name[] = "calib3d::createStereoBM_11()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::StereoBM> Ptr_StereoBM;
+        Ptr_StereoBM _retval_ = cv::createStereoBM(  );
+        return (jlong)(new Ptr_StereoBM(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  Ptr_StereoSGBM createStereoSGBM(int minDisparity, int numDisparities, int blockSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, int mode = StereoSGBM::MODE_SGBM)
+//
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoSGBM_10 (JNIEnv*, jclass, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint, jint);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoSGBM_10
+  (JNIEnv* env, jclass , jint minDisparity, jint numDisparities, jint blockSize, jint P1, jint P2, jint disp12MaxDiff, jint preFilterCap, jint uniquenessRatio, jint speckleWindowSize, jint speckleRange, jint mode)
+{
+    static const char method_name[] = "calib3d::createStereoSGBM_10()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::StereoSGBM> Ptr_StereoSGBM;
+        Ptr_StereoSGBM _retval_ = cv::createStereoSGBM( (int)minDisparity, (int)numDisparities, (int)blockSize, (int)P1, (int)P2, (int)disp12MaxDiff, (int)preFilterCap, (int)uniquenessRatio, (int)speckleWindowSize, (int)speckleRange, (int)mode );
+        return (jlong)(new Ptr_StereoSGBM(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoSGBM_11 (JNIEnv*, jclass, jint, jint, jint);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_createStereoSGBM_11
+  (JNIEnv* env, jclass , jint minDisparity, jint numDisparities, jint blockSize)
+{
+    static const char method_name[] = "calib3d::createStereoSGBM_11()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::StereoSGBM> Ptr_StereoSGBM;
+        Ptr_StereoSGBM _retval_ = cv::createStereoSGBM( (int)minDisparity, (int)numDisparities, (int)blockSize );
+        return (jlong)(new Ptr_StereoSGBM(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
 //  void decomposeEssentialMat(Mat E, Mat& R1, Mat& R2, Mat& t)
 //
 
@@ -1026,6 +1595,39 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_decomposeEssentialMat_10
         throwJavaException(env, 0, method_name);
     }
     return;
+}
+
+
+
+//
+//  int decomposeHomographyMat(Mat H, Mat K, vector_Mat& rotations, vector_Mat& translations, vector_Mat& normals)
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_Calib3d_decomposeHomographyMat_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_calib3d_Calib3d_decomposeHomographyMat_10
+  (JNIEnv* env, jclass , jlong H_nativeObj, jlong K_nativeObj, jlong rotations_mat_nativeObj, jlong translations_mat_nativeObj, jlong normals_mat_nativeObj)
+{
+    static const char method_name[] = "calib3d::decomposeHomographyMat_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Mat> rotations;
+        Mat& rotations_mat = *((Mat*)rotations_mat_nativeObj);
+        std::vector<Mat> translations;
+        Mat& translations_mat = *((Mat*)translations_mat_nativeObj);
+        std::vector<Mat> normals;
+        Mat& normals_mat = *((Mat*)normals_mat_nativeObj);
+        Mat& H = *((Mat*)H_nativeObj);
+        Mat& K = *((Mat*)K_nativeObj);
+        int _retval_ = cv::decomposeHomographyMat( H, K, rotations, translations, normals );
+        vector_Mat_to_Mat( rotations, rotations_mat );  vector_Mat_to_Mat( translations, translations_mat );  vector_Mat_to_Mat( normals, normals_mat );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
 }
 
 
@@ -1334,8 +1936,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findEssentialMat_10
         Mat& points2 = *((Mat*)points2_nativeObj);
         Point2d pp(pp_x, pp_y);
         Mat& mask = *((Mat*)mask_nativeObj);
-        Mat _retval_ = cv::findEssentialMat( points1, points2, (double)focal, pp, (int)method, (double)prob, (double)threshold, mask );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findEssentialMat( points1, points2, (double)focal, pp, (int)method, (double)prob, (double)threshold, mask );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1357,8 +1959,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findEssentialMat_11
         Mat& points1 = *((Mat*)points1_nativeObj);
         Mat& points2 = *((Mat*)points2_nativeObj);
         Point2d pp(pp_x, pp_y);
-        Mat _retval_ = cv::findEssentialMat( points1, points2, (double)focal, pp, (int)method, (double)prob, (double)threshold );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findEssentialMat( points1, points2, (double)focal, pp, (int)method, (double)prob, (double)threshold );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1379,8 +1981,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findEssentialMat_12
         LOGD("%s", method_name);
         Mat& points1 = *((Mat*)points1_nativeObj);
         Mat& points2 = *((Mat*)points2_nativeObj);
-        Mat _retval_ = cv::findEssentialMat( points1, points2 );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findEssentialMat( points1, points2 );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1410,8 +2012,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findFundamentalMat_10
         Mat& points2_mat = *((Mat*)points2_mat_nativeObj);
         Mat_to_vector_Point2f( points2_mat, points2 );
         Mat& mask = *((Mat*)mask_nativeObj);
-        Mat _retval_ = cv::findFundamentalMat( points1, points2, (int)method, (double)param1, (double)param2, mask );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findFundamentalMat( points1, points2, (int)method, (double)param1, (double)param2, mask );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1436,8 +2038,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findFundamentalMat_11
         std::vector<Point2f> points2;
         Mat& points2_mat = *((Mat*)points2_mat_nativeObj);
         Mat_to_vector_Point2f( points2_mat, points2 );
-        Mat _retval_ = cv::findFundamentalMat( points1, points2, (int)method, (double)param1, (double)param2 );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findFundamentalMat( points1, points2, (int)method, (double)param1, (double)param2 );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1462,8 +2064,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findFundamentalMat_12
         std::vector<Point2f> points2;
         Mat& points2_mat = *((Mat*)points2_mat_nativeObj);
         Mat_to_vector_Point2f( points2_mat, points2 );
-        Mat _retval_ = cv::findFundamentalMat( points1, points2 );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findFundamentalMat( points1, points2 );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1475,13 +2077,13 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findFundamentalMat_12
 
 
 //
-//  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
+//  Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat(), int maxIters = 2000, double confidence = 0.995)
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_10 (JNIEnv*, jclass, jlong, jlong, jint, jdouble, jlong);
+JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_10 (JNIEnv*, jclass, jlong, jlong, jint, jdouble, jlong, jint, jdouble);
 
 JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_10
-  (JNIEnv* env, jclass , jlong srcPoints_mat_nativeObj, jlong dstPoints_mat_nativeObj, jint method, jdouble ransacReprojThreshold, jlong mask_nativeObj)
+  (JNIEnv* env, jclass , jlong srcPoints_mat_nativeObj, jlong dstPoints_mat_nativeObj, jint method, jdouble ransacReprojThreshold, jlong mask_nativeObj, jint maxIters, jdouble confidence)
 {
     static const char method_name[] = "calib3d::findHomography_10()";
     try {
@@ -1493,8 +2095,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_10
         Mat& dstPoints_mat = *((Mat*)dstPoints_mat_nativeObj);
         Mat_to_vector_Point2f( dstPoints_mat, dstPoints );
         Mat& mask = *((Mat*)mask_nativeObj);
-        Mat _retval_ = cv::findHomography( srcPoints, dstPoints, (int)method, (double)ransacReprojThreshold, mask );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findHomography( srcPoints, dstPoints, (int)method, (double)ransacReprojThreshold, mask, (int)maxIters, (double)confidence );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1519,8 +2121,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_11
         std::vector<Point2f> dstPoints;
         Mat& dstPoints_mat = *((Mat*)dstPoints_mat_nativeObj);
         Mat_to_vector_Point2f( dstPoints_mat, dstPoints );
-        Mat _retval_ = cv::findHomography( srcPoints, dstPoints, (int)method, (double)ransacReprojThreshold );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findHomography( srcPoints, dstPoints, (int)method, (double)ransacReprojThreshold );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1545,8 +2147,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_findHomography_12
         std::vector<Point2f> dstPoints;
         Mat& dstPoints_mat = *((Mat*)dstPoints_mat_nativeObj);
         Mat_to_vector_Point2f( dstPoints_mat, dstPoints );
-        Mat _retval_ = cv::findHomography( srcPoints, dstPoints );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::findHomography( srcPoints, dstPoints );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1574,9 +2176,9 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_getOptimalNewCameraMatri
         Size imageSize((int)imageSize_width, (int)imageSize_height);
         Size newImgSize((int)newImgSize_width, (int)newImgSize_height);
         Rect validPixROI;
-        Mat _retval_ = cv::getOptimalNewCameraMatrix( cameraMatrix, distCoeffs, imageSize, (double)alpha, newImgSize, &validPixROI, (bool)centerPrincipalPoint );
+        ::Mat _retval_ = cv::getOptimalNewCameraMatrix( cameraMatrix, distCoeffs, imageSize, (double)alpha, newImgSize, &validPixROI, (bool)centerPrincipalPoint );
         jdouble tmp_validPixROI[4] = {validPixROI.x, validPixROI.y, validPixROI.width, validPixROI.height}; env->SetDoubleArrayRegion(validPixROI_out, 0, 4, tmp_validPixROI);
-        return (jlong) new Mat(_retval_);
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1598,8 +2200,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_getOptimalNewCameraMatri
         Mat& cameraMatrix = *((Mat*)cameraMatrix_nativeObj);
         Mat& distCoeffs = *((Mat*)distCoeffs_nativeObj);
         Size imageSize((int)imageSize_width, (int)imageSize_height);
-        Mat _retval_ = cv::getOptimalNewCameraMatrix( cameraMatrix, distCoeffs, imageSize, (double)alpha );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getOptimalNewCameraMatrix( cameraMatrix, distCoeffs, imageSize, (double)alpha );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1656,8 +2258,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_initCameraMatrix2D_10
         Mat& imagePoints_mat = *((Mat*)imagePoints_mat_nativeObj);
         Mat_to_vector_vector_Point2f( imagePoints_mat, imagePoints );
         Size imageSize((int)imageSize_width, (int)imageSize_height);
-        Mat _retval_ = cv::initCameraMatrix2D( objectPoints, imagePoints, imageSize, (double)aspectRatio );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::initCameraMatrix2D( objectPoints, imagePoints, imageSize, (double)aspectRatio );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -1683,8 +2285,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_calib3d_Calib3d_initCameraMatrix2D_11
         Mat& imagePoints_mat = *((Mat*)imagePoints_mat_nativeObj);
         Mat_to_vector_vector_Point2f( imagePoints_mat, imagePoints );
         Size imageSize((int)imageSize_width, (int)imageSize_height);
-        Mat _retval_ = cv::initCameraMatrix2D( objectPoints, imagePoints, imageSize );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::initCameraMatrix2D( objectPoints, imagePoints, imageSize );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -2000,7 +2602,7 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_reprojectImageTo3D_12
 
 
 //
-//  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+//  bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = SOLVEPNP_ITERATIVE)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnP_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jboolean, jint);
@@ -2068,13 +2670,13 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnP_11
 
 
 //
-//  void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
+//  bool solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, double confidence = 0.99, Mat& inliers = Mat(), int flags = SOLVEPNP_ITERATIVE)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jboolean, jint, jfloat, jint, jlong, jint);
+JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jboolean, jint, jfloat, jdouble, jlong, jint);
 
-JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_10
-  (JNIEnv* env, jclass , jlong objectPoints_mat_nativeObj, jlong imagePoints_mat_nativeObj, jlong cameraMatrix_nativeObj, jlong distCoeffs_mat_nativeObj, jlong rvec_nativeObj, jlong tvec_nativeObj, jboolean useExtrinsicGuess, jint iterationsCount, jfloat reprojectionError, jint minInliersCount, jlong inliers_nativeObj, jint flags)
+JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_10
+  (JNIEnv* env, jclass , jlong objectPoints_mat_nativeObj, jlong imagePoints_mat_nativeObj, jlong cameraMatrix_nativeObj, jlong distCoeffs_mat_nativeObj, jlong rvec_nativeObj, jlong tvec_nativeObj, jboolean useExtrinsicGuess, jint iterationsCount, jfloat reprojectionError, jdouble confidence, jlong inliers_nativeObj, jint flags)
 {
     static const char method_name[] = "calib3d::solvePnPRansac_10()";
     try {
@@ -2092,21 +2694,21 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_10
         Mat& rvec = *((Mat*)rvec_nativeObj);
         Mat& tvec = *((Mat*)tvec_nativeObj);
         Mat& inliers = *((Mat*)inliers_nativeObj);
-        cv::solvePnPRansac( objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec, (bool)useExtrinsicGuess, (int)iterationsCount, (float)reprojectionError, (int)minInliersCount, inliers, (int)flags );
-        return;
+        bool _retval_ = cv::solvePnPRansac( objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec, (bool)useExtrinsicGuess, (int)iterationsCount, (float)reprojectionError, (double)confidence, inliers, (int)flags );
+        return _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
         throwJavaException(env, 0, method_name);
     }
-    return;
+    return 0;
 }
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong);
+JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_11
+JNIEXPORT jboolean JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_11
   (JNIEnv* env, jclass , jlong objectPoints_mat_nativeObj, jlong imagePoints_mat_nativeObj, jlong cameraMatrix_nativeObj, jlong distCoeffs_mat_nativeObj, jlong rvec_nativeObj, jlong tvec_nativeObj)
 {
     static const char method_name[] = "calib3d::solvePnPRansac_11()";
@@ -2124,14 +2726,14 @@ JNIEXPORT void JNICALL Java_org_opencv_calib3d_Calib3d_solvePnPRansac_11
         Mat& cameraMatrix = *((Mat*)cameraMatrix_nativeObj);
         Mat& rvec = *((Mat*)rvec_nativeObj);
         Mat& tvec = *((Mat*)tvec_nativeObj);
-        cv::solvePnPRansac( objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec );
-        return;
+        bool _retval_ = cv::solvePnPRansac( objectPoints, imagePoints, cameraMatrix, distCoeffs, rvec, tvec );
+        return _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
         throwJavaException(env, 0, method_name);
     }
-    return;
+    return 0;
 }
 
 

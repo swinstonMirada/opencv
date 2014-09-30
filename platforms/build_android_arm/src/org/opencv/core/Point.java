@@ -81,11 +81,15 @@ package org.opencv.core;
  *
  * <p>pt1 = a * pt2;</p>
  *
+ * <p>pt1 = pt2 / a;</p>
+ *
  * <p>pt1 += pt2;</p>
  *
  * <p>pt1 -= pt2;</p>
  *
  * <p>pt1 *= a;</p>
+ *
+ * <p>pt1 /= a;</p>
  *
  * <p>double value = norm(pt); // L2 norm</p>
  *

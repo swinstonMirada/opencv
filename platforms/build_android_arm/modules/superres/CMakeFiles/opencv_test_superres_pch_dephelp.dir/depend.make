@@ -15,6 +15,7 @@ modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_sup
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -23,7 +24,6 @@ modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_sup
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/superres/include/opencv2/superres.hpp
-modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/superres/src/input_array_utility.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -352,6 +352,7 @@ modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_sup
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/messages_members.h
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
+modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/superres/src/input_array_utility.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: ../../modules/superres/test/test_precomp.hpp
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: modules/superres/opencv_test_superres_pch_dephelp.cxx
 modules/superres/CMakeFiles/opencv_test_superres_pch_dephelp.dir/opencv_test_superres_pch_dephelp.cxx.o: cvconfig.h

@@ -13,6 +13,7 @@ modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.c
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/video/CMakeFiles/opencv_video_pch_dephelp.dir/opencv_video_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

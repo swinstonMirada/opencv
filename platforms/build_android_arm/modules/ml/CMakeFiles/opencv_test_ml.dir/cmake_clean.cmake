@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/opencv_test_ml.dir/test/test_emknearestkmeans.cpp.o"
   "CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o"
+  "CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o"
   "CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o"
   "CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o"
   "CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o"

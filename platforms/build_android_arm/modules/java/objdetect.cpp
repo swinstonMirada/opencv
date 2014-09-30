@@ -44,7 +44,7 @@ extern "C" {
 
 
 //
-//   CascadeClassifier::CascadeClassifier()
+//   CascadeClassifier()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClassifier_10 (JNIEnv*, jclass);
@@ -56,7 +56,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClass
     try {
         LOGD("%s", method_name);
         
-        CascadeClassifier* _retval_ = new CascadeClassifier(  );
+        cv::CascadeClassifier* _retval_ = new cv::CascadeClassifier(  );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -69,7 +69,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClass
 
 
 //
-//   CascadeClassifier::CascadeClassifier(String filename)
+//   CascadeClassifier(String filename)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClassifier_11 (JNIEnv*, jclass, jstring);
@@ -81,7 +81,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClass
     try {
         LOGD("%s", method_name);
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
-        CascadeClassifier* _retval_ = new CascadeClassifier( n_filename );
+        cv::CascadeClassifier* _retval_ = new cv::CascadeClassifier( n_filename );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -94,7 +94,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_CascadeClassifier_CascadeClass
 
 
 //
-// static bool CascadeClassifier::convert(String oldcascade, String newcascade)
+// static bool convert(String oldcascade, String newcascade)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_convert_10 (JNIEnv*, jclass, jstring, jstring);
@@ -107,7 +107,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_convert_1
         LOGD("%s", method_name);
         const char* utf_oldcascade = env->GetStringUTFChars(oldcascade, 0); String n_oldcascade( utf_oldcascade ? utf_oldcascade : "" ); env->ReleaseStringUTFChars(oldcascade, utf_oldcascade);
         const char* utf_newcascade = env->GetStringUTFChars(newcascade, 0); String n_newcascade( utf_newcascade ? utf_newcascade : "" ); env->ReleaseStringUTFChars(newcascade, utf_newcascade);
-        bool _retval_ = CascadeClassifier::convert( n_oldcascade, n_newcascade );
+        bool _retval_ = cv::CascadeClassifier::convert( n_oldcascade, n_newcascade );
         return _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -120,7 +120,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_convert_1
 
 
 //
-//  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+//  void detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiScale_10 (JNIEnv*, jclass, jlong, jlong, jlong, jdouble, jint, jint, jdouble, jdouble, jdouble, jdouble);
@@ -133,7 +133,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         LOGD("%s", method_name);
         std::vector<Rect> objects;
         Mat& objects_mat = *((Mat*)objects_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         Size minSize((int)minSize_width, (int)minSize_height);
         Size maxSize((int)maxSize_width, (int)maxSize_height);
@@ -160,7 +160,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         LOGD("%s", method_name);
         std::vector<Rect> objects;
         Mat& objects_mat = *((Mat*)objects_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         me->detectMultiScale( image, objects );
         vector_Rect_to_Mat( objects, objects_mat );
@@ -176,7 +176,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
 
 
 //
-//  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+//  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiScale2_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jdouble, jint, jint, jdouble, jdouble, jdouble, jdouble);
@@ -191,7 +191,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         Mat& objects_mat = *((Mat*)objects_mat_nativeObj);
         std::vector<int> numDetections;
         Mat& numDetections_mat = *((Mat*)numDetections_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         Size minSize((int)minSize_width, (int)minSize_height);
         Size maxSize((int)maxSize_width, (int)maxSize_height);
@@ -220,7 +220,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         Mat& objects_mat = *((Mat*)objects_mat_nativeObj);
         std::vector<int> numDetections;
         Mat& numDetections_mat = *((Mat*)numDetections_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         me->detectMultiScale( image, objects, numDetections );
         vector_Rect_to_Mat( objects, objects_mat );  vector_int_to_Mat( numDetections, numDetections_mat );
@@ -236,7 +236,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
 
 
 //
-//  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
+//  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiScale3_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jdouble, jint, jint, jdouble, jdouble, jdouble, jdouble, jboolean);
@@ -253,7 +253,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         Mat& rejectLevels_mat = *((Mat*)rejectLevels_mat_nativeObj);
         std::vector<double> levelWeights;
         Mat& levelWeights_mat = *((Mat*)levelWeights_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         Size minSize((int)minSize_width, (int)minSize_height);
         Size maxSize((int)maxSize_width, (int)maxSize_height);
@@ -284,7 +284,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
         Mat& rejectLevels_mat = *((Mat*)rejectLevels_mat_nativeObj);
         std::vector<double> levelWeights;
         Mat& levelWeights_mat = *((Mat*)levelWeights_mat_nativeObj);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         me->detectMultiScale( image, objects, rejectLevels, levelWeights );
         vector_Rect_to_Mat( objects, objects_mat );  vector_int_to_Mat( rejectLevels, rejectLevels_mat );  vector_double_to_Mat( levelWeights, levelWeights_mat );
@@ -300,7 +300,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_detectMultiSc
 
 
 //
-//  bool CascadeClassifier::empty()
+//  bool empty()
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_empty_10 (JNIEnv*, jclass, jlong);
@@ -311,7 +311,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_empty_10
     static const char method_name[] = "objdetect::empty_10()";
     try {
         LOGD("%s", method_name);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         bool _retval_ = me->empty(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -325,7 +325,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_empty_10
 
 
 //
-//  int CascadeClassifier::getFeatureType()
+//  int getFeatureType()
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_objdetect_CascadeClassifier_getFeatureType_10 (JNIEnv*, jclass, jlong);
@@ -336,7 +336,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_CascadeClassifier_getFeatureTyp
     static const char method_name[] = "objdetect::getFeatureType_10()";
     try {
         LOGD("%s", method_name);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         int _retval_ = me->getFeatureType(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -350,7 +350,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_CascadeClassifier_getFeatureTyp
 
 
 //
-//  Size CascadeClassifier::getOriginalWindowSize()
+//  Size getOriginalWindowSize()
 //
 
 JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_CascadeClassifier_getOriginalWindowSize_10 (JNIEnv*, jclass, jlong);
@@ -361,7 +361,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_CascadeClassifier_getOr
     static const char method_name[] = "objdetect::getOriginalWindowSize_10()";
     try {
         LOGD("%s", method_name);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         Size _retval_ = me->getOriginalWindowSize(  );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -376,7 +376,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_CascadeClassifier_getOr
 
 
 //
-//  bool CascadeClassifier::isOldFormatCascade()
+//  bool isOldFormatCascade()
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_isOldFormatCascade_10 (JNIEnv*, jclass, jlong);
@@ -387,7 +387,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_isOldForm
     static const char method_name[] = "objdetect::isOldFormatCascade_10()";
     try {
         LOGD("%s", method_name);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         bool _retval_ = me->isOldFormatCascade(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -401,7 +401,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_isOldForm
 
 
 //
-//  bool CascadeClassifier::load(String filename)
+//  bool load(String filename)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_load_10 (JNIEnv*, jclass, jlong, jstring);
@@ -412,7 +412,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_load_10
     static const char method_name[] = "objdetect::load_10()";
     try {
         LOGD("%s", method_name);
-        CascadeClassifier* me = (CascadeClassifier*) self; //TODO: check for NULL
+        cv::CascadeClassifier* me = (cv::CascadeClassifier*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         bool _retval_ = me->load( n_filename );
         return _retval_;
@@ -428,32 +428,32 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_CascadeClassifier_load_10
 
 //
 //  native support for java finalize()
-//  static void CascadeClassifier::delete( __int64 self )
+//  static void cv::CascadeClassifier::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_CascadeClassifier_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (CascadeClassifier*) self;
+    delete (cv::CascadeClassifier*) self;
 }
 
 
 //
 //  native support for java finalize()
-//  static void BaseCascadeClassifier::delete( __int64 self )
+//  static void Ptr<cv::BaseCascadeClassifier>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_BaseCascadeClassifier_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_BaseCascadeClassifier_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (BaseCascadeClassifier*) self;
+    delete (Ptr<cv::BaseCascadeClassifier>*) self;
 }
 
 
 //
-//   HOGDescriptor::HOGDescriptor()
+//   HOGDescriptor()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_10 (JNIEnv*, jclass);
@@ -465,7 +465,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_10
     try {
         LOGD("%s", method_name);
         
-        HOGDescriptor* _retval_ = new HOGDescriptor(  );
+        cv::HOGDescriptor* _retval_ = new cv::HOGDescriptor(  );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -478,7 +478,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_10
 
 
 //
-//   HOGDescriptor::HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
+//   HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_11 (JNIEnv*, jclass, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jdouble, jint, jdouble, jboolean, jint);
@@ -493,7 +493,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_11
         Size _blockSize((int)_blockSize_width, (int)_blockSize_height);
         Size _blockStride((int)_blockStride_width, (int)_blockStride_height);
         Size _cellSize((int)_cellSize_width, (int)_cellSize_height);
-        HOGDescriptor* _retval_ = new HOGDescriptor( _winSize, _blockSize, _blockStride, _cellSize, (int)_nbins, (int)_derivAperture, (double)_winSigma, (int)_histogramNormType, (double)_L2HysThreshold, (bool)_gammaCorrection, (int)_nlevels );
+        cv::HOGDescriptor* _retval_ = new cv::HOGDescriptor( _winSize, _blockSize, _blockStride, _cellSize, (int)_nbins, (int)_derivAperture, (double)_winSigma, (int)_histogramNormType, (double)_L2HysThreshold, (bool)_gammaCorrection, (int)_nlevels );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -517,7 +517,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_12
         Size _blockSize((int)_blockSize_width, (int)_blockSize_height);
         Size _blockStride((int)_blockStride_width, (int)_blockStride_height);
         Size _cellSize((int)_cellSize_width, (int)_cellSize_height);
-        HOGDescriptor* _retval_ = new HOGDescriptor( _winSize, _blockSize, _blockStride, _cellSize, (int)_nbins );
+        cv::HOGDescriptor* _retval_ = new cv::HOGDescriptor( _winSize, _blockSize, _blockStride, _cellSize, (int)_nbins );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -530,7 +530,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_12
 
 
 //
-//   HOGDescriptor::HOGDescriptor(String filename)
+//   HOGDescriptor(String filename)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_13 (JNIEnv*, jclass, jstring);
@@ -542,7 +542,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_13
     try {
         LOGD("%s", method_name);
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
-        HOGDescriptor* _retval_ = new HOGDescriptor( n_filename );
+        cv::HOGDescriptor* _retval_ = new cv::HOGDescriptor( n_filename );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -555,7 +555,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_HOGDescriptor_13
 
 
 //
-//  bool HOGDescriptor::checkDetectorSize()
+//  bool checkDetectorSize()
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_checkDetectorSize_10 (JNIEnv*, jclass, jlong);
@@ -566,7 +566,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_checkDetector
     static const char method_name[] = "objdetect::checkDetectorSize_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         bool _retval_ = me->checkDetectorSize(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -580,7 +580,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_checkDetector
 
 
 //
-//  void HOGDescriptor::compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
+//  void compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_compute_10 (JNIEnv*, jclass, jlong, jlong, jlong, jdouble, jdouble, jdouble, jdouble, jlong);
@@ -596,7 +596,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_compute_10
         std::vector<Point> locations;
         Mat& locations_mat = *((Mat*)locations_mat_nativeObj);
         Mat_to_vector_Point( locations_mat, locations );
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         Size winStride((int)winStride_width, (int)winStride_height);
         Size padding((int)padding_width, (int)padding_height);
@@ -623,7 +623,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_compute_11
         LOGD("%s", method_name);
         std::vector<float> descriptors;
         Mat& descriptors_mat = *((Mat*)descriptors_mat_nativeObj);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         me->compute( img, descriptors );
         vector_float_to_Mat( descriptors, descriptors_mat );
@@ -639,7 +639,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_compute_11
 
 
 //
-//  void HOGDescriptor::computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
+//  void computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_computeGradient_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jdouble, jdouble, jdouble, jdouble);
@@ -650,7 +650,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_computeGradient_1
     static const char method_name[] = "objdetect::computeGradient_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         Mat& grad = *((Mat*)grad_nativeObj);
         Mat& angleOfs = *((Mat*)angleOfs_nativeObj);
@@ -676,7 +676,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_computeGradient_1
     static const char method_name[] = "objdetect::computeGradient_11()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         Mat& grad = *((Mat*)grad_nativeObj);
         Mat& angleOfs = *((Mat*)angleOfs_nativeObj);
@@ -693,7 +693,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_computeGradient_1
 
 
 //
-//  void HOGDescriptor::detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
+//  void detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detect_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jlong);
@@ -711,7 +711,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detect_10
         std::vector<Point> searchLocations;
         Mat& searchLocations_mat = *((Mat*)searchLocations_mat_nativeObj);
         Mat_to_vector_Point( searchLocations_mat, searchLocations );
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         Size winStride((int)winStride_width, (int)winStride_height);
         Size padding((int)padding_width, (int)padding_height);
@@ -740,7 +740,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detect_11
         Mat& foundLocations_mat = *((Mat*)foundLocations_mat_nativeObj);
         std::vector<double> weights;
         Mat& weights_mat = *((Mat*)weights_mat_nativeObj);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         me->detect( img, foundLocations, weights );
         vector_Point_to_Mat( foundLocations, foundLocations_mat );  vector_double_to_Mat( weights, weights_mat );
@@ -756,7 +756,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detect_11
 
 
 //
-//  void HOGDescriptor::detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
+//  void detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detectMultiScale_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jboolean);
@@ -771,7 +771,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detectMultiScale_
         Mat& foundLocations_mat = *((Mat*)foundLocations_mat_nativeObj);
         std::vector<double> foundWeights;
         Mat& foundWeights_mat = *((Mat*)foundWeights_mat_nativeObj);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         Size winStride((int)winStride_width, (int)winStride_height);
         Size padding((int)padding_width, (int)padding_height);
@@ -800,7 +800,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detectMultiScale_
         Mat& foundLocations_mat = *((Mat*)foundLocations_mat_nativeObj);
         std::vector<double> foundWeights;
         Mat& foundWeights_mat = *((Mat*)foundWeights_mat_nativeObj);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& img = *((Mat*)img_nativeObj);
         me->detectMultiScale( img, foundLocations, foundWeights );
         vector_Rect_to_Mat( foundLocations, foundLocations_mat );  vector_double_to_Mat( foundWeights, foundWeights_mat );
@@ -816,7 +816,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_detectMultiScale_
 
 
 //
-// static vector_float HOGDescriptor::getDaimlerPeopleDetector()
+// static vector_float getDaimlerPeopleDetector()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDaimlerPeopleDetector_10 (JNIEnv*, jclass);
@@ -828,7 +828,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDaimlerPeople
     try {
         LOGD("%s", method_name);
         
-        std::vector<float> _ret_val_vector_ = HOGDescriptor::getDaimlerPeopleDetector(  );
+        std::vector<float> _ret_val_vector_ = cv::HOGDescriptor::getDaimlerPeopleDetector(  );
         Mat* _retval_ = new Mat();  vector_float_to_Mat(_ret_val_vector_, *_retval_);
         return (jlong) _retval_;
     } catch(const std::exception &e) {
@@ -842,7 +842,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDaimlerPeople
 
 
 //
-// static vector_float HOGDescriptor::getDefaultPeopleDetector()
+// static vector_float getDefaultPeopleDetector()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDefaultPeopleDetector_10 (JNIEnv*, jclass);
@@ -854,7 +854,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDefaultPeople
     try {
         LOGD("%s", method_name);
         
-        std::vector<float> _ret_val_vector_ = HOGDescriptor::getDefaultPeopleDetector(  );
+        std::vector<float> _ret_val_vector_ = cv::HOGDescriptor::getDefaultPeopleDetector(  );
         Mat* _retval_ = new Mat();  vector_float_to_Mat(_ret_val_vector_, *_retval_);
         return (jlong) _retval_;
     } catch(const std::exception &e) {
@@ -868,7 +868,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDefaultPeople
 
 
 //
-//  size_t HOGDescriptor::getDescriptorSize()
+//  size_t getDescriptorSize()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDescriptorSize_10 (JNIEnv*, jclass, jlong);
@@ -879,7 +879,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDescriptorSiz
     static const char method_name[] = "objdetect::getDescriptorSize_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         size_t _retval_ = me->getDescriptorSize(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -893,7 +893,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_getDescriptorSiz
 
 
 //
-//  double HOGDescriptor::getWinSigma()
+//  double getWinSigma()
 //
 
 JNIEXPORT jdouble JNICALL Java_org_opencv_objdetect_HOGDescriptor_getWinSigma_10 (JNIEnv*, jclass, jlong);
@@ -904,7 +904,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_objdetect_HOGDescriptor_getWinSigma_10
     static const char method_name[] = "objdetect::getWinSigma_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         double _retval_ = me->getWinSigma(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -918,7 +918,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_objdetect_HOGDescriptor_getWinSigma_10
 
 
 //
-//  bool HOGDescriptor::load(String filename, String objname = String())
+//  bool load(String filename, String objname = String())
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_load_10 (JNIEnv*, jclass, jlong, jstring, jstring);
@@ -929,7 +929,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_load_10
     static const char method_name[] = "objdetect::load_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         const char* utf_objname = env->GetStringUTFChars(objname, 0); String n_objname( utf_objname ? utf_objname : "" ); env->ReleaseStringUTFChars(objname, utf_objname);
         bool _retval_ = me->load( n_filename, n_objname );
@@ -952,7 +952,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_load_11
     static const char method_name[] = "objdetect::load_11()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         bool _retval_ = me->load( n_filename );
         return _retval_;
@@ -967,7 +967,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_load_11
 
 
 //
-//  void HOGDescriptor::save(String filename, String objname = String())
+//  void save(String filename, String objname = String())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_save_10 (JNIEnv*, jclass, jlong, jstring, jstring);
@@ -978,7 +978,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_save_10
     static const char method_name[] = "objdetect::save_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         const char* utf_objname = env->GetStringUTFChars(objname, 0); String n_objname( utf_objname ? utf_objname : "" ); env->ReleaseStringUTFChars(objname, utf_objname);
         me->save( n_filename, n_objname );
@@ -1001,7 +1001,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_save_11
     static const char method_name[] = "objdetect::save_11()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         me->save( n_filename );
         return;
@@ -1016,7 +1016,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_save_11
 
 
 //
-//  void HOGDescriptor::setSVMDetector(Mat _svmdetector)
+//  void setSVMDetector(Mat _svmdetector)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_setSVMDetector_10 (JNIEnv*, jclass, jlong, jlong);
@@ -1027,7 +1027,7 @@ JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_setSVMDetector_10
     static const char method_name[] = "objdetect::setSVMDetector_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Mat& _svmdetector = *((Mat*)_svmdetector_nativeObj);
         me->setSVMDetector( _svmdetector );
         return;
@@ -1053,7 +1053,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1winS
     static const char method_name[] = "objdetect::get_1winSize_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Size _retval_ = me->winSize;//(  );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -1079,7 +1079,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1bloc
     static const char method_name[] = "objdetect::get_1blockSize_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Size _retval_ = me->blockSize;//(  );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -1105,7 +1105,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1bloc
     static const char method_name[] = "objdetect::get_1blockStride_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Size _retval_ = me->blockStride;//(  );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -1131,7 +1131,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1cell
     static const char method_name[] = "objdetect::get_1cellSize_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         Size _retval_ = me->cellSize;//(  );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -1157,7 +1157,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1nbins_10
     static const char method_name[] = "objdetect::get_1nbins_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         int _retval_ = me->nbins;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1182,7 +1182,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1derivApertur
     static const char method_name[] = "objdetect::get_1derivAperture_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         int _retval_ = me->derivAperture;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1207,7 +1207,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1winSigma_
     static const char method_name[] = "objdetect::get_1winSigma_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         double _retval_ = me->winSigma;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1232,7 +1232,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1histogramNor
     static const char method_name[] = "objdetect::get_1histogramNormType_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         int _retval_ = me->histogramNormType;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1257,7 +1257,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1L2HysThre
     static const char method_name[] = "objdetect::get_1L2HysThreshold_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         double _retval_ = me->L2HysThreshold;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1282,7 +1282,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1gammaCor
     static const char method_name[] = "objdetect::get_1gammaCorrection_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         bool _retval_ = me->gammaCorrection;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1307,7 +1307,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1svmDetector
     static const char method_name[] = "objdetect::get_1svmDetector_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         std::vector<float> _ret_val_vector_ = me->svmDetector;//(  );
         Mat* _retval_ = new Mat();  vector_float_to_Mat(_ret_val_vector_, *_retval_);
         return (jlong) _retval_;
@@ -1333,7 +1333,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1nlevels_10
     static const char method_name[] = "objdetect::get_1nlevels_10()";
     try {
         LOGD("%s", method_name);
-        HOGDescriptor* me = (HOGDescriptor*) self; //TODO: check for NULL
+        cv::HOGDescriptor* me = (cv::HOGDescriptor*) self; //TODO: check for NULL
         int _retval_ = me->nlevels;//(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1348,14 +1348,14 @@ JNIEXPORT jint JNICALL Java_org_opencv_objdetect_HOGDescriptor_get_1nlevels_10
 
 //
 //  native support for java finalize()
-//  static void HOGDescriptor::delete( __int64 self )
+//  static void cv::HOGDescriptor::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_objdetect_HOGDescriptor_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (HOGDescriptor*) self;
+    delete (cv::HOGDescriptor*) self;
 }
 
 

@@ -13,6 +13,7 @@ modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.c
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/photo/CMakeFiles/opencv_photo_pch_dephelp.dir/opencv_photo_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

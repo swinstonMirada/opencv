@@ -25,7 +25,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:   HOGDescriptor::HOGDescriptor()
+    // C++:   HOGDescriptor()
     //
 
     public   HOGDescriptor()
@@ -38,7 +38,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:   HOGDescriptor::HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
+    // C++:   HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
     //
 
     public   HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture, double _winSigma, int _histogramNormType, double _L2HysThreshold, boolean _gammaCorrection, int _nlevels)
@@ -59,7 +59,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:   HOGDescriptor::HOGDescriptor(String filename)
+    // C++:   HOGDescriptor(String filename)
     //
 
     public   HOGDescriptor(String filename)
@@ -72,7 +72,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  bool HOGDescriptor::checkDetectorSize()
+    // C++:  bool checkDetectorSize()
     //
 
     public  boolean checkDetectorSize()
@@ -85,7 +85,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
+    // C++:  void compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
     //
 
     public  void compute(Mat img, MatOfFloat descriptors, Size winStride, Size padding, MatOfPoint locations)
@@ -107,7 +107,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
+    // C++:  void computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
     //
 
     public  void computeGradient(Mat img, Mat grad, Mat angleOfs, Size paddingTL, Size paddingBR)
@@ -128,7 +128,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
+    // C++:  void detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
     //
 
     public  void detect(Mat img, MatOfPoint foundLocations, MatOfDouble weights, double hitThreshold, Size winStride, Size padding, MatOfPoint searchLocations)
@@ -152,7 +152,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
+    // C++:  void detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
     //
 
     public  void detectMultiScale(Mat img, MatOfRect foundLocations, MatOfDouble foundWeights, double hitThreshold, Size winStride, Size padding, double scale, double finalThreshold, boolean useMeanshiftGrouping)
@@ -175,7 +175,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++: static vector_float HOGDescriptor::getDaimlerPeopleDetector()
+    // C++: static vector_float getDaimlerPeopleDetector()
     //
 
     public static MatOfFloat getDaimlerPeopleDetector()
@@ -188,7 +188,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++: static vector_float HOGDescriptor::getDefaultPeopleDetector()
+    // C++: static vector_float getDefaultPeopleDetector()
     //
 
     public static MatOfFloat getDefaultPeopleDetector()
@@ -201,7 +201,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  size_t HOGDescriptor::getDescriptorSize()
+    // C++:  size_t getDescriptorSize()
     //
 
     public  long getDescriptorSize()
@@ -214,7 +214,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  double HOGDescriptor::getWinSigma()
+    // C++:  double getWinSigma()
     //
 
     public  double getWinSigma()
@@ -227,7 +227,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  bool HOGDescriptor::load(String filename, String objname = String())
+    // C++:  bool load(String filename, String objname = String())
     //
 
     public  boolean load(String filename, String objname)
@@ -248,7 +248,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::save(String filename, String objname = String())
+    // C++:  void save(String filename, String objname = String())
     //
 
     public  void save(String filename, String objname)
@@ -269,7 +269,7 @@ public class HOGDescriptor {
 
 
     //
-    // C++:  void HOGDescriptor::setSVMDetector(Mat _svmdetector)
+    // C++:  void setSVMDetector(Mat _svmdetector)
     //
 
     public  void setSVMDetector(Mat _svmdetector)
@@ -444,56 +444,56 @@ public class HOGDescriptor {
 
 
 
-    // C++:   HOGDescriptor::HOGDescriptor()
+    // C++:   HOGDescriptor()
     private static native long HOGDescriptor_0();
 
-    // C++:   HOGDescriptor::HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
+    // C++:   HOGDescriptor(Size _winSize, Size _blockSize, Size _blockStride, Size _cellSize, int _nbins, int _derivAperture = 1, double _winSigma = -1, int _histogramNormType = HOGDescriptor::L2Hys, double _L2HysThreshold = 0.2, bool _gammaCorrection = false, int _nlevels = HOGDescriptor::DEFAULT_NLEVELS)
     private static native long HOGDescriptor_1(double _winSize_width, double _winSize_height, double _blockSize_width, double _blockSize_height, double _blockStride_width, double _blockStride_height, double _cellSize_width, double _cellSize_height, int _nbins, int _derivAperture, double _winSigma, int _histogramNormType, double _L2HysThreshold, boolean _gammaCorrection, int _nlevels);
     private static native long HOGDescriptor_2(double _winSize_width, double _winSize_height, double _blockSize_width, double _blockSize_height, double _blockStride_width, double _blockStride_height, double _cellSize_width, double _cellSize_height, int _nbins);
 
-    // C++:   HOGDescriptor::HOGDescriptor(String filename)
+    // C++:   HOGDescriptor(String filename)
     private static native long HOGDescriptor_3(String filename);
 
-    // C++:  bool HOGDescriptor::checkDetectorSize()
+    // C++:  bool checkDetectorSize()
     private static native boolean checkDetectorSize_0(long nativeObj);
 
-    // C++:  void HOGDescriptor::compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
+    // C++:  void compute(Mat img, vector_float& descriptors, Size winStride = Size(), Size padding = Size(), vector_Point locations = std::vector<Point>())
     private static native void compute_0(long nativeObj, long img_nativeObj, long descriptors_mat_nativeObj, double winStride_width, double winStride_height, double padding_width, double padding_height, long locations_mat_nativeObj);
     private static native void compute_1(long nativeObj, long img_nativeObj, long descriptors_mat_nativeObj);
 
-    // C++:  void HOGDescriptor::computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
+    // C++:  void computeGradient(Mat img, Mat& grad, Mat& angleOfs, Size paddingTL = Size(), Size paddingBR = Size())
     private static native void computeGradient_0(long nativeObj, long img_nativeObj, long grad_nativeObj, long angleOfs_nativeObj, double paddingTL_width, double paddingTL_height, double paddingBR_width, double paddingBR_height);
     private static native void computeGradient_1(long nativeObj, long img_nativeObj, long grad_nativeObj, long angleOfs_nativeObj);
 
-    // C++:  void HOGDescriptor::detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
+    // C++:  void detect(Mat img, vector_Point& foundLocations, vector_double& weights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), vector_Point searchLocations = std::vector<Point>())
     private static native void detect_0(long nativeObj, long img_nativeObj, long foundLocations_mat_nativeObj, long weights_mat_nativeObj, double hitThreshold, double winStride_width, double winStride_height, double padding_width, double padding_height, long searchLocations_mat_nativeObj);
     private static native void detect_1(long nativeObj, long img_nativeObj, long foundLocations_mat_nativeObj, long weights_mat_nativeObj);
 
-    // C++:  void HOGDescriptor::detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
+    // C++:  void detectMultiScale(Mat img, vector_Rect& foundLocations, vector_double& foundWeights, double hitThreshold = 0, Size winStride = Size(), Size padding = Size(), double scale = 1.05, double finalThreshold = 2.0, bool useMeanshiftGrouping = false)
     private static native void detectMultiScale_0(long nativeObj, long img_nativeObj, long foundLocations_mat_nativeObj, long foundWeights_mat_nativeObj, double hitThreshold, double winStride_width, double winStride_height, double padding_width, double padding_height, double scale, double finalThreshold, boolean useMeanshiftGrouping);
     private static native void detectMultiScale_1(long nativeObj, long img_nativeObj, long foundLocations_mat_nativeObj, long foundWeights_mat_nativeObj);
 
-    // C++: static vector_float HOGDescriptor::getDaimlerPeopleDetector()
+    // C++: static vector_float getDaimlerPeopleDetector()
     private static native long getDaimlerPeopleDetector_0();
 
-    // C++: static vector_float HOGDescriptor::getDefaultPeopleDetector()
+    // C++: static vector_float getDefaultPeopleDetector()
     private static native long getDefaultPeopleDetector_0();
 
-    // C++:  size_t HOGDescriptor::getDescriptorSize()
+    // C++:  size_t getDescriptorSize()
     private static native long getDescriptorSize_0(long nativeObj);
 
-    // C++:  double HOGDescriptor::getWinSigma()
+    // C++:  double getWinSigma()
     private static native double getWinSigma_0(long nativeObj);
 
-    // C++:  bool HOGDescriptor::load(String filename, String objname = String())
+    // C++:  bool load(String filename, String objname = String())
     private static native boolean load_0(long nativeObj, String filename, String objname);
     private static native boolean load_1(long nativeObj, String filename);
 
-    // C++:  void HOGDescriptor::save(String filename, String objname = String())
+    // C++:  void save(String filename, String objname = String())
     private static native void save_0(long nativeObj, String filename, String objname);
     private static native void save_1(long nativeObj, String filename);
 
-    // C++:  void HOGDescriptor::setSVMDetector(Mat _svmdetector)
+    // C++:  void setSVMDetector(Mat _svmdetector)
     private static native void setSVMDetector_0(long nativeObj, long _svmdetector_nativeObj);
 
     // C++: Size HOGDescriptor::winSize

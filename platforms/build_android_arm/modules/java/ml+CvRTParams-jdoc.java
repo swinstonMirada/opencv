@@ -7,16 +7,6 @@ package org.opencv.ml;
 import org.opencv.core.TermCriteria;
 
 // C++: class CvRTParams
-/**
- * <p>Training parameters of random trees.</p>
- *
- * <p>The set of training parameters for the forest is a superset of the training
- * parameters for a single tree. However, random trees do not need all the
- * functionality/features of decision trees. Most noticeably, the trees are not
- * pruned, so the cross-validation parameters are not used.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/random_trees.html#cvrtparams">org.opencv.ml.CvRTParams : public CvDTreeParams</a>
- */
 public class CvRTParams extends CvDTreeParams {
 
     protected CvRTParams(long addr) { super(addr); }

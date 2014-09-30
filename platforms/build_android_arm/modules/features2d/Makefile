@@ -288,29 +288,29 @@ pch_Generate_opencv_test_features2d/fast:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/pch_Generate_opencv_test_features2d.dir/build.make modules/features2d/CMakeFiles/pch_Generate_opencv_test_features2d.dir/build
 .PHONY : pch_Generate_opencv_test_features2d/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_features2d.o: opencl_kernels_features2d.cpp.o
+.PHONY : opencl_kernels_features2d.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_features2d.cpp.o:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o
+.PHONY : opencl_kernels_features2d.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_features2d.i: opencl_kernels_features2d.cpp.i
+.PHONY : opencl_kernels_features2d.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_features2d.cpp.i:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.i
+.PHONY : opencl_kernels_features2d.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_features2d.s: opencl_kernels_features2d.cpp.s
+.PHONY : opencl_kernels_features2d.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_features2d.cpp.s:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.s
+.PHONY : opencl_kernels_features2d.cpp.s
 
 opencv_features2d_pch_dephelp.o: opencv_features2d_pch_dephelp.cxx.o
 .PHONY : opencv_features2d_pch_dephelp.o
@@ -576,30 +576,6 @@ src/akaze.cpp.s:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.s
 .PHONY : src/akaze.cpp.s
 
-src/akaze/AKAZEFeatures.o: src/akaze/AKAZEFeatures.cpp.o
-.PHONY : src/akaze/AKAZEFeatures.o
-
-# target to build an object file
-src/akaze/AKAZEFeatures.cpp.o:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o
-.PHONY : src/akaze/AKAZEFeatures.cpp.o
-
-src/akaze/AKAZEFeatures.i: src/akaze/AKAZEFeatures.cpp.i
-.PHONY : src/akaze/AKAZEFeatures.i
-
-# target to preprocess a source file
-src/akaze/AKAZEFeatures.cpp.i:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.i
-.PHONY : src/akaze/AKAZEFeatures.cpp.i
-
-src/akaze/AKAZEFeatures.s: src/akaze/AKAZEFeatures.cpp.s
-.PHONY : src/akaze/AKAZEFeatures.s
-
-# target to generate assembly for a file
-src/akaze/AKAZEFeatures.cpp.s:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.s
-.PHONY : src/akaze/AKAZEFeatures.cpp.s
-
 src/bagofwords.o: src/bagofwords.cpp.o
 .PHONY : src/bagofwords.o
 
@@ -647,30 +623,6 @@ src/blobdetector.s: src/blobdetector.cpp.s
 src/blobdetector.cpp.s:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.s
 .PHONY : src/blobdetector.cpp.s
-
-src/brief.o: src/brief.cpp.o
-.PHONY : src/brief.o
-
-# target to build an object file
-src/brief.cpp.o:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o
-.PHONY : src/brief.cpp.o
-
-src/brief.i: src/brief.cpp.i
-.PHONY : src/brief.i
-
-# target to preprocess a source file
-src/brief.cpp.i:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.i
-.PHONY : src/brief.cpp.i
-
-src/brief.s: src/brief.cpp.s
-.PHONY : src/brief.s
-
-# target to generate assembly for a file
-src/brief.cpp.s:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.s
-.PHONY : src/brief.cpp.s
 
 src/brisk.o: src/brisk.cpp.o
 .PHONY : src/brisk.o
@@ -888,30 +840,6 @@ src/features2d_init.cpp.s:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.s
 .PHONY : src/features2d_init.cpp.s
 
-src/freak.o: src/freak.cpp.o
-.PHONY : src/freak.o
-
-# target to build an object file
-src/freak.cpp.o:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o
-.PHONY : src/freak.cpp.o
-
-src/freak.i: src/freak.cpp.i
-.PHONY : src/freak.i
-
-# target to preprocess a source file
-src/freak.cpp.i:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.i
-.PHONY : src/freak.cpp.i
-
-src/freak.s: src/freak.cpp.s
-.PHONY : src/freak.s
-
-# target to generate assembly for a file
-src/freak.cpp.s:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.s
-.PHONY : src/freak.cpp.s
-
 src/kaze.o: src/kaze.cpp.o
 .PHONY : src/kaze.o
 
@@ -935,6 +863,30 @@ src/kaze.s: src/kaze.cpp.s
 src/kaze.cpp.s:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.s
 .PHONY : src/kaze.cpp.s
+
+src/kaze/AKAZEFeatures.o: src/kaze/AKAZEFeatures.cpp.o
+.PHONY : src/kaze/AKAZEFeatures.o
+
+# target to build an object file
+src/kaze/AKAZEFeatures.cpp.o:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o
+.PHONY : src/kaze/AKAZEFeatures.cpp.o
+
+src/kaze/AKAZEFeatures.i: src/kaze/AKAZEFeatures.cpp.i
+.PHONY : src/kaze/AKAZEFeatures.i
+
+# target to preprocess a source file
+src/kaze/AKAZEFeatures.cpp.i:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.i
+.PHONY : src/kaze/AKAZEFeatures.cpp.i
+
+src/kaze/AKAZEFeatures.s: src/kaze/AKAZEFeatures.cpp.s
+.PHONY : src/kaze/AKAZEFeatures.s
+
+# target to generate assembly for a file
+src/kaze/AKAZEFeatures.cpp.s:
+	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.s
+.PHONY : src/kaze/AKAZEFeatures.cpp.s
 
 src/kaze/KAZEFeatures.o: src/kaze/KAZEFeatures.cpp.o
 .PHONY : src/kaze/KAZEFeatures.o
@@ -1103,30 +1055,6 @@ src/orb.s: src/orb.cpp.s
 src/orb.cpp.s:
 	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.s
 .PHONY : src/orb.cpp.s
-
-src/stardetector.o: src/stardetector.cpp.o
-.PHONY : src/stardetector.o
-
-# target to build an object file
-src/stardetector.cpp.o:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o
-.PHONY : src/stardetector.cpp.o
-
-src/stardetector.i: src/stardetector.cpp.i
-.PHONY : src/stardetector.i
-
-# target to preprocess a source file
-src/stardetector.cpp.i:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.i
-.PHONY : src/stardetector.cpp.i
-
-src/stardetector.s: src/stardetector.cpp.s
-.PHONY : src/stardetector.s
-
-# target to generate assembly for a file
-src/stardetector.cpp.s:
-	cd ../.. && $(MAKE) -f modules/features2d/CMakeFiles/opencv_features2d.dir/build.make modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.s
-.PHONY : src/stardetector.cpp.s
 
 test/ocl/test_brute_force_matcher.o: test/ocl/test_brute_force_matcher.cpp.o
 .PHONY : test/ocl/test_brute_force_matcher.o
@@ -1439,9 +1367,9 @@ help:
 	@echo "... pch_Generate_opencv_perf_features2d"
 	@echo "... pch_Generate_opencv_test_features2d"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_features2d.o"
+	@echo "... opencl_kernels_features2d.i"
+	@echo "... opencl_kernels_features2d.s"
 	@echo "... opencv_features2d_pch_dephelp.o"
 	@echo "... opencv_features2d_pch_dephelp.i"
 	@echo "... opencv_features2d_pch_dephelp.s"
@@ -1475,18 +1403,12 @@ help:
 	@echo "... src/akaze.o"
 	@echo "... src/akaze.i"
 	@echo "... src/akaze.s"
-	@echo "... src/akaze/AKAZEFeatures.o"
-	@echo "... src/akaze/AKAZEFeatures.i"
-	@echo "... src/akaze/AKAZEFeatures.s"
 	@echo "... src/bagofwords.o"
 	@echo "... src/bagofwords.i"
 	@echo "... src/bagofwords.s"
 	@echo "... src/blobdetector.o"
 	@echo "... src/blobdetector.i"
 	@echo "... src/blobdetector.s"
-	@echo "... src/brief.o"
-	@echo "... src/brief.i"
-	@echo "... src/brief.s"
 	@echo "... src/brisk.o"
 	@echo "... src/brisk.i"
 	@echo "... src/brisk.s"
@@ -1514,12 +1436,12 @@ help:
 	@echo "... src/features2d_init.o"
 	@echo "... src/features2d_init.i"
 	@echo "... src/features2d_init.s"
-	@echo "... src/freak.o"
-	@echo "... src/freak.i"
-	@echo "... src/freak.s"
 	@echo "... src/kaze.o"
 	@echo "... src/kaze.i"
 	@echo "... src/kaze.s"
+	@echo "... src/kaze/AKAZEFeatures.o"
+	@echo "... src/kaze/AKAZEFeatures.i"
+	@echo "... src/kaze/AKAZEFeatures.s"
 	@echo "... src/kaze/KAZEFeatures.o"
 	@echo "... src/kaze/KAZEFeatures.i"
 	@echo "... src/kaze/KAZEFeatures.s"
@@ -1541,9 +1463,6 @@ help:
 	@echo "... src/orb.o"
 	@echo "... src/orb.i"
 	@echo "... src/orb.s"
-	@echo "... src/stardetector.o"
-	@echo "... src/stardetector.i"
-	@echo "... src/stardetector.s"
 	@echo "... test/ocl/test_brute_force_matcher.o"
 	@echo "... test/ocl/test_brute_force_matcher.i"
 	@echo "... test/ocl/test_brute_force_matcher.s"

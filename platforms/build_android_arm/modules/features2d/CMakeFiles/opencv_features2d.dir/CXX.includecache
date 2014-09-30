@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -143,6 +147,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -800,20 +808,6 @@ bits/locale_facets.tcc
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/locale_facets.tcc
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/locale_facets_nonio.h
-ctime
--
-bits/time_members.h
--
-bits/messages_members.h
--
-bits/codecvt.h
--
-bits/locale_facets_nonio.tcc
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/locale_facets_nonio.tcc
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/localefwd.h
 bits/c++config.h
 -
@@ -1042,22 +1036,6 @@ type_traits
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/vector.tcc
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bitset
-string
--
-bits/functexcept.h
--
-iosfwd
--
-bits/cxxabi_forced.h
--
-bits/functional_hash.h
--
-debug/bitset
--
-profile/bitset
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert
 assert.h
 -
@@ -1140,12 +1118,6 @@ bits/c++config.h
 string.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ctime
-bits/c++config.h
--
-time.h
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cwchar
 bits/c++config.h
 -
@@ -1162,14 +1134,6 @@ wctype.h
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/array
 debug/safe_sequence.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/bitset
-bitset
--
-debug/safe_sequence.h
--
-debug/safe_iterator.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/debug.h
@@ -1438,16 +1402,6 @@ bits/c++0x_warning.h
 bits/c++config.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iomanip
-bits/c++config.h
--
-iosfwd
--
-bits/ios_base.h
--
-locale
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ios
 iosfwd
 -
@@ -1510,16 +1464,6 @@ bits/range_access.h
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 bits/c++config.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
-bits/localefwd.h
--
-bits/locale_classes.h
--
-bits/locale_facets.h
--
-bits/locale_facets_nonio.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
@@ -1962,10 +1906,6 @@ parallel/compatibility.h
 functional
 -
 profile/impl/profiler.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/bitset
-bitset
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/deque
@@ -2516,37 +2456,15 @@ sched.h
 bits/gthr-default.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/messages_members.h
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
-akaze/AKAZEFeatures.h
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/precomp.hpp
-opencv2/features2d.hpp
+kaze/AKAZEFeatures.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.h
+iostream
 -
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp
-AKAZEFeatures.h
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h
-../kaze/fed.h
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h
-../kaze/nldiffusion_functions.h
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/precomp.hpp
-AKAZEConfig.h
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp
 precomp.hpp
@@ -2563,24 +2481,6 @@ opencv2/opencv_modules.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencv2/opencv_modules.hpp
 opencv2/highgui.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencv2/highgui.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
-algorithm
--
-vector
--
-iostream
--
-iomanip
--
-generated_16.i
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_16.i
-generated_32.i
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_32.i
-generated_64.i
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_64.i
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp
 opencv2/features2d.hpp
@@ -2625,8 +2525,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 fast_score.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels.hpp
+opencl_kernels_features2d.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels_features2d.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp
 fast_score.hpp
@@ -2640,49 +2540,49 @@ precomp.hpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
-fstream
--
-stdlib.h
--
-algorithm
--
-iostream
--
-bitset
--
-sstream
--
-algorithm
--
-iomanip
--
-string.h
--
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_16.i
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_32.i
-
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/generated_64.i
-
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 kaze/KAZEFeatures.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h
 
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEConfig.h
+../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
+opencv2/features2d.hpp
+-
+
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.cpp
+AKAZEFeatures.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.h
+fed.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h
+nldiffusion_functions.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
+utils.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/utils.h
+iostream
+-
+
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.h
+../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
+AKAZEConfig.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEConfig.h
+TEvolution.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/TEvolution.h
+
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/precomp.hpp
+../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 opencv2/features2d.hpp
 -
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp
 KAZEFeatures.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h
+utils.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/utils.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h
 KAZEConfig.h
@@ -2691,10 +2591,14 @@ nldiffusion_functions.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
 fed.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h
+TEvolution.h
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/TEvolution.h
+
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/TEvolution.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/precomp.hpp
+../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 fed.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h
 
@@ -2705,10 +2609,14 @@ vector
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp
 nldiffusion_functions.h
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
+iostream
+-
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/precomp.hpp
+../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
+
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/utils.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp
 precomp.hpp
@@ -2719,8 +2627,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
 limits
 -
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels.hpp
+opencl_kernels_features2d.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels_features2d.hpp
 Eigen/Array
 -
 
@@ -2735,8 +2643,8 @@ limits
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels.hpp
+opencl_kernels_features2d.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl_kernels_features2d.hpp
 iterator
 -
 
@@ -2756,17 +2664,13 @@ algorithm
 opencv2/features2d/features2d_tegra.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencv2/features2d/features2d_tegra.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.hpp
+opencl_kernels_features2d.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -3354,27 +3258,11 @@ unistd.h
 
 cvconfig.h
 
-modules/features2d/opencl_kernels.hpp
+modules/features2d/opencl_kernels_features2d.hpp
 opencv2/core/ocl_genbase.hpp
 modules/features2d/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
 modules/features2d/opencv2/core/opencl/ocl_defs.hpp
-
-modules/features2d/precomp.hpp
-opencv2/features2d.hpp
-modules/features2d/opencv2/features2d.hpp
-opencv2/imgproc.hpp
-modules/features2d/opencv2/imgproc.hpp
-opencv2/core/utility.hpp
-modules/features2d/opencv2/core/utility.hpp
-opencv2/core/private.hpp
-modules/features2d/opencv2/core/private.hpp
-opencv2/core/ocl.hpp
-modules/features2d/opencv2/core/ocl.hpp
-algorithm
--
-opencv2/features2d/features2d_tegra.hpp
-modules/features2d/opencv2/features2d/features2d_tegra.hpp
 
 opencv2/opencv_modules.hpp
 

@@ -121,6 +121,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -305,6 +309,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -1206,6 +1214,12 @@ bits/concept_check.h
 initializer_list
 -
 
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
+bits/concept_check.h
+-
+initializer_list
+-
+
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 bits/concept_check.h
 -
@@ -1227,6 +1241,12 @@ debug/debug.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_relops.h
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_set.h
+bits/concept_check.h
+-
+initializer_list
+-
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_tempbuf.h
 bits/stl_algobase.h
@@ -1334,6 +1354,12 @@ ext/type_traits.h
 cmath
 -
 sstream
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cstdarg
+bits/c++config.h
+-
+stdarg.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cstddef
@@ -1452,6 +1478,14 @@ debug/safe_iterator.h
 utility
 -
 
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
+debug/safe_sequence.h
+-
+debug/safe_iterator.h
+-
+utility
+-
+
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 ext/concurrence.h
 -
@@ -1521,6 +1555,22 @@ debug/safe_unordered_container.tcc
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_unordered_container.tcc
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/set
+set
+-
+debug/set.h
+-
+debug/multiset.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/set.h
+debug/safe_sequence.h
+-
+debug/safe_iterator.h
+-
+utility
+-
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/unordered_map
 bits/c++0x_warning.h
@@ -2388,6 +2438,22 @@ profile/base.h
 utility
 -
 
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
+utility
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
+set
+-
+profile/set.h
+-
+profile/multiset.h
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
+utility
+-
+
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/unordered_base.h
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/unordered_map
@@ -2448,6 +2514,20 @@ bits/random.h
 bits/opt_random.h
 -
 bits/random.tcc
+-
+
+/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/set
+bits/stl_tree.h
+-
+bits/stl_set.h
+-
+bits/stl_multiset.h
+-
+bits/range_access.h
+-
+debug/set
+-
+profile/set
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/sstream
@@ -2811,8 +2891,8 @@ sys/mman.h
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/arithm.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/array.cpp
 precomp.hpp
@@ -2828,17 +2908,21 @@ precomp.hpp
 sstream
 -
 
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/conjugate_gradient.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
+
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/convert.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/copy.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_buffer_pool.cpp
 precomp.hpp
@@ -2896,9 +2980,19 @@ CL/cl_d3d10.h
 CL/cl_dx9_media_sharing.h
 -
 
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/drawing.cpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/downhill_simplex.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
+iostream
+-
+cstdlib
+-
+cmath
+-
+algorithm
+-
+opencv2/optim/optim.hpp
+-
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/dxt.cpp
 precomp.hpp
@@ -2907,8 +3001,8 @@ opencv2/core/opencl/runtime/opencl_clamdfft.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencv2/core/opencl/runtime/opencl_clamdfft.hpp
 opencv2/core/opencl/runtime/opencl_core.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencv2/core/opencl/runtime/opencl_core.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 map
 -
 
@@ -2956,23 +3050,47 @@ dirent.h
 sys/stat.h
 -
 
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/kmeans.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
+
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/lapack.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 limits
 -
 
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lda.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
+iostream
+-
+map
+-
+set
+-
+
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lpsolver.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
+climits
+-
+algorithm
+-
+cstdarg
+-
+
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/mathfuncs.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/matmul.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 opencv2/core/opencl/runtime/opencl_clamdblas.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencv2/core/opencl/runtime/opencl_clamdblas.hpp
 
@@ -2983,8 +3101,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/matrix.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 bufferpool.impl.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/bufferpool.impl.hpp
 
@@ -3031,8 +3149,8 @@ stdio.h
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdblas.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/precomp.hpp
+../../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 opencv2/core/opencl/runtime/opencl_core.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencv2/core/opencl/runtime/opencl_core.hpp
 opencv2/core/opencl/runtime/opencl_clamdblas.hpp
@@ -3049,8 +3167,8 @@ autogenerated/opencl_clamdblas_impl.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdfft.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/precomp.hpp
+../../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 opencv2/core/opencl/runtime/opencl_core.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencv2/core/opencl/runtime/opencl_core.hpp
 opencv2/core/opencl/runtime/opencl_clamdfft.hpp
@@ -3067,8 +3185,8 @@ autogenerated/opencl_clamdfft_impl.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_core.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/precomp.hpp
+../../precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 opencv2/core.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencv2/core.hpp
 opencv2/core/opencl/runtime/opencl_core.hpp
@@ -3133,6 +3251,10 @@ pthread.h
 -
 ppl.h
 -
+
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/pca.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/persistence.cpp
 precomp.hpp
@@ -3203,8 +3325,8 @@ climits
 -
 limits
 -
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/stl.cpp
 precomp.hpp
@@ -3265,16 +3387,16 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/umatrix.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl_kernels_core.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.hpp
+opencl_kernels_core.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -3880,49 +4002,11 @@ unistd.h
 
 cvconfig.h
 
-modules/core/opencl_kernels.hpp
+modules/core/opencl_kernels_core.hpp
 opencv2/core/ocl_genbase.hpp
 modules/core/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
 modules/core/opencv2/core/opencl/ocl_defs.hpp
-
-modules/core/precomp.hpp
-opencv2/opencv_modules.hpp
-modules/core/opencv2/opencv_modules.hpp
-cvconfig.h
-modules/core/cvconfig.h
-opencv2/core/utility.hpp
-modules/core/opencv2/core/utility.hpp
-opencv2/core/core_c.h
-modules/core/opencv2/core/core_c.h
-opencv2/core/cuda.hpp
-modules/core/opencv2/core/cuda.hpp
-opencv2/core/opengl.hpp
-modules/core/opencv2/core/opengl.hpp
-opencv2/core/private.hpp
-modules/core/opencv2/core/private.hpp
-opencv2/core/private.cuda.hpp
-modules/core/opencv2/core/private.cuda.hpp
-opencv2/core/ocl.hpp
-modules/core/opencv2/core/ocl.hpp
-assert.h
--
-ctype.h
--
-float.h
--
-limits.h
--
-math.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-opencv2/core/core_tegra.hpp
-modules/core/opencv2/core/core_tegra.hpp
 
 modules/core/version_string.inc
 

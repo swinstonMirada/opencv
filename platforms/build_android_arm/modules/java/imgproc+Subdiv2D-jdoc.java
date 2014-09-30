@@ -38,7 +38,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:   Subdiv2D::Subdiv2D()
+    // C++:   Subdiv2D()
     //
 
     public   Subdiv2D()
@@ -51,7 +51,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:   Subdiv2D::Subdiv2D(Rect rect)
+    // C++:   Subdiv2D(Rect rect)
     //
 
     public   Subdiv2D(Rect rect)
@@ -64,7 +64,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::edgeDst(int edge, Point2f* dstpt = 0)
+    // C++:  int edgeDst(int edge, Point2f* dstpt = 0)
     //
 
     public  int edgeDst(int edge, Point dstpt)
@@ -85,7 +85,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::edgeOrg(int edge, Point2f* orgpt = 0)
+    // C++:  int edgeOrg(int edge, Point2f* orgpt = 0)
     //
 
     public  int edgeOrg(int edge, Point orgpt)
@@ -106,7 +106,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::findNearest(Point2f pt, Point2f* nearestPt = 0)
+    // C++:  int findNearest(Point2f pt, Point2f* nearestPt = 0)
     //
 
     public  int findNearest(Point pt, Point nearestPt)
@@ -127,7 +127,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::getEdge(int edge, int nextEdgeType)
+    // C++:  int getEdge(int edge, int nextEdgeType)
     //
 
     public  int getEdge(int edge, int nextEdgeType)
@@ -140,7 +140,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  void Subdiv2D::getEdgeList(vector_Vec4f& edgeList)
+    // C++:  void getEdgeList(vector_Vec4f& edgeList)
     //
 
     public  void getEdgeList(MatOfFloat4 edgeList)
@@ -153,7 +153,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  void Subdiv2D::getTriangleList(vector_Vec6f& triangleList)
+    // C++:  void getTriangleList(vector_Vec6f& triangleList)
     //
 
     public  void getTriangleList(MatOfFloat6 triangleList)
@@ -166,7 +166,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  Point2f Subdiv2D::getVertex(int vertex, int* firstEdge = 0)
+    // C++:  Point2f getVertex(int vertex, int* firstEdge = 0)
     //
 
     public  Point getVertex(int vertex, int[] firstEdge)
@@ -187,7 +187,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  void Subdiv2D::getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
+    // C++:  void getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
     //
 
     public  void getVoronoiFacetList(MatOfInt idx, List<MatOfPoint2f> facetList, MatOfPoint2f facetCenters)
@@ -202,7 +202,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  void Subdiv2D::initDelaunay(Rect rect)
+    // C++:  void initDelaunay(Rect rect)
     //
 
     public  void initDelaunay(Rect rect)
@@ -215,7 +215,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::insert(Point2f pt)
+    // C++:  int insert(Point2f pt)
     //
 
     public  int insert(Point pt)
@@ -228,7 +228,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  void Subdiv2D::insert(vector_Point2f ptvec)
+    // C++:  void insert(vector_Point2f ptvec)
     //
 
     public  void insert(MatOfPoint2f ptvec)
@@ -241,7 +241,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::locate(Point2f pt, int& edge, int& vertex)
+    // C++:  int locate(Point2f pt, int& edge, int& vertex)
     //
 
     public  int locate(Point pt, int[] edge, int[] vertex)
@@ -256,7 +256,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::nextEdge(int edge)
+    // C++:  int nextEdge(int edge)
     //
 
     public  int nextEdge(int edge)
@@ -269,7 +269,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::rotateEdge(int edge, int rotate)
+    // C++:  int rotateEdge(int edge, int rotate)
     //
 
     public  int rotateEdge(int edge, int rotate)
@@ -282,7 +282,7 @@ public class Subdiv2D {
 
 
     //
-    // C++:  int Subdiv2D::symEdge(int edge)
+    // C++:  int symEdge(int edge)
     //
 
     public  int symEdge(int edge)
@@ -301,59 +301,59 @@ public class Subdiv2D {
 
 
 
-    // C++:   Subdiv2D::Subdiv2D()
+    // C++:   Subdiv2D()
     private static native long Subdiv2D_0();
 
-    // C++:   Subdiv2D::Subdiv2D(Rect rect)
+    // C++:   Subdiv2D(Rect rect)
     private static native long Subdiv2D_1(int rect_x, int rect_y, int rect_width, int rect_height);
 
-    // C++:  int Subdiv2D::edgeDst(int edge, Point2f* dstpt = 0)
+    // C++:  int edgeDst(int edge, Point2f* dstpt = 0)
     private static native int edgeDst_0(long nativeObj, int edge, double[] dstpt_out);
     private static native int edgeDst_1(long nativeObj, int edge);
 
-    // C++:  int Subdiv2D::edgeOrg(int edge, Point2f* orgpt = 0)
+    // C++:  int edgeOrg(int edge, Point2f* orgpt = 0)
     private static native int edgeOrg_0(long nativeObj, int edge, double[] orgpt_out);
     private static native int edgeOrg_1(long nativeObj, int edge);
 
-    // C++:  int Subdiv2D::findNearest(Point2f pt, Point2f* nearestPt = 0)
+    // C++:  int findNearest(Point2f pt, Point2f* nearestPt = 0)
     private static native int findNearest_0(long nativeObj, double pt_x, double pt_y, double[] nearestPt_out);
     private static native int findNearest_1(long nativeObj, double pt_x, double pt_y);
 
-    // C++:  int Subdiv2D::getEdge(int edge, int nextEdgeType)
+    // C++:  int getEdge(int edge, int nextEdgeType)
     private static native int getEdge_0(long nativeObj, int edge, int nextEdgeType);
 
-    // C++:  void Subdiv2D::getEdgeList(vector_Vec4f& edgeList)
+    // C++:  void getEdgeList(vector_Vec4f& edgeList)
     private static native void getEdgeList_0(long nativeObj, long edgeList_mat_nativeObj);
 
-    // C++:  void Subdiv2D::getTriangleList(vector_Vec6f& triangleList)
+    // C++:  void getTriangleList(vector_Vec6f& triangleList)
     private static native void getTriangleList_0(long nativeObj, long triangleList_mat_nativeObj);
 
-    // C++:  Point2f Subdiv2D::getVertex(int vertex, int* firstEdge = 0)
+    // C++:  Point2f getVertex(int vertex, int* firstEdge = 0)
     private static native double[] getVertex_0(long nativeObj, int vertex, double[] firstEdge_out);
     private static native double[] getVertex_1(long nativeObj, int vertex);
 
-    // C++:  void Subdiv2D::getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
+    // C++:  void getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
     private static native void getVoronoiFacetList_0(long nativeObj, long idx_mat_nativeObj, long facetList_mat_nativeObj, long facetCenters_mat_nativeObj);
 
-    // C++:  void Subdiv2D::initDelaunay(Rect rect)
+    // C++:  void initDelaunay(Rect rect)
     private static native void initDelaunay_0(long nativeObj, int rect_x, int rect_y, int rect_width, int rect_height);
 
-    // C++:  int Subdiv2D::insert(Point2f pt)
+    // C++:  int insert(Point2f pt)
     private static native int insert_0(long nativeObj, double pt_x, double pt_y);
 
-    // C++:  void Subdiv2D::insert(vector_Point2f ptvec)
+    // C++:  void insert(vector_Point2f ptvec)
     private static native void insert_1(long nativeObj, long ptvec_mat_nativeObj);
 
-    // C++:  int Subdiv2D::locate(Point2f pt, int& edge, int& vertex)
+    // C++:  int locate(Point2f pt, int& edge, int& vertex)
     private static native int locate_0(long nativeObj, double pt_x, double pt_y, double[] edge_out, double[] vertex_out);
 
-    // C++:  int Subdiv2D::nextEdge(int edge)
+    // C++:  int nextEdge(int edge)
     private static native int nextEdge_0(long nativeObj, int edge);
 
-    // C++:  int Subdiv2D::rotateEdge(int edge, int rotate)
+    // C++:  int rotateEdge(int edge, int rotate)
     private static native int rotateEdge_0(long nativeObj, int edge, int rotate);
 
-    // C++:  int Subdiv2D::symEdge(int edge)
+    // C++:  int symEdge(int edge)
     private static native int symEdge_0(long nativeObj, int edge);
 
     // native support for java finalize()

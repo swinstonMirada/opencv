@@ -15,7 +15,7 @@ public class DenseOpticalFlow extends Algorithm {
 
 
     //
-    // C++:  void DenseOpticalFlow::calc(Mat I0, Mat I1, Mat& flow)
+    // C++:  void calc(Mat I0, Mat I1, Mat& flow)
     //
 
     //javadoc: DenseOpticalFlow::calc(I0, I1, flow)
@@ -28,6 +28,20 @@ public class DenseOpticalFlow extends Algorithm {
     }
 
 
+    //
+    // C++:  void collectGarbage()
+    //
+
+    //javadoc: DenseOpticalFlow::collectGarbage()
+    public  void collectGarbage()
+    {
+        
+        collectGarbage_0(nativeObj);
+        
+        return;
+    }
+
+
     @Override
     protected void finalize() throws Throwable {
         delete(nativeObj);
@@ -35,8 +49,11 @@ public class DenseOpticalFlow extends Algorithm {
 
 
 
-    // C++:  void DenseOpticalFlow::calc(Mat I0, Mat I1, Mat& flow)
+    // C++:  void calc(Mat I0, Mat I1, Mat& flow)
     private static native void calc_0(long nativeObj, long I0_nativeObj, long I1_nativeObj, long flow_nativeObj);
+
+    // C++:  void collectGarbage()
+    private static native void collectGarbage_0(long nativeObj);
 
     // native support for java finalize()
     private static native void delete(long nativeObj);

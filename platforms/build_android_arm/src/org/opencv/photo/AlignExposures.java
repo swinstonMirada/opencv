@@ -22,7 +22,7 @@ public class AlignExposures extends Algorithm {
 
 
     //
-    // C++:  void AlignExposures::process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
+    // C++:  void process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
     //
 
 /**
@@ -53,7 +53,7 @@ public class AlignExposures extends Algorithm {
 
 
 
-    // C++:  void AlignExposures::process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
+    // C++:  void process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
     private static native void process_0(long nativeObj, long src_mat_nativeObj, long dst_mat_nativeObj, long times_nativeObj, long response_nativeObj);
 
     // native support for java finalize()

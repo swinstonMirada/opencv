@@ -4,6 +4,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_base.cpp.o"
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_bmp.cpp.o"
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.o"
+  "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o"
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_hdr.cpp.o"
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg.cpp.o"
   "CMakeFiles/opencv_imgcodecs.dir/src/grfmt_jpeg2000.cpp.o"

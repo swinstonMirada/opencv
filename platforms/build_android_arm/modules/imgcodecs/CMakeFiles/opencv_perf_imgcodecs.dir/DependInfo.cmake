@@ -34,17 +34,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/imgcodecs/perf"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "modules/imgcodecs"
-  "../../modules/imgcodecs/src"
-  "../../modules/imgcodecs/test"
   "../../3rdparty/libjasper"
   "3rdparty/libtiff"
   "../../3rdparty/libtiff"
@@ -61,6 +50,14 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../../3rdparty/openexr/IlmThread"
   "../../3rdparty/openexr/Imath"
   "../../3rdparty/openexr/IlmImf"
+  "../../modules/imgcodecs/include"
+  "../../modules/ts/include"
+  "../../modules/core/include"
+  "../../modules/imgproc/include"
+  "../../modules/androidcamera/include"
+  "../../modules/videoio/include"
+  "../../modules/highgui/include"
+  "../../modules/imgcodecs/perf"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

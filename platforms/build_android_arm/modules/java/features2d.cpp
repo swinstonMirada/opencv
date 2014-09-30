@@ -44,73 +44,24 @@ extern "C" {
 
 
 //
-// static javaFeatureDetector* javaFeatureDetector::create(int detectorType)
+//  void compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_FeatureDetector_create_10 (JNIEnv*, jclass, jint);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_FeatureDetector_create_10
-  (JNIEnv* env, jclass , jint detectorType)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_10
+  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj, jlong descriptors_nativeObj)
 {
-    static const char method_name[] = "features2d::create_10()";
-    try {
-        LOGD("%s", method_name);
-        
-        javaFeatureDetector* _retval_ = javaFeatureDetector::create( (int)detectorType );
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  void javaFeatureDetector::detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_10
-  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj, jlong mask_nativeObj)
-{
-    static const char method_name[] = "features2d::detect_10()";
+    static const char method_name[] = "features2d::compute_10()";
     try {
         LOGD("%s", method_name);
         std::vector<KeyPoint> keypoints;
         Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
+        Mat_to_vector_KeyPoint( keypoints_mat, keypoints );
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
-        Mat& mask = *((Mat*)mask_nativeObj);
-        me->detect( image, keypoints, mask );
-        vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_11 (JNIEnv*, jclass, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_11
-  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::detect_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<KeyPoint> keypoints;
-        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        Mat& image = *((Mat*)image_nativeObj);
-        me->detect( image, keypoints );
+        Mat& descriptors = *((Mat*)descriptors_nativeObj);
+        me->compute( image, keypoints, descriptors );
         vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
         return;
     } catch(const std::exception &e) {
@@ -124,15 +75,15 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_11
 
 
 //
-//  void javaFeatureDetector::detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
+//  void compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_12
-  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj, jlong masks_mat_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_11
+  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj, jlong descriptors_mat_nativeObj)
 {
-    static const char method_name[] = "features2d::detect_12()";
+    static const char method_name[] = "features2d::compute_11()";
     try {
         LOGD("%s", method_name);
         std::vector<Mat> images;
@@ -140,157 +91,12 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_12
         Mat_to_vector_Mat( images_mat, images );
         std::vector< std::vector<KeyPoint> > keypoints;
         Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        std::vector<Mat> masks;
-        Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
-        Mat_to_vector_Mat( masks_mat, masks );
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        me->detect( images, keypoints, masks );
-        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_13 (JNIEnv*, jclass, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_13
-  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::detect_13()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<Mat> images;
-        Mat& images_mat = *((Mat*)images_mat_nativeObj);
-        Mat_to_vector_Mat( images_mat, images );
-        std::vector< std::vector<KeyPoint> > keypoints;
-        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        me->detect( images, keypoints );
-        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  bool javaFeatureDetector::empty()
-//
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_FeatureDetector_empty_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_FeatureDetector_empty_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::empty_10()";
-    try {
-        LOGD("%s", method_name);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        bool _retval_ = me->empty(  );
-        return _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  void javaFeatureDetector::read(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_read_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_read_10
-  (JNIEnv* env, jclass , jlong self, jstring fileName)
-{
-    static const char method_name[] = "features2d::read_10()";
-    try {
-        LOGD("%s", method_name);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
-        me->read( n_fileName );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaFeatureDetector::write(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_write_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_write_10
-  (JNIEnv* env, jclass , jlong self, jstring fileName)
-{
-    static const char method_name[] = "features2d::write_10()";
-    try {
-        LOGD("%s", method_name);
-        javaFeatureDetector* me = (javaFeatureDetector*) self; //TODO: check for NULL
-        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
-        me->write( n_fileName );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  native support for java finalize()
-//  static void javaFeatureDetector::delete( __int64 self )
-//
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_delete(JNIEnv*, jclass, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_delete
-  (JNIEnv*, jclass, jlong self)
-{
-    delete (javaFeatureDetector*) self;
-}
-
-
-//
-//  void javaDescriptorMatcher::add(vector_Mat descriptors)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_add_10 (JNIEnv*, jclass, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_add_10
-  (JNIEnv* env, jclass , jlong self, jlong descriptors_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::add_10()";
-    try {
-        LOGD("%s", method_name);
+        Mat_to_vector_vector_KeyPoint( keypoints_mat, keypoints );
         std::vector<Mat> descriptors;
         Mat& descriptors_mat = *((Mat*)descriptors_mat_nativeObj);
-        Mat_to_vector_Mat( descriptors_mat, descriptors );
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        me->add( descriptors );
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
+        me->compute( images, keypoints, descriptors );
+        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );  vector_Mat_to_Mat( descriptors, descriptors_mat );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -303,90 +109,19 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_add_10
 
 
 //
-//  void javaDescriptorMatcher::clear()
+// static javaDescriptorExtractor* create(int extractorType)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_clear_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorExtractor_create_10 (JNIEnv*, jclass, jint);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_clear_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::clear_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        me->clear(  );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  javaDescriptorMatcher* javaDescriptorMatcher::jclone(bool emptyTrainData = false)
-//
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_10 (JNIEnv*, jclass, jlong, jboolean);
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_10
-  (JNIEnv* env, jclass , jlong self, jboolean emptyTrainData)
-{
-    static const char method_name[] = "features2d::clone_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        javaDescriptorMatcher* _retval_ = me->jclone( (bool)emptyTrainData );
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_11 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_11
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::clone_11()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        javaDescriptorMatcher* _retval_ = me->jclone(  );
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-// static javaDescriptorMatcher* javaDescriptorMatcher::create(int matcherType)
-//
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_create_10 (JNIEnv*, jclass, jint);
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_create_10
-  (JNIEnv* env, jclass , jint matcherType)
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorExtractor_create_10
+  (JNIEnv* env, jclass , jint extractorType)
 {
     static const char method_name[] = "features2d::create_10()";
     try {
         LOGD("%s", method_name);
         
-        javaDescriptorMatcher* _retval_ = javaDescriptorMatcher::create( (int)matcherType );
+        javaDescriptorExtractor* _retval_ = cv::javaDescriptorExtractor::create( (int)extractorType );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -399,18 +134,68 @@ JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_create_10
 
 
 //
-//  bool javaDescriptorMatcher::empty()
+//  int descriptorSize()
 //
 
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_empty_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorSize_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_empty_10
+JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "features2d::descriptorSize_10()";
+    try {
+        LOGD("%s", method_name);
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
+        int _retval_ = me->descriptorSize(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  int descriptorType()
+//
+
+JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorType_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorType_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "features2d::descriptorType_10()";
+    try {
+        LOGD("%s", method_name);
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
+        int _retval_ = me->descriptorType(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  bool empty()
+//
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorExtractor_empty_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorExtractor_empty_10
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::empty_10()";
     try {
         LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
         bool _retval_ = me->empty(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -424,411 +209,18 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_empty_10
 
 
 //
-//  vector_Mat javaDescriptorMatcher::getTrainDescriptors()
+//  void read(String fileName)
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_getTrainDescriptors_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_read_10 (JNIEnv*, jclass, jlong, jstring);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_getTrainDescriptors_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::getTrainDescriptors_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        std::vector<Mat> _ret_val_vector_ = me->getTrainDescriptors(  );
-        Mat* _retval_ = new Mat();  vector_Mat_to_Mat(_ret_val_vector_, *_retval_);
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  bool javaDescriptorMatcher::isMaskSupported()
-//
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_isMaskSupported_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_isMaskSupported_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::isMaskSupported_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        bool _retval_ = me->isMaskSupported(  );
-        return _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::knnMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, int k, Mat mask = Mat(), bool compactResult = false)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint, jlong, jboolean);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_10
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k, jlong mask_nativeObj, jboolean compactResult)
-{
-    static const char method_name[] = "features2d::knnMatch_10()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        Mat& mask = *((Mat*)mask_nativeObj);
-        me->knnMatch( queryDescriptors, trainDescriptors, matches, (int)k, mask, (bool)compactResult );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_11
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k)
-{
-    static const char method_name[] = "features2d::knnMatch_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        me->knnMatch( queryDescriptors, trainDescriptors, matches, (int)k );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::knnMatch(Mat queryDescriptors, vector_vector_DMatch& matches, int k, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jint, jlong, jboolean);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_12
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k, jlong masks_mat_nativeObj, jboolean compactResult)
-{
-    static const char method_name[] = "features2d::knnMatch_12()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        std::vector<Mat> masks;
-        Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
-        Mat_to_vector_Mat( masks_mat, masks );
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->knnMatch( queryDescriptors, matches, (int)k, masks, (bool)compactResult );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jint);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_13
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k)
-{
-    static const char method_name[] = "features2d::knnMatch_13()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->knnMatch( queryDescriptors, matches, (int)k );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::match(Mat queryDescriptors, Mat trainDescriptors, vector_DMatch& matches, Mat mask = Mat())
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_10
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jlong mask_nativeObj)
-{
-    static const char method_name[] = "features2d::match_10()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<DMatch> matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        Mat& mask = *((Mat*)mask_nativeObj);
-        me->match( queryDescriptors, trainDescriptors, matches, mask );
-        vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_11
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::match_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<DMatch> matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        me->match( queryDescriptors, trainDescriptors, matches );
-        vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::match(Mat queryDescriptors, vector_DMatch& matches, vector_Mat masks = std::vector<Mat>())
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_12
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jlong masks_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::match_12()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<DMatch> matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        std::vector<Mat> masks;
-        Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
-        Mat_to_vector_Mat( masks_mat, masks );
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->match( queryDescriptors, matches, masks );
-        vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_13 (JNIEnv*, jclass, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_13
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::match_13()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<DMatch> matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->match( queryDescriptors, matches );
-        vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::radiusMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, float maxDistance, Mat mask = Mat(), bool compactResult = false)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat, jlong, jboolean);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_10
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong mask_nativeObj, jboolean compactResult)
-{
-    static const char method_name[] = "features2d::radiusMatch_10()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        Mat& mask = *((Mat*)mask_nativeObj);
-        me->radiusMatch( queryDescriptors, trainDescriptors, matches, (float)maxDistance, mask, (bool)compactResult );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_11
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
-{
-    static const char method_name[] = "features2d::radiusMatch_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
-        me->radiusMatch( queryDescriptors, trainDescriptors, matches, (float)maxDistance );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::radiusMatch(Mat queryDescriptors, vector_vector_DMatch& matches, float maxDistance, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jfloat, jlong, jboolean);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_12
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong masks_mat_nativeObj, jboolean compactResult)
-{
-    static const char method_name[] = "features2d::radiusMatch_12()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        std::vector<Mat> masks;
-        Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
-        Mat_to_vector_Mat( masks_mat, masks );
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->radiusMatch( queryDescriptors, matches, (float)maxDistance, masks, (bool)compactResult );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jfloat);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_13
-  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
-{
-    static const char method_name[] = "features2d::radiusMatch_13()";
-    try {
-        LOGD("%s", method_name);
-        std::vector< std::vector<DMatch> > matches;
-        Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
-        me->radiusMatch( queryDescriptors, matches, (float)maxDistance );
-        vector_vector_DMatch_to_Mat( matches, matches_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::read(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_read_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_read_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_read_10
   (JNIEnv* env, jclass , jlong self, jstring fileName)
 {
     static const char method_name[] = "features2d::read_10()";
     try {
         LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
         const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
         me->read( n_fileName );
         return;
@@ -843,43 +235,18 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_read_10
 
 
 //
-//  void javaDescriptorMatcher::train()
+//  void write(String fileName)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_train_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_write_10 (JNIEnv*, jclass, jlong, jstring);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_train_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::train_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
-        me->train(  );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorMatcher::write(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_write_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_write_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_write_10
   (JNIEnv* env, jclass , jlong self, jstring fileName)
 {
     static const char method_name[] = "features2d::write_10()";
     try {
         LOGD("%s", method_name);
-        javaDescriptorMatcher* me = (javaDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorExtractor* me = (cv::javaDescriptorExtractor*) self; //TODO: check for NULL
         const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
         me->write( n_fileName );
         return;
@@ -895,14 +262,14 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_write_10
 
 //
 //  native support for java finalize()
-//  static void javaDescriptorMatcher::delete( __int64 self )
+//  static void cv::javaDescriptorExtractor::delete( __int64 self )
 //
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_delete(JNIEnv*, jclass, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_delete(JNIEnv*, jclass, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_delete
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (javaDescriptorMatcher*) self;
+    delete (cv::javaDescriptorExtractor*) self;
 }
 
 
@@ -1108,255 +475,22 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_Features2d_drawMatches2_11
 
 
 //
-//  void javaDescriptorExtractor::compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
+//  void add(vector_Mat descriptors)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_add_10 (JNIEnv*, jclass, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_10
-  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj, jlong descriptors_nativeObj)
-{
-    static const char method_name[] = "features2d::compute_10()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<KeyPoint> keypoints;
-        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( keypoints_mat, keypoints );
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        Mat& image = *((Mat*)image_nativeObj);
-        Mat& descriptors = *((Mat*)descriptors_nativeObj);
-        me->compute( image, keypoints, descriptors );
-        vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorExtractor::compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_compute_11
-  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj, jlong descriptors_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::compute_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<Mat> images;
-        Mat& images_mat = *((Mat*)images_mat_nativeObj);
-        Mat_to_vector_Mat( images_mat, images );
-        std::vector< std::vector<KeyPoint> > keypoints;
-        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        Mat_to_vector_vector_KeyPoint( keypoints_mat, keypoints );
-        std::vector<Mat> descriptors;
-        Mat& descriptors_mat = *((Mat*)descriptors_mat_nativeObj);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        me->compute( images, keypoints, descriptors );
-        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );  vector_Mat_to_Mat( descriptors, descriptors_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-// static javaDescriptorExtractor* javaDescriptorExtractor::create(int extractorType)
-//
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorExtractor_create_10 (JNIEnv*, jclass, jint);
-
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorExtractor_create_10
-  (JNIEnv* env, jclass , jint extractorType)
-{
-    static const char method_name[] = "features2d::create_10()";
-    try {
-        LOGD("%s", method_name);
-        
-        javaDescriptorExtractor* _retval_ = javaDescriptorExtractor::create( (int)extractorType );
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  int javaDescriptorExtractor::descriptorSize()
-//
-
-JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorSize_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorSize_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::descriptorSize_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        int _retval_ = me->descriptorSize(  );
-        return _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  int javaDescriptorExtractor::descriptorType()
-//
-
-JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorType_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jint JNICALL Java_org_opencv_features2d_DescriptorExtractor_descriptorType_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::descriptorType_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        int _retval_ = me->descriptorType(  );
-        return _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  bool javaDescriptorExtractor::empty()
-//
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorExtractor_empty_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorExtractor_empty_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::empty_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        bool _retval_ = me->empty(  );
-        return _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  void javaDescriptorExtractor::read(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_read_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_read_10
-  (JNIEnv* env, jclass , jlong self, jstring fileName)
-{
-    static const char method_name[] = "features2d::read_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
-        me->read( n_fileName );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaDescriptorExtractor::write(String fileName)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_write_10 (JNIEnv*, jclass, jlong, jstring);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_write_10
-  (JNIEnv* env, jclass , jlong self, jstring fileName)
-{
-    static const char method_name[] = "features2d::write_10()";
-    try {
-        LOGD("%s", method_name);
-        javaDescriptorExtractor* me = (javaDescriptorExtractor*) self; //TODO: check for NULL
-        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
-        me->write( n_fileName );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  native support for java finalize()
-//  static void javaDescriptorExtractor::delete( __int64 self )
-//
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_delete(JNIEnv*, jclass, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorExtractor_delete
-  (JNIEnv*, jclass, jlong self)
-{
-    delete (javaDescriptorExtractor*) self;
-}
-
-
-//
-//  void javaGenericDescriptorMatcher::add(vector_Mat images, vector_vector_KeyPoint keypoints)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_add_10 (JNIEnv*, jclass, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_add_10
-  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_add_10
+  (JNIEnv* env, jclass , jlong self, jlong descriptors_mat_nativeObj)
 {
     static const char method_name[] = "features2d::add_10()";
     try {
         LOGD("%s", method_name);
-        std::vector<Mat> images;
-        Mat& images_mat = *((Mat*)images_mat_nativeObj);
-        Mat_to_vector_Mat( images_mat, images );
-        std::vector< std::vector<KeyPoint> > keypoints;
-        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
-        Mat_to_vector_vector_KeyPoint( keypoints_mat, keypoints );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        me->add( images, keypoints );
+        std::vector<Mat> descriptors;
+        Mat& descriptors_mat = *((Mat*)descriptors_mat_nativeObj);
+        Mat_to_vector_Mat( descriptors_mat, descriptors );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        me->add( descriptors );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -1369,82 +503,18 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_add_1
 
 
 //
-//  void javaGenericDescriptorMatcher::classify(Mat queryImage, vector_KeyPoint& queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints)
+//  void clear()
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_classify_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_clear_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_classify_10
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::classify_10()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
-        me->classify( queryImage, queryKeypoints, trainImage, trainKeypoints );
-        vector_KeyPoint_to_Mat( queryKeypoints, queryKeypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaGenericDescriptorMatcher::classify(Mat queryImage, vector_KeyPoint& queryKeypoints)
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_classify_11 (JNIEnv*, jclass, jlong, jlong, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_classify_11
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj)
-{
-    static const char method_name[] = "features2d::classify_11()";
-    try {
-        LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->classify( queryImage, queryKeypoints );
-        vector_KeyPoint_to_Mat( queryKeypoints, queryKeypoints_mat );
-        return;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return;
-}
-
-
-
-//
-//  void javaGenericDescriptorMatcher::clear()
-//
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clear_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clear_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_clear_10
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::clear_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         me->clear(  );
         return;
     } catch(const std::exception &e) {
@@ -1458,19 +528,19 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clear
 
 
 //
-//  javaGenericDescriptorMatcher* javaGenericDescriptorMatcher::jclone(bool emptyTrainData = false)
+//  javaDescriptorMatcher* jclone(bool emptyTrainData = false)
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clone_10 (JNIEnv*, jclass, jlong, jboolean);
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_10 (JNIEnv*, jclass, jlong, jboolean);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clone_10
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_10
   (JNIEnv* env, jclass , jlong self, jboolean emptyTrainData)
 {
     static const char method_name[] = "features2d::clone_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        javaGenericDescriptorMatcher* _retval_ = me->jclone( (bool)emptyTrainData );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        javaDescriptorMatcher* _retval_ = me->jclone( (bool)emptyTrainData );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -1482,16 +552,16 @@ JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clon
 
 
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clone_11 (JNIEnv*, jclass, jlong);
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_11 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clone_11
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_clone_11
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::clone_11()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        javaGenericDescriptorMatcher* _retval_ = me->jclone(  );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        javaDescriptorMatcher* _retval_ = me->jclone(  );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -1504,19 +574,19 @@ JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_clon
 
 
 //
-// static javaGenericDescriptorMatcher* javaGenericDescriptorMatcher::create(int matcherType)
+// static javaDescriptorMatcher* create(int matcherType)
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_create_10 (JNIEnv*, jclass, jint);
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_create_10 (JNIEnv*, jclass, jint);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_create_10
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_create_10
   (JNIEnv* env, jclass , jint matcherType)
 {
     static const char method_name[] = "features2d::create_10()";
     try {
         LOGD("%s", method_name);
         
-        javaGenericDescriptorMatcher* _retval_ = javaGenericDescriptorMatcher::create( (int)matcherType );
+        javaDescriptorMatcher* _retval_ = cv::javaDescriptorMatcher::create( (int)matcherType );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -1529,18 +599,18 @@ JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_crea
 
 
 //
-//  bool javaGenericDescriptorMatcher::empty()
+//  bool empty()
 //
 
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_empty_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_empty_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_empty_10
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_empty_10
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::empty_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         bool _retval_ = me->empty(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1554,19 +624,19 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_e
 
 
 //
-//  vector_Mat javaGenericDescriptorMatcher::getTrainImages()
+//  vector_Mat getTrainDescriptors()
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_getTrainImages_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_getTrainDescriptors_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_getTrainImages_10
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_DescriptorMatcher_getTrainDescriptors_10
   (JNIEnv* env, jclass , jlong self)
 {
-    static const char method_name[] = "features2d::getTrainImages_10()";
+    static const char method_name[] = "features2d::getTrainDescriptors_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        std::vector<Mat> _ret_val_vector_ = me->getTrainImages(  );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        std::vector<Mat> _ret_val_vector_ = me->getTrainDescriptors(  );
         Mat* _retval_ = new Mat();  vector_Mat_to_Mat(_ret_val_vector_, *_retval_);
         return (jlong) _retval_;
     } catch(const std::exception &e) {
@@ -1580,44 +650,18 @@ JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_getT
 
 
 //
-//  vector_vector_KeyPoint javaGenericDescriptorMatcher::getTrainKeypoints()
+//  bool isMaskSupported()
 //
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_getTrainKeypoints_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_isMaskSupported_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT jlong JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_getTrainKeypoints_10
-  (JNIEnv* env, jclass , jlong self)
-{
-    static const char method_name[] = "features2d::getTrainKeypoints_10()";
-    try {
-        LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        std::vector< std::vector<KeyPoint> > _ret_val_vector_ = me->getTrainKeypoints(  );
-        Mat* _retval_ = new Mat();  vector_vector_KeyPoint_to_Mat(_ret_val_vector_, *_retval_);
-        return (jlong) _retval_;
-    } catch(const std::exception &e) {
-        throwJavaException(env, &e, method_name);
-    } catch (...) {
-        throwJavaException(env, 0, method_name);
-    }
-    return 0;
-}
-
-
-
-//
-//  bool javaGenericDescriptorMatcher::isMaskSupported()
-//
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_isMaskSupported_10 (JNIEnv*, jclass, jlong);
-
-JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_isMaskSupported_10
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_DescriptorMatcher_isMaskSupported_10
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::isMaskSupported_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         bool _retval_ = me->isMaskSupported(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -1631,30 +675,24 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_i
 
 
 //
-//  void javaGenericDescriptorMatcher::knnMatch(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_vector_DMatch& matches, int k, Mat mask = Mat(), bool compactResult = false)
+//  void knnMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, int k, Mat mask = Mat(), bool compactResult = false)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jint, jlong, jboolean);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint, jlong, jboolean);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_10
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jint k, jlong mask_nativeObj, jboolean compactResult)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_10
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k, jlong mask_nativeObj, jboolean compactResult)
 {
     static const char method_name[] = "features2d::knnMatch_10()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
         Mat& mask = *((Mat*)mask_nativeObj);
-        me->knnMatch( queryImage, queryKeypoints, trainImage, trainKeypoints, matches, (int)k, mask, (bool)compactResult );
+        me->knnMatch( queryDescriptors, trainDescriptors, matches, (int)k, mask, (bool)compactResult );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1667,26 +705,20 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMa
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jint);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_11
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jint k)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_11
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k)
 {
     static const char method_name[] = "features2d::knnMatch_11()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
-        me->knnMatch( queryImage, queryKeypoints, trainImage, trainKeypoints, matches, (int)k );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
+        me->knnMatch( queryDescriptors, trainDescriptors, matches, (int)k );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1700,28 +732,25 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMa
 
 
 //
-//  void javaGenericDescriptorMatcher::knnMatch(Mat queryImage, vector_KeyPoint queryKeypoints, vector_vector_DMatch& matches, int k, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
+//  void knnMatch(Mat queryDescriptors, vector_vector_DMatch& matches, int k, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint, jlong, jboolean);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jint, jlong, jboolean);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_12
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jint k, jlong masks_mat_nativeObj, jboolean compactResult)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_12
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k, jlong masks_mat_nativeObj, jboolean compactResult)
 {
     static const char method_name[] = "features2d::knnMatch_12()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
         std::vector<Mat> masks;
         Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
         Mat_to_vector_Mat( masks_mat, masks );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->knnMatch( queryImage, queryKeypoints, matches, (int)k, masks, (bool)compactResult );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->knnMatch( queryDescriptors, matches, (int)k, masks, (bool)compactResult );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1734,22 +763,19 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMa
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jint);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jint);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMatch_13
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jint k)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_knnMatch_13
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jint k)
 {
     static const char method_name[] = "features2d::knnMatch_13()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->knnMatch( queryImage, queryKeypoints, matches, (int)k );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->knnMatch( queryDescriptors, matches, (int)k );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1763,30 +789,24 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_knnMa
 
 
 //
-//  void javaGenericDescriptorMatcher::match(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_DMatch& matches, Mat mask = Mat())
+//  void match(Mat queryDescriptors, Mat trainDescriptors, vector_DMatch& matches, Mat mask = Mat())
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_10
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jlong mask_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_10
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jlong mask_nativeObj)
 {
     static const char method_name[] = "features2d::match_10()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector<DMatch> matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
         Mat& mask = *((Mat*)mask_nativeObj);
-        me->match( queryImage, queryKeypoints, trainImage, trainKeypoints, matches, mask );
+        me->match( queryDescriptors, trainDescriptors, matches, mask );
         vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1799,26 +819,20 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_11
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_11
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj)
 {
     static const char method_name[] = "features2d::match_11()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector<DMatch> matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
-        me->match( queryImage, queryKeypoints, trainImage, trainKeypoints, matches );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
+        me->match( queryDescriptors, trainDescriptors, matches );
         vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1832,28 +846,25 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match
 
 
 //
-//  void javaGenericDescriptorMatcher::match(Mat queryImage, vector_KeyPoint queryKeypoints, vector_DMatch& matches, vector_Mat masks = std::vector<Mat>())
+//  void match(Mat queryDescriptors, vector_DMatch& matches, vector_Mat masks = std::vector<Mat>())
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_12
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jlong masks_mat_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_12
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jlong masks_mat_nativeObj)
 {
     static const char method_name[] = "features2d::match_12()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector<DMatch> matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
         std::vector<Mat> masks;
         Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
         Mat_to_vector_Mat( masks_mat, masks );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->match( queryImage, queryKeypoints, matches, masks );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->match( queryDescriptors, matches, masks );
         vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1866,22 +877,19 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_13 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_13 (JNIEnv*, jclass, jlong, jlong, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match_13
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_match_13
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj)
 {
     static const char method_name[] = "features2d::match_13()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector<DMatch> matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->match( queryImage, queryKeypoints, matches );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->match( queryDescriptors, matches );
         vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1895,30 +903,24 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_match
 
 
 //
-//  void javaGenericDescriptorMatcher::radiusMatch(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_vector_DMatch& matches, float maxDistance, Mat mask = Mat(), bool compactResult = false)
+//  void radiusMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, float maxDistance, Mat mask = Mat(), bool compactResult = false)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jfloat, jlong, jboolean);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat, jlong, jboolean);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_10
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong mask_nativeObj, jboolean compactResult)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_10
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong mask_nativeObj, jboolean compactResult)
 {
     static const char method_name[] = "features2d::radiusMatch_10()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
         Mat& mask = *((Mat*)mask_nativeObj);
-        me->radiusMatch( queryImage, queryKeypoints, trainImage, trainKeypoints, matches, (float)maxDistance, mask, (bool)compactResult );
+        me->radiusMatch( queryDescriptors, trainDescriptors, matches, (float)maxDistance, mask, (bool)compactResult );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1931,26 +933,20 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiu
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong, jfloat);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_11 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_11
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong trainImage_nativeObj, jlong trainKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_11
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong trainDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
 {
     static const char method_name[] = "features2d::radiusMatch_11()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
-        std::vector<KeyPoint> trainKeypoints;
-        Mat& trainKeypoints_mat = *((Mat*)trainKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( trainKeypoints_mat, trainKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        Mat& trainImage = *((Mat*)trainImage_nativeObj);
-        me->radiusMatch( queryImage, queryKeypoints, trainImage, trainKeypoints, matches, (float)maxDistance );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        Mat& trainDescriptors = *((Mat*)trainDescriptors_nativeObj);
+        me->radiusMatch( queryDescriptors, trainDescriptors, matches, (float)maxDistance );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1964,28 +960,25 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiu
 
 
 //
-//  void javaGenericDescriptorMatcher::radiusMatch(Mat queryImage, vector_KeyPoint queryKeypoints, vector_vector_DMatch& matches, float maxDistance, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
+//  void radiusMatch(Mat queryDescriptors, vector_vector_DMatch& matches, float maxDistance, vector_Mat masks = std::vector<Mat>(), bool compactResult = false)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat, jlong, jboolean);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_12 (JNIEnv*, jclass, jlong, jlong, jlong, jfloat, jlong, jboolean);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_12
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong masks_mat_nativeObj, jboolean compactResult)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_12
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance, jlong masks_mat_nativeObj, jboolean compactResult)
 {
     static const char method_name[] = "features2d::radiusMatch_12()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
         std::vector<Mat> masks;
         Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
         Mat_to_vector_Mat( masks_mat, masks );
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->radiusMatch( queryImage, queryKeypoints, matches, (float)maxDistance, masks, (bool)compactResult );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->radiusMatch( queryDescriptors, matches, (float)maxDistance, masks, (bool)compactResult );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -1998,22 +991,19 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiu
 
 
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jfloat);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_13 (JNIEnv*, jclass, jlong, jlong, jlong, jfloat);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiusMatch_13
-  (JNIEnv* env, jclass , jlong self, jlong queryImage_nativeObj, jlong queryKeypoints_mat_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_radiusMatch_13
+  (JNIEnv* env, jclass , jlong self, jlong queryDescriptors_nativeObj, jlong matches_mat_nativeObj, jfloat maxDistance)
 {
     static const char method_name[] = "features2d::radiusMatch_13()";
     try {
         LOGD("%s", method_name);
-        std::vector<KeyPoint> queryKeypoints;
-        Mat& queryKeypoints_mat = *((Mat*)queryKeypoints_mat_nativeObj);
-        Mat_to_vector_KeyPoint( queryKeypoints_mat, queryKeypoints );
         std::vector< std::vector<DMatch> > matches;
         Mat& matches_mat = *((Mat*)matches_mat_nativeObj);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
-        Mat& queryImage = *((Mat*)queryImage_nativeObj);
-        me->radiusMatch( queryImage, queryKeypoints, matches, (float)maxDistance );
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
+        Mat& queryDescriptors = *((Mat*)queryDescriptors_nativeObj);
+        me->radiusMatch( queryDescriptors, matches, (float)maxDistance );
         vector_vector_DMatch_to_Mat( matches, matches_mat );
         return;
     } catch(const std::exception &e) {
@@ -2027,18 +1017,18 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_radiu
 
 
 //
-//  void javaGenericDescriptorMatcher::read(String fileName)
+//  void read(String fileName)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_read_10 (JNIEnv*, jclass, jlong, jstring);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_read_10 (JNIEnv*, jclass, jlong, jstring);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_read_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_read_10
   (JNIEnv* env, jclass , jlong self, jstring fileName)
 {
     static const char method_name[] = "features2d::read_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
         me->read( n_fileName );
         return;
@@ -2053,18 +1043,18 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_read_
 
 
 //
-//  void javaGenericDescriptorMatcher::train()
+//  void train()
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_train_10 (JNIEnv*, jclass, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_train_10 (JNIEnv*, jclass, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_train_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_train_10
   (JNIEnv* env, jclass , jlong self)
 {
     static const char method_name[] = "features2d::train_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         me->train(  );
         return;
     } catch(const std::exception &e) {
@@ -2078,18 +1068,18 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_train
 
 
 //
-//  void javaGenericDescriptorMatcher::write(String fileName)
+//  void write(String fileName)
 //
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_write_10 (JNIEnv*, jclass, jlong, jstring);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_write_10 (JNIEnv*, jclass, jlong, jstring);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_write_10
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_write_10
   (JNIEnv* env, jclass , jlong self, jstring fileName)
 {
     static const char method_name[] = "features2d::write_10()";
     try {
         LOGD("%s", method_name);
-        javaGenericDescriptorMatcher* me = (javaGenericDescriptorMatcher*) self; //TODO: check for NULL
+        cv::javaDescriptorMatcher* me = (cv::javaDescriptorMatcher*) self; //TODO: check for NULL
         const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
         me->write( n_fileName );
         return;
@@ -2105,14 +1095,245 @@ JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_write
 
 //
 //  native support for java finalize()
-//  static void javaGenericDescriptorMatcher::delete( __int64 self )
+//  static void cv::javaDescriptorMatcher::delete( __int64 self )
 //
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_delete(JNIEnv*, jclass, jlong);
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_delete(JNIEnv*, jclass, jlong);
 
-JNIEXPORT void JNICALL Java_org_opencv_features2d_GenericDescriptorMatcher_delete
+JNIEXPORT void JNICALL Java_org_opencv_features2d_DescriptorMatcher_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (javaGenericDescriptorMatcher*) self;
+    delete (cv::javaDescriptorMatcher*) self;
+}
+
+
+//
+// static javaFeatureDetector* create(int detectorType)
+//
+
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_FeatureDetector_create_10 (JNIEnv*, jclass, jint);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_features2d_FeatureDetector_create_10
+  (JNIEnv* env, jclass , jint detectorType)
+{
+    static const char method_name[] = "features2d::create_10()";
+    try {
+        LOGD("%s", method_name);
+        
+        javaFeatureDetector* _retval_ = cv::javaFeatureDetector::create( (int)detectorType );
+        return (jlong) _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_10
+  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj, jlong mask_nativeObj)
+{
+    static const char method_name[] = "features2d::detect_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<KeyPoint> keypoints;
+        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        Mat& image = *((Mat*)image_nativeObj);
+        Mat& mask = *((Mat*)mask_nativeObj);
+        me->detect( image, keypoints, mask );
+        vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_11 (JNIEnv*, jclass, jlong, jlong, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_11
+  (JNIEnv* env, jclass , jlong self, jlong image_nativeObj, jlong keypoints_mat_nativeObj)
+{
+    static const char method_name[] = "features2d::detect_11()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<KeyPoint> keypoints;
+        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        Mat& image = *((Mat*)image_nativeObj);
+        me->detect( image, keypoints );
+        vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_12 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_12
+  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj, jlong masks_mat_nativeObj)
+{
+    static const char method_name[] = "features2d::detect_12()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Mat> images;
+        Mat& images_mat = *((Mat*)images_mat_nativeObj);
+        Mat_to_vector_Mat( images_mat, images );
+        std::vector< std::vector<KeyPoint> > keypoints;
+        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
+        std::vector<Mat> masks;
+        Mat& masks_mat = *((Mat*)masks_mat_nativeObj);
+        Mat_to_vector_Mat( masks_mat, masks );
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        me->detect( images, keypoints, masks );
+        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_13 (JNIEnv*, jclass, jlong, jlong, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_detect_13
+  (JNIEnv* env, jclass , jlong self, jlong images_mat_nativeObj, jlong keypoints_mat_nativeObj)
+{
+    static const char method_name[] = "features2d::detect_13()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Mat> images;
+        Mat& images_mat = *((Mat*)images_mat_nativeObj);
+        Mat_to_vector_Mat( images_mat, images );
+        std::vector< std::vector<KeyPoint> > keypoints;
+        Mat& keypoints_mat = *((Mat*)keypoints_mat_nativeObj);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        me->detect( images, keypoints );
+        vector_vector_KeyPoint_to_Mat( keypoints, keypoints_mat );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  bool empty()
+//
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_FeatureDetector_empty_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_features2d_FeatureDetector_empty_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "features2d::empty_10()";
+    try {
+        LOGD("%s", method_name);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        bool _retval_ = me->empty(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void read(String fileName)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_read_10 (JNIEnv*, jclass, jlong, jstring);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_read_10
+  (JNIEnv* env, jclass , jlong self, jstring fileName)
+{
+    static const char method_name[] = "features2d::read_10()";
+    try {
+        LOGD("%s", method_name);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
+        me->read( n_fileName );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void write(String fileName)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_write_10 (JNIEnv*, jclass, jlong, jstring);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_write_10
+  (JNIEnv* env, jclass , jlong self, jstring fileName)
+{
+    static const char method_name[] = "features2d::write_10()";
+    try {
+        LOGD("%s", method_name);
+        cv::javaFeatureDetector* me = (cv::javaFeatureDetector*) self; //TODO: check for NULL
+        const char* utf_fileName = env->GetStringUTFChars(fileName, 0); String n_fileName( utf_fileName ? utf_fileName : "" ); env->ReleaseStringUTFChars(fileName, utf_fileName);
+        me->write( n_fileName );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  native support for java finalize()
+//  static void cv::javaFeatureDetector::delete( __int64 self )
+//
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_delete(JNIEnv*, jclass, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_features2d_FeatureDetector_delete
+  (JNIEnv*, jclass, jlong self)
+{
+    delete (cv::javaFeatureDetector*) self;
 }
 
 

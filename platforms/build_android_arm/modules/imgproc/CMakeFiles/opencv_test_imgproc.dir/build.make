@@ -1115,6 +1115,7 @@ bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_ts.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_core.a
+bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_test_imgproc: lib/armeabi-v7a/libopencv_imgcodecs.a

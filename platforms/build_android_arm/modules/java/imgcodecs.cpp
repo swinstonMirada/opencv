@@ -56,8 +56,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgcodecs_Imgcodecs_imdecode_10
     try {
         LOGD("%s", method_name);
         Mat& buf = *((Mat*)buf_nativeObj);
-        Mat _retval_ = cv::imdecode( buf, (int)flags );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::imdecode( buf, (int)flags );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -138,8 +138,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgcodecs_Imgcodecs_imread_10
     try {
         LOGD("%s", method_name);
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
-        Mat _retval_ = cv::imread( n_filename, (int)flags );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::imread( n_filename, (int)flags );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -159,8 +159,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgcodecs_Imgcodecs_imread_11
     try {
         LOGD("%s", method_name);
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
-        Mat _retval_ = cv::imread( n_filename );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::imread( n_filename );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {

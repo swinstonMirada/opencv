@@ -44,7 +44,7 @@ extern "C" {
 
 
 //
-//   VideoCapture::VideoCapture()
+//   VideoCapture()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_10 (JNIEnv*, jclass);
@@ -56,7 +56,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_10
     try {
         LOGD("%s", method_name);
         
-        VideoCapture* _retval_ = new VideoCapture(  );
+        cv::VideoCapture* _retval_ = new cv::VideoCapture(  );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -69,7 +69,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_10
 
 
 //
-//   VideoCapture::VideoCapture(String filename)
+//   VideoCapture(String filename)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_11 (JNIEnv*, jclass, jstring);
@@ -81,7 +81,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_11
     try {
         LOGD("%s", method_name);
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
-        VideoCapture* _retval_ = new VideoCapture( n_filename );
+        cv::VideoCapture* _retval_ = new cv::VideoCapture( n_filename );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -94,7 +94,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_11
 
 
 //
-//   VideoCapture::VideoCapture(int device)
+//   VideoCapture(int device)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_12 (JNIEnv*, jclass, jint);
@@ -106,7 +106,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_12
     try {
         LOGD("%s", method_name);
         
-        VideoCapture* _retval_ = new VideoCapture( (int)device );
+        cv::VideoCapture* _retval_ = new cv::VideoCapture( (int)device );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -119,7 +119,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_videoio_VideoCapture_VideoCapture_12
 
 
 //
-//  double VideoCapture::get(int propId)
+//  double get(int propId)
 //
 
 JNIEXPORT jdouble JNICALL Java_org_opencv_videoio_VideoCapture_get_10 (JNIEnv*, jclass, jlong, jint);
@@ -130,7 +130,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_videoio_VideoCapture_get_10
     static const char method_name[] = "videoio::get_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         double _retval_ = me->get( (int)propId );
         return _retval_;
     } catch(const std::exception &e) {
@@ -144,7 +144,7 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_videoio_VideoCapture_get_10
 
 
 //
-//  bool VideoCapture::grab()
+//  bool grab()
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_grab_10 (JNIEnv*, jclass, jlong);
@@ -155,7 +155,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_grab_10
     static const char method_name[] = "videoio::grab_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         bool _retval_ = me->grab(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -169,7 +169,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_grab_10
 
 
 //
-//  bool VideoCapture::isOpened()
+//  bool isOpened()
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_isOpened_10 (JNIEnv*, jclass, jlong);
@@ -180,7 +180,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_isOpened_10
     static const char method_name[] = "videoio::isOpened_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         bool _retval_ = me->isOpened(  );
         return _retval_;
     } catch(const std::exception &e) {
@@ -194,7 +194,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_isOpened_10
 
 
 //
-//  bool VideoCapture::open(String filename)
+//  bool open(String filename)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_10 (JNIEnv*, jclass, jlong, jstring);
@@ -205,7 +205,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_10
     static const char method_name[] = "videoio::open_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         const char* utf_filename = env->GetStringUTFChars(filename, 0); String n_filename( utf_filename ? utf_filename : "" ); env->ReleaseStringUTFChars(filename, utf_filename);
         bool _retval_ = me->open( n_filename );
         return _retval_;
@@ -220,7 +220,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_10
 
 
 //
-//  bool VideoCapture::open(int device)
+//  bool open(int device)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_11 (JNIEnv*, jclass, jlong, jint);
@@ -231,7 +231,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_11
     static const char method_name[] = "videoio::open_11()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         bool _retval_ = me->open( (int)device );
         return _retval_;
     } catch(const std::exception &e) {
@@ -245,7 +245,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_open_11
 
 
 //
-//  bool VideoCapture::read(Mat& image)
+//  bool read(Mat& image)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_read_10 (JNIEnv*, jclass, jlong, jlong);
@@ -256,7 +256,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_read_10
     static const char method_name[] = "videoio::read_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         bool _retval_ = me->read( image );
         return _retval_;
@@ -271,7 +271,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_read_10
 
 
 //
-//  void VideoCapture::release()
+//  void release()
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_videoio_VideoCapture_release_10 (JNIEnv*, jclass, jlong);
@@ -282,7 +282,7 @@ JNIEXPORT void JNICALL Java_org_opencv_videoio_VideoCapture_release_10
     static const char method_name[] = "videoio::release_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         me->release(  );
         return;
     } catch(const std::exception &e) {
@@ -296,7 +296,7 @@ JNIEXPORT void JNICALL Java_org_opencv_videoio_VideoCapture_release_10
 
 
 //
-//  bool VideoCapture::retrieve(Mat& image, int flag = 0)
+//  bool retrieve(Mat& image, int flag = 0)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_retrieve_10 (JNIEnv*, jclass, jlong, jlong, jint);
@@ -307,7 +307,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_retrieve_10
     static const char method_name[] = "videoio::retrieve_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         bool _retval_ = me->retrieve( image, (int)flag );
         return _retval_;
@@ -329,7 +329,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_retrieve_11
     static const char method_name[] = "videoio::retrieve_11()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         Mat& image = *((Mat*)image_nativeObj);
         bool _retval_ = me->retrieve( image );
         return _retval_;
@@ -344,7 +344,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_retrieve_11
 
 
 //
-//  bool VideoCapture::set(int propId, double value)
+//  bool set(int propId, double value)
 //
 
 JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_set_10 (JNIEnv*, jclass, jlong, jint, jdouble);
@@ -355,7 +355,7 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_videoio_VideoCapture_set_10
     static const char method_name[] = "videoio::set_10()";
     try {
         LOGD("%s", method_name);
-        VideoCapture* me = (VideoCapture*) self; //TODO: check for NULL
+        cv::VideoCapture* me = (cv::VideoCapture*) self; //TODO: check for NULL
         bool _retval_ = me->set( (int)propId, (double)value );
         return _retval_;
     } catch(const std::exception &e) {
@@ -392,14 +392,14 @@ JNIEXPORT jstring JNICALL Java_org_opencv_videoio_VideoCapture_getSupportedPrevi
 
 //
 //  native support for java finalize()
-//  static void VideoCapture::delete( __int64 self )
+//  static void cv::VideoCapture::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_videoio_VideoCapture_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_videoio_VideoCapture_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (VideoCapture*) self;
+    delete (cv::VideoCapture*) self;
 }
 
 

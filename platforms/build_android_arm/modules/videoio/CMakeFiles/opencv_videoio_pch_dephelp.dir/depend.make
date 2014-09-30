@@ -13,6 +13,7 @@ modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dep
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_videoio_pch_dephelp.dir/opencv_videoio_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

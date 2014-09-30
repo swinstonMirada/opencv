@@ -5,7 +5,6 @@
 package org.opencv.core;
 
 import java.lang.String;
-import java.util.ArrayList;
 import java.util.List;
 import org.opencv.utils.Converters;
 
@@ -42,13 +41,65 @@ public class Core {
             SVD_NO_UV = 2,
             SVD_FULL_UV = 4,
             FILLED = -1,
-            LINE_AA = 16,
-            LINE_8 = 8,
-            LINE_4 = 4,
             REDUCE_SUM = 0,
             REDUCE_AVG = 1,
             REDUCE_MAX = 2,
             REDUCE_MIN = 3,
+            StsOk = 0,
+            StsBackTrace = -1,
+            StsError = -2,
+            StsInternal = -3,
+            StsNoMem = -4,
+            StsBadArg = -5,
+            StsBadFunc = -6,
+            StsNoConv = -7,
+            StsAutoTrace = -8,
+            HeaderIsNull = -9,
+            BadImageSize = -10,
+            BadOffset = -11,
+            BadDataPtr = -12,
+            BadStep = -13,
+            BadModelOrChSeq = -14,
+            BadNumChannels = -15,
+            BadNumChannel1U = -16,
+            BadDepth = -17,
+            BadAlphaChannel = -18,
+            BadOrder = -19,
+            BadOrigin = -20,
+            BadAlign = -21,
+            BadCallBack = -22,
+            BadTileSize = -23,
+            BadCOI = -24,
+            BadROISize = -25,
+            MaskIsTiled = -26,
+            StsNullPtr = -27,
+            StsVecLengthErr = -28,
+            StsFilterStructContentErr = -29,
+            StsKernelStructContentErr = -30,
+            StsFilterOffsetErr = -31,
+            StsBadSize = -201,
+            StsDivByZero = -202,
+            StsInplaceNotSupported = -203,
+            StsObjectNotFound = -204,
+            StsUnmatchedFormats = -205,
+            StsBadFlag = -206,
+            StsBadPoint = -207,
+            StsBadMask = -208,
+            StsUnmatchedSizes = -209,
+            StsUnsupportedFormat = -210,
+            StsOutOfRange = -211,
+            StsParseError = -212,
+            StsNotImplemented = -213,
+            StsBadMemBlock = -214,
+            StsAssert = -215,
+            GpuNotSupported = -216,
+            GpuApiCallError = -217,
+            OpenGlNotSupported = -218,
+            OpenGlApiCallError = -219,
+            OpenCLApiCallError = -220,
+            OpenCLDoubleNotSupported = -221,
+            OpenCLInitError = -222,
+            OpenCLNoAMDBlasFft = -223,
             DECOMP_LU = 0,
             DECOMP_SVD = 1,
             DECOMP_EIG = 2,
@@ -102,6 +153,9 @@ public class Core {
             KMEANS_RANDOM_CENTERS = 0,
             KMEANS_PP_CENTERS = 2,
             KMEANS_USE_INITIAL_LABELS = 1,
+            LINE_4 = 4,
+            LINE_8 = 8,
+            LINE_AA = 16,
             FONT_HERSHEY_SIMPLEX = 0,
             FONT_HERSHEY_PLAIN = 1,
             FONT_HERSHEY_DUPLEX = 2,
@@ -956,57 +1010,6 @@ public class Core {
 
 
     //
-    // C++:  void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
-    //
-
-/**
- * <p>Draws a arrow segment pointing from the first point to the second one.</p>
- *
- * <p>The function <code>arrowedLine</code> draws an arrow between <code>pt1</code>
- * and <code>pt2</code> points in the image. See also "line".</p>
- *
- * @param img Image.
- * @param pt1 The point the arrow starts from.
- * @param pt2 The point the arrow points to.
- * @param color Line color.
- * @param thickness Line thickness.
- * @param line_type a line_type
- * @param shift Number of fractional bits in the point coordinates.
- * @param tipLength The length of the arrow tip in relation to the arrow length
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#arrowedline">org.opencv.core.Core.arrowedLine</a>
- */
-    public static void arrowedLine(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int line_type, int shift, double tipLength)
-    {
-
-        arrowedLine_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, line_type, shift, tipLength);
-
-        return;
-    }
-
-/**
- * <p>Draws a arrow segment pointing from the first point to the second one.</p>
- *
- * <p>The function <code>arrowedLine</code> draws an arrow between <code>pt1</code>
- * and <code>pt2</code> points in the image. See also "line".</p>
- *
- * @param img Image.
- * @param pt1 The point the arrow starts from.
- * @param pt2 The point the arrow points to.
- * @param color Line color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#arrowedline">org.opencv.core.Core.arrowedLine</a>
- */
-    public static void arrowedLine(Mat img, Point pt1, Point pt2, Scalar color)
-    {
-
-        arrowedLine_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
     // C++:  void batchDistance(Mat src1, Mat src2, Mat& dist, int dtype, Mat& nidx, int normType = NORM_L2, int K = 0, Mat mask = Mat(), int update = 0, bool crosscheck = false)
     //
 
@@ -1404,10 +1407,10 @@ public class Core {
  *
  * <p>borderInterpolate(-5, img.cols, BORDER_WRAP));</p>
  *
- * <p>Normally, the function is not called directly. It is used inside
- * "FilterEngine" </code></p>
+ * <p>Normally, the function is not called directly. It is used inside filtering
+ * functions </code></p>
  *
- * <p>and "copyMakeBorder" to compute tables for quick extrapolation.</p>
+ * <p>and also in "copyMakeBorder".</p>
  *
  * @param p 0-based coordinate of the extrapolated pixel along one of the axes,
  * likely <0 or >= <code>len</code>.
@@ -1705,110 +1708,6 @@ public class Core {
 
         boolean retVal = checkRange_1(a.nativeObj);
 
-        return retVal;
-    }
-
-
-    //
-    // C++:  void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Draws a circle.</p>
- *
- * <p>The function <code>circle</code> draws a simple or filled circle with a given
- * center and radius.</p>
- *
- * @param img Image where the circle is drawn.
- * @param center Center of the circle.
- * @param radius Radius of the circle.
- * @param color Circle color.
- * @param thickness Thickness of the circle outline, if positive. Negative
- * thickness means that a filled circle is to be drawn.
- * @param lineType Type of the circle boundary. See the "line" description.
- * @param shift Number of fractional bits in the coordinates of the center and
- * in the radius value.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#circle">org.opencv.core.Core.circle</a>
- */
-    public static void circle(Mat img, Point center, int radius, Scalar color, int thickness, int lineType, int shift)
-    {
-
-        circle_0(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Draws a circle.</p>
- *
- * <p>The function <code>circle</code> draws a simple or filled circle with a given
- * center and radius.</p>
- *
- * @param img Image where the circle is drawn.
- * @param center Center of the circle.
- * @param radius Radius of the circle.
- * @param color Circle color.
- * @param thickness Thickness of the circle outline, if positive. Negative
- * thickness means that a filled circle is to be drawn.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#circle">org.opencv.core.Core.circle</a>
- */
-    public static void circle(Mat img, Point center, int radius, Scalar color, int thickness)
-    {
-
-        circle_1(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a circle.</p>
- *
- * <p>The function <code>circle</code> draws a simple or filled circle with a given
- * center and radius.</p>
- *
- * @param img Image where the circle is drawn.
- * @param center Center of the circle.
- * @param radius Radius of the circle.
- * @param color Circle color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#circle">org.opencv.core.Core.circle</a>
- */
-    public static void circle(Mat img, Point center, int radius, Scalar color)
-    {
-
-        circle_2(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
-    // C++:  bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
-    //
-
-/**
- * <p>Clips the line against the image rectangle.</p>
- *
- * <p>The functions <code>clipLine</code> calculate a part of the line segment that
- * is entirely within the specified rectangle.
- * They return <code>false</code> if the line segment is completely outside the
- * rectangle. Otherwise, they return <code>true</code>.</p>
- *
- * @param imgRect Image rectangle.
- * @param pt1 First line point.
- * @param pt2 Second line point.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#clipline">org.opencv.core.Core.clipLine</a>
- */
-    public static boolean clipLine(Rect imgRect, Point pt1, Point pt2)
-    {
-        double[] pt1_out = new double[2];
-        double[] pt2_out = new double[2];
-        boolean retVal = clipLine_0(imgRect.x, imgRect.y, imgRect.width, imgRect.height, pt1.x, pt1.y, pt1_out, pt2.x, pt2.y, pt2_out);
-        if(pt1!=null){ pt1.x = pt1_out[0]; pt1.y = pt1_out[1]; }
-        if(pt2!=null){ pt2.x = pt2_out[0]; pt2.y = pt2_out[1]; }
         return retVal;
     }
 
@@ -2119,9 +2018,9 @@ public class Core {
  * <p>The function copies the source image into the middle of the destination
  * image. The areas to the left, to the right, above and below the copied source
  * image will be filled with extrapolated pixels.
- * This is not what "FilterEngine" or filtering functions based on it do (they
- * extrapolate pixels on-fly), but what other more complex functions, including
- * your own, may do to simplify image boundary handling.</p>
+ * This is not what filtering functions based on it do (they extrapolate pixels
+ * on-fly), but what other more complex functions, including your own, may do to
+ * simplify image boundary handling.</p>
  *
  * <p>The function supports the mode when <code>src</code> is already in the middle
  * of <code>dst</code>. In this case, thefunction does not copy <code>src</code>
@@ -2189,9 +2088,9 @@ public class Core {
  * <p>The function copies the source image into the middle of the destination
  * image. The areas to the left, to the right, above and below the copied source
  * image will be filled with extrapolated pixels.
- * This is not what "FilterEngine" or filtering functions based on it do (they
- * extrapolate pixels on-fly), but what other more complex functions, including
- * your own, may do to simplify image boundary handling.</p>
+ * This is not what filtering functions based on it do (they extrapolate pixels
+ * on-fly), but what other more complex functions, including your own, may do to
+ * simplify image boundary handling.</p>
  *
  * <p>The function supports the mode when <code>src</code> is already in the middle
  * of <code>dst</code>. In this case, thefunction does not copy <code>src</code>
@@ -3327,315 +3226,6 @@ public class Core {
 
 
     //
-    // C++:  void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
-    //
-
-/**
- * <p>Draws contours outlines or filled contours.</p>
- *
- * <p>The function draws contour outlines in the image if <em>thickness >= 0</em>
- * or fills the area bounded by the contours if<em>thickness&lt0</em>. The
- * example below shows how to retrieve connected components from the binary
- * image and label them: <code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>#include "opencv2/imgproc.hpp"</p>
- *
- * <p>#include "opencv2/highgui.hpp"</p>
- *
- * <p>using namespace cv;</p>
- *
- * <p>using namespace std;</p>
- *
- * <p>int main(int argc, char argv)</p>
- *
- *
- * <p>Mat src;</p>
- *
- * <p>// the first command-line parameter must be a filename of the binary</p>
- *
- * <p>// (black-n-white) image</p>
- *
- * <p>if(argc != 2 || !(src=imread(argv[1], 0)).data)</p>
- *
- * <p>return -1;</p>
- *
- * <p>Mat dst = Mat.zeros(src.rows, src.cols, CV_8UC3);</p>
- *
- * <p>src = src > 1;</p>
- *
- * <p>namedWindow("Source", 1);</p>
- *
- * <p>imshow("Source", src);</p>
- *
- * <p>vector<vector<Point> > contours;</p>
- *
- * <p>vector<Vec4i> hierarchy;</p>
- *
- * <p>findContours(src, contours, hierarchy,</p>
- *
- * <p>RETR_CCOMP, CHAIN_APPROX_SIMPLE);</p>
- *
- * <p>// iterate through all the top-level contours,</p>
- *
- * <p>// draw each connected component with its own random color</p>
- *
- * <p>int idx = 0;</p>
- *
- * <p>for(; idx >= 0; idx = hierarchy[idx][0])</p>
- *
- *
- * <p>Scalar color(rand()&255, rand()&255, rand()&255);</p>
- *
- * <p>drawContours(dst, contours, idx, color, FILLED, 8, hierarchy);</p>
- *
- *
- * <p>namedWindow("Components", 1);</p>
- *
- * <p>imshow("Components", dst);</p>
- *
- * <p>waitKey(0);</p>
- *
- *
- * <p>Note: </code></p>
- * <ul>
- *   <li> An example using the drawContour functionality can be found at
- * opencv_source_code/samples/cpp/contours2.cpp
- *   <li> An example using drawContours to clean up a background segmentation
- * result at opencv_source_code/samples/cpp/segment_objects.cpp
- *   <li> (Python) An example using the drawContour functionality can be found
- * at opencv_source/samples/python2/contours.py
- * </ul>
- *
- * @param image Destination image.
- * @param contours All the input contours. Each contour is stored as a point
- * vector.
- * @param contourIdx Parameter indicating a contour to draw. If it is negative,
- * all the contours are drawn.
- * @param color Color of the contours.
- * @param thickness Thickness of lines the contours are drawn with. If it is
- * negative (for example, <code>thickness=CV_FILLED</code>), the contour
- * interiors are drawn.
- * @param lineType Line connectivity. See "line" for details.
- * @param hierarchy Optional information about hierarchy. It is only needed if
- * you want to draw only some of the contours (see <code>maxLevel</code>).
- * @param maxLevel Maximal level for drawn contours. If it is 0, only the
- * specified contour is drawn. If it is 1, the function draws the contour(s) and
- * all the nested contours. If it is 2, the function draws the contours, all the
- * nested contours, all the nested-to-nested contours, and so on. This parameter
- * is only taken into account when there is <code>hierarchy</code> available.
- * @param offset Optional contour shift parameter. Shift all the drawn contours
- * by the specified <em>offset=(dx,dy)</em>.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#drawcontours">org.opencv.core.Core.drawContours</a>
- */
-    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color, int thickness, int lineType, Mat hierarchy, int maxLevel, Point offset)
-    {
-        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
-        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
-        drawContours_0(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, hierarchy.nativeObj, maxLevel, offset.x, offset.y);
-
-        return;
-    }
-
-/**
- * <p>Draws contours outlines or filled contours.</p>
- *
- * <p>The function draws contour outlines in the image if <em>thickness >= 0</em>
- * or fills the area bounded by the contours if<em>thickness&lt0</em>. The
- * example below shows how to retrieve connected components from the binary
- * image and label them: <code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>#include "opencv2/imgproc.hpp"</p>
- *
- * <p>#include "opencv2/highgui.hpp"</p>
- *
- * <p>using namespace cv;</p>
- *
- * <p>using namespace std;</p>
- *
- * <p>int main(int argc, char argv)</p>
- *
- *
- * <p>Mat src;</p>
- *
- * <p>// the first command-line parameter must be a filename of the binary</p>
- *
- * <p>// (black-n-white) image</p>
- *
- * <p>if(argc != 2 || !(src=imread(argv[1], 0)).data)</p>
- *
- * <p>return -1;</p>
- *
- * <p>Mat dst = Mat.zeros(src.rows, src.cols, CV_8UC3);</p>
- *
- * <p>src = src > 1;</p>
- *
- * <p>namedWindow("Source", 1);</p>
- *
- * <p>imshow("Source", src);</p>
- *
- * <p>vector<vector<Point> > contours;</p>
- *
- * <p>vector<Vec4i> hierarchy;</p>
- *
- * <p>findContours(src, contours, hierarchy,</p>
- *
- * <p>RETR_CCOMP, CHAIN_APPROX_SIMPLE);</p>
- *
- * <p>// iterate through all the top-level contours,</p>
- *
- * <p>// draw each connected component with its own random color</p>
- *
- * <p>int idx = 0;</p>
- *
- * <p>for(; idx >= 0; idx = hierarchy[idx][0])</p>
- *
- *
- * <p>Scalar color(rand()&255, rand()&255, rand()&255);</p>
- *
- * <p>drawContours(dst, contours, idx, color, FILLED, 8, hierarchy);</p>
- *
- *
- * <p>namedWindow("Components", 1);</p>
- *
- * <p>imshow("Components", dst);</p>
- *
- * <p>waitKey(0);</p>
- *
- *
- * <p>Note: </code></p>
- * <ul>
- *   <li> An example using the drawContour functionality can be found at
- * opencv_source_code/samples/cpp/contours2.cpp
- *   <li> An example using drawContours to clean up a background segmentation
- * result at opencv_source_code/samples/cpp/segment_objects.cpp
- *   <li> (Python) An example using the drawContour functionality can be found
- * at opencv_source/samples/python2/contours.py
- * </ul>
- *
- * @param image Destination image.
- * @param contours All the input contours. Each contour is stored as a point
- * vector.
- * @param contourIdx Parameter indicating a contour to draw. If it is negative,
- * all the contours are drawn.
- * @param color Color of the contours.
- * @param thickness Thickness of lines the contours are drawn with. If it is
- * negative (for example, <code>thickness=CV_FILLED</code>), the contour
- * interiors are drawn.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#drawcontours">org.opencv.core.Core.drawContours</a>
- */
-    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color, int thickness)
-    {
-        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
-        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
-        drawContours_1(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws contours outlines or filled contours.</p>
- *
- * <p>The function draws contour outlines in the image if <em>thickness >= 0</em>
- * or fills the area bounded by the contours if<em>thickness&lt0</em>. The
- * example below shows how to retrieve connected components from the binary
- * image and label them: <code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>#include "opencv2/imgproc.hpp"</p>
- *
- * <p>#include "opencv2/highgui.hpp"</p>
- *
- * <p>using namespace cv;</p>
- *
- * <p>using namespace std;</p>
- *
- * <p>int main(int argc, char argv)</p>
- *
- *
- * <p>Mat src;</p>
- *
- * <p>// the first command-line parameter must be a filename of the binary</p>
- *
- * <p>// (black-n-white) image</p>
- *
- * <p>if(argc != 2 || !(src=imread(argv[1], 0)).data)</p>
- *
- * <p>return -1;</p>
- *
- * <p>Mat dst = Mat.zeros(src.rows, src.cols, CV_8UC3);</p>
- *
- * <p>src = src > 1;</p>
- *
- * <p>namedWindow("Source", 1);</p>
- *
- * <p>imshow("Source", src);</p>
- *
- * <p>vector<vector<Point> > contours;</p>
- *
- * <p>vector<Vec4i> hierarchy;</p>
- *
- * <p>findContours(src, contours, hierarchy,</p>
- *
- * <p>RETR_CCOMP, CHAIN_APPROX_SIMPLE);</p>
- *
- * <p>// iterate through all the top-level contours,</p>
- *
- * <p>// draw each connected component with its own random color</p>
- *
- * <p>int idx = 0;</p>
- *
- * <p>for(; idx >= 0; idx = hierarchy[idx][0])</p>
- *
- *
- * <p>Scalar color(rand()&255, rand()&255, rand()&255);</p>
- *
- * <p>drawContours(dst, contours, idx, color, FILLED, 8, hierarchy);</p>
- *
- *
- * <p>namedWindow("Components", 1);</p>
- *
- * <p>imshow("Components", dst);</p>
- *
- * <p>waitKey(0);</p>
- *
- *
- * <p>Note: </code></p>
- * <ul>
- *   <li> An example using the drawContour functionality can be found at
- * opencv_source_code/samples/cpp/contours2.cpp
- *   <li> An example using drawContours to clean up a background segmentation
- * result at opencv_source_code/samples/cpp/segment_objects.cpp
- *   <li> (Python) An example using the drawContour functionality can be found
- * at opencv_source/samples/python2/contours.py
- * </ul>
- *
- * @param image Destination image.
- * @param contours All the input contours. Each contour is stored as a point
- * vector.
- * @param contourIdx Parameter indicating a contour to draw. If it is negative,
- * all the contours are drawn.
- * @param color Color of the contours.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#drawcontours">org.opencv.core.Core.drawContours</a>
- */
-    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color)
-    {
-        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
-        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
-        drawContours_2(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
     // C++:  bool eigen(Mat src, Mat& eigenvalues, Mat& eigenvectors = Mat())
     //
 
@@ -3702,246 +3292,6 @@ public class Core {
         boolean retVal = eigen_1(src.nativeObj, eigenvalues.nativeObj);
 
         return retVal;
-    }
-
-
-    //
-    // C++:  void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param center Center of the ellipse.
- * @param axes Half of the size of the ellipse main axes.
- * @param angle Ellipse rotation angle in degrees.
- * @param startAngle Starting angle of the elliptic arc in degrees.
- * @param endAngle Ending angle of the elliptic arc in degrees.
- * @param color Ellipse color.
- * @param thickness Thickness of the ellipse arc outline, if positive.
- * Otherwise, this indicates that a filled ellipse sector is to be drawn.
- * @param lineType Type of the ellipse boundary. See the "line" description.
- * @param shift Number of fractional bits in the coordinates of the center and
- * values of axes.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness, int lineType, int shift)
-    {
-
-        ellipse_0(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param center Center of the ellipse.
- * @param axes Half of the size of the ellipse main axes.
- * @param angle Ellipse rotation angle in degrees.
- * @param startAngle Starting angle of the elliptic arc in degrees.
- * @param endAngle Ending angle of the elliptic arc in degrees.
- * @param color Ellipse color.
- * @param thickness Thickness of the ellipse arc outline, if positive.
- * Otherwise, this indicates that a filled ellipse sector is to be drawn.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness)
-    {
-
-        ellipse_1(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param center Center of the ellipse.
- * @param axes Half of the size of the ellipse main axes.
- * @param angle Ellipse rotation angle in degrees.
- * @param startAngle Starting angle of the elliptic arc in degrees.
- * @param endAngle Ending angle of the elliptic arc in degrees.
- * @param color Ellipse color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color)
-    {
-
-        ellipse_2(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
-    // C++:  void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
-    //
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param box Alternative ellipse representation via "RotatedRect" or
- * <code>CvBox2D</code>. This means that the function draws an ellipse inscribed
- * in the rotated rectangle.
- * @param color Ellipse color.
- * @param thickness Thickness of the ellipse arc outline, if positive.
- * Otherwise, this indicates that a filled ellipse sector is to be drawn.
- * @param lineType Type of the ellipse boundary. See the "line" description.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, RotatedRect box, Scalar color, int thickness, int lineType)
-    {
-
-        ellipse_3(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param box Alternative ellipse representation via "RotatedRect" or
- * <code>CvBox2D</code>. This means that the function draws an ellipse inscribed
- * in the rotated rectangle.
- * @param color Ellipse color.
- * @param thickness Thickness of the ellipse arc outline, if positive.
- * Otherwise, this indicates that a filled ellipse sector is to be drawn.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, RotatedRect box, Scalar color, int thickness)
-    {
-
-        ellipse_4(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple or thick elliptic arc or fills an ellipse sector.</p>
- *
- * <p>The functions <code>ellipse</code> with less parameters draw an ellipse
- * outline, a filled ellipse, an elliptic arc, or a filled ellipse sector.
- * A piecewise-linear curve is used to approximate the elliptic arc boundary. If
- * you need more control of the ellipse rendering, you can retrieve the curve
- * using "ellipse2Poly" and then render it with "polylines" or fill it with
- * "fillPoly". If you use the first variant of the function and want to draw the
- * whole ellipse, not an arc, pass <code>startAngle=0</code> and
- * <code>endAngle=360</code>. The figure below explains the meaning of the
- * parameters.
- * Figure 1. Parameters of Elliptic Arc</p>
- *
- * @param img Image.
- * @param box Alternative ellipse representation via "RotatedRect" or
- * <code>CvBox2D</code>. This means that the function draws an ellipse inscribed
- * in the rotated rectangle.
- * @param color Ellipse color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse">org.opencv.core.Core.ellipse</a>
- */
-    public static void ellipse(Mat img, RotatedRect box, Scalar color)
-    {
-
-        ellipse_5(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
-    // C++:  void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
-    //
-
-/**
- * <p>Approximates an elliptic arc with a polyline.</p>
- *
- * <p>The function <code>ellipse2Poly</code> computes the vertices of a polyline
- * that approximates the specified elliptic arc. It is used by "ellipse".</p>
- *
- * @param center Center of the arc.
- * @param axes Half of the size of the ellipse main axes. See the "ellipse" for
- * details.
- * @param angle Rotation angle of the ellipse in degrees. See the "ellipse" for
- * details.
- * @param arcStart Starting angle of the elliptic arc in degrees.
- * @param arcEnd Ending angle of the elliptic arc in degrees.
- * @param delta Angle between the subsequent polyline vertices. It defines the
- * approximation accuracy.
- * @param pts Output vector of polyline vertices.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#ellipse2poly">org.opencv.core.Core.ellipse2Poly</a>
- */
-    public static void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, MatOfPoint pts)
-    {
-        Mat pts_mat = pts;
-        ellipse2Poly_0(center.x, center.y, axes.width, axes.height, angle, arcStart, arcEnd, delta, pts_mat.nativeObj);
-
-        return;
     }
 
 
@@ -4018,115 +3368,6 @@ public class Core {
         float retVal = fastAtan2_0(y, x);
 
         return retVal;
-    }
-
-
-    //
-    // C++:  void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Fills a convex polygon.</p>
- *
- * <p>The function <code>fillConvexPoly</code> draws a filled convex polygon.
- * This function is much faster than the function <code>fillPoly</code>. It can
- * fill not only convex polygons but any monotonic polygon without
- * self-intersections, that is, a polygon whose contour intersects every
- * horizontal line (scan line) twice at the most (though, its top-most and/or
- * the bottom edge could be horizontal).</p>
- *
- * @param img Image.
- * @param points a points
- * @param color Polygon color.
- * @param lineType Type of the polygon boundaries. See the "line" description.
- * @param shift Number of fractional bits in the vertex coordinates.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#fillconvexpoly">org.opencv.core.Core.fillConvexPoly</a>
- */
-    public static void fillConvexPoly(Mat img, MatOfPoint points, Scalar color, int lineType, int shift)
-    {
-        Mat points_mat = points;
-        fillConvexPoly_0(img.nativeObj, points_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3], lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Fills a convex polygon.</p>
- *
- * <p>The function <code>fillConvexPoly</code> draws a filled convex polygon.
- * This function is much faster than the function <code>fillPoly</code>. It can
- * fill not only convex polygons but any monotonic polygon without
- * self-intersections, that is, a polygon whose contour intersects every
- * horizontal line (scan line) twice at the most (though, its top-most and/or
- * the bottom edge could be horizontal).</p>
- *
- * @param img Image.
- * @param points a points
- * @param color Polygon color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#fillconvexpoly">org.opencv.core.Core.fillConvexPoly</a>
- */
-    public static void fillConvexPoly(Mat img, MatOfPoint points, Scalar color)
-    {
-        Mat points_mat = points;
-        fillConvexPoly_1(img.nativeObj, points_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
-    // C++:  void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
-    //
-
-/**
- * <p>Fills the area bounded by one or more polygons.</p>
- *
- * <p>The function <code>fillPoly</code> fills an area bounded by several polygonal
- * contours. The function can fill complex areas, for example, areas with holes,
- * contours with self-intersections (some of their parts), and so forth.</p>
- *
- * @param img Image.
- * @param pts Array of polygons where each polygon is represented as an array of
- * points.
- * @param color Polygon color.
- * @param lineType Type of the polygon boundaries. See the "line" description.
- * @param shift Number of fractional bits in the vertex coordinates.
- * @param offset Optional offset of all points of the contours.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#fillpoly">org.opencv.core.Core.fillPoly</a>
- */
-    public static void fillPoly(Mat img, List<MatOfPoint> pts, Scalar color, int lineType, int shift, Point offset)
-    {
-        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
-        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
-        fillPoly_0(img.nativeObj, pts_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3], lineType, shift, offset.x, offset.y);
-
-        return;
-    }
-
-/**
- * <p>Fills the area bounded by one or more polygons.</p>
- *
- * <p>The function <code>fillPoly</code> fills an area bounded by several polygonal
- * contours. The function can fill complex areas, for example, areas with holes,
- * contours with self-intersections (some of their parts), and so forth.</p>
- *
- * @param img Image.
- * @param pts Array of polygons where each polygon is represented as an array of
- * points.
- * @param color Polygon color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#fillpoly">org.opencv.core.Core.fillPoly</a>
- */
-    public static void fillPoly(Mat img, List<MatOfPoint> pts, Scalar color)
-    {
-        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
-        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
-        fillPoly_1(img.nativeObj, pts_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
     }
 
 
@@ -4883,95 +4124,6 @@ public class Core {
         double retVal = kmeans_1(data.nativeObj, K, bestLabels.nativeObj, criteria.type, criteria.maxCount, criteria.epsilon, attempts, flags);
 
         return retVal;
-    }
-
-
-    //
-    // C++:  void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Draws a line segment connecting two points.</p>
- *
- * <p>The function <code>line</code> draws the line segment between
- * <code>pt1</code> and <code>pt2</code> points in the image. The line is
- * clipped by the image boundaries. For non-antialiased lines with integer
- * coordinates, the 8-connected or 4-connected Bresenham algorithm is used.
- * Thick lines are drawn with rounding endings.
- * Antialiased lines are drawn using Gaussian filtering.</p>
- *
- * @param img Image.
- * @param pt1 First point of the line segment.
- * @param pt2 Second point of the line segment.
- * @param color Line color.
- * @param thickness Line thickness.
- * @param lineType Type of the line:
- * <ul>
- *   <li> LINE_8 (or omitted) - 8-connected line.
- *   <li> LINE_4 - 4-connected line.
- *   <li> LINE_AA - antialiased line.
- * </ul>
- * @param shift Number of fractional bits in the point coordinates.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#line">org.opencv.core.Core.line</a>
- */
-    public static void line(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int lineType, int shift)
-    {
-
-        line_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Draws a line segment connecting two points.</p>
- *
- * <p>The function <code>line</code> draws the line segment between
- * <code>pt1</code> and <code>pt2</code> points in the image. The line is
- * clipped by the image boundaries. For non-antialiased lines with integer
- * coordinates, the 8-connected or 4-connected Bresenham algorithm is used.
- * Thick lines are drawn with rounding endings.
- * Antialiased lines are drawn using Gaussian filtering.</p>
- *
- * @param img Image.
- * @param pt1 First point of the line segment.
- * @param pt2 Second point of the line segment.
- * @param color Line color.
- * @param thickness Line thickness.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#line">org.opencv.core.Core.line</a>
- */
-    public static void line(Mat img, Point pt1, Point pt2, Scalar color, int thickness)
-    {
-
-        line_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a line segment connecting two points.</p>
- *
- * <p>The function <code>line</code> draws the line segment between
- * <code>pt1</code> and <code>pt2</code> points in the image. The line is
- * clipped by the image boundaries. For non-antialiased lines with integer
- * coordinates, the 8-connected or 4-connected Bresenham algorithm is used.
- * Thick lines are drawn with rounding endings.
- * Antialiased lines are drawn using Gaussian filtering.</p>
- *
- * @param img Image.
- * @param pt1 First point of the line segment.
- * @param pt2 Second point of the line segment.
- * @param color Line color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#line">org.opencv.core.Core.line</a>
- */
-    public static void line(Mat img, Point pt1, Point pt2, Scalar color)
-    {
-
-        line_2(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
     }
 
 
@@ -6644,84 +5796,6 @@ public class Core {
 
 
     //
-    // C++:  void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Draws several polygonal curves.</p>
- *
- * <p>The function <code>polylines</code> draws one or more polygonal curves.</p>
- *
- * @param img Image.
- * @param pts Array of polygonal curves.
- * @param isClosed Flag indicating whether the drawn polylines are closed or
- * not. If they are closed, the function draws a line from the last vertex of
- * each curve to its first vertex.
- * @param color Polyline color.
- * @param thickness Thickness of the polyline edges.
- * @param lineType Type of the line segments. See the "line" description.
- * @param shift Number of fractional bits in the vertex coordinates.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#polylines">org.opencv.core.Core.polylines</a>
- */
-    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color, int thickness, int lineType, int shift)
-    {
-        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
-        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
-        polylines_0(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Draws several polygonal curves.</p>
- *
- * <p>The function <code>polylines</code> draws one or more polygonal curves.</p>
- *
- * @param img Image.
- * @param pts Array of polygonal curves.
- * @param isClosed Flag indicating whether the drawn polylines are closed or
- * not. If they are closed, the function draws a line from the last vertex of
- * each curve to its first vertex.
- * @param color Polyline color.
- * @param thickness Thickness of the polyline edges.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#polylines">org.opencv.core.Core.polylines</a>
- */
-    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color, int thickness)
-    {
-        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
-        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
-        polylines_1(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws several polygonal curves.</p>
- *
- * <p>The function <code>polylines</code> draws one or more polygonal curves.</p>
- *
- * @param img Image.
- * @param pts Array of polygonal curves.
- * @param isClosed Flag indicating whether the drawn polylines are closed or
- * not. If they are closed, the function draws a line from the last vertex of
- * each curve to its first vertex.
- * @param color Polyline color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#polylines">org.opencv.core.Core.polylines</a>
- */
-    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color)
-    {
-        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
-        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
-        polylines_2(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3]);
-
-        return;
-    }
-
-
-    //
     // C++:  void pow(Mat src, double power, Mat& dst)
     //
 
@@ -6766,109 +5840,6 @@ public class Core {
     {
 
         pow_0(src.nativeObj, power, dst.nativeObj);
-
-        return;
-    }
-
-
-    //
-    // C++:  void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
-    //
-
-/**
- * <p>Draws a text string.</p>
- *
- * <p>The function <code>putText</code> renders the specified text string in the
- * image.
- * Symbols that cannot be rendered using the specified font are replaced by
- * question marks. See "getTextSize" for a text rendering code example.</p>
- *
- * @param img Image.
- * @param text Text string to be drawn.
- * @param org Bottom-left corner of the text string in the image.
- * @param fontFace Font type. One of <code>FONT_HERSHEY_SIMPLEX</code>,
- * <code>FONT_HERSHEY_PLAIN</code>, <code>FONT_HERSHEY_DUPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX</code>, <code>FONT_HERSHEY_TRIPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX_SMALL</code>, <code>FONT_HERSHEY_SCRIPT_SIMPLEX</code>,
- * or <code>FONT_HERSHEY_SCRIPT_COMPLEX</code>, where each of the font ID's can
- * be combined with <code>FONT_ITALIC</code> to get the slanted letters.
- * @param fontScale Font scale factor that is multiplied by the font-specific
- * base size.
- * @param color Text color.
- * @param thickness Thickness of the lines used to draw a text.
- * @param lineType Line type. See the <code>line</code> for details.
- * @param bottomLeftOrigin When true, the image data origin is at the
- * bottom-left corner. Otherwise, it is at the top-left corner.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#puttext">org.opencv.core.Core.putText</a>
- */
-    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness, int lineType, boolean bottomLeftOrigin)
-    {
-
-        putText_0(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, bottomLeftOrigin);
-
-        return;
-    }
-
-/**
- * <p>Draws a text string.</p>
- *
- * <p>The function <code>putText</code> renders the specified text string in the
- * image.
- * Symbols that cannot be rendered using the specified font are replaced by
- * question marks. See "getTextSize" for a text rendering code example.</p>
- *
- * @param img Image.
- * @param text Text string to be drawn.
- * @param org Bottom-left corner of the text string in the image.
- * @param fontFace Font type. One of <code>FONT_HERSHEY_SIMPLEX</code>,
- * <code>FONT_HERSHEY_PLAIN</code>, <code>FONT_HERSHEY_DUPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX</code>, <code>FONT_HERSHEY_TRIPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX_SMALL</code>, <code>FONT_HERSHEY_SCRIPT_SIMPLEX</code>,
- * or <code>FONT_HERSHEY_SCRIPT_COMPLEX</code>, where each of the font ID's can
- * be combined with <code>FONT_ITALIC</code> to get the slanted letters.
- * @param fontScale Font scale factor that is multiplied by the font-specific
- * base size.
- * @param color Text color.
- * @param thickness Thickness of the lines used to draw a text.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#puttext">org.opencv.core.Core.putText</a>
- */
-    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness)
-    {
-
-        putText_1(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a text string.</p>
- *
- * <p>The function <code>putText</code> renders the specified text string in the
- * image.
- * Symbols that cannot be rendered using the specified font are replaced by
- * question marks. See "getTextSize" for a text rendering code example.</p>
- *
- * @param img Image.
- * @param text Text string to be drawn.
- * @param org Bottom-left corner of the text string in the image.
- * @param fontFace Font type. One of <code>FONT_HERSHEY_SIMPLEX</code>,
- * <code>FONT_HERSHEY_PLAIN</code>, <code>FONT_HERSHEY_DUPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX</code>, <code>FONT_HERSHEY_TRIPLEX</code>,
- * <code>FONT_HERSHEY_COMPLEX_SMALL</code>, <code>FONT_HERSHEY_SCRIPT_SIMPLEX</code>,
- * or <code>FONT_HERSHEY_SCRIPT_COMPLEX</code>, where each of the font ID's can
- * be combined with <code>FONT_ITALIC</code> to get the slanted letters.
- * @param fontScale Font scale factor that is multiplied by the font-specific
- * base size.
- * @param color Text color.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#puttext">org.opencv.core.Core.putText</a>
- */
-    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color)
-    {
-
-        putText_2(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3]);
 
         return;
     }
@@ -6982,85 +5953,6 @@ public class Core {
     {
 
         randu_0(dst.nativeObj, low, high);
-
-        return;
-    }
-
-
-    //
-    // C++:  void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    //
-
-/**
- * <p>Draws a simple, thick, or filled up-right rectangle.</p>
- *
- * <p>The function <code>rectangle</code> draws a rectangle outline or a filled
- * rectangle whose two opposite corners are <code>pt1</code> and
- * <code>pt2</code>, or <code>r.tl()</code> and <code>r.br()-Point(1,1)</code>.</p>
- *
- * @param img Image.
- * @param pt1 Vertex of the rectangle.
- * @param pt2 Vertex of the rectangle opposite to <code>pt1</code>.
- * @param color Rectangle color or brightness (grayscale image).
- * @param thickness Thickness of lines that make up the rectangle. Negative
- * values, like <code>CV_FILLED</code>, mean that the function has to draw a
- * filled rectangle.
- * @param lineType Type of the line. See the "line" description.
- * @param shift Number of fractional bits in the point coordinates.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#rectangle">org.opencv.core.Core.rectangle</a>
- */
-    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int lineType, int shift)
-    {
-
-        rectangle_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple, thick, or filled up-right rectangle.</p>
- *
- * <p>The function <code>rectangle</code> draws a rectangle outline or a filled
- * rectangle whose two opposite corners are <code>pt1</code> and
- * <code>pt2</code>, or <code>r.tl()</code> and <code>r.br()-Point(1,1)</code>.</p>
- *
- * @param img Image.
- * @param pt1 Vertex of the rectangle.
- * @param pt2 Vertex of the rectangle opposite to <code>pt1</code>.
- * @param color Rectangle color or brightness (grayscale image).
- * @param thickness Thickness of lines that make up the rectangle. Negative
- * values, like <code>CV_FILLED</code>, mean that the function has to draw a
- * filled rectangle.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#rectangle">org.opencv.core.Core.rectangle</a>
- */
-    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color, int thickness)
-    {
-
-        rectangle_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
-
-        return;
-    }
-
-/**
- * <p>Draws a simple, thick, or filled up-right rectangle.</p>
- *
- * <p>The function <code>rectangle</code> draws a rectangle outline or a filled
- * rectangle whose two opposite corners are <code>pt1</code> and
- * <code>pt2</code>, or <code>r.tl()</code> and <code>r.br()-Point(1,1)</code>.</p>
- *
- * @param img Image.
- * @param pt1 Vertex of the rectangle.
- * @param pt2 Vertex of the rectangle opposite to <code>pt1</code>.
- * @param color Rectangle color or brightness (grayscale image).
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#rectangle">org.opencv.core.Core.rectangle</a>
- */
-    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color)
-    {
-
-        rectangle_2(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
 
         return;
     }
@@ -8366,79 +7258,6 @@ public class Core {
     }
 
 
-    // C++: Size getTextSize(const String& text, int fontFace, double fontScale, int thickness, int* baseLine);
-/**
- * <p>Calculates the width and height of a text string.</p>
- *
- * <p>The function <code>getTextSize</code> calculates and returns the size of a
- * box that contains the specified text.That is, the following code renders some
- * text, the tight box surrounding it, and the baseline: <code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>String text = "Funny text inside the box";</p>
- *
- * <p>int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;</p>
- *
- * <p>double fontScale = 2;</p>
- *
- * <p>int thickness = 3;</p>
- *
- * <p>Mat img(600, 800, CV_8UC3, Scalar.all(0));</p>
- *
- * <p>int baseline=0;</p>
- *
- * <p>Size textSize = getTextSize(text, fontFace,</p>
- *
- * <p>fontScale, thickness, &baseline);</p>
- *
- * <p>baseline += thickness;</p>
- *
- * <p>// center the text</p>
- *
- * <p>Point textOrg((img.cols - textSize.width)/2,</p>
- *
- * <p>(img.rows + textSize.height)/2);</p>
- *
- * <p>// draw the box</p>
- *
- * <p>rectangle(img, textOrg + Point(0, baseline),</p>
- *
- * <p>textOrg + Point(textSize.width, -textSize.height),</p>
- *
- * <p>Scalar(0,0,255));</p>
- *
- * <p>//... and the baseline first</p>
- *
- * <p>line(img, textOrg + Point(0, thickness),</p>
- *
- * <p>textOrg + Point(textSize.width, thickness),</p>
- *
- * <p>Scalar(0, 0, 255));</p>
- *
- * <p>// then put the text itself</p>
- *
- * <p>putText(img, text, textOrg, fontFace, fontScale,</p>
- *
- * <p>Scalar.all(255), thickness, 8);</p>
- *
- * @param text Input text string.
- * @param fontFace Font to use. See the "putText" for details.
- * @param fontScale Font scale. See the "putText" for details.
- * @param thickness Thickness of lines used to render the text. See "putText"
- * for details.
- * @param baseLine Output parameter - y-coordinate of the baseline relative to
- * the bottom-most text point.
- *
- * @see <a href="http://docs.opencv.org/modules/core/doc/drawing_functions.html#gettextsize">org.opencv.core.Core.getTextSize</a>
- */
-    public static Size getTextSize(String text, int fontFace, double fontScale, int thickness, int[] baseLine) {
-        if(baseLine != null && baseLine.length != 1)
-            throw new java.lang.IllegalArgumentException("'baseLine' must be 'int[1]' or 'null'.");
-        Size retVal = new Size(n_getTextSize(text, fontFace, fontScale, thickness, baseLine));
-        return retVal;
-    }
-
 
 
     // C++:  void LUT(Mat src, Mat lut, Mat& dst)
@@ -8490,10 +7309,6 @@ public class Core {
     private static native void addWeighted_0(long src1_nativeObj, double alpha, long src2_nativeObj, double beta, double gamma, long dst_nativeObj, int dtype);
     private static native void addWeighted_1(long src1_nativeObj, double alpha, long src2_nativeObj, double beta, double gamma, long dst_nativeObj);
 
-    // C++:  void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
-    private static native void arrowedLine_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int line_type, int shift, double tipLength);
-    private static native void arrowedLine_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
-
     // C++:  void batchDistance(Mat src1, Mat src2, Mat& dist, int dtype, Mat& nidx, int normType = NORM_L2, int K = 0, Mat mask = Mat(), int update = 0, bool crosscheck = false)
     private static native void batchDistance_0(long src1_nativeObj, long src2_nativeObj, long dist_nativeObj, int dtype, long nidx_nativeObj, int normType, int K, long mask_nativeObj, int update, boolean crosscheck);
     private static native void batchDistance_1(long src1_nativeObj, long src2_nativeObj, long dist_nativeObj, int dtype, long nidx_nativeObj, int normType, int K);
@@ -8529,14 +7344,6 @@ public class Core {
     // C++:  bool checkRange(Mat a, bool quiet = true,  _hidden_ * pos = 0, double minVal = -DBL_MAX, double maxVal = DBL_MAX)
     private static native boolean checkRange_0(long a_nativeObj, boolean quiet, double minVal, double maxVal);
     private static native boolean checkRange_1(long a_nativeObj);
-
-    // C++:  void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    private static native void circle_0(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
-    private static native void circle_1(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void circle_2(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3);
-
-    // C++:  bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
-    private static native boolean clipLine_0(int imgRect_x, int imgRect_y, int imgRect_width, int imgRect_height, double pt1_x, double pt1_y, double[] pt1_out, double pt2_x, double pt2_y, double[] pt2_out);
 
     // C++:  void compare(Mat src1, Mat src2, Mat& dst, int cmpop)
     private static native void compare_0(long src1_nativeObj, long src2_nativeObj, long dst_nativeObj, int cmpop);
@@ -8587,27 +7394,9 @@ public class Core {
     private static native void divide_6(long src1_nativeObj, double src2_val0, double src2_val1, double src2_val2, double src2_val3, long dst_nativeObj, double scale);
     private static native void divide_7(long src1_nativeObj, double src2_val0, double src2_val1, double src2_val2, double src2_val3, long dst_nativeObj);
 
-    // C++:  void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
-    private static native void drawContours_0(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, long hierarchy_nativeObj, int maxLevel, double offset_x, double offset_y);
-    private static native void drawContours_1(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void drawContours_2(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3);
-
     // C++:  bool eigen(Mat src, Mat& eigenvalues, Mat& eigenvectors = Mat())
     private static native boolean eigen_0(long src_nativeObj, long eigenvalues_nativeObj, long eigenvectors_nativeObj);
     private static native boolean eigen_1(long src_nativeObj, long eigenvalues_nativeObj);
-
-    // C++:  void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    private static native void ellipse_0(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
-    private static native void ellipse_1(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void ellipse_2(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3);
-
-    // C++:  void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
-    private static native void ellipse_3(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType);
-    private static native void ellipse_4(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void ellipse_5(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3);
-
-    // C++:  void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
-    private static native void ellipse2Poly_0(double center_x, double center_y, double axes_width, double axes_height, int angle, int arcStart, int arcEnd, int delta, long pts_mat_nativeObj);
 
     // C++:  void exp(Mat src, Mat& dst)
     private static native void exp_0(long src_nativeObj, long dst_nativeObj);
@@ -8617,14 +7406,6 @@ public class Core {
 
     // C++:  float fastAtan2(float y, float x)
     private static native float fastAtan2_0(float y, float x);
-
-    // C++:  void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
-    private static native void fillConvexPoly_0(long img_nativeObj, long points_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int lineType, int shift);
-    private static native void fillConvexPoly_1(long img_nativeObj, long points_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);
-
-    // C++:  void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
-    private static native void fillPoly_0(long img_nativeObj, long pts_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int lineType, int shift, double offset_x, double offset_y);
-    private static native void fillPoly_1(long img_nativeObj, long pts_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void findNonZero(Mat src, Mat& idx)
     private static native void findNonZero_0(long src_nativeObj, long idx_nativeObj);
@@ -8678,11 +7459,6 @@ public class Core {
     // C++:  double kmeans(Mat data, int K, Mat& bestLabels, TermCriteria criteria, int attempts, int flags, Mat& centers = Mat())
     private static native double kmeans_0(long data_nativeObj, int K, long bestLabels_nativeObj, int criteria_type, int criteria_maxCount, double criteria_epsilon, int attempts, int flags, long centers_nativeObj);
     private static native double kmeans_1(long data_nativeObj, int K, long bestLabels_nativeObj, int criteria_type, int criteria_maxCount, double criteria_epsilon, int attempts, int flags);
-
-    // C++:  void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    private static native void line_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
-    private static native void line_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void line_2(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void log(Mat src, Mat& dst)
     private static native void log_0(long src_nativeObj, long dst_nativeObj);
@@ -8766,18 +7542,8 @@ public class Core {
     private static native void polarToCart_0(long magnitude_nativeObj, long angle_nativeObj, long x_nativeObj, long y_nativeObj, boolean angleInDegrees);
     private static native void polarToCart_1(long magnitude_nativeObj, long angle_nativeObj, long x_nativeObj, long y_nativeObj);
 
-    // C++:  void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    private static native void polylines_0(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
-    private static native void polylines_1(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void polylines_2(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3);
-
     // C++:  void pow(Mat src, double power, Mat& dst)
     private static native void pow_0(long src_nativeObj, double power, long dst_nativeObj);
-
-    // C++:  void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
-    private static native void putText_0(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, boolean bottomLeftOrigin);
-    private static native void putText_1(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void putText_2(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void randShuffle(Mat& dst, double iterFactor = 1., RNG* rng = 0)
     private static native void randShuffle_0(long dst_nativeObj, double iterFactor);
@@ -8788,11 +7554,6 @@ public class Core {
 
     // C++:  void randu(Mat& dst, double low, double high)
     private static native void randu_0(long dst_nativeObj, double low, double high);
-
-    // C++:  void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
-    private static native void rectangle_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
-    private static native void rectangle_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
-    private static native void rectangle_2(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void reduce(Mat src, Mat& dst, int dim, int rtype, int dtype = -1)
     private static native void reduce_0(long src_nativeObj, long dst_nativeObj, int dim, int rtype, int dtype);
@@ -8859,6 +7620,5 @@ public class Core {
     // C++:  void vconcat(vector_Mat src, Mat& dst)
     private static native void vconcat_0(long src_mat_nativeObj, long dst_nativeObj);
     private static native double[] n_minMaxLocManual(long src_nativeObj, long mask_nativeObj);
-    private static native double[] n_getTextSize(String text, int fontFace, double fontScale, int thickness, int[] baseLine);
 
 }

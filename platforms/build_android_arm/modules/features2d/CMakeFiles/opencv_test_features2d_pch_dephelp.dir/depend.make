@@ -11,6 +11,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -23,6 +24,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -157,6 +159,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -196,6 +200,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -231,6 +238,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -293,6 +301,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d_pch_dephelp.dir/opencv_test_features2d_pch_dephelp.cxx.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h

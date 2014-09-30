@@ -20,6 +20,7 @@ modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/opengl.hpp
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.cuda.hpp
 modules/core/CMakeFiles/opencv_core_pch_dephelp.dir/opencv_core_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp

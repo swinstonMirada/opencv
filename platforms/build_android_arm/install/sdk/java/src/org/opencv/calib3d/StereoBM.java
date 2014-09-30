@@ -29,7 +29,111 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setPreFilterCap(int preFilterCap)
+    // C++:  int getPreFilterCap()
+    //
+
+    public  int getPreFilterCap()
+    {
+
+        int retVal = getPreFilterCap_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getPreFilterSize()
+    //
+
+    public  int getPreFilterSize()
+    {
+
+        int retVal = getPreFilterSize_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getPreFilterType()
+    //
+
+    public  int getPreFilterType()
+    {
+
+        int retVal = getPreFilterType_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  Rect getROI1()
+    //
+
+    public  Rect getROI1()
+    {
+
+        Rect retVal = new Rect(getROI1_0(nativeObj));
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  Rect getROI2()
+    //
+
+    public  Rect getROI2()
+    {
+
+        Rect retVal = new Rect(getROI2_0(nativeObj));
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getSmallerBlockSize()
+    //
+
+    public  int getSmallerBlockSize()
+    {
+
+        int retVal = getSmallerBlockSize_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getTextureThreshold()
+    //
+
+    public  int getTextureThreshold()
+    {
+
+        int retVal = getTextureThreshold_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getUniquenessRatio()
+    //
+
+    public  int getUniquenessRatio()
+    {
+
+        int retVal = getUniquenessRatio_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void setPreFilterCap(int preFilterCap)
     //
 
     public  void setPreFilterCap(int preFilterCap)
@@ -42,7 +146,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setPreFilterSize(int preFilterSize)
+    // C++:  void setPreFilterSize(int preFilterSize)
     //
 
     public  void setPreFilterSize(int preFilterSize)
@@ -55,7 +159,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setPreFilterType(int preFilterType)
+    // C++:  void setPreFilterType(int preFilterType)
     //
 
     public  void setPreFilterType(int preFilterType)
@@ -68,7 +172,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setROI1(Rect roi1)
+    // C++:  void setROI1(Rect roi1)
     //
 
     public  void setROI1(Rect roi1)
@@ -81,7 +185,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setROI2(Rect roi2)
+    // C++:  void setROI2(Rect roi2)
     //
 
     public  void setROI2(Rect roi2)
@@ -94,7 +198,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setSmallerBlockSize(int blockSize)
+    // C++:  void setSmallerBlockSize(int blockSize)
     //
 
     public  void setSmallerBlockSize(int blockSize)
@@ -107,7 +211,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setTextureThreshold(int textureThreshold)
+    // C++:  void setTextureThreshold(int textureThreshold)
     //
 
     public  void setTextureThreshold(int textureThreshold)
@@ -120,7 +224,7 @@ public class StereoBM extends StereoMatcher {
 
 
     //
-    // C++:  void StereoBM::setUniquenessRatio(int uniquenessRatio)
+    // C++:  void setUniquenessRatio(int uniquenessRatio)
     //
 
     public  void setUniquenessRatio(int uniquenessRatio)
@@ -139,28 +243,52 @@ public class StereoBM extends StereoMatcher {
 
 
 
-    // C++:  void StereoBM::setPreFilterCap(int preFilterCap)
+    // C++:  int getPreFilterCap()
+    private static native int getPreFilterCap_0(long nativeObj);
+
+    // C++:  int getPreFilterSize()
+    private static native int getPreFilterSize_0(long nativeObj);
+
+    // C++:  int getPreFilterType()
+    private static native int getPreFilterType_0(long nativeObj);
+
+    // C++:  Rect getROI1()
+    private static native double[] getROI1_0(long nativeObj);
+
+    // C++:  Rect getROI2()
+    private static native double[] getROI2_0(long nativeObj);
+
+    // C++:  int getSmallerBlockSize()
+    private static native int getSmallerBlockSize_0(long nativeObj);
+
+    // C++:  int getTextureThreshold()
+    private static native int getTextureThreshold_0(long nativeObj);
+
+    // C++:  int getUniquenessRatio()
+    private static native int getUniquenessRatio_0(long nativeObj);
+
+    // C++:  void setPreFilterCap(int preFilterCap)
     private static native void setPreFilterCap_0(long nativeObj, int preFilterCap);
 
-    // C++:  void StereoBM::setPreFilterSize(int preFilterSize)
+    // C++:  void setPreFilterSize(int preFilterSize)
     private static native void setPreFilterSize_0(long nativeObj, int preFilterSize);
 
-    // C++:  void StereoBM::setPreFilterType(int preFilterType)
+    // C++:  void setPreFilterType(int preFilterType)
     private static native void setPreFilterType_0(long nativeObj, int preFilterType);
 
-    // C++:  void StereoBM::setROI1(Rect roi1)
+    // C++:  void setROI1(Rect roi1)
     private static native void setROI1_0(long nativeObj, int roi1_x, int roi1_y, int roi1_width, int roi1_height);
 
-    // C++:  void StereoBM::setROI2(Rect roi2)
+    // C++:  void setROI2(Rect roi2)
     private static native void setROI2_0(long nativeObj, int roi2_x, int roi2_y, int roi2_width, int roi2_height);
 
-    // C++:  void StereoBM::setSmallerBlockSize(int blockSize)
+    // C++:  void setSmallerBlockSize(int blockSize)
     private static native void setSmallerBlockSize_0(long nativeObj, int blockSize);
 
-    // C++:  void StereoBM::setTextureThreshold(int textureThreshold)
+    // C++:  void setTextureThreshold(int textureThreshold)
     private static native void setTextureThreshold_0(long nativeObj, int textureThreshold);
 
-    // C++:  void StereoBM::setUniquenessRatio(int uniquenessRatio)
+    // C++:  void setUniquenessRatio(int uniquenessRatio)
     private static native void setUniquenessRatio_0(long nativeObj, int uniquenessRatio);
 
     // native support for java finalize()

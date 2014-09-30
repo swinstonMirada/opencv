@@ -4,12 +4,13 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/algorithm.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/algorithm.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/alloc.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/alloc.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/arithm.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/arithm.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/array.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/array.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/command_line_parser.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/conjugate_gradient.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/convert.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/copy.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_buffer_pool.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o"
@@ -19,11 +20,14 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_stream.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/datastructs.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/directx.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o"
-  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/drawing.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/downhill_simplex.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/dxt.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/gl_core_3_1.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/glob.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/kmeans.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lapack.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lda.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lpsolver.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/mathfuncs.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matmul.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matop.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o"
@@ -35,6 +39,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opengl.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/out.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/parallel.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/pca.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/persistence.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/rand.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/core/src/stat.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o"
@@ -55,7 +60,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.cpp"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.cpp"
   )
 
 
@@ -65,23 +70,15 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/core/perf"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "modules/core"
-  "../../modules/core/src"
-  "../../modules/core/test"
   "../../3rdparty/include/opencl/1.2"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include"
   "/usr/local/include/eigen3"
+  "../../modules/core/include"
+  "../../modules/core/src"
+  "modules/core"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

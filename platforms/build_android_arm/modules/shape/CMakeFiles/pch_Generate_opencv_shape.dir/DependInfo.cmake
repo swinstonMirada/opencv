@@ -15,18 +15,6 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/shape/test"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "../../modules/shape/include"
-  "../../modules/video/include"
-  "modules/shape"
-  "../../modules/shape/src"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"

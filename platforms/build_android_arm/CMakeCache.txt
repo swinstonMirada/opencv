@@ -357,8 +357,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //strip
 CMAKE_STRIP:PATH=/Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-strip
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/swinston/Mirada/lib/c/opencv/platforms/android/android.toolchain.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=../android/android.toolchain.cmake
 
 //No help, variable specified on the command line.
 CMAKE_USE_RELATIVE_PATHS:UNINITIALIZED=ON
@@ -590,8 +590,50 @@ PLANTUML:FILEPATH=PLANTUML-NOTFOUND
 //Path to a program.
 PS2PDF_CONVERTER:FILEPATH=PS2PDF_CONVERTER-NOTFOUND
 
+//Path to Python interpretor
+PYTHON2_EXECUTABLE:FILEPATH=/usr/bin/python2.7
+
+//Python include dir
+PYTHON2_INCLUDE_DIR:PATH=
+
+//Python include dir 2
+PYTHON2_INCLUDE_DIR2:PATH=
+
+//Path to Python library
+PYTHON2_LIBRARY:FILEPATH=
+
+//Path to Python debug
+PYTHON2_LIBRARY_DEBUG:FILEPATH=
+
+//Path to numpy headers
+PYTHON2_NUMPY_INCLUDE_DIRS:PATH=
+
+//Where to install the python packages.
+PYTHON2_PACKAGES_PATH:PATH=
+
+//Path to Python interpretor
+PYTHON3_EXECUTABLE:FILEPATH=
+
+//Python include dir
+PYTHON3_INCLUDE_DIR:PATH=
+
+//Python include dir 2
+PYTHON3_INCLUDE_DIR2:PATH=
+
+//Path to Python library
+PYTHON3_LIBRARY:FILEPATH=
+
+//Path to Python debug
+PYTHON3_LIBRARY_DEBUG:FILEPATH=
+
+//Path to numpy headers
+PYTHON3_NUMPY_INCLUDE_DIRS:PATH=
+
+//Where to install the python packages.
+PYTHON3_PACKAGES_PATH:PATH=
+
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2.7
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Path to a program.
 SPHINX_BUILD:FILEPATH=SPHINX_BUILD-NOTFOUND
@@ -617,9 +659,6 @@ WITH_EIGEN:BOOL=ON
 
 //Enable Gstreamer 0.10 support (instead of 1.x)
 WITH_GSTREAMER_0_10:BOOL=OFF
-
-//Include Intel IPP support
-WITH_IPP:BOOL=ON
 
 //Include JPEG2K support
 WITH_JASPER:BOOL=ON
@@ -721,7 +760,7 @@ opencv_androidcamera_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modul
 opencv_calib3d_BINARY_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d
 
 //Dependencies for the target
-opencv_calib3d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_features2d;general;dl;general;log;general;dl;general;m;general;log;
+opencv_calib3d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;dl;general;log;general;dl;general;m;general;log;
 
 //Value Computed by CMake
 opencv_calib3d_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modules/calib3d
@@ -745,7 +784,7 @@ opencv_core_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_features2d_BINARY_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d
 
 //Dependencies for the target
-opencv_features2d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;dl;general;log;general;dl;general;m;general;log;
+opencv_features2d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;dl;general;log;general;dl;general;m;general;log;
 
 //Value Computed by CMake
 opencv_features2d_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modules/features2d
@@ -808,7 +847,7 @@ opencv_info_LIB_DEPENDS:STATIC=
 opencv_java_BINARY_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java
 
 //Dependencies for the target
-opencv_java_LIB_DEPENDS:STATIC=general;-Wl,-whole-archive;general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_features2d;general;opencv_calib3d;general;opencv_ml;general;opencv_nonfree;general;opencv_objdetect;general;opencv_photo;general;opencv_video;general;opencv_optim;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_ts;general;opencv_videostab;general;-Wl,-no-whole-archive;general;dl;general;m;general;log;general;jnigraphics;
+opencv_java_LIB_DEPENDS:STATIC=general;-Wl,-whole-archive;general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_objdetect;general;opencv_photo;general;opencv_video;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_ts;general;opencv_videostab;general;-Wl,-no-whole-archive;general;dl;general;m;general;log;general;jnigraphics;
 
 //Value Computed by CMake
 opencv_java_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modules/java
@@ -925,7 +964,7 @@ opencv_shape_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_stitching_BINARY_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching
 
 //Dependencies for the target
-opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_features2d;general;opencv_calib3d;general;opencv_ml;general;opencv_nonfree;general;opencv_objdetect;general;dl;general;log;general;dl;general;m;general;log;
+opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_objdetect;general;dl;general;log;general;dl;general;m;general;log;
 
 //Value Computed by CMake
 opencv_stitching_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modules/stitching
@@ -1036,7 +1075,7 @@ opencv_videoio_pch_dephelp_LIB_DEPENDS:STATIC=
 opencv_videostab_BINARY_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/videostab
 
 //Dependencies for the target
-opencv_videostab_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_features2d;general;opencv_calib3d;general;opencv_photo;general;opencv_video;general;dl;general;log;general;dl;general;m;general;log;
+opencv_videostab_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_androidcamera;general;opencv_flann;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;opencv_ml;general;opencv_features2d;general;opencv_calib3d;general;opencv_photo;general;opencv_video;general;dl;general;log;general;dl;general;m;general;log;
 
 //Value Computed by CMake
 opencv_videostab_SOURCE_DIR:STATIC=/Users/swinston/Mirada/lib/c/opencv/modules/videostab
@@ -1109,6 +1148,8 @@ CMAKE_AR-ADVANCED:INTERNAL=1
 CMAKE_BUILD_TOOL-ADVANCED:INTERNAL=1
 //What is the target build tool cmake is generating for.
 CMAKE_BUILD_TOOL:INTERNAL=/usr/bin/make
+//STRINGS property for variable: CMAKE_BUILD_TYPE
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm
 //Major version of cmake used to create the current loaded cache
@@ -1191,7 +1232,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=86
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=81
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1549,16 +1590,14 @@ HAVE_opencv_java:INTERNAL=ON
 HAVE_opencv_matlab:INTERNAL=OFF
 //Module opencv_ml will be built in current configuration
 HAVE_opencv_ml:INTERNAL=ON
-//Module opencv_nonfree will be built in current configuration
-HAVE_opencv_nonfree:INTERNAL=ON
 //Module opencv_objdetect will be built in current configuration
 HAVE_opencv_objdetect:INTERNAL=ON
-//Module opencv_optim will be built in current configuration
-HAVE_opencv_optim:INTERNAL=ON
 //Module opencv_photo will be built in current configuration
 HAVE_opencv_photo:INTERNAL=ON
 //Module opencv_python can not be built in current configuration
 HAVE_opencv_python:INTERNAL=OFF
+//Module opencv_python2 can not be built in current configuration
+HAVE_opencv_python2:INTERNAL=OFF
 //Module opencv_shape will be built in current configuration
 HAVE_opencv_shape:INTERNAL=ON
 //Module opencv_stitching will be built in current configuration
@@ -1600,16 +1639,17 @@ OPENCV_EXTRA_FLAGS_DEBUG:INTERNAL= -O0 -DDEBUG -D_DEBUG
 //Extra compiler options for Release build
 OPENCV_EXTRA_FLAGS_RELEASE:INTERNAL= -DNDEBUG
 //List of OpenCV modules included into the build
-OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_photo;opencv_video;opencv_java;opencv_optim;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_videostab
-OPENCV_MODULES_BUILD_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_java;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_optim;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_videostab
+OPENCV_MODULES_BUILD:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_java;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_videostab
+OPENCV_MODULES_BUILD_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_java;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_videostab
 //List of OpenCV modules implicitly disabled due to dependencies
 OPENCV_MODULES_DISABLED_AUTO:INTERNAL=
 //List of OpenCV modules which can not be build in current configuration
-OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_cuda;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_matlab;opencv_python;opencv_viz
+OPENCV_MODULES_DISABLED_FORCE:INTERNAL=opencv_cuda;opencv_cudaarithm;opencv_cudabgsegm;opencv_cudacodec;opencv_cudafeatures2d;opencv_cudafilters;opencv_cudaimgproc;opencv_cudalegacy;opencv_cudaoptflow;opencv_cudastereo;opencv_cudawarping;opencv_cudev;opencv_python2;opencv_viz
 //List of OpenCV modules explicitly disabled by user
 OPENCV_MODULES_DISABLED_USER:INTERNAL=opencv_world
 //List of OpenCV modules marked for export
-OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_optim;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_videostab
+OPENCV_MODULES_PUBLIC:INTERNAL=opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_videostab
+OPENCV_MODULE_opencv_androidcamera_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/androidcamera
 //The category of the module
 OPENCV_MODULE_opencv_androidcamera_CLASS:INTERNAL=INTERNAL
 //Flattened dependencies of opencv_androidcamera module
@@ -1617,10 +1657,14 @@ OPENCV_MODULE_opencv_androidcamera_DEPS:INTERNAL=opencv_core
 //Extra dependencies of opencv_androidcamera module
 OPENCV_MODULE_opencv_androidcamera_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_androidcamera_DEPS_ORDERED:INTERNAL=opencv_core
+//Flattened dependencies of opencv_androidcamera module (for linker)
+OPENCV_MODULE_opencv_androidcamera_DEPS_TO_LINK:INTERNAL=opencv_core
 //Brief description of opencv_androidcamera module
 OPENCV_MODULE_opencv_androidcamera_DESCRIPTION:INTERNAL=Auxiliary module for Android native camera support
 //List of header files for opencv_androidcamera
 OPENCV_MODULE_opencv_androidcamera_HEADERS:INTERNAL=
+OPENCV_MODULE_opencv_androidcamera_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_androidcamera_LINK_DEPS:INTERNAL=;
 //Location of opencv_androidcamera module sources
 OPENCV_MODULE_opencv_androidcamera_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/androidcamera
 //Optional dependencies of opencv_androidcamera module
@@ -1633,17 +1677,22 @@ OPENCV_MODULE_opencv_androidcamera_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_androidcamera_REQ_DEPS:INTERNAL=opencv_core;log;dl
 //List of source files for opencv_androidcamera
 OPENCV_MODULE_opencv_androidcamera_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/androidcamera/src/camera_activity.cpp
+OPENCV_MODULE_opencv_calib3d_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d
 //The category of the module
 OPENCV_MODULE_opencv_calib3d_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_calib3d module
-OPENCV_MODULE_opencv_calib3d_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d
+OPENCV_MODULE_opencv_calib3d_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
 //Extra dependencies of opencv_calib3d module
 OPENCV_MODULE_opencv_calib3d_DEPS_EXT:INTERNAL=dl;log
-OPENCV_MODULE_opencv_calib3d_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+OPENCV_MODULE_opencv_calib3d_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_calib3d module (for linker)
+OPENCV_MODULE_opencv_calib3d_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d
 //Brief description of opencv_calib3d module
 OPENCV_MODULE_opencv_calib3d_DESCRIPTION:INTERNAL=Camera Calibration and 3D Reconstruction
 //List of header files for opencv_calib3d
 OPENCV_MODULE_opencv_calib3d_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h
+OPENCV_MODULE_opencv_calib3d_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_calib3d_LINK_DEPS:INTERNAL=;
 //Location of opencv_calib3d module sources
 OPENCV_MODULE_opencv_calib3d_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/calib3d
 //Optional dependencies of opencv_calib3d module
@@ -1655,7 +1704,8 @@ OPENCV_MODULE_opencv_calib3d_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_calib3d module
 OPENCV_MODULE_opencv_calib3d_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_features2d
 //List of source files for opencv_calib3d
-OPENCV_MODULE_opencv_calib3d_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h
+OPENCV_MODULE_opencv_calib3d_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calib3d_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibinit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/calibration.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/checkchessboard.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_ptsetreg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/compat_stereo.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/dls.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fisheye.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/five-point.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fundam.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/homography_decomp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/levmarq.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/posit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/ptsetreg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/quadsubpix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/solvepnp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereobm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/stereosgbm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/triangulate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/opencl/stereobm.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels_calib3d.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/opencl_kernels_calib3d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/circlesgrid.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/fisheye.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/dls.h;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/epnp.h;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/p3p.h;/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/src/polynom_solver.h
+OPENCV_MODULE_opencv_core_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core
 //The category of the module
 OPENCV_MODULE_opencv_core_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_core module
@@ -1663,10 +1713,14 @@ OPENCV_MODULE_opencv_core_DEPS:INTERNAL=
 //Extra dependencies of opencv_core module
 OPENCV_MODULE_opencv_core_DEPS_EXT:INTERNAL=z
 OPENCV_MODULE_opencv_core_DEPS_ORDERED:INTERNAL=
+//Flattened dependencies of opencv_core module (for linker)
+OPENCV_MODULE_opencv_core_DEPS_TO_LINK:INTERNAL=
 //Brief description of opencv_core module
 OPENCV_MODULE_opencv_core_DESCRIPTION:INTERNAL=The Core Functionality
 //List of header files for opencv_core
-OPENCV_MODULE_opencv_core_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/block.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/border_interpolate.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/color.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/datamov_utils.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/emulation.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/filters.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/funcattrib.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/functional.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/limits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/saturate_cast.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/scan.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/simd_functions.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/transform.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/type_traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_distance.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_math.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp_reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/affine.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda_stream_accessor.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda_types.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/directx.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ippasync.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/opengl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/wimage.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+OPENCV_MODULE_opencv_core_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/block.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/border_interpolate.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/color.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/datamov_utils.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/emulation.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/filters.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/funcattrib.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/functional.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/limits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/saturate_cast.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/scan.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/simd_functions.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/transform.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/type_traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_distance.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_math.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/vec_traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp_reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/reduce.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/affine.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/base.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/bufferpool.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda_stream_accessor.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cuda_types.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/directx.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/eigen.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ippasync.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/mat.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/matx.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/opengl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/operations.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/optim.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/persistence.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/private.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/ptr.inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/traits.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/version.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/wimage.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/core_c.h;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/cvdef.h;/Users/swinston/Mirada/lib/c/opencv/modules/core/include/opencv2/core/types_c.h
+OPENCV_MODULE_opencv_core_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_core_LINK_DEPS:INTERNAL=;
 //Location of opencv_core module sources
 OPENCV_MODULE_opencv_core_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/core
 //Optional dependencies of opencv_core module
@@ -1678,7 +1732,7 @@ OPENCV_MODULE_opencv_core_PRIVATE_REQ_DEPS:INTERNAL=z
 //Required dependencies of opencv_core module
 OPENCV_MODULE_opencv_core_REQ_DEPS:INTERNAL=
 //List of source files for opencv_core
-OPENCV_MODULE_opencv_core_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/version_string.inc;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/algorithm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/alloc.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/arithm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/array.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/command_line_parser.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/convert.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/copy.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_buffer_pool.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_gpu_mat.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_host_mem.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_info.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_stream.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/datastructs.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/directx.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/drawing.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/dxt.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/gl_core_3_1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/glob.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lapack.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/mathfuncs.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matmul.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matop.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matrix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/ocl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdblas.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdfft.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_core.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opengl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/out.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/parallel.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/persistence.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/rand.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/stat.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/stl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/system.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/tables.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/types.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/umatrix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/arithm.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/convert.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/copymakeborder.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/copyset.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/fft.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/flip.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/inrange.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/lut.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/meanstddev.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/minmaxloc.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/mixchannels.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/mulspectrums.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/normalize.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/reduce.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/reduce2.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/repeat.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/set_identity.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/split_merge.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/transpose.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/bufferpool.impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/directx.inc.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/gl_core_3_1.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/runtime_common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda/gpu_mat.cu
+OPENCV_MODULE_opencv_core_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/version_string.inc;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/algorithm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/alloc.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/arithm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/array.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/command_line_parser.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/conjugate_gradient.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/convert.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/copy.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_buffer_pool.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_gpu_mat.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_host_mem.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_info.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/cuda_stream.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/datastructs.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/directx.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/downhill_simplex.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/dxt.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/gl_core_3_1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/glob.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/kmeans.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lapack.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/lpsolver.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/mathfuncs.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matmul.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matop.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/matrix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/ocl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdblas.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_clamdfft.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/opencl_core.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opengl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/out.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/parallel.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/pca.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/persistence.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/rand.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/stat.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/stl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/system.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/tables.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/types.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/umatrix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/arithm.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/convert.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/copymakeborder.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/copyset.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/fft.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/flip.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/inrange.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/lut.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/meanstddev.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/minmaxloc.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/mixchannels.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/mulspectrums.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/normalize.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/reduce.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/reduce2.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/repeat.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/set_identity.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/split_merge.cl;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/transpose.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/bufferpool.impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/directx.inc.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/gl_core_3_1.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl/runtime/runtime_common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/core/src/precomp.hpp
 //Location of opencv_cuda module sources
 OPENCV_MODULE_opencv_cuda_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/cuda
 //Location of opencv_cudaarithm module sources
@@ -1703,17 +1757,22 @@ OPENCV_MODULE_opencv_cudastereo_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/o
 OPENCV_MODULE_opencv_cudawarping_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/cudawarping
 //Location of opencv_cudev module sources
 OPENCV_MODULE_opencv_cudev_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/cudev
+OPENCV_MODULE_opencv_features2d_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d
 //The category of the module
 OPENCV_MODULE_opencv_features2d_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_features2d module
-OPENCV_MODULE_opencv_features2d_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
+OPENCV_MODULE_opencv_features2d_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml
 //Extra dependencies of opencv_features2d module
 OPENCV_MODULE_opencv_features2d_DEPS_EXT:INTERNAL=dl;log
-OPENCV_MODULE_opencv_features2d_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+OPENCV_MODULE_opencv_features2d_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_features2d module (for linker)
+OPENCV_MODULE_opencv_features2d_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml
 //Brief description of opencv_features2d module
 OPENCV_MODULE_opencv_features2d_DESCRIPTION:INTERNAL=2D Features Framework
 //List of header files for opencv_features2d
 OPENCV_MODULE_opencv_features2d_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/include/opencv2/features2d/features2d.hpp
+OPENCV_MODULE_opencv_features2d_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_features2d_LINK_DEPS:INTERNAL=;
 //Location of opencv_features2d module sources
 OPENCV_MODULE_opencv_features2d_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/features2d
 //Optional dependencies of opencv_features2d module
@@ -1723,9 +1782,10 @@ OPENCV_MODULE_opencv_features2d_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_features2d module
 OPENCV_MODULE_opencv_features2d_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_features2d module
-OPENCV_MODULE_opencv_features2d_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_flann
+OPENCV_MODULE_opencv_features2d_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_ml;opencv_flann
 //List of source files for opencv_features2d
-OPENCV_MODULE_opencv_features2d_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEConfig.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h
+OPENCV_MODULE_opencv_features2d_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/draw.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/dynamic.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/evaluation.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/keypoint.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/brute_force_match.cl;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/fast.cl;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/opencl/orb.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEConfig.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEConfig.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/TEvolution.h;/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/utils.h
+OPENCV_MODULE_opencv_flann_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/flann
 //The category of the module
 OPENCV_MODULE_opencv_flann_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_flann module
@@ -1733,10 +1793,14 @@ OPENCV_MODULE_opencv_flann_DEPS:INTERNAL=opencv_core
 //Extra dependencies of opencv_flann module
 OPENCV_MODULE_opencv_flann_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_flann_DEPS_ORDERED:INTERNAL=opencv_core
+//Flattened dependencies of opencv_flann module (for linker)
+OPENCV_MODULE_opencv_flann_DEPS_TO_LINK:INTERNAL=opencv_core
 //Brief description of opencv_flann module
 OPENCV_MODULE_opencv_flann_DESCRIPTION:INTERNAL=Clustering and Search in Multi-Dimensional Spaces
 //List of header files for opencv_flann
 OPENCV_MODULE_opencv_flann_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/flann.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/flann_base.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/miniflann.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/all_indices.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/allocator.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/any.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/autotuned_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/composite_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/config.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/defines.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/dist.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/dummy.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/general.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/ground_truth.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/hdf5.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/heap.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/index_testing.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/kdtree_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/kmeans_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/linear_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/logger.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/lsh_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/lsh_table.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/matrix.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/nn_index.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/object_factory.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/params.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/random.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/result_set.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/sampling.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/saving.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/simplex_downhill.h;/Users/swinston/Mirada/lib/c/opencv/modules/flann/include/opencv2/flann/timer.h
+OPENCV_MODULE_opencv_flann_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_flann_LINK_DEPS:INTERNAL=;
 //Location of opencv_flann module sources
 OPENCV_MODULE_opencv_flann_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/flann
 //Optional dependencies of opencv_flann module
@@ -1749,6 +1813,7 @@ OPENCV_MODULE_opencv_flann_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_flann_REQ_DEPS:INTERNAL=opencv_core
 //List of source files for opencv_flann
 OPENCV_MODULE_opencv_flann_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/flann/src/flann.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/src/miniflann.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/flann/src/precomp.hpp
+OPENCV_MODULE_opencv_highgui_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/highgui
 //The category of the module
 OPENCV_MODULE_opencv_highgui_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_highgui module
@@ -1756,10 +1821,14 @@ OPENCV_MODULE_opencv_highgui_DEPS:INTERNAL=opencv_core;opencv_androidcamera;open
 //Extra dependencies of opencv_highgui module
 OPENCV_MODULE_opencv_highgui_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_highgui_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+//Flattened dependencies of opencv_highgui module (for linker)
+OPENCV_MODULE_opencv_highgui_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_imgproc;opencv_imgcodecs;opencv_videoio
 //Brief description of opencv_highgui module
 OPENCV_MODULE_opencv_highgui_DESCRIPTION:INTERNAL=High-level GUI and Media I/O
 //List of header files for opencv_highgui
 OPENCV_MODULE_opencv_highgui_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui/highgui.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/highgui/include/opencv2/highgui/highgui_c.h
+OPENCV_MODULE_opencv_highgui_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_highgui_LINK_DEPS:INTERNAL=;
 //Location of opencv_highgui module sources
 OPENCV_MODULE_opencv_highgui_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/highgui
 //Optional dependencies of opencv_highgui module
@@ -1771,7 +1840,8 @@ OPENCV_MODULE_opencv_highgui_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_highgui module
 OPENCV_MODULE_opencv_highgui_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_imgcodecs;opencv_videoio
 //List of source files for opencv_highgui
-OPENCV_MODULE_opencv_highgui_SOURCES:INTERNAL=src/window.cpp;src/precomp.hpp
+OPENCV_MODULE_opencv_highgui_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/highgui/src/window.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/highgui/src/precomp.hpp
+OPENCV_MODULE_opencv_imgcodecs_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs
 //The category of the module
 OPENCV_MODULE_opencv_imgcodecs_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_imgcodecs module
@@ -1779,10 +1849,14 @@ OPENCV_MODULE_opencv_imgcodecs_DEPS:INTERNAL=opencv_core;opencv_imgproc
 //Extra dependencies of opencv_imgcodecs module
 OPENCV_MODULE_opencv_imgcodecs_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_imgcodecs_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc
+//Flattened dependencies of opencv_imgcodecs module (for linker)
+OPENCV_MODULE_opencv_imgcodecs_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
 //Brief description of opencv_imgcodecs module
 OPENCV_MODULE_opencv_imgcodecs_DESCRIPTION:INTERNAL=Image codecs
 //List of header files for opencv_imgcodecs
 OPENCV_MODULE_opencv_imgcodecs_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/include/opencv2/imgcodecs/ios.h
+OPENCV_MODULE_opencv_imgcodecs_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_imgcodecs_LINK_DEPS:INTERNAL=;z;libjpeg;libwebp;libpng;libtiff;libjasper;IlmImf
 //Location of opencv_imgcodecs module sources
 OPENCV_MODULE_opencv_imgcodecs_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs
 //Optional dependencies of opencv_imgcodecs module
@@ -1794,7 +1868,8 @@ OPENCV_MODULE_opencv_imgcodecs_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_imgcodecs module
 OPENCV_MODULE_opencv_imgcodecs_REQ_DEPS:INTERNAL=opencv_imgproc
 //List of source files for opencv_imgcodecs
-OPENCV_MODULE_opencv_imgcodecs_SOURCES:INTERNAL=src/loadsave.cpp;src/utils.cpp;src/precomp.hpp;src/utils.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_bmp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_exr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg2000.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_png.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_pxm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_sunras.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_tiff.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_webp.cpp;src/bitstrm.cpp;src/rgbe.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_bmp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_exr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg2000.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_png.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_pxm.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_sunras.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_tiff.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_webp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmts.hpp;src/bitstrm.hpp;src/rgbe.hpp
+OPENCV_MODULE_opencv_imgcodecs_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/loadsave.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/utils.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/utils.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_bmp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_exr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg2000.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_png.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_pxm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_sunras.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_tiff.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_webp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/bitstrm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/rgbe.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_base.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_bmp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_exr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_gdal.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_hdr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_jpeg2000.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_png.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_pxm.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_sunras.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_tiff.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmt_webp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/grfmts.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/bitstrm.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/rgbe.hpp
+OPENCV_MODULE_opencv_imgproc_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc
 //The category of the module
 OPENCV_MODULE_opencv_imgproc_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_imgproc module
@@ -1802,10 +1877,14 @@ OPENCV_MODULE_opencv_imgproc_DEPS:INTERNAL=opencv_core
 //Extra dependencies of opencv_imgproc module
 OPENCV_MODULE_opencv_imgproc_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_imgproc_DEPS_ORDERED:INTERNAL=opencv_core
+//Flattened dependencies of opencv_imgproc module (for linker)
+OPENCV_MODULE_opencv_imgproc_DEPS_TO_LINK:INTERNAL=opencv_core
 //Brief description of opencv_imgproc module
 OPENCV_MODULE_opencv_imgproc_DESCRIPTION:INTERNAL=Image Processing
 //List of header files for opencv_imgproc
 OPENCV_MODULE_opencv_imgproc_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h
+OPENCV_MODULE_opencv_imgproc_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_imgproc_LINK_DEPS:INTERNAL=;
 //Location of opencv_imgproc module sources
 OPENCV_MODULE_opencv_imgproc_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgproc
 //Optional dependencies of opencv_imgproc module
@@ -1817,20 +1896,25 @@ OPENCV_MODULE_opencv_imgproc_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_imgproc module
 OPENCV_MODULE_opencv_imgproc_REQ_DEPS:INTERNAL=opencv_core
 //List of source files for opencv_imgproc
-OPENCV_MODULE_opencv_imgproc_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/accum.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/approx.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/blend.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/canny.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/clahe.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/color.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/connectedcomponents.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/contours.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/convhull.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/corner.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/cornersubpix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/demosaicing.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/deriv.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/distransform.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/emd.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/featureselect.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filter.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/floodfill.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gabor.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/generalized_hough.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/geometry.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/grabcut.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/histogram.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/hough.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/imgwarp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/intersection.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/linefit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/lsd.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/matchcontours.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/min_enclosing_triangle.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/moments.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/morph.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/phasecorr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/pyramids.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/rotcalipers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/samplers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/segmentation.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/shapedescr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/smooth.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/subdivision2d.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/sumpixels.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/tables.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/templmatch.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/thresh.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/undistort.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/utils.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/accumulate.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/bilateral.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/blend_linear.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/boxFilter.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/boxFilterSmall.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/calc_back_project.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/canny.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/clahe.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/corner.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/covardata.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/cvtcolor.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filter2D.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filter2DSmall.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSepCol.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSepRow.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/gftt.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/histogram.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/integral_sum.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/laplacian5.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/match_template.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/medianFilter.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/moments.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/morph.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/precornerdetect.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/pyr_down.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/pyr_up.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/remap.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/resize.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/threshold.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/warp_affine.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/warp_perspective.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gcgraph.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/_geom.h
+OPENCV_MODULE_opencv_imgproc_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/accum.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/approx.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/blend.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/canny.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/clahe.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/color.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/colormap.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/connectedcomponents.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/contours.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/convhull.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/corner.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/cornersubpix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/demosaicing.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/deriv.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/distransform.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/drawing.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/emd.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/featureselect.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filter.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/floodfill.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gabor.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/generalized_hough.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/geometry.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/grabcut.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/hershey_fonts.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/histogram.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/hough.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/imgwarp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/intersection.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/linefit.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/lsd.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/matchcontours.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/min_enclosing_triangle.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/moments.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/morph.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/phasecorr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/pyramids.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/rotcalipers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/samplers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/segmentation.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/shapedescr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/smooth.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/subdivision2d.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/sumpixels.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/tables.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/templmatch.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/thresh.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/undistort.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/utils.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/accumulate.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/bilateral.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/blend_linear.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/boxFilter.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/calc_back_project.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/canny.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/clahe.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/corner.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/covardata.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/cvtcolor.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filter2D.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filter2DSmall.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSepCol.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSepRow.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/filterSmall.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/gftt.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/histogram.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/integral_sum.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/laplacian5.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/match_template.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/medianFilter.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/moments.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/morph.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/precornerdetect.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/pyr_down.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/pyr_up.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/remap.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/resize.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/threshold.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/warp_affine.cl;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl/warp_perspective.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filterengine.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gcgraph.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/_geom.h
+OPENCV_MODULE_opencv_java_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java
 //The category of the module
 OPENCV_MODULE_opencv_java_CLASS:INTERNAL=BINDINGS
 //Flattened dependencies of opencv_java module
-OPENCV_MODULE_opencv_java_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_photo;opencv_video
+OPENCV_MODULE_opencv_java_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video
 //Extra dependencies of opencv_java module
 OPENCV_MODULE_opencv_java_DEPS_EXT:INTERNAL=dl;log
-OPENCV_MODULE_opencv_java_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_java_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_java module (for linker)
+OPENCV_MODULE_opencv_java_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video
 //Brief description of opencv_java module
 OPENCV_MODULE_opencv_java_DESCRIPTION:INTERNAL=The java bindings
+OPENCV_MODULE_opencv_java_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_java_LINK_DEPS:INTERNAL=
 //Location of opencv_java module sources
 OPENCV_MODULE_opencv_java_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/java
 //Optional dependencies of opencv_java module
-OPENCV_MODULE_opencv_java_OPT_DEPS:INTERNAL=opencv_objdetect;opencv_features2d;opencv_video;opencv_imgcodecs;opencv_videoio;opencv_ml;opencv_calib3d;opencv_photo;opencv_nonfree;opencv_contrib
+OPENCV_MODULE_opencv_java_OPT_DEPS:INTERNAL=opencv_objdetect;opencv_features2d;opencv_video;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_photo;opencv_bioinspired
 //Optional private dependencies of opencv_java module
 OPENCV_MODULE_opencv_java_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_java module
@@ -1839,6 +1923,7 @@ OPENCV_MODULE_opencv_java_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_java_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc
 //Location of opencv_matlab module sources
 OPENCV_MODULE_opencv_matlab_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/matlab
+OPENCV_MODULE_opencv_ml_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml
 //The category of the module
 OPENCV_MODULE_opencv_ml_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_ml module
@@ -1846,10 +1931,14 @@ OPENCV_MODULE_opencv_ml_DEPS:INTERNAL=opencv_core
 //Extra dependencies of opencv_ml module
 OPENCV_MODULE_opencv_ml_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_ml_DEPS_ORDERED:INTERNAL=opencv_core
+//Flattened dependencies of opencv_ml module (for linker)
+OPENCV_MODULE_opencv_ml_DEPS_TO_LINK:INTERNAL=opencv_core
 //Brief description of opencv_ml module
 OPENCV_MODULE_opencv_ml_DESCRIPTION:INTERNAL=Machine Learning
 //List of header files for opencv_ml
 OPENCV_MODULE_opencv_ml_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/include/opencv2/ml/ml.hpp
+OPENCV_MODULE_opencv_ml_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_ml_LINK_DEPS:INTERNAL=;
 //Location of opencv_ml module sources
 OPENCV_MODULE_opencv_ml_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ml
 //Optional dependencies of opencv_ml module
@@ -1861,7 +1950,7 @@ OPENCV_MODULE_opencv_ml_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_ml module
 OPENCV_MODULE_opencv_ml_REQ_DEPS:INTERNAL=opencv_core
 //List of source files for opencv_ml
-OPENCV_MODULE_opencv_ml_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/ann_mlp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/boost.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/cnn.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/data.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/em.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/ertrees.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/estimate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/gbt.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/inner_functions.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/knearest.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/ml_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/nbayes.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/rtrees.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/svm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/testset.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/tree.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/precomp.hpp
+OPENCV_MODULE_opencv_ml_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/ann_mlp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/boost.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/data.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/em.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/gbt.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/inner_functions.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/kdtree.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/knearest.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/lr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/nbayes.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/rtrees.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/svm.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/testset.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/tree.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/kdtree.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ml/src/precomp.hpp
 //The category of the module
 OPENCV_MODULE_opencv_nonfree_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_nonfree module
@@ -1875,16 +1964,9 @@ OPENCV_MODULE_opencv_nonfree_DESCRIPTION:INTERNAL=Functionality with possible li
 OPENCV_MODULE_opencv_nonfree_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/include/opencv2/nonfree.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/include/opencv2/nonfree/nonfree.hpp
 //Location of opencv_nonfree module sources
 OPENCV_MODULE_opencv_nonfree_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/nonfree
-//Optional dependencies of opencv_nonfree module
-OPENCV_MODULE_opencv_nonfree_OPT_DEPS:INTERNAL=opencv_cudaarithm
-//Optional private dependencies of opencv_nonfree module
-OPENCV_MODULE_opencv_nonfree_PRIVATE_OPT_DEPS:INTERNAL=
-//Required private dependencies of opencv_nonfree module
-OPENCV_MODULE_opencv_nonfree_PRIVATE_REQ_DEPS:INTERNAL=
-//Required dependencies of opencv_nonfree module
-OPENCV_MODULE_opencv_nonfree_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_features2d;opencv_calib3d
 //List of source files for opencv_nonfree
 OPENCV_MODULE_opencv_nonfree_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/nonfree_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/sift.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/surf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/surf.cuda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/surf.ocl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/opencl/surf.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/nonfree/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/nonfree/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/surf.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/nonfree/src/cuda/surf.cu
+OPENCV_MODULE_opencv_objdetect_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect
 //The category of the module
 OPENCV_MODULE_opencv_objdetect_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_objdetect module
@@ -1892,10 +1974,14 @@ OPENCV_MODULE_opencv_objdetect_DEPS:INTERNAL=opencv_core;opencv_androidcamera;op
 //Extra dependencies of opencv_objdetect module
 OPENCV_MODULE_opencv_objdetect_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_objdetect_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_videoio
+//Flattened dependencies of opencv_objdetect module (for linker)
+OPENCV_MODULE_opencv_objdetect_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml
 //Brief description of opencv_objdetect module
 OPENCV_MODULE_opencv_objdetect_DESCRIPTION:INTERNAL=Object Detection
 //List of header files for opencv_objdetect
-OPENCV_MODULE_opencv_objdetect_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
+OPENCV_MODULE_opencv_objdetect_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
+OPENCV_MODULE_opencv_objdetect_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_objdetect_LINK_DEPS:INTERNAL=;
 //Location of opencv_objdetect module sources
 OPENCV_MODULE_opencv_objdetect_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/objdetect
 //Optional dependencies of opencv_objdetect module
@@ -1907,7 +1993,7 @@ OPENCV_MODULE_opencv_objdetect_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_objdetect module
 OPENCV_MODULE_opencv_objdetect_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_ml
 //List of source files for opencv_objdetect
-OPENCV_MODULE_opencv_objdetect_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/erfilter.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/linemod.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl/cascadedetect.cl;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl/objdetect_hog.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
+OPENCV_MODULE_opencv_objdetect_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect_convert.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/detection_based_tracker.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/haar.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/hog.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl/cascadedetect.cl;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl/objdetect_hog.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/cascadedetect.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/precomp.hpp
 //The category of the module
 OPENCV_MODULE_opencv_optim_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_optim module
@@ -1921,16 +2007,9 @@ OPENCV_MODULE_opencv_optim_DESCRIPTION:INTERNAL=Generic optimization
 OPENCV_MODULE_opencv_optim_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/include/opencv2/optim/optim.hpp
 //Location of opencv_optim module sources
 OPENCV_MODULE_opencv_optim_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/optim
-//Optional dependencies of opencv_optim module
-OPENCV_MODULE_opencv_optim_OPT_DEPS:INTERNAL=
-//Optional private dependencies of opencv_optim module
-OPENCV_MODULE_opencv_optim_PRIVATE_OPT_DEPS:INTERNAL=
-//Required private dependencies of opencv_optim module
-OPENCV_MODULE_opencv_optim_PRIVATE_REQ_DEPS:INTERNAL=
-//Required dependencies of opencv_optim module
-OPENCV_MODULE_opencv_optim_REQ_DEPS:INTERNAL=opencv_core
 //List of source files for opencv_optim
 OPENCV_MODULE_opencv_optim_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/conjugate_gradient.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/denoise_tvl1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/lpsolver.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/simplex.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/debug.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/optim/src/precomp.hpp
+OPENCV_MODULE_opencv_photo_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo
 //The category of the module
 OPENCV_MODULE_opencv_photo_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_photo module
@@ -1938,10 +2017,14 @@ OPENCV_MODULE_opencv_photo_DEPS:INTERNAL=opencv_core;opencv_imgproc
 //Extra dependencies of opencv_photo module
 OPENCV_MODULE_opencv_photo_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_photo_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc
+//Flattened dependencies of opencv_photo module (for linker)
+OPENCV_MODULE_opencv_photo_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
 //Brief description of opencv_photo module
 OPENCV_MODULE_opencv_photo_DESCRIPTION:INTERNAL=Computational Photography
 //List of header files for opencv_photo
 OPENCV_MODULE_opencv_photo_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/photo/include/opencv2/photo.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/include/opencv2/photo/cuda.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/include/opencv2/photo/photo.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/include/opencv2/photo/photo_c.h
+OPENCV_MODULE_opencv_photo_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_photo_LINK_DEPS:INTERNAL=;
 //Location of opencv_photo module sources
 OPENCV_MODULE_opencv_photo_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/photo
 //Optional dependencies of opencv_photo module
@@ -1953,9 +2036,12 @@ OPENCV_MODULE_opencv_photo_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_photo module
 OPENCV_MODULE_opencv_photo_REQ_DEPS:INTERNAL=opencv_imgproc
 //List of source files for opencv_photo
-OPENCV_MODULE_opencv_photo_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/align.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/calibrate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/contrast_preserve.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoising.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoising.cuda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/hdr_common.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/inpaint.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/merge.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/npr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/seamless_cloning.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/tonemap.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl/nlmeans.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/arrays.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/contrast_preserve.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_invoker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_opencl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/hdr_common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/npr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/seamless_cloning.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/cuda/nlm.cu
+OPENCV_MODULE_opencv_photo_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/align.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/calibrate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/contrast_preserve.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoise_tvl1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoising.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoising.cuda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/hdr_common.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/inpaint.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/merge.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/npr.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/seamless_cloning.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/tonemap.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl/nlmeans.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/arrays.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/contrast_preserve.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_invoker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_opencl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/hdr_common.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/npr.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/seamless_cloning.hpp
+//Location of opencv_python2 module sources
+OPENCV_MODULE_opencv_python2_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/python
 //Location of opencv_python module sources
 OPENCV_MODULE_opencv_python_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/python
+OPENCV_MODULE_opencv_shape_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/shape
 //The category of the module
 OPENCV_MODULE_opencv_shape_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_shape module
@@ -1963,10 +2049,14 @@ OPENCV_MODULE_opencv_shape_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_video
 //Extra dependencies of opencv_shape module
 OPENCV_MODULE_opencv_shape_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_shape_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc;opencv_video
+//Flattened dependencies of opencv_shape module (for linker)
+OPENCV_MODULE_opencv_shape_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc;opencv_video
 //Brief description of opencv_shape module
 OPENCV_MODULE_opencv_shape_DESCRIPTION:INTERNAL=Shape descriptors and matchers.
 //List of header files for opencv_shape
 OPENCV_MODULE_opencv_shape_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape/emdL1.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape/hist_cost.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape/shape.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape/shape_distance.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/include/opencv2/shape/shape_transformer.hpp
+OPENCV_MODULE_opencv_shape_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_shape_LINK_DEPS:INTERNAL=;
 //Location of opencv_shape module sources
 OPENCV_MODULE_opencv_shape_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/shape
 //Optional dependencies of opencv_shape module
@@ -1979,21 +2069,26 @@ OPENCV_MODULE_opencv_shape_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_shape_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_video
 //List of source files for opencv_shape
 OPENCV_MODULE_opencv_shape_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/aff_trans.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/emdL1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/haus_dis.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/hist_cost.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/precomp.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/sc_dis.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/tps_trans.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/emdL1_def.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/shape/src/scd_def.hpp
+OPENCV_MODULE_opencv_stitching_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching
 //The category of the module
 OPENCV_MODULE_opencv_stitching_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_stitching module
-OPENCV_MODULE_opencv_stitching_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect
+OPENCV_MODULE_opencv_stitching_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect
 //Extra dependencies of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_DEPS_EXT:INTERNAL=dl;log
-OPENCV_MODULE_opencv_stitching_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_videoio
+OPENCV_MODULE_opencv_stitching_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_videoio
+//Flattened dependencies of opencv_stitching module (for linker)
+OPENCV_MODULE_opencv_stitching_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect
 //Brief description of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_DESCRIPTION:INTERNAL=Images stitching
 //List of header files for opencv_stitching
 OPENCV_MODULE_opencv_stitching_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp
+OPENCV_MODULE_opencv_stitching_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_stitching_LINK_DEPS:INTERNAL=;
 //Location of opencv_stitching module sources
 OPENCV_MODULE_opencv_stitching_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/stitching
 //Optional dependencies of opencv_stitching module
-OPENCV_MODULE_opencv_stitching_OPT_DEPS:INTERNAL=opencv_cuda;opencv_cudaarithm;opencv_cudafilters;opencv_cudafeatures2d;opencv_nonfree
+OPENCV_MODULE_opencv_stitching_OPT_DEPS:INTERNAL=opencv_cuda;opencv_cudaarithm;opencv_cudafilters;opencv_cudafeatures2d;opencv_xfeatures2d
 //Optional private dependencies of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_stitching module
@@ -2001,7 +2096,8 @@ OPENCV_MODULE_opencv_stitching_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_stitching module
 OPENCV_MODULE_opencv_stitching_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_objdetect
 //List of source files for opencv_stitching
-OPENCV_MODULE_opencv_stitching_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/autocalib.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/blenders.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/camera.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/exposure_compensate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/matchers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/motion_estimators.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/seam_finders.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/stitcher.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/timelapsers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/util.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/warpers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl/multibandblend.cl;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl/warpers.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
+OPENCV_MODULE_opencv_stitching_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/autocalib.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/blenders.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/camera.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/exposure_compensate.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/matchers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/motion_estimators.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/seam_finders.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/stitcher.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/timelapsers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/util.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/warpers.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl/multibandblend.cl;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl/warpers.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
+OPENCV_MODULE_opencv_superres_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/superres
 //The category of the module
 OPENCV_MODULE_opencv_superres_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_superres module
@@ -2009,10 +2105,14 @@ OPENCV_MODULE_opencv_superres_DEPS:INTERNAL=opencv_core;opencv_androidcamera;ope
 //Extra dependencies of opencv_superres module
 OPENCV_MODULE_opencv_superres_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_superres_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_imgcodecs;opencv_imgproc;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_superres module (for linker)
+OPENCV_MODULE_opencv_superres_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_imgproc;opencv_imgcodecs;opencv_video;opencv_videoio
 //Brief description of opencv_superres module
 OPENCV_MODULE_opencv_superres_DESCRIPTION:INTERNAL=Super Resolution
 //List of header files for opencv_superres
 OPENCV_MODULE_opencv_superres_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/superres/include/opencv2/superres.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/include/opencv2/superres/optical_flow.hpp
+OPENCV_MODULE_opencv_superres_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_superres_LINK_DEPS:INTERNAL=;
 //Location of opencv_superres module sources
 OPENCV_MODULE_opencv_superres_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/superres
 //Optional dependencies of opencv_superres module
@@ -2024,7 +2124,8 @@ OPENCV_MODULE_opencv_superres_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_superres module
 OPENCV_MODULE_opencv_superres_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_video
 //List of source files for opencv_superres
-OPENCV_MODULE_opencv_superres_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/btv_l1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/btv_l1_cuda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/frame_source.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/optical_flow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/super_resolution.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/opencl/superres_btvl1.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/superres/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/superres/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/ring_buffer.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/cuda/btv_l1_gpu.cu
+OPENCV_MODULE_opencv_superres_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/btv_l1.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/btv_l1_cuda.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/frame_source.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/optical_flow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/super_resolution.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/opencl/superres_btvl1.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/superres/opencl_kernels_superres.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/superres/opencl_kernels_superres.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/superres/src/ring_buffer.hpp
+OPENCV_MODULE_opencv_ts_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ts
 //The category of the module
 OPENCV_MODULE_opencv_ts_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_ts module
@@ -2032,10 +2133,14 @@ OPENCV_MODULE_opencv_ts_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_im
 //Extra dependencies of opencv_ts module
 OPENCV_MODULE_opencv_ts_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_ts_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_videoio
+//Flattened dependencies of opencv_ts module (for linker)
+OPENCV_MODULE_opencv_ts_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
 //Brief description of opencv_ts module
 OPENCV_MODULE_opencv_ts_DESCRIPTION:INTERNAL=The ts module
 //List of header files for opencv_ts
 OPENCV_MODULE_opencv_ts_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/cuda_perf.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/cuda_test.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/ocl_perf.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/ocl_test.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/ts_ext.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/ts_perf.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/include/opencv2/ts/ts_gtest.h
+OPENCV_MODULE_opencv_ts_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_ts_LINK_DEPS:INTERNAL=;
 //Location of opencv_ts module sources
 OPENCV_MODULE_opencv_ts_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ts
 //Optional dependencies of opencv_ts module
@@ -2048,6 +2153,7 @@ OPENCV_MODULE_opencv_ts_PRIVATE_REQ_DEPS:INTERNAL=
 OPENCV_MODULE_opencv_ts_REQ_DEPS:INTERNAL=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
 //List of source files for opencv_ts
 OPENCV_MODULE_opencv_ts_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/cuda_perf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/cuda_test.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ocl_perf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ocl_test.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ts.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ts_arrtest.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ts_func.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ts_gtest.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/ts_perf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/ts/src/precomp.hpp
+OPENCV_MODULE_opencv_video_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video
 //The category of the module
 OPENCV_MODULE_opencv_video_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_video module
@@ -2055,10 +2161,14 @@ OPENCV_MODULE_opencv_video_DEPS:INTERNAL=opencv_core;opencv_imgproc
 //Extra dependencies of opencv_video module
 OPENCV_MODULE_opencv_video_DEPS_EXT:INTERNAL=
 OPENCV_MODULE_opencv_video_DEPS_ORDERED:INTERNAL=opencv_core;opencv_imgproc
+//Flattened dependencies of opencv_video module (for linker)
+OPENCV_MODULE_opencv_video_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_imgproc
 //Brief description of opencv_video module
 OPENCV_MODULE_opencv_video_DESCRIPTION:INTERNAL=Video Analysis
 //List of header files for opencv_video
 OPENCV_MODULE_opencv_video_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/background_segm.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/video.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/include/opencv2/video/tracking_c.h
+OPENCV_MODULE_opencv_video_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_video_LINK_DEPS:INTERNAL=;
 //Location of opencv_video module sources
 OPENCV_MODULE_opencv_video_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/video
 //Optional dependencies of opencv_video module
@@ -2070,7 +2180,8 @@ OPENCV_MODULE_opencv_video_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_video module
 OPENCV_MODULE_opencv_video_REQ_DEPS:INTERNAL=opencv_imgproc
 //List of source files for opencv_video
-OPENCV_MODULE_opencv_video_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/updatemotionhistory.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
+OPENCV_MODULE_opencv_video_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/compat_video.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/ecc.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/kalman.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/video_init.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/bgfg_mog2.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_farneback.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/optical_flow_tvl1.cl;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl/pyrlk.cl;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.cpp;/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
+OPENCV_MODULE_opencv_videoio_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/videoio
 //The category of the module
 OPENCV_MODULE_opencv_videoio_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_videoio module
@@ -2078,10 +2189,14 @@ OPENCV_MODULE_opencv_videoio_DEPS:INTERNAL=opencv_core;opencv_androidcamera;open
 //Extra dependencies of opencv_videoio module
 OPENCV_MODULE_opencv_videoio_DEPS_EXT:INTERNAL=dl;log
 OPENCV_MODULE_opencv_videoio_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_core;opencv_imgcodecs;opencv_imgproc
+//Flattened dependencies of opencv_videoio module (for linker)
+OPENCV_MODULE_opencv_videoio_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_imgproc;opencv_imgcodecs
 //Brief description of opencv_videoio module
 OPENCV_MODULE_opencv_videoio_DESCRIPTION:INTERNAL=Media I/O
 //List of header files for opencv_videoio
 OPENCV_MODULE_opencv_videoio_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio/videoio.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio/cap_ios.h;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/include/opencv2/videoio/videoio_c.h
+OPENCV_MODULE_opencv_videoio_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_videoio_LINK_DEPS:INTERNAL=;
 //Location of opencv_videoio module sources
 OPENCV_MODULE_opencv_videoio_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/videoio
 //Optional dependencies of opencv_videoio module
@@ -2093,18 +2208,23 @@ OPENCV_MODULE_opencv_videoio_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_videoio module
 OPENCV_MODULE_opencv_videoio_REQ_DEPS:INTERNAL=opencv_imgproc;opencv_imgcodecs
 //List of source files for opencv_videoio
-OPENCV_MODULE_opencv_videoio_SOURCES:INTERNAL=src/cap.cpp;src/cap_images.cpp;src/cap_ffmpeg.cpp;src/cap_android.cpp;src/precomp.hpp;src/cap_ffmpeg_impl.hpp
+OPENCV_MODULE_opencv_videoio_SOURCES:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/cap.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/cap_images.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/cap_ffmpeg.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/cap_android.cpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/precomp.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videoio/src/cap_ffmpeg_impl.hpp
+OPENCV_MODULE_opencv_videostab_BINARY_DIR:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/videostab
 //The category of the module
 OPENCV_MODULE_opencv_videostab_CLASS:INTERNAL=PUBLIC
 //Flattened dependencies of opencv_videostab module
-OPENCV_MODULE_opencv_videostab_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video
+OPENCV_MODULE_opencv_videostab_DEPS:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video
 //Extra dependencies of opencv_videostab module
 OPENCV_MODULE_opencv_videostab_DEPS_EXT:INTERNAL=dl;log
-OPENCV_MODULE_opencv_videostab_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_videostab_DEPS_ORDERED:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_photo;opencv_video;opencv_videoio
+//Flattened dependencies of opencv_videostab module (for linker)
+OPENCV_MODULE_opencv_videostab_DEPS_TO_LINK:INTERNAL=opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video
 //Brief description of opencv_videostab module
 OPENCV_MODULE_opencv_videostab_DESCRIPTION:INTERNAL=Video stabilization
 //List of header files for opencv_videostab
 OPENCV_MODULE_opencv_videostab_HEADERS:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/deblurring.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/fast_marching.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/fast_marching_inl.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/frame_source.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/global_motion.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/inpainting.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/log.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/motion_core.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/motion_stabilizing.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/optical_flow.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/outlier_rejection.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/ring_buffer.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/stabilizer.hpp;/Users/swinston/Mirada/lib/c/opencv/modules/videostab/include/opencv2/videostab/wobble_suppression.hpp
+OPENCV_MODULE_opencv_videostab_IS_PART_OF_WORLD:INTERNAL=ON
+OPENCV_MODULE_opencv_videostab_LINK_DEPS:INTERNAL=;
 //Location of opencv_videostab module sources
 OPENCV_MODULE_opencv_videostab_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/videostab
 //Optional dependencies of opencv_videostab module
@@ -2123,18 +2243,22 @@ OPENCV_MODULE_opencv_viz_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/m
 OPENCV_MODULE_opencv_world_CLASS:INTERNAL=PUBLIC
 //Brief description of opencv_world module
 OPENCV_MODULE_opencv_world_DESCRIPTION:INTERNAL=All the selected OpenCV modules in a single binary
+OPENCV_MODULE_opencv_world_IS_PART_OF_WORLD:INTERNAL=OFF
+OPENCV_MODULE_opencv_world_LINK_DEPS:INTERNAL=
 //Location of opencv_world module sources
 OPENCV_MODULE_opencv_world_LOCATION:INTERNAL=/Users/swinston/Mirada/lib/c/opencv/modules/world
 //Optional dependencies of opencv_world module
-OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_optim;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
+OPENCV_MODULE_opencv_world_OPT_DEPS:INTERNAL=opencv_androidcamera;opencv_calib3d;opencv_core;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
 //Optional private dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS:INTERNAL=
 //Required private dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_PRIVATE_REQ_DEPS:INTERNAL=
 //Required dependencies of opencv_world module
 OPENCV_MODULE_opencv_world_REQ_DEPS:INTERNAL=opencv_core
+//List of OpenCV modules included into the world
+OPENCV_WORLD_MODULES:INTERNAL=
 //List of OpenCVModules targets
-OpenCVModules_TARGETS:INTERNAL=libtiff;libjpeg;libwebp;libjasper;libpng;IlmImf;opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect;opencv_photo;opencv_video;opencv_java;opencv_optim;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_videostab
+OpenCVModules_TARGETS:INTERNAL=libtiff;libjpeg;libwebp;libjasper;libpng;IlmImf;opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;opencv_photo;opencv_video;opencv_java;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_videostab
 //ADVANCED property for variable: PDFLATEX_COMPILER
 PDFLATEX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

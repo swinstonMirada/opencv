@@ -14,7 +14,7 @@ public class DenseOpticalFlow extends Algorithm {
 
 
     //
-    // C++:  void DenseOpticalFlow::calc(Mat I0, Mat I1, Mat& flow)
+    // C++:  void calc(Mat I0, Mat I1, Mat& flow)
     //
 
 /**
@@ -36,6 +36,24 @@ public class DenseOpticalFlow extends Algorithm {
     }
 
 
+    //
+    // C++:  void collectGarbage()
+    //
+
+/**
+ * <p>Releases all inner buffers.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#denseopticalflow-collectgarbage">org.opencv.video.DenseOpticalFlow.collectGarbage</a>
+ */
+    public  void collectGarbage()
+    {
+
+        collectGarbage_0(nativeObj);
+
+        return;
+    }
+
+
     @Override
     protected void finalize() throws Throwable {
         delete(nativeObj);
@@ -43,8 +61,11 @@ public class DenseOpticalFlow extends Algorithm {
 
 
 
-    // C++:  void DenseOpticalFlow::calc(Mat I0, Mat I1, Mat& flow)
+    // C++:  void calc(Mat I0, Mat I1, Mat& flow)
     private static native void calc_0(long nativeObj, long I0_nativeObj, long I1_nativeObj, long flow_nativeObj);
+
+    // C++:  void collectGarbage()
+    private static native void collectGarbage_0(long nativeObj);
 
     // native support for java finalize()
     private static native void delete(long nativeObj);

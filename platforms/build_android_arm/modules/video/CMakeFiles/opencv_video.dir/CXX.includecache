@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -144,6 +148,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -217,10 +225,6 @@ opencv2/core.hpp
 ../../modules/imgproc/include/opencv2/imgproc.hpp
 opencv2/core.hpp
 ../../modules/imgproc/include/opencv2/opencv2/core.hpp
-
-../../modules/imgproc/include/opencv2/imgproc/imgproc_c.h
-opencv2/imgproc/types_c.h
-../../modules/imgproc/include/opencv2/imgproc/opencv2/imgproc/types_c.h
 
 ../../modules/imgproc/include/opencv2/imgproc/types_c.h
 opencv2/core/core_c.h
@@ -2456,35 +2460,15 @@ bits/gthr-default.h
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/affineflow.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-opencv2/imgproc/imgproc_c.h
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencv2/imgproc/imgproc_c.h
-opencv2/video/tracking_c.h
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencv2/video/tracking_c.h
-
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_KNN.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-float.h
--
-
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gaussmix2.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/bgfg_gmg.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-limits
--
+opencl_kernels_video.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels_video.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/camshift.cpp
 precomp.hpp
@@ -2513,22 +2497,16 @@ stdio.h
 -
 lkpyramid.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels.hpp
+opencl_kernels_video.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels_video.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/lkpyramid.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/motempl.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/optflowgf.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels.hpp
+opencl_kernels_video.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels_video.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
 opencv2/video.hpp
@@ -2544,15 +2522,11 @@ opencv2/core.hpp
 opencv2/video/video_tegra.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencv2/video/video_tegra.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/simpleflow.cpp
-precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/tvl1flow.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels.hpp
+opencl_kernels_video.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencl_kernels_video.hpp
 limits
 -
 iomanip
@@ -2568,13 +2542,13 @@ precomp.hpp
 opencv2/video.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/src/opencv2/video.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.hpp
+opencl_kernels_video.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencl_kernels_video.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/video/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -3156,7 +3130,7 @@ unistd.h
 
 cvconfig.h
 
-modules/video/opencl_kernels.hpp
+modules/video/opencl_kernels_video.hpp
 opencv2/core/ocl_genbase.hpp
 modules/video/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp

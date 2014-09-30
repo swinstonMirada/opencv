@@ -246,6 +246,10 @@ bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_imgcodecs.a
+bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_core.a
+bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_androidcamera.a
+bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_imgproc.a
+bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_highgui.a
 bin/opencv_test_videoio: lib/armeabi-v7a/libopencv_videoio.a

@@ -11,6 +11,7 @@ modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highg
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui_pch_dephelp.dir/opencv_test_highgui_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp

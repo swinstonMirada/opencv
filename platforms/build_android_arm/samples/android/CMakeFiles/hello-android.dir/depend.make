@@ -4,7 +4,6 @@
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
-samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/core.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/cvstd.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/cvstd.inl.hpp
@@ -12,15 +11,16 @@ samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../mod
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
-samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/highgui/include/opencv2/highgui/highgui.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
-samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp
+samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 samples/android/CMakeFiles/hello-android.dir/hello-android/main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h

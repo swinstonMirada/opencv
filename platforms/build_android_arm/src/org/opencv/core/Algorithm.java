@@ -173,11 +173,11 @@ import org.opencv.utils.Converters;
  *
  * <p>#include "opencv2/opencv.hpp"</p>
  *
- * <p>#include "opencv2/nonfree.hpp"...</p>
+ * <p>#include "opencv2/xfeatures2d.hpp"</p>
  *
- * <p>initModule_nonfree(); // to load SURF/SIFT etc.</p>
+ * <p>using namespace cv.xfeatures2d;...</p>
  *
- * <p>Ptr<Feature2D> sift = Algorithm.create<Feature2D>("Feature2D.SIFT");</p>
+ * <p>Ptr<Feature2D> sift = SIFT.create();</p>
  *
  * <p>FileStorage fs("sift_params.xml", FileStorage.READ);</p>
  *
@@ -193,8 +193,8 @@ import org.opencv.utils.Converters;
  * file to use different parameters</p>
  *
  *
- * <p>sift->set("contrastThreshold", 0.01f); // lower the contrast threshold,
- * compared to the default value</p>
+ * <p>sift->setContrastThreshold(0.01f); // lower the contrast threshold, compared
+ * to the default value</p>
  *
  *
  * <p>WriteStructContext ws(fs, "sift_params", CV_NODE_MAP);</p>
@@ -207,7 +207,7 @@ import org.opencv.utils.Converters;
  *
  * <p>vector<KeyPoint> keypoints;</p>
  *
- * <p>(*sift)(image, noArray(), keypoints, descriptors);</p>
+ * <p>sift->detectAndCompute(image, noArray(), keypoints, descriptors);</p>
  *
  * @see <a href="http://docs.opencv.org/modules/core/doc/basic_structures.html#algorithm">org.opencv.core.Algorithm</a>
  */
@@ -218,21 +218,21 @@ public class Algorithm {
 
 
     //
-    // C++: static Ptr_Algorithm Algorithm::_create(String name)
+    // C++: static Ptr_Algorithm _create(String name)
     //
 
     // Return type 'Ptr_Algorithm' is not supported, skipping the function
 
 
     //
-    // C++:  Ptr_Algorithm Algorithm::getAlgorithm(String name)
+    // C++:  Ptr_Algorithm getAlgorithm(String name)
     //
 
     // Return type 'Ptr_Algorithm' is not supported, skipping the function
 
 
     //
-    // C++:  bool Algorithm::getBool(String name)
+    // C++:  bool getBool(String name)
     //
 
     public  boolean getBool(String name)
@@ -245,7 +245,7 @@ public class Algorithm {
 
 
     //
-    // C++:  double Algorithm::getDouble(String name)
+    // C++:  double getDouble(String name)
     //
 
     public  double getDouble(String name)
@@ -258,7 +258,7 @@ public class Algorithm {
 
 
     //
-    // C++:  int Algorithm::getInt(String name)
+    // C++:  int getInt(String name)
     //
 
     public  int getInt(String name)
@@ -271,14 +271,14 @@ public class Algorithm {
 
 
     //
-    // C++: static void Algorithm::getList(vector_String& algorithms)
+    // C++: static void getList(vector_String& algorithms)
     //
 
     // Unknown type 'vector_String' (O), skipping the function
 
 
     //
-    // C++:  Mat Algorithm::getMat(String name)
+    // C++:  Mat getMat(String name)
     //
 
     public  Mat getMat(String name)
@@ -291,7 +291,7 @@ public class Algorithm {
 
 
     //
-    // C++:  vector_Mat Algorithm::getMatVector(String name)
+    // C++:  vector_Mat getMatVector(String name)
     //
 
     public  List<Mat> getMatVector(String name)
@@ -304,14 +304,14 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::getParams(vector_String& names)
+    // C++:  void getParams(vector_String& names)
     //
 
     // Unknown type 'vector_String' (O), skipping the function
 
 
     //
-    // C++:  String Algorithm::getString(String name)
+    // C++:  String getString(String name)
     //
 
     public  String getString(String name)
@@ -324,7 +324,7 @@ public class Algorithm {
 
 
     //
-    // C++:  String Algorithm::paramHelp(String name)
+    // C++:  String paramHelp(String name)
     //
 
     public  String paramHelp(String name)
@@ -337,7 +337,7 @@ public class Algorithm {
 
 
     //
-    // C++:  int Algorithm::paramType(String name)
+    // C++:  int paramType(String name)
     //
 
     public  int paramType(String name)
@@ -350,14 +350,14 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setAlgorithm(String name, Ptr_Algorithm value)
+    // C++:  void setAlgorithm(String name, Ptr_Algorithm value)
     //
 
     // Unknown type 'Ptr_Algorithm' (I), skipping the function
 
 
     //
-    // C++:  void Algorithm::setBool(String name, bool value)
+    // C++:  void setBool(String name, bool value)
     //
 
     public  void setBool(String name, boolean value)
@@ -370,7 +370,7 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setDouble(String name, double value)
+    // C++:  void setDouble(String name, double value)
     //
 
     public  void setDouble(String name, double value)
@@ -383,7 +383,7 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setInt(String name, int value)
+    // C++:  void setInt(String name, int value)
     //
 
     public  void setInt(String name, int value)
@@ -396,7 +396,7 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setMat(String name, Mat value)
+    // C++:  void setMat(String name, Mat value)
     //
 
     public  void setMat(String name, Mat value)
@@ -409,7 +409,7 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setMatVector(String name, vector_Mat value)
+    // C++:  void setMatVector(String name, vector_Mat value)
     //
 
     public  void setMatVector(String name, List<Mat> value)
@@ -422,7 +422,7 @@ public class Algorithm {
 
 
     //
-    // C++:  void Algorithm::setString(String name, String value)
+    // C++:  void setString(String name, String value)
     //
 
     public  void setString(String name, String value)
@@ -441,46 +441,46 @@ public class Algorithm {
 
 
 
-    // C++:  bool Algorithm::getBool(String name)
+    // C++:  bool getBool(String name)
     private static native boolean getBool_0(long nativeObj, String name);
 
-    // C++:  double Algorithm::getDouble(String name)
+    // C++:  double getDouble(String name)
     private static native double getDouble_0(long nativeObj, String name);
 
-    // C++:  int Algorithm::getInt(String name)
+    // C++:  int getInt(String name)
     private static native int getInt_0(long nativeObj, String name);
 
-    // C++:  Mat Algorithm::getMat(String name)
+    // C++:  Mat getMat(String name)
     private static native long getMat_0(long nativeObj, String name);
 
-    // C++:  vector_Mat Algorithm::getMatVector(String name)
+    // C++:  vector_Mat getMatVector(String name)
     private static native long getMatVector_0(long nativeObj, String name);
 
-    // C++:  String Algorithm::getString(String name)
+    // C++:  String getString(String name)
     private static native String getString_0(long nativeObj, String name);
 
-    // C++:  String Algorithm::paramHelp(String name)
+    // C++:  String paramHelp(String name)
     private static native String paramHelp_0(long nativeObj, String name);
 
-    // C++:  int Algorithm::paramType(String name)
+    // C++:  int paramType(String name)
     private static native int paramType_0(long nativeObj, String name);
 
-    // C++:  void Algorithm::setBool(String name, bool value)
+    // C++:  void setBool(String name, bool value)
     private static native void setBool_0(long nativeObj, String name, boolean value);
 
-    // C++:  void Algorithm::setDouble(String name, double value)
+    // C++:  void setDouble(String name, double value)
     private static native void setDouble_0(long nativeObj, String name, double value);
 
-    // C++:  void Algorithm::setInt(String name, int value)
+    // C++:  void setInt(String name, int value)
     private static native void setInt_0(long nativeObj, String name, int value);
 
-    // C++:  void Algorithm::setMat(String name, Mat value)
+    // C++:  void setMat(String name, Mat value)
     private static native void setMat_0(long nativeObj, String name, long value_nativeObj);
 
-    // C++:  void Algorithm::setMatVector(String name, vector_Mat value)
+    // C++:  void setMatVector(String name, vector_Mat value)
     private static native void setMatVector_0(long nativeObj, String name, long value_mat_nativeObj);
 
-    // C++:  void Algorithm::setString(String name, String value)
+    // C++:  void setString(String name, String value)
     private static native void setString_0(long nativeObj, String name, String value);
 
     // native support for java finalize()

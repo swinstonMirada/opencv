@@ -288,29 +288,29 @@ pch_Generate_opencv_test_core/fast:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/pch_Generate_opencv_test_core.dir/build.make modules/core/CMakeFiles/pch_Generate_opencv_test_core.dir/build
 .PHONY : pch_Generate_opencv_test_core/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_core.o: opencl_kernels_core.cpp.o
+.PHONY : opencl_kernels_core.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_core.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o
+.PHONY : opencl_kernels_core.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_core.i: opencl_kernels_core.cpp.i
+.PHONY : opencl_kernels_core.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_core.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.i
+.PHONY : opencl_kernels_core.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_core.s: opencl_kernels_core.cpp.s
+.PHONY : opencl_kernels_core.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_core.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.s
+.PHONY : opencl_kernels_core.cpp.s
 
 opencv_core_pch_dephelp.o: opencv_core_pch_dephelp.cxx.o
 .PHONY : opencv_core_pch_dephelp.o
@@ -1128,6 +1128,30 @@ src/command_line_parser.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.s
 .PHONY : src/command_line_parser.cpp.s
 
+src/conjugate_gradient.o: src/conjugate_gradient.cpp.o
+.PHONY : src/conjugate_gradient.o
+
+# target to build an object file
+src/conjugate_gradient.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o
+.PHONY : src/conjugate_gradient.cpp.o
+
+src/conjugate_gradient.i: src/conjugate_gradient.cpp.i
+.PHONY : src/conjugate_gradient.i
+
+# target to preprocess a source file
+src/conjugate_gradient.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.i
+.PHONY : src/conjugate_gradient.cpp.i
+
+src/conjugate_gradient.s: src/conjugate_gradient.cpp.s
+.PHONY : src/conjugate_gradient.s
+
+# target to generate assembly for a file
+src/conjugate_gradient.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.s
+.PHONY : src/conjugate_gradient.cpp.s
+
 src/convert.o: src/convert.cpp.o
 .PHONY : src/convert.o
 
@@ -1344,29 +1368,29 @@ src/directx.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.s
 .PHONY : src/directx.cpp.s
 
-src/drawing.o: src/drawing.cpp.o
-.PHONY : src/drawing.o
+src/downhill_simplex.o: src/downhill_simplex.cpp.o
+.PHONY : src/downhill_simplex.o
 
 # target to build an object file
-src/drawing.cpp.o:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o
-.PHONY : src/drawing.cpp.o
+src/downhill_simplex.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o
+.PHONY : src/downhill_simplex.cpp.o
 
-src/drawing.i: src/drawing.cpp.i
-.PHONY : src/drawing.i
+src/downhill_simplex.i: src/downhill_simplex.cpp.i
+.PHONY : src/downhill_simplex.i
 
 # target to preprocess a source file
-src/drawing.cpp.i:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.i
-.PHONY : src/drawing.cpp.i
+src/downhill_simplex.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.i
+.PHONY : src/downhill_simplex.cpp.i
 
-src/drawing.s: src/drawing.cpp.s
-.PHONY : src/drawing.s
+src/downhill_simplex.s: src/downhill_simplex.cpp.s
+.PHONY : src/downhill_simplex.s
 
 # target to generate assembly for a file
-src/drawing.cpp.s:
-	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.s
-.PHONY : src/drawing.cpp.s
+src/downhill_simplex.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.s
+.PHONY : src/downhill_simplex.cpp.s
 
 src/dxt.o: src/dxt.cpp.o
 .PHONY : src/dxt.o
@@ -1440,6 +1464,30 @@ src/glob.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.s
 .PHONY : src/glob.cpp.s
 
+src/kmeans.o: src/kmeans.cpp.o
+.PHONY : src/kmeans.o
+
+# target to build an object file
+src/kmeans.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o
+.PHONY : src/kmeans.cpp.o
+
+src/kmeans.i: src/kmeans.cpp.i
+.PHONY : src/kmeans.i
+
+# target to preprocess a source file
+src/kmeans.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.i
+.PHONY : src/kmeans.cpp.i
+
+src/kmeans.s: src/kmeans.cpp.s
+.PHONY : src/kmeans.s
+
+# target to generate assembly for a file
+src/kmeans.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.s
+.PHONY : src/kmeans.cpp.s
+
 src/lapack.o: src/lapack.cpp.o
 .PHONY : src/lapack.o
 
@@ -1463,6 +1511,54 @@ src/lapack.s: src/lapack.cpp.s
 src/lapack.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.s
 .PHONY : src/lapack.cpp.s
+
+src/lda.o: src/lda.cpp.o
+.PHONY : src/lda.o
+
+# target to build an object file
+src/lda.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o
+.PHONY : src/lda.cpp.o
+
+src/lda.i: src/lda.cpp.i
+.PHONY : src/lda.i
+
+# target to preprocess a source file
+src/lda.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.i
+.PHONY : src/lda.cpp.i
+
+src/lda.s: src/lda.cpp.s
+.PHONY : src/lda.s
+
+# target to generate assembly for a file
+src/lda.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.s
+.PHONY : src/lda.cpp.s
+
+src/lpsolver.o: src/lpsolver.cpp.o
+.PHONY : src/lpsolver.o
+
+# target to build an object file
+src/lpsolver.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o
+.PHONY : src/lpsolver.cpp.o
+
+src/lpsolver.i: src/lpsolver.cpp.i
+.PHONY : src/lpsolver.i
+
+# target to preprocess a source file
+src/lpsolver.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.i
+.PHONY : src/lpsolver.cpp.i
+
+src/lpsolver.s: src/lpsolver.cpp.s
+.PHONY : src/lpsolver.s
+
+# target to generate assembly for a file
+src/lpsolver.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.s
+.PHONY : src/lpsolver.cpp.s
 
 src/mathfuncs.o: src/mathfuncs.cpp.o
 .PHONY : src/mathfuncs.o
@@ -1727,6 +1823,30 @@ src/parallel.s: src/parallel.cpp.s
 src/parallel.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.s
 .PHONY : src/parallel.cpp.s
+
+src/pca.o: src/pca.cpp.o
+.PHONY : src/pca.o
+
+# target to build an object file
+src/pca.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o
+.PHONY : src/pca.cpp.o
+
+src/pca.i: src/pca.cpp.i
+.PHONY : src/pca.i
+
+# target to preprocess a source file
+src/pca.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.i
+.PHONY : src/pca.cpp.i
+
+src/pca.s: src/pca.cpp.s
+.PHONY : src/pca.s
+
+# target to generate assembly for a file
+src/pca.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.s
+.PHONY : src/pca.cpp.s
 
 src/persistence.o: src/persistence.cpp.o
 .PHONY : src/persistence.o
@@ -2112,6 +2232,30 @@ test/test_concatenation.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.s
 .PHONY : test/test_concatenation.cpp.s
 
+test/test_conjugate_gradient.o: test/test_conjugate_gradient.cpp.o
+.PHONY : test/test_conjugate_gradient.o
+
+# target to build an object file
+test/test_conjugate_gradient.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o
+.PHONY : test/test_conjugate_gradient.cpp.o
+
+test/test_conjugate_gradient.i: test/test_conjugate_gradient.cpp.i
+.PHONY : test/test_conjugate_gradient.i
+
+# target to preprocess a source file
+test/test_conjugate_gradient.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.i
+.PHONY : test/test_conjugate_gradient.cpp.i
+
+test/test_conjugate_gradient.s: test/test_conjugate_gradient.cpp.s
+.PHONY : test/test_conjugate_gradient.s
+
+# target to generate assembly for a file
+test/test_conjugate_gradient.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.s
+.PHONY : test/test_conjugate_gradient.cpp.s
+
 test/test_countnonzero.o: test/test_countnonzero.cpp.o
 .PHONY : test/test_countnonzero.o
 
@@ -2135,6 +2279,30 @@ test/test_countnonzero.s: test/test_countnonzero.cpp.s
 test/test_countnonzero.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.s
 .PHONY : test/test_countnonzero.cpp.s
+
+test/test_downhill_simplex.o: test/test_downhill_simplex.cpp.o
+.PHONY : test/test_downhill_simplex.o
+
+# target to build an object file
+test/test_downhill_simplex.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o
+.PHONY : test/test_downhill_simplex.cpp.o
+
+test/test_downhill_simplex.i: test/test_downhill_simplex.cpp.i
+.PHONY : test/test_downhill_simplex.i
+
+# target to preprocess a source file
+test/test_downhill_simplex.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.i
+.PHONY : test/test_downhill_simplex.cpp.i
+
+test/test_downhill_simplex.s: test/test_downhill_simplex.cpp.s
+.PHONY : test/test_downhill_simplex.s
+
+# target to generate assembly for a file
+test/test_downhill_simplex.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.s
+.PHONY : test/test_downhill_simplex.cpp.s
 
 test/test_ds.o: test/test_ds.cpp.o
 .PHONY : test/test_ds.o
@@ -2255,6 +2423,30 @@ test/test_ippasync.s: test/test_ippasync.cpp.s
 test/test_ippasync.cpp.s:
 	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.s
 .PHONY : test/test_ippasync.cpp.s
+
+test/test_lpsolver.o: test/test_lpsolver.cpp.o
+.PHONY : test/test_lpsolver.o
+
+# target to build an object file
+test/test_lpsolver.cpp.o:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o
+.PHONY : test/test_lpsolver.cpp.o
+
+test/test_lpsolver.i: test/test_lpsolver.cpp.i
+.PHONY : test/test_lpsolver.i
+
+# target to preprocess a source file
+test/test_lpsolver.cpp.i:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.i
+.PHONY : test/test_lpsolver.cpp.i
+
+test/test_lpsolver.s: test/test_lpsolver.cpp.s
+.PHONY : test/test_lpsolver.s
+
+# target to generate assembly for a file
+test/test_lpsolver.cpp.s:
+	cd ../.. && $(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.s
+.PHONY : test/test_lpsolver.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
 .PHONY : test/test_main.o
@@ -2495,9 +2687,9 @@ help:
 	@echo "... pch_Generate_opencv_perf_core"
 	@echo "... pch_Generate_opencv_test_core"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_core.o"
+	@echo "... opencl_kernels_core.i"
+	@echo "... opencl_kernels_core.s"
 	@echo "... opencv_core_pch_dephelp.o"
 	@echo "... opencv_core_pch_dephelp.i"
 	@echo "... opencv_core_pch_dephelp.s"
@@ -2600,6 +2792,9 @@ help:
 	@echo "... src/command_line_parser.o"
 	@echo "... src/command_line_parser.i"
 	@echo "... src/command_line_parser.s"
+	@echo "... src/conjugate_gradient.o"
+	@echo "... src/conjugate_gradient.i"
+	@echo "... src/conjugate_gradient.s"
 	@echo "... src/convert.o"
 	@echo "... src/convert.i"
 	@echo "... src/convert.s"
@@ -2627,9 +2822,9 @@ help:
 	@echo "... src/directx.o"
 	@echo "... src/directx.i"
 	@echo "... src/directx.s"
-	@echo "... src/drawing.o"
-	@echo "... src/drawing.i"
-	@echo "... src/drawing.s"
+	@echo "... src/downhill_simplex.o"
+	@echo "... src/downhill_simplex.i"
+	@echo "... src/downhill_simplex.s"
 	@echo "... src/dxt.o"
 	@echo "... src/dxt.i"
 	@echo "... src/dxt.s"
@@ -2639,9 +2834,18 @@ help:
 	@echo "... src/glob.o"
 	@echo "... src/glob.i"
 	@echo "... src/glob.s"
+	@echo "... src/kmeans.o"
+	@echo "... src/kmeans.i"
+	@echo "... src/kmeans.s"
 	@echo "... src/lapack.o"
 	@echo "... src/lapack.i"
 	@echo "... src/lapack.s"
+	@echo "... src/lda.o"
+	@echo "... src/lda.i"
+	@echo "... src/lda.s"
+	@echo "... src/lpsolver.o"
+	@echo "... src/lpsolver.i"
+	@echo "... src/lpsolver.s"
 	@echo "... src/mathfuncs.o"
 	@echo "... src/mathfuncs.i"
 	@echo "... src/mathfuncs.s"
@@ -2675,6 +2879,9 @@ help:
 	@echo "... src/parallel.o"
 	@echo "... src/parallel.i"
 	@echo "... src/parallel.s"
+	@echo "... src/pca.o"
+	@echo "... src/pca.i"
+	@echo "... src/pca.s"
 	@echo "... src/persistence.o"
 	@echo "... src/persistence.i"
 	@echo "... src/persistence.s"
@@ -2723,9 +2930,15 @@ help:
 	@echo "... test/test_concatenation.o"
 	@echo "... test/test_concatenation.i"
 	@echo "... test/test_concatenation.s"
+	@echo "... test/test_conjugate_gradient.o"
+	@echo "... test/test_conjugate_gradient.i"
+	@echo "... test/test_conjugate_gradient.s"
 	@echo "... test/test_countnonzero.o"
 	@echo "... test/test_countnonzero.i"
 	@echo "... test/test_countnonzero.s"
+	@echo "... test/test_downhill_simplex.o"
+	@echo "... test/test_downhill_simplex.i"
+	@echo "... test/test_downhill_simplex.s"
 	@echo "... test/test_ds.o"
 	@echo "... test/test_ds.i"
 	@echo "... test/test_ds.s"
@@ -2741,6 +2954,9 @@ help:
 	@echo "... test/test_ippasync.o"
 	@echo "... test/test_ippasync.i"
 	@echo "... test/test_ippasync.s"
+	@echo "... test/test_lpsolver.o"
+	@echo "... test/test_lpsolver.i"
+	@echo "... test/test_lpsolver.s"
 	@echo "... test/test_main.o"
 	@echo "... test/test_main.i"
 	@echo "... test/test_main.s"

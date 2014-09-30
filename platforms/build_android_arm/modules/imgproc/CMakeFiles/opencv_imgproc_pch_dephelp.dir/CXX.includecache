@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -139,6 +143,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2390,6 +2398,8 @@ bits/gthr-default.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/_geom.h
 
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filterengine.hpp
+
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/precomp.hpp
 opencv2/imgproc.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencv2/imgproc.hpp
@@ -2419,6 +2429,8 @@ opencv2/imgproc/imgproc_tegra.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencv2/imgproc/imgproc_tegra.hpp
 _geom.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/_geom.h
+filterengine.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/filterengine.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencv_imgproc_pch_dephelp.cxx
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/precomp.hpp

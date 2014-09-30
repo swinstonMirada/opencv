@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -150,6 +154,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -240,10 +248,6 @@ opencv2/core.hpp
 opencv2/core/core_c.h
 ../../modules/imgproc/include/opencv2/imgproc/opencv2/core/core_c.h
 
-../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
-opencv2/core/cuda.hpp
-../../modules/nonfree/include/opencv2/nonfree/opencv2/core/cuda.hpp
-
 ../../modules/stitching/include/opencv2/stitching.hpp
 opencv2/core.hpp
 ../../modules/stitching/include/opencv2/opencv2/core.hpp
@@ -283,8 +287,8 @@ opencv2/features2d.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
-opencv2/nonfree/cuda.hpp
-../../modules/stitching/include/opencv2/stitching/detail/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+../../modules/stitching/include/opencv2/stitching/detail/opencv2/xfeatures2d/cuda.hpp
 
 ../../modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp
 opencv2/core.hpp
@@ -2989,8 +2993,8 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/ocl/test_warpers.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/ocl/opencv2/ts/ocl_test.hpp
 opencv2/stitching/warpers.hpp
@@ -3027,22 +3031,6 @@ opencv2/stitching/detail/blenders.hpp
 -
 
 cvconfig.h
-
-modules/stitching/test_precomp.hpp
-iostream
--
-string
--
-opencv2/ts.hpp
--
-opencv2/imgcodecs.hpp
--
-opencv2/stitching.hpp
--
-opencv2/stitching/detail/matchers.hpp
--
-opencv2/stitching/detail/blenders.hpp
--
 
 opencv2/opencv_modules.hpp
 

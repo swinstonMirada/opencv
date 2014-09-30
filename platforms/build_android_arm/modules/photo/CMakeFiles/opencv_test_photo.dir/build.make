@@ -121,9 +121,32 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o.provides:
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o
 
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o: ../../modules/photo/test/test_denoise_tvl1.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o -c ../../../../modules/photo/test/test_denoise_tvl1.cpp
+
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.i"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/photo/test/test_denoise_tvl1.cpp > CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.i
+
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.s"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/photo/test/test_denoise_tvl1.cpp -o CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.s
+
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.requires:
+.PHONY : modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.requires
+
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.provides: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.requires
+	$(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.provides.build
+.PHONY : modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.provides
+
+modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o
+
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o: ../../modules/photo/test/test_denoising.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o -c ../../../../modules/photo/test/test_denoising.cpp
 
@@ -146,7 +169,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o.provide
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o: ../../modules/photo/test/test_denoising.cuda.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o -c ../../../../modules/photo/test/test_denoising.cuda.cpp
 
@@ -169,7 +192,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o.pr
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o: ../../modules/photo/test/test_hdr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o -c ../../../../modules/photo/test/test_hdr.cpp
 
@@ -192,7 +215,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o.provides.buil
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o: ../../modules/photo/test/test_inpaint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o -c ../../../../modules/photo/test/test_inpaint.cpp
 
@@ -215,7 +238,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_inpaint.cpp.o.provides.
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o: ../../modules/photo/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o -c ../../../../modules/photo/test/test_main.cpp
 
@@ -238,7 +261,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_main.cpp.o.provides.bui
 
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_npr.cpp.o: modules/photo/CMakeFiles/opencv_test_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_npr.cpp.o: ../../modules/photo/test/test_npr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_npr.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_photo.dir/test/test_npr.cpp.o -c ../../../../modules/photo/test/test_npr.cpp
 
@@ -264,6 +287,7 @@ opencv_test_photo_OBJECTS = \
 "CMakeFiles/opencv_test_photo.dir/test/ocl/test_denoising.cpp.o" \
 "CMakeFiles/opencv_test_photo.dir/test/test_cloning.cpp.o" \
 "CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o" \
+"CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o" \
 "CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o" \
 "CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o" \
 "CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o" \
@@ -277,6 +301,7 @@ opencv_test_photo_EXTERNAL_OBJECTS =
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/ocl/test_denoising.cpp.o
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_cloning.cpp.o
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o
+bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o
 bin/opencv_test_photo: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o
@@ -290,6 +315,8 @@ bin/opencv_test_photo: lib/armeabi-v7a/libopencv_photo.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_ts.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_videoio.a
+bin/opencv_test_photo: lib/armeabi-v7a/libopencv_core.a
+bin/opencv_test_photo: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_test_photo: lib/armeabi-v7a/libopencv_imgproc.a
@@ -318,6 +345,7 @@ modules/photo/CMakeFiles/opencv_test_photo.dir/build: bin/opencv_test_photo
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/ocl/test_denoising.cpp.o.requires
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_cloning.cpp.o.requires
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.o.requires
+modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o.requires
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cpp.o.requires
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoising.cuda.cpp.o.requires
 modules/photo/CMakeFiles/opencv_test_photo.dir/requires: modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_hdr.cpp.o.requires

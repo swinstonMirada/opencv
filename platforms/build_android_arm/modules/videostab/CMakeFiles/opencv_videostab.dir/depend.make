@@ -3,6 +3,7 @@
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -13,11 +14,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../mo
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -450,6 +453,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/deblurring.cpp.o: opencv2/
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -460,11 +464,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../..
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -893,6 +899,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/fast_marching.cpp.o: cvcon
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -903,11 +910,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -1337,6 +1346,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/frame_source.cpp.o: opencv
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -1347,11 +1357,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../..
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -1784,6 +1796,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/global_motion.cpp.o: openc
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -1794,11 +1807,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../mo
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -2234,6 +2249,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/inpainting.cpp.o: opencv2/
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -2244,11 +2260,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/c
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -2676,6 +2694,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/log.cpp.o: cvconfig.h
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -2686,11 +2705,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -3124,6 +3145,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/motion_stabilizing.cpp.o: 
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -3134,11 +3156,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -3567,6 +3591,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/optical_flow.cpp.o: opencv
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -3577,11 +3602,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: .
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -4009,6 +4036,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/outlier_rejection.cpp.o: c
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/cuda.hpp
@@ -4022,11 +4050,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../mo
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: ../../modules/flann/include/opencv2/flann/config.h
@@ -4468,6 +4498,7 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/stabilizer.cpp.o: opencv2/
 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/cuda.hpp
@@ -4481,11 +4512,13 @@ modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: 
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab.dir/src/wobble_suppression.cpp.o: ../../modules/flann/include/opencv2/flann/config.h

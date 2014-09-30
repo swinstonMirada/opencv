@@ -11,6 +11,7 @@ modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

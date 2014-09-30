@@ -1,17 +1,17 @@
 PORTED FUNCs LIST (12 of 12):
 
-  VideoCapture::VideoCapture()
-  VideoCapture::VideoCapture(String filename)
-  VideoCapture::VideoCapture(int device)
- double VideoCapture::get(int propId)
- bool VideoCapture::grab()
- bool VideoCapture::isOpened()
- bool VideoCapture::open(String filename)
- bool VideoCapture::open(int device)
- bool VideoCapture::read(Mat& image)
- void VideoCapture::release()
- bool VideoCapture::retrieve(Mat& image, int flag = 0)
- bool VideoCapture::set(int propId, double value)
+  VideoCapture()
+  VideoCapture(String filename)
+  VideoCapture(int device)
+ double get(int propId)
+ bool grab()
+ bool isOpened()
+ bool open(String filename)
+ bool open(int device)
+ bool read(Mat& image)
+ void release()
+ bool retrieve(Mat& image, int flag = 0)
+ bool set(int propId, double value)
 
 SKIPPED FUNCs LIST (0 of 12):
 

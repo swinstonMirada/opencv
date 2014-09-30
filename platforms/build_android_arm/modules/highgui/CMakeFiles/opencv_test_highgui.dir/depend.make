@@ -11,6 +11,7 @@ modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../mo
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_gui.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -362,6 +363,7 @@ modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../m
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/highgui/CMakeFiles/opencv_test_highgui.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

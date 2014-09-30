@@ -3,6 +3,7 @@
 
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core.hpp
+modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cvdef.h
@@ -13,11 +14,13 @@ modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_p
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/types.hpp
+modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/utility.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/version.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/features2d/include/opencv2/features2d.hpp
 modules/videostab/CMakeFiles/opencv_videostab_pch_dephelp.dir/opencv_videostab_pch_dephelp.cxx.o: ../../modules/flann/include/opencv2/flann/config.h

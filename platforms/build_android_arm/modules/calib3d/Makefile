@@ -288,29 +288,29 @@ pch_Generate_opencv_test_calib3d/fast:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/pch_Generate_opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/pch_Generate_opencv_test_calib3d.dir/build
 .PHONY : pch_Generate_opencv_test_calib3d/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_calib3d.o: opencl_kernels_calib3d.cpp.o
+.PHONY : opencl_kernels_calib3d.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_calib3d.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.o
+.PHONY : opencl_kernels_calib3d.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_calib3d.i: opencl_kernels_calib3d.cpp.i
+.PHONY : opencl_kernels_calib3d.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_calib3d.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.i
+.PHONY : opencl_kernels_calib3d.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_calib3d.s: opencl_kernels_calib3d.cpp.s
+.PHONY : opencl_kernels_calib3d.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_calib3d.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/opencl_kernels_calib3d.cpp.s
+.PHONY : opencl_kernels_calib3d.cpp.s
 
 opencv_calib3d_pch_dephelp.o: opencv_calib3d_pch_dephelp.cxx.o
 .PHONY : opencv_calib3d_pch_dephelp.o
@@ -648,6 +648,30 @@ src/compat_stereo.cpp.s:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/compat_stereo.cpp.s
 .PHONY : src/compat_stereo.cpp.s
 
+src/dls.o: src/dls.cpp.o
+.PHONY : src/dls.o
+
+# target to build an object file
+src/dls.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.o
+.PHONY : src/dls.cpp.o
+
+src/dls.i: src/dls.cpp.i
+.PHONY : src/dls.i
+
+# target to preprocess a source file
+src/dls.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.i
+.PHONY : src/dls.cpp.i
+
+src/dls.s: src/dls.cpp.s
+.PHONY : src/dls.s
+
+# target to generate assembly for a file
+src/dls.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/dls.cpp.s
+.PHONY : src/dls.cpp.s
+
 src/epnp.o: src/epnp.cpp.o
 .PHONY : src/epnp.o
 
@@ -671,6 +695,30 @@ src/epnp.s: src/epnp.cpp.s
 src/epnp.cpp.s:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/epnp.cpp.s
 .PHONY : src/epnp.cpp.s
+
+src/fisheye.o: src/fisheye.cpp.o
+.PHONY : src/fisheye.o
+
+# target to build an object file
+src/fisheye.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.o
+.PHONY : src/fisheye.cpp.o
+
+src/fisheye.i: src/fisheye.cpp.i
+.PHONY : src/fisheye.i
+
+# target to preprocess a source file
+src/fisheye.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.i
+.PHONY : src/fisheye.cpp.i
+
+src/fisheye.s: src/fisheye.cpp.s
+.PHONY : src/fisheye.s
+
+# target to generate assembly for a file
+src/fisheye.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fisheye.cpp.s
+.PHONY : src/fisheye.cpp.s
 
 src/five-point.o: src/five-point.cpp.o
 .PHONY : src/five-point.o
@@ -719,6 +767,30 @@ src/fundam.s: src/fundam.cpp.s
 src/fundam.cpp.s:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/fundam.cpp.s
 .PHONY : src/fundam.cpp.s
+
+src/homography_decomp.o: src/homography_decomp.cpp.o
+.PHONY : src/homography_decomp.o
+
+# target to build an object file
+src/homography_decomp.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.o
+.PHONY : src/homography_decomp.cpp.o
+
+src/homography_decomp.i: src/homography_decomp.cpp.i
+.PHONY : src/homography_decomp.i
+
+# target to preprocess a source file
+src/homography_decomp.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.i
+.PHONY : src/homography_decomp.cpp.i
+
+src/homography_decomp.s: src/homography_decomp.cpp.s
+.PHONY : src/homography_decomp.s
+
+# target to generate assembly for a file
+src/homography_decomp.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_calib3d.dir/src/homography_decomp.cpp.s
+.PHONY : src/homography_decomp.cpp.s
 
 src/levmarq.o: src/levmarq.cpp.o
 .PHONY : src/levmarq.o
@@ -1248,6 +1320,30 @@ test/test_cornerssubpix.cpp.s:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.s
 .PHONY : test/test_cornerssubpix.cpp.s
 
+test/test_fisheye.o: test/test_fisheye.cpp.o
+.PHONY : test/test_fisheye.o
+
+# target to build an object file
+test/test_fisheye.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o
+.PHONY : test/test_fisheye.cpp.o
+
+test/test_fisheye.i: test/test_fisheye.cpp.i
+.PHONY : test/test_fisheye.i
+
+# target to preprocess a source file
+test/test_fisheye.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.i
+.PHONY : test/test_fisheye.cpp.i
+
+test/test_fisheye.s: test/test_fisheye.cpp.s
+.PHONY : test/test_fisheye.s
+
+# target to generate assembly for a file
+test/test_fisheye.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.s
+.PHONY : test/test_fisheye.cpp.s
+
 test/test_fundam.o: test/test_fundam.cpp.o
 .PHONY : test/test_fundam.o
 
@@ -1295,6 +1391,30 @@ test/test_homography.s: test/test_homography.cpp.s
 test/test_homography.cpp.s:
 	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.s
 .PHONY : test/test_homography.cpp.s
+
+test/test_homography_decomp.o: test/test_homography_decomp.cpp.o
+.PHONY : test/test_homography_decomp.o
+
+# target to build an object file
+test/test_homography_decomp.cpp.o:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o
+.PHONY : test/test_homography_decomp.cpp.o
+
+test/test_homography_decomp.i: test/test_homography_decomp.cpp.i
+.PHONY : test/test_homography_decomp.i
+
+# target to preprocess a source file
+test/test_homography_decomp.cpp.i:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.i
+.PHONY : test/test_homography_decomp.cpp.i
+
+test/test_homography_decomp.s: test/test_homography_decomp.cpp.s
+.PHONY : test/test_homography_decomp.s
+
+# target to generate assembly for a file
+test/test_homography_decomp.cpp.s:
+	cd ../.. && $(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.s
+.PHONY : test/test_homography_decomp.cpp.s
 
 test/test_main.o: test/test_main.cpp.o
 .PHONY : test/test_main.o
@@ -1535,9 +1655,9 @@ help:
 	@echo "... pch_Generate_opencv_perf_calib3d"
 	@echo "... pch_Generate_opencv_test_calib3d"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_calib3d.o"
+	@echo "... opencl_kernels_calib3d.i"
+	@echo "... opencl_kernels_calib3d.s"
 	@echo "... opencv_calib3d_pch_dephelp.o"
 	@echo "... opencv_calib3d_pch_dephelp.i"
 	@echo "... opencv_calib3d_pch_dephelp.s"
@@ -1580,15 +1700,24 @@ help:
 	@echo "... src/compat_stereo.o"
 	@echo "... src/compat_stereo.i"
 	@echo "... src/compat_stereo.s"
+	@echo "... src/dls.o"
+	@echo "... src/dls.i"
+	@echo "... src/dls.s"
 	@echo "... src/epnp.o"
 	@echo "... src/epnp.i"
 	@echo "... src/epnp.s"
+	@echo "... src/fisheye.o"
+	@echo "... src/fisheye.i"
+	@echo "... src/fisheye.s"
 	@echo "... src/five-point.o"
 	@echo "... src/five-point.i"
 	@echo "... src/five-point.s"
 	@echo "... src/fundam.o"
 	@echo "... src/fundam.i"
 	@echo "... src/fundam.s"
+	@echo "... src/homography_decomp.o"
+	@echo "... src/homography_decomp.i"
+	@echo "... src/homography_decomp.s"
 	@echo "... src/levmarq.o"
 	@echo "... src/levmarq.i"
 	@echo "... src/levmarq.s"
@@ -1655,12 +1784,18 @@ help:
 	@echo "... test/test_cornerssubpix.o"
 	@echo "... test/test_cornerssubpix.i"
 	@echo "... test/test_cornerssubpix.s"
+	@echo "... test/test_fisheye.o"
+	@echo "... test/test_fisheye.i"
+	@echo "... test/test_fisheye.s"
 	@echo "... test/test_fundam.o"
 	@echo "... test/test_fundam.i"
 	@echo "... test/test_fundam.s"
 	@echo "... test/test_homography.o"
 	@echo "... test/test_homography.i"
 	@echo "... test/test_homography.s"
+	@echo "... test/test_homography_decomp.o"
+	@echo "... test/test_homography_decomp.i"
+	@echo "... test/test_homography_decomp.s"
 	@echo "... test/test_main.o"
 	@echo "... test/test_main.i"
 	@echo "... test/test_main.s"

@@ -16,6 +16,7 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -24,7 +25,6 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o
  ../../modules/core/include/opencv2/core/version.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
  ../../modules/superres/include/opencv2/superres.hpp
- ../../modules/superres/src/input_array_utility.hpp
  ../../modules/ts/include/opencv2/ts.hpp
  ../../modules/ts/include/opencv2/ts/ts_ext.hpp
  ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -353,6 +353,7 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_main.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/messages_members.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
+ /Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.hpp
  /Users/swinston/Mirada/lib/c/opencv/modules/superres/test/test_main.cpp
  /Users/swinston/Mirada/lib/c/opencv/modules/superres/test/test_precomp.hpp
  cvconfig.h
@@ -373,6 +374,7 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -385,7 +387,6 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o
  ../../modules/imgproc/include/opencv2/imgproc.hpp
  ../../modules/imgproc/include/opencv2/imgproc/types_c.h
  ../../modules/superres/include/opencv2/superres.hpp
- ../../modules/superres/src/input_array_utility.hpp
  ../../modules/ts/include/opencv2/ts.hpp
  ../../modules/ts/include/opencv2/ts/ocl_test.hpp
  ../../modules/ts/include/opencv2/ts/ts_ext.hpp
@@ -716,6 +717,7 @@ modules/superres/CMakeFiles/opencv_test_superres.dir/test/test_superres.cpp.o
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/messages_members.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
+ /Users/swinston/Mirada/lib/c/opencv/modules/superres/src/input_array_utility.hpp
  /Users/swinston/Mirada/lib/c/opencv/modules/superres/test/test_precomp.hpp
  /Users/swinston/Mirada/lib/c/opencv/modules/superres/test/test_superres.cpp
  cvconfig.h

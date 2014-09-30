@@ -17,6 +17,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -32,7 +33,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
  ../../modules/imgproc/include/opencv2/imgproc/types_c.h
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -381,8 +381,8 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/ocl/test_warpers.cpp
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/ocl/test_warpers.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/stitching/test/test_precomp.hpp
  cvconfig.h
- modules/stitching/test_precomp.hpp
  opencv2/opencv_modules.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o
  ../../modules/core/include/opencv2/core.hpp
@@ -398,6 +398,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -410,7 +411,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_blenders.cpp.o
  ../../modules/flann/include/opencv2/flann/miniflann.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -774,6 +774,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -786,7 +787,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_main.cpp.o
  ../../modules/flann/include/opencv2/flann/miniflann.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -1150,6 +1150,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1162,7 +1163,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching.dir/test/test_matchers.cpp.o
  ../../modules/flann/include/opencv2/flann/miniflann.hpp
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp

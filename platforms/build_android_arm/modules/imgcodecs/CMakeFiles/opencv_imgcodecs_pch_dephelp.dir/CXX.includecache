@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -135,6 +139,10 @@ opencv2/core/traits.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2413,8 +2421,6 @@ assert.h
 -
 windows.h
 -
-opencv2/imgcodecs/imgcodecs_tegra.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/opencv2/imgcodecs/imgcodecs_tegra.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/opencv_imgcodecs_pch_dephelp.cxx
 /Users/swinston/Mirada/lib/c/opencv/modules/imgcodecs/src/precomp.hpp

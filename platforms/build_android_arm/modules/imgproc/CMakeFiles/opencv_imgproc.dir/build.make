@@ -52,44 +52,44 @@ include modules/imgproc/CMakeFiles/opencv_imgproc.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/accumulate.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/bilateral.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/blend_linear.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/boxFilter.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/boxFilterSmall.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/calc_back_project.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/canny.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/clahe.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/corner.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/covardata.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/cvtcolor.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/filter2D.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/filter2DSmall.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/filterSep_singlePass.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/filterSepCol.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/filterSepRow.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/gftt.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/histogram.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/integral_sum.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/laplacian5.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/match_template.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/medianFilter.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/moments.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/morph.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/precornerdetect.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/pyr_down.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/pyr_up.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/remap.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/resize.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/threshold.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/warp_affine.cl
-modules/imgproc/opencl_kernels.cpp: ../../modules/imgproc/src/opencl/warp_perspective.cl
-modules/imgproc/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/accumulate.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/bilateral.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/blend_linear.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/boxFilter.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/calc_back_project.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/canny.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/clahe.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/corner.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/covardata.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/cvtcolor.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filter2D.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filter2DSmall.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filterSep_singlePass.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filterSepCol.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filterSepRow.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/filterSmall.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/gftt.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/histogram.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/integral_sum.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/laplacian5.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/match_template.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/medianFilter.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/moments.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/morph.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/precornerdetect.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/pyr_down.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/pyr_up.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/remap.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/resize.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/threshold.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/warp_affine.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../modules/imgproc/src/opencl/warp_perspective.cl
+modules/imgproc/opencl_kernels_imgproc.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/imgproc && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="imgproc" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_imgproc.cpp, opencl_kernels_imgproc.hpp"
+	cd modules/imgproc && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="imgproc" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/opencl_kernels_imgproc.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/imgproc/opencl_kernels.hpp: modules/imgproc/opencl_kernels.cpp
+modules/imgproc/opencl_kernels_imgproc.hpp: modules/imgproc/opencl_kernels_imgproc.cpp
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/accum.cpp.o: ../../modules/imgproc/src/accum.cpp
@@ -229,9 +229,32 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.provides: modules/
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o
 
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o: ../../modules/imgproc/src/colormap.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o -c ../../../../modules/imgproc/src/colormap.cpp
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.i"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -E ../../../../modules/imgproc/src/colormap.cpp > CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.i
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.s"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -S ../../../../modules/imgproc/src/colormap.cpp -o CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.s
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.requires:
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.requires
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.provides: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.requires
+	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.provides.build
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.provides
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o
+
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o: ../../modules/imgproc/src/connectedcomponents.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o -c ../../../../modules/imgproc/src/connectedcomponents.cpp
 
@@ -254,7 +277,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o.prov
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o: ../../modules/imgproc/src/contours.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o -c ../../../../modules/imgproc/src/contours.cpp
 
@@ -277,7 +300,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o: ../../modules/imgproc/src/convhull.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o -c ../../../../modules/imgproc/src/convhull.cpp
 
@@ -300,7 +323,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o: ../../modules/imgproc/src/corner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o -c ../../../../modules/imgproc/src/corner.cpp
 
@@ -323,7 +346,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/corner.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o: ../../modules/imgproc/src/cornersubpix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o -c ../../../../modules/imgproc/src/cornersubpix.cpp
 
@@ -346,7 +369,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/cornersubpix.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o: ../../modules/imgproc/src/demosaicing.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o -c ../../../../modules/imgproc/src/demosaicing.cpp
 
@@ -369,7 +392,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o.provides.bui
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o: ../../modules/imgproc/src/deriv.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o -c ../../../../modules/imgproc/src/deriv.cpp
 
@@ -392,7 +415,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o: ../../modules/imgproc/src/distransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o -c ../../../../modules/imgproc/src/distransform.cpp
 
@@ -413,9 +436,32 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.provides: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o
 
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o: ../../modules/imgproc/src/drawing.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o -c ../../../../modules/imgproc/src/drawing.cpp
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.i"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -E ../../../../modules/imgproc/src/drawing.cpp > CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.i
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.s"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -S ../../../../modules/imgproc/src/drawing.cpp -o CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.s
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.requires:
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.requires
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.provides: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.requires
+	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.provides.build
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.provides
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o
+
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o: ../../modules/imgproc/src/emd.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o -c ../../../../modules/imgproc/src/emd.cpp
 
@@ -438,7 +484,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o.provides.build: modu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o: ../../modules/imgproc/src/featureselect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o -c ../../../../modules/imgproc/src/featureselect.cpp
 
@@ -461,7 +507,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o: ../../modules/imgproc/src/filter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o -c ../../../../modules/imgproc/src/filter.cpp
 
@@ -484,7 +530,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o: ../../modules/imgproc/src/floodfill.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o -c ../../../../modules/imgproc/src/floodfill.cpp
 
@@ -507,7 +553,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/floodfill.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o: ../../modules/imgproc/src/gabor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o -c ../../../../modules/imgproc/src/gabor.cpp
 
@@ -530,7 +576,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/gabor.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o: ../../modules/imgproc/src/generalized_hough.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o -c ../../../../modules/imgproc/src/generalized_hough.cpp
 
@@ -553,7 +599,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o.provid
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o: ../../modules/imgproc/src/geometry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o -c ../../../../modules/imgproc/src/geometry.cpp
 
@@ -576,7 +622,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o: ../../modules/imgproc/src/grabcut.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o -c ../../../../modules/imgproc/src/grabcut.cpp
 
@@ -597,9 +643,32 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.provides: module
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o
 
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o: ../../modules/imgproc/src/hershey_fonts.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o -c ../../../../modules/imgproc/src/hershey_fonts.cpp
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.i"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -E ../../../../modules/imgproc/src/hershey_fonts.cpp > CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.i
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.s"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -S ../../../../modules/imgproc/src/hershey_fonts.cpp -o CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.s
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.requires:
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.requires
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.provides: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.requires
+	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.provides.build
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.provides
+
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o
+
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o: ../../modules/imgproc/src/histogram.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o -c ../../../../modules/imgproc/src/histogram.cpp
 
@@ -622,7 +691,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o: ../../modules/imgproc/src/hough.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o -c ../../../../modules/imgproc/src/hough.cpp
 
@@ -645,7 +714,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o: ../../modules/imgproc/src/imgwarp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o -c ../../../../modules/imgproc/src/imgwarp.cpp
 
@@ -668,7 +737,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o: ../../modules/imgproc/src/intersection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o -c ../../../../modules/imgproc/src/intersection.cpp
 
@@ -691,7 +760,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/intersection.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o: ../../modules/imgproc/src/linefit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o -c ../../../../modules/imgproc/src/linefit.cpp
 
@@ -714,7 +783,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/linefit.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o: ../../modules/imgproc/src/lsd.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o -c ../../../../modules/imgproc/src/lsd.cpp
 
@@ -737,7 +806,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/lsd.cpp.o.provides.build: modu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o: ../../modules/imgproc/src/matchcontours.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o -c ../../../../modules/imgproc/src/matchcontours.cpp
 
@@ -760,7 +829,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/matchcontours.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o: ../../modules/imgproc/src/min_enclosing_triangle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o -c ../../../../modules/imgproc/src/min_enclosing_triangle.cpp
 
@@ -783,7 +852,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/min_enclosing_triangle.cpp.o.p
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o: ../../modules/imgproc/src/moments.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o -c ../../../../modules/imgproc/src/moments.cpp
 
@@ -806,7 +875,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/moments.cpp.o.provides.build: 
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o: ../../modules/imgproc/src/morph.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o -c ../../../../modules/imgproc/src/morph.cpp
 
@@ -829,7 +898,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/morph.cpp.o.provides.build: mo
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o: ../../modules/imgproc/src/phasecorr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o -c ../../../../modules/imgproc/src/phasecorr.cpp
 
@@ -852,7 +921,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/phasecorr.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o: ../../modules/imgproc/src/pyramids.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o -c ../../../../modules/imgproc/src/pyramids.cpp
 
@@ -875,7 +944,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/pyramids.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o: ../../modules/imgproc/src/rotcalipers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o -c ../../../../modules/imgproc/src/rotcalipers.cpp
 
@@ -898,7 +967,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/rotcalipers.cpp.o.provides.bui
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o: ../../modules/imgproc/src/samplers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o -c ../../../../modules/imgproc/src/samplers.cpp
 
@@ -921,7 +990,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/samplers.cpp.o.provides.build:
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o: ../../modules/imgproc/src/segmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o -c ../../../../modules/imgproc/src/segmentation.cpp
 
@@ -944,7 +1013,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/segmentation.cpp.o.provides.bu
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o: ../../modules/imgproc/src/shapedescr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o -c ../../../../modules/imgproc/src/shapedescr.cpp
 
@@ -967,7 +1036,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/shapedescr.cpp.o.provides.buil
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o: ../../modules/imgproc/src/smooth.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o -c ../../../../modules/imgproc/src/smooth.cpp
 
@@ -990,7 +1059,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/smooth.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o: ../../modules/imgproc/src/subdivision2d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o -c ../../../../modules/imgproc/src/subdivision2d.cpp
 
@@ -1013,7 +1082,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/subdivision2d.cpp.o.provides.b
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o: ../../modules/imgproc/src/sumpixels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o -c ../../../../modules/imgproc/src/sumpixels.cpp
 
@@ -1036,7 +1105,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/sumpixels.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o: ../../modules/imgproc/src/tables.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o -c ../../../../modules/imgproc/src/tables.cpp
 
@@ -1059,7 +1128,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/tables.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o: ../../modules/imgproc/src/templmatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o -c ../../../../modules/imgproc/src/templmatch.cpp
 
@@ -1082,7 +1151,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/templmatch.cpp.o.provides.buil
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o: ../../modules/imgproc/src/thresh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o -c ../../../../modules/imgproc/src/thresh.cpp
 
@@ -1105,7 +1174,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o.provides.build: m
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o: ../../modules/imgproc/src/undistort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o -c ../../../../modules/imgproc/src/undistort.cpp
 
@@ -1128,7 +1197,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o.provides.build
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o: ../../modules/imgproc/src/utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o"
 	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o -c ../../../../modules/imgproc/src/utils.cpp
 
@@ -1149,28 +1218,28 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o.provides: modules/
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o: modules/imgproc/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_48)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o"
-	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o: modules/imgproc/CMakeFiles/opencv_imgproc.dir/flags.make
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o: modules/imgproc/opencl_kernels_imgproc.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_51)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o -c opencl_kernels_imgproc.cpp
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.i"
-	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.i
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.i"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -E opencl_kernels_imgproc.cpp > CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.i
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.s"
-	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.s
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.s"
+	cd modules/imgproc && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/precomp.hpp" -Winvalid-pch  -S opencl_kernels_imgproc.cpp -o CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.s
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.requires
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.requires:
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.requires
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.provides: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.provides
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.provides: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.requires
+	$(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.provides.build
+.PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.provides
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.provides.build: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o
 
 # Object files for target opencv_imgproc
 opencv_imgproc_OBJECTS = \
@@ -1180,6 +1249,7 @@ opencv_imgproc_OBJECTS = \
 "CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/color.cpp.o" \
+"CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o" \
@@ -1188,6 +1258,7 @@ opencv_imgproc_OBJECTS = \
 "CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o" \
+"CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o" \
@@ -1196,6 +1267,7 @@ opencv_imgproc_OBJECTS = \
 "CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o" \
+"CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o" \
@@ -1220,7 +1292,7 @@ opencv_imgproc_OBJECTS = \
 "CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o" \
 "CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o" \
-"CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o"
 
 # External object files for target opencv_imgproc
 opencv_imgproc_EXTERNAL_OBJECTS =
@@ -1231,6 +1303,7 @@ lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.d
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o
+lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o
@@ -1239,6 +1312,7 @@ lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.d
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o
+lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o
@@ -1247,6 +1321,7 @@ lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.d
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o
+lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o
@@ -1271,7 +1346,7 @@ lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.d
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o
-lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make
 lib/armeabi-v7a/libopencv_imgproc.a: modules/imgproc/CMakeFiles/opencv_imgproc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_imgproc.a"
@@ -1288,6 +1363,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFil
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/canny.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/clahe.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.o.requires
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/connectedcomponents.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/contours.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/convhull.cpp.o.requires
@@ -1296,6 +1372,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFil
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/demosaicing.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/deriv.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.o.requires
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/emd.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/featureselect.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/filter.cpp.o.requires
@@ -1304,6 +1381,7 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFil
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/generalized_hough.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/geometry.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.o.requires
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/histogram.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hough.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/imgwarp.cpp.o.requires
@@ -1328,15 +1406,15 @@ modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFil
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/thresh.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/undistort.cpp.o.requires
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/utils.cpp.o.requires
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o.requires
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires: modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o.requires
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/requires
 
 modules/imgproc/CMakeFiles/opencv_imgproc.dir/clean:
 	cd modules/imgproc && $(CMAKE_COMMAND) -P CMakeFiles/opencv_imgproc.dir/cmake_clean.cmake
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/clean
 
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend: modules/imgproc/opencl_kernels.cpp
-modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend: modules/imgproc/opencl_kernels.hpp
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend: modules/imgproc/opencl_kernels_imgproc.cpp
+modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend: modules/imgproc/opencl_kernels_imgproc.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/imgproc /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/imgproc/CMakeFiles/opencv_imgproc.dir/depend
 

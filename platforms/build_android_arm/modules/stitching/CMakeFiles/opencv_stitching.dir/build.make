@@ -52,14 +52,14 @@ include modules/stitching/CMakeFiles/opencv_stitching.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/stitching/CMakeFiles/opencv_stitching.dir/flags.make
 
-modules/stitching/opencl_kernels.cpp: ../../modules/stitching/src/opencl/multibandblend.cl
-modules/stitching/opencl_kernels.cpp: ../../modules/stitching/src/opencl/warpers.cl
-modules/stitching/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/stitching/opencl_kernels_stitching.cpp: ../../modules/stitching/src/opencl/multibandblend.cl
+modules/stitching/opencl_kernels_stitching.cpp: ../../modules/stitching/src/opencl/warpers.cl
+modules/stitching/opencl_kernels_stitching.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/stitching && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="stitching" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_stitching.cpp, opencl_kernels_stitching.hpp"
+	cd modules/stitching && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="stitching" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/stitching/opencl_kernels.hpp: modules/stitching/opencl_kernels.cpp
+modules/stitching/opencl_kernels_stitching.hpp: modules/stitching/opencl_kernels_stitching.cpp
 
 modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o: modules/stitching/CMakeFiles/opencv_stitching.dir/flags.make
 modules/stitching/CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o: ../../modules/stitching/src/autocalib.cpp
@@ -314,28 +314,28 @@ modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o.provides: mo
 
 modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o.provides.build: modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o: modules/stitching/CMakeFiles/opencv_stitching.dir/flags.make
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o: modules/stitching/opencl_kernels.cpp
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o: modules/stitching/CMakeFiles/opencv_stitching.dir/flags.make
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o: modules/stitching/opencl_kernels_stitching.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o"
-	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o"
+	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o -c opencl_kernels_stitching.cpp
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.i"
-	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.i
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.i"
+	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -E opencl_kernels_stitching.cpp > CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.i
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.s"
-	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.s
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.s"
+	cd modules/stitching && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp" -Winvalid-pch  -S opencl_kernels_stitching.cpp -o CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.s
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.requires
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.requires:
+.PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.requires
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.provides: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.provides
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.provides: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.requires
+	$(MAKE) -f modules/stitching/CMakeFiles/opencv_stitching.dir/build.make modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.provides.build
+.PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.provides
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.provides.build: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o
+modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.provides.build: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o
 
 # Object files for target opencv_stitching
 opencv_stitching_OBJECTS = \
@@ -350,7 +350,7 @@ opencv_stitching_OBJECTS = \
 "CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o" \
 "CMakeFiles/opencv_stitching.dir/src/util.cpp.o" \
 "CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o" \
-"CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o"
 
 # External object files for target opencv_stitching
 opencv_stitching_EXTERNAL_OBJECTS =
@@ -366,7 +366,7 @@ lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitc
 lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o
 lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o
 lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o
-lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o
 lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/build.make
 lib/armeabi-v7a/libopencv_stitching.a: modules/stitching/CMakeFiles/opencv_stitching.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_stitching.a"
@@ -388,15 +388,15 @@ modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CM
 modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o.requires
 modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CMakeFiles/opencv_stitching.dir/src/util.cpp.o.requires
 modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o.requires
-modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o.requires
+modules/stitching/CMakeFiles/opencv_stitching.dir/requires: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o.requires
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/requires
 
 modules/stitching/CMakeFiles/opencv_stitching.dir/clean:
 	cd modules/stitching && $(CMAKE_COMMAND) -P CMakeFiles/opencv_stitching.dir/cmake_clean.cmake
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/clean
 
-modules/stitching/CMakeFiles/opencv_stitching.dir/depend: modules/stitching/opencl_kernels.cpp
-modules/stitching/CMakeFiles/opencv_stitching.dir/depend: modules/stitching/opencl_kernels.hpp
+modules/stitching/CMakeFiles/opencv_stitching.dir/depend: modules/stitching/opencl_kernels_stitching.cpp
+modules/stitching/CMakeFiles/opencv_stitching.dir/depend: modules/stitching/opencl_kernels_stitching.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/stitching /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/CMakeFiles/opencv_stitching.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/stitching/CMakeFiles/opencv_stitching.dir/depend
 

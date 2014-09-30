@@ -15,6 +15,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching_pch_dephelp.dir/opencv_perf_s
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -26,7 +27,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching_pch_dephelp.dir/opencv_perf_s
  ../../modules/flann/include/opencv2/flann/defines.h
  ../../modules/flann/include/opencv2/flann/miniflann.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp

@@ -288,29 +288,29 @@ pch_Generate_opencv_test_imgproc/fast:
 	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/pch_Generate_opencv_test_imgproc.dir/build.make modules/imgproc/CMakeFiles/pch_Generate_opencv_test_imgproc.dir/build
 .PHONY : pch_Generate_opencv_test_imgproc/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_imgproc.o: opencl_kernels_imgproc.cpp.o
+.PHONY : opencl_kernels_imgproc.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_imgproc.cpp.o:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.o
+.PHONY : opencl_kernels_imgproc.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_imgproc.i: opencl_kernels_imgproc.cpp.i
+.PHONY : opencl_kernels_imgproc.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_imgproc.cpp.i:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.i
+.PHONY : opencl_kernels_imgproc.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_imgproc.s: opencl_kernels_imgproc.cpp.s
+.PHONY : opencl_kernels_imgproc.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_imgproc.cpp.s:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/opencl_kernels_imgproc.cpp.s
+.PHONY : opencl_kernels_imgproc.cpp.s
 
 opencv_imgproc_pch_dephelp.o: opencv_imgproc_pch_dephelp.cxx.o
 .PHONY : opencv_imgproc_pch_dephelp.o
@@ -1344,6 +1344,30 @@ src/color.cpp.s:
 	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/color.cpp.s
 .PHONY : src/color.cpp.s
 
+src/colormap.o: src/colormap.cpp.o
+.PHONY : src/colormap.o
+
+# target to build an object file
+src/colormap.cpp.o:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.o
+.PHONY : src/colormap.cpp.o
+
+src/colormap.i: src/colormap.cpp.i
+.PHONY : src/colormap.i
+
+# target to preprocess a source file
+src/colormap.cpp.i:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.i
+.PHONY : src/colormap.cpp.i
+
+src/colormap.s: src/colormap.cpp.s
+.PHONY : src/colormap.s
+
+# target to generate assembly for a file
+src/colormap.cpp.s:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/colormap.cpp.s
+.PHONY : src/colormap.cpp.s
+
 src/connectedcomponents.o: src/connectedcomponents.cpp.o
 .PHONY : src/connectedcomponents.o
 
@@ -1536,6 +1560,30 @@ src/distransform.cpp.s:
 	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/distransform.cpp.s
 .PHONY : src/distransform.cpp.s
 
+src/drawing.o: src/drawing.cpp.o
+.PHONY : src/drawing.o
+
+# target to build an object file
+src/drawing.cpp.o:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.o
+.PHONY : src/drawing.cpp.o
+
+src/drawing.i: src/drawing.cpp.i
+.PHONY : src/drawing.i
+
+# target to preprocess a source file
+src/drawing.cpp.i:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.i
+.PHONY : src/drawing.cpp.i
+
+src/drawing.s: src/drawing.cpp.s
+.PHONY : src/drawing.s
+
+# target to generate assembly for a file
+src/drawing.cpp.s:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/drawing.cpp.s
+.PHONY : src/drawing.cpp.s
+
 src/emd.o: src/emd.cpp.o
 .PHONY : src/emd.o
 
@@ -1727,6 +1775,30 @@ src/grabcut.s: src/grabcut.cpp.s
 src/grabcut.cpp.s:
 	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/grabcut.cpp.s
 .PHONY : src/grabcut.cpp.s
+
+src/hershey_fonts.o: src/hershey_fonts.cpp.o
+.PHONY : src/hershey_fonts.o
+
+# target to build an object file
+src/hershey_fonts.cpp.o:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.o
+.PHONY : src/hershey_fonts.cpp.o
+
+src/hershey_fonts.i: src/hershey_fonts.cpp.i
+.PHONY : src/hershey_fonts.i
+
+# target to preprocess a source file
+src/hershey_fonts.cpp.i:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.i
+.PHONY : src/hershey_fonts.cpp.i
+
+src/hershey_fonts.s: src/hershey_fonts.cpp.s
+.PHONY : src/hershey_fonts.s
+
+# target to generate assembly for a file
+src/hershey_fonts.cpp.s:
+	cd ../.. && $(MAKE) -f modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make modules/imgproc/CMakeFiles/opencv_imgproc.dir/src/hershey_fonts.cpp.s
+.PHONY : src/hershey_fonts.cpp.s
 
 src/histogram.o: src/histogram.cpp.o
 .PHONY : src/histogram.o
@@ -3335,9 +3407,9 @@ help:
 	@echo "... pch_Generate_opencv_perf_imgproc"
 	@echo "... pch_Generate_opencv_test_imgproc"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_imgproc.o"
+	@echo "... opencl_kernels_imgproc.i"
+	@echo "... opencl_kernels_imgproc.s"
 	@echo "... opencv_imgproc_pch_dephelp.o"
 	@echo "... opencv_imgproc_pch_dephelp.i"
 	@echo "... opencv_imgproc_pch_dephelp.s"
@@ -3467,6 +3539,9 @@ help:
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
+	@echo "... src/colormap.o"
+	@echo "... src/colormap.i"
+	@echo "... src/colormap.s"
 	@echo "... src/connectedcomponents.o"
 	@echo "... src/connectedcomponents.i"
 	@echo "... src/connectedcomponents.s"
@@ -3491,6 +3566,9 @@ help:
 	@echo "... src/distransform.o"
 	@echo "... src/distransform.i"
 	@echo "... src/distransform.s"
+	@echo "... src/drawing.o"
+	@echo "... src/drawing.i"
+	@echo "... src/drawing.s"
 	@echo "... src/emd.o"
 	@echo "... src/emd.i"
 	@echo "... src/emd.s"
@@ -3515,6 +3593,9 @@ help:
 	@echo "... src/grabcut.o"
 	@echo "... src/grabcut.i"
 	@echo "... src/grabcut.s"
+	@echo "... src/hershey_fonts.o"
+	@echo "... src/hershey_fonts.i"
+	@echo "... src/hershey_fonts.s"
 	@echo "... src/histogram.o"
 	@echo "... src/histogram.i"
 	@echo "... src/histogram.s"

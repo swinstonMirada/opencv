@@ -288,29 +288,29 @@ pch_Generate_opencv_test_photo/fast:
 	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/pch_Generate_opencv_test_photo.dir/build.make modules/photo/CMakeFiles/pch_Generate_opencv_test_photo.dir/build
 .PHONY : pch_Generate_opencv_test_photo/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_photo.o: opencl_kernels_photo.cpp.o
+.PHONY : opencl_kernels_photo.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_photo.cpp.o:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o
+.PHONY : opencl_kernels_photo.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_photo.i: opencl_kernels_photo.cpp.i
+.PHONY : opencl_kernels_photo.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_photo.cpp.i:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.i
+.PHONY : opencl_kernels_photo.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_photo.s: opencl_kernels_photo.cpp.s
+.PHONY : opencl_kernels_photo.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_photo.cpp.s:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.s
+.PHONY : opencl_kernels_photo.cpp.s
 
 opencv_perf_photo_pch_dephelp.o: opencv_perf_photo_pch_dephelp.cxx.o
 .PHONY : opencv_perf_photo_pch_dephelp.o
@@ -551,6 +551,30 @@ src/contrast_preserve.s: src/contrast_preserve.cpp.s
 src/contrast_preserve.cpp.s:
 	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.s
 .PHONY : src/contrast_preserve.cpp.s
+
+src/denoise_tvl1.o: src/denoise_tvl1.cpp.o
+.PHONY : src/denoise_tvl1.o
+
+# target to build an object file
+src/denoise_tvl1.cpp.o:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o
+.PHONY : src/denoise_tvl1.cpp.o
+
+src/denoise_tvl1.i: src/denoise_tvl1.cpp.i
+.PHONY : src/denoise_tvl1.i
+
+# target to preprocess a source file
+src/denoise_tvl1.cpp.i:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.i
+.PHONY : src/denoise_tvl1.cpp.i
+
+src/denoise_tvl1.s: src/denoise_tvl1.cpp.s
+.PHONY : src/denoise_tvl1.s
+
+# target to generate assembly for a file
+src/denoise_tvl1.cpp.s:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.s
+.PHONY : src/denoise_tvl1.cpp.s
 
 src/denoising.o: src/denoising.cpp.o
 .PHONY : src/denoising.o
@@ -816,6 +840,30 @@ test/test_decolor.cpp.s:
 	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_decolor.cpp.s
 .PHONY : test/test_decolor.cpp.s
 
+test/test_denoise_tvl1.o: test/test_denoise_tvl1.cpp.o
+.PHONY : test/test_denoise_tvl1.o
+
+# target to build an object file
+test/test_denoise_tvl1.cpp.o:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.o
+.PHONY : test/test_denoise_tvl1.cpp.o
+
+test/test_denoise_tvl1.i: test/test_denoise_tvl1.cpp.i
+.PHONY : test/test_denoise_tvl1.i
+
+# target to preprocess a source file
+test/test_denoise_tvl1.cpp.i:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.i
+.PHONY : test/test_denoise_tvl1.cpp.i
+
+test/test_denoise_tvl1.s: test/test_denoise_tvl1.cpp.s
+.PHONY : test/test_denoise_tvl1.s
+
+# target to generate assembly for a file
+test/test_denoise_tvl1.cpp.s:
+	cd ../.. && $(MAKE) -f modules/photo/CMakeFiles/opencv_test_photo.dir/build.make modules/photo/CMakeFiles/opencv_test_photo.dir/test/test_denoise_tvl1.cpp.s
+.PHONY : test/test_denoise_tvl1.cpp.s
+
 test/test_denoising.o: test/test_denoising.cpp.o
 .PHONY : test/test_denoising.o
 
@@ -983,9 +1031,9 @@ help:
 	@echo "... pch_Generate_opencv_photo"
 	@echo "... pch_Generate_opencv_test_photo"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_photo.o"
+	@echo "... opencl_kernels_photo.i"
+	@echo "... opencl_kernels_photo.s"
 	@echo "... opencv_perf_photo_pch_dephelp.o"
 	@echo "... opencv_perf_photo_pch_dephelp.i"
 	@echo "... opencv_perf_photo_pch_dephelp.s"
@@ -1016,6 +1064,9 @@ help:
 	@echo "... src/contrast_preserve.o"
 	@echo "... src/contrast_preserve.i"
 	@echo "... src/contrast_preserve.s"
+	@echo "... src/denoise_tvl1.o"
+	@echo "... src/denoise_tvl1.i"
+	@echo "... src/denoise_tvl1.s"
 	@echo "... src/denoising.o"
 	@echo "... src/denoising.i"
 	@echo "... src/denoising.s"
@@ -1049,6 +1100,9 @@ help:
 	@echo "... test/test_decolor.o"
 	@echo "... test/test_decolor.i"
 	@echo "... test/test_decolor.s"
+	@echo "... test/test_denoise_tvl1.o"
+	@echo "... test/test_denoise_tvl1.i"
+	@echo "... test/test_denoise_tvl1.s"
 	@echo "... test/test_denoising.o"
 	@echo "... test/test_denoising.i"
 	@echo "... test/test_denoising.s"

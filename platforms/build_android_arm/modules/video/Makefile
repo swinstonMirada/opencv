@@ -288,29 +288,29 @@ pch_Generate_opencv_video/fast:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/pch_Generate_opencv_video.dir/build.make modules/video/CMakeFiles/pch_Generate_opencv_video.dir/build
 .PHONY : pch_Generate_opencv_video/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_video.o: opencl_kernels_video.cpp.o
+.PHONY : opencl_kernels_video.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_video.cpp.o:
+	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o
+.PHONY : opencl_kernels_video.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_video.i: opencl_kernels_video.cpp.i
+.PHONY : opencl_kernels_video.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_video.cpp.i:
+	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.i
+.PHONY : opencl_kernels_video.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_video.s: opencl_kernels_video.cpp.s
+.PHONY : opencl_kernels_video.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_video.cpp.s:
+	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.s
+.PHONY : opencl_kernels_video.cpp.s
 
 opencv_perf_video_pch_dephelp.o: opencv_perf_video_pch_dephelp.cxx.o
 .PHONY : opencv_perf_video_pch_dephelp.o
@@ -600,30 +600,6 @@ perf/perf_tvl1optflow.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_perf_video.dir/build.make modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.s
 .PHONY : perf/perf_tvl1optflow.cpp.s
 
-src/affineflow.o: src/affineflow.cpp.o
-.PHONY : src/affineflow.o
-
-# target to build an object file
-src/affineflow.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.o
-.PHONY : src/affineflow.cpp.o
-
-src/affineflow.i: src/affineflow.cpp.i
-.PHONY : src/affineflow.i
-
-# target to preprocess a source file
-src/affineflow.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.i
-.PHONY : src/affineflow.cpp.i
-
-src/affineflow.s: src/affineflow.cpp.s
-.PHONY : src/affineflow.s
-
-# target to generate assembly for a file
-src/affineflow.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/affineflow.cpp.s
-.PHONY : src/affineflow.cpp.s
-
 src/bgfg_KNN.o: src/bgfg_KNN.cpp.o
 .PHONY : src/bgfg_KNN.o
 
@@ -648,30 +624,6 @@ src/bgfg_KNN.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_KNN.cpp.s
 .PHONY : src/bgfg_KNN.cpp.s
 
-src/bgfg_gaussmix.o: src/bgfg_gaussmix.cpp.o
-.PHONY : src/bgfg_gaussmix.o
-
-# target to build an object file
-src/bgfg_gaussmix.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.o
-.PHONY : src/bgfg_gaussmix.cpp.o
-
-src/bgfg_gaussmix.i: src/bgfg_gaussmix.cpp.i
-.PHONY : src/bgfg_gaussmix.i
-
-# target to preprocess a source file
-src/bgfg_gaussmix.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.i
-.PHONY : src/bgfg_gaussmix.cpp.i
-
-src/bgfg_gaussmix.s: src/bgfg_gaussmix.cpp.s
-.PHONY : src/bgfg_gaussmix.s
-
-# target to generate assembly for a file
-src/bgfg_gaussmix.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix.cpp.s
-.PHONY : src/bgfg_gaussmix.cpp.s
-
 src/bgfg_gaussmix2.o: src/bgfg_gaussmix2.cpp.o
 .PHONY : src/bgfg_gaussmix2.o
 
@@ -695,30 +647,6 @@ src/bgfg_gaussmix2.s: src/bgfg_gaussmix2.cpp.s
 src/bgfg_gaussmix2.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gaussmix2.cpp.s
 .PHONY : src/bgfg_gaussmix2.cpp.s
-
-src/bgfg_gmg.o: src/bgfg_gmg.cpp.o
-.PHONY : src/bgfg_gmg.o
-
-# target to build an object file
-src/bgfg_gmg.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.o
-.PHONY : src/bgfg_gmg.cpp.o
-
-src/bgfg_gmg.i: src/bgfg_gmg.cpp.i
-.PHONY : src/bgfg_gmg.i
-
-# target to preprocess a source file
-src/bgfg_gmg.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.i
-.PHONY : src/bgfg_gmg.cpp.i
-
-src/bgfg_gmg.s: src/bgfg_gmg.cpp.s
-.PHONY : src/bgfg_gmg.s
-
-# target to generate assembly for a file
-src/bgfg_gmg.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/bgfg_gmg.cpp.s
-.PHONY : src/bgfg_gmg.cpp.s
 
 src/camshift.o: src/camshift.cpp.o
 .PHONY : src/camshift.o
@@ -840,30 +768,6 @@ src/lkpyramid.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/lkpyramid.cpp.s
 .PHONY : src/lkpyramid.cpp.s
 
-src/motempl.o: src/motempl.cpp.o
-.PHONY : src/motempl.o
-
-# target to build an object file
-src/motempl.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.o
-.PHONY : src/motempl.cpp.o
-
-src/motempl.i: src/motempl.cpp.i
-.PHONY : src/motempl.i
-
-# target to preprocess a source file
-src/motempl.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.i
-.PHONY : src/motempl.cpp.i
-
-src/motempl.s: src/motempl.cpp.s
-.PHONY : src/motempl.s
-
-# target to generate assembly for a file
-src/motempl.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/motempl.cpp.s
-.PHONY : src/motempl.cpp.s
-
 src/optflowgf.o: src/optflowgf.cpp.o
 .PHONY : src/optflowgf.o
 
@@ -887,30 +791,6 @@ src/optflowgf.s: src/optflowgf.cpp.s
 src/optflowgf.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/optflowgf.cpp.s
 .PHONY : src/optflowgf.cpp.s
-
-src/simpleflow.o: src/simpleflow.cpp.o
-.PHONY : src/simpleflow.o
-
-# target to build an object file
-src/simpleflow.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.o
-.PHONY : src/simpleflow.cpp.o
-
-src/simpleflow.i: src/simpleflow.cpp.i
-.PHONY : src/simpleflow.i
-
-# target to preprocess a source file
-src/simpleflow.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.i
-.PHONY : src/simpleflow.cpp.i
-
-src/simpleflow.s: src/simpleflow.cpp.s
-.PHONY : src/simpleflow.s
-
-# target to generate assembly for a file
-src/simpleflow.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_video.dir/build.make modules/video/CMakeFiles/opencv_video.dir/src/simpleflow.cpp.s
-.PHONY : src/simpleflow.cpp.s
 
 src/tvl1flow.o: src/tvl1flow.cpp.o
 .PHONY : src/tvl1flow.o
@@ -983,30 +863,6 @@ test/ocl/test_bgfg_mog2.s: test/ocl/test_bgfg_mog2.cpp.s
 test/ocl/test_bgfg_mog2.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/ocl/test_bgfg_mog2.cpp.s
 .PHONY : test/ocl/test_bgfg_mog2.cpp.s
-
-test/ocl/test_motempl.o: test/ocl/test_motempl.cpp.o
-.PHONY : test/ocl/test_motempl.o
-
-# target to build an object file
-test/ocl/test_motempl.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/ocl/test_motempl.cpp.o
-.PHONY : test/ocl/test_motempl.cpp.o
-
-test/ocl/test_motempl.i: test/ocl/test_motempl.cpp.i
-.PHONY : test/ocl/test_motempl.i
-
-# target to preprocess a source file
-test/ocl/test_motempl.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/ocl/test_motempl.cpp.i
-.PHONY : test/ocl/test_motempl.cpp.i
-
-test/ocl/test_motempl.s: test/ocl/test_motempl.cpp.s
-.PHONY : test/ocl/test_motempl.s
-
-# target to generate assembly for a file
-test/ocl/test_motempl.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/ocl/test_motempl.cpp.s
-.PHONY : test/ocl/test_motempl.cpp.s
 
 test/ocl/test_optflow_farneback.o: test/ocl/test_optflow_farneback.cpp.o
 .PHONY : test/ocl/test_optflow_farneback.o
@@ -1103,30 +959,6 @@ test/test_accum.s: test/test_accum.cpp.s
 test/test_accum.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_accum.cpp.s
 .PHONY : test/test_accum.cpp.s
-
-test/test_backgroundsubtractor_gbh.o: test/test_backgroundsubtractor_gbh.cpp.o
-.PHONY : test/test_backgroundsubtractor_gbh.o
-
-# target to build an object file
-test/test_backgroundsubtractor_gbh.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.o
-.PHONY : test/test_backgroundsubtractor_gbh.cpp.o
-
-test/test_backgroundsubtractor_gbh.i: test/test_backgroundsubtractor_gbh.cpp.i
-.PHONY : test/test_backgroundsubtractor_gbh.i
-
-# target to preprocess a source file
-test/test_backgroundsubtractor_gbh.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.i
-.PHONY : test/test_backgroundsubtractor_gbh.cpp.i
-
-test/test_backgroundsubtractor_gbh.s: test/test_backgroundsubtractor_gbh.cpp.s
-.PHONY : test/test_backgroundsubtractor_gbh.s
-
-# target to generate assembly for a file
-test/test_backgroundsubtractor_gbh.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_backgroundsubtractor_gbh.cpp.s
-.PHONY : test/test_backgroundsubtractor_gbh.cpp.s
 
 test/test_camshift.o: test/test_camshift.cpp.o
 .PHONY : test/test_camshift.o
@@ -1248,30 +1080,6 @@ test/test_main.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_main.cpp.s
 .PHONY : test/test_main.cpp.s
 
-test/test_motiontemplates.o: test/test_motiontemplates.cpp.o
-.PHONY : test/test_motiontemplates.o
-
-# target to build an object file
-test/test_motiontemplates.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.o
-.PHONY : test/test_motiontemplates.cpp.o
-
-test/test_motiontemplates.i: test/test_motiontemplates.cpp.i
-.PHONY : test/test_motiontemplates.i
-
-# target to preprocess a source file
-test/test_motiontemplates.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.i
-.PHONY : test/test_motiontemplates.cpp.i
-
-test/test_motiontemplates.s: test/test_motiontemplates.cpp.s
-.PHONY : test/test_motiontemplates.s
-
-# target to generate assembly for a file
-test/test_motiontemplates.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_motiontemplates.cpp.s
-.PHONY : test/test_motiontemplates.cpp.s
-
 test/test_optflowpyrlk.o: test/test_optflowpyrlk.cpp.o
 .PHONY : test/test_optflowpyrlk.o
 
@@ -1295,30 +1103,6 @@ test/test_optflowpyrlk.s: test/test_optflowpyrlk.cpp.s
 test/test_optflowpyrlk.cpp.s:
 	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_optflowpyrlk.cpp.s
 .PHONY : test/test_optflowpyrlk.cpp.s
-
-test/test_simpleflow.o: test/test_simpleflow.cpp.o
-.PHONY : test/test_simpleflow.o
-
-# target to build an object file
-test/test_simpleflow.cpp.o:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.o
-.PHONY : test/test_simpleflow.cpp.o
-
-test/test_simpleflow.i: test/test_simpleflow.cpp.i
-.PHONY : test/test_simpleflow.i
-
-# target to preprocess a source file
-test/test_simpleflow.cpp.i:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.i
-.PHONY : test/test_simpleflow.cpp.i
-
-test/test_simpleflow.s: test/test_simpleflow.cpp.s
-.PHONY : test/test_simpleflow.s
-
-# target to generate assembly for a file
-test/test_simpleflow.cpp.s:
-	cd ../.. && $(MAKE) -f modules/video/CMakeFiles/opencv_test_video.dir/build.make modules/video/CMakeFiles/opencv_test_video.dir/test/test_simpleflow.cpp.s
-.PHONY : test/test_simpleflow.cpp.s
 
 test/test_tvl1optflow.o: test/test_tvl1optflow.cpp.o
 .PHONY : test/test_tvl1optflow.o
@@ -1367,9 +1151,9 @@ help:
 	@echo "... pch_Generate_opencv_test_video"
 	@echo "... pch_Generate_opencv_video"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_video.o"
+	@echo "... opencl_kernels_video.i"
+	@echo "... opencl_kernels_video.s"
 	@echo "... opencv_perf_video_pch_dephelp.o"
 	@echo "... opencv_perf_video_pch_dephelp.i"
 	@echo "... opencv_perf_video_pch_dephelp.s"
@@ -1406,21 +1190,12 @@ help:
 	@echo "... perf/perf_tvl1optflow.o"
 	@echo "... perf/perf_tvl1optflow.i"
 	@echo "... perf/perf_tvl1optflow.s"
-	@echo "... src/affineflow.o"
-	@echo "... src/affineflow.i"
-	@echo "... src/affineflow.s"
 	@echo "... src/bgfg_KNN.o"
 	@echo "... src/bgfg_KNN.i"
 	@echo "... src/bgfg_KNN.s"
-	@echo "... src/bgfg_gaussmix.o"
-	@echo "... src/bgfg_gaussmix.i"
-	@echo "... src/bgfg_gaussmix.s"
 	@echo "... src/bgfg_gaussmix2.o"
 	@echo "... src/bgfg_gaussmix2.i"
 	@echo "... src/bgfg_gaussmix2.s"
-	@echo "... src/bgfg_gmg.o"
-	@echo "... src/bgfg_gmg.i"
-	@echo "... src/bgfg_gmg.s"
 	@echo "... src/camshift.o"
 	@echo "... src/camshift.i"
 	@echo "... src/camshift.s"
@@ -1436,15 +1211,9 @@ help:
 	@echo "... src/lkpyramid.o"
 	@echo "... src/lkpyramid.i"
 	@echo "... src/lkpyramid.s"
-	@echo "... src/motempl.o"
-	@echo "... src/motempl.i"
-	@echo "... src/motempl.s"
 	@echo "... src/optflowgf.o"
 	@echo "... src/optflowgf.i"
 	@echo "... src/optflowgf.s"
-	@echo "... src/simpleflow.o"
-	@echo "... src/simpleflow.i"
-	@echo "... src/simpleflow.s"
 	@echo "... src/tvl1flow.o"
 	@echo "... src/tvl1flow.i"
 	@echo "... src/tvl1flow.s"
@@ -1454,9 +1223,6 @@ help:
 	@echo "... test/ocl/test_bgfg_mog2.o"
 	@echo "... test/ocl/test_bgfg_mog2.i"
 	@echo "... test/ocl/test_bgfg_mog2.s"
-	@echo "... test/ocl/test_motempl.o"
-	@echo "... test/ocl/test_motempl.i"
-	@echo "... test/ocl/test_motempl.s"
 	@echo "... test/ocl/test_optflow_farneback.o"
 	@echo "... test/ocl/test_optflow_farneback.i"
 	@echo "... test/ocl/test_optflow_farneback.s"
@@ -1469,9 +1235,6 @@ help:
 	@echo "... test/test_accum.o"
 	@echo "... test/test_accum.i"
 	@echo "... test/test_accum.s"
-	@echo "... test/test_backgroundsubtractor_gbh.o"
-	@echo "... test/test_backgroundsubtractor_gbh.i"
-	@echo "... test/test_backgroundsubtractor_gbh.s"
 	@echo "... test/test_camshift.o"
 	@echo "... test/test_camshift.i"
 	@echo "... test/test_camshift.s"
@@ -1487,15 +1250,9 @@ help:
 	@echo "... test/test_main.o"
 	@echo "... test/test_main.i"
 	@echo "... test/test_main.s"
-	@echo "... test/test_motiontemplates.o"
-	@echo "... test/test_motiontemplates.i"
-	@echo "... test/test_motiontemplates.s"
 	@echo "... test/test_optflowpyrlk.o"
 	@echo "... test/test_optflowpyrlk.i"
 	@echo "... test/test_optflowpyrlk.s"
-	@echo "... test/test_simpleflow.o"
-	@echo "... test/test_simpleflow.i"
-	@echo "... test/test_simpleflow.s"
 	@echo "... test/test_tvl1optflow.o"
 	@echo "... test/test_tvl1optflow.i"
 	@echo "... test/test_tvl1optflow.s"

@@ -328,9 +328,32 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o
 
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o: ../../modules/calib3d/test/test_fisheye.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o -c ../../../../modules/calib3d/test/test_fisheye.cpp
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/calib3d/test/test_fisheye.cpp > CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.i
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/calib3d/test/test_fisheye.cpp -o CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.s
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.requires
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.provides
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o
+
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o: ../../modules/calib3d/test/test_fundam.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o -c ../../../../modules/calib3d/test/test_fundam.cpp
 
@@ -353,7 +376,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o.provid
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o: ../../modules/calib3d/test/test_homography.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o -c ../../../../modules/calib3d/test/test_homography.cpp
 
@@ -374,9 +397,32 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o.pr
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o
 
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o: ../../modules/calib3d/test/test_homography_decomp.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o -c ../../../../modules/calib3d/test/test_homography_decomp.cpp
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.i"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/calib3d/test/test_homography_decomp.cpp > CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.i
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.s"
+	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/calib3d/test/test_homography_decomp.cpp -o CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.s
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.requires:
+.PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.requires
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.provides: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.requires
+	$(MAKE) -f modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.provides.build
+.PHONY : modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.provides
+
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.provides.build: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o
+
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o: ../../modules/calib3d/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o -c ../../../../modules/calib3d/test/test_main.cpp
 
@@ -399,7 +445,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o.provides
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o: ../../modules/calib3d/test/test_modelest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o -c ../../../../modules/calib3d/test/test_modelest.cpp
 
@@ -422,7 +468,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o.prov
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o: ../../modules/calib3d/test/test_posit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o -c ../../../../modules/calib3d/test/test_posit.cpp
 
@@ -445,7 +491,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o.provide
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o: ../../modules/calib3d/test/test_reproject_image_to_3d.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_3d.cpp.o -c ../../../../modules/calib3d/test/test_reproject_image_to_3d.cpp
 
@@ -468,7 +514,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_reproject_image_to_
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o: ../../modules/calib3d/test/test_solvepnp_ransac.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp.o -c ../../../../modules/calib3d/test/test_solvepnp_ransac.cpp
 
@@ -491,7 +537,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_solvepnp_ransac.cpp
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o: ../../modules/calib3d/test/test_stereomatching.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.o -c ../../../../modules/calib3d/test/test_stereomatching.cpp
 
@@ -514,7 +560,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_stereomatching.cpp.
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o: ../../modules/calib3d/test/test_undistort.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o -c ../../../../modules/calib3d/test/test_undistort.cpp
 
@@ -537,7 +583,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort.cpp.o.pro
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o: ../../modules/calib3d/test/test_undistort_badarg.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cpp.o -c ../../../../modules/calib3d/test/test_undistort_badarg.cpp
 
@@ -560,7 +606,7 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_badarg.cp
 
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/flags.make
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o: ../../modules/calib3d/test/test_undistort_points.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o"
 	cd modules/calib3d && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/calib3d/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_calib3d.dir/test/test_undistort_points.cpp.o -c ../../../../modules/calib3d/test/test_undistort_points.cpp
 
@@ -595,8 +641,10 @@ opencv_test_calib3d_OBJECTS = \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o" \
+"CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o" \
+"CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o" \
 "CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o" \
@@ -622,8 +670,10 @@ bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o
+bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o
+bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o
 bin/opencv_test_calib3d: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o
@@ -641,6 +691,7 @@ bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_highgui.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_ml.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_features2d.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_calib3d.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_ts.a
@@ -648,13 +699,21 @@ bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_androidcamera.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_flann.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_highgui.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_ml.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_features2d.a
-bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_flann.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_core.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_androidcamera.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgproc.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgcodecs.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_highgui.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_flann.a
+bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_ml.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_videoio.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_test_calib3d: lib/armeabi-v7a/libopencv_imgcodecs.a
@@ -686,8 +745,10 @@ modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMa
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_chesscorners_timing.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_compose_rt.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_cornerssubpix.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fisheye.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_fundam.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography.cpp.o.requires
+modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_homography_decomp.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_main.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_modelest.cpp.o.requires
 modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/requires: modules/calib3d/CMakeFiles/opencv_test_calib3d.dir/test/test_posit.cpp.o.requires

@@ -11,6 +11,8 @@ opencv2/core.hpp
 ../../modules/calib3d/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
 ../../modules/calib3d/include/opencv2/opencv2/features2d.hpp
+opencv2/core/affine.hpp
+../../modules/calib3d/include/opencv2/opencv2/core/affine.hpp
 
 ../../modules/core/include/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -35,6 +37,14 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
+
+../../modules/core/include/opencv2/core/affine.hpp
+opencv2/core.hpp
+-
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -45,12 +55,6 @@ opencv2/core/cvstd.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/cvstd.hpp
 
 ../../modules/core/include/opencv2/core/bufferpool.hpp
-
-../../modules/core/include/opencv2/core/core_c.h
-opencv2/core/types_c.h
-../../modules/core/include/opencv2/core/opencv2/core/types_c.h
-opencv2/core/utility.hpp
-../../modules/core/include/opencv2/core/opencv2/core/utility.hpp
 
 ../../modules/core/include/opencv2/core/cvdef.h
 emmintrin.h
@@ -138,6 +142,10 @@ opencv2/core/traits.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -165,24 +173,6 @@ opencv2/core/cvstd.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/cvstd.hpp
 opencv2/core/matx.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/matx.hpp
-
-../../modules/core/include/opencv2/core/types_c.h
-ipl.h
--
-ipl/ipl.h
--
-opencv2/core/cvdef.h
-../../modules/core/include/opencv2/core/opencv2/core/cvdef.h
-assert.h
--
-stdlib.h
--
-string.h
--
-float.h
--
-opencv2/core.hpp
-../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/utility.hpp
 opencv2/core.hpp
@@ -248,54 +238,14 @@ opencv2/opencv_modules.hpp
 opencv2/features2d.hpp
 ../../modules/java/generator/src/cpp/opencv2/features2d.hpp
 
-../../modules/ml/include/opencv2/ml.hpp
-opencv2/core.hpp
-../../modules/ml/include/opencv2/opencv2/core.hpp
-opencv2/core/core_c.h
-../../modules/ml/include/opencv2/opencv2/core/core_c.h
-limits.h
--
-map
--
-iostream
--
-
-../../modules/nonfree/include/opencv2/nonfree.hpp
-opencv2/nonfree/features2d.hpp
-../../modules/nonfree/include/opencv2/opencv2/nonfree/features2d.hpp
-
-../../modules/nonfree/include/opencv2/nonfree/features2d.hpp
-opencv2/features2d.hpp
-../../modules/nonfree/include/opencv2/nonfree/opencv2/features2d.hpp
-
 ../../modules/objdetect/include/opencv2/objdetect.hpp
 opencv2/core.hpp
 ../../modules/objdetect/include/opencv2/opencv2/core.hpp
-opencv2/objdetect/linemod.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/linemod.hpp
-opencv2/objdetect/erfilter.hpp
-../../modules/objdetect/include/opencv2/opencv2/objdetect/erfilter.hpp
 opencv2/objdetect/detection_based_tracker.hpp
 ../../modules/objdetect/include/opencv2/opencv2/objdetect/detection_based_tracker.hpp
 
 ../../modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
 vector
--
-
-../../modules/objdetect/include/opencv2/objdetect/erfilter.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-vector
--
-deque
--
-string
--
-
-../../modules/objdetect/include/opencv2/objdetect/linemod.hpp
-opencv2/core.hpp
-../../modules/objdetect/include/opencv2/objdetect/opencv2/core.hpp
-map
 -
 
 ../../modules/photo/include/opencv2/photo.hpp
@@ -375,10 +325,6 @@ asm-generic/signal.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm/types.h
-
-/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/assert.h
-sys/cdefs.h
--
 
 /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/ctype.h
 sys/cdefs.h
@@ -1048,22 +994,6 @@ bits/c++config.h
 type_traits
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
-bits/functexcept.h
--
-bits/concept_check.h
--
-initializer_list
--
-tuple
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
-bits/concept_check.h
--
-initializer_list
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 bits/concept_check.h
 -
@@ -1090,18 +1020,6 @@ debug/debug.h
 bits/stl_algobase.h
 -
 bits/stl_construct.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_tree.h
-bits/stl_algobase.h
--
-bits/allocator.h
--
-bits/stl_function.h
--
-bits/cpp_type_traits.h
--
-bits/alloc_traits.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_uninitialized.h
@@ -1269,30 +1187,6 @@ debug/formatter.h
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
-map
--
-debug/map.h
--
-debug/multimap.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
-debug/safe_sequence.h
--
-debug/safe_iterator.h
--
-utility
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
-debug/safe_sequence.h
--
-debug/safe_iterator.h
--
-utility
--
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 ext/concurrence.h
@@ -1550,14 +1444,6 @@ bits/stringfwd.h
 bits/postypes.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream
-bits/c++config.h
--
-ostream
--
-istream
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/istream
 ios
 -
@@ -1568,20 +1454,6 @@ bits/istream.tcc
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 bits/c++config.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
-bits/stl_tree.h
--
-bits/stl_map.h
--
-bits/stl_multimap.h
--
-bits/range_access.h
--
-debug/map
--
-profile/map
 -
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
@@ -2168,24 +2040,6 @@ profile/impl/profiler_trace.h
 ext/type_traits.h
 -
 
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
-map
--
-profile/map.h
--
-profile/multimap.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
-utility
--
-profile/base.h
--
-
-/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
-utility
--
-
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/unordered_base.h
 
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/unordered_map
@@ -2651,14 +2505,10 @@ common.h
 /Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/common.h
 opencv2/opencv_modules.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/opencv_modules.hpp
-opencv2/nonfree.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/nonfree.hpp
 opencv2/features2d.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/features2d.hpp
 opencv2/video.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/video.hpp
-opencv2/ml.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/ml.hpp
 opencv2/contrib.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/java/generator/src/cpp/opencv2/contrib.hpp
 
@@ -2721,16 +2571,6 @@ string
 -
 opencv2/imgproc.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/opencv2/imgproc.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/ml.cpp
-common.h
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/common.h
-opencv2/opencv_modules.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/opencv2/opencv_modules.hpp
-string
--
-opencv2/ml.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/opencv2/ml.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/java/objdetect.cpp
 common.h

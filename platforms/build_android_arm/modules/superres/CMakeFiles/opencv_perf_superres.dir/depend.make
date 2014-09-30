@@ -14,6 +14,7 @@ modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../..
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -373,6 +374,7 @@ modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: .
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/superres/CMakeFiles/opencv_perf_superres.dir/perf/perf_superres.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

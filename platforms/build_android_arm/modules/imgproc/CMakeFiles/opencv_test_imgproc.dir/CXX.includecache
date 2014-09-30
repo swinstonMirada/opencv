@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -139,6 +143,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2835,78 +2843,78 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_accumulate.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 cvconfig.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/cvconfig.h
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_blend.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 cvconfig.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/cvconfig.h
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_boxfilter.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_canny.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_color.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_filter2d.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_filters.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 cvconfig.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/cvconfig.h
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_gftt.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_histogram.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 cvconfig.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/cvconfig.h
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_imgproc.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 cvconfig.h
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/cvconfig.h
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_match_template.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 iostream
@@ -2915,26 +2923,26 @@ fstream
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/fstream
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_medianfilter.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_pyramids.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_sepfilter2D.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_warp.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/test/ocl/opencv2/ts/ocl_test.hpp
 
@@ -3643,20 +3651,6 @@ unistd.h
 /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
 cvconfig.h
-
-modules/imgproc/test_precomp.hpp
-iostream
--
-opencv2/ts.hpp
-modules/imgproc/opencv2/ts.hpp
-opencv2/core/private.hpp
-modules/imgproc/opencv2/core/private.hpp
-opencv2/imgproc.hpp
-modules/imgproc/opencv2/imgproc.hpp
-opencv2/imgcodecs.hpp
-modules/imgproc/opencv2/imgcodecs.hpp
-opencv2/imgproc/imgproc_c.h
-modules/imgproc/opencv2/imgproc/imgproc_c.h
 
 opencv2/opencv_modules.hpp
 

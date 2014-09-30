@@ -9,7 +9,6 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.MatOfFloat;
 import org.opencv.core.MatOfPoint2f;
-import org.opencv.core.MatOfRect;
 import org.opencv.core.Rect;
 import org.opencv.core.RotatedRect;
 import org.opencv.core.Size;
@@ -125,138 +124,6 @@ public class Video {
         int retVal = buildOpticalFlowPyramid_1(img.nativeObj, pyramid_mat.nativeObj, winSize.width, winSize.height, maxLevel);
         Converters.Mat_to_vector_Mat(pyramid_mat, pyramid);
         return retVal;
-    }
-
-
-    //
-    // C++:  double calcGlobalOrientation(Mat orientation, Mat mask, Mat mhi, double timestamp, double duration)
-    //
-
-/**
- * <p>Calculates a global motion orientation in a selected region.</p>
- *
- * <p>The function calculates an average motion direction in the selected region
- * and returns the angle between 0 degrees and 360 degrees. The average
- * direction is computed from the weighted orientation histogram, where a recent
- * motion has a larger weight and the motion occurred in the past has a smaller
- * weight, as recorded in <code>mhi</code>.</p>
- *
- * @param orientation Motion gradient orientation image calculated by the
- * function "calcMotionGradient".
- * @param mask Mask image. It may be a conjunction of a valid gradient mask,
- * also calculated by "calcMotionGradient", and the mask of a region whose
- * direction needs to be calculated.
- * @param mhi Motion history image calculated by "updateMotionHistory".
- * @param timestamp Timestamp passed to "updateMotionHistory".
- * @param duration Maximum duration of a motion track in milliseconds, passed to
- * "updateMotionHistory".
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcglobalorientation">org.opencv.video.Video.calcGlobalOrientation</a>
- */
-    public static double calcGlobalOrientation(Mat orientation, Mat mask, Mat mhi, double timestamp, double duration)
-    {
-
-        double retVal = calcGlobalOrientation_0(orientation.nativeObj, mask.nativeObj, mhi.nativeObj, timestamp, duration);
-
-        return retVal;
-    }
-
-
-    //
-    // C++:  void calcMotionGradient(Mat mhi, Mat& mask, Mat& orientation, double delta1, double delta2, int apertureSize = 3)
-    //
-
-/**
- * <p>Calculates a gradient orientation of a motion history image.</p>
- *
- * <p>The function calculates a gradient orientation at each pixel <em>(x, y)</em>
- * as:</p>
- *
- * <p><em>orientation(x,y)= arctan((dmhi/dy)/(dmhi/dx))</em></p>
- *
- * <p>In fact, "fastAtan2" and "phase" are used so that the computed angle is
- * measured in degrees and covers the full range 0..360. Also, the
- * <code>mask</code> is filled to indicate pixels where the computed angle is
- * valid.</p>
- *
- * <p>Note:</p>
- * <ul>
- *   <li> (Python) An example on how to perform a motion template technique can
- * be found at opencv_source_code/samples/python2/motempl.py
- * </ul>
- *
- * @param mhi Motion history single-channel floating-point image.
- * @param mask Output mask image that has the type <code>CV_8UC1</code> and the
- * same size as <code>mhi</code>. Its non-zero elements mark pixels where the
- * motion gradient data is correct.
- * @param orientation Output motion gradient orientation image that has the same
- * type and the same size as <code>mhi</code>. Each pixel of the image is a
- * motion orientation, from 0 to 360 degrees.
- * @param delta1 Minimal (or maximal) allowed difference between
- * <code>mhi</code> values within a pixel neighborhood.
- * @param delta2 Maximal (or minimal) allowed difference between
- * <code>mhi</code> values within a pixel neighborhood. That is, the function
- * finds the minimum (<em>m(x,y)</em>) and maximum (<em>M(x,y)</em>)
- * <code>mhi</code> values over <em>3 x 3</em> neighborhood of each pixel and
- * marks the motion orientation at <em>(x, y)</em> as valid only if
- *
- * <p><em>min(delta1, delta2) <= M(x,y)-m(x,y) <= max(delta1, delta2).</em></p>
- * @param apertureSize Aperture size of the "Sobel" operator.
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcmotiongradient">org.opencv.video.Video.calcMotionGradient</a>
- */
-    public static void calcMotionGradient(Mat mhi, Mat mask, Mat orientation, double delta1, double delta2, int apertureSize)
-    {
-
-        calcMotionGradient_0(mhi.nativeObj, mask.nativeObj, orientation.nativeObj, delta1, delta2, apertureSize);
-
-        return;
-    }
-
-/**
- * <p>Calculates a gradient orientation of a motion history image.</p>
- *
- * <p>The function calculates a gradient orientation at each pixel <em>(x, y)</em>
- * as:</p>
- *
- * <p><em>orientation(x,y)= arctan((dmhi/dy)/(dmhi/dx))</em></p>
- *
- * <p>In fact, "fastAtan2" and "phase" are used so that the computed angle is
- * measured in degrees and covers the full range 0..360. Also, the
- * <code>mask</code> is filled to indicate pixels where the computed angle is
- * valid.</p>
- *
- * <p>Note:</p>
- * <ul>
- *   <li> (Python) An example on how to perform a motion template technique can
- * be found at opencv_source_code/samples/python2/motempl.py
- * </ul>
- *
- * @param mhi Motion history single-channel floating-point image.
- * @param mask Output mask image that has the type <code>CV_8UC1</code> and the
- * same size as <code>mhi</code>. Its non-zero elements mark pixels where the
- * motion gradient data is correct.
- * @param orientation Output motion gradient orientation image that has the same
- * type and the same size as <code>mhi</code>. Each pixel of the image is a
- * motion orientation, from 0 to 360 degrees.
- * @param delta1 Minimal (or maximal) allowed difference between
- * <code>mhi</code> values within a pixel neighborhood.
- * @param delta2 Maximal (or minimal) allowed difference between
- * <code>mhi</code> values within a pixel neighborhood. That is, the function
- * finds the minimum (<em>m(x,y)</em>) and maximum (<em>M(x,y)</em>)
- * <code>mhi</code> values over <em>3 x 3</em> neighborhood of each pixel and
- * marks the motion orientation at <em>(x, y)</em> as valid only if
- *
- * <p><em>min(delta1, delta2) <= M(x,y)-m(x,y) <= max(delta1, delta2).</em></p>
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcmotiongradient">org.opencv.video.Video.calcMotionGradient</a>
- */
-    public static void calcMotionGradient(Mat mhi, Mat mask, Mat orientation, double delta1, double delta2)
-    {
-
-        calcMotionGradient_1(mhi.nativeObj, mask.nativeObj, orientation.nativeObj, delta1, delta2);
-
-        return;
     }
 
 
@@ -509,119 +376,133 @@ public class Video {
 
 
     //
-    // C++:  void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow)
-    //
-
-/**
- * <p>Calculate an optical flow using "SimpleFlow" algorithm.</p>
- *
- * <p>See [Tao2012]. And site of project - http://graphics.berkeley.edu/papers/Tao-SAN-2012-05/.</p>
- *
- * <p>Note:</p>
- * <ul>
- *   <li> An example using the simpleFlow algorithm can be found at
- * opencv_source_code/samples/cpp/simpleflow_demo.cpp
- * </ul>
- *
- * @param from a from
- * @param to a to
- * @param flow computed flow image that has the same size as <code>prev</code>
- * and type <code>CV_32FC2</code>
- * @param layers Number of layers
- * @param averaging_block_size Size of block through which we sum up when
- * calculate cost function for pixel
- * @param max_flow maximal flow that we search at each level
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowsf">org.opencv.video.Video.calcOpticalFlowSF</a>
- */
-    public static void calcOpticalFlowSF(Mat from, Mat to, Mat flow, int layers, int averaging_block_size, int max_flow)
-    {
-
-        calcOpticalFlowSF_0(from.nativeObj, to.nativeObj, flow.nativeObj, layers, averaging_block_size, max_flow);
-
-        return;
-    }
-
-
-    //
-    // C++:  void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr)
-    //
-
-/**
- * <p>Calculate an optical flow using "SimpleFlow" algorithm.</p>
- *
- * <p>See [Tao2012]. And site of project - http://graphics.berkeley.edu/papers/Tao-SAN-2012-05/.</p>
- *
- * <p>Note:</p>
- * <ul>
- *   <li> An example using the simpleFlow algorithm can be found at
- * opencv_source_code/samples/cpp/simpleflow_demo.cpp
- * </ul>
- *
- * @param from a from
- * @param to a to
- * @param flow computed flow image that has the same size as <code>prev</code>
- * and type <code>CV_32FC2</code>
- * @param layers Number of layers
- * @param averaging_block_size Size of block through which we sum up when
- * calculate cost function for pixel
- * @param max_flow maximal flow that we search at each level
- * @param sigma_dist vector smooth spatial sigma parameter
- * @param sigma_color vector smooth color sigma parameter
- * @param postprocess_window window size for postprocess cross bilateral filter
- * @param sigma_dist_fix spatial sigma for postprocess cross bilateralf filter
- * @param sigma_color_fix color sigma for postprocess cross bilateral filter
- * @param occ_thr threshold for detecting occlusions
- * @param upscale_averaging_radius window size for bilateral upscale operation
- * @param upscale_sigma_dist spatial sigma for bilateral upscale operation
- * @param upscale_sigma_color color sigma for bilateral upscale operation
- * @param speed_up_thr threshold to detect point with irregular flow - where
- * flow should be recalculated after upscale
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#calcopticalflowsf">org.opencv.video.Video.calcOpticalFlowSF</a>
- */
-    public static void calcOpticalFlowSF(Mat from, Mat to, Mat flow, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr)
-    {
-
-        calcOpticalFlowSF_1(from.nativeObj, to.nativeObj, flow.nativeObj, layers, averaging_block_size, max_flow, sigma_dist, sigma_color, postprocess_window, sigma_dist_fix, sigma_color_fix, occ_thr, upscale_averaging_radius, upscale_sigma_dist, upscale_sigma_color, speed_up_thr);
-
-        return;
-    }
-
-
-    //
-    // C++:  Ptr_BackgroundSubtractorGMG createBackgroundSubtractorGMG(int initializationFrames = 120, double decisionThreshold = 0.8)
-    //
-
-    // Return type 'Ptr_BackgroundSubtractorGMG' is not supported, skipping the function
-
-
-    //
     // C++:  Ptr_BackgroundSubtractorKNN createBackgroundSubtractorKNN(int history = 500, double dist2Threshold = 400.0, bool detectShadows = true)
     //
 
-    // Return type 'Ptr_BackgroundSubtractorKNN' is not supported, skipping the function
+/**
+ * <p>Creates KNN Background Subtractor</p>
+ *
+ * @param history Length of the history.
+ * @param dist2Threshold Threshold on the squared distance between the pixel and
+ * the sample to decide whether a pixel is close to that sample. This parameter
+ * does not affect the background update.
+ * @param detectShadows If true, the algorithm will detect shadows and mark
+ * them. It decreases the speed a bit, so if you do not need this feature, set
+ * the parameter to false.
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#createbackgroundsubtractorknn">org.opencv.video.Video.createBackgroundSubtractorKNN</a>
+ */
+    public static BackgroundSubtractorKNN createBackgroundSubtractorKNN(int history, double dist2Threshold, boolean detectShadows)
+    {
 
+        BackgroundSubtractorKNN retVal = new BackgroundSubtractorKNN(createBackgroundSubtractorKNN_0(history, dist2Threshold, detectShadows));
 
-    //
-    // C++:  Ptr_BackgroundSubtractorMOG createBackgroundSubtractorMOG(int history = 200, int nmixtures = 5, double backgroundRatio = 0.7, double noiseSigma = 0)
-    //
+        return retVal;
+    }
 
-    // Return type 'Ptr_BackgroundSubtractorMOG' is not supported, skipping the function
+/**
+ * <p>Creates KNN Background Subtractor</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#createbackgroundsubtractorknn">org.opencv.video.Video.createBackgroundSubtractorKNN</a>
+ */
+    public static BackgroundSubtractorKNN createBackgroundSubtractorKNN()
+    {
+
+        BackgroundSubtractorKNN retVal = new BackgroundSubtractorKNN(createBackgroundSubtractorKNN_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_BackgroundSubtractorMOG2 createBackgroundSubtractorMOG2(int history = 500, double varThreshold = 16, bool detectShadows = true)
     //
 
-    // Return type 'Ptr_BackgroundSubtractorMOG2' is not supported, skipping the function
+/**
+ * <p>Creates MOG2 Background Subtractor</p>
+ *
+ * @param history Length of the history.
+ * @param varThreshold Threshold on the squared Mahalanobis distance between the
+ * pixel and the model to decide whether a pixel is well described by the
+ * background model. This parameter does not affect the background update.
+ * @param detectShadows If true, the algorithm will detect shadows and mark
+ * them. It decreases the speed a bit, so if you do not need this feature, set
+ * the parameter to false.
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#createbackgroundsubtractormog2">org.opencv.video.Video.createBackgroundSubtractorMOG2</a>
+ */
+    public static BackgroundSubtractorMOG2 createBackgroundSubtractorMOG2(int history, double varThreshold, boolean detectShadows)
+    {
+
+        BackgroundSubtractorMOG2 retVal = new BackgroundSubtractorMOG2(createBackgroundSubtractorMOG2_0(history, varThreshold, detectShadows));
+
+        return retVal;
+    }
+
+/**
+ * <p>Creates MOG2 Background Subtractor</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#createbackgroundsubtractormog2">org.opencv.video.Video.createBackgroundSubtractorMOG2</a>
+ */
+    public static BackgroundSubtractorMOG2 createBackgroundSubtractorMOG2()
+    {
+
+        BackgroundSubtractorMOG2 retVal = new BackgroundSubtractorMOG2(createBackgroundSubtractorMOG2_1());
+
+        return retVal;
+    }
 
 
     //
     // C++:  Ptr_DenseOpticalFlow createOptFlow_DualTVL1()
     //
 
-    // Return type 'Ptr_DenseOpticalFlow' is not supported, skipping the function
+/**
+ * <p>"Dual TV L1" Optical Flow Algorithm.</p>
+ *
+ * <p>The class implements the "Dual TV L1" optical flow algorithm described in
+ * [Zach2007] and [Javier2012].</p>
+ *
+ * <p>Here are important members of the class that control the algorithm, which you
+ * can set after constructing the class instance: Time step of the numerical
+ * scheme.
+ * <code></p>
+ *
+ * <p>// C++ code:</p>
+ *
+ * <p>Weight parameter for the data term, attachment parameter. This is the most
+ * relevant parameter, which determines the smoothness of the output. The
+ * smaller this parameter is, the smoother the solutions we obtain. It depends
+ * on the range of motions of the images, so its value should be adapted to each
+ * image sequence.</p>
+ *
+ * <p>Weight parameter for (u - v)^2, tightness parameter. It serves as a link
+ * between the attachment and the regularization terms. In theory, it should
+ * have a small value in order to maintain both parts in correspondence. The
+ * method is stable for a large range of values of this parameter.</p>
+ *
+ * <p>Number of scales used to create the pyramid of images.</p>
+ *
+ * <p>Number of warpings per scale. Represents the number of times that I1(x+u0)
+ * and grad(I1(x+u0)) are computed per scale. This is a parameter that assures
+ * the stability of the method. It also affects the running time, so it is a
+ * compromise between speed and accuracy.</p>
+ *
+ * <p>Stopping criterion threshold used in the numerical scheme, which is a
+ * trade-off between precision and running time. A small value will yield more
+ * accurate solutions at the expense of a slower convergence.</p>
+ *
+ * <p>Stopping criterion iterations number used in the numerical scheme.</p>
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#createoptflow-dualtvl1">org.opencv.video.Video.createOptFlow_DualTVL1</a>
+ */
+    public static DenseOpticalFlow createOptFlow_DualTVL1()
+    {
+
+        DenseOpticalFlow retVal = new DenseOpticalFlow(createOptFlow_DualTVL1_0());
+
+        return retVal;
+    }
 
 
     //
@@ -927,80 +808,6 @@ public class Video {
     }
 
 
-    //
-    // C++:  void segmentMotion(Mat mhi, Mat& segmask, vector_Rect& boundingRects, double timestamp, double segThresh)
-    //
-
-/**
- * <p>Splits a motion history image into a few parts corresponding to separate
- * independent motions (for example, left hand, right hand).</p>
- *
- * <p>The function finds all of the motion segments and marks them in
- * <code>segmask</code> with individual values (1,2,...). It also computes a
- * vector with ROIs of motion connected components. After that the motion
- * direction for every component can be calculated with "calcGlobalOrientation"
- * using the extracted mask of the particular component.</p>
- *
- * @param mhi Motion history image.
- * @param segmask Image where the found mask should be stored, single-channel,
- * 32-bit floating-point.
- * @param boundingRects Vector containing ROIs of motion connected components.
- * @param timestamp Current time in milliseconds or other units.
- * @param segThresh Segmentation threshold that is recommended to be equal to
- * the interval between motion history "steps" or greater.
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#segmentmotion">org.opencv.video.Video.segmentMotion</a>
- */
-    public static void segmentMotion(Mat mhi, Mat segmask, MatOfRect boundingRects, double timestamp, double segThresh)
-    {
-        Mat boundingRects_mat = boundingRects;
-        segmentMotion_0(mhi.nativeObj, segmask.nativeObj, boundingRects_mat.nativeObj, timestamp, segThresh);
-
-        return;
-    }
-
-
-    //
-    // C++:  void updateMotionHistory(Mat silhouette, Mat& mhi, double timestamp, double duration)
-    //
-
-/**
- * <p>Updates the motion history image by a moving silhouette.</p>
- *
- * <p>The function updates the motion history image as follows:</p>
- *
- * <p><em>mhi(x,y)= timestamp if silhouette(x,y) != 0; 0 if silhouette(x,y) = 0 and
- * mhi &lt(timestamp - duration); mhi(x,y) otherwise</em></p>
- *
- * <p>That is, MHI pixels where the motion occurs are set to the current
- * <code>timestamp</code>, while the pixels where the motion happened last time
- * a long time ago are cleared.</p>
- *
- * <p>The function, together with "calcMotionGradient" and "calcGlobalOrientation",
- * implements a motion templates technique described in [Davis97] and
- * [Bradski00].
- * See also the OpenCV sample <code>motempl.c</code> that demonstrates the use
- * of all the motion template functions.</p>
- *
- * @param silhouette Silhouette mask that has non-zero pixels where the motion
- * occurs.
- * @param mhi Motion history image that is updated by the function
- * (single-channel, 32-bit floating-point).
- * @param timestamp Current time in milliseconds or other units.
- * @param duration Maximal duration of the motion track in the same units as
- * <code>timestamp</code>.
- *
- * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#updatemotionhistory">org.opencv.video.Video.updateMotionHistory</a>
- */
-    public static void updateMotionHistory(Mat silhouette, Mat mhi, double timestamp, double duration)
-    {
-
-        updateMotionHistory_0(silhouette.nativeObj, mhi.nativeObj, timestamp, duration);
-
-        return;
-    }
-
-
 
 
     // C++:  RotatedRect CamShift(Mat probImage, Rect& window, TermCriteria criteria)
@@ -1010,13 +817,6 @@ public class Video {
     private static native int buildOpticalFlowPyramid_0(long img_nativeObj, long pyramid_mat_nativeObj, double winSize_width, double winSize_height, int maxLevel, boolean withDerivatives, int pyrBorder, int derivBorder, boolean tryReuseInputImage);
     private static native int buildOpticalFlowPyramid_1(long img_nativeObj, long pyramid_mat_nativeObj, double winSize_width, double winSize_height, int maxLevel);
 
-    // C++:  double calcGlobalOrientation(Mat orientation, Mat mask, Mat mhi, double timestamp, double duration)
-    private static native double calcGlobalOrientation_0(long orientation_nativeObj, long mask_nativeObj, long mhi_nativeObj, double timestamp, double duration);
-
-    // C++:  void calcMotionGradient(Mat mhi, Mat& mask, Mat& orientation, double delta1, double delta2, int apertureSize = 3)
-    private static native void calcMotionGradient_0(long mhi_nativeObj, long mask_nativeObj, long orientation_nativeObj, double delta1, double delta2, int apertureSize);
-    private static native void calcMotionGradient_1(long mhi_nativeObj, long mask_nativeObj, long orientation_nativeObj, double delta1, double delta2);
-
     // C++:  void calcOpticalFlowFarneback(Mat prev, Mat next, Mat& flow, double pyr_scale, int levels, int winsize, int iterations, int poly_n, double poly_sigma, int flags)
     private static native void calcOpticalFlowFarneback_0(long prev_nativeObj, long next_nativeObj, long flow_nativeObj, double pyr_scale, int levels, int winsize, int iterations, int poly_n, double poly_sigma, int flags);
 
@@ -1025,11 +825,16 @@ public class Video {
     private static native void calcOpticalFlowPyrLK_1(long prevImg_nativeObj, long nextImg_nativeObj, long prevPts_mat_nativeObj, long nextPts_mat_nativeObj, long status_mat_nativeObj, long err_mat_nativeObj, double winSize_width, double winSize_height, int maxLevel);
     private static native void calcOpticalFlowPyrLK_2(long prevImg_nativeObj, long nextImg_nativeObj, long prevPts_mat_nativeObj, long nextPts_mat_nativeObj, long status_mat_nativeObj, long err_mat_nativeObj);
 
-    // C++:  void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow)
-    private static native void calcOpticalFlowSF_0(long from_nativeObj, long to_nativeObj, long flow_nativeObj, int layers, int averaging_block_size, int max_flow);
+    // C++:  Ptr_BackgroundSubtractorKNN createBackgroundSubtractorKNN(int history = 500, double dist2Threshold = 400.0, bool detectShadows = true)
+    private static native long createBackgroundSubtractorKNN_0(int history, double dist2Threshold, boolean detectShadows);
+    private static native long createBackgroundSubtractorKNN_1();
 
-    // C++:  void calcOpticalFlowSF(Mat from, Mat to, Mat& flow, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr)
-    private static native void calcOpticalFlowSF_1(long from_nativeObj, long to_nativeObj, long flow_nativeObj, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr);
+    // C++:  Ptr_BackgroundSubtractorMOG2 createBackgroundSubtractorMOG2(int history = 500, double varThreshold = 16, bool detectShadows = true)
+    private static native long createBackgroundSubtractorMOG2_0(int history, double varThreshold, boolean detectShadows);
+    private static native long createBackgroundSubtractorMOG2_1();
+
+    // C++:  Ptr_DenseOpticalFlow createOptFlow_DualTVL1()
+    private static native long createOptFlow_DualTVL1_0();
 
     // C++:  Mat estimateRigidTransform(Mat src, Mat dst, bool fullAffine)
     private static native long estimateRigidTransform_0(long src_nativeObj, long dst_nativeObj, boolean fullAffine);
@@ -1041,11 +846,5 @@ public class Video {
 
     // C++:  int meanShift(Mat probImage, Rect& window, TermCriteria criteria)
     private static native int meanShift_0(long probImage_nativeObj, int window_x, int window_y, int window_width, int window_height, double[] window_out, int criteria_type, int criteria_maxCount, double criteria_epsilon);
-
-    // C++:  void segmentMotion(Mat mhi, Mat& segmask, vector_Rect& boundingRects, double timestamp, double segThresh)
-    private static native void segmentMotion_0(long mhi_nativeObj, long segmask_nativeObj, long boundingRects_mat_nativeObj, double timestamp, double segThresh);
-
-    // C++:  void updateMotionHistory(Mat silhouette, Mat& mhi, double timestamp, double duration)
-    private static native void updateMotionHistory_0(long silhouette_nativeObj, long mhi_nativeObj, double timestamp, double duration);
 
 }

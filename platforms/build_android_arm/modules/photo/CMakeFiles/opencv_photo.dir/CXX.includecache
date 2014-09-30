@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -173,6 +177,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2506,6 +2514,14 @@ vector
 limits
 -
 
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoise_tvl1.cpp
+precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/precomp.hpp
+vector
+-
+algorithm
+-
+
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/denoising.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/precomp.hpp
@@ -2545,8 +2561,8 @@ arrays.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_denoising_opencl.hpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl_kernels.hpp
+opencl_kernels_photo.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl_kernels_photo.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
 precomp.hpp
@@ -2664,13 +2680,13 @@ opencv2/imgproc.hpp
 hdr_common.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/src/hdr_common.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.hpp
+opencl_kernels_photo.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -3252,7 +3268,7 @@ unistd.h
 
 cvconfig.h
 
-modules/photo/opencl_kernels.hpp
+modules/photo/opencl_kernels_photo.hpp
 opencv2/core/ocl_genbase.hpp
 modules/photo/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp

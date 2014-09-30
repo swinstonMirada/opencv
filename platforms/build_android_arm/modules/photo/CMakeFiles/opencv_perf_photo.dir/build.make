@@ -165,6 +165,8 @@ bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_photo.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_ts.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_core.a
+bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_imgproc.a
+bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_imgproc.a
 bin/opencv_perf_photo: lib/armeabi-v7a/libopencv_imgcodecs.a

@@ -3,8 +3,8 @@
 
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/opencl/perf_stereobm.cpp.o
  ../../modules/calib3d/include/opencv2/calib3d.hpp
- ../../modules/calib3d/perf/perf_precomp.hpp
  ../../modules/core/include/opencv2/core.hpp
+ ../../modules/core/include/opencv2/core/affine.hpp
  ../../modules/core/include/opencv2/core/base.hpp
  ../../modules/core/include/opencv2/core/bufferpool.hpp
  ../../modules/core/include/opencv2/core/core_c.h
@@ -16,6 +16,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/opencl/perf_stereobm.cpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -363,11 +364,13 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/opencl/perf_stereobm.cpp
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.o
  ../../modules/calib3d/include/opencv2/calib3d.hpp
  ../../modules/core/include/opencv2/core.hpp
+ ../../modules/core/include/opencv2/core/affine.hpp
  ../../modules/core/include/opencv2/core/base.hpp
  ../../modules/core/include/opencv2/core/bufferpool.hpp
  ../../modules/core/include/opencv2/core/cvdef.h
@@ -377,6 +380,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -723,6 +727,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_cicrlesGrid.cpp.o
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.o
  ../../modules/calib3d/include/opencv2/calib3d.hpp
  ../../modules/core/include/opencv2/core.hpp
+ ../../modules/core/include/opencv2/core/affine.hpp
  ../../modules/core/include/opencv2/core/base.hpp
  ../../modules/core/include/opencv2/core/bufferpool.hpp
  ../../modules/core/include/opencv2/core/cvdef.h
@@ -732,6 +737,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1078,6 +1084,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_main.cpp.o
 modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.o
  ../../modules/calib3d/include/opencv2/calib3d.hpp
  ../../modules/core/include/opencv2/core.hpp
+ ../../modules/core/include/opencv2/core/affine.hpp
  ../../modules/core/include/opencv2/core/base.hpp
  ../../modules/core/include/opencv2/core/bufferpool.hpp
  ../../modules/core/include/opencv2/core/cvdef.h
@@ -1087,6 +1094,7 @@ modules/calib3d/CMakeFiles/opencv_perf_calib3d.dir/perf/perf_pnp.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp

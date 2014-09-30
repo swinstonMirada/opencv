@@ -52,14 +52,14 @@ include modules/objdetect/CMakeFiles/opencv_objdetect.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 
-modules/objdetect/opencl_kernels.cpp: ../../modules/objdetect/src/opencl/cascadedetect.cl
-modules/objdetect/opencl_kernels.cpp: ../../modules/objdetect/src/opencl/objdetect_hog.cl
-modules/objdetect/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/objdetect/opencl_kernels_objdetect.cpp: ../../modules/objdetect/src/opencl/cascadedetect.cl
+modules/objdetect/opencl_kernels_objdetect.cpp: ../../modules/objdetect/src/opencl/objdetect_hog.cl
+modules/objdetect/opencl_kernels_objdetect.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/objdetect && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="objdetect" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_objdetect.cpp, opencl_kernels_objdetect.hpp"
+	cd modules/objdetect && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="objdetect" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/objdetect/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/opencl_kernels_objdetect.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/objdetect/opencl_kernels.hpp: modules/objdetect/opencl_kernels.cpp
+modules/objdetect/opencl_kernels_objdetect.hpp: modules/objdetect/opencl_kernels_objdetect.cpp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o: ../../modules/objdetect/src/cascadedetect.cpp
@@ -130,32 +130,9 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cp
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o: ../../modules/objdetect/src/erfilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o -c ../../../../modules/objdetect/src/erfilter.cpp
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.i"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -E ../../../../modules/objdetect/src/erfilter.cpp > CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.i
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.s"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -S ../../../../modules/objdetect/src/erfilter.cpp -o CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.s
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.requires:
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.requires
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.provides: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.requires
-	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.provides.build
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.provides
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o
-
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o: ../../modules/objdetect/src/haar.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o"
 	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o -c ../../../../modules/objdetect/src/haar.cpp
 
@@ -178,7 +155,7 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o.provides.build:
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o: ../../modules/objdetect/src/hog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o"
 	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o -c ../../../../modules/objdetect/src/hog.cpp
 
@@ -199,62 +176,37 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.provides: module
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o: ../../modules/objdetect/src/linemod.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o -c ../../../../modules/objdetect/src/linemod.cpp
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o: modules/objdetect/opencl_kernels_objdetect.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o"
+	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o -c opencl_kernels_objdetect.cpp
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -E ../../../../modules/objdetect/src/linemod.cpp > CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.i"
+	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -E opencl_kernels_objdetect.cpp > CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.i
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -S ../../../../modules/objdetect/src/linemod.cpp -o CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.s"
+	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -S opencl_kernels_objdetect.cpp -o CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.s
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires:
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.requires:
+.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.requires
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.provides: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires
-	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.provides.build
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.provides
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.provides: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.requires
+	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.provides.build
+.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.provides
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o: modules/objdetect/CMakeFiles/opencv_objdetect.dir/flags.make
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o: modules/objdetect/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.i"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.i
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.s"
-	cd modules/objdetect && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.s
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.requires
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.provides: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.provides
-
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.provides.build: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o
 
 # Object files for target opencv_objdetect
 opencv_objdetect_OBJECTS = \
 "CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o" \
 "CMakeFiles/opencv_objdetect.dir/src/cascadedetect_convert.cpp.o" \
 "CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o" \
-"CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o" \
 "CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o" \
 "CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o" \
-"CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o" \
-"CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o"
 
 # External object files for target opencv_objdetect
 opencv_objdetect_EXTERNAL_OBJECTS =
@@ -262,11 +214,9 @@ opencv_objdetect_EXTERNAL_OBJECTS =
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect_convert.cpp.o
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o
-lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o
-lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o
-lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make
 lib/armeabi-v7a/libopencv_objdetect.a: modules/objdetect/CMakeFiles/opencv_objdetect.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_objdetect.a"
@@ -280,19 +230,17 @@ modules/objdetect/CMakeFiles/opencv_objdetect.dir/build: lib/armeabi-v7a/libopen
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect.cpp.o.requires
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/cascadedetect_convert.cpp.o.requires
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.o.requires
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o.requires
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/haar.cpp.o.requires
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.o.requires
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o.requires
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o.requires
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o.requires
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/requires
 
 modules/objdetect/CMakeFiles/opencv_objdetect.dir/clean:
 	cd modules/objdetect && $(CMAKE_COMMAND) -P CMakeFiles/opencv_objdetect.dir/cmake_clean.cmake
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/clean
 
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend: modules/objdetect/opencl_kernels.cpp
-modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend: modules/objdetect/opencl_kernels.hpp
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend: modules/objdetect/opencl_kernels_objdetect.cpp
+modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend: modules/objdetect/opencl_kernels_objdetect.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/objdetect /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/objdetect/CMakeFiles/opencv_objdetect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/objdetect/CMakeFiles/opencv_objdetect.dir/depend
 

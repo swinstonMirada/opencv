@@ -13,6 +13,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../..
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -492,6 +493,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../..
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_fourcc.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -971,6 +973,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: .
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_framecount.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1451,6 +1454,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../m
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1930,6 +1934,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: 
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_positioning.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2410,6 +2415,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_io.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2890,6 +2896,7 @@ modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ..
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_test_videoio.dir/test/test_video_pos.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

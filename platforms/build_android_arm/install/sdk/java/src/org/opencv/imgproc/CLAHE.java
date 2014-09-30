@@ -15,7 +15,7 @@ public class CLAHE extends Algorithm {
 
 
     //
-    // C++:  void CLAHE::apply(Mat src, Mat& dst)
+    // C++:  void apply(Mat src, Mat& dst)
     //
 
     public  void apply(Mat src, Mat dst)
@@ -28,7 +28,46 @@ public class CLAHE extends Algorithm {
 
 
     //
-    // C++:  void CLAHE::setClipLimit(double clipLimit)
+    // C++:  void collectGarbage()
+    //
+
+    public  void collectGarbage()
+    {
+
+        collectGarbage_0(nativeObj);
+
+        return;
+    }
+
+
+    //
+    // C++:  double getClipLimit()
+    //
+
+    public  double getClipLimit()
+    {
+
+        double retVal = getClipLimit_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  Size getTilesGridSize()
+    //
+
+    public  Size getTilesGridSize()
+    {
+
+        Size retVal = new Size(getTilesGridSize_0(nativeObj));
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void setClipLimit(double clipLimit)
     //
 
     public  void setClipLimit(double clipLimit)
@@ -41,7 +80,7 @@ public class CLAHE extends Algorithm {
 
 
     //
-    // C++:  void CLAHE::setTilesGridSize(Size tileGridSize)
+    // C++:  void setTilesGridSize(Size tileGridSize)
     //
 
     public  void setTilesGridSize(Size tileGridSize)
@@ -60,13 +99,22 @@ public class CLAHE extends Algorithm {
 
 
 
-    // C++:  void CLAHE::apply(Mat src, Mat& dst)
+    // C++:  void apply(Mat src, Mat& dst)
     private static native void apply_0(long nativeObj, long src_nativeObj, long dst_nativeObj);
 
-    // C++:  void CLAHE::setClipLimit(double clipLimit)
+    // C++:  void collectGarbage()
+    private static native void collectGarbage_0(long nativeObj);
+
+    // C++:  double getClipLimit()
+    private static native double getClipLimit_0(long nativeObj);
+
+    // C++:  Size getTilesGridSize()
+    private static native double[] getTilesGridSize_0(long nativeObj);
+
+    // C++:  void setClipLimit(double clipLimit)
     private static native void setClipLimit_0(long nativeObj, double clipLimit);
 
-    // C++:  void CLAHE::setTilesGridSize(Size tileGridSize)
+    // C++:  void setTilesGridSize(Size tileGridSize)
     private static native void setTilesGridSize_0(long nativeObj, double tileGridSize_width, double tileGridSize_height);
 
     // native support for java finalize()

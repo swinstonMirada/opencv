@@ -930,6 +930,84 @@ pch_Generate_opencv_test_highgui/fast:
 .PHONY : pch_Generate_opencv_test_highgui/fast
 
 #=============================================================================
+# Target rules for targets named opencv_ml
+
+# Build rule for target.
+opencv_ml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_ml
+.PHONY : opencv_ml
+
+# fast build rule for target.
+opencv_ml/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/build
+.PHONY : opencv_ml/fast
+
+#=============================================================================
+# Target rules for targets named opencv_ml_pch_dephelp
+
+# Build rule for target.
+opencv_ml_pch_dephelp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_ml_pch_dephelp
+.PHONY : opencv_ml_pch_dephelp
+
+# fast build rule for target.
+opencv_ml_pch_dephelp/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build
+.PHONY : opencv_ml_pch_dephelp/fast
+
+#=============================================================================
+# Target rules for targets named opencv_test_ml
+
+# Build rule for target.
+opencv_test_ml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_ml
+.PHONY : opencv_test_ml
+
+# fast build rule for target.
+opencv_test_ml/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/build
+.PHONY : opencv_test_ml/fast
+
+#=============================================================================
+# Target rules for targets named opencv_test_ml_pch_dephelp
+
+# Build rule for target.
+opencv_test_ml_pch_dephelp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_ml_pch_dephelp
+.PHONY : opencv_test_ml_pch_dephelp
+
+# fast build rule for target.
+opencv_test_ml_pch_dephelp/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_test_ml_pch_dephelp.dir/build
+.PHONY : opencv_test_ml_pch_dephelp/fast
+
+#=============================================================================
+# Target rules for targets named pch_Generate_opencv_ml
+
+# Build rule for target.
+pch_Generate_opencv_ml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_ml
+.PHONY : pch_Generate_opencv_ml
+
+# fast build rule for target.
+pch_Generate_opencv_ml/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/build.make modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/build
+.PHONY : pch_Generate_opencv_ml/fast
+
+#=============================================================================
+# Target rules for targets named pch_Generate_opencv_test_ml
+
+# Build rule for target.
+pch_Generate_opencv_test_ml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_test_ml
+.PHONY : pch_Generate_opencv_test_ml
+
+# fast build rule for target.
+pch_Generate_opencv_test_ml/fast:
+	$(MAKE) -f modules/ml/CMakeFiles/pch_Generate_opencv_test_ml.dir/build.make modules/ml/CMakeFiles/pch_Generate_opencv_test_ml.dir/build
+.PHONY : pch_Generate_opencv_test_ml/fast
+
+#=============================================================================
 # Target rules for targets named opencv_features2d
 
 # Build rule for target.
@@ -1162,201 +1240,6 @@ pch_Generate_opencv_test_calib3d: cmake_check_build_system
 pch_Generate_opencv_test_calib3d/fast:
 	$(MAKE) -f modules/calib3d/CMakeFiles/pch_Generate_opencv_test_calib3d.dir/build.make modules/calib3d/CMakeFiles/pch_Generate_opencv_test_calib3d.dir/build
 .PHONY : pch_Generate_opencv_test_calib3d/fast
-
-#=============================================================================
-# Target rules for targets named opencv_ml
-
-# Build rule for target.
-opencv_ml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_ml
-.PHONY : opencv_ml
-
-# fast build rule for target.
-opencv_ml/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/build
-.PHONY : opencv_ml/fast
-
-#=============================================================================
-# Target rules for targets named opencv_ml_pch_dephelp
-
-# Build rule for target.
-opencv_ml_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_ml_pch_dephelp
-.PHONY : opencv_ml_pch_dephelp
-
-# fast build rule for target.
-opencv_ml_pch_dephelp/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_ml_pch_dephelp.dir/build
-.PHONY : opencv_ml_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_ml
-
-# Build rule for target.
-opencv_test_ml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_ml
-.PHONY : opencv_test_ml
-
-# fast build rule for target.
-opencv_test_ml/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/build
-.PHONY : opencv_test_ml/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_ml_pch_dephelp
-
-# Build rule for target.
-opencv_test_ml_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_ml_pch_dephelp
-.PHONY : opencv_test_ml_pch_dephelp
-
-# fast build rule for target.
-opencv_test_ml_pch_dephelp/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml_pch_dephelp.dir/build.make modules/ml/CMakeFiles/opencv_test_ml_pch_dephelp.dir/build
-.PHONY : opencv_test_ml_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_ml
-
-# Build rule for target.
-pch_Generate_opencv_ml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_ml
-.PHONY : pch_Generate_opencv_ml
-
-# fast build rule for target.
-pch_Generate_opencv_ml/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/build.make modules/ml/CMakeFiles/pch_Generate_opencv_ml.dir/build
-.PHONY : pch_Generate_opencv_ml/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_test_ml
-
-# Build rule for target.
-pch_Generate_opencv_test_ml: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_test_ml
-.PHONY : pch_Generate_opencv_test_ml
-
-# fast build rule for target.
-pch_Generate_opencv_test_ml/fast:
-	$(MAKE) -f modules/ml/CMakeFiles/pch_Generate_opencv_test_ml.dir/build.make modules/ml/CMakeFiles/pch_Generate_opencv_test_ml.dir/build
-.PHONY : pch_Generate_opencv_test_ml/fast
-
-#=============================================================================
-# Target rules for targets named opencv_nonfree
-
-# Build rule for target.
-opencv_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_nonfree
-.PHONY : opencv_nonfree
-
-# fast build rule for target.
-opencv_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree.dir/build
-.PHONY : opencv_nonfree/fast
-
-#=============================================================================
-# Target rules for targets named opencv_nonfree_pch_dephelp
-
-# Build rule for target.
-opencv_nonfree_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_nonfree_pch_dephelp
-.PHONY : opencv_nonfree_pch_dephelp
-
-# fast build rule for target.
-opencv_nonfree_pch_dephelp/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_nonfree_pch_dephelp.dir/build.make modules/nonfree/CMakeFiles/opencv_nonfree_pch_dephelp.dir/build
-.PHONY : opencv_nonfree_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named opencv_perf_nonfree
-
-# Build rule for target.
-opencv_perf_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_perf_nonfree
-.PHONY : opencv_perf_nonfree
-
-# fast build rule for target.
-opencv_perf_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree.dir/build
-.PHONY : opencv_perf_nonfree/fast
-
-#=============================================================================
-# Target rules for targets named opencv_perf_nonfree_pch_dephelp
-
-# Build rule for target.
-opencv_perf_nonfree_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_perf_nonfree_pch_dephelp
-.PHONY : opencv_perf_nonfree_pch_dephelp
-
-# fast build rule for target.
-opencv_perf_nonfree_pch_dephelp/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_perf_nonfree_pch_dephelp.dir/build.make modules/nonfree/CMakeFiles/opencv_perf_nonfree_pch_dephelp.dir/build
-.PHONY : opencv_perf_nonfree_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_nonfree
-
-# Build rule for target.
-opencv_test_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_nonfree
-.PHONY : opencv_test_nonfree
-
-# fast build rule for target.
-opencv_test_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree.dir/build
-.PHONY : opencv_test_nonfree/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_nonfree_pch_dephelp
-
-# Build rule for target.
-opencv_test_nonfree_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_nonfree_pch_dephelp
-.PHONY : opencv_test_nonfree_pch_dephelp
-
-# fast build rule for target.
-opencv_test_nonfree_pch_dephelp/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/opencv_test_nonfree_pch_dephelp.dir/build.make modules/nonfree/CMakeFiles/opencv_test_nonfree_pch_dephelp.dir/build
-.PHONY : opencv_test_nonfree_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_nonfree
-
-# Build rule for target.
-pch_Generate_opencv_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_nonfree
-.PHONY : pch_Generate_opencv_nonfree
-
-# fast build rule for target.
-pch_Generate_opencv_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/pch_Generate_opencv_nonfree.dir/build.make modules/nonfree/CMakeFiles/pch_Generate_opencv_nonfree.dir/build
-.PHONY : pch_Generate_opencv_nonfree/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_perf_nonfree
-
-# Build rule for target.
-pch_Generate_opencv_perf_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_perf_nonfree
-.PHONY : pch_Generate_opencv_perf_nonfree
-
-# fast build rule for target.
-pch_Generate_opencv_perf_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/pch_Generate_opencv_perf_nonfree.dir/build.make modules/nonfree/CMakeFiles/pch_Generate_opencv_perf_nonfree.dir/build
-.PHONY : pch_Generate_opencv_perf_nonfree/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_test_nonfree
-
-# Build rule for target.
-pch_Generate_opencv_test_nonfree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_test_nonfree
-.PHONY : pch_Generate_opencv_test_nonfree
-
-# fast build rule for target.
-pch_Generate_opencv_test_nonfree/fast:
-	$(MAKE) -f modules/nonfree/CMakeFiles/pch_Generate_opencv_test_nonfree.dir/build.make modules/nonfree/CMakeFiles/pch_Generate_opencv_test_nonfree.dir/build
-.PHONY : pch_Generate_opencv_test_nonfree/fast
 
 #=============================================================================
 # Target rules for targets named opencv_objdetect
@@ -1721,84 +1604,6 @@ opencv_java: cmake_check_build_system
 opencv_java/fast:
 	$(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/build
 .PHONY : opencv_java/fast
-
-#=============================================================================
-# Target rules for targets named opencv_optim
-
-# Build rule for target.
-opencv_optim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_optim
-.PHONY : opencv_optim
-
-# fast build rule for target.
-opencv_optim/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/opencv_optim.dir/build.make modules/optim/CMakeFiles/opencv_optim.dir/build
-.PHONY : opencv_optim/fast
-
-#=============================================================================
-# Target rules for targets named opencv_optim_pch_dephelp
-
-# Build rule for target.
-opencv_optim_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_optim_pch_dephelp
-.PHONY : opencv_optim_pch_dephelp
-
-# fast build rule for target.
-opencv_optim_pch_dephelp/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/opencv_optim_pch_dephelp.dir/build.make modules/optim/CMakeFiles/opencv_optim_pch_dephelp.dir/build
-.PHONY : opencv_optim_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_optim
-
-# Build rule for target.
-opencv_test_optim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_optim
-.PHONY : opencv_test_optim
-
-# fast build rule for target.
-opencv_test_optim/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/opencv_test_optim.dir/build.make modules/optim/CMakeFiles/opencv_test_optim.dir/build
-.PHONY : opencv_test_optim/fast
-
-#=============================================================================
-# Target rules for targets named opencv_test_optim_pch_dephelp
-
-# Build rule for target.
-opencv_test_optim_pch_dephelp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_test_optim_pch_dephelp
-.PHONY : opencv_test_optim_pch_dephelp
-
-# fast build rule for target.
-opencv_test_optim_pch_dephelp/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/opencv_test_optim_pch_dephelp.dir/build.make modules/optim/CMakeFiles/opencv_test_optim_pch_dephelp.dir/build
-.PHONY : opencv_test_optim_pch_dephelp/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_optim
-
-# Build rule for target.
-pch_Generate_opencv_optim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_optim
-.PHONY : pch_Generate_opencv_optim
-
-# fast build rule for target.
-pch_Generate_opencv_optim/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/pch_Generate_opencv_optim.dir/build.make modules/optim/CMakeFiles/pch_Generate_opencv_optim.dir/build
-.PHONY : pch_Generate_opencv_optim/fast
-
-#=============================================================================
-# Target rules for targets named pch_Generate_opencv_test_optim
-
-# Build rule for target.
-pch_Generate_opencv_test_optim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pch_Generate_opencv_test_optim
-.PHONY : pch_Generate_opencv_test_optim
-
-# fast build rule for target.
-pch_Generate_opencv_test_optim/fast:
-	$(MAKE) -f modules/optim/CMakeFiles/pch_Generate_opencv_test_optim.dir/build.make modules/optim/CMakeFiles/pch_Generate_opencv_test_optim.dir/build
-.PHONY : pch_Generate_opencv_test_optim/fast
 
 #=============================================================================
 # Target rules for targets named opencv_shape
@@ -2302,6 +2107,12 @@ help:
 	@echo "... opencv_test_highgui_pch_dephelp"
 	@echo "... pch_Generate_opencv_highgui"
 	@echo "... pch_Generate_opencv_test_highgui"
+	@echo "... opencv_ml"
+	@echo "... opencv_ml_pch_dephelp"
+	@echo "... opencv_test_ml"
+	@echo "... opencv_test_ml_pch_dephelp"
+	@echo "... pch_Generate_opencv_ml"
+	@echo "... pch_Generate_opencv_test_ml"
 	@echo "... opencv_features2d"
 	@echo "... opencv_features2d_pch_dephelp"
 	@echo "... opencv_perf_features2d"
@@ -2320,21 +2131,6 @@ help:
 	@echo "... pch_Generate_opencv_calib3d"
 	@echo "... pch_Generate_opencv_perf_calib3d"
 	@echo "... pch_Generate_opencv_test_calib3d"
-	@echo "... opencv_ml"
-	@echo "... opencv_ml_pch_dephelp"
-	@echo "... opencv_test_ml"
-	@echo "... opencv_test_ml_pch_dephelp"
-	@echo "... pch_Generate_opencv_ml"
-	@echo "... pch_Generate_opencv_test_ml"
-	@echo "... opencv_nonfree"
-	@echo "... opencv_nonfree_pch_dephelp"
-	@echo "... opencv_perf_nonfree"
-	@echo "... opencv_perf_nonfree_pch_dephelp"
-	@echo "... opencv_test_nonfree"
-	@echo "... opencv_test_nonfree_pch_dephelp"
-	@echo "... pch_Generate_opencv_nonfree"
-	@echo "... pch_Generate_opencv_perf_nonfree"
-	@echo "... pch_Generate_opencv_test_nonfree"
 	@echo "... opencv_objdetect"
 	@echo "... opencv_objdetect_pch_dephelp"
 	@echo "... opencv_perf_objdetect"
@@ -2363,12 +2159,6 @@ help:
 	@echo "... pch_Generate_opencv_test_video"
 	@echo "... pch_Generate_opencv_video"
 	@echo "... opencv_java"
-	@echo "... opencv_optim"
-	@echo "... opencv_optim_pch_dephelp"
-	@echo "... opencv_test_optim"
-	@echo "... opencv_test_optim_pch_dephelp"
-	@echo "... pch_Generate_opencv_optim"
-	@echo "... pch_Generate_opencv_test_optim"
 	@echo "... opencv_shape"
 	@echo "... opencv_shape_pch_dephelp"
 	@echo "... opencv_test_shape"

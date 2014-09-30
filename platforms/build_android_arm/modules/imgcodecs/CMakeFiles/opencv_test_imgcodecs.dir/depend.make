@@ -13,6 +13,7 @@ modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: 
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_drawing.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -492,6 +493,7 @@ modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ..
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_grfmt.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -971,6 +973,7 @@ modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/imgcodecs/CMakeFiles/opencv_test_imgcodecs.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

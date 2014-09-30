@@ -11,16 +11,8 @@ opencv2/core.hpp
 ../../modules/calib3d/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
 ../../modules/calib3d/include/opencv2/opencv2/features2d.hpp
-
-../../modules/calib3d/perf/perf_precomp.hpp
-opencv2/ts.hpp
-../../modules/calib3d/perf/opencv2/ts.hpp
-opencv2/calib3d.hpp
-../../modules/calib3d/perf/opencv2/calib3d.hpp
-opencv2/imgcodecs.hpp
-../../modules/calib3d/perf/opencv2/imgcodecs.hpp
-opencv2/imgproc.hpp
-../../modules/calib3d/perf/opencv2/imgproc.hpp
+opencv2/core/affine.hpp
+../../modules/calib3d/include/opencv2/opencv2/core/affine.hpp
 
 ../../modules/core/include/opencv2/core.hpp
 opencv2/core/cvdef.h
@@ -45,6 +37,14 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
+
+../../modules/core/include/opencv2/core/affine.hpp
+opencv2/core.hpp
+-
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -151,6 +151,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2845,8 +2849,8 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp
-perf_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/opencl/perf_precomp.hpp
+../perf_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/perf_precomp.hpp
 opencv2/ts/ocl_perf.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/calib3d/perf/opencl/opencv2/ts/ocl_perf.hpp
 

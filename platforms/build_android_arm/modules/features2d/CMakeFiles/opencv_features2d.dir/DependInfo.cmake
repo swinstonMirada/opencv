@@ -4,12 +4,10 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/opencl_kernels_features2d.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze.cpp.o"
-  "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/akaze/AKAZEFeatures.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/akaze/AKAZEFeatures.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/bagofwords.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/bagofwords.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/blobdetector.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/blobdetector.cpp.o"
-  "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brief.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/brief.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/brisk.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/brisk.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/descriptors.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/descriptors.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/detectors.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/detectors.cpp.o"
@@ -19,8 +17,8 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/fast_score.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/fast_score.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/features2d_init.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/features2d_init.cpp.o"
-  "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/freak.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/freak.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze.cpp.o"
+  "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/AKAZEFeatures.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/AKAZEFeatures.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/KAZEFeatures.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/KAZEFeatures.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/fed.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/fed.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/kaze/nldiffusion_functions.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/kaze/nldiffusion_functions.cpp.o"
@@ -28,7 +26,6 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/matchers.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/matchers.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/mser.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/mser.cpp.o"
   "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/orb.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/orb.cpp.o"
-  "/Users/swinston/Mirada/lib/c/opencv/modules/features2d/src/stardetector.cpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/CMakeFiles/opencv_features2d.dir/src/stardetector.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -41,7 +38,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Pairs of files generated by the same build rule.
 SET(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels.cpp"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.hpp" "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/features2d/opencl_kernels_features2d.cpp"
   )
 
 
@@ -54,6 +51,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/DependInfo.cmake"
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/videoio/CMakeFiles/opencv_videoio.dir/DependInfo.cmake"
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/highgui/CMakeFiles/opencv_highgui.dir/DependInfo.cmake"
+  "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/CMakeFiles/opencv_ml.dir/DependInfo.cmake"
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/3rdparty/libjpeg/CMakeFiles/libjpeg.dir/DependInfo.cmake"
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/3rdparty/libwebp/CMakeFiles/libwebp.dir/DependInfo.cmake"
   "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/3rdparty/libpng/CMakeFiles/libpng.dir/DependInfo.cmake"
@@ -64,25 +62,23 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "../../modules/features2d/perf"
-  "../../modules/highgui/include"
-  "../../modules/videoio/include"
-  "../../modules/imgcodecs/include"
-  "../../modules/imgproc/include"
-  "../../modules/androidcamera/include"
-  "../../modules/core/include"
-  "../../modules/ts/include"
-  "../../modules/features2d/include"
-  "../../modules/flann/include"
-  "modules/features2d"
-  "../../modules/features2d/src"
-  "../../modules/features2d/test"
   "../../3rdparty/include/opencl/1.2"
   "."
   "/Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include"
   "/Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include"
   "/usr/local/include/eigen3"
+  "../../modules/features2d/include"
+  "../../modules/features2d/src"
+  "modules/features2d"
+  "../../modules/core/include"
+  "../../modules/androidcamera/include"
+  "../../modules/flann/include"
+  "../../modules/imgproc/include"
+  "../../modules/imgcodecs/include"
+  "../../modules/videoio/include"
+  "../../modules/highgui/include"
+  "../../modules/ml/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

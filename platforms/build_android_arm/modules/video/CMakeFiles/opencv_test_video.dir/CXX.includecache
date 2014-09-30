@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -135,6 +139,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2829,32 +2837,26 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_bgfg_mog2.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_precomp.hpp
-opencv2/ts/ocl_test.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/opencv2/ts/ocl_test.hpp
-
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_motempl.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_optflow_farneback.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_optflow_tvl1flow.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/opencv2/ts/ocl_test.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_optflowpyrlk.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/ocl/opencv2/ts/ocl_test.hpp
 
@@ -2863,10 +2865,6 @@ test_precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 opencv2/imgproc/imgproc_c.h
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/opencv2/imgproc/imgproc_c.h
-
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_backgroundsubtractor_gbh.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_camshift.cpp
 test_precomp.hpp
@@ -2904,10 +2902,6 @@ opencv2/video/tracking_c.h
 test_precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_motiontemplates.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
-
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_optflowpyrlk.cpp
 test_precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
@@ -2926,12 +2920,6 @@ opencv2/video.hpp
 opencv2/imgcodecs.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/opencv2/imgcodecs.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_simpleflow.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
-string
--
-
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_tvl1optflow.cpp
 test_precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/video/test/test_precomp.hpp
@@ -2939,18 +2927,6 @@ fstream
 -
 
 cvconfig.h
-
-modules/video/test_precomp.hpp
-iostream
--
-opencv2/ts.hpp
-modules/video/opencv2/ts.hpp
-opencv2/imgproc.hpp
-modules/video/opencv2/imgproc.hpp
-opencv2/video.hpp
-modules/video/opencv2/video.hpp
-opencv2/imgcodecs.hpp
-modules/video/opencv2/imgcodecs.hpp
 
 opencv2/opencv_modules.hpp
 

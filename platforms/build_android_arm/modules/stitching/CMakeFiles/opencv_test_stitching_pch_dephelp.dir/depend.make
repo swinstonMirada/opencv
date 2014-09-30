@@ -14,6 +14,7 @@ modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_s
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -26,7 +27,6 @@ modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_s
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
 modules/stitching/CMakeFiles/opencv_test_stitching_pch_dephelp.dir/opencv_test_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp

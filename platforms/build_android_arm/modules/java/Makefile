@@ -416,30 +416,6 @@ imgproc.cpp.s:
 	cd ../.. && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/imgproc.cpp.s
 .PHONY : imgproc.cpp.s
 
-ml.o: ml.cpp.o
-.PHONY : ml.o
-
-# target to build an object file
-ml.cpp.o:
-	cd ../.. && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.o
-.PHONY : ml.cpp.o
-
-ml.i: ml.cpp.i
-.PHONY : ml.i
-
-# target to preprocess a source file
-ml.cpp.i:
-	cd ../.. && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.i
-.PHONY : ml.cpp.i
-
-ml.s: ml.cpp.s
-.PHONY : ml.s
-
-# target to generate assembly for a file
-ml.cpp.s:
-	cd ../.. && $(MAKE) -f modules/java/CMakeFiles/opencv_java.dir/build.make modules/java/CMakeFiles/opencv_java.dir/ml.cpp.s
-.PHONY : ml.cpp.s
-
 objdetect.o: objdetect.cpp.o
 .PHONY : objdetect.o
 
@@ -581,9 +557,6 @@ help:
 	@echo "... imgproc.o"
 	@echo "... imgproc.i"
 	@echo "... imgproc.s"
-	@echo "... ml.o"
-	@echo "... ml.i"
-	@echo "... ml.s"
 	@echo "... objdetect.o"
 	@echo "... objdetect.i"
 	@echo "... objdetect.s"

@@ -1,25 +1,25 @@
-PORTED FUNCs LIST (114 of 118):
+PORTED FUNCs LIST (133 of 135):
 
- int LineSegmentDetector::compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
- void LineSegmentDetector::detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
- void LineSegmentDetector::drawSegments(Mat& _image, Mat lines)
-  Subdiv2D::Subdiv2D()
-  Subdiv2D::Subdiv2D(Rect rect)
- int Subdiv2D::edgeDst(int edge, Point2f* dstpt = 0)
- int Subdiv2D::edgeOrg(int edge, Point2f* orgpt = 0)
- int Subdiv2D::findNearest(Point2f pt, Point2f* nearestPt = 0)
- int Subdiv2D::getEdge(int edge, int nextEdgeType)
- void Subdiv2D::getEdgeList(vector_Vec4f& edgeList)
- void Subdiv2D::getTriangleList(vector_Vec6f& triangleList)
- Point2f Subdiv2D::getVertex(int vertex, int* firstEdge = 0)
- void Subdiv2D::getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
- void Subdiv2D::initDelaunay(Rect rect)
- int Subdiv2D::insert(Point2f pt)
- void Subdiv2D::insert(vector_Point2f ptvec)
- int Subdiv2D::locate(Point2f pt, int& edge, int& vertex)
- int Subdiv2D::nextEdge(int edge)
- int Subdiv2D::rotateEdge(int edge, int rotate)
- int Subdiv2D::symEdge(int edge)
+ int compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
+ void detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
+ void drawSegments(Mat& _image, Mat lines)
+  Subdiv2D()
+  Subdiv2D(Rect rect)
+ int edgeDst(int edge, Point2f* dstpt = 0)
+ int edgeOrg(int edge, Point2f* orgpt = 0)
+ int findNearest(Point2f pt, Point2f* nearestPt = 0)
+ int getEdge(int edge, int nextEdgeType)
+ void getEdgeList(vector_Vec4f& edgeList)
+ void getTriangleList(vector_Vec6f& triangleList)
+ Point2f getVertex(int vertex, int* firstEdge = 0)
+ void getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
+ void initDelaunay(Rect rect)
+ int insert(Point2f pt)
+ void insert(vector_Point2f ptvec)
+ int locate(Point2f pt, int& edge, int& vertex)
+ int nextEdge(int edge)
+ int rotateEdge(int edge, int rotate)
+ int symEdge(int edge)
  void Canny(Mat image, Mat& edges, double threshold1, double threshold2, int apertureSize = 3, bool L2gradient = false)
  void GaussianBlur(Mat src, Mat& dst, Size ksize, double sigmaX, double sigmaY = 0, int borderType = BORDER_DEFAULT)
  void HoughCircles(Mat image, Mat& circles, int method, double dp, double minDist, double param1 = 100, double param2 = 100, int minRadius = 0, int maxRadius = 0)
@@ -33,8 +33,10 @@ PORTED FUNCs LIST (114 of 118):
  void accumulateSquare(Mat src, Mat& dst, Mat mask = Mat())
  void accumulateWeighted(Mat src, Mat& dst, double alpha, Mat mask = Mat())
  void adaptiveThreshold(Mat src, Mat& dst, double maxValue, int adaptiveMethod, int thresholdType, int blockSize, double C)
+ void applyColorMap(Mat src, Mat& dst, int colormap)
  void approxPolyDP(vector_Point2f curve, vector_Point2f& approxCurve, double epsilon, bool closed)
  double arcLength(vector_Point2f curve, bool closed)
+ void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
  void bilateralFilter(Mat src, Mat& dst, int d, double sigmaColor, double sigmaSpace, int borderType = BORDER_DEFAULT)
  void blur(Mat src, Mat& dst, Size ksize, Point anchor = Point(-1,-1), int borderType = BORDER_DEFAULT)
  Rect boundingRect(vector_Point points)
@@ -42,6 +44,8 @@ PORTED FUNCs LIST (114 of 118):
  void boxPoints(RotatedRect box, Mat& points)
  void calcBackProject(vector_Mat images, vector_int channels, Mat hist, Mat& dst, vector_float ranges, double scale)
  void calcHist(vector_Mat images, vector_int channels, Mat mask, Mat& hist, vector_int histSize, vector_float ranges, bool accumulate = false)
+ void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+ bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
  double compareHist(Mat H1, Mat H2, int method)
  int connectedComponents(Mat image, Mat& labels, int connectivity = 8, int ltype = CV_32S)
  int connectedComponentsWithStats(Mat image, Mat& labels, Mat& stats, Mat& centroids, int connectivity = 8, int ltype = CV_32S)
@@ -53,14 +57,22 @@ PORTED FUNCs LIST (114 of 118):
  void cornerHarris(Mat src, Mat& dst, int blockSize, int ksize, double k, int borderType = BORDER_DEFAULT)
  void cornerMinEigenVal(Mat src, Mat& dst, int blockSize, int ksize = 3, int borderType = BORDER_DEFAULT)
  void cornerSubPix(Mat image, vector_Point2f& corners, Size winSize, Size zeroZone, TermCriteria criteria)
+ Ptr_CLAHE createCLAHE(double clipLimit = 40.0, Size tileGridSize = Size(8, 8))
  void createHanningWindow(Mat& dst, Size winSize, int type)
+ Ptr_LineSegmentDetector createLineSegmentDetector(int _refine = LSD_REFINE_STD, double _scale = 0.8, double _sigma_scale = 0.6, double _quant = 2.0, double _ang_th = 22.5, double _log_eps = 0, double _density_th = 0.7, int _n_bins = 1024)
  void cvtColor(Mat src, Mat& dst, int code, int dstCn = 0)
  void demosaicing(Mat _src, Mat& _dst, int code, int dcn = 0)
  void dilate(Mat src, Mat& dst, Mat kernel, Point anchor = Point(-1,-1), int iterations = 1, int borderType = BORDER_CONSTANT, Scalar borderValue = morphologyDefaultBorderValue())
  void distanceTransform(Mat src, Mat& dst, int distanceType, int maskSize, int dstType = CV_32F)
  void distanceTransform(Mat src, Mat& dst, Mat& labels, int distanceType, int maskSize, int labelType = DIST_LABEL_CCOMP)
+ void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
+ void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+ void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
+ void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
  void equalizeHist(Mat src, Mat& dst)
  void erode(Mat src, Mat& dst, Mat kernel, Point anchor = Point(-1,-1), int iterations = 1, int borderType = BORDER_CONSTANT, Scalar borderValue = morphologyDefaultBorderValue())
+ void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
+ void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
  void filter2D(Mat src, Mat& dst, int ddepth, Mat kernel, Point anchor = Point(-1,-1), double delta = 0, int borderType = BORDER_DEFAULT)
  void findContours(Mat& image, vector_vector_Point& contours, Mat& hierarchy, int mode, int method, Point offset = Point())
  RotatedRect fitEllipse(vector_Point2f points)
@@ -85,6 +97,7 @@ PORTED FUNCs LIST (114 of 118):
  float intersectConvexConvex(Mat _p1, Mat _p2, Mat& _p12, bool handleNested = true)
  void invertAffineTransform(Mat M, Mat& iM)
  bool isContourConvex(vector_Point contour)
+ void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
  void linearPolar(Mat src, Mat& dst, Point2f center, double maxRadius, int flags)
  void logPolar(Mat src, Mat& dst, Point2f center, double M, int flags)
  double matchShapes(Mat contour1, Mat contour2, int method, double parameter)
@@ -96,10 +109,13 @@ PORTED FUNCs LIST (114 of 118):
  void morphologyEx(Mat src, Mat& dst, int op, Mat kernel, Point anchor = Point(-1,-1), int iterations = 1, int borderType = BORDER_CONSTANT, Scalar borderValue = morphologyDefaultBorderValue())
  Point2d phaseCorrelate(Mat src1, Mat src2, Mat window = Mat(), double* response = 0)
  double pointPolygonTest(vector_Point2f contour, Point2f pt, bool measureDist)
+ void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
  void preCornerDetect(Mat src, Mat& dst, int ksize, int borderType = BORDER_DEFAULT)
+ void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
  void pyrDown(Mat src, Mat& dst, Size dstsize = Size(), int borderType = BORDER_DEFAULT)
  void pyrMeanShiftFiltering(Mat src, Mat& dst, double sp, double sr, int maxLevel = 1, TermCriteria termcrit = TermCriteria(TermCriteria::MAX_ITER+TermCriteria::EPS,5,1))
  void pyrUp(Mat src, Mat& dst, Size dstsize = Size(), int borderType = BORDER_DEFAULT)
+ void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
  void remap(Mat src, Mat& dst, Mat map1, Mat map2, int interpolation, int borderMode = BORDER_CONSTANT, Scalar borderValue = Scalar())
  void resize(Mat src, Mat& dst, Size dsize, double fx = 0, double fy = 0, int interpolation = INTER_LINEAR)
  int rotatedRectangleIntersection(RotatedRect rect1, RotatedRect rect2, Mat& intersectingRegion)
@@ -111,30 +127,28 @@ PORTED FUNCs LIST (114 of 118):
  void warpAffine(Mat src, Mat& dst, Mat M, Size dsize, int flags = INTER_LINEAR, int borderMode = BORDER_CONSTANT, Scalar borderValue = Scalar())
  void warpPerspective(Mat src, Mat& dst, Mat M, Size dsize, int flags = INTER_LINEAR, int borderMode = BORDER_CONSTANT, Scalar borderValue = Scalar())
  void watershed(Mat image, Mat& markers)
- void CLAHE::apply(Mat src, Mat& dst)
- void CLAHE::setClipLimit(double clipLimit)
- void CLAHE::setTilesGridSize(Size tileGridSize)
+ void apply(Mat src, Mat& dst)
+ void collectGarbage()
+ double getClipLimit()
+ Size getTilesGridSize()
+ void setClipLimit(double clipLimit)
+ void setTilesGridSize(Size tileGridSize)
 
-SKIPPED FUNCs LIST (4 of 118):
+SKIPPED FUNCs LIST (2 of 135):
 
  void HuMoments(Moments m, Mat& hu)
 // Unknown type 'Moments' (I), skipping the function
-
- Ptr_CLAHE createCLAHE(double clipLimit = 40.0, Size tileGridSize = Size(8, 8))
-// Return type 'Ptr_CLAHE' is not supported, skipping the function
-
- Ptr_LineSegmentDetector createLineSegmentDetector(int _refine = LSD_REFINE_STD, double _scale = 0.8, double _sigma_scale = 0.6, double _quant = 2.0, double _ang_th = 22.5, double _log_eps = 0, double _density_th = 0.7, int _n_bins = 1024)
-// Return type 'Ptr_LineSegmentDetector' is not supported, skipping the function
 
  Moments moments(Mat array, bool binaryImage = false)
 // Return type 'Moments' is not supported, skipping the function
 
 
-0 def args - 49 funcs
+0 def args - 55 funcs
 1 def args - 29 funcs
-2 def args - 21 funcs
-3 def args - 9 funcs
-4 def args - 9 funcs
+2 def args - 23 funcs
+3 def args - 16 funcs
+4 def args - 10 funcs
+5 def args - 1 funcs
 8 def args - 1 funcs
 
 class as MAP:

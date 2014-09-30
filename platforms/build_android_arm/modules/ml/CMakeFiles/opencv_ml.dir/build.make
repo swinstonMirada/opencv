@@ -98,32 +98,9 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o.provides: modules/ml/CMakeFi
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o: ../../modules/ml/src/cnn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/cnn.cpp.o -c ../../../../modules/ml/src/cnn.cpp
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/cnn.cpp.i"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/cnn.cpp > CMakeFiles/opencv_ml.dir/src/cnn.cpp.i
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/cnn.cpp.s"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/cnn.cpp -o CMakeFiles/opencv_ml.dir/src/cnn.cpp.s
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.requires:
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.requires
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.requires
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.provides.build
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.provides
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o
-
 modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o: ../../modules/ml/src/data.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/data.cpp.o -c ../../../../modules/ml/src/data.cpp
 
@@ -146,7 +123,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o.provides.build: modules/ml/CM
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o: ../../modules/ml/src/em.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/em.cpp.o -c ../../../../modules/ml/src/em.cpp
 
@@ -167,55 +144,9 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o.provides: modules/ml/CMakeFiles
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o: ../../modules/ml/src/ertrees.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o -c ../../../../modules/ml/src/ertrees.cpp
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/ertrees.cpp.i"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/ertrees.cpp > CMakeFiles/opencv_ml.dir/src/ertrees.cpp.i
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/ertrees.cpp.s"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/ertrees.cpp -o CMakeFiles/opencv_ml.dir/src/ertrees.cpp.s
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.requires:
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.requires
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.requires
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.provides.build
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.provides
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o: ../../modules/ml/src/estimate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/estimate.cpp.o -c ../../../../modules/ml/src/estimate.cpp
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/estimate.cpp.i"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/estimate.cpp > CMakeFiles/opencv_ml.dir/src/estimate.cpp.i
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/estimate.cpp.s"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/estimate.cpp -o CMakeFiles/opencv_ml.dir/src/estimate.cpp.s
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.requires:
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.requires
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.requires
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.provides.build
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.provides
-
-modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o
-
 modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o: ../../modules/ml/src/gbt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/gbt.cpp.o -c ../../../../modules/ml/src/gbt.cpp
 
@@ -238,7 +169,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o.provides.build: modules/ml/CMa
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o: ../../modules/ml/src/inner_functions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o -c ../../../../modules/ml/src/inner_functions.cpp
 
@@ -259,9 +190,32 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o.provides: modules/
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o
 
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o: ../../modules/ml/src/kdtree.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o -c ../../../../modules/ml/src/kdtree.cpp
+
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/kdtree.cpp.i"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/kdtree.cpp > CMakeFiles/opencv_ml.dir/src/kdtree.cpp.i
+
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/kdtree.cpp.s"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/kdtree.cpp -o CMakeFiles/opencv_ml.dir/src/kdtree.cpp.s
+
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.requires:
+.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.requires
+
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.requires
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.provides.build
+.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.provides
+
+modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o
+
 modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o: ../../modules/ml/src/knearest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/knearest.cpp.o -c ../../../../modules/ml/src/knearest.cpp
 
@@ -282,32 +236,32 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o.provides: modules/ml/CMak
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o: ../../modules/ml/src/ml_init.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o -c ../../../../modules/ml/src/ml_init.cpp
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o: ../../modules/ml/src/lr.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/lr.cpp.o -c ../../../../modules/ml/src/lr.cpp
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/ml_init.cpp.i"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/ml_init.cpp > CMakeFiles/opencv_ml.dir/src/ml_init.cpp.i
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_ml.dir/src/lr.cpp.i"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/src/lr.cpp > CMakeFiles/opencv_ml.dir/src/lr.cpp.i
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/ml_init.cpp.s"
-	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/ml_init.cpp -o CMakeFiles/opencv_ml.dir/src/ml_init.cpp.s
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_ml.dir/src/lr.cpp.s"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/src/lr.cpp -o CMakeFiles/opencv_ml.dir/src/lr.cpp.s
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.requires:
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.requires
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.requires:
+.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.requires
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.requires
-	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.provides.build
-.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.provides
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.provides: modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.requires
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_ml.dir/build.make modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.provides.build
+.PHONY : modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.provides
 
-modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o
+modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o: ../../modules/ml/src/nbayes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o -c ../../../../modules/ml/src/nbayes.cpp
 
@@ -330,7 +284,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o.provides.build: modules/ml/
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o: ../../modules/ml/src/rtrees.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o -c ../../../../modules/ml/src/rtrees.cpp
 
@@ -353,7 +307,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o.provides.build: modules/ml/
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o: ../../modules/ml/src/svm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/svm.cpp.o -c ../../../../modules/ml/src/svm.cpp
 
@@ -376,7 +330,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o.provides.build: modules/ml/CMa
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o: ../../modules/ml/src/testset.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/testset.cpp.o -c ../../../../modules/ml/src/testset.cpp
 
@@ -399,7 +353,7 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o.provides.build: modules/ml
 
 modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o: modules/ml/CMakeFiles/opencv_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o: ../../modules/ml/src/tree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_ml.dir/src/tree.cpp.o -c ../../../../modules/ml/src/tree.cpp
 
@@ -424,15 +378,13 @@ modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o.provides.build: modules/ml/CM
 opencv_ml_OBJECTS = \
 "CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/boost.cpp.o" \
-"CMakeFiles/opencv_ml.dir/src/cnn.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/data.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/em.cpp.o" \
-"CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o" \
-"CMakeFiles/opencv_ml.dir/src/estimate.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/gbt.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o" \
+"CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/knearest.cpp.o" \
-"CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o" \
+"CMakeFiles/opencv_ml.dir/src/lr.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o" \
 "CMakeFiles/opencv_ml.dir/src/svm.cpp.o" \
@@ -444,15 +396,13 @@ opencv_ml_EXTERNAL_OBJECTS =
 
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o
-lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o
-lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o
-lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o
+lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o
-lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o
+lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o
 lib/armeabi-v7a/libopencv_ml.a: modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o
@@ -470,15 +420,13 @@ modules/ml/CMakeFiles/opencv_ml.dir/build: lib/armeabi-v7a/libopencv_ml.a
 
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/ann_mlp.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/boost.cpp.o.requires
-modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/cnn.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/data.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/em.cpp.o.requires
-modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/ertrees.cpp.o.requires
-modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/estimate.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/gbt.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/inner_functions.cpp.o.requires
+modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/kdtree.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/knearest.cpp.o.requires
-modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/ml_init.cpp.o.requires
+modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/lr.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/nbayes.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/rtrees.cpp.o.requires
 modules/ml/CMakeFiles/opencv_ml.dir/requires: modules/ml/CMakeFiles/opencv_ml.dir/src/svm.cpp.o.requires

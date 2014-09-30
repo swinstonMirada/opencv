@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget libtiff libjpeg libwebp libjasper libpng IlmImf opencv_core opencv_androidcamera opencv_flann opencv_imgproc opencv_imgcodecs opencv_videoio opencv_highgui opencv_features2d opencv_calib3d opencv_ml opencv_nonfree opencv_objdetect opencv_photo opencv_video opencv_java opencv_optim opencv_shape opencv_stitching opencv_superres opencv_ts opencv_videostab)
+foreach(_expectedTarget libtiff libjpeg libwebp libjasper libpng IlmImf opencv_core opencv_androidcamera opencv_flann opencv_imgproc opencv_imgcodecs opencv_videoio opencv_highgui opencv_ml opencv_features2d opencv_calib3d opencv_objdetect opencv_photo opencv_video opencv_java opencv_shape opencv_stitching opencv_superres opencv_ts opencv_videostab)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -77,17 +77,14 @@ add_library(opencv_videoio STATIC IMPORTED)
 # Create imported target opencv_highgui
 add_library(opencv_highgui STATIC IMPORTED)
 
+# Create imported target opencv_ml
+add_library(opencv_ml STATIC IMPORTED)
+
 # Create imported target opencv_features2d
 add_library(opencv_features2d STATIC IMPORTED)
 
 # Create imported target opencv_calib3d
 add_library(opencv_calib3d STATIC IMPORTED)
-
-# Create imported target opencv_ml
-add_library(opencv_ml STATIC IMPORTED)
-
-# Create imported target opencv_nonfree
-add_library(opencv_nonfree STATIC IMPORTED)
 
 # Create imported target opencv_objdetect
 add_library(opencv_objdetect STATIC IMPORTED)
@@ -100,9 +97,6 @@ add_library(opencv_video STATIC IMPORTED)
 
 # Create imported target opencv_java
 add_library(opencv_java SHARED IMPORTED)
-
-# Create imported target opencv_optim
-add_library(opencv_optim STATIC IMPORTED)
 
 # Create imported target opencv_shape
 add_library(opencv_shape STATIC IMPORTED)
@@ -220,22 +214,6 @@ set_target_properties(opencv_highgui PROPERTIES
   IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_highgui.a"
   )
 
-# Import target "opencv_features2d" for configuration "Release"
-set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_features2d PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_features2d.a"
-  )
-
-# Import target "opencv_calib3d" for configuration "Release"
-set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_calib3d PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_calib3d.a"
-  )
-
 # Import target "opencv_ml" for configuration "Release"
 set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_ml PROPERTIES
@@ -244,12 +222,20 @@ set_target_properties(opencv_ml PROPERTIES
   IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_ml.a"
   )
 
-# Import target "opencv_nonfree" for configuration "Release"
-set_property(TARGET opencv_nonfree APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_nonfree PROPERTIES
+# Import target "opencv_features2d" for configuration "Release"
+set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_features2d PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;dl;log;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_nonfree.a"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;dl;log;dl;m;log"
+  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_features2d.a"
+  )
+
+# Import target "opencv_calib3d" for configuration "Release"
+set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_calib3d PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;dl;log;dl;m;log"
+  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_calib3d.a"
   )
 
 # Import target "opencv_objdetect" for configuration "Release"
@@ -284,14 +270,6 @@ set_target_properties(opencv_java PROPERTIES
   IMPORTED_SONAME_RELEASE "libopencv_java.so"
   )
 
-# Import target "opencv_optim" for configuration "Release"
-set_property(TARGET opencv_optim APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(opencv_optim PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;dl;m;log"
-  IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_optim.a"
-  )
-
 # Import target "opencv_shape" for configuration "Release"
 set_property(TARGET opencv_shape APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_shape PROPERTIES
@@ -304,7 +282,7 @@ set_target_properties(opencv_shape PROPERTIES
 set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_stitching PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_ml;opencv_nonfree;opencv_objdetect;dl;log;dl;m;log"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_objdetect;dl;log;dl;m;log"
   IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_stitching.a"
   )
 
@@ -328,7 +306,7 @@ set_target_properties(opencv_ts PROPERTIES
 set_property(TARGET opencv_videostab APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_videostab PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video;dl;log;dl;m;log"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "opencv_core;opencv_androidcamera;opencv_flann;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui;opencv_ml;opencv_features2d;opencv_calib3d;opencv_photo;opencv_video;dl;log;dl;m;log"
   IMPORTED_LOCATION_RELEASE "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/lib/armeabi-v7a/libopencv_videostab.a"
   )
 

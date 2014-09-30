@@ -13,6 +13,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -28,6 +29,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/ts/include/opencv2/ts/ocl_test.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
@@ -164,6 +166,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -203,6 +207,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -238,6 +245,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -300,6 +308,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -359,8 +370,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_for
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/features2d/test/ocl/test_brute_force_matcher.cpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: ../../modules/features2d/test/test_precomp.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: cvconfig.h
-modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: modules/features2d/test_precomp.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/ocl/test_brute_force_matcher.cpp.o: opencv2/opencv_modules.hpp
 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core.hpp
@@ -373,6 +384,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -385,6 +397,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -519,6 +532,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -558,6 +573,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -593,6 +611,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -655,6 +674,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: 
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_brisk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -727,6 +749,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -739,6 +762,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -873,6 +897,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -912,6 +938,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -947,6 +976,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -1009,6 +1039,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_r
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_descriptors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -1081,6 +1114,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1094,6 +1128,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -1229,6 +1264,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -1268,6 +1305,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -1303,6 +1343,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -1365,6 +1406,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_reg
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_detectors_regression.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -1437,6 +1481,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1449,6 +1494,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -1583,6 +1629,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -1622,6 +1670,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -1657,6 +1708,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -1719,6 +1771,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_fast.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -1791,6 +1846,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1804,6 +1860,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -1939,6 +1996,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -1978,6 +2037,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -2013,6 +2075,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -2075,6 +2138,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_keypoints.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -2147,6 +2213,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2159,6 +2226,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -2293,6 +2361,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -2332,6 +2402,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -2367,6 +2440,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -2429,6 +2503,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_main.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -2501,6 +2578,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2514,6 +2592,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -2649,6 +2728,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -2688,6 +2769,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -2723,6 +2807,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -2785,6 +2870,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algo
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_matchers_algorithmic.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -2858,6 +2946,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2873,6 +2962,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: .
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/imgproc_c.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/imgproc/include/opencv2/imgproc/types_c.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -3007,6 +3097,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -3046,6 +3138,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -3081,6 +3176,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -3143,6 +3239,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_mser.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -3215,6 +3314,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -3227,6 +3327,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -3361,6 +3462,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -3400,6 +3503,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -3435,6 +3541,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -3497,6 +3604,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighb
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_nearestneighbors.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -3569,6 +3679,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ..
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -3582,6 +3693,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ..
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -3717,6 +3829,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /U
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -3756,6 +3870,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /U
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -3791,6 +3908,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /U
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -3853,6 +3971,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /U
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_orb.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h
@@ -3925,6 +4046,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -3938,6 +4060,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/highgui/include/opencv2/highgui.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/ml/include/opencv2/ml.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/ts/include/opencv2/ts.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/ts/include/opencv2/ts/ts_ext.hpp
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: ../../modules/ts/include/opencv2/ts/ts_gtest.h
@@ -4073,6 +4196,8 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_funcs.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_iterator_base_types.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_numeric.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/bits/stl_pair.h
@@ -4112,6 +4237,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/formatter.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/functions.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/macros.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_base.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/debug/safe_iterator.h
@@ -4147,6 +4275,7 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iterator
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/limits
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/locale
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/new
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/numeric
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/ostream
@@ -4209,6 +4338,9 @@ modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_size.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/impl/profiler_vector_to_list.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/iterator_tracker.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/map.h
+modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multimap.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/multiset.h
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set
 modules/features2d/CMakeFiles/opencv_test_features2d.dir/test/test_rotation_and_scale_invariance.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/profile/set.h

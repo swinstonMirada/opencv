@@ -4,6 +4,8 @@
 //
 package org.opencv.imgproc;
 
+import java.lang.String;
+import java.util.ArrayList;
 import java.util.List;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfFloat;
@@ -59,6 +61,9 @@ public class Imgproc {
 
 
     public static final int
+            LINE_AA = 16,
+            LINE_8 = 8,
+            LINE_4 = 4,
             CV_BLUR_NO_SCALE = 0,
             CV_BLUR = 1,
             CV_GAUSSIAN = 2,
@@ -108,11 +113,6 @@ public class Imgproc {
             CV_HOUGH_PROBABILISTIC = 1,
             CV_HOUGH_MULTI_SCALE = 2,
             CV_HOUGH_GRADIENT = 3,
-            KERNEL_GENERAL = 0,
-            KERNEL_SYMMETRICAL = 1,
-            KERNEL_ASYMMETRICAL = 2,
-            KERNEL_SMOOTH = 4,
-            KERNEL_INTEGER = 8,
             MORPH_ERODE = 0,
             MORPH_DILATE = 1,
             MORPH_OPEN = 2,
@@ -403,7 +403,19 @@ public class Imgproc {
             COLOR_COLORCVT_MAX = 139,
             INTERSECT_NONE = 0,
             INTERSECT_PARTIAL = 1,
-            INTERSECT_FULL = 2;
+            INTERSECT_FULL = 2,
+            COLORMAP_AUTUMN = 0,
+            COLORMAP_BONE = 1,
+            COLORMAP_JET = 2,
+            COLORMAP_WINTER = 3,
+            COLORMAP_RAINBOW = 4,
+            COLORMAP_OCEAN = 5,
+            COLORMAP_SUMMER = 6,
+            COLORMAP_SPRING = 7,
+            COLORMAP_COOL = 8,
+            COLORMAP_HSV = 9,
+            COLORMAP_PINK = 10,
+            COLORMAP_HOT = 11;
 
 
     //
@@ -740,6 +752,20 @@ public class Imgproc {
 
 
     //
+    // C++:  void applyColorMap(Mat src, Mat& dst, int colormap)
+    //
+
+    //javadoc: applyColorMap(src, dst, colormap)
+    public static void applyColorMap(Mat src, Mat dst, int colormap)
+    {
+        
+        applyColorMap_0(src.nativeObj, dst.nativeObj, colormap);
+        
+        return;
+    }
+
+
+    //
     // C++:  void approxPolyDP(vector_Point2f curve, vector_Point2f& approxCurve, double epsilon, bool closed)
     //
 
@@ -765,6 +791,29 @@ public class Imgproc {
         double retVal = arcLength_0(curve_mat.nativeObj, closed);
         
         return retVal;
+    }
+
+
+    //
+    // C++:  void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
+    //
+
+    //javadoc: arrowedLine(img, pt1, pt2, color, thickness, line_type, shift, tipLength)
+    public static void arrowedLine(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int line_type, int shift, double tipLength)
+    {
+        
+        arrowedLine_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, line_type, shift, tipLength);
+        
+        return;
+    }
+
+    //javadoc: arrowedLine(img, pt1, pt2, color)
+    public static void arrowedLine(Mat img, Point pt1, Point pt2, Scalar color)
+    {
+        
+        arrowedLine_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
     }
 
 
@@ -925,6 +974,54 @@ public class Imgproc {
         calcHist_1(images_mat.nativeObj, channels_mat.nativeObj, mask.nativeObj, hist.nativeObj, histSize_mat.nativeObj, ranges_mat.nativeObj);
         
         return;
+    }
+
+
+    //
+    // C++:  void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: circle(img, center, radius, color, thickness, lineType, shift)
+    public static void circle(Mat img, Point center, int radius, Scalar color, int thickness, int lineType, int shift)
+    {
+        
+        circle_0(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: circle(img, center, radius, color, thickness)
+    public static void circle(Mat img, Point center, int radius, Scalar color, int thickness)
+    {
+        
+        circle_1(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: circle(img, center, radius, color)
+    public static void circle(Mat img, Point center, int radius, Scalar color)
+    {
+        
+        circle_2(img.nativeObj, center.x, center.y, radius, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
+    // C++:  bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
+    //
+
+    //javadoc: clipLine(imgRect, pt1, pt2)
+    public static boolean clipLine(Rect imgRect, Point pt1, Point pt2)
+    {
+        double[] pt1_out = new double[2];
+        double[] pt2_out = new double[2];
+        boolean retVal = clipLine_0(imgRect.x, imgRect.y, imgRect.width, imgRect.height, pt1.x, pt1.y, pt1_out, pt2.x, pt2.y, pt2_out);
+        if(pt1!=null){ pt1.x = pt1_out[0]; pt1.y = pt1_out[1]; } 
+        if(pt2!=null){ pt2.x = pt2_out[0]; pt2.y = pt2_out[1]; } 
+        return retVal;
     }
 
 
@@ -1171,7 +1268,23 @@ public class Imgproc {
     // C++:  Ptr_CLAHE createCLAHE(double clipLimit = 40.0, Size tileGridSize = Size(8, 8))
     //
 
-    // Return type 'Ptr_CLAHE' is not supported, skipping the function
+    //javadoc: createCLAHE(clipLimit, tileGridSize)
+    public static CLAHE createCLAHE(double clipLimit, Size tileGridSize)
+    {
+        
+        CLAHE retVal = new CLAHE(createCLAHE_0(clipLimit, tileGridSize.width, tileGridSize.height));
+        
+        return retVal;
+    }
+
+    //javadoc: createCLAHE()
+    public static CLAHE createCLAHE()
+    {
+        
+        CLAHE retVal = new CLAHE(createCLAHE_1());
+        
+        return retVal;
+    }
 
 
     //
@@ -1192,7 +1305,23 @@ public class Imgproc {
     // C++:  Ptr_LineSegmentDetector createLineSegmentDetector(int _refine = LSD_REFINE_STD, double _scale = 0.8, double _sigma_scale = 0.6, double _quant = 2.0, double _ang_th = 22.5, double _log_eps = 0, double _density_th = 0.7, int _n_bins = 1024)
     //
 
-    // Return type 'Ptr_LineSegmentDetector' is not supported, skipping the function
+    //javadoc: createLineSegmentDetector(_refine, _scale, _sigma_scale, _quant, _ang_th, _log_eps, _density_th, _n_bins)
+    public static LineSegmentDetector createLineSegmentDetector(int _refine, double _scale, double _sigma_scale, double _quant, double _ang_th, double _log_eps, double _density_th, int _n_bins)
+    {
+        
+        LineSegmentDetector retVal = new LineSegmentDetector(createLineSegmentDetector_0(_refine, _scale, _sigma_scale, _quant, _ang_th, _log_eps, _density_th, _n_bins));
+        
+        return retVal;
+    }
+
+    //javadoc: createLineSegmentDetector()
+    public static LineSegmentDetector createLineSegmentDetector()
+    {
+        
+        LineSegmentDetector retVal = new LineSegmentDetector(createLineSegmentDetector_1());
+        
+        return retVal;
+    }
 
 
     //
@@ -1320,6 +1449,119 @@ public class Imgproc {
 
 
     //
+    // C++:  void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
+    //
+
+    //javadoc: drawContours(image, contours, contourIdx, color, thickness, lineType, hierarchy, maxLevel, offset)
+    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color, int thickness, int lineType, Mat hierarchy, int maxLevel, Point offset)
+    {
+        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
+        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
+        drawContours_0(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, hierarchy.nativeObj, maxLevel, offset.x, offset.y);
+        
+        return;
+    }
+
+    //javadoc: drawContours(image, contours, contourIdx, color, thickness)
+    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color, int thickness)
+    {
+        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
+        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
+        drawContours_1(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: drawContours(image, contours, contourIdx, color)
+    public static void drawContours(Mat image, List<MatOfPoint> contours, int contourIdx, Scalar color)
+    {
+        List<Mat> contours_tmplm = new ArrayList<Mat>((contours != null) ? contours.size() : 0);
+        Mat contours_mat = Converters.vector_vector_Point_to_Mat(contours, contours_tmplm);
+        drawContours_2(image.nativeObj, contours_mat.nativeObj, contourIdx, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: ellipse(img, center, axes, angle, startAngle, endAngle, color, thickness, lineType, shift)
+    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness, int lineType, int shift)
+    {
+        
+        ellipse_0(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: ellipse(img, center, axes, angle, startAngle, endAngle, color, thickness)
+    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness)
+    {
+        
+        ellipse_1(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: ellipse(img, center, axes, angle, startAngle, endAngle, color)
+    public static void ellipse(Mat img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color)
+    {
+        
+        ellipse_2(img.nativeObj, center.x, center.y, axes.width, axes.height, angle, startAngle, endAngle, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
+    //
+
+    //javadoc: ellipse(img, box, color, thickness, lineType)
+    public static void ellipse(Mat img, RotatedRect box, Scalar color, int thickness, int lineType)
+    {
+        
+        ellipse_3(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType);
+        
+        return;
+    }
+
+    //javadoc: ellipse(img, box, color, thickness)
+    public static void ellipse(Mat img, RotatedRect box, Scalar color, int thickness)
+    {
+        
+        ellipse_4(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: ellipse(img, box, color)
+    public static void ellipse(Mat img, RotatedRect box, Scalar color)
+    {
+        
+        ellipse_5(img.nativeObj, box.center.x, box.center.y, box.size.width, box.size.height, box.angle, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
+    //
+
+    //javadoc: ellipse2Poly(center, axes, angle, arcStart, arcEnd, delta, pts)
+    public static void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, MatOfPoint pts)
+    {
+        Mat pts_mat = pts;
+        ellipse2Poly_0(center.x, center.y, axes.width, axes.height, angle, arcStart, arcEnd, delta, pts_mat.nativeObj);
+        
+        return;
+    }
+
+
+    //
     // C++:  void equalizeHist(Mat src, Mat& dst)
     //
 
@@ -1360,6 +1602,54 @@ public class Imgproc {
     {
         
         erode_2(src.nativeObj, dst.nativeObj, kernel.nativeObj);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: fillConvexPoly(img, points, color, lineType, shift)
+    public static void fillConvexPoly(Mat img, MatOfPoint points, Scalar color, int lineType, int shift)
+    {
+        Mat points_mat = points;
+        fillConvexPoly_0(img.nativeObj, points_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3], lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: fillConvexPoly(img, points, color)
+    public static void fillConvexPoly(Mat img, MatOfPoint points, Scalar color)
+    {
+        Mat points_mat = points;
+        fillConvexPoly_1(img.nativeObj, points_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
+    //
+
+    //javadoc: fillPoly(img, pts, color, lineType, shift, offset)
+    public static void fillPoly(Mat img, List<MatOfPoint> pts, Scalar color, int lineType, int shift, Point offset)
+    {
+        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
+        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
+        fillPoly_0(img.nativeObj, pts_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3], lineType, shift, offset.x, offset.y);
+        
+        return;
+    }
+
+    //javadoc: fillPoly(img, pts, color)
+    public static void fillPoly(Mat img, List<MatOfPoint> pts, Scalar color)
+    {
+        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
+        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
+        fillPoly_1(img.nativeObj, pts_mat.nativeObj, color.val[0], color.val[1], color.val[2], color.val[3]);
         
         return;
     }
@@ -1856,6 +2146,38 @@ public class Imgproc {
 
 
     //
+    // C++:  void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: line(img, pt1, pt2, color, thickness, lineType, shift)
+    public static void line(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int lineType, int shift)
+    {
+        
+        line_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: line(img, pt1, pt2, color, thickness)
+    public static void line(Mat img, Point pt1, Point pt2, Scalar color, int thickness)
+    {
+        
+        line_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: line(img, pt1, pt2, color)
+    public static void line(Mat img, Point pt1, Point pt2, Scalar color)
+    {
+        
+        line_2(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
     // C++:  void linearPolar(Mat src, Mat& dst, Point2f center, double maxRadius, int flags)
     //
 
@@ -2047,6 +2369,41 @@ public class Imgproc {
 
 
     //
+    // C++:  void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: polylines(img, pts, isClosed, color, thickness, lineType, shift)
+    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color, int thickness, int lineType, int shift)
+    {
+        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
+        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
+        polylines_0(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: polylines(img, pts, isClosed, color, thickness)
+    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color, int thickness)
+    {
+        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
+        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
+        polylines_1(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: polylines(img, pts, isClosed, color)
+    public static void polylines(Mat img, List<MatOfPoint> pts, boolean isClosed, Scalar color)
+    {
+        List<Mat> pts_tmplm = new ArrayList<Mat>((pts != null) ? pts.size() : 0);
+        Mat pts_mat = Converters.vector_vector_Point_to_Mat(pts, pts_tmplm);
+        polylines_2(img.nativeObj, pts_mat.nativeObj, isClosed, color.val[0], color.val[1], color.val[2], color.val[3]);
+        
+        return;
+    }
+
+
+    //
     // C++:  void preCornerDetect(Mat src, Mat& dst, int ksize, int borderType = BORDER_DEFAULT)
     //
 
@@ -2064,6 +2421,38 @@ public class Imgproc {
     {
         
         preCornerDetect_1(src.nativeObj, dst.nativeObj, ksize);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
+    //
+
+    //javadoc: putText(img, text, org, fontFace, fontScale, color, thickness, lineType, bottomLeftOrigin)
+    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness, int lineType, boolean bottomLeftOrigin)
+    {
+        
+        putText_0(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, bottomLeftOrigin);
+        
+        return;
+    }
+
+    //javadoc: putText(img, text, org, fontFace, fontScale, color, thickness)
+    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness)
+    {
+        
+        putText_1(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: putText(img, text, org, fontFace, fontScale, color)
+    public static void putText(Mat img, String text, Point org, int fontFace, double fontScale, Scalar color)
+    {
+        
+        putText_2(img.nativeObj, text, org.x, org.y, fontFace, fontScale, color.val[0], color.val[1], color.val[2], color.val[3]);
         
         return;
     }
@@ -2151,6 +2540,38 @@ public class Imgproc {
     {
         
         pyrUp_2(src.nativeObj, dst.nativeObj);
+        
+        return;
+    }
+
+
+    //
+    // C++:  void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    //
+
+    //javadoc: rectangle(img, pt1, pt2, color, thickness, lineType, shift)
+    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color, int thickness, int lineType, int shift)
+    {
+        
+        rectangle_0(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness, lineType, shift);
+        
+        return;
+    }
+
+    //javadoc: rectangle(img, pt1, pt2, color, thickness)
+    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color, int thickness)
+    {
+        
+        rectangle_1(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3], thickness);
+        
+        return;
+    }
+
+    //javadoc: rectangle(img, pt1, pt2, color)
+    public static void rectangle(Mat img, Point pt1, Point pt2, Scalar color)
+    {
+        
+        rectangle_2(img.nativeObj, pt1.x, pt1.y, pt2.x, pt2.y, color.val[0], color.val[1], color.val[2], color.val[3]);
         
         return;
     }
@@ -2420,6 +2841,15 @@ public class Imgproc {
     }
 
 
+    // C++: Size getTextSize(const String& text, int fontFace, double fontScale, int thickness, int* baseLine);
+    //javadoc:getTextSize(text, fontFace, fontScale, thickness, baseLine)
+    public static Size getTextSize(String text, int fontFace, double fontScale, int thickness, int[] baseLine) {
+        if(baseLine != null && baseLine.length != 1)
+            throw new java.lang.IllegalArgumentException("'baseLine' must be 'int[1]' or 'null'.");
+        Size retVal = new Size(n_getTextSize(text, fontFace, fontScale, thickness, baseLine));
+        return retVal;
+    }
+    
 
 
     // C++:  void Canny(Mat image, Mat& edges, double threshold1, double threshold2, int apertureSize = 3, bool L2gradient = false)
@@ -2477,11 +2907,18 @@ public class Imgproc {
     // C++:  void adaptiveThreshold(Mat src, Mat& dst, double maxValue, int adaptiveMethod, int thresholdType, int blockSize, double C)
     private static native void adaptiveThreshold_0(long src_nativeObj, long dst_nativeObj, double maxValue, int adaptiveMethod, int thresholdType, int blockSize, double C);
 
+    // C++:  void applyColorMap(Mat src, Mat& dst, int colormap)
+    private static native void applyColorMap_0(long src_nativeObj, long dst_nativeObj, int colormap);
+
     // C++:  void approxPolyDP(vector_Point2f curve, vector_Point2f& approxCurve, double epsilon, bool closed)
     private static native void approxPolyDP_0(long curve_mat_nativeObj, long approxCurve_mat_nativeObj, double epsilon, boolean closed);
 
     // C++:  double arcLength(vector_Point2f curve, bool closed)
     private static native double arcLength_0(long curve_mat_nativeObj, boolean closed);
+
+    // C++:  void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
+    private static native void arrowedLine_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int line_type, int shift, double tipLength);
+    private static native void arrowedLine_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void bilateralFilter(Mat src, Mat& dst, int d, double sigmaColor, double sigmaSpace, int borderType = BORDER_DEFAULT)
     private static native void bilateralFilter_0(long src_nativeObj, long dst_nativeObj, int d, double sigmaColor, double sigmaSpace, int borderType);
@@ -2509,6 +2946,14 @@ public class Imgproc {
     // C++:  void calcHist(vector_Mat images, vector_int channels, Mat mask, Mat& hist, vector_int histSize, vector_float ranges, bool accumulate = false)
     private static native void calcHist_0(long images_mat_nativeObj, long channels_mat_nativeObj, long mask_nativeObj, long hist_nativeObj, long histSize_mat_nativeObj, long ranges_mat_nativeObj, boolean accumulate);
     private static native void calcHist_1(long images_mat_nativeObj, long channels_mat_nativeObj, long mask_nativeObj, long hist_nativeObj, long histSize_mat_nativeObj, long ranges_mat_nativeObj);
+
+    // C++:  void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    private static native void circle_0(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
+    private static native void circle_1(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void circle_2(long img_nativeObj, double center_x, double center_y, int radius, double color_val0, double color_val1, double color_val2, double color_val3);
+
+    // C++:  bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
+    private static native boolean clipLine_0(int imgRect_x, int imgRect_y, int imgRect_width, int imgRect_height, double pt1_x, double pt1_y, double[] pt1_out, double pt2_x, double pt2_y, double[] pt2_out);
 
     // C++:  double compareHist(Mat H1, Mat H2, int method)
     private static native double compareHist_0(long H1_nativeObj, long H2_nativeObj, int method);
@@ -2552,8 +2997,16 @@ public class Imgproc {
     // C++:  void cornerSubPix(Mat image, vector_Point2f& corners, Size winSize, Size zeroZone, TermCriteria criteria)
     private static native void cornerSubPix_0(long image_nativeObj, long corners_mat_nativeObj, double winSize_width, double winSize_height, double zeroZone_width, double zeroZone_height, int criteria_type, int criteria_maxCount, double criteria_epsilon);
 
+    // C++:  Ptr_CLAHE createCLAHE(double clipLimit = 40.0, Size tileGridSize = Size(8, 8))
+    private static native long createCLAHE_0(double clipLimit, double tileGridSize_width, double tileGridSize_height);
+    private static native long createCLAHE_1();
+
     // C++:  void createHanningWindow(Mat& dst, Size winSize, int type)
     private static native void createHanningWindow_0(long dst_nativeObj, double winSize_width, double winSize_height, int type);
+
+    // C++:  Ptr_LineSegmentDetector createLineSegmentDetector(int _refine = LSD_REFINE_STD, double _scale = 0.8, double _sigma_scale = 0.6, double _quant = 2.0, double _ang_th = 22.5, double _log_eps = 0, double _density_th = 0.7, int _n_bins = 1024)
+    private static native long createLineSegmentDetector_0(int _refine, double _scale, double _sigma_scale, double _quant, double _ang_th, double _log_eps, double _density_th, int _n_bins);
+    private static native long createLineSegmentDetector_1();
 
     // C++:  void cvtColor(Mat src, Mat& dst, int code, int dstCn = 0)
     private static native void cvtColor_0(long src_nativeObj, long dst_nativeObj, int code, int dstCn);
@@ -2576,6 +3029,24 @@ public class Imgproc {
     private static native void distanceTransformWithLabels_0(long src_nativeObj, long dst_nativeObj, long labels_nativeObj, int distanceType, int maskSize, int labelType);
     private static native void distanceTransformWithLabels_1(long src_nativeObj, long dst_nativeObj, long labels_nativeObj, int distanceType, int maskSize);
 
+    // C++:  void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
+    private static native void drawContours_0(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, long hierarchy_nativeObj, int maxLevel, double offset_x, double offset_y);
+    private static native void drawContours_1(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void drawContours_2(long image_nativeObj, long contours_mat_nativeObj, int contourIdx, double color_val0, double color_val1, double color_val2, double color_val3);
+
+    // C++:  void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    private static native void ellipse_0(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
+    private static native void ellipse_1(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void ellipse_2(long img_nativeObj, double center_x, double center_y, double axes_width, double axes_height, double angle, double startAngle, double endAngle, double color_val0, double color_val1, double color_val2, double color_val3);
+
+    // C++:  void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
+    private static native void ellipse_3(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType);
+    private static native void ellipse_4(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void ellipse_5(long img_nativeObj, double box_center_x, double box_center_y, double box_size_width, double box_size_height, double box_angle, double color_val0, double color_val1, double color_val2, double color_val3);
+
+    // C++:  void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
+    private static native void ellipse2Poly_0(double center_x, double center_y, double axes_width, double axes_height, int angle, int arcStart, int arcEnd, int delta, long pts_mat_nativeObj);
+
     // C++:  void equalizeHist(Mat src, Mat& dst)
     private static native void equalizeHist_0(long src_nativeObj, long dst_nativeObj);
 
@@ -2583,6 +3054,14 @@ public class Imgproc {
     private static native void erode_0(long src_nativeObj, long dst_nativeObj, long kernel_nativeObj, double anchor_x, double anchor_y, int iterations, int borderType, double borderValue_val0, double borderValue_val1, double borderValue_val2, double borderValue_val3);
     private static native void erode_1(long src_nativeObj, long dst_nativeObj, long kernel_nativeObj, double anchor_x, double anchor_y, int iterations);
     private static native void erode_2(long src_nativeObj, long dst_nativeObj, long kernel_nativeObj);
+
+    // C++:  void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
+    private static native void fillConvexPoly_0(long img_nativeObj, long points_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int lineType, int shift);
+    private static native void fillConvexPoly_1(long img_nativeObj, long points_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);
+
+    // C++:  void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
+    private static native void fillPoly_0(long img_nativeObj, long pts_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int lineType, int shift, double offset_x, double offset_y);
+    private static native void fillPoly_1(long img_nativeObj, long pts_mat_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void filter2D(Mat src, Mat& dst, int ddepth, Mat kernel, Point anchor = Point(-1,-1), double delta = 0, int borderType = BORDER_DEFAULT)
     private static native void filter2D_0(long src_nativeObj, long dst_nativeObj, int ddepth, long kernel_nativeObj, double anchor_x, double anchor_y, double delta, int borderType);
@@ -2673,6 +3152,11 @@ public class Imgproc {
     // C++:  bool isContourConvex(vector_Point contour)
     private static native boolean isContourConvex_0(long contour_mat_nativeObj);
 
+    // C++:  void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    private static native void line_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
+    private static native void line_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void line_2(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
+
     // C++:  void linearPolar(Mat src, Mat& dst, Point2f center, double maxRadius, int flags)
     private static native void linearPolar_0(long src_nativeObj, long dst_nativeObj, double center_x, double center_y, double maxRadius, int flags);
 
@@ -2709,9 +3193,19 @@ public class Imgproc {
     // C++:  double pointPolygonTest(vector_Point2f contour, Point2f pt, bool measureDist)
     private static native double pointPolygonTest_0(long contour_mat_nativeObj, double pt_x, double pt_y, boolean measureDist);
 
+    // C++:  void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    private static native void polylines_0(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
+    private static native void polylines_1(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void polylines_2(long img_nativeObj, long pts_mat_nativeObj, boolean isClosed, double color_val0, double color_val1, double color_val2, double color_val3);
+
     // C++:  void preCornerDetect(Mat src, Mat& dst, int ksize, int borderType = BORDER_DEFAULT)
     private static native void preCornerDetect_0(long src_nativeObj, long dst_nativeObj, int ksize, int borderType);
     private static native void preCornerDetect_1(long src_nativeObj, long dst_nativeObj, int ksize);
+
+    // C++:  void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
+    private static native void putText_0(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, boolean bottomLeftOrigin);
+    private static native void putText_1(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void putText_2(long img_nativeObj, String text, double org_x, double org_y, int fontFace, double fontScale, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void pyrDown(Mat src, Mat& dst, Size dstsize = Size(), int borderType = BORDER_DEFAULT)
     private static native void pyrDown_0(long src_nativeObj, long dst_nativeObj, double dstsize_width, double dstsize_height, int borderType);
@@ -2726,6 +3220,11 @@ public class Imgproc {
     private static native void pyrUp_0(long src_nativeObj, long dst_nativeObj, double dstsize_width, double dstsize_height, int borderType);
     private static native void pyrUp_1(long src_nativeObj, long dst_nativeObj, double dstsize_width, double dstsize_height);
     private static native void pyrUp_2(long src_nativeObj, long dst_nativeObj);
+
+    // C++:  void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+    private static native void rectangle_0(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness, int lineType, int shift);
+    private static native void rectangle_1(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3, int thickness);
+    private static native void rectangle_2(long img_nativeObj, double pt1_x, double pt1_y, double pt2_x, double pt2_y, double color_val0, double color_val1, double color_val2, double color_val3);
 
     // C++:  void remap(Mat src, Mat& dst, Mat map1, Mat map2, int interpolation, int borderMode = BORDER_CONSTANT, Scalar borderValue = Scalar())
     private static native void remap_0(long src_nativeObj, long dst_nativeObj, long map1_nativeObj, long map2_nativeObj, int interpolation, int borderMode, double borderValue_val0, double borderValue_val1, double borderValue_val2, double borderValue_val3);
@@ -2771,5 +3270,6 @@ public class Imgproc {
 
     // C++:  void watershed(Mat image, Mat& markers)
     private static native void watershed_0(long image_nativeObj, long markers_nativeObj);
+    private static native double[] n_getTextSize(String text, int fontFace, double fontScale, int thickness, int[] baseLine);
 
 }

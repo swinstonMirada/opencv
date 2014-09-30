@@ -11,6 +11,7 @@ modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: 
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_lshtable_badarg.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -401,6 +402,7 @@ modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modul
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/flann/CMakeFiles/opencv_test_flann.dir/test/test_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

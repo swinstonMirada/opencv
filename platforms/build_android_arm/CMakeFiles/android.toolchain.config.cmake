@@ -1,5 +1,6 @@
 set( LIBRARY_OUTPUT_PATH_ROOT /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm CACHE INTERNAL "" )
 set( ANDROID_FORBID_SYGWIN TRUE CACHE INTERNAL "" )
+set( ANDROID_SET_OBSOLETE_VARIABLES ON CACHE INTERNAL "" )
 set( ANDROID_NDK_HOST_X64 1 CACHE INTERNAL "" )
 set( ANDROID_NDK /Users/swinston/Downloads/android-ndk-r9d CACHE INTERNAL "" )
 set( ANDROID_NDK_LAYOUT RELEASE CACHE INTERNAL "" )

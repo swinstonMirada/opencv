@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "opencl_kernels.cpp"
-  "opencl_kernels.hpp"
+  "opencl_kernels_stitching.cpp"
+  "opencl_kernels_stitching.hpp"
   "CMakeFiles/opencv_stitching.dir/src/autocalib.cpp.o"
   "CMakeFiles/opencv_stitching.dir/src/blenders.cpp.o"
   "CMakeFiles/opencv_stitching.dir/src/camera.cpp.o"
@@ -12,7 +12,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/opencv_stitching.dir/src/timelapsers.cpp.o"
   "CMakeFiles/opencv_stitching.dir/src/util.cpp.o"
   "CMakeFiles/opencv_stitching.dir/src/warpers.cpp.o"
-  "CMakeFiles/opencv_stitching.dir/opencl_kernels.cpp.o"
+  "CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o"
   "../../lib/armeabi-v7a/libopencv_stitching.pdb"
   "../../lib/armeabi-v7a/libopencv_stitching.a"
 )

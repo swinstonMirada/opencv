@@ -52,13 +52,13 @@ include modules/photo/CMakeFiles/opencv_photo.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 
-modules/photo/opencl_kernels.cpp: ../../modules/photo/src/opencl/nlmeans.cl
-modules/photo/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/photo/opencl_kernels_photo.cpp: ../../modules/photo/src/opencl/nlmeans.cl
+modules/photo/opencl_kernels_photo.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/photo && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="photo" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_photo.cpp, opencl_kernels_photo.hpp"
+	cd modules/photo && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="photo" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/photo/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/opencl_kernels_photo.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/photo/opencl_kernels.hpp: modules/photo/opencl_kernels.cpp
+modules/photo/opencl_kernels_photo.hpp: modules/photo/opencl_kernels_photo.cpp
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/align.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/align.cpp.o: ../../modules/photo/src/align.cpp
@@ -129,9 +129,32 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o.provides: 
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o
 
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o: ../../modules/photo/src/denoise_tvl1.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o -c ../../../../modules/photo/src/denoise_tvl1.cpp
+
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.i"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -E ../../../../modules/photo/src/denoise_tvl1.cpp > CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.i
+
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.s"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -S ../../../../modules/photo/src/denoise_tvl1.cpp -o CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.s
+
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.requires:
+.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.requires
+
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.provides: modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.requires
+	$(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.provides.build
+.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.provides
+
+modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o
+
 modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o: ../../modules/photo/src/denoising.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/denoising.cpp.o -c ../../../../modules/photo/src/denoising.cpp
 
@@ -154,7 +177,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o.provides.build: mo
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o: ../../modules/photo/src/denoising.cuda.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o -c ../../../../modules/photo/src/denoising.cuda.cpp
 
@@ -177,7 +200,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o.provides.buil
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o: ../../modules/photo/src/hdr_common.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o -c ../../../../modules/photo/src/hdr_common.cpp
 
@@ -200,7 +223,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o.provides.build: m
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o: ../../modules/photo/src/inpaint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o -c ../../../../modules/photo/src/inpaint.cpp
 
@@ -223,7 +246,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/inpaint.cpp.o.provides.build: modu
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/merge.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/merge.cpp.o: ../../modules/photo/src/merge.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/merge.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/merge.cpp.o -c ../../../../modules/photo/src/merge.cpp
 
@@ -246,7 +269,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/merge.cpp.o.provides.build: module
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o: ../../modules/photo/src/npr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/npr.cpp.o -c ../../../../modules/photo/src/npr.cpp
 
@@ -269,7 +292,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o.provides.build: modules/
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o: ../../modules/photo/src/seamless_cloning.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o -c ../../../../modules/photo/src/seamless_cloning.cpp
 
@@ -292,7 +315,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o.provides.bu
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
 modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o: ../../modules/photo/src/tonemap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o"
 	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o -c ../../../../modules/photo/src/tonemap.cpp
 
@@ -313,34 +336,35 @@ modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o.provides: modules/ph
 
 modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o: modules/photo/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o"
-	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o: modules/photo/CMakeFiles/opencv_photo.dir/flags.make
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o: modules/photo/opencl_kernels_photo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o -c opencl_kernels_photo.cpp
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.i"
-	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.i
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.i"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -E opencl_kernels_photo.cpp > CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.i
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.s"
-	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.s
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.s"
+	cd modules/photo && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/precomp.hpp" -Winvalid-pch  -S opencl_kernels_photo.cpp -o CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.s
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.requires
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.requires:
+.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.requires
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.provides: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.provides
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.provides: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.requires
+	$(MAKE) -f modules/photo/CMakeFiles/opencv_photo.dir/build.make modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.provides.build
+.PHONY : modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.provides
 
-modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o
+modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.provides.build: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o
 
 # Object files for target opencv_photo
 opencv_photo_OBJECTS = \
 "CMakeFiles/opencv_photo.dir/src/align.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/calibrate.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o" \
+"CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/denoising.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o" \
@@ -349,7 +373,7 @@ opencv_photo_OBJECTS = \
 "CMakeFiles/opencv_photo.dir/src/npr.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o" \
 "CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o" \
-"CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o"
 
 # External object files for target opencv_photo
 opencv_photo_EXTERNAL_OBJECTS =
@@ -357,6 +381,7 @@ opencv_photo_EXTERNAL_OBJECTS =
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/align.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/calibrate.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o
+lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o
@@ -365,7 +390,7 @@ lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o
-lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/build.make
 lib/armeabi-v7a/libopencv_photo.a: modules/photo/CMakeFiles/opencv_photo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_photo.a"
@@ -379,6 +404,7 @@ modules/photo/CMakeFiles/opencv_photo.dir/build: lib/armeabi-v7a/libopencv_photo
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/align.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/calibrate.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/contrast_preserve.cpp.o.requires
+modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/denoise_tvl1.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/denoising.cuda.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/hdr_common.cpp.o.requires
@@ -387,15 +413,15 @@ modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/ope
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/npr.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/seamless_cloning.cpp.o.requires
 modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/src/tonemap.cpp.o.requires
-modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels.cpp.o.requires
+modules/photo/CMakeFiles/opencv_photo.dir/requires: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o.requires
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/requires
 
 modules/photo/CMakeFiles/opencv_photo.dir/clean:
 	cd modules/photo && $(CMAKE_COMMAND) -P CMakeFiles/opencv_photo.dir/cmake_clean.cmake
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/clean
 
-modules/photo/CMakeFiles/opencv_photo.dir/depend: modules/photo/opencl_kernels.cpp
-modules/photo/CMakeFiles/opencv_photo.dir/depend: modules/photo/opencl_kernels.hpp
+modules/photo/CMakeFiles/opencv_photo.dir/depend: modules/photo/opencl_kernels_photo.cpp
+modules/photo/CMakeFiles/opencv_photo.dir/depend: modules/photo/opencl_kernels_photo.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/photo /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/photo/CMakeFiles/opencv_photo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/photo/CMakeFiles/opencv_photo.dir/depend
 

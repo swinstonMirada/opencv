@@ -7,40 +7,6 @@ package org.opencv.ml;
 
 
 // C++: class CvBoostParams
-/**
- * <p>Boosting training parameters.</p>
- *
- * <p>There is one structure member that you can set directly:</p>
- *
- * <p>Splitting criteria used to choose optimal splits during a weak tree
- * construction. Possible values are:</p>
- *
- * <ul>
- *   <li> CvBoost.DEFAULT Use the default for the particular boosting method,
- * see below.
- * </ul>
- * <p><code></p>
- *
- * <p>// C++ code:</p>
- * <ul>
- *   <li> CvBoost.GINI Use Gini index. This is default option for Real
- * AdaBoost; may be also used for Discrete AdaBoost.
- *   <li> CvBoost.MISCLASS Use misclassification rate. This is default option
- * for Discrete AdaBoost; may be also used for Real AdaBoost.
- *   <li> CvBoost.SQERR Use least squares criteria. This is default and the
- * only option for LogitBoost and Gentle AdaBoost.
- * </ul>
- *
- * <p>The structure is derived from "CvDTreeParams" but not all of the decision
- * tree parameters are supported. In particular, cross-validation is not
- * supported.
- * </code></p>
- *
- * <p>All parameters are public. You can initialize them by a constructor and then
- * override some of them directly if you want.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/boosting.html#cvboostparams">org.opencv.ml.CvBoostParams : public CvDTreeParams</a>
- */
 public class CvBoostParams extends CvDTreeParams {
 
     protected CvBoostParams(long addr) { super(addr); }
@@ -50,33 +16,6 @@ public class CvBoostParams extends CvDTreeParams {
     // C++:   CvBoostParams::CvBoostParams()
     //
 
-/**
- * <p>The constructors.</p>
- *
- * <p>See "CvDTreeParams.CvDTreeParams" for description of other parameters.</p>
- *
- * <p>Default parameters are:</p>
- *
- * <p><code></p>
- *
- * <p>// C++ code:</p>
- *
- * <p>CvBoostParams.CvBoostParams()</p>
- *
- *
- * <p>boost_type = CvBoost.REAL;</p>
- *
- * <p>weak_count = 100;</p>
- *
- * <p>weight_trim_rate = 0.95;</p>
- *
- * <p>cv_folds = 0;</p>
- *
- * <p>max_depth = 1;</p>
- *
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/boosting.html#cvboostparams-cvboostparams">org.opencv.ml.CvBoostParams.CvBoostParams</a>
- */
     public   CvBoostParams()
     {
 

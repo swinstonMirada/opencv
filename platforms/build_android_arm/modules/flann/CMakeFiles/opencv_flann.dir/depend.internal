@@ -13,6 +13,7 @@ modules/flann/CMakeFiles/opencv_flann.dir/src/flann.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/private.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -504,6 +505,7 @@ modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/private.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp

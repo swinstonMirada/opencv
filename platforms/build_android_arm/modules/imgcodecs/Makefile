@@ -480,6 +480,30 @@ src/grfmt_exr.cpp.s:
 	cd ../.. && $(MAKE) -f modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_exr.cpp.s
 .PHONY : src/grfmt_exr.cpp.s
 
+src/grfmt_gdal.o: src/grfmt_gdal.cpp.o
+.PHONY : src/grfmt_gdal.o
+
+# target to build an object file
+src/grfmt_gdal.cpp.o:
+	cd ../.. && $(MAKE) -f modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.o
+.PHONY : src/grfmt_gdal.cpp.o
+
+src/grfmt_gdal.i: src/grfmt_gdal.cpp.i
+.PHONY : src/grfmt_gdal.i
+
+# target to preprocess a source file
+src/grfmt_gdal.cpp.i:
+	cd ../.. && $(MAKE) -f modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.i
+.PHONY : src/grfmt_gdal.cpp.i
+
+src/grfmt_gdal.s: src/grfmt_gdal.cpp.s
+.PHONY : src/grfmt_gdal.s
+
+# target to generate assembly for a file
+src/grfmt_gdal.cpp.s:
+	cd ../.. && $(MAKE) -f modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/grfmt_gdal.cpp.s
+.PHONY : src/grfmt_gdal.cpp.s
+
 src/grfmt_hdr.o: src/grfmt_hdr.cpp.o
 .PHONY : src/grfmt_hdr.o
 
@@ -863,6 +887,9 @@ help:
 	@echo "... src/grfmt_exr.o"
 	@echo "... src/grfmt_exr.i"
 	@echo "... src/grfmt_exr.s"
+	@echo "... src/grfmt_gdal.o"
+	@echo "... src/grfmt_gdal.i"
+	@echo "... src/grfmt_gdal.s"
 	@echo "... src/grfmt_hdr.o"
 	@echo "... src/grfmt_hdr.i"
 	@echo "... src/grfmt_hdr.s"

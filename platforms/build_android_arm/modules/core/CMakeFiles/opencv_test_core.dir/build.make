@@ -236,9 +236,32 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o.provi
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o
 
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o: ../../modules/core/test/test_conjugate_gradient.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o -c ../../../../modules/core/test/test_conjugate_gradient.cpp
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/test/test_conjugate_gradient.cpp > CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.i
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/test/test_conjugate_gradient.cpp -o CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.s
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.provides: modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o
+
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o: ../../modules/core/test/test_countnonzero.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o -c ../../../../modules/core/test/test_countnonzero.cpp
 
@@ -259,9 +282,32 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o.provid
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o
 
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o: ../../modules/core/test/test_downhill_simplex.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o -c ../../../../modules/core/test/test_downhill_simplex.cpp
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/test/test_downhill_simplex.cpp > CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.i
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/test/test_downhill_simplex.cpp -o CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.s
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.provides: modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o
+
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o: ../../modules/core/test/test_ds.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o -c ../../../../modules/core/test/test_ds.cpp
 
@@ -284,7 +330,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o.provides.build: 
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o: ../../modules/core/test/test_dxt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o -c ../../../../modules/core/test/test_dxt.cpp
 
@@ -307,7 +353,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o.provides.build:
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o: ../../modules/core/test/test_eigen.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o -c ../../../../modules/core/test/test_eigen.cpp
 
@@ -330,7 +376,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o.provides.buil
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o: ../../modules/core/test/test_io.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o -c ../../../../modules/core/test/test_io.cpp
 
@@ -353,7 +399,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o.provides.build: 
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o: ../../modules/core/test/test_ippasync.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o -c ../../../../modules/core/test/test_ippasync.cpp
 
@@ -374,9 +420,32 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o.provides: 
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o
 
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o: ../../modules/core/test/test_lpsolver.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o -c ../../../../modules/core/test/test_lpsolver.cpp
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/test/test_lpsolver.cpp > CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.i
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/test/test_lpsolver.cpp -o CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.s
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.provides: modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_test_core.dir/build.make modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.provides.build: modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o
+
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o: ../../modules/core/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o -c ../../../../modules/core/test/test_main.cpp
 
@@ -399,7 +468,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o.provides.build
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o: ../../modules/core/test/test_mat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o -c ../../../../modules/core/test/test_mat.cpp
 
@@ -422,7 +491,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o.provides.build:
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o: ../../modules/core/test/test_math.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o -c ../../../../modules/core/test/test_math.cpp
 
@@ -445,7 +514,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o.provides.build
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_misc.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_misc.cpp.o: ../../modules/core/test/test_misc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_misc.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_misc.cpp.o -c ../../../../modules/core/test/test_misc.cpp
 
@@ -468,7 +537,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_misc.cpp.o.provides.build
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_operations.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_operations.cpp.o: ../../modules/core/test/test_operations.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_operations.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_operations.cpp.o -c ../../../../modules/core/test/test_operations.cpp
 
@@ -491,7 +560,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_operations.cpp.o.provides
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ptr.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_ptr.cpp.o: ../../modules/core/test/test_ptr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_ptr.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_ptr.cpp.o -c ../../../../modules/core/test/test_ptr.cpp
 
@@ -514,7 +583,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_ptr.cpp.o.provides.build:
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_rand.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_rand.cpp.o: ../../modules/core/test/test_rand.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_rand.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_rand.cpp.o -c ../../../../modules/core/test/test_rand.cpp
 
@@ -537,7 +606,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_rand.cpp.o.provides.build
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_rotatedrect.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_rotatedrect.cpp.o: ../../modules/core/test/test_rotatedrect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_rotatedrect.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_rotatedrect.cpp.o -c ../../../../modules/core/test/test_rotatedrect.cpp
 
@@ -560,7 +629,7 @@ modules/core/CMakeFiles/opencv_test_core.dir/test/test_rotatedrect.cpp.o.provide
 
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_umat.cpp.o: modules/core/CMakeFiles/opencv_test_core.dir/flags.make
 modules/core/CMakeFiles/opencv_test_core.dir/test/test_umat.cpp.o: ../../modules/core/test/test_umat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_test_core.dir/test/test_umat.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_core.dir/test/test_umat.cpp.o -c ../../../../modules/core/test/test_umat.cpp
 
@@ -591,12 +660,15 @@ opencv_test_core_OBJECTS = \
 "CMakeFiles/opencv_test_core.dir/test/ocl/test_matrix_operation.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_arithm.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o" \
+"CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o" \
+"CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o" \
+"CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o" \
 "CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o" \
@@ -618,12 +690,15 @@ bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/ocl/test
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/ocl/test_matrix_operation.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_arithm.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o
+bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o
+bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o
+bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o
 bin/opencv_test_core: modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o
@@ -671,12 +746,15 @@ modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/o
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/ocl/test_matrix_operation.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_arithm.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_concatenation.cpp.o.requires
+modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_conjugate_gradient.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_countnonzero.cpp.o.requires
+modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_downhill_simplex.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_ds.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_dxt.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_eigen.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_io.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_ippasync.cpp.o.requires
+modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_lpsolver.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_main.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_mat.cpp.o.requires
 modules/core/CMakeFiles/opencv_test_core.dir/requires: modules/core/CMakeFiles/opencv_test_core.dir/test/test_math.cpp.o.requires

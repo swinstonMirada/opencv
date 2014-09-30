@@ -12,6 +12,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/cor
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/aff_trans.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -451,6 +452,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/in
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/emdL1.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -891,6 +893,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/haus_dis.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1330,6 +1333,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/cor
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/hist_cost.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1769,6 +1773,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/precomp.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2208,6 +2213,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/i
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/sc_dis.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -2648,6 +2654,7 @@ modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/cor
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/shape/CMakeFiles/opencv_shape.dir/src/tps_trans.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp

@@ -82,7 +82,7 @@ public class VideoCapture {
 
 
     //
-    // C++:   VideoCapture::VideoCapture()
+    // C++:   VideoCapture()
     //
 
 /**
@@ -105,7 +105,7 @@ public class VideoCapture {
 
 
     //
-    // C++:   VideoCapture::VideoCapture(String filename)
+    // C++:   VideoCapture(String filename)
     //
 
 /**
@@ -132,7 +132,7 @@ public class VideoCapture {
 
 
     //
-    // C++:   VideoCapture::VideoCapture(int device)
+    // C++:   VideoCapture(int device)
     //
 
 /**
@@ -158,7 +158,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  double VideoCapture::get(int propId)
+    // C++:  double get(int propId)
     //
 
 /**
@@ -209,7 +209,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::grab()
+    // C++:  bool grab()
     //
 
 /**
@@ -244,7 +244,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::isOpened()
+    // C++:  bool isOpened()
     //
 
 /**
@@ -265,7 +265,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::open(String filename)
+    // C++:  bool open(String filename)
     //
 
 /**
@@ -290,7 +290,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::open(int device)
+    // C++:  bool open(int device)
     //
 
 /**
@@ -313,7 +313,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::read(Mat& image)
+    // C++:  bool read(Mat& image)
     //
 
 /**
@@ -345,7 +345,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  void VideoCapture::release()
+    // C++:  void release()
     //
 
 /**
@@ -369,7 +369,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::retrieve(Mat& image, int flag = 0)
+    // C++:  bool retrieve(Mat& image, int flag = 0)
     //
 
 /**
@@ -425,7 +425,7 @@ public class VideoCapture {
 
 
     //
-    // C++:  bool VideoCapture::set(int propId, double value)
+    // C++:  bool set(int propId, double value)
     //
 
 /**
@@ -494,41 +494,41 @@ public class VideoCapture {
 
 
 
-    // C++:   VideoCapture::VideoCapture()
+    // C++:   VideoCapture()
     private static native long VideoCapture_0();
 
-    // C++:   VideoCapture::VideoCapture(String filename)
+    // C++:   VideoCapture(String filename)
     private static native long VideoCapture_1(String filename);
 
-    // C++:   VideoCapture::VideoCapture(int device)
+    // C++:   VideoCapture(int device)
     private static native long VideoCapture_2(int device);
 
-    // C++:  double VideoCapture::get(int propId)
+    // C++:  double get(int propId)
     private static native double get_0(long nativeObj, int propId);
 
-    // C++:  bool VideoCapture::grab()
+    // C++:  bool grab()
     private static native boolean grab_0(long nativeObj);
 
-    // C++:  bool VideoCapture::isOpened()
+    // C++:  bool isOpened()
     private static native boolean isOpened_0(long nativeObj);
 
-    // C++:  bool VideoCapture::open(String filename)
+    // C++:  bool open(String filename)
     private static native boolean open_0(long nativeObj, String filename);
 
-    // C++:  bool VideoCapture::open(int device)
+    // C++:  bool open(int device)
     private static native boolean open_1(long nativeObj, int device);
 
-    // C++:  bool VideoCapture::read(Mat& image)
+    // C++:  bool read(Mat& image)
     private static native boolean read_0(long nativeObj, long image_nativeObj);
 
-    // C++:  void VideoCapture::release()
+    // C++:  void release()
     private static native void release_0(long nativeObj);
 
-    // C++:  bool VideoCapture::retrieve(Mat& image, int flag = 0)
+    // C++:  bool retrieve(Mat& image, int flag = 0)
     private static native boolean retrieve_0(long nativeObj, long image_nativeObj, int flag);
     private static native boolean retrieve_1(long nativeObj, long image_nativeObj);
 
-    // C++:  bool VideoCapture::set(int propId, double value)
+    // C++:  bool set(int propId, double value)
     private static native boolean set_0(long nativeObj, int propId, double value);
 
     private static native String getSupportedPreviewSizes_0(long nativeObj);

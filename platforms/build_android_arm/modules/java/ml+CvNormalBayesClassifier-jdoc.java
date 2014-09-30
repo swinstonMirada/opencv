@@ -7,11 +7,6 @@ package org.opencv.ml;
 import org.opencv.core.Mat;
 
 // C++: class CvNormalBayesClassifier
-/**
- * <p>Bayes classifier for normally distributed data.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier">org.opencv.ml.CvNormalBayesClassifier : public CvStatModel</a>
- */
 public class CvNormalBayesClassifier extends CvStatModel {
 
     protected CvNormalBayesClassifier(long addr) { super(addr); }
@@ -21,14 +16,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
     // C++:   CvNormalBayesClassifier::CvNormalBayesClassifier()
     //
 
-/**
- * <p>Default and training constructors.</p>
- *
- * <p>The constructors follow conventions of "CvStatModel.CvStatModel". See
- * "CvStatModel.train" for parameters descriptions.</p>
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier">org.opencv.ml.CvNormalBayesClassifier.CvNormalBayesClassifier</a>
- */
     public   CvNormalBayesClassifier()
     {
 
@@ -42,19 +29,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
     // C++:   CvNormalBayesClassifier::CvNormalBayesClassifier(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat())
     //
 
-/**
- * <p>Default and training constructors.</p>
- *
- * <p>The constructors follow conventions of "CvStatModel.CvStatModel". See
- * "CvStatModel.train" for parameters descriptions.</p>
- *
- * @param trainData a trainData
- * @param responses a responses
- * @param varIdx a varIdx
- * @param sampleIdx a sampleIdx
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier">org.opencv.ml.CvNormalBayesClassifier.CvNormalBayesClassifier</a>
- */
     public   CvNormalBayesClassifier(Mat trainData, Mat responses, Mat varIdx, Mat sampleIdx)
     {
 
@@ -63,17 +37,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
         return;
     }
 
-/**
- * <p>Default and training constructors.</p>
- *
- * <p>The constructors follow conventions of "CvStatModel.CvStatModel". See
- * "CvStatModel.train" for parameters descriptions.</p>
- *
- * @param trainData a trainData
- * @param responses a responses
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-cvnormalbayesclassifier">org.opencv.ml.CvNormalBayesClassifier.CvNormalBayesClassifier</a>
- */
     public   CvNormalBayesClassifier(Mat trainData, Mat responses)
     {
 
@@ -100,24 +63,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
     // C++:  float CvNormalBayesClassifier::predict(Mat samples, Mat* results = 0, Mat* results_prob = 0)
     //
 
-/**
- * <p>Predicts the response for sample(s).</p>
- *
- * <p>The method estimates the most probable classes for input vectors. Input
- * vectors (one or more) are stored as rows of the matrix <code>samples</code>.
- * In case of multiple input vectors, there should be one output vector
- * <code>results</code>. The predicted class for a single input vector is
- * returned by the method. The vector <code>results_prob</code> contains the
- * output probabilities coresponding to each element of <code>result</code>.</p>
- *
- * <p>The function is parallelized with the TBB library.</p>
- *
- * @param samples a samples
- * @param results a results
- * @param results_prob a results_prob
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-predict">org.opencv.ml.CvNormalBayesClassifier.predict</a>
- */
     public  float predict(Mat samples, Mat results, Mat results_prob)
     {
 
@@ -126,22 +71,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
         return retVal;
     }
 
-/**
- * <p>Predicts the response for sample(s).</p>
- *
- * <p>The method estimates the most probable classes for input vectors. Input
- * vectors (one or more) are stored as rows of the matrix <code>samples</code>.
- * In case of multiple input vectors, there should be one output vector
- * <code>results</code>. The predicted class for a single input vector is
- * returned by the method. The vector <code>results_prob</code> contains the
- * output probabilities coresponding to each element of <code>result</code>.</p>
- *
- * <p>The function is parallelized with the TBB library.</p>
- *
- * @param samples a samples
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-predict">org.opencv.ml.CvNormalBayesClassifier.predict</a>
- */
     public  float predict(Mat samples)
     {
 
@@ -155,30 +84,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
     // C++:  bool CvNormalBayesClassifier::train(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), bool update = false)
     //
 
-/**
- * <p>Trains the model.</p>
- *
- * <p>The method trains the Normal Bayes classifier. It follows the conventions of
- * the generic "CvStatModel.train" approach with the following limitations:</p>
- * <ul>
- *   <li> Only <code>CV_ROW_SAMPLE</code> data layout is supported.
- *   <li> Input variables are all ordered.
- *   <li> Output variable is categorical, which means that elements of
- * <code>responses</code> must be integer numbers, though the vector may have
- * the <code>CV_32FC1</code> type.
- *   <li> Missing measurements are not supported.
- * </ul>
- *
- * @param trainData a trainData
- * @param responses a responses
- * @param varIdx a varIdx
- * @param sampleIdx a sampleIdx
- * @param update Identifies whether the model should be trained from scratch
- * (<code>update=false</code>) or should be updated using the new training data
- * (<code>update=true</code>).
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-train">org.opencv.ml.CvNormalBayesClassifier.train</a>
- */
     public  boolean train(Mat trainData, Mat responses, Mat varIdx, Mat sampleIdx, boolean update)
     {
 
@@ -187,25 +92,6 @@ public class CvNormalBayesClassifier extends CvStatModel {
         return retVal;
     }
 
-/**
- * <p>Trains the model.</p>
- *
- * <p>The method trains the Normal Bayes classifier. It follows the conventions of
- * the generic "CvStatModel.train" approach with the following limitations:</p>
- * <ul>
- *   <li> Only <code>CV_ROW_SAMPLE</code> data layout is supported.
- *   <li> Input variables are all ordered.
- *   <li> Output variable is categorical, which means that elements of
- * <code>responses</code> must be integer numbers, though the vector may have
- * the <code>CV_32FC1</code> type.
- *   <li> Missing measurements are not supported.
- * </ul>
- *
- * @param trainData a trainData
- * @param responses a responses
- *
- * @see <a href="http://docs.opencv.org/modules/ml/doc/normal_bayes_classifier.html#cvnormalbayesclassifier-train">org.opencv.ml.CvNormalBayesClassifier.train</a>
- */
     public  boolean train(Mat trainData, Mat responses)
     {
 

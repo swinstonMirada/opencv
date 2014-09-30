@@ -39,7 +39,7 @@ public class BackgroundSubtractor extends Algorithm {
 
 
     //
-    // C++:  void BackgroundSubtractor::apply(Mat image, Mat& fgmask, double learningRate = -1)
+    // C++:  void apply(Mat image, Mat& fgmask, double learningRate = -1)
     //
 
 /**
@@ -80,6 +80,29 @@ public class BackgroundSubtractor extends Algorithm {
     }
 
 
+    //
+    // C++:  void getBackgroundImage(Mat& backgroundImage)
+    //
+
+/**
+ * <p>Computes a background image.</p>
+ *
+ * <p>Note: Sometimes the background image can be very blurry, as it contain the
+ * average background statistics.</p>
+ *
+ * @param backgroundImage The output background image.
+ *
+ * @see <a href="http://docs.opencv.org/modules/video/doc/motion_analysis_and_object_tracking.html#backgroundsubtractor-getbackgroundimage">org.opencv.video.BackgroundSubtractor.getBackgroundImage</a>
+ */
+    public  void getBackgroundImage(Mat backgroundImage)
+    {
+
+        getBackgroundImage_0(nativeObj, backgroundImage.nativeObj);
+
+        return;
+    }
+
+
     @Override
     protected void finalize() throws Throwable {
         delete(nativeObj);
@@ -87,9 +110,12 @@ public class BackgroundSubtractor extends Algorithm {
 
 
 
-    // C++:  void BackgroundSubtractor::apply(Mat image, Mat& fgmask, double learningRate = -1)
+    // C++:  void apply(Mat image, Mat& fgmask, double learningRate = -1)
     private static native void apply_0(long nativeObj, long image_nativeObj, long fgmask_nativeObj, double learningRate);
     private static native void apply_1(long nativeObj, long image_nativeObj, long fgmask_nativeObj);
+
+    // C++:  void getBackgroundImage(Mat& backgroundImage)
+    private static native void getBackgroundImage_0(long nativeObj, long backgroundImage_nativeObj);
 
     // native support for java finalize()
     private static native void delete(long nativeObj);

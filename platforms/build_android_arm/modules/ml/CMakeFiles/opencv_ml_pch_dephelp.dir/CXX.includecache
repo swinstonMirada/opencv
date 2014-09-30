@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -136,6 +140,10 @@ opencv2/core/traits.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -209,9 +217,7 @@ opencv2/core.hpp
 ../../modules/ml/include/opencv2/ml.hpp
 opencv2/core.hpp
 ../../modules/ml/include/opencv2/opencv2/core.hpp
-opencv2/core/core_c.h
-../../modules/ml/include/opencv2/opencv2/core/core_c.h
-limits.h
+float.h
 -
 map
 -
@@ -2494,6 +2500,8 @@ stdio.h
 string.h
 -
 time.h
+-
+vector
 -
 
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/opencv_ml_pch_dephelp.cxx

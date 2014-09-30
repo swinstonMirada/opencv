@@ -288,29 +288,29 @@ pch_Generate_opencv_test_objdetect/fast:
 	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/pch_Generate_opencv_test_objdetect.dir/build.make modules/objdetect/CMakeFiles/pch_Generate_opencv_test_objdetect.dir/build
 .PHONY : pch_Generate_opencv_test_objdetect/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_objdetect.o: opencl_kernels_objdetect.cpp.o
+.PHONY : opencl_kernels_objdetect.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_objdetect.cpp.o:
+	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o
+.PHONY : opencl_kernels_objdetect.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_objdetect.i: opencl_kernels_objdetect.cpp.i
+.PHONY : opencl_kernels_objdetect.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_objdetect.cpp.i:
+	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.i
+.PHONY : opencl_kernels_objdetect.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_objdetect.s: opencl_kernels_objdetect.cpp.s
+.PHONY : opencl_kernels_objdetect.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_objdetect.cpp.s:
+	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.s
+.PHONY : opencl_kernels_objdetect.cpp.s
 
 opencv_objdetect_pch_dephelp.o: opencv_objdetect_pch_dephelp.cxx.o
 .PHONY : opencv_objdetect_pch_dephelp.o
@@ -528,30 +528,6 @@ src/detection_based_tracker.cpp.s:
 	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/detection_based_tracker.cpp.s
 .PHONY : src/detection_based_tracker.cpp.s
 
-src/erfilter.o: src/erfilter.cpp.o
-.PHONY : src/erfilter.o
-
-# target to build an object file
-src/erfilter.cpp.o:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.o
-.PHONY : src/erfilter.cpp.o
-
-src/erfilter.i: src/erfilter.cpp.i
-.PHONY : src/erfilter.i
-
-# target to preprocess a source file
-src/erfilter.cpp.i:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.i
-.PHONY : src/erfilter.cpp.i
-
-src/erfilter.s: src/erfilter.cpp.s
-.PHONY : src/erfilter.s
-
-# target to generate assembly for a file
-src/erfilter.cpp.s:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/erfilter.cpp.s
-.PHONY : src/erfilter.cpp.s
-
 src/haar.o: src/haar.cpp.o
 .PHONY : src/haar.o
 
@@ -599,30 +575,6 @@ src/hog.s: src/hog.cpp.s
 src/hog.cpp.s:
 	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/hog.cpp.s
 .PHONY : src/hog.cpp.s
-
-src/linemod.o: src/linemod.cpp.o
-.PHONY : src/linemod.o
-
-# target to build an object file
-src/linemod.cpp.o:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.o
-.PHONY : src/linemod.cpp.o
-
-src/linemod.i: src/linemod.cpp.i
-.PHONY : src/linemod.i
-
-# target to preprocess a source file
-src/linemod.cpp.i:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.i
-.PHONY : src/linemod.cpp.i
-
-src/linemod.s: src/linemod.cpp.s
-.PHONY : src/linemod.s
-
-# target to generate assembly for a file
-src/linemod.cpp.s:
-	cd ../.. && $(MAKE) -f modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make modules/objdetect/CMakeFiles/opencv_objdetect.dir/src/linemod.cpp.s
-.PHONY : src/linemod.cpp.s
 
 test/opencl/test_hogdetector.o: test/opencl/test_hogdetector.cpp.o
 .PHONY : test/opencl/test_hogdetector.o
@@ -719,9 +671,9 @@ help:
 	@echo "... pch_Generate_opencv_perf_objdetect"
 	@echo "... pch_Generate_opencv_test_objdetect"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_objdetect.o"
+	@echo "... opencl_kernels_objdetect.i"
+	@echo "... opencl_kernels_objdetect.s"
 	@echo "... opencv_objdetect_pch_dephelp.o"
 	@echo "... opencv_objdetect_pch_dephelp.i"
 	@echo "... opencv_objdetect_pch_dephelp.s"
@@ -749,18 +701,12 @@ help:
 	@echo "... src/detection_based_tracker.o"
 	@echo "... src/detection_based_tracker.i"
 	@echo "... src/detection_based_tracker.s"
-	@echo "... src/erfilter.o"
-	@echo "... src/erfilter.i"
-	@echo "... src/erfilter.s"
 	@echo "... src/haar.o"
 	@echo "... src/haar.i"
 	@echo "... src/haar.s"
 	@echo "... src/hog.o"
 	@echo "... src/hog.i"
 	@echo "... src/hog.s"
-	@echo "... src/linemod.o"
-	@echo "... src/linemod.i"
-	@echo "... src/linemod.s"
 	@echo "... test/opencl/test_hogdetector.o"
 	@echo "... test/opencl/test_hogdetector.i"
 	@echo "... test/opencl/test_hogdetector.s"

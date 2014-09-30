@@ -24,7 +24,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:   CascadeClassifier::CascadeClassifier()
+    // C++:   CascadeClassifier()
     //
 
 /**
@@ -42,7 +42,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:   CascadeClassifier::CascadeClassifier(String filename)
+    // C++:   CascadeClassifier(String filename)
     //
 
 /**
@@ -62,7 +62,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++: static bool CascadeClassifier::convert(String oldcascade, String newcascade)
+    // C++: static bool convert(String oldcascade, String newcascade)
     //
 
     public static boolean convert(String oldcascade, String newcascade)
@@ -75,7 +75,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
     //
 
 /**
@@ -144,7 +144,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
     //
 
 /**
@@ -223,7 +223,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
     //
 
 /**
@@ -302,7 +302,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  bool CascadeClassifier::empty()
+    // C++:  bool empty()
     //
 
 /**
@@ -320,7 +320,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  int CascadeClassifier::getFeatureType()
+    // C++:  int getFeatureType()
     //
 
     public  int getFeatureType()
@@ -333,7 +333,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  Size CascadeClassifier::getOriginalWindowSize()
+    // C++:  Size getOriginalWindowSize()
     //
 
     public  Size getOriginalWindowSize()
@@ -346,7 +346,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  bool CascadeClassifier::isOldFormatCascade()
+    // C++:  bool isOldFormatCascade()
     //
 
     public  boolean isOldFormatCascade()
@@ -359,7 +359,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  bool CascadeClassifier::load(String filename)
+    // C++:  bool load(String filename)
     //
 
 /**
@@ -382,7 +382,7 @@ public class CascadeClassifier {
 
 
     //
-    // C++:  bool CascadeClassifier::read(FileNode node)
+    // C++:  bool read(FileNode node)
     //
 
     // Unknown type 'FileNode' (I), skipping the function
@@ -395,40 +395,40 @@ public class CascadeClassifier {
 
 
 
-    // C++:   CascadeClassifier::CascadeClassifier()
+    // C++:   CascadeClassifier()
     private static native long CascadeClassifier_0();
 
-    // C++:   CascadeClassifier::CascadeClassifier(String filename)
+    // C++:   CascadeClassifier(String filename)
     private static native long CascadeClassifier_1(String filename);
 
-    // C++: static bool CascadeClassifier::convert(String oldcascade, String newcascade)
+    // C++: static bool convert(String oldcascade, String newcascade)
     private static native boolean convert_0(String oldcascade, String newcascade);
 
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
     private static native void detectMultiScale_0(long nativeObj, long image_nativeObj, long objects_mat_nativeObj, double scaleFactor, int minNeighbors, int flags, double minSize_width, double minSize_height, double maxSize_width, double maxSize_height);
     private static native void detectMultiScale_1(long nativeObj, long image_nativeObj, long objects_mat_nativeObj);
 
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& numDetections, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size())
     private static native void detectMultiScale2_0(long nativeObj, long image_nativeObj, long objects_mat_nativeObj, long numDetections_mat_nativeObj, double scaleFactor, int minNeighbors, int flags, double minSize_width, double minSize_height, double maxSize_width, double maxSize_height);
     private static native void detectMultiScale2_1(long nativeObj, long image_nativeObj, long objects_mat_nativeObj, long numDetections_mat_nativeObj);
 
-    // C++:  void CascadeClassifier::detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
+    // C++:  void detectMultiScale(Mat image, vector_Rect& objects, vector_int& rejectLevels, vector_double& levelWeights, double scaleFactor = 1.1, int minNeighbors = 3, int flags = 0, Size minSize = Size(), Size maxSize = Size(), bool outputRejectLevels = false)
     private static native void detectMultiScale3_0(long nativeObj, long image_nativeObj, long objects_mat_nativeObj, long rejectLevels_mat_nativeObj, long levelWeights_mat_nativeObj, double scaleFactor, int minNeighbors, int flags, double minSize_width, double minSize_height, double maxSize_width, double maxSize_height, boolean outputRejectLevels);
     private static native void detectMultiScale3_1(long nativeObj, long image_nativeObj, long objects_mat_nativeObj, long rejectLevels_mat_nativeObj, long levelWeights_mat_nativeObj);
 
-    // C++:  bool CascadeClassifier::empty()
+    // C++:  bool empty()
     private static native boolean empty_0(long nativeObj);
 
-    // C++:  int CascadeClassifier::getFeatureType()
+    // C++:  int getFeatureType()
     private static native int getFeatureType_0(long nativeObj);
 
-    // C++:  Size CascadeClassifier::getOriginalWindowSize()
+    // C++:  Size getOriginalWindowSize()
     private static native double[] getOriginalWindowSize_0(long nativeObj);
 
-    // C++:  bool CascadeClassifier::isOldFormatCascade()
+    // C++:  bool isOldFormatCascade()
     private static native boolean isOldFormatCascade_0(long nativeObj);
 
-    // C++:  bool CascadeClassifier::load(String filename)
+    // C++:  bool load(String filename)
     private static native boolean load_0(long nativeObj, String filename);
 
     // native support for java finalize()

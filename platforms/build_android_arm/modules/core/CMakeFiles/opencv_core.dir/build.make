@@ -52,31 +52,31 @@ include modules/core/CMakeFiles/opencv_core.dir/progress.make
 # Include the compile flags for this target's objects.
 include modules/core/CMakeFiles/opencv_core.dir/flags.make
 
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/arithm.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/convert.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/copymakeborder.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/copyset.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/fft.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/flip.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/inrange.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/lut.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/meanstddev.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/minmaxloc.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/mixchannels.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/mulspectrums.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/normalize.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/reduce.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/reduce2.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/repeat.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/set_identity.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/split_merge.cl
-modules/core/opencl_kernels.cpp: ../../modules/core/src/opencl/transpose.cl
-modules/core/opencl_kernels.cpp: ../../cmake/cl2cpp.cmake
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/arithm.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/convert.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/copymakeborder.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/copyset.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/fft.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/flip.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/inrange.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/lut.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/meanstddev.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/minmaxloc.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/mixchannels.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/mulspectrums.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/normalize.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/reduce.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/reduce2.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/repeat.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/set_identity.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/split_merge.cl
+modules/core/opencl_kernels_core.cpp: ../../modules/core/src/opencl/transpose.cl
+modules/core/opencl_kernels_core.cpp: ../../cmake/cl2cpp.cmake
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels.cpp, opencl_kernels.hpp"
-	cd modules/core && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="core" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating opencl_kernels_core.cpp, opencl_kernels_core.hpp"
+	cd modules/core && "/Applications/CMake 2.8-12.app/Contents/bin/cmake" -DMODULE_NAME="core" -DCL_DIR="/Users/swinston/Mirada/lib/c/opencv/modules/core/src/opencl" -DOUTPUT="/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/opencl_kernels_core.cpp" -P /Users/swinston/Mirada/lib/c/opencv/cmake/cl2cpp.cmake
 
-modules/core/opencl_kernels.hpp: modules/core/opencl_kernels.cpp
+modules/core/opencl_kernels_core.hpp: modules/core/opencl_kernels_core.cpp
 
 modules/core/CMakeFiles/opencv_core.dir/src/algorithm.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/algorithm.cpp.o: ../../modules/core/src/algorithm.cpp
@@ -193,9 +193,32 @@ modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o.provides: 
 
 modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o
 
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o: ../../modules/core/src/conjugate_gradient.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o -c ../../../../modules/core/src/conjugate_gradient.cpp
+
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/conjugate_gradient.cpp > CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.i
+
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/conjugate_gradient.cpp -o CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.s
+
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o
+
 modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o: ../../modules/core/src/convert.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/convert.cpp.o -c ../../../../modules/core/src/convert.cpp
 
@@ -218,7 +241,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o.provides.build: module
 
 modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o: ../../modules/core/src/copy.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/copy.cpp.o -c ../../../../modules/core/src/copy.cpp
 
@@ -241,7 +264,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o.provides.build: modules/c
 
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o: ../../modules/core/src/cuda_buffer_pool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o -c ../../../../modules/core/src/cuda_buffer_pool.cpp
 
@@ -264,7 +287,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o.provides.buil
 
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o: ../../modules/core/src/cuda_gpu_mat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o -c ../../../../modules/core/src/cuda_gpu_mat.cpp
 
@@ -287,7 +310,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/cuda_gpu_mat.cpp.o.provides.build: m
 
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o: ../../modules/core/src/cuda_host_mem.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o -c ../../../../modules/core/src/cuda_host_mem.cpp
 
@@ -310,7 +333,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/cuda_host_mem.cpp.o.provides.build: 
 
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o: ../../modules/core/src/cuda_info.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o -c ../../../../modules/core/src/cuda_info.cpp
 
@@ -333,7 +356,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/cuda_info.cpp.o.provides.build: modu
 
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o: ../../modules/core/src/cuda_stream.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o -c ../../../../modules/core/src/cuda_stream.cpp
 
@@ -356,7 +379,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o.provides.build: mo
 
 modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o: ../../modules/core/src/datastructs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/datastructs.cpp.o -c ../../../../modules/core/src/datastructs.cpp
 
@@ -379,7 +402,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o.provides.build: mo
 
 modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o: ../../modules/core/src/directx.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/directx.cpp.o -c ../../../../modules/core/src/directx.cpp
 
@@ -400,32 +423,32 @@ modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o.provides: modules/core
 
 modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o: ../../modules/core/src/drawing.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/drawing.cpp.o -c ../../../../modules/core/src/drawing.cpp
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o: ../../modules/core/src/downhill_simplex.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o -c ../../../../modules/core/src/downhill_simplex.cpp
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/drawing.cpp.i"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/drawing.cpp > CMakeFiles/opencv_core.dir/src/drawing.cpp.i
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/downhill_simplex.cpp > CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.i
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/drawing.cpp.s"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/drawing.cpp -o CMakeFiles/opencv_core.dir/src/drawing.cpp.s
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/downhill_simplex.cpp -o CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.s
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.requires:
-.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.requires
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.requires
-	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.provides.build
-.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.provides
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.provides
 
-modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o
+modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o
 
 modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o: ../../modules/core/src/dxt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/dxt.cpp.o -c ../../../../modules/core/src/dxt.cpp
 
@@ -448,7 +471,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o.provides.build: modules/co
 
 modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o: ../../modules/core/src/gl_core_3_1.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o -c ../../../../modules/core/src/gl_core_3_1.cpp
 
@@ -471,7 +494,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o.provides.build: mo
 
 modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o: ../../modules/core/src/glob.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/glob.cpp.o -c ../../../../modules/core/src/glob.cpp
 
@@ -492,9 +515,32 @@ modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o.provides: modules/core/CM
 
 modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o
 
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o: ../../modules/core/src/kmeans.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/kmeans.cpp.o -c ../../../../modules/core/src/kmeans.cpp
+
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/kmeans.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/kmeans.cpp > CMakeFiles/opencv_core.dir/src/kmeans.cpp.i
+
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/kmeans.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/kmeans.cpp -o CMakeFiles/opencv_core.dir/src/kmeans.cpp.s
+
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o
+
 modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o: ../../modules/core/src/lapack.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/lapack.cpp.o -c ../../../../modules/core/src/lapack.cpp
 
@@ -515,9 +561,55 @@ modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o.provides: modules/core/
 
 modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o
 
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o: ../../modules/core/src/lda.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/lda.cpp.o -c ../../../../modules/core/src/lda.cpp
+
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/lda.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/lda.cpp > CMakeFiles/opencv_core.dir/src/lda.cpp.i
+
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/lda.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/lda.cpp -o CMakeFiles/opencv_core.dir/src/lda.cpp.s
+
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o: ../../modules/core/src/lpsolver.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o -c ../../../../modules/core/src/lpsolver.cpp
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/lpsolver.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/lpsolver.cpp > CMakeFiles/opencv_core.dir/src/lpsolver.cpp.i
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/lpsolver.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/lpsolver.cpp -o CMakeFiles/opencv_core.dir/src/lpsolver.cpp.s
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o
+
 modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o: ../../modules/core/src/mathfuncs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o -c ../../../../modules/core/src/mathfuncs.cpp
 
@@ -540,7 +632,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o.provides.build: modu
 
 modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o: ../../modules/core/src/matmul.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/matmul.cpp.o -c ../../../../modules/core/src/matmul.cpp
 
@@ -563,7 +655,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o.provides.build: modules
 
 modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o: ../../modules/core/src/matop.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/matop.cpp.o -c ../../../../modules/core/src/matop.cpp
 
@@ -586,7 +678,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o.provides.build: modules/
 
 modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o: ../../modules/core/src/matrix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/matrix.cpp.o -c ../../../../modules/core/src/matrix.cpp
 
@@ -609,7 +701,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/matrix.cpp.o.provides.build: modules
 
 modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o: ../../modules/core/src/ocl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/ocl.cpp.o -c ../../../../modules/core/src/ocl.cpp
 
@@ -632,7 +724,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/ocl.cpp.o.provides.build: modules/co
 
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o: ../../modules/core/src/opencl/runtime/opencl_clamdblas.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.o -c ../../../../modules/core/src/opencl/runtime/opencl_clamdblas.cpp
 
@@ -655,7 +747,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdblas.cpp.
 
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o: ../../modules/core/src/opencl/runtime/opencl_clamdfft.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o -c ../../../../modules/core/src/opencl/runtime/opencl_clamdfft.cpp
 
@@ -678,7 +770,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_clamdfft.cpp.o
 
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o: ../../modules/core/src/opencl/runtime/opencl_core.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o -c ../../../../modules/core/src/opencl/runtime/opencl_core.cpp
 
@@ -701,7 +793,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/opencl/runtime/opencl_core.cpp.o.pro
 
 modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o: ../../modules/core/src/opengl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/opengl.cpp.o -c ../../../../modules/core/src/opengl.cpp
 
@@ -724,7 +816,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o.provides.build: modules
 
 modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o: ../../modules/core/src/out.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/out.cpp.o -c ../../../../modules/core/src/out.cpp
 
@@ -747,7 +839,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o.provides.build: modules/co
 
 modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o: ../../modules/core/src/parallel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/parallel.cpp.o -c ../../../../modules/core/src/parallel.cpp
 
@@ -768,9 +860,32 @@ modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o.provides: modules/cor
 
 modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o
 
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o: ../../modules/core/src/pca.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/pca.cpp.o -c ../../../../modules/core/src/pca.cpp
+
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/src/pca.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E ../../../../modules/core/src/pca.cpp > CMakeFiles/opencv_core.dir/src/pca.cpp.i
+
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/src/pca.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S ../../../../modules/core/src/pca.cpp -o CMakeFiles/opencv_core.dir/src/pca.cpp.s
+
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.requires
+
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.provides
+
+modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o
+
 modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o: ../../modules/core/src/persistence.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/persistence.cpp.o -c ../../../../modules/core/src/persistence.cpp
 
@@ -793,7 +908,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o.provides.build: mo
 
 modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o: ../../modules/core/src/rand.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/rand.cpp.o -c ../../../../modules/core/src/rand.cpp
 
@@ -816,7 +931,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o.provides.build: modules/c
 
 modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o: ../../modules/core/src/stat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/stat.cpp.o -c ../../../../modules/core/src/stat.cpp
 
@@ -839,7 +954,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o.provides.build: modules/c
 
 modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o: ../../modules/core/src/stl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/stl.cpp.o -c ../../../../modules/core/src/stl.cpp
 
@@ -862,7 +977,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/stl.cpp.o.provides.build: modules/co
 
 modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o: ../../modules/core/src/system.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/system.cpp.o -c ../../../../modules/core/src/system.cpp
 
@@ -885,7 +1000,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/system.cpp.o.provides.build: modules
 
 modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o: ../../modules/core/src/tables.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/tables.cpp.o -c ../../../../modules/core/src/tables.cpp
 
@@ -908,7 +1023,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o.provides.build: modules
 
 modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o: ../../modules/core/src/types.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/types.cpp.o -c ../../../../modules/core/src/types.cpp
 
@@ -931,7 +1046,7 @@ modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o.provides.build: modules/
 
 modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
 modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o: ../../modules/core/src/umatrix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o"
 	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/src/umatrix.cpp.o -c ../../../../modules/core/src/umatrix.cpp
 
@@ -952,28 +1067,28 @@ modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o.provides: modules/core
 
 modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o: modules/core/opencl_kernels.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_40)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o -c opencl_kernels.cpp
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o: modules/core/CMakeFiles/opencv_core.dir/flags.make
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o: modules/core/opencl_kernels_core.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o -c opencl_kernels_core.cpp
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/opencl_kernels.cpp.i"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E opencl_kernels.cpp > CMakeFiles/opencv_core.dir/opencl_kernels.cpp.i
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.i"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -E opencl_kernels_core.cpp > CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.i
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/opencl_kernels.cpp.s"
-	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S opencl_kernels.cpp -o CMakeFiles/opencv_core.dir/opencl_kernels.cpp.s
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.s"
+	cd modules/core && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/precomp.hpp" -Winvalid-pch  -S opencl_kernels_core.cpp -o CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.s
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.requires:
-.PHONY : modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.requires:
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.requires
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.requires
-	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.provides.build
-.PHONY : modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.provides
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.provides: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.requires
+	$(MAKE) -f modules/core/CMakeFiles/opencv_core.dir/build.make modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.provides.build
+.PHONY : modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.provides
 
-modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o
+modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.provides.build: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o
 
 # Object files for target opencv_core
 opencv_core_OBJECTS = \
@@ -982,6 +1097,7 @@ opencv_core_OBJECTS = \
 "CMakeFiles/opencv_core.dir/src/arithm.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/array.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/convert.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/copy.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o" \
@@ -991,11 +1107,14 @@ opencv_core_OBJECTS = \
 "CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/datastructs.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/directx.cpp.o" \
-"CMakeFiles/opencv_core.dir/src/drawing.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/dxt.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/glob.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/kmeans.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/lapack.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/lda.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/matmul.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/matop.cpp.o" \
@@ -1007,6 +1126,7 @@ opencv_core_OBJECTS = \
 "CMakeFiles/opencv_core.dir/src/opengl.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/out.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/parallel.cpp.o" \
+"CMakeFiles/opencv_core.dir/src/pca.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/persistence.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/rand.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/stat.cpp.o" \
@@ -1015,7 +1135,7 @@ opencv_core_OBJECTS = \
 "CMakeFiles/opencv_core.dir/src/tables.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/types.cpp.o" \
 "CMakeFiles/opencv_core.dir/src/umatrix.cpp.o" \
-"CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o"
+"CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o"
 
 # External object files for target opencv_core
 opencv_core_EXTERNAL_OBJECTS =
@@ -1025,6 +1145,7 @@ lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/al
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/arithm.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/array.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o
@@ -1034,11 +1155,14 @@ lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/cu
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o
-lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o
@@ -1050,6 +1174,7 @@ lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/op
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o
@@ -1058,7 +1183,7 @@ lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/sy
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o
-lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o
+lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/build.make
 lib/armeabi-v7a/libopencv_core.a: modules/core/CMakeFiles/opencv_core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library ../../lib/armeabi-v7a/libopencv_core.a"
@@ -1074,6 +1199,7 @@ modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/arithm.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/array.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/command_line_parser.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/conjugate_gradient.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/convert.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/copy.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/cuda_buffer_pool.cpp.o.requires
@@ -1083,11 +1209,14 @@ modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/cuda_stream.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/datastructs.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/directx.cpp.o.requires
-modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/drawing.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/downhill_simplex.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/dxt.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/gl_core_3_1.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/glob.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/kmeans.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/lapack.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/lda.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/lpsolver.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/mathfuncs.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/matmul.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/matop.cpp.o.requires
@@ -1099,6 +1228,7 @@ modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/opengl.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/out.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/parallel.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/pca.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/persistence.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/rand.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/stat.cpp.o.requires
@@ -1107,15 +1237,15 @@ modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/tables.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/types.cpp.o.requires
 modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/src/umatrix.cpp.o.requires
-modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels.cpp.o.requires
+modules/core/CMakeFiles/opencv_core.dir/requires: modules/core/CMakeFiles/opencv_core.dir/opencl_kernels_core.cpp.o.requires
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/requires
 
 modules/core/CMakeFiles/opencv_core.dir/clean:
 	cd modules/core && $(CMAKE_COMMAND) -P CMakeFiles/opencv_core.dir/cmake_clean.cmake
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/clean
 
-modules/core/CMakeFiles/opencv_core.dir/depend: modules/core/opencl_kernels.cpp
-modules/core/CMakeFiles/opencv_core.dir/depend: modules/core/opencl_kernels.hpp
+modules/core/CMakeFiles/opencv_core.dir/depend: modules/core/opencl_kernels_core.cpp
+modules/core/CMakeFiles/opencv_core.dir/depend: modules/core/opencl_kernels_core.hpp
 	cd /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/swinston/Mirada/lib/c/opencv /Users/swinston/Mirada/lib/c/opencv/modules/core /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : modules/core/CMakeFiles/opencv_core.dir/depend
 

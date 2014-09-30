@@ -30,7 +30,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  Point AlignMTB::calculateShift(Mat img0, Mat img1)
+    // C++:  Point calculateShift(Mat img0, Mat img1)
     //
 
 /**
@@ -52,7 +52,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::computeBitmaps(Mat img, Mat& tb, Mat& eb)
+    // C++:  void computeBitmaps(Mat img, Mat& tb, Mat& eb)
     //
 
 /**
@@ -74,7 +74,46 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
+    // C++:  bool getCut()
+    //
+
+    public  boolean getCut()
+    {
+
+        boolean retVal = getCut_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getExcludeRange()
+    //
+
+    public  int getExcludeRange()
+    {
+
+        int retVal = getExcludeRange_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  int getMaxBits()
+    //
+
+    public  int getMaxBits()
+    {
+
+        int retVal = getMaxBits_0(nativeObj);
+
+        return retVal;
+    }
+
+
+    //
+    // C++:  void process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
     //
 
 /**
@@ -98,7 +137,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::process(vector_Mat src, vector_Mat dst)
+    // C++:  void process(vector_Mat src, vector_Mat dst)
     //
 
 /**
@@ -120,7 +159,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::setCut(bool value)
+    // C++:  void setCut(bool value)
     //
 
     public  void setCut(boolean value)
@@ -133,7 +172,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::setExcludeRange(int exclude_range)
+    // C++:  void setExcludeRange(int exclude_range)
     //
 
     public  void setExcludeRange(int exclude_range)
@@ -146,7 +185,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::setMaxBits(int max_bits)
+    // C++:  void setMaxBits(int max_bits)
     //
 
     public  void setMaxBits(int max_bits)
@@ -159,7 +198,7 @@ public class AlignMTB extends AlignExposures {
 
 
     //
-    // C++:  void AlignMTB::shiftMat(Mat src, Mat& dst, Point shift)
+    // C++:  void shiftMat(Mat src, Mat& dst, Point shift)
     //
 
 /**
@@ -187,28 +226,37 @@ public class AlignMTB extends AlignExposures {
 
 
 
-    // C++:  Point AlignMTB::calculateShift(Mat img0, Mat img1)
+    // C++:  Point calculateShift(Mat img0, Mat img1)
     private static native double[] calculateShift_0(long nativeObj, long img0_nativeObj, long img1_nativeObj);
 
-    // C++:  void AlignMTB::computeBitmaps(Mat img, Mat& tb, Mat& eb)
+    // C++:  void computeBitmaps(Mat img, Mat& tb, Mat& eb)
     private static native void computeBitmaps_0(long nativeObj, long img_nativeObj, long tb_nativeObj, long eb_nativeObj);
 
-    // C++:  void AlignMTB::process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
+    // C++:  bool getCut()
+    private static native boolean getCut_0(long nativeObj);
+
+    // C++:  int getExcludeRange()
+    private static native int getExcludeRange_0(long nativeObj);
+
+    // C++:  int getMaxBits()
+    private static native int getMaxBits_0(long nativeObj);
+
+    // C++:  void process(vector_Mat src, vector_Mat dst, Mat times, Mat response)
     private static native void process_0(long nativeObj, long src_mat_nativeObj, long dst_mat_nativeObj, long times_nativeObj, long response_nativeObj);
 
-    // C++:  void AlignMTB::process(vector_Mat src, vector_Mat dst)
+    // C++:  void process(vector_Mat src, vector_Mat dst)
     private static native void process_1(long nativeObj, long src_mat_nativeObj, long dst_mat_nativeObj);
 
-    // C++:  void AlignMTB::setCut(bool value)
+    // C++:  void setCut(bool value)
     private static native void setCut_0(long nativeObj, boolean value);
 
-    // C++:  void AlignMTB::setExcludeRange(int exclude_range)
+    // C++:  void setExcludeRange(int exclude_range)
     private static native void setExcludeRange_0(long nativeObj, int exclude_range);
 
-    // C++:  void AlignMTB::setMaxBits(int max_bits)
+    // C++:  void setMaxBits(int max_bits)
     private static native void setMaxBits_0(long nativeObj, int max_bits);
 
-    // C++:  void AlignMTB::shiftMat(Mat src, Mat& dst, Point shift)
+    // C++:  void shiftMat(Mat src, Mat& dst, Point shift)
     private static native void shiftMat_0(long nativeObj, long src_nativeObj, long dst_nativeObj, double shift_x, double shift_y);
 
     // native support for java finalize()

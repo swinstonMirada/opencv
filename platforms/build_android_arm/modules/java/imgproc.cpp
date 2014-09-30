@@ -44,7 +44,7 @@ extern "C" {
 
 
 //
-//  int LineSegmentDetector::compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
+//  int compareSegments(Size size, Mat lines1, Mat lines2, Mat& _image = Mat())
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_LineSegmentDetector_compareSegments_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jlong, jlong, jlong);
@@ -55,12 +55,12 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_LineSegmentDetector_compareSegmen
     static const char method_name[] = "imgproc::compareSegments_10()";
     try {
         LOGD("%s", method_name);
-        LineSegmentDetector* me = (LineSegmentDetector*) self; //TODO: check for NULL
+        Ptr<cv::LineSegmentDetector>* me = (Ptr<cv::LineSegmentDetector>*) self; //TODO: check for NULL
         Size size((int)size_width, (int)size_height);
         Mat& lines1 = *((Mat*)lines1_nativeObj);
         Mat& lines2 = *((Mat*)lines2_nativeObj);
         Mat& _image = *((Mat*)_image_nativeObj);
-        int _retval_ = me->compareSegments( size, lines1, lines2, _image );
+        int _retval_ = (*me)->compareSegments( size, lines1, lines2, _image );
         return _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -80,11 +80,11 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_LineSegmentDetector_compareSegmen
     static const char method_name[] = "imgproc::compareSegments_11()";
     try {
         LOGD("%s", method_name);
-        LineSegmentDetector* me = (LineSegmentDetector*) self; //TODO: check for NULL
+        Ptr<cv::LineSegmentDetector>* me = (Ptr<cv::LineSegmentDetector>*) self; //TODO: check for NULL
         Size size((int)size_width, (int)size_height);
         Mat& lines1 = *((Mat*)lines1_nativeObj);
         Mat& lines2 = *((Mat*)lines2_nativeObj);
-        int _retval_ = me->compareSegments( size, lines1, lines2 );
+        int _retval_ = (*me)->compareSegments( size, lines1, lines2 );
         return _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -97,7 +97,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_LineSegmentDetector_compareSegmen
 
 
 //
-//  void LineSegmentDetector::detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
+//  void detect(Mat _image, Mat& _lines, Mat& width = Mat(), Mat& prec = Mat(), Mat& nfa = Mat())
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_detect_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong, jlong, jlong);
@@ -108,13 +108,13 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_detect_10
     static const char method_name[] = "imgproc::detect_10()";
     try {
         LOGD("%s", method_name);
-        LineSegmentDetector* me = (LineSegmentDetector*) self; //TODO: check for NULL
+        Ptr<cv::LineSegmentDetector>* me = (Ptr<cv::LineSegmentDetector>*) self; //TODO: check for NULL
         Mat& _image = *((Mat*)_image_nativeObj);
         Mat& _lines = *((Mat*)_lines_nativeObj);
         Mat& width = *((Mat*)width_nativeObj);
         Mat& prec = *((Mat*)prec_nativeObj);
         Mat& nfa = *((Mat*)nfa_nativeObj);
-        me->detect( _image, _lines, width, prec, nfa );
+        (*me)->detect( _image, _lines, width, prec, nfa );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -134,10 +134,10 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_detect_11
     static const char method_name[] = "imgproc::detect_11()";
     try {
         LOGD("%s", method_name);
-        LineSegmentDetector* me = (LineSegmentDetector*) self; //TODO: check for NULL
+        Ptr<cv::LineSegmentDetector>* me = (Ptr<cv::LineSegmentDetector>*) self; //TODO: check for NULL
         Mat& _image = *((Mat*)_image_nativeObj);
         Mat& _lines = *((Mat*)_lines_nativeObj);
-        me->detect( _image, _lines );
+        (*me)->detect( _image, _lines );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -150,7 +150,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_detect_11
 
 
 //
-//  void LineSegmentDetector::drawSegments(Mat& _image, Mat lines)
+//  void drawSegments(Mat& _image, Mat lines)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_drawSegments_10 (JNIEnv*, jclass, jlong, jlong, jlong);
@@ -161,10 +161,10 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_drawSegments_
     static const char method_name[] = "imgproc::drawSegments_10()";
     try {
         LOGD("%s", method_name);
-        LineSegmentDetector* me = (LineSegmentDetector*) self; //TODO: check for NULL
+        Ptr<cv::LineSegmentDetector>* me = (Ptr<cv::LineSegmentDetector>*) self; //TODO: check for NULL
         Mat& _image = *((Mat*)_image_nativeObj);
         Mat& lines = *((Mat*)lines_nativeObj);
-        me->drawSegments( _image, lines );
+        (*me)->drawSegments( _image, lines );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -178,19 +178,19 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_drawSegments_
 
 //
 //  native support for java finalize()
-//  static void LineSegmentDetector::delete( __int64 self )
+//  static void Ptr<cv::LineSegmentDetector>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_LineSegmentDetector_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (LineSegmentDetector*) self;
+    delete (Ptr<cv::LineSegmentDetector>*) self;
 }
 
 
 //
-//   Subdiv2D::Subdiv2D()
+//   Subdiv2D()
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_10 (JNIEnv*, jclass);
@@ -202,7 +202,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_10
     try {
         LOGD("%s", method_name);
         
-        Subdiv2D* _retval_ = new Subdiv2D(  );
+        cv::Subdiv2D* _retval_ = new cv::Subdiv2D(  );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -215,7 +215,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_10
 
 
 //
-//   Subdiv2D::Subdiv2D(Rect rect)
+//   Subdiv2D(Rect rect)
 //
 
 JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_11 (JNIEnv*, jclass, jint, jint, jint, jint);
@@ -227,7 +227,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_11
     try {
         LOGD("%s", method_name);
         Rect rect(rect_x, rect_y, rect_width, rect_height);
-        Subdiv2D* _retval_ = new Subdiv2D( rect );
+        cv::Subdiv2D* _retval_ = new cv::Subdiv2D( rect );
         return (jlong) _retval_;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -240,7 +240,7 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Subdiv2D_Subdiv2D_11
 
 
 //
-//  int Subdiv2D::edgeDst(int edge, Point2f* dstpt = 0)
+//  int edgeDst(int edge, Point2f* dstpt = 0)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeDst_10 (JNIEnv*, jclass, jlong, jint, jdoubleArray);
@@ -251,7 +251,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeDst_10
     static const char method_name[] = "imgproc::edgeDst_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f dstpt;
         int _retval_ = me->edgeDst( (int)edge, &dstpt );
         jdouble tmp_dstpt[2] = {dstpt.x, dstpt.y}; env->SetDoubleArrayRegion(dstpt_out, 0, 2, tmp_dstpt);
@@ -274,7 +274,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeDst_11
     static const char method_name[] = "imgproc::edgeDst_11()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->edgeDst( (int)edge );
         return _retval_;
     } catch(const std::exception &e) {
@@ -288,7 +288,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeDst_11
 
 
 //
-//  int Subdiv2D::edgeOrg(int edge, Point2f* orgpt = 0)
+//  int edgeOrg(int edge, Point2f* orgpt = 0)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeOrg_10 (JNIEnv*, jclass, jlong, jint, jdoubleArray);
@@ -299,7 +299,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeOrg_10
     static const char method_name[] = "imgproc::edgeOrg_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f orgpt;
         int _retval_ = me->edgeOrg( (int)edge, &orgpt );
         jdouble tmp_orgpt[2] = {orgpt.x, orgpt.y}; env->SetDoubleArrayRegion(orgpt_out, 0, 2, tmp_orgpt);
@@ -322,7 +322,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeOrg_11
     static const char method_name[] = "imgproc::edgeOrg_11()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->edgeOrg( (int)edge );
         return _retval_;
     } catch(const std::exception &e) {
@@ -336,7 +336,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_edgeOrg_11
 
 
 //
-//  int Subdiv2D::findNearest(Point2f pt, Point2f* nearestPt = 0)
+//  int findNearest(Point2f pt, Point2f* nearestPt = 0)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_findNearest_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdoubleArray);
@@ -347,7 +347,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_findNearest_10
     static const char method_name[] = "imgproc::findNearest_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f pt((float)pt_x, (float)pt_y);
         Point2f nearestPt;
         int _retval_ = me->findNearest( pt, &nearestPt );
@@ -371,7 +371,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_findNearest_11
     static const char method_name[] = "imgproc::findNearest_11()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f pt((float)pt_x, (float)pt_y);
         int _retval_ = me->findNearest( pt );
         return _retval_;
@@ -386,7 +386,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_findNearest_11
 
 
 //
-//  int Subdiv2D::getEdge(int edge, int nextEdgeType)
+//  int getEdge(int edge, int nextEdgeType)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdge_10 (JNIEnv*, jclass, jlong, jint, jint);
@@ -397,7 +397,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdge_10
     static const char method_name[] = "imgproc::getEdge_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->getEdge( (int)edge, (int)nextEdgeType );
         return _retval_;
     } catch(const std::exception &e) {
@@ -411,7 +411,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdge_10
 
 
 //
-//  void Subdiv2D::getEdgeList(vector_Vec4f& edgeList)
+//  void getEdgeList(vector_Vec4f& edgeList)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdgeList_10 (JNIEnv*, jclass, jlong, jlong);
@@ -424,7 +424,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdgeList_10
         LOGD("%s", method_name);
         std::vector<Vec4f> edgeList;
         Mat& edgeList_mat = *((Mat*)edgeList_mat_nativeObj);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         me->getEdgeList( edgeList );
         vector_Vec4f_to_Mat( edgeList, edgeList_mat );
         return;
@@ -439,7 +439,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getEdgeList_10
 
 
 //
-//  void Subdiv2D::getTriangleList(vector_Vec6f& triangleList)
+//  void getTriangleList(vector_Vec6f& triangleList)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getTriangleList_10 (JNIEnv*, jclass, jlong, jlong);
@@ -452,7 +452,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getTriangleList_10
         LOGD("%s", method_name);
         std::vector<Vec6f> triangleList;
         Mat& triangleList_mat = *((Mat*)triangleList_mat_nativeObj);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         me->getTriangleList( triangleList );
         vector_Vec6f_to_Mat( triangleList, triangleList_mat );
         return;
@@ -467,7 +467,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getTriangleList_10
 
 
 //
-//  Point2f Subdiv2D::getVertex(int vertex, int* firstEdge = 0)
+//  Point2f getVertex(int vertex, int* firstEdge = 0)
 //
 
 JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Subdiv2D_getVertex_10 (JNIEnv*, jclass, jlong, jint, jdoubleArray);
@@ -478,7 +478,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Subdiv2D_getVertex_10
     static const char method_name[] = "imgproc::getVertex_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int firstEdge;
         Point2f _retval_ = me->getVertex( (int)vertex, &firstEdge );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.x, _retval_.y}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);  jdouble tmp_firstEdge[1] = {firstEdge}; env->SetDoubleArrayRegion(firstEdge_out, 0, 1, tmp_firstEdge);
@@ -501,7 +501,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Subdiv2D_getVertex_11
     static const char method_name[] = "imgproc::getVertex_11()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f _retval_ = me->getVertex( (int)vertex );
         jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.x, _retval_.y}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
         return _da_retval_;
@@ -516,7 +516,7 @@ JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Subdiv2D_getVertex_11
 
 
 //
-//  void Subdiv2D::getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
+//  void getVoronoiFacetList(vector_int idx, vector_vector_Point2f& facetList, vector_Point2f& facetCenters)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getVoronoiFacetList_10 (JNIEnv*, jclass, jlong, jlong, jlong, jlong);
@@ -534,7 +534,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getVoronoiFacetList_10
         Mat& facetList_mat = *((Mat*)facetList_mat_nativeObj);
         std::vector<Point2f> facetCenters;
         Mat& facetCenters_mat = *((Mat*)facetCenters_mat_nativeObj);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         me->getVoronoiFacetList( idx, facetList, facetCenters );
         vector_vector_Point2f_to_Mat( facetList, facetList_mat );  vector_Point2f_to_Mat( facetCenters, facetCenters_mat );
         return;
@@ -549,7 +549,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_getVoronoiFacetList_10
 
 
 //
-//  void Subdiv2D::initDelaunay(Rect rect)
+//  void initDelaunay(Rect rect)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_initDelaunay_10 (JNIEnv*, jclass, jlong, jint, jint, jint, jint);
@@ -560,7 +560,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_initDelaunay_10
     static const char method_name[] = "imgproc::initDelaunay_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Rect rect(rect_x, rect_y, rect_width, rect_height);
         me->initDelaunay( rect );
         return;
@@ -575,7 +575,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_initDelaunay_10
 
 
 //
-//  int Subdiv2D::insert(Point2f pt)
+//  int insert(Point2f pt)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_10 (JNIEnv*, jclass, jlong, jdouble, jdouble);
@@ -586,7 +586,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_10
     static const char method_name[] = "imgproc::insert_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f pt((float)pt_x, (float)pt_y);
         int _retval_ = me->insert( pt );
         return _retval_;
@@ -601,7 +601,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_10
 
 
 //
-//  void Subdiv2D::insert(vector_Point2f ptvec)
+//  void insert(vector_Point2f ptvec)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_11 (JNIEnv*, jclass, jlong, jlong);
@@ -615,7 +615,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_11
         std::vector<Point2f> ptvec;
         Mat& ptvec_mat = *((Mat*)ptvec_mat_nativeObj);
         Mat_to_vector_Point2f( ptvec_mat, ptvec );
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         me->insert( ptvec );
         return;
     } catch(const std::exception &e) {
@@ -629,7 +629,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_insert_11
 
 
 //
-//  int Subdiv2D::locate(Point2f pt, int& edge, int& vertex)
+//  int locate(Point2f pt, int& edge, int& vertex)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_locate_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdoubleArray, jdoubleArray);
@@ -640,7 +640,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_locate_10
     static const char method_name[] = "imgproc::locate_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         Point2f pt((float)pt_x, (float)pt_y);
         int edge;
         int vertex;
@@ -658,7 +658,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_locate_10
 
 
 //
-//  int Subdiv2D::nextEdge(int edge)
+//  int nextEdge(int edge)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_nextEdge_10 (JNIEnv*, jclass, jlong, jint);
@@ -669,7 +669,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_nextEdge_10
     static const char method_name[] = "imgproc::nextEdge_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->nextEdge( (int)edge );
         return _retval_;
     } catch(const std::exception &e) {
@@ -683,7 +683,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_nextEdge_10
 
 
 //
-//  int Subdiv2D::rotateEdge(int edge, int rotate)
+//  int rotateEdge(int edge, int rotate)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_rotateEdge_10 (JNIEnv*, jclass, jlong, jint, jint);
@@ -694,7 +694,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_rotateEdge_10
     static const char method_name[] = "imgproc::rotateEdge_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->rotateEdge( (int)edge, (int)rotate );
         return _retval_;
     } catch(const std::exception &e) {
@@ -708,7 +708,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_rotateEdge_10
 
 
 //
-//  int Subdiv2D::symEdge(int edge)
+//  int symEdge(int edge)
 //
 
 JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_symEdge_10 (JNIEnv*, jclass, jlong, jint);
@@ -719,7 +719,7 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_symEdge_10
     static const char method_name[] = "imgproc::symEdge_10()";
     try {
         LOGD("%s", method_name);
-        Subdiv2D* me = (Subdiv2D*) self; //TODO: check for NULL
+        cv::Subdiv2D* me = (cv::Subdiv2D*) self; //TODO: check for NULL
         int _retval_ = me->symEdge( (int)edge );
         return _retval_;
     } catch(const std::exception &e) {
@@ -734,14 +734,14 @@ JNIEXPORT jint JNICALL Java_org_opencv_imgproc_Subdiv2D_symEdge_10
 
 //
 //  native support for java finalize()
-//  static void Subdiv2D::delete( __int64 self )
+//  static void cv::Subdiv2D::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_Subdiv2D_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (Subdiv2D*) self;
+    delete (cv::Subdiv2D*) self;
 }
 
 
@@ -1445,6 +1445,32 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_adaptiveThreshold_10
 
 
 //
+//  void applyColorMap(Mat src, Mat& dst, int colormap)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_applyColorMap_10 (JNIEnv*, jclass, jlong, jlong, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_applyColorMap_10
+  (JNIEnv* env, jclass , jlong src_nativeObj, jlong dst_nativeObj, jint colormap)
+{
+    static const char method_name[] = "imgproc::applyColorMap_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& src = *((Mat*)src_nativeObj);
+        Mat& dst = *((Mat*)dst_nativeObj);
+        cv::applyColorMap( src, dst, (int)colormap );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
 //  void approxPolyDP(vector_Point2f curve, vector_Point2f& approxCurve, double epsilon, bool closed)
 //
 
@@ -1497,6 +1523,58 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_imgproc_Imgproc_arcLength_10
         throwJavaException(env, 0, method_name);
     }
     return 0;
+}
+
+
+
+//
+//  void arrowedLine(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int line_type = 8, int shift = 0, double tipLength = 0.1)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_arrowedLine_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jint, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_arrowedLine_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint line_type, jint shift, jdouble tipLength)
+{
+    static const char method_name[] = "imgproc::arrowedLine_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::arrowedLine( img, pt1, pt2, color, (int)thickness, (int)line_type, (int)shift, (double)tipLength );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_arrowedLine_11 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_arrowedLine_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::arrowedLine_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::arrowedLine( img, pt1, pt2, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
 }
 
 
@@ -1856,6 +1934,107 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_calcHist_11
         throwJavaException(env, 0, method_name);
     }
     return;
+}
+
+
+
+//
+//  void circle(Mat& img, Point center, int radius, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble, jint, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jint radius, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::circle_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::circle( img, center, (int)radius, color, (int)thickness, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_11 (JNIEnv*, jclass, jlong, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jint radius, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::circle_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::circle( img, center, (int)radius, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_12 (JNIEnv*, jclass, jlong, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_circle_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jint radius, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::circle_12()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::circle( img, center, (int)radius, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  bool clipLine(Rect imgRect, Point& pt1, Point& pt2)
+//
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_imgproc_Imgproc_clipLine_10 (JNIEnv*, jclass, jint, jint, jint, jint, jdouble, jdouble, jdoubleArray, jdouble, jdouble, jdoubleArray);
+
+JNIEXPORT jboolean JNICALL Java_org_opencv_imgproc_Imgproc_clipLine_10
+  (JNIEnv* env, jclass , jint imgRect_x, jint imgRect_y, jint imgRect_width, jint imgRect_height, jdouble pt1_x, jdouble pt1_y, jdoubleArray pt1_out, jdouble pt2_x, jdouble pt2_y, jdoubleArray pt2_out)
+{
+    static const char method_name[] = "imgproc::clipLine_10()";
+    try {
+        LOGD("%s", method_name);
+        Rect imgRect(imgRect_x, imgRect_y, imgRect_width, imgRect_height);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        bool _retval_ = cv::clipLine( imgRect, pt1, pt2 );
+        jdouble tmp_pt1[2] = {pt1.x, pt1.y}; env->SetDoubleArrayRegion(pt1_out, 0, 2, tmp_pt1);  jdouble tmp_pt2[2] = {pt2.x, pt2.y}; env->SetDoubleArrayRegion(pt2_out, 0, 2, tmp_pt2);
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
 }
 
 
@@ -2372,6 +2551,53 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_cornerSubPix_10
 
 
 //
+//  Ptr_CLAHE createCLAHE(double clipLimit = 40.0, Size tileGridSize = Size(8, 8))
+//
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createCLAHE_10 (JNIEnv*, jclass, jdouble, jdouble, jdouble);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createCLAHE_10
+  (JNIEnv* env, jclass , jdouble clipLimit, jdouble tileGridSize_width, jdouble tileGridSize_height)
+{
+    static const char method_name[] = "imgproc::createCLAHE_10()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::CLAHE> Ptr_CLAHE;
+        Size tileGridSize((int)tileGridSize_width, (int)tileGridSize_height);
+        Ptr_CLAHE _retval_ = cv::createCLAHE( (double)clipLimit, tileGridSize );
+        return (jlong)(new Ptr_CLAHE(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createCLAHE_11 (JNIEnv*, jclass);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createCLAHE_11
+  (JNIEnv* env, jclass )
+{
+    static const char method_name[] = "imgproc::createCLAHE_11()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::CLAHE> Ptr_CLAHE;
+        Ptr_CLAHE _retval_ = cv::createCLAHE(  );
+        return (jlong)(new Ptr_CLAHE(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
 //  void createHanningWindow(Mat& dst, Size winSize, int type)
 //
 
@@ -2393,6 +2619,52 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_createHanningWindow_10
         throwJavaException(env, 0, method_name);
     }
     return;
+}
+
+
+
+//
+//  Ptr_LineSegmentDetector createLineSegmentDetector(int _refine = LSD_REFINE_STD, double _scale = 0.8, double _sigma_scale = 0.6, double _quant = 2.0, double _ang_th = 22.5, double _log_eps = 0, double _density_th = 0.7, int _n_bins = 1024)
+//
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createLineSegmentDetector_10 (JNIEnv*, jclass, jint, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createLineSegmentDetector_10
+  (JNIEnv* env, jclass , jint _refine, jdouble _scale, jdouble _sigma_scale, jdouble _quant, jdouble _ang_th, jdouble _log_eps, jdouble _density_th, jint _n_bins)
+{
+    static const char method_name[] = "imgproc::createLineSegmentDetector_10()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::LineSegmentDetector> Ptr_LineSegmentDetector;
+        Ptr_LineSegmentDetector _retval_ = cv::createLineSegmentDetector( (int)_refine, (double)_scale, (double)_sigma_scale, (double)_quant, (double)_ang_th, (double)_log_eps, (double)_density_th, (int)_n_bins );
+        return (jlong)(new Ptr_LineSegmentDetector(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createLineSegmentDetector_11 (JNIEnv*, jclass);
+
+JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_createLineSegmentDetector_11
+  (JNIEnv* env, jclass )
+{
+    static const char method_name[] = "imgproc::createLineSegmentDetector_11()";
+    try {
+        LOGD("%s", method_name);
+        typedef Ptr<cv::LineSegmentDetector> Ptr_LineSegmentDetector;
+        Ptr_LineSegmentDetector _retval_ = cv::createLineSegmentDetector(  );
+        return (jlong)(new Ptr_LineSegmentDetector(_retval_));
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
 }
 
 
@@ -2668,6 +2940,265 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_distanceTransformWithLabe
 
 
 //
+//  void drawContours(Mat& image, vector_vector_Point contours, int contourIdx, Scalar color, int thickness = 1, int lineType = LINE_8, Mat hierarchy = Mat(), int maxLevel = INT_MAX, Point offset = Point())
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_10 (JNIEnv*, jclass, jlong, jlong, jint, jdouble, jdouble, jdouble, jdouble, jint, jint, jlong, jint, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_10
+  (JNIEnv* env, jclass , jlong image_nativeObj, jlong contours_mat_nativeObj, jint contourIdx, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jlong hierarchy_nativeObj, jint maxLevel, jdouble offset_x, jdouble offset_y)
+{
+    static const char method_name[] = "imgproc::drawContours_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > contours;
+        Mat& contours_mat = *((Mat*)contours_mat_nativeObj);
+        Mat_to_vector_vector_Point( contours_mat, contours );
+        Mat& image = *((Mat*)image_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        Mat& hierarchy = *((Mat*)hierarchy_nativeObj);
+        Point offset((int)offset_x, (int)offset_y);
+        cv::drawContours( image, contours, (int)contourIdx, color, (int)thickness, (int)lineType, hierarchy, (int)maxLevel, offset );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_11 (JNIEnv*, jclass, jlong, jlong, jint, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_11
+  (JNIEnv* env, jclass , jlong image_nativeObj, jlong contours_mat_nativeObj, jint contourIdx, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::drawContours_11()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > contours;
+        Mat& contours_mat = *((Mat*)contours_mat_nativeObj);
+        Mat_to_vector_vector_Point( contours_mat, contours );
+        Mat& image = *((Mat*)image_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::drawContours( image, contours, (int)contourIdx, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_12 (JNIEnv*, jclass, jlong, jlong, jint, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_drawContours_12
+  (JNIEnv* env, jclass , jlong image_nativeObj, jlong contours_mat_nativeObj, jint contourIdx, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::drawContours_12()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > contours;
+        Mat& contours_mat = *((Mat*)contours_mat_nativeObj);
+        Mat_to_vector_vector_Point( contours_mat, contours );
+        Mat& image = *((Mat*)image_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::drawContours( image, contours, (int)contourIdx, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void ellipse(Mat& img, Point center, Size axes, double angle, double startAngle, double endAngle, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jdouble axes_width, jdouble axes_height, jdouble angle, jdouble startAngle, jdouble endAngle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::ellipse_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Size axes((int)axes_width, (int)axes_height);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, center, axes, (double)angle, (double)startAngle, (double)endAngle, color, (int)thickness, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_11 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jdouble axes_width, jdouble axes_height, jdouble angle, jdouble startAngle, jdouble endAngle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::ellipse_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Size axes((int)axes_width, (int)axes_height);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, center, axes, (double)angle, (double)startAngle, (double)endAngle, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_12 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble center_x, jdouble center_y, jdouble axes_width, jdouble axes_height, jdouble angle, jdouble startAngle, jdouble endAngle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::ellipse_12()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Size axes((int)axes_width, (int)axes_height);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, center, axes, (double)angle, (double)startAngle, (double)endAngle, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void ellipse(Mat& img, RotatedRect box, Scalar color, int thickness = 1, int lineType = LINE_8)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_13 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_13
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble box_center_x, jdouble box_center_y, jdouble box_size_width, jdouble box_size_height, jdouble box_angle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType)
+{
+    static const char method_name[] = "imgproc::ellipse_13()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        RotatedRect box(cv::Point2f(box_center_x, box_center_y), cv::Size2f(box_size_width, box_size_height), box_angle);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, box, color, (int)thickness, (int)lineType );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_14 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_14
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble box_center_x, jdouble box_center_y, jdouble box_size_width, jdouble box_size_height, jdouble box_angle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::ellipse_14()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        RotatedRect box(cv::Point2f(box_center_x, box_center_y), cv::Size2f(box_size_width, box_size_height), box_angle);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, box, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_15 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse_15
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble box_center_x, jdouble box_center_y, jdouble box_size_width, jdouble box_size_height, jdouble box_angle, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::ellipse_15()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        RotatedRect box(cv::Point2f(box_center_x, box_center_y), cv::Size2f(box_size_width, box_size_height), box_angle);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::ellipse( img, box, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void ellipse2Poly(Point center, Size axes, int angle, int arcStart, int arcEnd, int delta, vector_Point& pts)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse2Poly_10 (JNIEnv*, jclass, jdouble, jdouble, jdouble, jdouble, jint, jint, jint, jint, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_ellipse2Poly_10
+  (JNIEnv* env, jclass , jdouble center_x, jdouble center_y, jdouble axes_width, jdouble axes_height, jint angle, jint arcStart, jint arcEnd, jint delta, jlong pts_mat_nativeObj)
+{
+    static const char method_name[] = "imgproc::ellipse2Poly_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Point> pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Point center((int)center_x, (int)center_y);
+        Size axes((int)axes_width, (int)axes_height);
+        cv::ellipse2Poly( center, axes, (int)angle, (int)arcStart, (int)arcEnd, (int)delta, pts );
+        vector_Point_to_Mat( pts, pts_mat );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
 //  void equalizeHist(Mat src, Mat& dst)
 //
 
@@ -2758,6 +3289,115 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_erode_12
         Mat& dst = *((Mat*)dst_nativeObj);
         Mat& kernel = *((Mat*)kernel_nativeObj);
         cv::erode( src, dst, kernel );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void fillConvexPoly(Mat& img, vector_Point points, Scalar color, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillConvexPoly_10 (JNIEnv*, jclass, jlong, jlong, jdouble, jdouble, jdouble, jdouble, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillConvexPoly_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong points_mat_nativeObj, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::fillConvexPoly_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Point> points;
+        Mat& points_mat = *((Mat*)points_mat_nativeObj);
+        Mat_to_vector_Point( points_mat, points );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::fillConvexPoly( img, points, color, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillConvexPoly_11 (JNIEnv*, jclass, jlong, jlong, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillConvexPoly_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong points_mat_nativeObj, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::fillConvexPoly_11()";
+    try {
+        LOGD("%s", method_name);
+        std::vector<Point> points;
+        Mat& points_mat = *((Mat*)points_mat_nativeObj);
+        Mat_to_vector_Point( points_mat, points );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::fillConvexPoly( img, points, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void fillPoly(Mat& img, vector_vector_Point pts, Scalar color, int lineType = LINE_8, int shift = 0, Point offset = Point())
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillPoly_10 (JNIEnv*, jclass, jlong, jlong, jdouble, jdouble, jdouble, jdouble, jint, jint, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillPoly_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong pts_mat_nativeObj, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint lineType, jint shift, jdouble offset_x, jdouble offset_y)
+{
+    static const char method_name[] = "imgproc::fillPoly_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Mat_to_vector_vector_Point( pts_mat, pts );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        Point offset((int)offset_x, (int)offset_y);
+        cv::fillPoly( img, pts, color, (int)lineType, (int)shift, offset );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillPoly_11 (JNIEnv*, jclass, jlong, jlong, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_fillPoly_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong pts_mat_nativeObj, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::fillPoly_11()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Mat_to_vector_vector_Point( pts_mat, pts );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::fillPoly( img, pts, color );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -3027,8 +3667,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getAffineTransform_10
         std::vector<Point2f> dst;
         Mat& dst_mat = *((Mat*)dst_mat_nativeObj);
         Mat_to_vector_Point2f( dst_mat, dst );
-        Mat _retval_ = cv::getAffineTransform( src, dst );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getAffineTransform( src, dst );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3053,8 +3693,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getDefaultNewCameraMatri
         LOGD("%s", method_name);
         Mat& cameraMatrix = *((Mat*)cameraMatrix_nativeObj);
         Size imgsize((int)imgsize_width, (int)imgsize_height);
-        Mat _retval_ = cv::getDefaultNewCameraMatrix( cameraMatrix, imgsize, (bool)centerPrincipalPoint );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getDefaultNewCameraMatrix( cameraMatrix, imgsize, (bool)centerPrincipalPoint );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3074,8 +3714,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getDefaultNewCameraMatri
     try {
         LOGD("%s", method_name);
         Mat& cameraMatrix = *((Mat*)cameraMatrix_nativeObj);
-        Mat _retval_ = cv::getDefaultNewCameraMatrix( cameraMatrix );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getDefaultNewCameraMatrix( cameraMatrix );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3147,8 +3787,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getGaborKernel_10
     try {
         LOGD("%s", method_name);
         Size ksize((int)ksize_width, (int)ksize_height);
-        Mat _retval_ = cv::getGaborKernel( ksize, (double)sigma, (double)theta, (double)lambd, (double)gamma, (double)psi, (int)ktype );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getGaborKernel( ksize, (double)sigma, (double)theta, (double)lambd, (double)gamma, (double)psi, (int)ktype );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3168,8 +3808,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getGaborKernel_11
     try {
         LOGD("%s", method_name);
         Size ksize((int)ksize_width, (int)ksize_height);
-        Mat _retval_ = cv::getGaborKernel( ksize, (double)sigma, (double)theta, (double)lambd, (double)gamma );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getGaborKernel( ksize, (double)sigma, (double)theta, (double)lambd, (double)gamma );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3193,8 +3833,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getGaussianKernel_10
     try {
         LOGD("%s", method_name);
         
-        Mat _retval_ = cv::getGaussianKernel( (int)ksize, (double)sigma, (int)ktype );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getGaussianKernel( (int)ksize, (double)sigma, (int)ktype );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3214,8 +3854,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getGaussianKernel_11
     try {
         LOGD("%s", method_name);
         
-        Mat _retval_ = cv::getGaussianKernel( (int)ksize, (double)sigma );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getGaussianKernel( (int)ksize, (double)sigma );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3240,8 +3880,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getPerspectiveTransform_
         LOGD("%s", method_name);
         Mat& src = *((Mat*)src_nativeObj);
         Mat& dst = *((Mat*)dst_nativeObj);
-        Mat _retval_ = cv::getPerspectiveTransform( src, dst );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getPerspectiveTransform( src, dst );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3317,8 +3957,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getRotationMatrix2D_10
     try {
         LOGD("%s", method_name);
         Point2f center((float)center_x, (float)center_y);
-        Mat _retval_ = cv::getRotationMatrix2D( center, (double)angle, (double)scale );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getRotationMatrix2D( center, (double)angle, (double)scale );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3343,8 +3983,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getStructuringElement_10
         LOGD("%s", method_name);
         Size ksize((int)ksize_width, (int)ksize_height);
         Point anchor((int)anchor_x, (int)anchor_y);
-        Mat _retval_ = cv::getStructuringElement( (int)shape, ksize, anchor );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getStructuringElement( (int)shape, ksize, anchor );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3364,8 +4004,8 @@ JNIEXPORT jlong JNICALL Java_org_opencv_imgproc_Imgproc_getStructuringElement_11
     try {
         LOGD("%s", method_name);
         Size ksize((int)ksize_width, (int)ksize_height);
-        Mat _retval_ = cv::getStructuringElement( (int)shape, ksize );
-        return (jlong) new Mat(_retval_);
+        ::Mat _retval_ = cv::getStructuringElement( (int)shape, ksize );
+        return (jlong) new ::Mat(_retval_);
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
     } catch (...) {
@@ -3822,6 +4462,82 @@ JNIEXPORT jboolean JNICALL Java_org_opencv_imgproc_Imgproc_isContourConvex_10
 
 
 //
+//  void line(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::line_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::line( img, pt1, pt2, color, (int)thickness, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_11 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::line_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::line( img, pt1, pt2, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_12 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_line_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::line_12()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::line( img, pt1, pt2, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
 //  void linearPolar(Mat src, Mat& dst, Point2f center, double maxRadius, int flags)
 //
 
@@ -4195,6 +4911,85 @@ JNIEXPORT jdouble JNICALL Java_org_opencv_imgproc_Imgproc_pointPolygonTest_10
 
 
 //
+//  void polylines(Mat& img, vector_vector_Point pts, bool isClosed, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_10 (JNIEnv*, jclass, jlong, jlong, jboolean, jdouble, jdouble, jdouble, jdouble, jint, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong pts_mat_nativeObj, jboolean isClosed, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::polylines_10()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Mat_to_vector_vector_Point( pts_mat, pts );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::polylines( img, pts, (bool)isClosed, color, (int)thickness, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_11 (JNIEnv*, jclass, jlong, jlong, jboolean, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong pts_mat_nativeObj, jboolean isClosed, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::polylines_11()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Mat_to_vector_vector_Point( pts_mat, pts );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::polylines( img, pts, (bool)isClosed, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_12 (JNIEnv*, jclass, jlong, jlong, jboolean, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_polylines_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jlong pts_mat_nativeObj, jboolean isClosed, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::polylines_12()";
+    try {
+        LOGD("%s", method_name);
+        std::vector< std::vector<Point> > pts;
+        Mat& pts_mat = *((Mat*)pts_mat_nativeObj);
+        Mat_to_vector_vector_Point( pts_mat, pts );
+        Mat& img = *((Mat*)img_nativeObj);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::polylines( img, pts, (bool)isClosed, color );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
 //  void preCornerDetect(Mat src, Mat& dst, int ksize, int borderType = BORDER_DEFAULT)
 //
 
@@ -4231,6 +5026,82 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_preCornerDetect_11
         Mat& src = *((Mat*)src_nativeObj);
         Mat& dst = *((Mat*)dst_nativeObj);
         cv::preCornerDetect( src, dst, (int)ksize );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void putText(Mat& img, String text, Point org, int fontFace, double fontScale, Scalar color, int thickness = 1, int lineType = LINE_8, bool bottomLeftOrigin = false)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_10 (JNIEnv*, jclass, jlong, jstring, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jboolean);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jstring text, jdouble org_x, jdouble org_y, jint fontFace, jdouble fontScale, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jboolean bottomLeftOrigin)
+{
+    static const char method_name[] = "imgproc::putText_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        const char* utf_text = env->GetStringUTFChars(text, 0); String n_text( utf_text ? utf_text : "" ); env->ReleaseStringUTFChars(text, utf_text);
+        Point org((int)org_x, (int)org_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::putText( img, n_text, org, (int)fontFace, (double)fontScale, color, (int)thickness, (int)lineType, (bool)bottomLeftOrigin );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_11 (JNIEnv*, jclass, jlong, jstring, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jstring text, jdouble org_x, jdouble org_y, jint fontFace, jdouble fontScale, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::putText_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        const char* utf_text = env->GetStringUTFChars(text, 0); String n_text( utf_text ? utf_text : "" ); env->ReleaseStringUTFChars(text, utf_text);
+        Point org((int)org_x, (int)org_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::putText( img, n_text, org, (int)fontFace, (double)fontScale, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_12 (JNIEnv*, jclass, jlong, jstring, jdouble, jdouble, jint, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_putText_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jstring text, jdouble org_x, jdouble org_y, jint fontFace, jdouble fontScale, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::putText_12()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        const char* utf_text = env->GetStringUTFChars(text, 0); String n_text( utf_text ? utf_text : "" ); env->ReleaseStringUTFChars(text, utf_text);
+        Point org((int)org_x, (int)org_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::putText( img, n_text, org, (int)fontFace, (double)fontScale, color );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -4424,6 +5295,82 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_pyrUp_12
         Mat& src = *((Mat*)src_nativeObj);
         Mat& dst = *((Mat*)dst_nativeObj);
         cv::pyrUp( src, dst );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  void rectangle(Mat& img, Point pt1, Point pt2, Scalar color, int thickness = 1, int lineType = LINE_8, int shift = 0)
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_10 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint, jint, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_10
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness, jint lineType, jint shift)
+{
+    static const char method_name[] = "imgproc::rectangle_10()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::rectangle( img, pt1, pt2, color, (int)thickness, (int)lineType, (int)shift );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_11 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_11
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3, jint thickness)
+{
+    static const char method_name[] = "imgproc::rectangle_11()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::rectangle( img, pt1, pt2, color, (int)thickness );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_12 (JNIEnv*, jclass, jlong, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_rectangle_12
+  (JNIEnv* env, jclass , jlong img_nativeObj, jdouble pt1_x, jdouble pt1_y, jdouble pt2_x, jdouble pt2_y, jdouble color_val0, jdouble color_val1, jdouble color_val2, jdouble color_val3)
+{
+    static const char method_name[] = "imgproc::rectangle_12()";
+    try {
+        LOGD("%s", method_name);
+        Mat& img = *((Mat*)img_nativeObj);
+        Point pt1((int)pt1_x, (int)pt1_y);
+        Point pt2((int)pt2_x, (int)pt2_y);
+        Scalar color(color_val0, color_val1, color_val2, color_val3);
+        cv::rectangle( img, pt1, pt2, color );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -5039,8 +5986,61 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_Imgproc_watershed_10
 
 
 
+    // C++: Size getTextSize(const String& text, int fontFace, double fontScale, int thickness, int* baseLine);
+    JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Imgproc_n_1getTextSize (JNIEnv*, jclass, jstring, jint, jdouble, jint, jintArray);
+
+    JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_Imgproc_n_1getTextSize
+    (JNIEnv* env, jclass, jstring text, jint fontFace, jdouble fontScale, jint thickness, jintArray baseLine)
+    {
+    try {
+        LOGD("Core::n_1getTextSize()");
+        jdoubleArray result;
+        result = env->NewDoubleArray(2);
+        if (result == NULL) {
+            return NULL; /* out of memory error thrown */
+        }
+
+        const char* utf_text = env->GetStringUTFChars(text, 0);
+        String n_text( utf_text ? utf_text : "" );
+        env->ReleaseStringUTFChars(text, utf_text);
+
+        int _baseLine;
+        int* pbaseLine = 0;
+
+        if (baseLine != NULL)
+            pbaseLine = &_baseLine;
+
+        cv::Size rsize = cv::getTextSize(n_text, (int)fontFace, (double)fontScale, (int)thickness, pbaseLine);
+
+        jdouble fill[2];
+        fill[0]=rsize.width;
+        fill[1]=rsize.height;
+
+        env->SetDoubleArrayRegion(result, 0, 2, fill);
+
+        if (baseLine != NULL) {
+            jint jbaseLine = (jint)(*pbaseLine);
+            env->SetIntArrayRegion(baseLine, 0, 1, &jbaseLine);
+        }
+
+        return result;
+
+    } catch(const cv::Exception& e) {
+        LOGD("Imgproc::n_1getTextSize() catched cv::Exception: %s", e.what());
+        jclass je = env->FindClass("org/opencv/core/CvException");
+        if(!je) je = env->FindClass("java/lang/Exception");
+        env->ThrowNew(je, e.what());
+        return NULL;
+    } catch (...) {
+        LOGD("Imgproc::n_1getTextSize() catched unknown exception (...)");
+        jclass je = env->FindClass("java/lang/Exception");
+        env->ThrowNew(je, "Unknown exception in JNI code {core::getTextSize()}");
+        return NULL;
+    }
+    }
+    
 //
-//  void CLAHE::apply(Mat src, Mat& dst)
+//  void apply(Mat src, Mat& dst)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_apply_10 (JNIEnv*, jclass, jlong, jlong, jlong);
@@ -5051,10 +6051,10 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_apply_10
     static const char method_name[] = "imgproc::apply_10()";
     try {
         LOGD("%s", method_name);
-        CLAHE* me = (CLAHE*) self; //TODO: check for NULL
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
         Mat& src = *((Mat*)src_nativeObj);
         Mat& dst = *((Mat*)dst_nativeObj);
-        me->apply( src, dst );
+        (*me)->apply( src, dst );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -5067,7 +6067,83 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_apply_10
 
 
 //
-//  void CLAHE::setClipLimit(double clipLimit)
+//  void collectGarbage()
+//
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_collectGarbage_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_collectGarbage_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "imgproc::collectGarbage_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
+        (*me)->collectGarbage(  );
+        return;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return;
+}
+
+
+
+//
+//  double getClipLimit()
+//
+
+JNIEXPORT jdouble JNICALL Java_org_opencv_imgproc_CLAHE_getClipLimit_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jdouble JNICALL Java_org_opencv_imgproc_CLAHE_getClipLimit_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "imgproc::getClipLimit_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
+        double _retval_ = (*me)->getClipLimit(  );
+        return _retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  Size getTilesGridSize()
+//
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_CLAHE_getTilesGridSize_10 (JNIEnv*, jclass, jlong);
+
+JNIEXPORT jdoubleArray JNICALL Java_org_opencv_imgproc_CLAHE_getTilesGridSize_10
+  (JNIEnv* env, jclass , jlong self)
+{
+    static const char method_name[] = "imgproc::getTilesGridSize_10()";
+    try {
+        LOGD("%s", method_name);
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
+        Size _retval_ = (*me)->getTilesGridSize(  );
+        jdoubleArray _da_retval_ = env->NewDoubleArray(2);  jdouble _tmp_retval_[2] = {_retval_.width, _retval_.height}; env->SetDoubleArrayRegion(_da_retval_, 0, 2, _tmp_retval_);
+        return _da_retval_;
+    } catch(const std::exception &e) {
+        throwJavaException(env, &e, method_name);
+    } catch (...) {
+        throwJavaException(env, 0, method_name);
+    }
+    return 0;
+}
+
+
+
+//
+//  void setClipLimit(double clipLimit)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setClipLimit_10 (JNIEnv*, jclass, jlong, jdouble);
@@ -5078,8 +6154,8 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setClipLimit_10
     static const char method_name[] = "imgproc::setClipLimit_10()";
     try {
         LOGD("%s", method_name);
-        CLAHE* me = (CLAHE*) self; //TODO: check for NULL
-        me->setClipLimit( (double)clipLimit );
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
+        (*me)->setClipLimit( (double)clipLimit );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -5092,7 +6168,7 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setClipLimit_10
 
 
 //
-//  void CLAHE::setTilesGridSize(Size tileGridSize)
+//  void setTilesGridSize(Size tileGridSize)
 //
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setTilesGridSize_10 (JNIEnv*, jclass, jlong, jdouble, jdouble);
@@ -5103,9 +6179,9 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setTilesGridSize_10
     static const char method_name[] = "imgproc::setTilesGridSize_10()";
     try {
         LOGD("%s", method_name);
-        CLAHE* me = (CLAHE*) self; //TODO: check for NULL
+        Ptr<cv::CLAHE>* me = (Ptr<cv::CLAHE>*) self; //TODO: check for NULL
         Size tileGridSize((int)tileGridSize_width, (int)tileGridSize_height);
-        me->setTilesGridSize( tileGridSize );
+        (*me)->setTilesGridSize( tileGridSize );
         return;
     } catch(const std::exception &e) {
         throwJavaException(env, &e, method_name);
@@ -5119,14 +6195,14 @@ JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_setTilesGridSize_10
 
 //
 //  native support for java finalize()
-//  static void CLAHE::delete( __int64 self )
+//  static void Ptr<cv::CLAHE>::delete( __int64 self )
 //
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_delete(JNIEnv*, jclass, jlong);
 
 JNIEXPORT void JNICALL Java_org_opencv_imgproc_CLAHE_delete
   (JNIEnv*, jclass, jlong self)
 {
-    delete (CLAHE*) self;
+    delete (Ptr<cv::CLAHE>*) self;
 }
 
 

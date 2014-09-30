@@ -98,9 +98,32 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o.provides: modul
 
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o
 
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o: modules/ml/CMakeFiles/opencv_test_ml.dir/flags.make
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o: ../../modules/ml/test/test_lr.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o -c ../../../../modules/ml/test/test_lr.cpp
+
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.i"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -E ../../../../modules/ml/test/test_lr.cpp > CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.i
+
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.s"
+	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++  $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -S ../../../../modules/ml/test/test_lr.cpp -o CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.s
+
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.requires:
+.PHONY : modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.requires
+
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.provides: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.requires
+	$(MAKE) -f modules/ml/CMakeFiles/opencv_test_ml.dir/build.make modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.provides.build
+.PHONY : modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.provides
+
+modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.provides.build: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o
+
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o: modules/ml/CMakeFiles/opencv_test_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o: ../../modules/ml/test/test_main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o -c ../../../../modules/ml/test/test_main.cpp
 
@@ -123,7 +146,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o.provides.build: mo
 
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o: modules/ml/CMakeFiles/opencv_test_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o: ../../modules/ml/test/test_mltests.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o -c ../../../../modules/ml/test/test_mltests.cpp
 
@@ -146,7 +169,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o.provides.build:
 
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o: modules/ml/CMakeFiles/opencv_test_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o: ../../modules/ml/test/test_mltests2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o -c ../../../../modules/ml/test/test_mltests2.cpp
 
@@ -169,7 +192,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o.provides.build
 
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_save_load.cpp.o: modules/ml/CMakeFiles/opencv_test_ml.dir/flags.make
 modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_save_load.cpp.o: ../../modules/ml/test/test_save_load.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_save_load.cpp.o"
 	cd modules/ml && /Users/swinston/Downloads/android-ndk-r9d/toolchains/arm-linux-androideabi-4.8/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-g++   $(CXX_DEFINES) $(CXX_FLAGS)  -include "/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/ml/test_precomp.hpp" -Winvalid-pch  -o CMakeFiles/opencv_test_ml.dir/test/test_save_load.cpp.o -c ../../../../modules/ml/test/test_save_load.cpp
 
@@ -194,6 +217,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_save_load.cpp.o.provides.buil
 opencv_test_ml_OBJECTS = \
 "CMakeFiles/opencv_test_ml.dir/test/test_emknearestkmeans.cpp.o" \
 "CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o" \
+"CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o" \
 "CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o" \
 "CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o" \
 "CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o" \
@@ -204,6 +228,7 @@ opencv_test_ml_EXTERNAL_OBJECTS =
 
 bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_emknearestkmeans.cpp.o
 bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o
+bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o
 bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o
 bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o
 bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o
@@ -214,6 +239,7 @@ bin/opencv_test_ml: lib/armeabi-v7a/libopencv_ml.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_ts.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_imgcodecs.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_videoio.a
+bin/opencv_test_ml: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_core.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_androidcamera.a
 bin/opencv_test_ml: lib/armeabi-v7a/libopencv_imgproc.a
@@ -241,6 +267,7 @@ modules/ml/CMakeFiles/opencv_test_ml.dir/build: bin/opencv_test_ml
 
 modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_emknearestkmeans.cpp.o.requires
 modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_gbttest.cpp.o.requires
+modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_lr.cpp.o.requires
 modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_main.cpp.o.requires
 modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests.cpp.o.requires
 modules/ml/CMakeFiles/opencv_test_ml.dir/requires: modules/ml/CMakeFiles/opencv_test_ml.dir/test/test_mltests2.cpp.o.requires

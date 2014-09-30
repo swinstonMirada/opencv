@@ -288,29 +288,29 @@ pch_Generate_opencv_test_superres/fast:
 	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/pch_Generate_opencv_test_superres.dir/build.make modules/superres/CMakeFiles/pch_Generate_opencv_test_superres.dir/build
 .PHONY : pch_Generate_opencv_test_superres/fast
 
-opencl_kernels.o: opencl_kernels.cpp.o
-.PHONY : opencl_kernels.o
+opencl_kernels_superres.o: opencl_kernels_superres.cpp.o
+.PHONY : opencl_kernels_superres.o
 
 # target to build an object file
-opencl_kernels.cpp.o:
-	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels.cpp.o
-.PHONY : opencl_kernels.cpp.o
+opencl_kernels_superres.cpp.o:
+	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels_superres.cpp.o
+.PHONY : opencl_kernels_superres.cpp.o
 
-opencl_kernels.i: opencl_kernels.cpp.i
-.PHONY : opencl_kernels.i
+opencl_kernels_superres.i: opencl_kernels_superres.cpp.i
+.PHONY : opencl_kernels_superres.i
 
 # target to preprocess a source file
-opencl_kernels.cpp.i:
-	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels.cpp.i
-.PHONY : opencl_kernels.cpp.i
+opencl_kernels_superres.cpp.i:
+	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels_superres.cpp.i
+.PHONY : opencl_kernels_superres.cpp.i
 
-opencl_kernels.s: opencl_kernels.cpp.s
-.PHONY : opencl_kernels.s
+opencl_kernels_superres.s: opencl_kernels_superres.cpp.s
+.PHONY : opencl_kernels_superres.s
 
 # target to generate assembly for a file
-opencl_kernels.cpp.s:
-	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels.cpp.s
-.PHONY : opencl_kernels.cpp.s
+opencl_kernels_superres.cpp.s:
+	cd ../.. && $(MAKE) -f modules/superres/CMakeFiles/opencv_superres.dir/build.make modules/superres/CMakeFiles/opencv_superres.dir/opencl_kernels_superres.cpp.s
+.PHONY : opencl_kernels_superres.cpp.s
 
 opencv_perf_superres_pch_dephelp.o: opencv_perf_superres_pch_dephelp.cxx.o
 .PHONY : opencv_perf_superres_pch_dephelp.o
@@ -647,9 +647,9 @@ help:
 	@echo "... pch_Generate_opencv_superres"
 	@echo "... pch_Generate_opencv_test_superres"
 	@echo "... rebuild_cache"
-	@echo "... opencl_kernels.o"
-	@echo "... opencl_kernels.i"
-	@echo "... opencl_kernels.s"
+	@echo "... opencl_kernels_superres.o"
+	@echo "... opencl_kernels_superres.i"
+	@echo "... opencl_kernels_superres.s"
 	@echo "... opencv_perf_superres_pch_dephelp.o"
 	@echo "... opencv_perf_superres_pch_dephelp.i"
 	@echo "... opencv_perf_superres_pch_dephelp.s"

@@ -13,6 +13,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o:
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -33,7 +34,6 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o:
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/include/opencv2/video.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/include/opencv2/video/background_segm.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/include/opencv2/video/tracking.hpp
-modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h
@@ -360,6 +360,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o:
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/perf/opencl/perf_bgfg_mog2.cpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: cvconfig.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_bgfg_mog2.cpp.o: opencv2/opencv_modules.hpp
 
@@ -375,6 +376,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: .
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -395,7 +397,6 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: .
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/include/opencv2/video.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/include/opencv2/video/background_segm.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/include/opencv2/video/tracking.hpp
-modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h
@@ -722,6 +723,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: /
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/perf/opencl/perf_motempl.cpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: cvconfig.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_motempl.cpp.o: opencv2/opencv_modules.hpp
 
@@ -737,6 +739,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -757,7 +760,6 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/include/opencv2/video.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/include/opencv2/video/background_segm.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/include/opencv2/video/tracking.hpp
-modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h
@@ -1084,6 +1086,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/perf/opencl/perf_optflow_dualTVL1.cpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: cvconfig.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_dualTVL1.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1099,6 +1102,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farnebac
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1119,7 +1123,6 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farnebac
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/include/opencv2/video.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/include/opencv2/video/background_segm.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/include/opencv2/video/tracking.hpp
-modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h
@@ -1446,6 +1449,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farnebac
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/perf/opencl/perf_optflow_farneback.cpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: cvconfig.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_farneback.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1461,6 +1465,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -1481,7 +1486,6 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/include/opencv2/video.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/include/opencv2/video/background_segm.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/include/opencv2/video/tracking.hpp
-modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/videoio/include/opencv2/videoio.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/alloca.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/api-level.h
@@ -1808,6 +1812,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/perf/opencl/perf_optflow_pyrlk.cpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: ../../modules/video/perf/perf_precomp.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: cvconfig.h
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/opencl/perf_optflow_pyrlk.cpp.o: opencv2/opencv_modules.hpp
 
@@ -1821,6 +1826,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../module
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_ecc.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2174,6 +2180,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modul
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_main.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2527,6 +2534,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_optflowpyrlk.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp
@@ -2880,6 +2888,7 @@ modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../.
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
 modules/video/CMakeFiles/opencv_perf_video.dir/perf/perf_tvl1optflow.cpp.o: ../../modules/core/include/opencv2/core/traits.hpp

@@ -109,7 +109,7 @@ public class FeatureDetector {
 
 
     //
-    // C++: static javaFeatureDetector* javaFeatureDetector::create(int detectorType)
+    // C++: static javaFeatureDetector* create(int detectorType)
     //
 
 /**
@@ -118,23 +118,14 @@ public class FeatureDetector {
  * <p>The following detector types are supported:</p>
  * <ul>
  *   <li> <code>"FAST"</code> -- "FastFeatureDetector"
- *   <li> <code>"STAR"</code> -- "StarFeatureDetector"
- *   <li> <code>"SIFT"</code> -- "SIFT" (nonfree module)
- *   <li> <code>"SURF"</code> -- "SURF" (nonfree module)
  *   <li> <code>"ORB"</code> -- "ORB"
  *   <li> <code>"BRISK"</code> -- "BRISK"
  *   <li> <code>"MSER"</code> -- "MSER"
  *   <li> <code>"GFTT"</code> -- "GoodFeaturesToTrackDetector"
  *   <li> <code>"HARRIS"</code> -- "GoodFeaturesToTrackDetector" with Harris
  * detector enabled
- *   <li> <code>"Dense"</code> -- "DenseFeatureDetector"
  *   <li> <code>"SimpleBlob"</code> -- "SimpleBlobDetector"
  * </ul>
- *
- * <p>Also a combined format is supported: feature detector adapter name
- * (<code>"Grid"</code> -- "GridAdaptedFeatureDetector", <code>"Pyramid"</code>
- * -- "PyramidAdaptedFeatureDetector") + feature detector name (see above), for
- * example: <code>"GridFAST"</code>, <code>"PyramidSTAR"</code>.</p>
  *
  * @param detectorType Feature detector type.
  *
@@ -150,7 +141,7 @@ public class FeatureDetector {
 
 
     //
-    // C++:  void javaFeatureDetector::detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
+    // C++:  void detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
     //
 
 /**
@@ -191,7 +182,7 @@ public class FeatureDetector {
 
 
     //
-    // C++:  void javaFeatureDetector::detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
+    // C++:  void detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
     //
 
 /**
@@ -235,7 +226,7 @@ public class FeatureDetector {
 
 
     //
-    // C++:  bool javaFeatureDetector::empty()
+    // C++:  bool empty()
     //
 
     public  boolean empty()
@@ -248,7 +239,7 @@ public class FeatureDetector {
 
 
     //
-    // C++:  void javaFeatureDetector::read(String fileName)
+    // C++:  void read(String fileName)
     //
 
     public  void read(String fileName)
@@ -261,7 +252,7 @@ public class FeatureDetector {
 
 
     //
-    // C++:  void javaFeatureDetector::write(String fileName)
+    // C++:  void write(String fileName)
     //
 
     public  void write(String fileName)
@@ -280,24 +271,24 @@ public class FeatureDetector {
 
 
 
-    // C++: static javaFeatureDetector* javaFeatureDetector::create(int detectorType)
+    // C++: static javaFeatureDetector* create(int detectorType)
     private static native long create_0(int detectorType);
 
-    // C++:  void javaFeatureDetector::detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
+    // C++:  void detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
     private static native void detect_0(long nativeObj, long image_nativeObj, long keypoints_mat_nativeObj, long mask_nativeObj);
     private static native void detect_1(long nativeObj, long image_nativeObj, long keypoints_mat_nativeObj);
 
-    // C++:  void javaFeatureDetector::detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
+    // C++:  void detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = std::vector<Mat>())
     private static native void detect_2(long nativeObj, long images_mat_nativeObj, long keypoints_mat_nativeObj, long masks_mat_nativeObj);
     private static native void detect_3(long nativeObj, long images_mat_nativeObj, long keypoints_mat_nativeObj);
 
-    // C++:  bool javaFeatureDetector::empty()
+    // C++:  bool empty()
     private static native boolean empty_0(long nativeObj);
 
-    // C++:  void javaFeatureDetector::read(String fileName)
+    // C++:  void read(String fileName)
     private static native void read_0(long nativeObj, String fileName);
 
-    // C++:  void javaFeatureDetector::write(String fileName)
+    // C++:  void write(String fileName)
     private static native void write_0(long nativeObj, String fileName);
 
     // native support for java finalize()

@@ -17,6 +17,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_stitch.c
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -32,7 +33,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_stitch.c
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
  ../../modules/imgproc/include/opencv2/imgproc/types_c.h
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -45,7 +45,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_stitch.c
  ../../modules/stitching/include/opencv2/stitching/detail/warpers.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp
  ../../modules/stitching/include/opencv2/stitching/warpers.hpp
- ../../modules/stitching/perf/perf_precomp.hpp
  ../../modules/ts/include/opencv2/ts.hpp
  ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
  ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -383,6 +382,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_stitch.c
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/stitching/perf/opencl/perf_stitch.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/stitching/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_warpers.cpp.o
@@ -401,6 +401,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_warpers.
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/ocl.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -416,7 +417,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_warpers.
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
  ../../modules/imgproc/include/opencv2/imgproc/types_c.h
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -429,7 +429,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_warpers.
  ../../modules/stitching/include/opencv2/stitching/detail/warpers.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp
  ../../modules/stitching/include/opencv2/stitching/warpers.hpp
- ../../modules/stitching/perf/perf_precomp.hpp
  ../../modules/ts/include/opencv2/ts.hpp
  ../../modules/ts/include/opencv2/ts/ocl_perf.hpp
  ../../modules/ts/include/opencv2/ts/ocl_test.hpp
@@ -767,6 +766,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/opencl/perf_warpers.
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/os_defines.h
  /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
  /Users/swinston/Mirada/lib/c/opencv/modules/stitching/perf/opencl/perf_warpers.cpp
+ /Users/swinston/Mirada/lib/c/opencv/modules/stitching/perf/perf_precomp.hpp
  cvconfig.h
  opencv2/opencv_modules.hpp
 modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.o
@@ -783,6 +783,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -794,7 +795,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_main.cpp.o
  ../../modules/flann/include/opencv2/flann/defines.h
  ../../modules/flann/include/opencv2/flann/miniflann.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp
@@ -1158,6 +1158,7 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.o
  ../../modules/core/include/opencv2/core/mat.inl.hpp
  ../../modules/core/include/opencv2/core/matx.hpp
  ../../modules/core/include/opencv2/core/operations.hpp
+ ../../modules/core/include/opencv2/core/optim.hpp
  ../../modules/core/include/opencv2/core/persistence.hpp
  ../../modules/core/include/opencv2/core/ptr.inl.hpp
  ../../modules/core/include/opencv2/core/traits.hpp
@@ -1199,7 +1200,6 @@ modules/stitching/CMakeFiles/opencv_perf_stitching.dir/perf/perf_stich.cpp.o
  ../../modules/flann/include/opencv2/flann/timer.h
  ../../modules/imgcodecs/include/opencv2/imgcodecs.hpp
  ../../modules/imgproc/include/opencv2/imgproc.hpp
- ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
  ../../modules/stitching/include/opencv2/stitching.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp
  ../../modules/stitching/include/opencv2/stitching/detail/camera.hpp

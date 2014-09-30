@@ -76,6 +76,9 @@
 /* ffmpeg in Gentoo */
 /* #undef HAVE_GENTOO_FFMPEG */
 
+/* Geospatial Data Abstraction Library */
+/* #undef HAVE_GDAL */
+
 /* GStreamer multimedia framework */
 /* #undef HAVE_GSTREAMER */
 

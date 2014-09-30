@@ -29,6 +29,10 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -149,6 +153,10 @@ opencv2/core.hpp
 ../../modules/core/include/opencv2/core/operations.hpp
 cstdio
 -
+
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
 
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
@@ -2847,8 +2855,8 @@ bits/gthr-default.h
 /Users/swinston/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include/bits/time_members.h
 
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/test/ocl/test_denoising.cpp
-test_precomp.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/photo/test/ocl/test_precomp.hpp
+../test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/test/test_precomp.hpp
 opencv2/ts/ocl_test.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/test/ocl/opencv2/ts/ocl_test.hpp
 
@@ -2867,6 +2875,10 @@ opencv2/photo.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/test/opencv2/photo.hpp
 string
 -
+
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/test/test_denoise_tvl1.cpp
+test_precomp.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/photo/test/test_precomp.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/photo/test/test_denoising.cpp
 test_precomp.hpp
@@ -2929,24 +2941,6 @@ ctime
 -
 
 cvconfig.h
-
-modules/photo/test_precomp.hpp
-iostream
--
-opencv2/ts.hpp
-modules/photo/opencv2/ts.hpp
-opencv2/photo.hpp
-modules/photo/opencv2/photo.hpp
-opencv2/imgcodecs.hpp
-modules/photo/opencv2/imgcodecs.hpp
-string
--
-algorithm
--
-fstream
--
-ctime
--
 
 opencv2/opencv_modules.hpp
 

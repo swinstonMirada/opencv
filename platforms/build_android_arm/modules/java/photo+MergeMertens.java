@@ -16,7 +16,49 @@ public class MergeMertens extends MergeExposures {
 
 
     //
-    // C++:  void MergeMertens::process(vector_Mat src, Mat& dst, Mat times, Mat response)
+    // C++:  float getContrastWeight()
+    //
+
+    //javadoc: MergeMertens::getContrastWeight()
+    public  float getContrastWeight()
+    {
+        
+        float retVal = getContrastWeight_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  float getExposureWeight()
+    //
+
+    //javadoc: MergeMertens::getExposureWeight()
+    public  float getExposureWeight()
+    {
+        
+        float retVal = getExposureWeight_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  float getSaturationWeight()
+    //
+
+    //javadoc: MergeMertens::getSaturationWeight()
+    public  float getSaturationWeight()
+    {
+        
+        float retVal = getSaturationWeight_0(nativeObj);
+        
+        return retVal;
+    }
+
+
+    //
+    // C++:  void process(vector_Mat src, Mat& dst, Mat times, Mat response)
     //
 
     //javadoc: MergeMertens::process(src, dst, times, response)
@@ -30,7 +72,7 @@ public class MergeMertens extends MergeExposures {
 
 
     //
-    // C++:  void MergeMertens::process(vector_Mat src, Mat& dst)
+    // C++:  void process(vector_Mat src, Mat& dst)
     //
 
     //javadoc: MergeMertens::process(src, dst)
@@ -44,7 +86,7 @@ public class MergeMertens extends MergeExposures {
 
 
     //
-    // C++:  void MergeMertens::setContrastWeight(float contrast_weiht)
+    // C++:  void setContrastWeight(float contrast_weiht)
     //
 
     //javadoc: MergeMertens::setContrastWeight(contrast_weiht)
@@ -58,7 +100,7 @@ public class MergeMertens extends MergeExposures {
 
 
     //
-    // C++:  void MergeMertens::setExposureWeight(float exposure_weight)
+    // C++:  void setExposureWeight(float exposure_weight)
     //
 
     //javadoc: MergeMertens::setExposureWeight(exposure_weight)
@@ -72,7 +114,7 @@ public class MergeMertens extends MergeExposures {
 
 
     //
-    // C++:  void MergeMertens::setSaturationWeight(float saturation_weight)
+    // C++:  void setSaturationWeight(float saturation_weight)
     //
 
     //javadoc: MergeMertens::setSaturationWeight(saturation_weight)
@@ -92,19 +134,28 @@ public class MergeMertens extends MergeExposures {
 
 
 
-    // C++:  void MergeMertens::process(vector_Mat src, Mat& dst, Mat times, Mat response)
+    // C++:  float getContrastWeight()
+    private static native float getContrastWeight_0(long nativeObj);
+
+    // C++:  float getExposureWeight()
+    private static native float getExposureWeight_0(long nativeObj);
+
+    // C++:  float getSaturationWeight()
+    private static native float getSaturationWeight_0(long nativeObj);
+
+    // C++:  void process(vector_Mat src, Mat& dst, Mat times, Mat response)
     private static native void process_0(long nativeObj, long src_mat_nativeObj, long dst_nativeObj, long times_nativeObj, long response_nativeObj);
 
-    // C++:  void MergeMertens::process(vector_Mat src, Mat& dst)
+    // C++:  void process(vector_Mat src, Mat& dst)
     private static native void process_1(long nativeObj, long src_mat_nativeObj, long dst_nativeObj);
 
-    // C++:  void MergeMertens::setContrastWeight(float contrast_weiht)
+    // C++:  void setContrastWeight(float contrast_weiht)
     private static native void setContrastWeight_0(long nativeObj, float contrast_weiht);
 
-    // C++:  void MergeMertens::setExposureWeight(float exposure_weight)
+    // C++:  void setExposureWeight(float exposure_weight)
     private static native void setExposureWeight_0(long nativeObj, float exposure_weight);
 
-    // C++:  void MergeMertens::setSaturationWeight(float saturation_weight)
+    // C++:  void setSaturationWeight(float saturation_weight)
     private static native void setSaturationWeight_0(long nativeObj, float saturation_weight);
 
     // native support for java finalize()

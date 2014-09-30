@@ -11,6 +11,8 @@ opencv2/core.hpp
 ../../modules/calib3d/include/opencv2/opencv2/core.hpp
 opencv2/features2d.hpp
 ../../modules/calib3d/include/opencv2/opencv2/features2d.hpp
+opencv2/core/affine.hpp
+../../modules/calib3d/include/opencv2/opencv2/core/affine.hpp
 
 ../../modules/calib3d/include/opencv2/calib3d/calib3d_c.h
 opencv2/core/core_c.h
@@ -39,6 +41,14 @@ opencv2/core/operations.hpp
 ../../modules/core/include/opencv2/opencv2/core/operations.hpp
 opencv2/core/cvstd.inl.hpp
 ../../modules/core/include/opencv2/opencv2/core/cvstd.inl.hpp
+opencv2/core/utility.hpp
+../../modules/core/include/opencv2/opencv2/core/utility.hpp
+opencv2/core/optim.hpp
+../../modules/core/include/opencv2/opencv2/core/optim.hpp
+
+../../modules/core/include/opencv2/core/affine.hpp
+opencv2/core.hpp
+-
 
 ../../modules/core/include/opencv2/core/base.hpp
 climits
@@ -168,6 +178,10 @@ opencv2/core.hpp
 cstdio
 -
 
+../../modules/core/include/opencv2/core/optim.hpp
+opencv2/core.hpp
+../../modules/core/include/opencv2/core/opencv2/core.hpp
+
 ../../modules/core/include/opencv2/core/persistence.hpp
 opencv2/core/types.hpp
 ../../modules/core/include/opencv2/core/opencv2/core/types.hpp
@@ -262,18 +276,6 @@ opencv2/core.hpp
 
 ../../modules/imgproc/src/gcgraph.hpp
 
-../../modules/nonfree/include/opencv2/nonfree.hpp
-opencv2/nonfree/features2d.hpp
-../../modules/nonfree/include/opencv2/opencv2/nonfree/features2d.hpp
-
-../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
-opencv2/core/cuda.hpp
-../../modules/nonfree/include/opencv2/nonfree/opencv2/core/cuda.hpp
-
-../../modules/nonfree/include/opencv2/nonfree/features2d.hpp
-opencv2/features2d.hpp
-../../modules/nonfree/include/opencv2/nonfree/opencv2/features2d.hpp
-
 ../../modules/stitching/include/opencv2/stitching.hpp
 opencv2/core.hpp
 ../../modules/stitching/include/opencv2/opencv2/core.hpp
@@ -319,8 +321,8 @@ opencv2/features2d.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
 ../../modules/stitching/include/opencv2/stitching/detail/opencv2/opencv_modules.hpp
-opencv2/nonfree/cuda.hpp
-../../modules/stitching/include/opencv2/stitching/detail/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+../../modules/stitching/include/opencv2/stitching/detail/opencv2/xfeatures2d/cuda.hpp
 
 ../../modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp
 opencv2/core.hpp
@@ -2761,8 +2763,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/blenders.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels.hpp
+opencl_kernels_stitching.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels_stitching.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/camera.cpp
 precomp.hpp
@@ -2775,8 +2777,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/matchers.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
-opencv2/nonfree.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/nonfree.hpp
+opencv2/xfeatures2d.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/xfeatures2d.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/motion_estimators.cpp
 precomp.hpp
@@ -2847,8 +2849,8 @@ opencv2/cudafeatures2d.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/cudafeatures2d.hpp
 opencv2/cuda.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/cuda.hpp
-opencv2/nonfree/cuda.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencv2/xfeatures2d/cuda.hpp
 ../../imgproc/src/gcgraph.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/imgproc/src/gcgraph.hpp
 opencv2/core/private.hpp
@@ -2869,8 +2871,8 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/timelapsers.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels.hpp
+opencl_kernels_stitching.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels_stitching.hpp
 
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/util.cpp
 precomp.hpp
@@ -2879,16 +2881,16 @@ precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/warpers.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels.hpp
+opencl_kernels_stitching.hpp
+/Users/swinston/Mirada/lib/c/opencv/modules/stitching/src/opencl_kernels_stitching.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.cpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.cpp
 precomp.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/precomp.hpp
-opencl_kernels.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.hpp
+opencl_kernels_stitching.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.hpp
 
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencl_kernels_stitching.hpp
 opencv2/core/ocl_genbase.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp
@@ -2955,8 +2957,8 @@ opencv2/cudafeatures2d.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencv2/cudafeatures2d.hpp
 opencv2/cuda.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencv2/cuda.hpp
-opencv2/nonfree/cuda.hpp
-/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencv2/nonfree/cuda.hpp
+opencv2/xfeatures2d/cuda.hpp
+/Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/modules/stitching/opencv2/xfeatures2d/cuda.hpp
 ../../imgproc/src/gcgraph.hpp
 /Users/swinston/Mirada/lib/c/opencv/platforms/build_android_arm/imgproc/src/gcgraph.hpp
 opencv2/core/private.hpp
@@ -3526,7 +3528,7 @@ unistd.h
 
 cvconfig.h
 
-modules/stitching/opencl_kernels.hpp
+modules/stitching/opencl_kernels_stitching.hpp
 opencv2/core/ocl_genbase.hpp
 modules/stitching/opencv2/core/ocl_genbase.hpp
 opencv2/core/opencl/ocl_defs.hpp

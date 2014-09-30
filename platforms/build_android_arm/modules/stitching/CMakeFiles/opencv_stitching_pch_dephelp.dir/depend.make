@@ -3,6 +3,7 @@
 
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/calib3d/include/opencv2/calib3d.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core.hpp
+modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/affine.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/base.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/bufferpool.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/cuda.hpp
@@ -17,6 +18,7 @@ modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_p
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ocl.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -29,7 +31,6 @@ modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_p
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/flann/include/opencv2/flann/defines.h
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/flann/include/opencv2/flann/miniflann.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/imgproc/include/opencv2/imgproc.hpp
-modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/nonfree/include/opencv2/nonfree/cuda.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching/detail/autocalib.hpp
 modules/stitching/CMakeFiles/opencv_stitching_pch_dephelp.dir/opencv_stitching_pch_dephelp.cxx.o: ../../modules/stitching/include/opencv2/stitching/detail/blenders.hpp

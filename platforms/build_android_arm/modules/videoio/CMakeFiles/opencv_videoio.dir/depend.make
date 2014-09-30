@@ -13,6 +13,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -456,6 +457,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modul
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_android.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -897,6 +899,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../module
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
@@ -1339,6 +1342,7 @@ modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../module
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/mat.inl.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/matx.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/operations.hpp
+modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/optim.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/persistence.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/private.hpp
 modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_images.cpp.o: ../../modules/core/include/opencv2/core/ptr.inl.hpp
